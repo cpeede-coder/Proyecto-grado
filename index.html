@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=5">
+  <link rel="stylesheet" href="css/styles.css?v=6">
 </head>
 <body>
   <header class="topbar">
@@ -62,14 +62,23 @@
       <div class="card">
         <details id="config-ia">
           <summary class="resumen-ia">🤖 Corrección automática con IA (opcional)</summary>
-          <p class="ayuda">Con una API key <strong>gratuita</strong> de Google Gemini, al terminar cada examen podrás corregir tus respuestas automáticamente: la IA evalúa cada criterio de la pauta, entiende paráfrasis y sinónimos, y justifica su veredicto. Tú siempre puedes ajustar el resultado a mano.</p>
-          <p class="ayuda">1. Crea tu key gratis en <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> (cuenta Google, sin tarjeta).<br>2. Pégala aquí. Se guarda <strong>solo en este navegador</strong>, nunca se sube a ningún lado.</p>
+          <p class="ayuda">Si guardas aquí una API key <strong>gratuita</strong> de Google Gemini, al terminar cada examen aparecerá el botón <strong>"🤖 Corregir con IA"</strong>: evalúa tus respuestas contra la pauta oficial (entiende paráfrasis y sinónimos), marca los criterios por ti y te da feedback por pregunta. Siempre puedes ajustar el resultado a mano.</p>
+          <div class="pasos-ia">
+            <strong>Cómo crear tu API key — gratis, 1 minuto, sin tarjeta:</strong>
+            <ol>
+              <li>Entra a <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> e inicia sesión con tu cuenta de Google.</li>
+              <li>Presiona <strong>"Create API key"</strong> (o "Crear clave de API"). Si te pide elegir un proyecto, acepta el que te sugiere.</li>
+              <li>Copia la key generada (empieza con <code>AQ.</code> o <code>AIza</code>).</li>
+              <li>Pégala aquí abajo y presiona <strong>Guardar key</strong>. ¡Listo!</li>
+            </ol>
+          </div>
           <div class="campo">
             <input type="password" id="gemini-key" placeholder="Pega aquí tu API key de Gemini (empieza con AQ. o AIza)" autocomplete="off">
           </div>
           <button id="btn-guardar-key" class="btn-secundario">Guardar key</button>
           <button id="btn-borrar-key" class="btn-peligro hidden">Quitar key</button>
           <p id="estado-key" class="ayuda"></p>
+          <p class="ayuda">🔒 Tu key se guarda <strong>solo en este navegador</strong> — no se sube a ningún servidor y solo se usa para llamar a Google cuando corriges. <strong>Cada persona debe crear la suya</strong> (no compartas la tuya): es gratis y así cada uno tiene su propia cuota diaria, que alcanza de sobra para varios exámenes al día.</p>
         </details>
       </div>
     </section>

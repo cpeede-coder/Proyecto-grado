@@ -388,6 +388,24 @@ input[type="search"]:focus {
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--primario) 15%, transparent);
 }
 
+.pasos-ia {
+  background: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 12px 0 16px;
+  font-size: 0.95rem;
+}
+.pasos-ia ol { margin: 8px 0 2px; padding-left: 22px; }
+.pasos-ia li { margin-bottom: 6px; }
+.pasos-ia code {
+  background: var(--primario-tinte);
+  color: var(--primario);
+  padding: 1px 6px;
+  border-radius: 6px;
+  font-size: 0.88em;
+}
+
 .ia-feedback {
   border-left: 3px solid var(--primario);
   background: var(--primario-tinte);
