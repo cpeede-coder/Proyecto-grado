@@ -5,7 +5,7 @@
 const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_GEMINI = "examen-grado-gemini-key";
-const MODELO_GEMINI = "gemini-2.5-flash";
+const MODELO_GEMINI = "gemini-1.5-flash";
 
 // Formato del examen oficial: preguntas por área (cada área pondera 20 pts)
 const FORMATO_OFICIAL = [
