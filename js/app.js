@@ -657,7 +657,7 @@ INSTRUCCIONES DE CORRECCIÓN:
 - comentario: feedback global constructivo de 2 a 4 frases (qué estuvo bien, qué le faltó, qué repasar).`;
 }
 
-async function llamarGemini(key, modelo, pregunta, respuestaAlumno, reintento = false) {
+async function llamarGemini(key, modelo, pregunta, respuestaAlumno, avisar, reintento = false) {
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`;
   const res = await fetch(url, {
     method: "POST",
@@ -672,10 +672,11 @@ async function llamarGemini(key, modelo, pregunta, respuestaAlumno, reintento = 
     })
   });
 
-  if (res.status === 429 && !reintento) {
-    // Límite de frecuencia del nivel gratuito: esperar y reintentar una vez
-    await new Promise(r => setTimeout(r, 25000));
-    return llamarGemini(key, modelo, pregunta, respuestaAlumno, true);
+  if ((res.status === 429 || res.status === 503) && !reintento) {
+    // Saturación o límite de frecuencia: avisar, esperar y reintentar una vez
+    avisar?.(`el modelo ${modelo} está saturado, reintentando en 15 s…`);
+    await new Promise(r => setTimeout(r, 15000));
+    return llamarGemini(key, modelo, pregunta, respuestaAlumno, avisar, true);
   }
   if (!res.ok) {
     let detalle = `HTTP ${res.status}`;
@@ -691,15 +692,22 @@ async function llamarGemini(key, modelo, pregunta, respuestaAlumno, reintento = 
   return JSON.parse(texto);
 }
 
-// ¿El error indica que el modelo no existe o dejó de estar disponible?
-function esErrorDeModelo(e) {
-  if (e.status === 404) return true;
-  return /no longer available|not found|not available|not supported|deprecated|does not exist/i
+// ¿Error de credenciales? No tiene sentido probar otros modelos.
+function esErrorDeKey(e) {
+  if (e.status === 401 || e.status === 403) return true;
+  return /api key|permission denied|unauthorized/i.test(e.message ?? "");
+}
+
+// ¿Vale la pena probar el siguiente modelo? (retirado, inexistente,
+// saturado o con la cuota de ESE modelo agotada — cada modelo tiene la suya)
+function convieneOtroModelo(e) {
+  if (e.status === 404 || e.status === 429 || e.status === 503) return true;
+  return /no longer available|not found|not available|not supported|deprecated|does not exist|high demand|overloaded|try again later|resource.?exhausted|quota/i
     .test(e.message ?? "");
 }
 
 // Prueba los modelos en orden y recuerda el que funciona para esta cuenta
-async function evaluarConGemini(key, pregunta, respuestaAlumno) {
+async function evaluarConGemini(key, pregunta, respuestaAlumno, avisar) {
   const recordado = localStorage.getItem(CLAVE_MODELO_GEMINI);
   const lista = recordado
     ? [recordado, ...MODELOS_GEMINI.filter(m => m !== recordado)]
@@ -708,16 +716,17 @@ async function evaluarConGemini(key, pregunta, respuestaAlumno) {
   let ultimoError = null;
   for (const modelo of lista) {
     try {
-      const resultado = await llamarGemini(key, modelo, pregunta, respuestaAlumno);
+      const resultado = await llamarGemini(key, modelo, pregunta, respuestaAlumno, avisar);
       localStorage.setItem(CLAVE_MODELO_GEMINI, modelo);
       return resultado;
     } catch (e) {
-      if (!esErrorDeModelo(e)) throw e; // errores de key, cuota, red, etc.: no seguir probando
+      if (esErrorDeKey(e) || !convieneOtroModelo(e)) throw e;
       if (modelo === recordado) localStorage.removeItem(CLAVE_MODELO_GEMINI);
       ultimoError = e;
+      avisar?.(`${modelo} no disponible, probando otro modelo…`);
     }
   }
-  throw new Error(`Ningún modelo de Gemini disponible para tu cuenta (último error: ${ultimoError?.message ?? "desconocido"})`);
+  throw new Error(`Ningún modelo de Gemini respondió (último error: ${ultimoError?.message ?? "desconocido"}). Suele ser saturación temporal: intenta de nuevo en unos minutos.`);
 }
 
 function aplicarEvaluacionIA(indicePregunta, card, evaluacion) {
@@ -772,7 +781,8 @@ async function corregirConIA() {
     const respuesta = estado.respuestas[i].trim();
     const card = cards[i];
     if (!card) continue;
-    progreso.textContent = `Corrigiendo pregunta ${i + 1} de ${estado.preguntas.length}…`;
+    const base = `Corrigiendo pregunta ${i + 1} de ${estado.preguntas.length}`;
+    progreso.textContent = `${base}…`;
 
     if (!respuesta) {
       insertarBloqueIA(card, `<p class="ayuda">No respondiste esta pregunta: no hay nada que evaluar (0 puntos).</p>`);
@@ -780,7 +790,8 @@ async function corregirConIA() {
     }
 
     try {
-      const evaluacion = await evaluarConGemini(key, estado.preguntas[i], respuesta);
+      const avisar = detalle => { progreso.textContent = `${base} (${detalle})`; };
+      const evaluacion = await evaluarConGemini(key, estado.preguntas[i], respuesta, avisar);
       aplicarEvaluacionIA(i, card, evaluacion);
     } catch (e) {
       errores++;
