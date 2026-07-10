@@ -5,7 +5,17 @@
 const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_GEMINI = "examen-grado-gemini-key";
-const MODELO_GEMINI = "gemini-2.5-flash";
+const CLAVE_MODELO_GEMINI = "examen-grado-gemini-modelo";
+// Se prueban en orden hasta encontrar uno disponible para la cuenta;
+// el que funciona queda recordado. "gemini-flash-latest" es un alias de
+// Google que apunta siempre al Flash más reciente.
+const MODELOS_GEMINI = [
+  "gemini-flash-latest",
+  "gemini-3.5-flash",
+  "gemini-3-flash",
+  "gemini-3.1-flash-lite",
+  "gemini-2.5-flash"
+];
 
 // Formato del examen oficial: preguntas por área (cada área pondera 20 pts)
 const FORMATO_OFICIAL = [
@@ -647,8 +657,8 @@ INSTRUCCIONES DE CORRECCIÓN:
 - comentario: feedback global constructivo de 2 a 4 frases (qué estuvo bien, qué le faltó, qué repasar).`;
 }
 
-async function llamarGemini(key, pregunta, respuestaAlumno, reintento = false) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODELO_GEMINI}:generateContent`;
+async function llamarGemini(key, modelo, pregunta, respuestaAlumno, reintento = false) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`;
   const res = await fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-goog-api-key": key },
@@ -665,18 +675,49 @@ async function llamarGemini(key, pregunta, respuestaAlumno, reintento = false) {
   if (res.status === 429 && !reintento) {
     // Límite de frecuencia del nivel gratuito: esperar y reintentar una vez
     await new Promise(r => setTimeout(r, 25000));
-    return llamarGemini(key, pregunta, respuestaAlumno, true);
+    return llamarGemini(key, modelo, pregunta, respuestaAlumno, true);
   }
   if (!res.ok) {
     let detalle = `HTTP ${res.status}`;
     try { detalle = (await res.json()).error?.message ?? detalle; } catch {}
-    throw new Error(detalle);
+    const err = new Error(detalle);
+    err.status = res.status;
+    throw err;
   }
 
   const data = await res.json();
   const texto = data.candidates?.[0]?.content?.parts?.[0]?.text;
   if (!texto) throw new Error("Gemini no devolvió contenido evaluable.");
   return JSON.parse(texto);
+}
+
+// ¿El error indica que el modelo no existe o dejó de estar disponible?
+function esErrorDeModelo(e) {
+  if (e.status === 404) return true;
+  return /no longer available|not found|not available|not supported|deprecated|does not exist/i
+    .test(e.message ?? "");
+}
+
+// Prueba los modelos en orden y recuerda el que funciona para esta cuenta
+async function evaluarConGemini(key, pregunta, respuestaAlumno) {
+  const recordado = localStorage.getItem(CLAVE_MODELO_GEMINI);
+  const lista = recordado
+    ? [recordado, ...MODELOS_GEMINI.filter(m => m !== recordado)]
+    : MODELOS_GEMINI;
+
+  let ultimoError = null;
+  for (const modelo of lista) {
+    try {
+      const resultado = await llamarGemini(key, modelo, pregunta, respuestaAlumno);
+      localStorage.setItem(CLAVE_MODELO_GEMINI, modelo);
+      return resultado;
+    } catch (e) {
+      if (!esErrorDeModelo(e)) throw e; // errores de key, cuota, red, etc.: no seguir probando
+      if (modelo === recordado) localStorage.removeItem(CLAVE_MODELO_GEMINI);
+      ultimoError = e;
+    }
+  }
+  throw new Error(`Ningún modelo de Gemini disponible para tu cuenta (último error: ${ultimoError?.message ?? "desconocido"})`);
 }
 
 function aplicarEvaluacionIA(indicePregunta, card, evaluacion) {
@@ -739,7 +780,7 @@ async function corregirConIA() {
     }
 
     try {
-      const evaluacion = await llamarGemini(key, estado.preguntas[i], respuesta);
+      const evaluacion = await evaluarConGemini(key, estado.preguntas[i], respuesta);
       aplicarEvaluacionIA(i, card, evaluacion);
     } catch (e) {
       errores++;
