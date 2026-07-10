@@ -50,6 +50,8 @@ const $ = (sel) => document.querySelector(sel);
 function mostrarPantalla(id) {
   document.querySelectorAll(".pantalla").forEach(p => p.classList.add("hidden"));
   $("#" + id).classList.remove("hidden");
+  // La corrección usa todo el ancho para mostrar las dos "hojas" lado a lado
+  document.body.classList.toggle("vista-amplia", id === "pantalla-correccion");
   window.scrollTo(0, 0);
 }
 

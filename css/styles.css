@@ -301,25 +301,29 @@ input[type="search"]:focus {
 }
 .bloque-respuesta.vacia { color: var(--texto-suave); font-style: italic; }
 
-/* Vista comparada: tu respuesta y la respuesta modelo lado a lado */
+/* Vista comparada: dos "hojas" completas lado a lado (estilo Word) */
+body.vista-amplia main {
+  max-width: 1560px; /* el doble de ancho: cada hoja conserva su tamaño de lectura */
+}
 .comparacion {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 24px;
   align-items: start;
 }
 .columna-comparacion .subtitulo { margin-top: 18px; }
 .comparacion .bloque-respuesta {
-  max-height: 460px;
+  max-height: 560px;
   overflow-y: auto;
   margin-bottom: 0;
 }
 .comparacion .columna-comparacion:last-child .bloque-respuesta {
   border-left: 3px solid var(--primario);
 }
-@media (max-width: 760px) {
+/* Si la ventana no alcanza para dos hojas legibles, se apilan */
+@media (max-width: 980px) {
   .comparacion { grid-template-columns: 1fr; gap: 0; }
-  .comparacion .bloque-respuesta { max-height: 300px; }
+  .comparacion .bloque-respuesta { max-height: 320px; }
 }
 
 .subtitulo {
