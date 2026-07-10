@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/styles.css?v=5">
 </head>
 <body>
   <header class="topbar">
@@ -57,6 +57,20 @@
         <button id="btn-comenzar" class="btn-primario">Comenzar examen</button>
         <button id="btn-ver-banco" class="btn-secundario">📚 Explorar banco</button>
         <button id="btn-ver-historial" class="btn-secundario">Ver historial</button>
+      </div>
+
+      <div class="card">
+        <details id="config-ia">
+          <summary class="resumen-ia">🤖 Corrección automática con IA (opcional)</summary>
+          <p class="ayuda">Con una API key <strong>gratuita</strong> de Google Gemini, al terminar cada examen podrás corregir tus respuestas automáticamente: la IA evalúa cada criterio de la pauta, entiende paráfrasis y sinónimos, y justifica su veredicto. Tú siempre puedes ajustar el resultado a mano.</p>
+          <p class="ayuda">1. Crea tu key gratis en <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener">aistudio.google.com/apikey</a> (cuenta Google, sin tarjeta).<br>2. Pégala aquí. Se guarda <strong>solo en este navegador</strong>, nunca se sube a ningún lado.</p>
+          <div class="campo">
+            <input type="password" id="gemini-key" placeholder="Pega aquí tu API key de Gemini (empieza con AIza…)" autocomplete="off">
+          </div>
+          <button id="btn-guardar-key" class="btn-secundario">Guardar key</button>
+          <button id="btn-borrar-key" class="btn-peligro hidden">Quitar key</button>
+          <p id="estado-key" class="ayuda"></p>
+        </details>
       </div>
     </section>
 
@@ -109,6 +123,8 @@
       <div class="card">
         <h2>Corrección guiada</h2>
         <p class="ayuda">Compara tu respuesta con la respuesta modelo y marca los criterios de la pauta que tu respuesta <strong>sí cubrió</strong>. Con eso se calcula tu puntaje y el feedback.</p>
+        <button id="btn-corregir-ia" class="btn-primario hidden">🤖 Corregir con IA</button>
+        <p id="ia-progreso" class="ayuda hidden"></p>
       </div>
       <div id="lista-correccion"></div>
       <div class="card">
@@ -148,6 +164,6 @@
   <script src="data/materias/estrategia.js?v=2"></script>
   <script src="data/materias/gestion-personas.js?v=2"></script>
   <script src="data/materias/marketing.js?v=2"></script>
-  <script src="js/app.js?v=4"></script>
+  <script src="js/app.js?v=5"></script>
 </body>
 </html>

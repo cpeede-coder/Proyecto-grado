@@ -4,6 +4,8 @@
 
 const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
+const CLAVE_GEMINI = "examen-grado-gemini-key";
+const MODELO_GEMINI = "gemini-2.5-flash";
 
 // Formato del examen oficial: preguntas por área (cada área pondera 20 pts)
 const FORMATO_OFICIAL = [
@@ -243,6 +245,9 @@ function irACorreccion() {
   clearInterval(estado.timerId);
   $("#timer").classList.add("hidden");
   renderCorreccion();
+  $("#btn-corregir-ia").classList.toggle("hidden", !obtenerGeminiKey());
+  $("#btn-corregir-ia").disabled = false;
+  $("#ia-progreso").classList.add("hidden");
   mostrarPantalla("pantalla-correccion");
 }
 
@@ -558,6 +563,197 @@ function renderBanco() {
 }
 
 // ---------------------------------------------------------------------
+// Corrección automática con IA (Google Gemini, API key del usuario)
+// ---------------------------------------------------------------------
+function obtenerGeminiKey() {
+  return localStorage.getItem(CLAVE_GEMINI) ?? "";
+}
+
+function pintarEstadoKey() {
+  const key = obtenerGeminiKey();
+  $("#estado-key").textContent = key
+    ? `✅ Key guardada (termina en …${key.slice(-4)}). La corrección con IA está activa.`
+    : "";
+  $("#btn-borrar-key").classList.toggle("hidden", !key);
+}
+
+function iniciarIA() {
+  pintarEstadoKey();
+
+  $("#btn-guardar-key").addEventListener("click", () => {
+    const key = $("#gemini-key").value.trim();
+    if (!key) { alert("Pega tu API key primero."); return; }
+    if (!key.startsWith("AIza")) {
+      if (!confirm("La key no tiene el formato habitual de Gemini (AIza…). ¿Guardarla igual?")) return;
+    }
+    localStorage.setItem(CLAVE_GEMINI, key);
+    $("#gemini-key").value = "";
+    pintarEstadoKey();
+  });
+
+  $("#btn-borrar-key").addEventListener("click", () => {
+    localStorage.removeItem(CLAVE_GEMINI);
+    pintarEstadoKey();
+  });
+
+  $("#btn-corregir-ia").addEventListener("click", corregirConIA);
+}
+
+const ESQUEMA_EVALUACION = {
+  type: "OBJECT",
+  properties: {
+    criterios: {
+      type: "ARRAY",
+      items: {
+        type: "OBJECT",
+        properties: {
+          indice: { type: "INTEGER" },
+          cumplido: { type: "BOOLEAN" },
+          justificacion: { type: "STRING" }
+        },
+        required: ["indice", "cumplido", "justificacion"]
+      }
+    },
+    comentario: { type: "STRING" }
+  },
+  required: ["criterios", "comentario"]
+};
+
+function construirPromptCorreccion(pregunta, respuestaAlumno) {
+  const criterios = pregunta.criterios
+    .map((c, j) => `${j}) ${c.texto} (${c.peso} pts)`)
+    .join("\n");
+  return `Eres un profesor corrector del Examen de Grado de Ingeniería Comercial (Chile). Corrige la respuesta de un alumno usando estrictamente la pauta oficial.
+
+PREGUNTA:
+${pregunta.enunciado}
+
+RESPUESTA MODELO (referencia de contenido correcto):
+${pregunta.respuestaModelo}
+
+PAUTA DE CRITERIOS (evalúa cada uno por su índice):
+${criterios}
+
+RESPUESTA DEL ALUMNO:
+${respuestaAlumno}
+
+INSTRUCCIONES DE CORRECCIÓN:
+- Para cada criterio decide si la respuesta del alumno lo cumple (cumplido: true/false).
+- NO exijas redacción textual: acepta paráfrasis, sinónimos y otro orden si el concepto está correcto y explícito en la respuesta.
+- Lo que no está escrito no existe: no des por cumplido algo que "se podría inferir" pero no se dice.
+- Si el criterio pide una cantidad (ej. "dos ventajas") y el alumno entrega menos, NO se cumple.
+- Si el criterio exige graficar, márcalo como NO cumplido salvo que el alumno describa correctamente el gráfico en texto; en la justificación recuérdale autoevaluar su dibujo en papel.
+- Justificación breve por criterio (1 o 2 frases, en español).
+- comentario: feedback global constructivo de 2 a 4 frases (qué estuvo bien, qué le faltó, qué repasar).`;
+}
+
+async function llamarGemini(key, pregunta, respuestaAlumno, reintento = false) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODELO_GEMINI}:generateContent?key=${encodeURIComponent(key)}`;
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: construirPromptCorreccion(pregunta, respuestaAlumno) }] }],
+      generationConfig: {
+        temperature: 0.2,
+        responseMimeType: "application/json",
+        responseSchema: ESQUEMA_EVALUACION
+      }
+    })
+  });
+
+  if (res.status === 429 && !reintento) {
+    // Límite de frecuencia del nivel gratuito: esperar y reintentar una vez
+    await new Promise(r => setTimeout(r, 25000));
+    return llamarGemini(key, pregunta, respuestaAlumno, true);
+  }
+  if (!res.ok) {
+    let detalle = `HTTP ${res.status}`;
+    try { detalle = (await res.json()).error?.message ?? detalle; } catch {}
+    throw new Error(detalle);
+  }
+
+  const data = await res.json();
+  const texto = data.candidates?.[0]?.content?.parts?.[0]?.text;
+  if (!texto) throw new Error("Gemini no devolvió contenido evaluable.");
+  return JSON.parse(texto);
+}
+
+function aplicarEvaluacionIA(indicePregunta, card, evaluacion) {
+  const pregunta = estado.preguntas[indicePregunta];
+
+  (evaluacion.criterios ?? []).forEach(ev => {
+    const j = Number(ev.indice);
+    if (!(j >= 0 && j < pregunta.criterios.length)) return;
+    if (ev.cumplido) estado.criteriosMarcados[indicePregunta].add(j);
+    else estado.criteriosMarcados[indicePregunta].delete(j);
+    const chk = card.querySelector(`input[data-pregunta="${indicePregunta}"][data-criterio="${j}"]`);
+    if (chk) chk.checked = !!ev.cumplido;
+  });
+
+  const detalleHtml = (evaluacion.criterios ?? []).map(ev => {
+    const j = Number(ev.indice);
+    const texto = pregunta.criterios[j]?.texto ?? `Criterio ${j}`;
+    return `<li><span class="${ev.cumplido ? "ia-ok" : "ia-no"}">${ev.cumplido ? "✔ Cumplido" : "✘ No cumplido"}</span> — ${escaparHtml(texto)}<br><em>${escaparHtml(ev.justificacion ?? "")}</em></li>`;
+  }).join("");
+
+  insertarBloqueIA(card, `
+    <ul class="ia-lista">${detalleHtml}</ul>
+    <p>${escaparHtml(evaluacion.comentario ?? "")}</p>
+    <p class="ayuda">La pauta se marcó automáticamente según esta evaluación — ajusta cualquier casilla si no estás de acuerdo.</p>
+  `);
+}
+
+function insertarBloqueIA(card, htmlInterno, esError = false) {
+  card.querySelector(".ia-feedback")?.remove();
+  const div = document.createElement("div");
+  div.className = "ia-feedback" + (esError ? " ia-error" : "");
+  div.innerHTML = `<div class="subtitulo">🤖 Evaluación IA</div>` + htmlInterno;
+  card.appendChild(div);
+}
+
+async function corregirConIA() {
+  const key = obtenerGeminiKey();
+  if (!key) {
+    alert("Primero guarda tu API key de Gemini en la pantalla inicial (sección Corrección automática con IA).");
+    return;
+  }
+
+  const btn = $("#btn-corregir-ia");
+  const progreso = $("#ia-progreso");
+  btn.disabled = true;
+  progreso.classList.remove("hidden");
+
+  const cards = document.querySelectorAll("#lista-correccion > .card");
+  let errores = 0;
+
+  for (let i = 0; i < estado.preguntas.length; i++) {
+    const respuesta = estado.respuestas[i].trim();
+    const card = cards[i];
+    if (!card) continue;
+    progreso.textContent = `Corrigiendo pregunta ${i + 1} de ${estado.preguntas.length}…`;
+
+    if (!respuesta) {
+      insertarBloqueIA(card, `<p class="ayuda">No respondiste esta pregunta: no hay nada que evaluar (0 puntos).</p>`);
+      continue;
+    }
+
+    try {
+      const evaluacion = await llamarGemini(key, estado.preguntas[i], respuesta);
+      aplicarEvaluacionIA(i, card, evaluacion);
+    } catch (e) {
+      errores++;
+      insertarBloqueIA(card, `<p>No se pudo evaluar esta pregunta: ${escaparHtml(e.message)}. Márcala manualmente.</p>`, true);
+    }
+  }
+
+  progreso.textContent = errores === 0
+    ? "✅ Corrección IA completada. Revisa las justificaciones y ajusta lo que no te convenza antes de ver los resultados."
+    : `Corrección IA completada con ${errores} pregunta(s) sin evaluar (revisa el detalle en cada tarjeta).`;
+  btn.disabled = false;
+}
+
+// ---------------------------------------------------------------------
 // Tema claro/oscuro (oscuro por defecto, preferencia guardada)
 // ---------------------------------------------------------------------
 function aplicarTema(tema) {
@@ -580,4 +776,5 @@ function iniciarTema() {
 iniciarTema();
 iniciarConfig();
 iniciarBanco();
+iniciarIA();
 iniciarEventos();
