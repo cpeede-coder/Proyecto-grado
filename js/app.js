@@ -292,11 +292,16 @@ function renderCorreccion() {
       </div>
       <p class="enunciado">${escaparHtml(p.enunciado)}</p>
 
-      <div class="subtitulo">Tu respuesta</div>
-      <div class="bloque-respuesta ${respuesta ? "" : "vacia"}">${respuesta ? escaparHtml(respuesta) : "(No respondiste esta pregunta)"}</div>
-
-      <div class="subtitulo">Respuesta modelo</div>
-      <div class="bloque-respuesta">${escaparHtml(p.respuestaModelo)}</div>
+      <div class="comparacion">
+        <div class="columna-comparacion">
+          <div class="subtitulo">Tu respuesta</div>
+          <div class="bloque-respuesta ${respuesta ? "" : "vacia"}">${respuesta ? escaparHtml(respuesta) : "(No respondiste esta pregunta)"}</div>
+        </div>
+        <div class="columna-comparacion">
+          <div class="subtitulo">Respuesta modelo</div>
+          <div class="bloque-respuesta">${escaparHtml(p.respuestaModelo)}</div>
+        </div>
+      </div>
 
       <div class="subtitulo">Pauta — marca lo que tu respuesta sí cubrió</div>
       ${criteriosHtml}

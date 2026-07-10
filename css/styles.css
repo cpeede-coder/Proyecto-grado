@@ -301,6 +301,27 @@ input[type="search"]:focus {
 }
 .bloque-respuesta.vacia { color: var(--texto-suave); font-style: italic; }
 
+/* Vista comparada: tu respuesta y la respuesta modelo lado a lado */
+.comparacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.columna-comparacion .subtitulo { margin-top: 18px; }
+.comparacion .bloque-respuesta {
+  max-height: 460px;
+  overflow-y: auto;
+  margin-bottom: 0;
+}
+.comparacion .columna-comparacion:last-child .bloque-respuesta {
+  border-left: 3px solid var(--primario);
+}
+@media (max-width: 760px) {
+  .comparacion { grid-template-columns: 1fr; gap: 0; }
+  .comparacion .bloque-respuesta { max-height: 300px; }
+}
+
 .subtitulo {
   font-weight: 700;
   margin: 24px 0 8px;
