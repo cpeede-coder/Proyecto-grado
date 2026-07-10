@@ -583,8 +583,8 @@ function iniciarIA() {
   $("#btn-guardar-key").addEventListener("click", () => {
     const key = $("#gemini-key").value.trim();
     if (!key) { alert("Pega tu API key primero."); return; }
-    if (!key.startsWith("AIza")) {
-      if (!confirm("La key no tiene el formato habitual de Gemini (AIza…). ¿Guardarla igual?")) return;
+    if (!key.startsWith("AIza") && !key.startsWith("AQ.")) {
+      if (!confirm("La key no tiene un formato habitual de Gemini (AIza… o AQ.…). ¿Guardarla igual?")) return;
     }
     localStorage.setItem(CLAVE_GEMINI, key);
     $("#gemini-key").value = "";
@@ -648,10 +648,10 @@ INSTRUCCIONES DE CORRECCIÓN:
 }
 
 async function llamarGemini(key, pregunta, respuestaAlumno, reintento = false) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODELO_GEMINI}:generateContent?key=${encodeURIComponent(key)}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODELO_GEMINI}:generateContent`;
   const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: { "Content-Type": "application/json", "x-goog-api-key": key },
     body: JSON.stringify({
       contents: [{ parts: [{ text: construirPromptCorreccion(pregunta, respuestaAlumno) }] }],
       generationConfig: {
