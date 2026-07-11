@@ -227,6 +227,17 @@ button:disabled { opacity: 0.45; cursor: default; transform: none; }
   letter-spacing: 0.02em;
 }
 .etiqueta-tema { background: var(--primario-tinte); color: var(--primario); }
+.etiqueta-salio {
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: color-mix(in srgb, var(--advertencia) 14%, transparent);
+  color: var(--advertencia);
+  border: 1px solid color-mix(in srgb, var(--advertencia) 30%, transparent);
+}
+.filtro-examen { cursor: pointer; font-weight: 600; }
 .etiqueta-dif.facil { background: color-mix(in srgb, var(--exito) 12%, transparent); color: var(--exito); }
 .etiqueta-dif.media { background: color-mix(in srgb, var(--advertencia) 12%, transparent); color: var(--advertencia); }
 .etiqueta-dif.dificil { background: color-mix(in srgb, var(--peligro) 12%, transparent); color: var(--peligro); }

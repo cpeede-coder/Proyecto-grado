@@ -240,6 +240,7 @@ function renderPregunta() {
   const difEl = $("#examen-dificultad");
   difEl.textContent = p.dificultad.charAt(0).toUpperCase() + p.dificultad.slice(1);
   difEl.className = "etiqueta-dif " + p.dificultad;
+  $("#examen-salio").classList.toggle("hidden", !p.salioEnExamen);
   $("#examen-enunciado").textContent = p.enunciado;
   $("#examen-respuesta").value = estado.respuestas[estado.indice];
 
@@ -291,6 +292,7 @@ function renderCorreccion() {
         <strong>Pregunta ${i + 1}</strong>
         <span class="etiqueta-tema">${escaparHtml(p.tema)}</span>
         <span class="etiqueta-dif ${p.dificultad}">${p.dificultad}</span>
+        ${p.salioEnExamen ? '<span class="etiqueta-salio">⭐ Tema visto en exámenes reales</span>' : ""}
       </div>
       <p class="enunciado">${escaparHtml(p.enunciado)}</p>
 
@@ -490,7 +492,7 @@ function iniciarEventos() {
 // ---------------------------------------------------------------------
 // Explorador del banco de preguntas
 // ---------------------------------------------------------------------
-const bancoFiltro = { materia: "todas", dificultad: "todas", texto: "" };
+const bancoFiltro = { materia: "todas", dificultad: "todas", texto: "", soloExamen: false };
 
 function iniciarBanco() {
   const contenedor = $("#banco-materias");
@@ -525,6 +527,11 @@ function iniciarBanco() {
     renderBanco();
   });
 
+  $("#banco-solo-examen").addEventListener("change", (e) => {
+    bancoFiltro.soloExamen = e.target.checked;
+    renderBanco();
+  });
+
   $("#btn-ver-banco").addEventListener("click", () => {
     renderBanco();
     mostrarPantalla("pantalla-banco");
@@ -543,9 +550,17 @@ function renderBanco() {
   if (bancoFiltro.dificultad !== "todas") {
     preguntas = preguntas.filter(p => p.dificultad === bancoFiltro.dificultad);
   }
+  if (bancoFiltro.soloExamen) {
+    preguntas = preguntas.filter(p => p.salioEnExamen);
+  }
   if (bancoFiltro.texto) {
-    preguntas = preguntas.filter(p =>
-      (p.enunciado + " " + p.tema).toLowerCase().includes(bancoFiltro.texto));
+    // Busca también dentro de la respuesta modelo y la pauta (ej: "Kotter"
+    // aparece en la pauta de un caso aunque el enunciado no lo nombre)
+    preguntas = preguntas.filter(p => {
+      const texto = [p.enunciado, p.tema, p.respuestaModelo,
+        ...p.criterios.map(c => c.texto)].join(" ").toLowerCase();
+      return texto.includes(bancoFiltro.texto);
+    });
   }
 
   const total = BANCO.materias.reduce((s, m) => s + m.preguntas.length, 0);
@@ -564,6 +579,7 @@ function renderBanco() {
           <span class="etiqueta-tema">${escaparHtml(p.materiaNombre)} · ${escaparHtml(p.tema)}</span>
           <span class="etiqueta-dif ${p.dificultad}">${p.dificultad}</span>
           <span>${totalPts} pts</span>
+          ${p.salioEnExamen ? '<span class="etiqueta-salio">⭐ Visto en exámenes</span>' : ""}
         </div>
         <p class="enunciado">${escaparHtml(p.enunciado)}</p>
         <details class="banco-detalle">

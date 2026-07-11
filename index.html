@@ -7,11 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=10">
+  <link rel="stylesheet" href="css/styles.css?v=11">
 </head>
 <body>
   <header class="topbar">
-    <h1>🎓 Simulador Examen de Grado <span class="version-app">v10</span></h1>
+    <h1>🎓 Simulador Examen de Grado <span class="version-app">v11</span></h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
       <button id="btn-tema" class="btn-tema" title="Cambiar tema claro/oscuro">☀️</button>
@@ -101,7 +101,13 @@
           </div>
         </div>
         <div class="campo">
-          <input type="search" id="banco-buscar" placeholder="Buscar por palabra clave en enunciados y temas…">
+          <input type="search" id="banco-buscar" placeholder="Buscar por palabra clave (enunciados, temas, respuestas modelo y pautas)…">
+        </div>
+        <div class="campo">
+          <label class="filtro-examen">
+            <input type="checkbox" id="banco-solo-examen">
+            ⭐ Solo temas que han salido en exámenes reales
+          </label>
         </div>
         <p id="banco-contador" class="ayuda"></p>
         <button id="btn-banco-volver" class="btn-secundario">← Volver</button>
@@ -116,6 +122,7 @@
           <span id="examen-progreso"></span>
           <span id="examen-tema" class="etiqueta-tema"></span>
           <span id="examen-dificultad" class="etiqueta-dif"></span>
+          <span id="examen-salio" class="etiqueta-salio hidden">⭐ Tema visto en exámenes reales</span>
         </div>
         <p id="examen-enunciado" class="enunciado"></p>
         <textarea id="examen-respuesta" placeholder="Escribe aquí tu respuesta de desarrollo..." rows="12"></textarea>
@@ -173,6 +180,6 @@
   <script src="data/materias/estrategia.js?v=2"></script>
   <script src="data/materias/gestion-personas.js?v=2"></script>
   <script src="data/materias/marketing.js?v=2"></script>
-  <script src="js/app.js?v=10"></script>
+  <script src="js/app.js?v=11"></script>
 </body>
 </html>
