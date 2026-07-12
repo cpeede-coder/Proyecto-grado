@@ -226,6 +226,7 @@ async function canjearYReflejar() {
     const mensajes = {
       invalido: "❌ Código no válido. Revisa que esté bien escrito.",
       limite: "❌ Este código ya se usó en el máximo de dispositivos. Si es tuyo y cambiaste de equipo, escríbeme para reactivarlo.",
+      rate: "⏳ Demasiados intentos. Espera unos minutos e intenta de nuevo.",
       red: "⚠️ No se pudo conectar para validar. Revisa tu conexión a internet e intenta de nuevo.",
       config: "⚠️ El sistema de códigos aún no está activo. Escríbeme para obtener acceso.",
       dispositivo: "⚠️ No se pudo identificar este dispositivo. Prueba en otro navegador."
