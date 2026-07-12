@@ -148,7 +148,9 @@ function saludoPersonal(nombre) {
 function reflejarAcceso() {
   const libre = estaDesbloqueado();
   $("#banner-demo").classList.toggle("hidden", libre);
-  $("#titulo-config").textContent = libre ? "Configura tu examen" : "Configura tu examen (versión demo)";
+  const nombreConfig = obtenerNombre();
+  const tituloBase = nombreConfig ? `${nombreConfig}, configura tu examen` : "Configura tu examen";
+  $("#titulo-config").textContent = libre ? tituloBase : tituloBase + " (versión demo)";
   // Texto del banner según si aún tiene su prueba gratis o ya la usó
   const bannerTexto = $("#banner-demo-texto");
   if (bannerTexto && !libre) {
