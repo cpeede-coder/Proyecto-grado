@@ -1,4 +1,7 @@
-# CLAUDE.md — Simulador Examen de Grado
+# CLAUDE.md — APROBA2 (Simulador Examen de Grado)
+
+> **Marca oficial: APROBA2** (logo con birrete azul + detalles verdes). Título de la página: "APROBA2 — Simulador Examen de Grado". El logo vive en `img/aproba2-logo.png` (barra superior) y `img/favicon.png` (pestaña). El logo trae fondo oscuro texturizado incrustado: se muestra con `border-radius` (clase `.logo-app`) para que en tema claro se vea como una insignia intencional.
+
 
 Guía para trabajar en este proyecto. Léela completa antes de hacer cambios.
 
@@ -20,6 +23,7 @@ pauta y opcionalmente corrige con IA. Todo el contenido y la interfaz están en
 ```
 index.html              Una sola página; todas las "pantallas" son <section> que se muestran/ocultan
 css/styles.css          Estilos. Tema oscuro por defecto + tema claro (:root[data-theme="light"])
+img/                    Marca oficial: aproba2-logo.png (barra superior) + favicon.png (pestaña)
 js/app.js               Toda la lógica (vanilla JS, sin frameworks ni build)
 data/acceso.js          Config freemium: URL+clave anon de Supabase + mensaje de venta (validación en backend)
 data/banco.js           Inicializa window.BANCO = { materias: [] }

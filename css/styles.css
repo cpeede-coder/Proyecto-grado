@@ -75,6 +75,24 @@ body {
   margin: 0;
 }
 
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-app {
+  height: 46px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .logo-app { height: 34px; }
+  .topbar { padding: 12px 16px; }
+}
+
 .version-app {
   font-family: var(--sans);
   font-size: 0.68rem;
