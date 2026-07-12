@@ -4,7 +4,8 @@ Guía para trabajar en este proyecto. Léela completa antes de hacer cambios.
 
 ## Qué es
 
-Web **estática** (sin backend) para preparar el **Examen de Grado de Ingeniería
+Web **estática** (GitHub Pages; el único backend es una función de Supabase que
+valida los códigos de acceso) para preparar el **Examen de Grado de Ingeniería
 Comercial** (Chile, escala de notas 1.0–7.0). El usuario (dueño) es estudiante,
 no programador: rinde exámenes demo de desarrollo, se autoevalúa contra una
 pauta y opcionalmente corrige con IA. Todo el contenido y la interfaz están en
@@ -20,11 +21,12 @@ pauta y opcionalmente corrige con IA. Todo el contenido y la interfaz están en
 index.html              Una sola página; todas las "pantallas" son <section> que se muestran/ocultan
 css/styles.css          Estilos. Tema oscuro por defecto + tema claro (:root[data-theme="light"])
 js/app.js               Toda la lógica (vanilla JS, sin frameworks ni build)
-data/acceso.js          Config freemium: hashes de códigos + mensaje de venta (NO códigos en texto)
+data/acceso.js          Config freemium: URL+clave anon de Supabase + mensaje de venta (validación en backend)
 data/banco.js           Inicializa window.BANCO = { materias: [] }
 data/materias/*.js       Un archivo por materia; cada uno hace window.BANCO.materias.push({...})
 .claude/launch.json     Config del server local (python http.server, puerto 8734, nombre "examen-grado")
 MIS-CODIGOS-PRIVADOS.txt Códigos de acceso en texto — GITIGNORED, nunca en el repo
+SUPABASE-SETUP-PRIVADO.sql SQL de carga de códigos a Supabase — GITIGNORED (tiene códigos en texto)
 ```
 
 Materiales de estudio (`Materia */`, `Temarios y Plantillas examen grado/`) están
@@ -101,13 +103,16 @@ Criterios prefijados `a)`/`b)`/`c)` si el enunciado tiene partes. En preguntas d
 - **Modelos con fallback**: `MODELOS_GEMINI` es una lista (`gemini-flash-latest`, `gemini-3.5-flash`, …); se prueban en orden hasta uno disponible y se recuerda el que funciona (`examen-grado-gemini-modelo`). Google jubila modelos seguido — por eso la lista y el alias `-latest`. Ante 429/503 (saturación) reintenta y salta de modelo, avisando en pantalla (nada de esperas silenciosas).
 - La IA evalúa cada respuesta contra la pauta (acepta paráfrasis), marca criterios y da feedback; el usuario puede ajustar a mano. **Es función premium** (requiere acceso desbloqueado).
 
-## Modelo freemium (data/acceso.js + js/app.js)
+## Modelo freemium (data/acceso.js + js/app.js + Supabase)
 
 - **Demo gratis**: `ACCESO.demoPorMateria` (=4) preguntas por materia + corrección guiada. **Premium** (con código): las 228 + Examen Oficial + corrección IA.
-- Gating **client-side sin servidor**: `cyrb53(codigo + salt)` se compara contra `ACCESO.hashes`. El repo solo guarda **hashes**, jamás los códigos. `localStorage` `examen-grado-acceso="1"` = desbloqueado.
+- **Validación con backend (Supabase)** desde v13: los códigos son de **un solo uso**, amarrados a un **máximo de 2 dispositivos** (celular + notebook), y existen códigos **cortesía** ilimitados para amigos. Reemplazó al viejo gating client-side por hashes (`cyrb53`), que permitía compartir códigos sin límite.
+  - **Esquema**: tablas `codigos` (codigo, tipo `pago`|`cortesia`, max_dispositivos) y `dispositivos` (codigo, device_id). RLS activado sin policies → nadie lee las tablas directo. Toda la lógica de canje vive en la función `redeem_code(p_codigo, p_device)` (`security definer`, con `for update` para atomicidad), la única a la que el rol `anon` tiene `execute`.
+  - **Cliente**: `js/app.js` genera un `device_id` (UUID en `localStorage` `examen-grado-device`) y llama `POST {supabaseUrl}/rest/v1/rpc/redeem_code` con la clave anon en los headers `apikey` + `Authorization: Bearer`. Devuelve `{ok, motivo?, tipo?}`; motivos: `invalido`/`limite`/`red`/`config`/`dispositivo`. Si `ok`, se marca `localStorage` `examen-grado-acceso="1"`.
+  - **Config en `data/acceso.js`**: `supabaseUrl` + `supabaseAnonKey` (la clave **anon public** es segura de publicar; solo puede llamar `redeem_code`). Requiere internet **solo al desbloquear**; ya desbloqueado, la app sigue offline.
+  - **Cargar códigos**: correr `SUPABASE-SETUP-PRIVADO.sql` (GITIGNORED, generado por `scratchpad/gen-sql.js` desde `MIS-CODIGOS-PRIVADOS.txt`) en el SQL Editor de Supabase. Es idempotente. Trae los 100 de pago + 10 cortesía. Administración por SQL: marcar cortesía (`update codigos set tipo='cortesia' where codigo=...`), liberar un código (`delete from dispositivos where codigo=...`), ver canjes (`select * from dispositivos`).
 - **Mensaje de venta**: editar `ACCESO.contactoCompra` en `data/acceso.js` (hoy es un placeholder: falta que el usuario ponga su Instagram/WhatsApp y precio reales).
-- **Generar más códigos**: correr el script `gen-codigos.js` (mismo `cyrb53` + `salt`), pegar los hashes nuevos en `data/acceso.js` (subir `?v=`), y entregar los códigos en texto solo al usuario (nunca al repo). Guardarlos en `MIS-CODIGOS-PRIVADOS.txt` (gitignored).
-- **Limitación conocida y aceptada**: un comprador puede compartir su código (todo gating client-side lo permite). Suficiente para "ingreso marginal"; un candado real (1 código = 1 dispositivo, revocable) exigiría un backend.
+- **Límite residual aceptado**: el `device_id` vive en `localStorage`; si el usuario lo borra en su propio equipo puede recanjear con su código (sigue siendo su dispositivo). El amarre a 2 dispositivos impide repartir un código a varios amigos.
 
 ## Otros detalles
 

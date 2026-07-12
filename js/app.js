@@ -7,32 +7,57 @@ const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_ACCESO = "examen-grado-acceso";
 
 // ---------------------------------------------------------------------
-// Acceso freemium: demo hasta ingresar un código válido
+// Acceso freemium: demo hasta canjear un código (validado en Supabase).
+// El backend hace que cada código sea de UN SOLO USO, amarrado a un
+// máximo de dispositivos; los códigos "cortesía" son ilimitados.
 // ---------------------------------------------------------------------
-function cyrb53(str, seed = 0) {
-  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
-  for (let i = 0, ch; i < str.length; i++) {
-    ch = str.charCodeAt(i);
-    h1 = Math.imul(h1 ^ ch, 2654435761);
-    h2 = Math.imul(h2 ^ ch, 1597334677);
+const CLAVE_DEVICE = "examen-grado-device";
+
+// Identificador estable de este navegador/dispositivo (se crea una vez).
+function obtenerDeviceId() {
+  let id = localStorage.getItem(CLAVE_DEVICE);
+  if (!id) {
+    id = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : "dev-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 12);
+    localStorage.setItem(CLAVE_DEVICE, id);
   }
-  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
-  h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
-  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
-  h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
-  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+  return id;
 }
 
 function estaDesbloqueado() {
   return localStorage.getItem(CLAVE_ACCESO) === "1";
 }
 
-// Valida un código: normaliza, hashea y compara contra las huellas
-function validarCodigo(codigo) {
+// ¿Están puestas la URL y la clave anon de Supabase?
+function supabaseConfigurado() {
+  const u = window.ACCESO.supabaseUrl || "";
+  const k = window.ACCESO.supabaseAnonKey || "";
+  return /^https:\/\/.+\.supabase\.co/.test(u) && k.length > 20 && !k.startsWith("PEGA_AQUI");
+}
+
+// Canjea un código contra Supabase. Devuelve { ok, motivo?, tipo? }.
+async function canjearCodigo(codigo) {
   const limpio = (codigo || "").trim().toUpperCase().replace(/\s+/g, "");
-  if (!limpio) return false;
-  const hash = cyrb53(limpio + window.ACCESO.salt);
-  return window.ACCESO.hashes.includes(hash);
+  if (!limpio) return { ok: false, motivo: "invalido" };
+  if (!supabaseConfigurado()) return { ok: false, motivo: "config" };
+  try {
+    const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/redeem_code";
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "apikey": window.ACCESO.supabaseAnonKey,
+        "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ p_codigo: limpio, p_device: obtenerDeviceId() })
+    });
+    if (!res.ok) return { ok: false, motivo: "red" };
+    const data = await res.json();
+    return (data && typeof data === "object") ? data : { ok: false, motivo: "red" };
+  } catch (e) {
+    return { ok: false, motivo: "red" };
+  }
 }
 
 // Limita una lista de preguntas al cupo demo cuando está bloqueado
@@ -78,22 +103,46 @@ function iniciarAcceso() {
   $("#modal-acceso").addEventListener("click", (e) => {
     if (e.target === $("#modal-acceso")) cerrarModalAcceso();
   });
-  $("#modal-validar").addEventListener("click", () => {
-    const codigo = $("#modal-codigo").value;
-    if (validarCodigo(codigo)) {
-      desbloquear();
-      $("#modal-estado").textContent = "✅ ¡Acceso desbloqueado! Ya tienes las 228 preguntas.";
-      $("#modal-estado").style.color = "var(--exito)";
-      setTimeout(cerrarModalAcceso, 1400);
-    } else {
-      $("#modal-estado").textContent = "❌ Código no válido. Revisa que esté bien escrito.";
-      $("#modal-estado").style.color = "var(--peligro)";
-    }
-  });
+  $("#modal-validar").addEventListener("click", canjearYReflejar);
   $("#modal-codigo").addEventListener("keydown", (e) => {
-    if (e.key === "Enter") $("#modal-validar").click();
+    if (e.key === "Enter") canjearYReflejar();
   });
   reflejarAcceso();
+}
+
+// Valida el código escrito, muestra estado de carga y refleja el resultado.
+async function canjearYReflejar() {
+  const boton = $("#modal-validar");
+  const estado = $("#modal-estado");
+  const codigo = $("#modal-codigo").value;
+  if (!codigo.trim()) {
+    estado.textContent = "Escribe tu código primero.";
+    estado.style.color = "var(--peligro)";
+    return;
+  }
+  boton.disabled = true;
+  estado.style.color = "";
+  estado.textContent = "⏳ Validando código…";
+  const r = await canjearCodigo(codigo);
+  boton.disabled = false;
+  if (r.ok) {
+    desbloquear();
+    estado.textContent = r.tipo === "cortesia"
+      ? "🎁 ¡Acceso cortesía activado! Ya tienes las 228 preguntas."
+      : "✅ ¡Acceso desbloqueado! Ya tienes las 228 preguntas.";
+    estado.style.color = "var(--exito)";
+    setTimeout(cerrarModalAcceso, 1500);
+  } else {
+    const mensajes = {
+      invalido: "❌ Código no válido. Revisa que esté bien escrito.",
+      limite: "❌ Este código ya se usó en el máximo de dispositivos. Si es tuyo y cambiaste de equipo, escríbeme para reactivarlo.",
+      red: "⚠️ No se pudo conectar para validar. Revisa tu conexión a internet e intenta de nuevo.",
+      config: "⚠️ El sistema de códigos aún no está activo. Escríbeme para obtener acceso.",
+      dispositivo: "⚠️ No se pudo identificar este dispositivo. Prueba en otro navegador."
+    };
+    estado.textContent = mensajes[r.motivo] || "❌ No se pudo validar el código. Intenta de nuevo.";
+    estado.style.color = "var(--peligro)";
+  }
 }
 
 const CLAVE_GEMINI = "examen-grado-gemini-key";
