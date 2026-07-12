@@ -843,6 +843,1029 @@ window.BANCO.materias.push({
         "Evaluar solo el qué (resultados) o solo el cómo (competencias), cuando la empresa busca ambas cosas.",
         "Dejar la evaluación como un evento aislado, sin conectarla con capacitación, compensación y carrera (ciclo abierto)."
       ]
+    },
+    {
+      id: "gdp-046",
+      tema: "Tipos de departamentalización",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste la departamentalización dentro del diseño de la estructura organizacional y describa tres (3) criterios o tipos de departamentalización distintos, entregando un ejemplo de cada uno.",
+      respuestaModelo: "La departamentalización es el criterio con que se agrupan los cargos y las actividades de una organización en unidades o departamentos, definiendo cómo se divide y coordina el trabajo. Es una decisión de diseño estructural que debe responder al modelo de negocio y a la estrategia.\n\nTres criterios o tipos (tres entre los siguientes):\n1) Funcional: agrupa por funciones o especialidades similares (marketing, finanzas, operaciones, personas). Ejemplo: una industria manufacturera con gerencias de Producción, Comercial y Administración. Favorece la especialización y la eficiencia, pero puede generar silos.\n2) Por producto o divisional: agrupa por líneas de producto o unidades de negocio, cada una con sus propias funciones. Ejemplo: un holding con divisiones de retail, inmobiliaria y financiera. Da foco y responsabilidad por resultados, pero duplica recursos.\n3) Geográfica: agrupa por zonas o territorios. Ejemplo: una empresa con gerencias Zona Norte, Centro y Sur. Acerca la organización al cliente local, pero dificulta la coordinación global.\n4) Por cliente: agrupa según segmentos de clientes (empresas, personas, sector público). \n5) Matricial: combina dos criterios simultáneamente (por ejemplo funcional y por proyecto), con doble reporte.",
+      criterios: [
+        { texto: "Explica qué es la departamentalización como criterio de agrupación de cargos en el diseño estructural", peso: 2 },
+        { texto: "Describe correctamente tres tipos o criterios de departamentalización distintos", peso: 3 },
+        { texto: "Entrega un ejemplo válido y coherente para cada tipo mencionado", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir departamentalización con organigrama: el organigrama es la representación gráfica, la departamentalización es el criterio de agrupación.",
+        "Describir un solo tipo (usualmente el funcional) como si fuera el único.",
+        "Dar ejemplos que no corresponden al criterio nombrado."
+      ]
+    },
+    {
+      id: "gdp-047",
+      tema: "Métodos de análisis y levantamiento de cargos",
+      dificultad: "facil",
+      enunciado: "El análisis de cargos es la base de la descripción y especificación de puestos. Mencione y explique tres (3) métodos o técnicas para levantar la información de un cargo, señalando una ventaja de cada uno.",
+      respuestaModelo: "El análisis de cargos es el proceso de recolectar y sistematizar la información sobre las tareas, responsabilidades y requisitos de un puesto, insumo para la descripción del cargo (qué se hace) y la especificación (qué requisitos exige). Tres métodos (tres entre los siguientes):\n\n1) Observación directa: el analista observa cómo se ejecuta el trabajo en terreno. Ventaja: capta la realidad concreta de la tarea y es útil en cargos operativos o manuales de ciclo corto.\n2) Entrevista: se conversa con el ocupante del cargo y/o su jefatura. Ventaja: permite profundizar y aclarar dudas, capturando responsabilidades poco visibles y el sentido del cargo.\n3) Cuestionario: el ocupante completa un formulario estructurado sobre sus funciones. Ventaja: es económico y permite levantar muchos cargos a la vez de forma estandarizada.\n4) Método de incidentes críticos o bitácora: se registran situaciones o comportamientos clave para el desempeño. Ventaja: identifica las competencias realmente diferenciadoras.\nLo habitual es combinar métodos para mejorar la validez de la información.",
+      criterios: [
+        { texto: "Explica brevemente qué es el análisis de cargos y para qué sirve (base de descripción y especificación)", peso: 2 },
+        { texto: "Menciona y explica tres métodos válidos de levantamiento (observación, entrevista, cuestionario, incidentes críticos)", peso: 3 },
+        { texto: "Señala una ventaja pertinente de cada método", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir el análisis de cargos con la evaluación del desempeño del ocupante.",
+        "Nombrar los métodos sin explicar en qué consisten ni su ventaja.",
+        "Suponer que un solo método basta para cualquier cargo."
+      ]
+    },
+    {
+      id: "gdp-048",
+      tema: "Reclutamiento en redes sociales y employer branding",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "Explique qué es el reclutamiento a través de redes sociales y su relación con el employer branding (marca empleadora). Señale dos (2) ventajas y una (1) desventaja o riesgo de reclutar por este medio.",
+      respuestaModelo: "El reclutamiento por redes sociales consiste en atraer candidatos usando plataformas como LinkedIn, Instagram o portales digitales, difundiendo vacantes y contenido de la empresa para captar talento. El employer branding o marca empleadora es la reputación de la empresa como lugar para trabajar: la imagen y propuesta de valor que proyecta a candidatos actuales y potenciales. Ambos se relacionan porque las redes son el principal canal para construir y comunicar esa marca empleadora; una buena marca hace que el reclutamiento en redes atraiga más y mejores candidatos de forma alineada al modelo de personas.\n\nDos ventajas:\n1) Alcance y costo: llega a una gran cantidad de candidatos, incluidos los pasivos (que no buscan activamente), a bajo costo y con rapidez.\n2) Segmentación y fit: permite dirigir la búsqueda por competencias, industria o intereses, y muestra la cultura de la empresa, mejorando el ajuste cultural.\n\nUna desventaja o riesgo: puede generar un volumen alto de postulaciones poco filtradas, sesgos si se descarta por información personal de los perfiles, y daño reputacional si la comunicación no cuida la marca empleadora.",
+      criterios: [
+        { texto: "Explica qué es el reclutamiento por redes sociales", peso: 2 },
+        { texto: "Relaciona el reclutamiento en redes con el employer branding o marca empleadora", peso: 2 },
+        { texto: "Señala dos ventajas válidas (alcance, costo, candidatos pasivos, segmentación, difusión de cultura)", peso: 2 },
+        { texto: "Señala una desventaja o riesgo válido (exceso de postulaciones, sesgos, riesgo reputacional)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir el employer branding solo a publicar avisos, ignorando que es la reputación como empleador.",
+        "Confundir reclutamiento (atraer) con selección (elegir).",
+        "Presentar el canal como infalible, sin reconocer sus riesgos."
+      ]
+    },
+    {
+      id: "gdp-049",
+      tema: "Entrevista conductual y método STAR",
+      dificultad: "facil",
+      enunciado: "Explique en qué se basa la entrevista por competencias (entrevista conductual) y describa el método STAR que se utiliza para estructurar sus preguntas y respuestas.",
+      respuestaModelo: "La entrevista por competencias o conductual se basa en el supuesto de que el mejor predictor del comportamiento futuro es el comportamiento pasado: en lugar de preguntar qué haría el candidato hipotéticamente, se le pide que relate situaciones reales que efectivamente vivió, para evaluar si posee las competencias del perfil (por ejemplo trabajo en equipo, orientación al logro, liderazgo).\n\nEl método STAR estructura la indagación en cuatro componentes:\n- S (Situación): el contexto o circunstancia concreta que enfrentó el candidato.\n- T (Tarea): el objetivo, desafío o responsabilidad que tenía en esa situación.\n- A (Acción): lo que hizo específicamente él o ella, sus conductas concretas (no las del equipo en general).\n- R (Resultado): el desenlace y su aporte, idealmente con evidencia de impacto y aprendizaje.\nEl entrevistador guía con preguntas hasta cubrir las cuatro partes, lo que reduce respuestas genéricas y permite evaluar la competencia con evidencia conductual comparable entre candidatos.",
+      criterios: [
+        { texto: "Explica el fundamento de la entrevista conductual (el comportamiento pasado predice el futuro)", peso: 2 },
+        { texto: "Describe los cuatro componentes del método STAR (Situación, Tarea, Acción, Resultado)", peso: 3 },
+        { texto: "Señala que el foco está en la acción concreta del candidato y en el resultado evidenciable", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir la entrevista conductual con preguntas hipotéticas del tipo qué haría usted si.",
+        "Invertir u omitir componentes del STAR.",
+        "Evaluar las acciones del equipo y no la contribución individual del entrevistado."
+      ]
+    },
+    {
+      id: "gdp-050",
+      tema: "Objetivos y beneficios de la inducción",
+      dificultad: "facil",
+      enunciado: "Defina qué es un proceso de inducción (onboarding) e indique tres (3) objetivos o beneficios que persigue para el nuevo colaborador y para la organización.",
+      respuestaModelo: "La inducción u onboarding es el proceso formal y planificado mediante el cual la organización recibe e integra a un nuevo colaborador, presentándole la empresa, su cultura, sus políticas, su equipo y las expectativas y funciones de su cargo, durante sus primeros días o semanas.\n\nTres objetivos o beneficios (tres entre los siguientes):\n1) Reducir la ansiedad e incertidumbre del ingreso, entregando claridad sobre el rol, las reglas y con quién contar, lo que acelera la adaptación.\n2) Acortar la curva de aprendizaje y alcanzar antes la productividad plena, al entregar desde el inicio información, herramientas y accesos.\n3) Transmitir la cultura y los valores, fortaleciendo el sentido de pertenencia y el compromiso temprano.\n4) Reducir la rotación temprana y sus costos, al evitar el choque entre expectativas y realidad y hacer sentir al nuevo bienvenido y valorado.\nPara la organización, todo ello se traduce en menor rotación, mejor clima y una imagen de empleador cuidadoso.",
+      criterios: [
+        { texto: "Define la inducción como proceso formal y planificado de recepción e integración del nuevo colaborador", peso: 2 },
+        { texto: "Indica tres objetivos o beneficios válidos (reducir ansiedad, claridad de rol, acelerar productividad, transmitir cultura, reducir rotación)", peso: 3 },
+        { texto: "Distingue beneficios para la persona y/o para la organización", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir la inducción a la entrega de un computador o credenciales el primer día.",
+        "Confundir inducción (evento formal acotado) con socialización (proceso continuo de integración).",
+        "Enumerar objetivos sin relacionarlos con la adaptación o la retención."
+      ]
+    },
+    {
+      id: "gdp-051",
+      tema: "Niveles de evaluación de Kirkpatrick",
+      dificultad: "facil",
+      enunciado: "Describa los cuatro (4) niveles del modelo de Kirkpatrick para evaluar la efectividad de una capacitación y explique por qué medir solo el primer nivel es insuficiente.",
+      respuestaModelo: "El modelo de Kirkpatrick propone evaluar la capacitación en cuatro niveles de profundidad creciente:\n1) Reacción: mide la satisfacción de los participantes con la actividad (les gustó, el relator, los contenidos). Se levanta con encuestas al final del curso.\n2) Aprendizaje: mide cuánto aumentaron los conocimientos, habilidades o actitudes; se evalúa con pruebas antes/después o ejercicios.\n3) Conducta o transferencia: mide en qué grado el participante aplica lo aprendido en su puesto de trabajo, semanas o meses después; se observa con indicadores de desempeño y seguimiento de la jefatura.\n4) Resultados: mide el impacto organizacional (productividad, calidad, ventas, reclamos, seguridad) atribuible a la capacitación; en un quinto nivel (Phillips) se calcula el ROI.\n\nMedir solo el nivel 1 es insuficiente porque la satisfacción no garantiza que se haya aprendido ni, sobre todo, que lo aprendido se transfiera al trabajo y genere resultados. Una capacitación puede tener 90% de satisfacción y cero impacto en el desempeño; lo que interesa a la empresa es la transferencia y los resultados, no solo que el curso haya gustado.",
+      criterios: [
+        { texto: "Describe los dos primeros niveles: reacción (satisfacción) y aprendizaje (aumento de conocimientos/habilidades)", peso: 2 },
+        { texto: "Describe los niveles de conducta o transferencia (aplicación en el puesto) y de resultados (impacto organizacional)", peso: 2 },
+        { texto: "Explica por qué medir solo la reacción es insuficiente (satisfacción no asegura aprendizaje ni transferencia ni impacto)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir el nivel de reacción (satisfacción) con la efectividad real (transferencia y resultados).",
+        "Invertir el orden o mezclar los niveles.",
+        "Omitir el nivel de conducta o transferencia, que es el que conecta la formación con el puesto."
+      ]
+    },
+    {
+      id: "gdp-052",
+      tema: "Franquicia tributaria SENCE",
+      dificultad: "facil",
+      enunciado: "En el contexto chileno, explique qué es la franquicia tributaria SENCE como mecanismo de financiamiento de la capacitación y señale dos (2) condiciones o características de su uso.",
+      respuestaModelo: "La franquicia tributaria SENCE (Servicio Nacional de Capacitación y Empleo, Ley 19.518) es un incentivo estatal que permite a las empresas contribuyentes de primera categoría descontar de sus impuestos los gastos incurridos en capacitar a sus trabajadores, hasta un tope del 1% de la planilla anual de remuneraciones imponibles. Su objetivo es fomentar la inversión en formación del capital humano.\n\nDos condiciones o características (dos entre las siguientes):\n1) Los cursos deben ejecutarse a través de organismos autorizados: OTEC (Organismos Técnicos de Capacitación), pudiendo gestionarse vía OTIC (Organismos Técnicos Intermedios) o directamente ante SENCE.\n2) Existen topes según el tramo de renta del trabajador (la franquicia cubre un porcentaje decreciente a mayor sueldo) y se exige una asistencia mínima (habitualmente 75%) y el cumplimiento de requisitos administrativos para liquidar el beneficio.\n3) La capacitación debe estar registrada y cumplir con valores hora SENCE y comunicación de las acciones dentro de los plazos.",
+      criterios: [
+        { texto: "Explica que la franquicia SENCE permite descontar de impuestos gastos de capacitación (hasta 1% de la planilla)", peso: 2 },
+        { texto: "Señala una primera condición válida (ejecutar los cursos vía organismos autorizados: OTEC/OTIC/SENCE)", peso: 2 },
+        { texto: "Señala una segunda condición válida (topes por tramo de renta, asistencia mínima o requisitos administrativos)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir la franquicia tributaria (rebaja de impuestos) con un subsidio o pago directo del Estado a la empresa.",
+        "Ignorar que la capacitación debe ejecutarse por organismos autorizados (OTEC).",
+        "Afirmar que cubre el 100% de cualquier gasto de capacitación sin topes."
+      ]
+    },
+    {
+      id: "gdp-053",
+      tema: "Características de la retroalimentación efectiva",
+      dificultad: "facil",
+      enunciado: "La retroalimentación es el hito central de la gestión del desempeño. Explique qué es un buen proceso de retroalimentación y mencione tres (3) características o buenas prácticas que debe cumplir.",
+      respuestaModelo: "La retroalimentación es la conversación mediante la cual la jefatura comunica al colaborador cómo ha sido su desempeño, reconoce logros, aborda brechas y acuerda acciones de mejora. Es el hito donde la evaluación se transforma en desarrollo: sin retroalimentación, evaluar no sirve de nada. Involucra al evaluador y al evaluado en un diálogo, no un monólogo.\n\nTres características o buenas prácticas (tres entre las siguientes):\n1) Específica y basada en hechos: se apoya en ejemplos y conductas observables concretas, no en juicios genéricos como buen trabajo o hay que mejorar.\n2) Oportuna: se entrega cerca del hecho, no meses después; idealmente es continua durante el período, no solo una vez al año.\n3) Equilibrada y respetuosa: reconoce fortalezas y aborda las brechas con respeto, cuidando a la persona y criticando la conducta, no al individuo.\n4) Bidireccional: escucha la perspectiva del evaluado.\n5) Orientada al futuro: termina con acuerdos concretos y un plan de acción o desarrollo.",
+      criterios: [
+        { texto: "Explica qué es la retroalimentación y su rol como hito que transforma la evaluación en desarrollo", peso: 2 },
+        { texto: "Menciona tres características o buenas prácticas válidas (específica/basada en hechos, oportuna, respetuosa, bidireccional, con plan de acción)", peso: 3 },
+        { texto: "Presenta la retroalimentación como diálogo y no como monólogo o sanción", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir el feedback a un buen trabajo genérico sin hechos ni conductas concretas.",
+        "Concebir la retroalimentación como una crítica unidireccional o un ajuste de cuentas anual.",
+        "No cerrar la conversación con acuerdos ni plan de mejora."
+      ]
+    },
+    {
+      id: "gdp-054",
+      tema: "Salario emocional",
+      dificultad: "facil",
+      enunciado: "Defina el concepto de salario emocional y explique, con tres (3) ejemplos concretos, por qué se ha vuelto relevante para atraer y retener talento, especialmente en las nuevas generaciones.",
+      respuestaModelo: "El salario emocional es el conjunto de compensaciones no monetarias e intangibles que una empresa entrega a sus colaboradores para mejorar su calidad de vida, su bienestar y el sentido de su trabajo, más allá del sueldo. Responde a la idea de que las personas no solo buscan dinero, sino propósito, equilibrio y reconocimiento.\n\nTres ejemplos concretos (tres entre los siguientes):\n1) Flexibilidad y trabajo híbrido o remoto, y horarios flexibles, que permiten conciliar vida personal y laboral.\n2) Reconocimiento y retroalimentación frecuente de los logros, que satisface la necesidad de estima.\n3) Desarrollo y aprendizaje: posibilidades de crecer, capacitarse y hacer carrera.\n4) Propósito y buen clima: sentido de contribución, cultura sana, programas de bienestar y salud mental.\n\nSe ha vuelto relevante porque las generaciones más jóvenes (millennials y Generación Z) otorgan gran importancia a la salud mental, al equilibrio vida-trabajo y a la búsqueda de propósito; cuando la higiene salarial ya está cubierta, es el salario emocional el que motiva, atrae y retiene, reduciendo la rotación voluntaria.",
+      criterios: [
+        { texto: "Define el salario emocional como compensación no monetaria e intangible orientada al bienestar y el sentido del trabajo", peso: 2 },
+        { texto: "Entrega tres ejemplos concretos válidos (flexibilidad, reconocimiento, desarrollo, propósito, bienestar)", peso: 2 },
+        { texto: "Explica su relevancia para atraer y retener talento en las nuevas generaciones", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir salario emocional con bonos o dinero: precisamente es lo no monetario.",
+        "Reducirlo a fruta en la oficina o beneficios superficiales sin conectarlo con bienestar y propósito.",
+        "Ignorar que solo motiva de forma sostenible cuando la remuneración base es justa (higiene cubierta)."
+      ]
+    },
+    {
+      id: "gdp-055",
+      tema: "Teoría de la equidad de Adams",
+      dificultad: "facil",
+      enunciado: "Explique la teoría de la equidad de Adams y cómo influye en la motivación y la percepción de justicia de los trabajadores. Indique qué puede ocurrir cuando una persona percibe inequidad.",
+      respuestaModelo: "La teoría de la equidad de J. Stacy Adams sostiene que las personas evalúan la justicia de su situación laboral comparando la razón entre sus aportes (esfuerzo, tiempo, experiencia, resultados) y sus recompensas (sueldo, reconocimiento, beneficios) con la misma razón de otros trabajadores de referencia (compañeros, personas en cargos similares dentro o fuera de la empresa).\n\n- Si percibe que su relación aporte/recompensa es equivalente a la de los demás, siente equidad y se mantiene motivada.\n- Si percibe inequidad (recibe menos por el mismo aporte, o ve que otros reciben más sin merecerlo), surge una tensión que la persona busca reducir.\n\nAnte la inequidad, puede: reducir su esfuerzo o compromiso para equilibrar la ecuación; exigir un aumento o mejores condiciones; cambiar su referente de comparación; desmotivarse, generar conflictos o incluso renunciar (rotación). Por eso la equidad interna (justicia entre cargos dentro de la empresa) y la externa (competitividad con el mercado) son claves en el diseño de compensaciones: la percepción de injusticia deteriora el clima y la motivación aunque los sueldos sean objetivamente altos.",
+      criterios: [
+        { texto: "Explica que la motivación depende de comparar la razón aportes/recompensas propia con la de otros referentes", peso: 3 },
+        { texto: "Distingue la percepción de equidad de la de inequidad", peso: 1 },
+        { texto: "Indica consecuencias de la inequidad percibida (baja del esfuerzo, reclamos, desmotivación, rotación)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Reducir la teoría a que la gente quiere ganar más, ignorando que lo central es la comparación y la percepción de justicia.",
+        "Olvidar que la inequidad puede ser tanto por recibir de menos como por ver que otros reciben de más sin merecerlo.",
+        "Confundir equidad (comparación justa) con igualdad (todos lo mismo)."
+      ]
+    },
+    {
+      id: "gdp-056",
+      tema: "Actitudes laborales: satisfacción y compromiso",
+      dificultad: "facil",
+      enunciado: "En el marco del comportamiento organizacional, distinga los conceptos de satisfacción laboral y compromiso organizacional, y explique por qué son relevantes para la gestión de personas.",
+      respuestaModelo: "El comportamiento organizacional estudia cómo las personas actúan dentro de las organizaciones. Dos actitudes laborales clave son:\n\n- Satisfacción laboral: es la actitud o sentimiento general, positivo o negativo, que una persona tiene hacia su trabajo y sus distintas facetas (tareas, sueldo, jefatura, compañeros, condiciones). Es cómo se siente el trabajador respecto de su empleo.\n- Compromiso organizacional: es el grado de identificación y vínculo psicológico del trabajador con la organización y sus objetivos, y su deseo de permanecer en ella. Suele distinguirse en compromiso afectivo (querer quedarse), de continuidad (necesitar quedarse por costos de irse) y normativo (sentir que debe quedarse).\n\nSon relevantes para la gestión de personas porque se asocian con resultados: mayor satisfacción y compromiso se vinculan con mejor desempeño, menor ausentismo, menor rotación y mejor clima y servicio al cliente. Diagnosticarlos (por ejemplo con encuestas de clima o de engagement) permite anticipar fugas de talento y diseñar intervenciones de motivación, reconocimiento y desarrollo.",
+      criterios: [
+        { texto: "Define satisfacción laboral como actitud/sentimiento hacia el trabajo", peso: 2 },
+        { texto: "Define compromiso organizacional como identificación y vínculo con la organización y deseo de permanecer", peso: 2 },
+        { texto: "Explica su relevancia para la gestión de personas (desempeño, ausentismo, rotación, clima)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Usar satisfacción y compromiso como sinónimos: se puede estar satisfecho sin estar comprometido y viceversa.",
+        "Reducir el compromiso solo a la antigüedad en la empresa.",
+        "No conectar estas actitudes con resultados concretos de la organización."
+      ]
+    },
+    {
+      id: "gdp-057",
+      tema: "Liderazgo situacional de Hersey y Blanchard",
+      dificultad: "facil",
+      enunciado: "Explique la idea central del liderazgo situacional de Hersey y Blanchard y describa cómo el estilo del líder debe adaptarse al nivel de madurez o desarrollo del colaborador.",
+      respuestaModelo: "El liderazgo situacional de Hersey y Blanchard plantea que no existe un único estilo de liderazgo óptimo: el líder efectivo adapta su estilo al nivel de madurez o desarrollo del colaborador para una tarea determinada, entendido como la combinación de su competencia (capacidad, conocimiento, experiencia) y su compromiso o motivación.\n\nEl modelo combina dos dimensiones: conducta de tarea (dar dirección e instrucciones) y conducta de relación (apoyar, escuchar, motivar), generando cuatro estilos:\n1) Dirigir (E1): alta tarea, baja relación. Para colaboradores nuevos, con baja competencia pero motivados: necesitan instrucciones claras.\n2) Persuadir o entrenar (E2): alta tarea, alta relación. Para quienes ya tienen algo de experiencia pero han perdido motivación: se explica y se apoya.\n3) Participar o apoyar (E3): baja tarea, alta relación. Para colaboradores competentes pero inseguros o poco motivados: se comparten decisiones y se anima.\n4) Delegar (E4): baja tarea, baja relación. Para colaboradores maduros, competentes y comprometidos: se les entrega autonomía.\n\nLa idea central: el buen líder diagnostica en qué nivel está la persona y flexibiliza su estilo, en vez de tratar a todos por igual.",
+      criterios: [
+        { texto: "Explica la idea central: el estilo de liderazgo debe adaptarse al nivel de madurez/desarrollo del colaborador", peso: 2 },
+        { texto: "Menciona las dimensiones de tarea (dirección) y relación (apoyo)", peso: 2 },
+        { texto: "Describe cómo varía el estilo (de dirigir a delegar) según competencia y compromiso del colaborador", peso: 2 }
+      ],
+      erroresComunes: [
+        "Sostener que existe un único mejor estilo de liderazgo para todos los casos.",
+        "Confundir madurez del colaborador con su edad o antigüedad, en vez de competencia y compromiso para la tarea.",
+        "Aplicar delegación a personas que aún no tienen la competencia, o microgestionar a quienes ya son autónomos."
+      ]
+    },
+    {
+      id: "gdp-058",
+      tema: "Estructura mecánica versus orgánica según la estrategia",
+      dificultad: "media",
+      enunciado: "Dos empresas chilenas conviven en el mismo grupo económico: \"Aguas del Valle\", una sanitaria regulada y estable, y \"NovaLab\", una startup de biotecnología que innova constantemente. El holding quiere imponer a ambas la misma estructura organizacional rígida, muy jerárquica y con procedimientos estandarizados.\n\na) Distinga entre estructura mecánica (burocrática) y estructura orgánica (flexible), señalando dos características de cada una.\nb) Recomiende qué tipo de estructura conviene a cada empresa y por qué, fundamentando en su modelo de negocio y estrategia.",
+      respuestaModelo: "a) La estructura mecánica o burocrática se caracteriza por alta formalización (muchas reglas y procedimientos), fuerte jerarquía y centralización de las decisiones, división muy especializada del trabajo y comunicación vertical. Es eficiente y controlada, apta para entornos estables. La estructura orgánica o flexible se caracteriza por baja formalización, descentralización de decisiones, equipos y roles polivalentes, comunicación horizontal y adaptabilidad. Favorece la innovación y la respuesta rápida en entornos cambiantes.\n\nb) Recomendación:\n- Aguas del Valle (sanitaria regulada, entorno estable, foco en eficiencia, seguridad y cumplimiento normativo): le conviene una estructura predominantemente mecánica. La estandarización y el control aseguran calidad, continuidad del servicio y cumplimiento regulatorio; su negocio no exige innovación permanente sino confiabilidad.\n- NovaLab (biotecnología, entorno dinámico, estrategia basada en innovación): le conviene una estructura orgánica. Necesita flexibilidad, decisiones rápidas, colaboración entre especialistas y capacidad de experimentar; una estructura rígida ahogaría la innovación y la agilidad que constituyen su ventaja competitiva.\n\nImponer la misma estructura rígida a ambas sería un error: la estructura debe seguir a la estrategia y al entorno (there is no one best way). Lo adecuado para una puede ser destructivo para la otra.",
+      criterios: [
+        { texto: "a) Distingue estructura mecánica y orgánica con dos características de cada una", peso: 3 },
+        { texto: "b) Recomienda estructura mecánica para la sanitaria estable y la fundamenta en su modelo de negocio", peso: 2 },
+        { texto: "b) Recomienda estructura orgánica para la startup innovadora y la fundamenta en su estrategia", peso: 2 },
+        { texto: "b) Sostiene que la estructura debe alinearse a la estrategia y al entorno (no hay una estructura única óptima)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Afirmar que la estructura orgánica siempre es mejor que la mecánica: depende del entorno y la estrategia.",
+        "Describir las estructuras sin conectarlas con el negocio de cada empresa del caso.",
+        "Confundir estructura mecánica con maltrato o mala gestión; es un diseño válido para entornos estables."
+      ]
+    },
+    {
+      id: "gdp-059",
+      tema: "Perfil por competencias versus descripción tradicional",
+      dificultad: "media",
+      enunciado: "Una empresa de retail describe sus cargos con listas de tareas y requisitos formales (títulos y años de experiencia), pero varios trabajadores que cumplían todos los requisitos han tenido mal desempeño, mientras que otros sin el título ideal destacan.\n\na) Explique la diferencia entre el enfoque tradicional y el enfoque por competencias en la descripción de puestos.\nb) Proponga cómo debería rediseñar la empresa la descripción de un cargo de \"Jefe de Tienda\" bajo el enfoque por competencias, indicando tres (3) competencias clave y por qué predicen mejor el desempeño que los requisitos formales.",
+      respuestaModelo: "a) El enfoque tradicional describe el cargo como un listado de tareas, funciones y requisitos formales (estudios, años de experiencia, conocimientos técnicos). Se centra en el qué se hace y en credenciales. El enfoque por competencias describe el cargo en función de las competencias -conjuntos de conocimientos, habilidades y actitudes/comportamientos observables- que predicen un desempeño superior. Se centra en el cómo se logran los resultados y en conductas demostrables, no solo en títulos. El caso muestra la limitación del enfoque tradicional: cumplir requisitos formales no garantiza desempeño, porque las competencias conductuales (liderazgo, orientación al cliente) no se capturan con un título.\n\nb) Descripción del Jefe de Tienda por competencias (tres competencias clave, por ejemplo):\n1) Liderazgo de equipos: capacidad de dirigir, motivar y desarrollar a los vendedores, gestionar turnos y resolver conflictos. Predice el desempeño porque el resultado de la tienda depende de cómo moviliza a su gente.\n2) Orientación al cliente y a resultados comerciales: foco en la experiencia de compra y en el cumplimiento de metas de venta e indicadores.\n3) Resolución de problemas y toma de decisiones bajo presión: manejo de quiebres de stock, reclamos e imprevistos operativos.\nEstas competencias predicen mejor el desempeño porque describen comportamientos concretos asociados al éxito en el rol; en cambio, un título o los años de experiencia son solo indicios indirectos que no aseguran que la persona sepa liderar o vender. La selección y evaluación deben medir estas competencias (por ejemplo con entrevista conductual STAR).",
+      criterios: [
+        { texto: "a) Distingue el enfoque tradicional (tareas y requisitos formales) del enfoque por competencias (conocimientos, habilidades y conductas)", peso: 3 },
+        { texto: "b) Propone tres competencias clave pertinentes para un Jefe de Tienda", peso: 3 },
+        { texto: "b) Explica por qué las competencias predicen mejor el desempeño que los requisitos formales, conectando con el caso", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir competencia (conocimiento + habilidad + actitud demostrada en conducta) con un mero requisito o título.",
+        "Listar tareas en lugar de competencias al rediseñar el cargo.",
+        "No explicar el vínculo entre competencias y desempeño superior."
+      ]
+    },
+    {
+      id: "gdp-060",
+      tema: "Diseño del reclutamiento alineado al modelo de personas",
+      dificultad: "media",
+      enunciado: "Una empresa de servicios define en su estrategia que su ventaja competitiva es la excelencia en la atención y la innovación. Sin embargo, sus procesos de reclutamiento se limitan a publicar avisos genéricos y a filtrar por título y experiencia, sin criterios claros ligados a la estrategia.\n\na) Explique qué significa diseñar el reclutamiento en alineamiento con el modelo de personas y la estrategia de la empresa.\nb) Proponga dos (2) ajustes concretos al reclutamiento de esta empresa para que atraiga candidatos coherentes con su ventaja competitiva, explicando el efecto de cada uno.",
+      respuestaModelo: "a) Diseñar el reclutamiento alineado al modelo de personas y a la estrategia significa que la forma de atraer talento no es genérica, sino que se define a partir de las competencias y valores que construyen la ventaja competitiva de la empresa. El modelo de personas traduce la estrategia en el tipo de talento que la organización necesita (qué competencias, qué perfil cultural), y el reclutamiento -canales, mensajes, criterios de filtro y marca empleadora- se diseña para atraer justamente a ese perfil. Reclutar sin este alineamiento (avisos genéricos, filtro solo por título) atrae candidatos que pueden cumplir requisitos formales pero no aportar a la ventaja competitiva.\n\nb) Ajustes concretos (dos, por ejemplo):\n1) Definir el perfil por competencias ligadas a la estrategia (orientación al cliente, innovación, adaptabilidad) y construir avisos y filtros en torno a ellas, no solo al título. Efecto: el pool de candidatos se vuelve pertinente, atrae a quienes tienen las competencias que dan ventaja y descarta antes a los que no calzan.\n2) Elegir canales y mensajes coherentes con el perfil y trabajar la marca empleadora (por ejemplo, comunicar en redes historias de innovación y buen servicio, presencia en comunidades del rubro). Efecto: atrae candidatos que se identifican con esa cultura (mejor fit), mejorando la calidad de las contrataciones y la retención.\nOtros válidos: preview realista del cargo, referidos internos que ya encarnan la cultura, pruebas situacionales de atención en la selección.",
+      criterios: [
+        { texto: "a) Explica que el reclutamiento debe derivar del modelo de personas y de las competencias/valores que dan la ventaja competitiva", peso: 3 },
+        { texto: "b) Propone dos ajustes concretos y pertinentes (perfil por competencias, canales/marca empleadora, preview realista, referidos)", peso: 3 },
+        { texto: "b) Explica el efecto de cada ajuste sobre la calidad del pool o el fit de los candidatos", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar el reclutamiento como un trámite genérico desligado de la estrategia.",
+        "Reducir el alineamiento a publicar en más portales, sin cambiar criterios ni perfil.",
+        "Filtrar solo por credenciales formales ignorando las competencias que dan ventaja competitiva."
+      ]
+    },
+    {
+      id: "gdp-061",
+      tema: "Selección con inteligencia artificial: riesgos y resguardos",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa automatizó su selección: un algoritmo de IA filtra los CV, reemplazó las entrevistas por videos analizados automáticamente y preselecciona candidatos por análisis de datos. Logró más rapidez, pero aumentaron las renuncias en los primeros tres meses y hubo críticas de candidatos sobre una experiencia \"fría e impersonal\".\n\na) Analice dos (2) debilidades o riesgos de automatizar completamente la selección con IA, desde la perspectiva del ciclo de selección.\nb) Proponga dos (2) ajustes al diseño del proceso que corrijan esas debilidades sin renunciar a los beneficios de la tecnología.",
+      respuestaModelo: "a) Debilidades o riesgos (dos entre los siguientes):\n1) Sesgos algorítmicos y pérdida de validez: si el algoritmo se entrena con datos históricos, puede replicar y amplificar sesgos (de género, edad, origen) y filtrar por correlaciones espurias, descartando buenos candidatos. Además, un video analizado automáticamente puede medir rasgos poco relacionados con el desempeño, bajando la validez predictiva de la selección.\n2) Deterioro de la experiencia del candidato y del fit cultural: la selección es la primera aproximación del candidato a la cultura; un proceso totalmente impersonal transmite una cultura fría, daña la marca empleadora y no permite evaluar el ajuste cultural ni las motivaciones. Esto se relaciona con la rotación temprana observada: candidatos mal ajustados o con expectativas equivocadas renuncian pronto.\n3) Falta de contacto humano para explicar el rol real (preview realista), lo que agrava el choque expectativa-realidad.\n\nb) Ajustes (dos, por ejemplo):\n1) Modelo híbrido con supervisión humana: usar la IA para tareas de alto volumen (filtro inicial de CV, agendamiento) pero mantener al menos una entrevista humana por competencias en las etapas finales, que evalúe fit cultural, motivación y entregue un preview realista. Corrige la impersonalidad y mejora la validez y el ajuste.\n2) Auditoría y transparencia del algoritmo: revisar y validar los criterios del modelo para detectar y corregir sesgos, definir qué mide y comunicar al candidato cómo será evaluado. Corrige el riesgo de discriminación y mejora la percepción de justicia y la experiencia.\nOtros válidos: encuesta de experiencia al candidato para retroalimentar el proceso; incorporar feedback humano a los no seleccionados.",
+      criterios: [
+        { texto: "a) Identifica el riesgo de sesgo algorítmico y/o pérdida de validez predictiva de la selección automatizada", peso: 2 },
+        { texto: "a) Identifica el deterioro de la experiencia del candidato/fit cultural y lo conecta con la rotación temprana del caso", peso: 2 },
+        { texto: "b) Propone un modelo híbrido con intervención humana en etapas clave", peso: 2 },
+        { texto: "b) Propone un segundo ajuste válido (auditoría de sesgos, transparencia, encuesta de experiencia) y explica cómo corrige la debilidad", peso: 2 }
+      ],
+      erroresComunes: [
+        "Rechazar toda la tecnología en vez de proponer un uso equilibrado (híbrido).",
+        "Ignorar que la selección es la primera experiencia de cultura para el candidato.",
+        "No conectar las debilidades del proceso con la rotación temprana descrita en el caso."
+      ]
+    },
+    {
+      id: "gdp-062",
+      tema: "Etapas del proceso de selección y validez de instrumentos",
+      dificultad: "media",
+      enunciado: "Una empresa selecciona a sus vendedores usando únicamente una entrevista informal de diez minutos con el jefe de área. La rotación es alta y varios contratados no alcanzan las metas.\n\na) Describa las etapas de un proceso de selección estructurado y bien alineado al perfil del cargo.\nb) Explique dos (2) instrumentos de selección adicionales que la empresa podría incorporar y qué aporta cada uno a la validez de la decisión.",
+      respuestaModelo: "a) Un proceso de selección estructurado parte del perfil del cargo (competencias y requisitos) y avanza por etapas de filtro sucesivo:\n1) Reclutamiento y recepción de postulaciones; 2) Filtro curricular o preselección según requisitos y competencias del perfil; 3) Entrevista preliminar (screening) para verificar aspectos básicos, intereses y expectativas; 4) Aplicación de pruebas o instrumentos (técnicas, psicológicas, situacionales); 5) Entrevista de selección por competencias (en profundidad, tipo STAR) para evaluar el ajuste al perfil y el potencial; 6) Verificación de referencias y antecedentes; 7) Decisión y oferta; 8) Cierre con los candidatos no seleccionados. Cada etapa reduce el pool acercándolo al candidato que mejor calza con el cargo, la cultura y la estrategia.\n\nb) Instrumentos adicionales (dos, por ejemplo):\n1) Pruebas técnicas o de conocimientos y ejercicios situacionales (por ejemplo, un role play de venta): aportan validez porque miden directamente la capacidad de hacer el trabajo, no solo lo que el candidato dice.\n2) Evaluación psicológica o de competencias (tests de personalidad, motivación, habilidades): aporta información sobre rasgos y potencial difíciles de observar en una entrevista breve.\nUsar varios instrumentos complementarios aumenta la validez predictiva (predicen mejor el desempeño futuro) y reduce el peso de la impresión subjetiva de una sola entrevista informal, que es de baja validez y muy expuesta a sesgos.",
+      criterios: [
+        { texto: "a) Describe las etapas de un proceso de selección estructurado partiendo del perfil del cargo", peso: 3 },
+        { texto: "b) Propone dos instrumentos adicionales válidos (pruebas técnicas/situacionales, evaluación psicológica, referencias)", peso: 3 },
+        { texto: "b) Explica cómo cada instrumento aporta a la validez o reduce el sesgo de la decisión", peso: 2 }
+      ],
+      erroresComunes: [
+        "Reducir la selección a una sola entrevista, ignorando la lógica de filtros sucesivos.",
+        "No partir del perfil del cargo, evaluando a ojo sin criterios definidos.",
+        "Confundir un instrumento válido (mide lo relevante) con uno confiable pero irrelevante."
+      ]
+    },
+    {
+      id: "gdp-063",
+      tema: "Sesgos del entrevistador en la selección",
+      dificultad: "media",
+      enunciado: "En una empresa, distintos entrevistadores llegan a conclusiones muy diferentes sobre los mismos candidatos. Al revisar sus notas, se observa que suelen decidir en los primeros minutos y favorecer a quienes se parecen a ellos.\n\na) Explique tres (3) sesgos frecuentes del entrevistador que pueden afectar la validez de la selección.\nb) Proponga dos (2) medidas para reducir estos sesgos y mejorar la objetividad del proceso.",
+      respuestaModelo: "a) Sesgos frecuentes del entrevistador (tres entre los siguientes):\n1) Efecto halo: una característica destacada (buena presencia, un logro) contamina positivamente la evaluación de todas las demás competencias (o efecto horn si es negativa).\n2) Sesgo de similitud o afinidad: se favorece a los candidatos que se parecen al entrevistador (misma universidad, aficiones, estilo), confundiendo simpatía con idoneidad. Es lo que muestra el caso.\n3) Primera impresión o juicio prematuro: se decide en los primeros minutos y luego solo se busca información que confirme esa impresión (sesgo de confirmación).\n4) Efecto de contraste: se evalúa a un candidato en comparación con el anterior y no contra el perfil del cargo.\n5) Estereotipos: prejuicios por edad, género, origen o apariencia.\n\nb) Medidas para reducir los sesgos (dos, por ejemplo):\n1) Estructurar la entrevista: usar una pauta con las mismas preguntas por competencia (entrevista conductual/STAR) y una escala de evaluación con anclas conductuales para todos los candidatos. Esto hace comparables las evaluaciones y reduce el juicio subjetivo.\n2) Capacitar a los entrevistadores en sesgos y usar más de un evaluador (panel) que luego contrasta sus valoraciones basadas en evidencia. La diversidad de miradas y la evidencia conductual diluyen los sesgos individuales.\nOtros válidos: tomar notas de conductas concretas durante la entrevista, definir criterios antes de entrevistar, incorporar pruebas objetivas.",
+      criterios: [
+        { texto: "a) Explica correctamente tres sesgos del entrevistador (halo, similitud, primera impresión, contraste, estereotipos)", peso: 3 },
+        { texto: "b) Propone estructurar la entrevista con pauta y escala comunes", peso: 2 },
+        { texto: "b) Propone una segunda medida válida (capacitación en sesgos, panel de evaluadores, evidencia conductual)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Nombrar los sesgos sin explicarlos.",
+        "Confundir un sesgo del entrevistador con un defecto del candidato.",
+        "Proponer soluciones vagas como ser más objetivo sin traducirlas en medidas concretas (pauta, escala, panel)."
+      ]
+    },
+    {
+      id: "gdp-064",
+      tema: "Evaluación del potencial y assessment center",
+      dificultad: "media",
+      enunciado: "Una empresa quiere identificar, entre sus postulantes y colaboradores, a quienes tienen potencial para asumir cargos de mayor responsabilidad, y no solo evaluar lo que ya saben hacer hoy.\n\na) Distinga entre evaluar el desempeño actual y evaluar el potencial de una persona.\nb) Explique qué es un assessment center y describa dos (2) técnicas que suele incluir para evaluar el potencial y las competencias de los candidatos.",
+      respuestaModelo: "a) Evaluar el desempeño actual es apreciar cómo la persona ejecuta hoy las tareas y competencias de su cargo (resultados y conductas del período). Evaluar el potencial, en cambio, es estimar la capacidad de la persona para asumir en el futuro roles más complejos o de mayor responsabilidad: su capacidad de aprendizaje, adaptación, liderazgo y crecimiento. Alguien puede tener buen desempeño en su cargo actual y bajo potencial para ascender, o viceversa; por eso se evalúan por separado (por ejemplo, cruzándolos en una matriz de talento o 9-box).\n\nb) Un assessment center es una metodología de evaluación en la que varios candidatos participan en un conjunto de ejercicios y simulaciones, observados por varios evaluadores, para medir competencias y potencial de forma más objetiva y basada en conductas. Dos técnicas que suele incluir (dos entre las siguientes):\n1) Ejercicios de simulación o role play: se recrea una situación laboral (atender un cliente difícil, liderar una reunión) y se observa cómo actúa el candidato.\n2) Dinámicas grupales o de discusión: los candidatos resuelven un caso en grupo, lo que permite observar liderazgo, trabajo en equipo, comunicación y negociación.\n3) In-basket (bandeja de entrada): el candidato prioriza y resuelve un conjunto de tareas y correos simulados, evaluando organización y toma de decisiones.\n4) Entrevistas por competencias y pruebas psicométricas complementarias.\nAl combinar varias técnicas y evaluadores, el assessment center aumenta la validez y reduce sesgos.",
+      criterios: [
+        { texto: "a) Distingue evaluar el desempeño actual de evaluar el potencial (capacidad futura para roles más complejos)", peso: 3 },
+        { texto: "b) Explica qué es un assessment center (ejercicios y simulaciones con múltiples evaluadores para medir competencias/potencial)", peso: 2 },
+        { texto: "b) Describe dos técnicas válidas (simulación/role play, dinámica grupal, in-basket, pruebas)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir potencial con desempeño actual: son dimensiones distintas.",
+        "Describir el assessment center como una simple entrevista larga.",
+        "Suponer que un buen desempeño actual asegura automáticamente potencial para ascender."
+      ]
+    },
+    {
+      id: "gdp-065",
+      tema: "Políticas de remuneraciones: equidad interna y competitividad externa",
+      dificultad: "media",
+      enunciado: "Una empresa fija los sueldos de forma improvisada, negociando caso a caso al momento de contratar. Con el tiempo, personas en cargos equivalentes ganan montos muy distintos y varios buenos trabajadores han renunciado atraídos por ofertas del mercado.\n\na) Explique los conceptos de equidad interna y competitividad (equidad) externa en una política de remuneraciones.\nb) Describa dos (2) elementos o herramientas que la empresa debería implementar para construir una política de remuneraciones ordenada, y el problema del caso que cada uno resuelve.",
+      respuestaModelo: "a) La equidad interna es la coherencia y justicia de las remuneraciones dentro de la empresa: cargos de similar valor, responsabilidad y aporte deben tener rentas comparables, y las diferencias deben responder a criterios objetivos (nivel de responsabilidad, competencias, desempeño). La competitividad o equidad externa es la relación de las remuneraciones de la empresa con las del mercado laboral para cargos equivalentes: pagar en línea con lo que ofrece la competencia para atraer y retener talento. El caso falla en ambas: sin criterios, hay inequidad interna (mismos cargos, sueldos dispares) e inequidad externa (ofertas del mercado que se llevan a los buenos).\n\nb) Elementos o herramientas (dos, por ejemplo):\n1) Descripción y valorización de cargos (estructura de bandas o grados salariales): se describen y jerarquizan los cargos según su valor relativo y se asignan bandas de renta. Resuelve la inequidad interna, porque cargos equivalentes quedan en la misma banda con criterios objetivos, y ordena los aumentos.\n2) Estudios o encuestas de mercado (benchmarking salarial): se comparan las bandas propias con el mercado y se define un posicionamiento (por ejemplo, pagar en la mediana o sobre ella en cargos críticos). Resuelve la falta de competitividad externa y frena la fuga de talento.\nComplementariamente, una política escrita de remuneraciones con criterios de ingreso, aumentos y renta variable transparenta las reglas y reduce la negociación improvisada.",
+      criterios: [
+        { texto: "a) Explica equidad interna (justicia entre cargos dentro de la empresa)", peso: 2 },
+        { texto: "a) Explica competitividad o equidad externa (relación con el mercado para atraer y retener)", peso: 2 },
+        { texto: "b) Propone valorización de cargos/bandas salariales y estudio de mercado como herramientas", peso: 2 },
+        { texto: "b) Conecta cada herramienta con el problema del caso que resuelve (inequidad interna y fuga externa)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir equidad con igualdad (pagar lo mismo a todos), cuando la equidad admite diferencias justificadas.",
+        "Atender solo la equidad interna o solo la externa, ignorando que deben equilibrarse.",
+        "Proponer subir todos los sueldos sin una estructura ordenada de cargos y bandas."
+      ]
+    },
+    {
+      id: "gdp-066",
+      tema: "Renta variable e incentivos: diseño y riesgos",
+      dificultad: "media",
+      enunciado: "Una empresa comercial paga a sus vendedores una comisión alta por venta cerrada, sin ninguna otra métrica. Las ventas subieron, pero también los reclamos de clientes, las devoluciones y los conflictos entre vendedores por los clientes.\n\na) Explique la lógica de la renta variable como herramienta de compensación y su vínculo con la motivación.\nb) Analice dos (2) riesgos o efectos no deseados del esquema de incentivos del caso y proponga cómo rediseñarlo para corregirlos.",
+      respuestaModelo: "a) La renta variable es la parte de la compensación que depende del desempeño o de resultados (comisiones, bonos por metas, participación en utilidades). Su lógica se apoya en teorías de la motivación como la de las expectativas de Vroom (si el esfuerzo se vincula a un resultado y este a una recompensa valorada, aumenta la motivación) y el refuerzo: premia y por tanto incentiva las conductas que la empresa quiere. Bien diseñada, alinea el interés del trabajador con los objetivos del negocio y premia el mérito.\n\nb) Riesgos del esquema del caso (dos):\n1) Incentiva la cantidad a costa de la calidad y del cliente: al premiar solo la venta cerrada, los vendedores venden a cualquier costo (promesas exageradas, ventas mal ajustadas), lo que dispara reclamos y devoluciones. La métrica única distorsiona la conducta hacia lo que se mide.\n2) Fomenta la competencia destructiva: al no considerar el trabajo colaborativo, los vendedores se pelean los clientes, dañando el clima y la experiencia del cliente.\nRediseño: usar un esquema balanceado con varias métricas -no solo venta bruta, sino también satisfacción del cliente, tasa de devoluciones, retención y metas de equipo-, condicionar parte del bono a la calidad y al trabajo colaborativo, y fijar un componente fijo suficiente que dé estabilidad. Así se corrige la distorsión: se premia vender bien y de forma sostenible, no solo vender.",
+      criterios: [
+        { texto: "a) Explica la renta variable y su vínculo con la motivación (expectativas/refuerzo, alinea esfuerzo y resultados)", peso: 2 },
+        { texto: "b) Analiza el riesgo de privilegiar cantidad sobre calidad/cliente (la métrica única distorsiona la conducta)", peso: 3 },
+        { texto: "b) Analiza el riesgo de competencia destructiva o daño al clima/trabajo en equipo", peso: 2 },
+        { texto: "b) Propone un rediseño con métricas balanceadas (calidad, satisfacción, equipo) que corrige los efectos", peso: 2 }
+      ],
+      erroresComunes: [
+        "Suponer que más comisión siempre es mejor, sin ver los efectos no deseados de una métrica única.",
+        "Ignorar el principio de que la gente hace lo que se le mide y premia.",
+        "Proponer eliminar la renta variable en vez de rediseñarla de forma balanceada."
+      ]
+    },
+    {
+      id: "gdp-067",
+      tema: "Detección de necesidades de capacitación en un caso",
+      dificultad: "media",
+      enunciado: "El gerente de una empresa decide, por intuición, contratar un curso de \"liderazgo\" para todas las jefaturas, porque está de moda. Seis meses después no se observa ningún cambio y las jefaturas dicen que el curso no tenía relación con sus problemas reales.\n\na) Explique qué es la Detección de Necesidades de Capacitación (DNC) y sus tres niveles de análisis.\nb) Describa cómo debería haberse realizado una DNC en este caso y por qué habría mejorado el resultado de la capacitación.",
+      respuestaModelo: "a) La Detección de Necesidades de Capacitación (DNC) es la etapa inicial del ciclo de capacitación que identifica las brechas entre las competencias que las personas tienen hoy y las que la organización necesita para cumplir su estrategia. Es la etapa clave: define en qué capacitar. Considera tres niveles de análisis:\n1) Análisis de la organización: entorno, estrategia, objetivos y recursos; en qué debe mejorar la empresa.\n2) Análisis de tareas o del cargo: qué competencias exige cada puesto para desempeñarse bien.\n3) Análisis de las personas: qué competencias tienen y cuáles les faltan (a partir de evaluaciones de desempeño, diagnósticos, indicadores).\n\nb) En el caso debió hacerse una DNC en vez de decidir por intuición y moda: analizar la estrategia (qué desafíos enfrenta la empresa), las tareas de las jefaturas (qué competencias de liderazgo específicas requieren: dar feedback, gestionar conflictos, planificar) y a las personas (con evaluaciones de desempeño, encuestas o entrevistas para ver qué brechas concretas tienen). Con esa información se habría diseñado una capacitación pertinente, focalizada en las brechas reales, con objetivos de aprendizaje claros y foco en la transferencia al puesto. Habría mejorado el resultado porque la capacitación efectiva parte de necesidades reales: si se detecta mal la necesidad, se invierte en formar en lo que no sirve, sin impacto en el desempeño, que es exactamente lo que ocurrió.",
+      criterios: [
+        { texto: "a) Define la DNC como detección de brechas de competencias y etapa clave del ciclo", peso: 2 },
+        { texto: "a) Describe los tres niveles de análisis: organización, tareas y personas", peso: 3 },
+        { texto: "b) Explica cómo debió aplicarse la DNC en el caso (analizar estrategia, tareas y brechas reales de las jefaturas)", peso: 2 },
+        { texto: "b) Justifica por qué una buena DNC habría mejorado el impacto (capacitar en necesidades reales, foco en transferencia)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Iniciar la capacitación en el diseño del curso, saltándose la DNC.",
+        "Decidir la capacitación por moda o intuición en vez de por brechas diagnosticadas.",
+        "Describir la DNC solo como una encuesta, omitiendo los niveles de organización y tareas."
+      ]
+    },
+    {
+      id: "gdp-068",
+      tema: "Medición del impacto de la capacitación y ROI",
+      dificultad: "media",
+      enunciado: "La gerencia de finanzas cuestiona el presupuesto de capacitación porque \"no se sabe si sirve para algo\". El área de personas quiere demostrar el impacto y el retorno de sus programas.\n\na) Explique la diferencia entre evaluar la satisfacción de un curso y evaluar su impacto o efectividad real.\nb) Explique el concepto de ROI de la capacitación, indique cómo se compone y describa dos (2) indicadores concretos que permitirían demostrar el impacto de un programa.",
+      respuestaModelo: "a) Evaluar la satisfacción (nivel de reacción de Kirkpatrick) mide si a los participantes les gustó el curso: relator, contenidos, logística. Evaluar el impacto o efectividad real mide si la capacitación cambió la conducta en el puesto (transferencia) y generó resultados para la organización (nivel de conducta y de resultados). Un curso puede tener alta satisfacción y nulo impacto; lo que interesa demostrar a finanzas es el impacto, no la satisfacción.\n\nb) El ROI (retorno sobre la inversión) de la capacitación traduce sus resultados a términos financieros: compara los beneficios económicos atribuibles a la capacitación con su costo. Se expresa como ROI (%) = (Beneficios - Costos) / Costos x 100. Un ROI positivo indica que cada peso invertido generó más de un peso de retorno. Requiere aislar y valorizar los beneficios (mayor productividad, menos errores, más ventas, menos rotación) y sumar todos los costos (relator, horas, materiales).\n\nDos indicadores concretos para demostrar impacto (dos entre los siguientes): reducción de errores, reprocesos o reclamos tras la capacitación; aumento de productividad o de ventas del grupo capacitado versus antes o versus un grupo control; disminución de la rotación o de los tiempos de atención; mejora de los indicadores de calidad o seguridad. Medir antes y después (o con grupo de control) permite atribuir el cambio a la capacitación.",
+      criterios: [
+        { texto: "a) Distingue evaluar satisfacción (reacción) de evaluar impacto/efectividad (transferencia y resultados)", peso: 3 },
+        { texto: "b) Explica el ROI y su fórmula: (Beneficios - Costos) / Costos x 100", peso: 3 },
+        { texto: "b) Describe dos indicadores concretos que evidencian impacto (productividad, errores, ventas, rotación, calidad)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Presentar la encuesta de satisfacción como prueba del impacto de la capacitación.",
+        "Enunciar el ROI sin su fórmula ni la idea de comparar beneficios con costos.",
+        "Proponer indicadores vagos que no permiten medir el cambio antes y después."
+      ]
+    },
+    {
+      id: "gdp-069",
+      tema: "Gestión del talento y matriz de nueve cajas",
+      dificultad: "media",
+      enunciado: "Una empresa quiere gestionar de forma más estratégica a sus 200 colaboradores: identificar a sus talentos clave, a quienes necesitan desarrollo y a quienes tienen bajo aporte, para tomar decisiones de promoción, desarrollo y retención.\n\na) Explique qué es la matriz de talento de nueve cajas (9-box) y qué dos dimensiones cruza.\nb) Describa una acción o decisión de gestión de personas apropiada para tres (3) perfiles distintos de la matriz.",
+      respuestaModelo: "a) La matriz de nueve cajas (9-box) es una herramienta de gestión del talento que ubica a cada colaborador en una cuadrícula de 3x3 según el cruce de dos dimensiones: el desempeño (resultados y competencias demostradas hoy, en el eje horizontal) y el potencial (capacidad de crecer y asumir roles más complejos a futuro, en el eje vertical). Cada persona queda en una de las nueve celdas, lo que permite diferenciar la gestión según su perfil en vez de tratar a todos igual.\n\nb) Acciones para tres perfiles (tres, por ejemplo):\n1) Alto desempeño y alto potencial (estrellas / talento clave): retener y acelerar su desarrollo con planes de sucesión, proyectos desafiantes, mentoría y compensación diferenciada; son los futuros líderes.\n2) Buen desempeño y bajo potencial (expertos o profesionales sólidos): reconocer y retener en su rol, apalancar su conocimiento (por ejemplo, como referentes o formadores), sin forzar ascensos que no encajan con su perfil.\n3) Bajo desempeño y bajo potencial (bajo aporte): analizar causas; si no mejora tras un plan de acción y apoyo, tomar decisiones de reubicación o desvinculación responsable. Otro perfil válido: alto potencial y bajo desempeño (diamante en bruto): invertir en capacitación y acompañamiento, pues puede estar en el cargo equivocado o recién iniciando.\nAsí, la matriz orienta decisiones de promoción, desarrollo, compensación y retención de forma diferenciada.",
+      criterios: [
+        { texto: "a) Explica la matriz de 9 cajas y que cruza desempeño y potencial", peso: 3 },
+        { texto: "b) Describe acciones apropiadas para tres perfiles distintos de la matriz", peso: 3 },
+        { texto: "b) Las acciones son coherentes con el perfil (retener/desarrollar talento clave, reubicar/desvincular bajo aporte, etc.)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Cruzar dimensiones equivocadas (por ejemplo antigüedad y sueldo) en lugar de desempeño y potencial.",
+        "Dar el mismo tratamiento a todos los perfiles, perdiendo el sentido de la herramienta.",
+        "Confundir potencial con desempeño actual al ubicar a las personas."
+      ]
+    },
+    {
+      id: "gdp-070",
+      tema: "Evaluación del desempeño por objetivos (APO)",
+      dificultad: "media",
+      enunciado: "Una empresa evalúa a su personal solo con la impresión general del jefe a fin de año, sin metas definidas. Quiere migrar a un sistema de evaluación por objetivos (APO/MBO).\n\na) Explique en qué consiste la evaluación del desempeño por objetivos y el rol de las metas SMART.\nb) Señale una (1) ventaja y una (1) desventaja de este método, y explique por qué conviene complementarlo con la evaluación de competencias.",
+      respuestaModelo: "a) La evaluación del desempeño por objetivos (Administración por Objetivos, APO o MBO) consiste en acordar al inicio del período metas concretas y medibles entre jefatura y colaborador, y evaluar al final el grado de cumplimiento de esas metas. Su base es que el trabajador conoce de antemano qué se espera de él y orienta su esfuerzo hacia resultados claros. Las metas deben ser SMART: eSpecíficas, Medibles, Alcanzables (retadoras pero realistas), Relevantes (alineadas a la estrategia) y acotadas en el Tiempo. Metas SMART evitan la ambigüedad y permiten una evaluación objetiva del qué se logró.\n\nb) Ventaja: objetividad y foco en resultados; alinea el desempeño individual con los objetivos del negocio y da claridad al colaborador, facilitando una evaluación menos subjetiva. Desventaja: puede descuidar el cómo (las conductas y los valores), incentivando cumplir la meta a cualquier costo, y se vuelve rígido si el entorno cambia y las metas quedan obsoletas; además, no todo lo importante es fácilmente cuantificable.\n\nPor eso conviene complementarlo con la evaluación por competencias: mientras la APO mide el qué (los resultados), las competencias miden el cómo (los comportamientos y la forma de lograr los resultados, alineada a los valores). Evaluar ambas dimensiones da una visión completa y evita premiar a quien cumple metas pasando por encima de las personas o la ética.",
+      criterios: [
+        { texto: "a) Explica la evaluación por objetivos (acordar y evaluar metas) y el rol de las metas SMART", peso: 3 },
+        { texto: "b) Señala una ventaja válida (objetividad, foco en resultados, alineamiento, claridad)", peso: 2 },
+        { texto: "b) Señala una desventaja válida (descuida el cómo, rigidez, no todo es cuantificable)", peso: 2 },
+        { texto: "b) Explica por qué complementar con competencias (qué + cómo)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Definir metas vagas y no medibles, perdiendo la lógica SMART.",
+        "Evaluar solo resultados ignorando las conductas y los valores (el cómo).",
+        "Presentar la APO como método perfecto sin reconocer sus limitaciones."
+      ]
+    },
+    {
+      id: "gdp-071",
+      tema: "Evaluación 360 grados: diseño e implementación",
+      dificultad: "media",
+      enunciado: "Una empresa quiere implementar por primera vez una evaluación de 360 grados para sus jefaturas, porque hoy solo evalúa el jefe directo y las jefaturas dudan de la objetividad del sistema.\n\na) Explique qué es la evaluación de 360 grados y qué fuentes de información integra.\nb) Señale dos (2) requisitos o condiciones necesarias para que su implementación sea exitosa y no genere efectos contraproducentes.",
+      respuestaModelo: "a) La evaluación de 360 grados es un método que recoge retroalimentación sobre el desempeño y las competencias de una persona desde múltiples fuentes que la rodean, en lugar de una sola: la jefatura directa, los pares o compañeros, los colaboradores a cargo (subordinados), la autoevaluación del propio evaluado y, en algunos casos, clientes internos o externos (lo que puede llamarse 180 grados si solo incluye algunas fuentes). Al integrar varias miradas, entrega una visión más integral y equilibrada, reduce el peso y el sesgo de un único evaluador y es especialmente útil para el desarrollo de competencias conductuales y de liderazgo.\n\nb) Requisitos para una implementación exitosa (dos entre los siguientes):\n1) Anonimato y confianza: las respuestas de pares y subordinados deben ser anónimas y tratadas con confidencialidad; sin un clima de confianza, la gente no responde con honestidad o teme represalias.\n2) Propósito de desarrollo (no punitivo) y buena comunicación: debe presentarse como herramienta para desarrollarse, no para castigar o despedir; comunicar bien el objetivo evita resistencias y ansiedad.\n3) Capacitación de evaluadores y criterios/competencias claros y conductuales, para que todos evalúen lo mismo y con evidencia.\n4) Acompañamiento posterior: entregar los resultados con una retroalimentación cuidada y un plan de desarrollo.\nSin estas condiciones, el 360 puede generar resentimientos, colusión entre evaluadores (pactar buenas notas) o dañar el clima.",
+      criterios: [
+        { texto: "a) Explica qué es la evaluación 360 y que integra múltiples fuentes (jefe, pares, subordinados, autoevaluación, clientes)", peso: 3 },
+        { texto: "b) Señala dos requisitos válidos (anonimato/confianza, propósito de desarrollo, capacitación, criterios claros, acompañamiento)", peso: 3 },
+        { texto: "b) Explica cómo cada requisito evita efectos contraproducentes (resentimientos, colusión, deterioro del clima)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Presentar el 360 como método perfecto y objetivo por definición, sin condiciones de implementación.",
+        "Implementarlo con fines punitivos, lo que dispara resistencias y respuestas poco honestas.",
+        "Olvidar el anonimato y el acompañamiento posterior con feedback y plan de desarrollo."
+      ]
+    },
+    {
+      id: "gdp-072",
+      tema: "Planes de desarrollo y cierre del ciclo de evaluación",
+      dificultad: "media",
+      enunciado: "En una empresa, la evaluación del desempeño se completa cada año, pero los resultados \"quedan en un cajón\": no se conversan con el colaborador ni se usan para nada.\n\na) Explique por qué una evaluación que no se traduce en acciones pierde su sentido, refiriéndose al cierre del ciclo de gestión del desempeño.\nb) Proponga cómo debería cerrarse el ciclo, conectando los resultados de la evaluación con al menos tres (3) subsistemas de la gestión de personas.",
+      respuestaModelo: "a) La evaluación del desempeño no es un fin en sí misma, sino un medio dentro del ciclo de gestión del desempeño. Su valor está en lo que se hace con sus resultados: retroalimentar a la persona y tomar decisiones de desarrollo. Si la evaluación no se conversa (no hay retroalimentación) ni se usa, el ciclo queda trunco o abierto: se gasta tiempo y esfuerzo sin generar mejora, se pierde la oportunidad de reconocer y desarrollar, y el colaborador percibe el proceso como un trámite burocrático sin sentido, lo que erosiona su credibilidad y motivación. Evaluar sin actuar equivale a no evaluar.\n\nb) Para cerrar el ciclo, los resultados deben conectarse con los demás subsistemas (al menos tres):\n1) Capacitación y desarrollo: las brechas detectadas alimentan la Detección de Necesidades de Capacitación (DNC) y se traducen en planes de desarrollo individuales (formación, mentoría, proyectos).\n2) Compensaciones: los resultados sustentan decisiones de renta variable, bonos, ajustes y reconocimiento, ligando la retribución al mérito de forma transparente.\n3) Desarrollo de carrera y planes de sucesión: la evaluación, cruzada con el potencial (matriz de talento), identifica a quiénes promover, mover o preparar como sucesores.\nAdemás, la retroalimentación cierra el ciclo con el colaborador (reconocer logros, acordar mejoras) y se reinicia con la planificación de los objetivos del período siguiente. Así la evaluación deja de ser un evento aislado y se vuelve el motor de un ciclo continuo alineado con la estrategia.",
+      criterios: [
+        { texto: "a) Explica que la evaluación es un medio y que sin retroalimentación ni uso el ciclo queda trunco y pierde sentido", peso: 3 },
+        { texto: "b) Conecta los resultados con capacitación/planes de desarrollo (vía DNC)", peso: 2 },
+        { texto: "b) Conecta los resultados con compensación y con desarrollo de carrera/sucesión", peso: 2 },
+        { texto: "b) Menciona la retroalimentación al colaborador y/o el reinicio con la planificación del período siguiente", peso: 1 }
+      ],
+      erroresComunes: [
+        "Tratar la evaluación como un fin en sí mismo y no como parte de un ciclo continuo.",
+        "Omitir la retroalimentación, sin la cual la evaluación no genera desarrollo.",
+        "No conectar los resultados con capacitación, compensación y carrera (dejar el ciclo abierto)."
+      ]
+    },
+    {
+      id: "gdp-073",
+      tema: "Alineamiento de la gestión de personas con la estrategia",
+      dificultad: "media",
+      enunciado: "Una empresa tiene una visión, misión y valores declarados y publicados en su web, pero el área de personas opera de forma desconectada: recluta, capacita y compensa sin relación con esas definiciones estratégicas.\n\na) Explique la diferencia entre visión, misión y valores, y su rol como marco orientador de la organización.\nb) Explique, con dos (2) ejemplos concretos, cómo la gestión de personas debería alinearse con la estrategia (visión, misión y valores) para agregar valor.",
+      respuestaModelo: "a) La misión es la razón de ser de la organización: qué hace, para quién y cómo, en el presente (su propósito actual). La visión es la imagen del futuro deseado: qué quiere llegar a ser la organización en el largo plazo; es aspiracional y orienta el rumbo. Los valores son los principios y creencias que guían el comportamiento y la toma de decisiones de las personas (por ejemplo, integridad, cercanía, excelencia). Juntos constituyen el marco estratégico que da identidad, dirección y coherencia: la misión ancla el hoy, la visión marca hacia dónde ir y los valores definen el cómo comportarse en el camino.\n\nb) La gestión de personas agrega valor cuando traduce este marco en sus prácticas (dos ejemplos):\n1) Si un valor central es la orientación al cliente, el reclutamiento y la selección deben priorizar candidatos con esa competencia, la capacitación debe reforzarla y la evaluación del desempeño debe medirla y premiarla. Así el valor deja de ser un cartel y se vuelve conducta.\n2) Si la visión implica crecer e innovar, la gestión de personas debe construir planes de desarrollo y carrera, atraer perfiles con capacidad de aprendizaje y diseñar incentivos que premien la innovación, dotando a la empresa del talento que la estrategia requiere.\nEn síntesis, la gestión de personas alineada convierte la estrategia en capacidades y comportamientos organizacionales; desconectada, se vuelve una función administrativa que no aporta a la ventaja competitiva.",
+      criterios: [
+        { texto: "a) Distingue correctamente misión (razón de ser hoy), visión (futuro deseado) y valores (principios de comportamiento)", peso: 3 },
+        { texto: "a) Explica su rol como marco orientador (identidad, dirección y coherencia)", peso: 1 },
+        { texto: "b) Da dos ejemplos concretos de alineamiento de prácticas de personas (reclutar, capacitar, evaluar, compensar) con la estrategia", peso: 3 },
+        { texto: "b) Conecta el alineamiento con la generación de valor o ventaja competitiva", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir misión (presente) con visión (futuro).",
+        "Tratar los valores como una declaración decorativa sin traducción en prácticas.",
+        "Describir la gestión de personas como función meramente administrativa desligada de la estrategia."
+      ]
+    },
+    {
+      id: "gdp-074",
+      tema: "Comportamiento organizacional: percepción y sus errores",
+      dificultad: "media",
+      enunciado: "En una empresa, dos jefes describen al mismo trabajador de forma opuesta: uno lo considera un gran aporte y el otro un problema, basándose en los mismos hechos. El área de personas quiere entender por qué ocurre esto.\n\na) Explique el concepto de percepción en el comportamiento organizacional y por qué influye en las decisiones sobre las personas.\nb) Describa tres (3) errores o atajos perceptuales frecuentes que pueden distorsionar el juicio sobre un colaborador.",
+      respuestaModelo: "a) La percepción es el proceso por el cual las personas seleccionan, organizan e interpretan la información de su entorno para darle sentido. En el comportamiento organizacional es clave porque las personas no reaccionan a la realidad objetiva, sino a su interpretación de ella: dos jefes pueden ver los mismos hechos y construir juicios opuestos según sus experiencias, expectativas y sesgos. La percepción influye en decisiones críticas de gestión de personas -selección, evaluación del desempeño, asignación de tareas, promociones-, por lo que sus distorsiones pueden llevar a decisiones injustas o erróneas.\n\nb) Errores o atajos perceptuales frecuentes (tres entre los siguientes):\n1) Efecto halo (u horn): generalizar a partir de un solo rasgo positivo (o negativo) toda la evaluación de la persona.\n2) Estereotipos: juzgar a alguien según el grupo al que se le asigna (edad, género, origen) en lugar de sus características individuales.\n3) Proyección: atribuir a los demás las propias características, motivaciones o defectos.\n4) Efecto de contraste: evaluar a una persona en comparación con otra reciente y no con un estándar.\n5) Profecía autocumplida (efecto Pigmalión): las expectativas del observador influyen en el comportamiento del observado, confirmándolas.\n6) Sesgo de confirmación: buscar solo información que confirme la primera impresión.\nConocer estos errores permite gestionarlos con criterios objetivos, evidencia conductual y múltiples fuentes.",
+      criterios: [
+        { texto: "a) Explica la percepción como interpretación subjetiva de la realidad y su influencia en las decisiones sobre personas", peso: 3 },
+        { texto: "b) Describe tres errores o atajos perceptuales válidos (halo, estereotipos, proyección, contraste, profecía autocumplida, confirmación)", peso: 3 },
+        { texto: "b) Conecta los errores perceptuales con decisiones de gestión de personas (evaluación, selección, promoción)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Suponer que las personas reaccionan a la realidad objetiva y no a su interpretación.",
+        "Nombrar los errores perceptuales sin explicarlos.",
+        "Confundir un error perceptual del observador con una característica real del observado."
+      ]
+    },
+    {
+      id: "gdp-075",
+      tema: "Ajuste persona-puesto y diferencias individuales",
+      dificultad: "media",
+      enunciado: "Una empresa ascendió a su mejor vendedor a gerente de ventas. Como vendedor era brillante, pero como gerente fracasó: no logra liderar ni delegar y el equipo está desmotivado.\n\na) Explique el concepto de ajuste persona-puesto (person-job fit) y por qué es relevante en las decisiones de promoción.\nb) Analice qué falló en este caso y proponga dos (2) medidas para evitar este tipo de errores en futuras promociones.",
+      respuestaModelo: "a) El ajuste persona-puesto (person-job fit) es el grado de correspondencia entre las características de la persona (competencias, habilidades, intereses, personalidad) y las exigencias del cargo. Un buen ajuste predice mejor desempeño, satisfacción y permanencia. Es relevante en las promociones porque cada cargo exige competencias distintas: ascender no es premiar el desempeño pasado, sino ubicar a la persona donde sus competencias calcen con las nuevas exigencias.\n\nb) En el caso se cometió el error clásico (asociado al Principio de Peter): se promovió por el buen desempeño en el cargo anterior, asumiendo que un gran vendedor sería un gran gerente, pero las competencias son distintas. Vender exige competencias individuales (persuasión, orientación al logro personal); gestionar un equipo exige competencias de liderazgo, delegación, desarrollo de personas y planificación, que este colaborador no tenía o no se evaluaron. El desempeño en un cargo no predice el desempeño en otro con exigencias diferentes.\n\nMedidas para evitarlo (dos, por ejemplo):\n1) Evaluar el potencial y las competencias del cargo destino antes de promover (por ejemplo, con assessment center o evaluación por competencias de liderazgo), no solo el desempeño en el cargo actual.\n2) Preparar la transición: capacitación en habilidades directivas, acompañamiento o mentoría y un período de prueba en el nuevo rol; y ofrecer también rutas de carrera de especialista (crecer sin necesariamente pasar a jefatura) para quienes destacan técnicamente pero no en liderazgo.",
+      criterios: [
+        { texto: "a) Explica el ajuste persona-puesto (correspondencia entre competencias de la persona y exigencias del cargo) y su relevancia en promociones", peso: 3 },
+        { texto: "b) Analiza el error del caso: promover por desempeño pasado ignorando que el nuevo cargo exige competencias distintas (liderazgo)", peso: 3 },
+        { texto: "b) Propone dos medidas válidas (evaluar potencial/competencias del cargo destino, preparar la transición, rutas de especialista)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Asumir que un buen desempeño en un cargo garantiza buen desempeño en otro distinto.",
+        "Confundir competencias de venta (individuales) con competencias de liderazgo (gestión de equipos).",
+        "Proponer solo despedir al promovido, sin medidas preventivas de evaluación y desarrollo."
+      ]
+    },
+    {
+      id: "gdp-076",
+      tema: "Cambio organizacional: tipos y fuerzas impulsoras",
+      dificultad: "media",
+      enunciado: "El gerente general de una empresa afirma que \"aquí no necesitamos cambiar nada, siempre nos ha ido bien así\", mientras la competencia se digitaliza, los clientes cambian y aparece nueva regulación.\n\na) Explique qué es el cambio organizacional y distinga entre fuerzas externas e internas que lo impulsan, con ejemplos.\nb) Distinga entre cambio planificado y cambio reactivo, y explique por qué la postura del gerente es riesgosa.",
+      respuestaModelo: "a) El cambio organizacional es todo proceso mediante el cual una organización modifica su estructura, procesos, tecnología, cultura o estrategia para adaptarse a su entorno o mejorar su desempeño. Las fuerzas que lo impulsan pueden ser:\n- Externas (provienen del entorno): cambios en el mercado y en los clientes, nuevos competidores, avances tecnológicos (digitalización), cambios regulatorios, condiciones económicas, tendencias sociales. En el caso: la competencia que se digitaliza, clientes que cambian y nueva regulación.\n- Internas (provienen de la propia organización): crecimiento o reestructuración, nuevos liderazgos, problemas de clima o rotación, caída de resultados, nuevas estrategias o adopción de tecnología.\n\nb) El cambio planificado es el que la organización anticipa y gestiona proactivamente, con diagnóstico, objetivos y un plan, antes de que la presión sea crítica. El cambio reactivo es el que se hace tarde, forzado por una crisis, cuando ya no queda alternativa. La postura del gerente (negar la necesidad de cambio) es riesgosa porque las fuerzas externas actúan igual, se atienda o no: al ignorarlas, la empresa pierde competitividad y termina obligada a un cambio reactivo, más costoso, apurado y con menos margen. El éxito pasado no garantiza el futuro; la complacencia es una de las principales causas del declive organizacional.",
+      criterios: [
+        { texto: "a) Define el cambio organizacional y distingue fuerzas externas de internas con ejemplos", peso: 3 },
+        { texto: "b) Distingue cambio planificado (proactivo) de cambio reactivo (forzado por crisis)", peso: 2 },
+        { texto: "b) Explica por qué la complacencia del gerente es riesgosa (las fuerzas actúan igual; se pierde competitividad y se llega a un cambio reactivo costoso)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Considerar solo las fuerzas internas y olvidar las del entorno (mercado, tecnología, regulación).",
+        "Asumir que el éxito pasado protege del cambio del entorno.",
+        "No distinguir el cambio anticipado del cambio forzado por una crisis."
+      ]
+    },
+    {
+      id: "gdp-077",
+      tema: "Manejo de la resistencia al cambio: comunicación y participación",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa implementará un nuevo sistema de gestión que cambia la forma de trabajar de todas las áreas. Apenas se anunció, surgieron rumores, temor a perder el empleo y quejas de que \"esto no va a funcionar\".\n\na) Identifique tres (3) causas o focos de resistencia al cambio presentes o probables en esta situación.\nb) Proponga, para cada causa, una (1) intervención concreta que ayude a reducir la resistencia.",
+      respuestaModelo: "a) Causas o focos de resistencia (tres entre las siguientes):\n1) Miedo a lo desconocido y a la pérdida (del empleo, del estatus o de competencias): las personas temen no saber usar el nuevo sistema o volverse prescindibles. En el caso, el temor a perder el empleo.\n2) Falta de información y rumores: al no comunicarse bien el qué, el porqué y el cómo del cambio, se llenan los vacíos con especulación y desconfianza.\n3) Escepticismo o falta de confianza en el cambio o en quienes lo lideran (esto no va a funcionar): experiencias previas fallidas o sensación de que se impone sin sentido.\n4) Hábitos y comodidad con la forma actual de trabajar; costos de aprendizaje.\n5) Falta de participación: sentir que el cambio se decide sin considerar a los afectados.\n\nb) Intervenciones (una por causa, por ejemplo):\n1) Contra el miedo a la pérdida: comunicar con transparencia el impacto real en los cargos, y ofrecer capacitación y reconversión que muestren que el cambio potencia a las personas, no las reemplaza.\n2) Contra la falta de información/rumores: un plan de comunicación claro, oportuno y por varios canales, explicando por qué se cambia, qué implica y qué se espera de cada uno, con espacios para preguntas.\n3) Contra el escepticismo: involucrar y hacer participar a los afectados (por ejemplo, con usuarios clave o pilotos), lograr victorias tempranas visibles y contar con líderes creíbles que apoyen el cambio.\nLa participación, la comunicación y la capacitación son las palancas centrales para reducir la resistencia.",
+      criterios: [
+        { texto: "a) Identifica tres causas o focos de resistencia válidos y pertinentes al caso", peso: 3 },
+        { texto: "b) Propone una intervención concreta para cada causa identificada", peso: 3 },
+        { texto: "b) Las intervenciones son pertinentes (comunicación, participación, capacitación, liderazgo, victorias tempranas) y atacan la causa correspondiente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar la resistencia como mala voluntad de los trabajadores en vez de una reacción natural con causas gestionables.",
+        "Proponer imponer el cambio por autoridad, lo que suele aumentar la resistencia.",
+        "Dar intervenciones genéricas sin vincularlas a la causa que buscan reducir."
+      ]
+    },
+    {
+      id: "gdp-078",
+      tema: "Modelo ADKAR de gestión del cambio",
+      dificultad: "media",
+      enunciado: "Una empresa quiere gestionar un cambio importante centrándose en cómo lo viven las personas, una por una, y no solo en el plan del proyecto. Un consultor le sugiere usar el modelo ADKAR.\n\na) Explique el modelo ADKAR de gestión del cambio y describa sus cinco (5) etapas.\nb) Explique por qué este modelo pone el foco en el individuo y qué ocurre si se salta alguna etapa.",
+      respuestaModelo: "a) El modelo ADKAR (de Prosci, Jeff Hiatt) es un modelo de gestión del cambio centrado en las personas: sostiene que el cambio organizacional solo ocurre si cada individuo transita con éxito por cinco etapas secuenciales, cuyas iniciales forman la sigla:\n1) Awareness (Conciencia): la persona entiende por qué es necesario el cambio; sin comprender la razón, no se compromete.\n2) Desire (Deseo): la persona quiere participar y apoyar el cambio; involucra su motivación y su decisión personal.\n3) Knowledge (Conocimiento): sabe cómo cambiar, qué debe hacer y cómo hacerlo (información, capacitación).\n4) Ability (Habilidad/Capacidad): es capaz de implementar el cambio en la práctica, desarrollando efectivamente las nuevas conductas o habilidades.\n5) Reinforcement (Refuerzo): se sostiene el cambio en el tiempo con reconocimiento, seguimiento y refuerzos que eviten volver atrás.\n\nb) El modelo pone el foco en el individuo porque el cambio organizacional es la suma de cambios individuales: una empresa no cambia si sus personas no cambian. Por eso trabaja etapa por etapa en cada persona. Las etapas son secuenciales: si se salta alguna, el cambio se traba en ese punto. Por ejemplo, capacitar (Knowledge) a alguien que no entiende por qué se cambia (falta Awareness) o que no quiere hacerlo (falta Desire) no funciona; y sin Reinforcement, las personas revierten a las viejas prácticas. Identificar en qué etapa se atasca cada grupo permite intervenir de forma precisa.",
+      criterios: [
+        { texto: "a) Describe correctamente las cinco etapas de ADKAR (conciencia, deseo, conocimiento, habilidad, refuerzo)", peso: 4 },
+        { texto: "b) Explica que el foco es el individuo porque el cambio organizacional es la suma de cambios individuales", peso: 2 },
+        { texto: "b) Explica que las etapas son secuenciales y qué pasa si se salta alguna", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir ADKAR con los pasos de Kotter o las fases de Lewin.",
+        "Alterar el orden de las etapas o inventar su significado.",
+        "Olvidar el refuerzo, con lo que el cambio no se sostiene en el tiempo."
+      ]
+    },
+    {
+      id: "gdp-079",
+      tema: "Tipos de cultura organizacional (Cameron y Quinn)",
+      dificultad: "media",
+      enunciado: "Dos empresas del mismo rubro tienen culturas muy distintas: en una todo es cercano, colaborativo y familiar; en la otra prima la competencia, las metas y los resultados. El área de personas quiere entender y clasificar estas diferencias.\n\na) Explique qué es la cultura organizacional y por qué no existe una cultura única \"correcta\" para todas las empresas.\nb) Describa, usando el modelo de valores en competencia de Cameron y Quinn (u otra tipología válida), cuatro (4) tipos de cultura organizacional.",
+      respuestaModelo: "a) La cultura organizacional es el conjunto de valores, creencias, supuestos, normas y prácticas compartidas que determinan cómo se hacen las cosas en una organización y guían el comportamiento de sus miembros. No existe una cultura única correcta porque la cultura adecuada depende de la estrategia, el entorno y el tipo de negocio: una cultura muy orientada a resultados y competencia puede ser ideal para una empresa comercial agresiva pero destructiva para una que necesita colaboración e innovación. Lo importante es la coherencia entre cultura y estrategia (fit), no un modelo universal.\n\nb) Según el modelo de valores en competencia de Cameron y Quinn, hay cuatro tipos de cultura:\n1) Cultura de Clan (colaborar): orientada a las personas, cercana, tipo familia, con énfasis en el trabajo en equipo, la participación y el desarrollo. Corresponde a la primera empresa del caso.\n2) Cultura Adhocrática (crear): dinámica, emprendedora e innovadora, orientada al riesgo, la creatividad y la adaptación; propia de empresas de innovación.\n3) Cultura de Mercado (competir): orientada a los resultados, las metas, la competitividad y el logro; foco en clientes y en ganar. Corresponde a la segunda empresa del caso.\n4) Cultura Jerárquica (controlar): formalizada y estructurada, orientada al control, los procedimientos, la eficiencia y la estabilidad; propia de organizaciones grandes o reguladas.\nLa mayoría de las empresas combinan rasgos de varias, con una dominante.",
+      criterios: [
+        { texto: "a) Define la cultura organizacional (valores, creencias y prácticas compartidas que guían el comportamiento)", peso: 2 },
+        { texto: "a) Explica que no hay cultura única correcta: depende de la coherencia con la estrategia y el entorno", peso: 2 },
+        { texto: "b) Describe cuatro tipos de cultura (clan, adhocrática, mercado, jerárquica u otra tipología válida)", peso: 4 }
+      ],
+      erroresComunes: [
+        "Sostener que existe una cultura ideal universal, sin considerar el fit con la estrategia.",
+        "Confundir cultura con clima (percepción del momento).",
+        "Describir solo dos tipos o mezclar los rasgos de las cuatro culturas."
+      ]
+    },
+    {
+      id: "gdp-080",
+      tema: "Gestión del clima laboral: medición y planes de acción",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa aplica todos los años una encuesta de clima, pero se limita a publicar los resultados y no hace nada más. Con el tiempo, la participación en la encuesta cae y los trabajadores dicen que \"contestar no sirve de nada\".\n\na) Explique qué es el clima laboral y mencione tres (3) factores o dimensiones que suele medir una encuesta de clima.\nb) Explique por qué medir el clima sin actuar es contraproducente y describa los pasos de una gestión del clima que sí genere mejoras.",
+      respuestaModelo: "a) El clima laboral es la percepción compartida que tienen los trabajadores sobre su ambiente de trabajo en un momento determinado: cómo se siente trabajar en la organización. Es más superficial y cambiante que la cultura y se puede medir y gestionar en plazos relativamente cortos. Tres factores o dimensiones que suele medir (tres entre los siguientes): liderazgo y relación con la jefatura; reconocimiento y retroalimentación; equidad y justicia (compensaciones, trato); comunicación interna; condiciones y ambiente físico y seguridad; oportunidades de desarrollo; carga de trabajo y equilibrio; relaciones y colaboración entre compañeros; orgullo y sentido de pertenencia.\n\nb) Medir el clima sin actuar es contraproducente porque genera expectativas que luego se frustran: preguntar a las personas su opinión y no hacer nada comunica que su voz no importa, lo que deteriora aún más el clima, baja la participación (como en el caso) y aumenta el cinismo. Es peor que no medir.\n\nUna gestión del clima que genera mejoras sigue estos pasos: 1) Diagnóstico: aplicar la encuesta (con anonimato) y analizar los resultados por área. 2) Devolución: comunicar los resultados a todos, con transparencia. 3) Priorización y planes de acción: junto con los equipos, definir acciones concretas sobre las dimensiones más críticas, con responsables y plazos. 4) Implementación de las acciones. 5) Seguimiento y nueva medición: evaluar si las acciones mejoraron el clima y cerrar el ciclo. La clave es que a cada medición le sigan acciones visibles: así las personas ven que su opinión produce cambios.",
+      criterios: [
+        { texto: "a) Define el clima laboral (percepción compartida del ambiente de trabajo en un momento dado)", peso: 2 },
+        { texto: "a) Menciona tres factores o dimensiones válidos de una encuesta de clima", peso: 2 },
+        { texto: "b) Explica por qué medir sin actuar es contraproducente (frustra expectativas, baja participación, aumenta el cinismo)", peso: 2 },
+        { texto: "b) Describe los pasos de una gestión del clima con acciones (diagnóstico, devolución, planes de acción, seguimiento)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir clima con cultura.",
+        "Creer que basta con medir el clima, sin devolución ni planes de acción.",
+        "Proponer acciones vagas sin responsables, plazos ni seguimiento."
+      ]
+    },
+    {
+      id: "gdp-081",
+      tema: "Liderazgo y motivación: teoría del camino-meta",
+      dificultad: "media",
+      enunciado: "Un jefe de proyecto lidera a un equipo diverso: algunos miembros son nuevos y necesitan guía, otros son expertos que valoran su autonomía, y el proyecto atraviesa momentos de mucha presión y ambigüedad.\n\na) Explique la idea central de la teoría del liderazgo del camino-meta (House): cómo el líder influye en la motivación de su equipo.\nb) Describa dos (2) estilos de liderazgo que este jefe podría usar y en qué situación del caso aplicaría cada uno.",
+      respuestaModelo: "a) La teoría del camino-meta (path-goal) de Robert House plantea que la función del líder es facilitar a sus colaboradores el camino hacia sus metas: aclarar los objetivos, remover obstáculos, entregar apoyo y recursos, y ligar el esfuerzo con recompensas valoradas. El líder aumenta la motivación cuando ayuda a que las personas vean que su esfuerzo llevará al desempeño y este a recompensas que valoran (lógica cercana a la teoría de las expectativas). Lo central es que el estilo eficaz depende de la situación: de las características de los colaboradores (experiencia, necesidad de autonomía) y del entorno de la tarea (claridad, presión), por lo que el líder debe adaptar su estilo.\n\nb) Estilos que el jefe podría usar (dos entre los cuatro del modelo):\n1) Estilo directivo: da instrucciones claras, define tareas y expectativas. Aplicaría con los miembros nuevos y en los momentos de ambigüedad del proyecto, donde falta claridad y las personas necesitan guía para no frustrarse.\n2) Estilo participativo: consulta y considera las opiniones del equipo en las decisiones. Aplicaría con los expertos que valoran su autonomía, que se motivan al ser considerados y aportan mejores soluciones.\n3) Estilo de apoyo: se preocupa por el bienestar y muestra cercanía; útil en los momentos de mucha presión y estrés, para sostener al equipo.\n4) Estilo orientado al logro: fija metas desafiantes y confía en el equipo; útil con personas de alto desempeño.\nEl buen líder combina estos estilos según la persona y el momento.",
+      criterios: [
+        { texto: "a) Explica la idea central del camino-meta: el líder facilita el camino a las metas y liga esfuerzo, desempeño y recompensa para motivar", peso: 3 },
+        { texto: "a) Señala que el estilo eficaz depende de la situación (colaboradores y tarea)", peso: 1 },
+        { texto: "b) Describe dos estilos válidos (directivo, participativo, de apoyo, orientado al logro)", peso: 2 },
+        { texto: "b) Asocia cada estilo a una situación pertinente del caso", peso: 2 }
+      ],
+      erroresComunes: [
+        "Presentar un único estilo de liderazgo como el correcto para todo el equipo.",
+        "Confundir la teoría del camino-meta con rasgos de personalidad del líder.",
+        "No conectar los estilos con las situaciones específicas del caso."
+      ]
+    },
+    {
+      id: "gdp-082",
+      tema: "Motivación: teoría de la fijación de metas de Locke",
+      dificultad: "media",
+      enunciado: "Un supervisor le dice a su equipo \"hagan su mejor esfuerzo\" como única meta. Los resultados son irregulares y la gente no sabe bien qué se espera de ella.\n\na) Explique la teoría de la fijación de metas de Locke y Latham y qué características debe tener una meta para motivar.\nb) Explique por qué la instrucción \"hagan su mejor esfuerzo\" es poco eficaz y reformúlela aplicando la teoría.",
+      respuestaModelo: "a) La teoría de la fijación de metas (goal setting) de Edwin Locke y Gary Latham sostiene que las metas específicas y desafiantes, cuando son aceptadas por la persona y van acompañadas de retroalimentación, conducen a un desempeño superior. Las metas motivan porque dirigen la atención y el esfuerzo hacia lo relevante, energizan, aumentan la persistencia y llevan a desarrollar estrategias para lograrlas. Para motivar, una meta debe ser: específica (clara y concreta, no vaga); desafiante pero alcanzable (retadora sin ser imposible); aceptada o comprometida por la persona (idealmente con su participación); y acompañada de retroalimentación sobre el avance. Esto coincide con la lógica de las metas SMART.\n\nb) La instrucción hagan su mejor esfuerzo es poco eficaz porque es una meta vaga: no especifica qué lograr ni cuánto, por lo que cada persona la interpreta distinto, no orienta el esfuerzo ni permite saber si se cumplió, y no es realmente desafiante (cualquier resultado puede justificarse como el mejor esfuerzo). Reformulación aplicando la teoría: reemplazarla por una meta específica, medible, desafiante y con plazo, por ejemplo: reducir el tiempo promedio de atención de 10 a 7 minutos en las próximas cuatro semanas, manteniendo la calidad; acordarla con el equipo (aceptación) y entregar retroalimentación semanal del avance. Así la meta dirige el esfuerzo, se puede medir y motiva más que una consigna genérica.",
+      criterios: [
+        { texto: "a) Explica la teoría de fijación de metas (metas específicas y desafiantes, aceptadas y con feedback, mejoran el desempeño)", peso: 3 },
+        { texto: "a) Enumera las características de una meta motivadora (específica, desafiante-alcanzable, aceptada, con retroalimentación)", peso: 2 },
+        { texto: "b) Explica por qué la meta vaga es poco eficaz y la reformula como meta específica, medible y con plazo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Creer que una meta más difícil siempre motiva, aunque sea inalcanzable o no aceptada.",
+        "Omitir la retroalimentación, que es parte esencial de la teoría.",
+        "Reformular la meta manteniéndola vaga o no medible."
+      ]
+    },
+    {
+      id: "gdp-083",
+      tema: "Equipos de alto desempeño y sus disfunciones",
+      dificultad: "media",
+      enunciado: "Un equipo de trabajo tiene personas talentosas, pero rinde por debajo de lo esperado: evitan los conflictos, nadie se hace responsable de los compromisos y desconfían entre sí.\n\na) Distinga entre un grupo de trabajo y un equipo de alto desempeño, señalando dos diferencias.\nb) Analice el caso a la luz de las disfunciones de los equipos (modelo de Lencioni u otro válido) y proponga dos (2) acciones para mejorar el desempeño del equipo.",
+      respuestaModelo: "a) Un grupo de trabajo es un conjunto de personas que comparten información y coordinan tareas, pero cuyo desempeño es la suma de los aportes individuales; cada uno responde por lo suyo. Un equipo de alto desempeño tiene una meta común, responsabilidad compartida por los resultados, roles complementarios y sinergia: el resultado colectivo es mayor que la suma de las partes. Dos diferencias: (1) responsabilidad individual (grupo) versus responsabilidad mutua y compartida (equipo); (2) objetivos individuales sumados (grupo) versus meta común y complementariedad de habilidades con sinergia (equipo).\n\nb) Según el modelo de las cinco disfunciones de Lencioni, los problemas del caso se explican como una cadena: en la base está la ausencia de confianza (desconfían entre sí), que provoca temor al conflicto (evitan los conflictos, no debaten con franqueza), lo que impide un compromiso real con las decisiones, lleva a la evitación de responsabilidades (nadie se hace responsable de los compromisos) y termina en la falta de atención a los resultados. Por eso, pese al talento individual, el equipo rinde poco.\n\nDos acciones (dos, por ejemplo):\n1) Construir confianza: instancias de conocimiento mutuo, vulnerabilidad y acuerdos de trabajo; sin confianza no se sostiene lo demás.\n2) Fomentar el conflicto sano y la responsabilidad mutua: promover el debate abierto de ideas, definir compromisos claros con responsables y plazos, y hacer seguimiento visible de los acuerdos, ligando el reconocimiento a los resultados del equipo y no solo individuales.",
+      criterios: [
+        { texto: "a) Distingue grupo de trabajo de equipo de alto desempeño con dos diferencias válidas (responsabilidad, meta común, sinergia)", peso: 3 },
+        { texto: "b) Analiza el caso con las disfunciones del equipo (falta de confianza, temor al conflicto, falta de compromiso/responsabilidad)", peso: 3 },
+        { texto: "b) Propone dos acciones pertinentes para mejorar el desempeño del equipo", peso: 2 }
+      ],
+      erroresComunes: [
+        "Usar grupo y equipo como sinónimos.",
+        "Atribuir el bajo rendimiento solo a falta de talento, ignorando la dinámica del equipo.",
+        "Proponer acciones sin conectarlas con las disfunciones detectadas (confianza, conflicto, compromiso)."
+      ]
+    },
+    {
+      id: "gdp-084",
+      tema: "Relaciones laborales: contrato de trabajo y jornada en Chile",
+      dificultad: "media",
+      enunciado: "Una pyme chilena contrata trabajadores solo de palabra, sin contrato escrito, con jornadas que varían según la carga y sin claridad sobre horas extra. Un trabajador reclama.\n\na) Explique qué es el contrato individual de trabajo, su carácter obligatorio y tres (3) cláusulas o menciones mínimas que debe contener según la legislación chilena.\nb) Explique brevemente el concepto de jornada ordinaria y horas extraordinarias, y el riesgo legal que corre la empresa del caso.",
+      respuestaModelo: "a) El contrato individual de trabajo es el acuerdo por el cual el trabajador se compromete a prestar servicios personales bajo subordinación y dependencia a un empleador, a cambio de una remuneración. En Chile debe constar por escrito dentro de los plazos legales (según el tipo de contrato, generalmente 15 días o menos); su ausencia no invalida la relación laboral -que existe por los hechos- pero hace presumir como ciertas las condiciones que declare el trabajador y expone al empleador a multas. Tres menciones mínimas (tres entre las siguientes): identificación y domicilio de las partes; fecha de ingreso; naturaleza de los servicios y el lugar donde se prestarán (funciones y cargo); monto, forma y período de pago de la remuneración; duración y distribución de la jornada de trabajo; plazo o duración del contrato.\n\nb) La jornada ordinaria es el tiempo máximo semanal de trabajo que fija la ley (en Chile en transición hacia 40 horas semanales), distribuido en un número de días. Las horas extraordinarias son las que exceden la jornada ordinaria pactada; deben pactarse, proceder por situaciones justificadas y pagarse con un recargo legal (50% sobre el valor de la hora ordinaria). El riesgo de la empresa del caso es alto: al no escriturar contratos ni registrar la jornada, incumple la ley, se expone a multas de la Dirección del Trabajo, a que se presuman las condiciones alegadas por el trabajador y a tener que pagar horas extra y otras diferencias reclamadas; además, la informalidad daña el clima y la confianza.",
+      criterios: [
+        { texto: "a) Explica qué es el contrato de trabajo (servicios bajo subordinación y dependencia por una remuneración) y su carácter escrito obligatorio", peso: 3 },
+        { texto: "a) Menciona tres cláusulas o menciones mínimas válidas del contrato", peso: 2 },
+        { texto: "b) Explica jornada ordinaria y horas extraordinarias (con recargo) y el riesgo legal de la informalidad del caso", peso: 3 }
+      ],
+      erroresComunes: [
+        "Creer que sin contrato escrito no existe relación laboral; existe por los hechos y perjudica al empleador.",
+        "Confundir subordinación y dependencia (relación laboral) con una prestación de servicios independiente (honorarios).",
+        "Ignorar que las horas extraordinarias deben pactarse y pagarse con recargo legal."
+      ]
+    },
+    {
+      id: "gdp-085",
+      tema: "Relaciones laborales: prevención del acoso y Ley Karin",
+      dificultad: "media",
+      enunciado: "En una empresa chilena se han recibido denuncias de malos tratos y hostigamiento entre jefaturas y colaboradores. La gerencia no sabe cómo abordarlo y teme consecuencias legales y de clima.\n\na) Distinga los conceptos de acoso laboral, acoso sexual y violencia en el trabajo en el ámbito de las relaciones laborales.\nb) Explique dos (2) obligaciones o buenas prácticas que la empresa debe implementar para prevenir y abordar estas situaciones (en línea con la normativa chilena vigente, como la Ley Karin).",
+      respuestaModelo: "a) En el ámbito de las relaciones laborales y la protección de la dignidad de las personas:\n- Acoso laboral (mobbing): conducta de agresión u hostigamiento reiterada, ejercida por el empleador o por trabajadores, que humilla, menoscaba o maltrata a una persona, afectando su situación o ambiente laboral. La normativa reciente en Chile ya no exige que sea reiterada: un solo acto puede constituirlo.\n- Acoso sexual: requerimientos de carácter sexual, no consentidos, que amenazan o perjudican la situación laboral o las oportunidades de la persona afectada.\n- Violencia en el trabajo: conductas ejercidas por terceros ajenos a la relación laboral (por ejemplo, clientes o usuarios) que afectan a los trabajadores en el ejercicio de sus funciones.\n\nb) Obligaciones o buenas prácticas (dos, por ejemplo):\n1) Contar con un protocolo de prevención y un procedimiento de investigación y sanción: la empresa debe tener reglas claras, canales de denuncia confidenciales, plazos y medidas de resguardo para la persona afectada, e investigar de forma imparcial toda denuncia (en Chile, la Ley Karin lo exige e integra la perspectiva de género).\n2) Prevención, capacitación y cultura de respeto: informar y capacitar a jefaturas y colaboradores sobre qué constituye acoso y violencia, promover un ambiente de respeto y buen trato, y medir el clima; la prevención es responsabilidad del empleador dentro de su deber de protección.\nCumplir estas obligaciones protege a las personas, mejora el clima y reduce el riesgo legal (multas, demandas) de la empresa.",
+      criterios: [
+        { texto: "a) Distingue acoso laboral, acoso sexual y violencia en el trabajo", peso: 3 },
+        { texto: "b) Explica la obligación de contar con protocolo y procedimiento de denuncia, investigación y sanción", peso: 2 },
+        { texto: "b) Explica la prevención/capacitación y cultura de respeto como deber del empleador", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir acoso laboral con acoso sexual: son conceptos distintos.",
+        "Creer que basta con reaccionar a las denuncias, ignorando el deber de prevención del empleador.",
+        "Minimizar el riesgo legal y de clima de no contar con protocolos ni canales de denuncia."
+      ]
+    },
+    {
+      id: "gdp-086",
+      tema: "Rotación y retención: indicadores y costos",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "El gerente de una empresa considera que la rotación de personal \"no es un problema porque siempre hay gente buscando trabajo\". El área de personas quiere mostrarle el verdadero impacto de la rotación no deseada.\n\na) Distinga entre rotación deseada y no deseada, y explique cómo se mide la rotación (indicador).\nb) Explique tres (3) costos o consecuencias concretas que la rotación no deseada genera para la organización.",
+      respuestaModelo: "a) La rotación de personal es la entrada y salida de trabajadores de la organización. La rotación deseada es la salida de personas de bajo desempeño o la renovación saludable que la empresa busca o no lamenta; la rotación no deseada es la salida de talento valioso que la empresa querría retener (renuncias voluntarias de buenos trabajadores), y es la que preocupa. Se mide con un índice o tasa de rotación, que relaciona el número de desvinculaciones o salidas en un período con la dotación promedio del mismo período (por ejemplo, salidas del mes dividido por dotación promedio, expresado en porcentaje); puede calcularse global o por área, y conviene separar la rotación voluntaria de la involuntaria.\n\nb) Costos o consecuencias de la rotación no deseada (tres entre los siguientes):\n1) Costos directos de reemplazo: reclutar, seleccionar e inducir a un nuevo trabajador (avisos, tiempo del equipo, consultoras, capacitación inicial).\n2) Pérdida de productividad y conocimiento: el que se va se lleva experiencia y relaciones con clientes; el nuevo tarda en alcanzar el rendimiento pleno (curva de aprendizaje), y mientras el cargo está vacante hay sobrecarga del resto.\n3) Impacto en el clima y en el servicio: la salida de buenos compañeros desmotiva, puede generar un efecto dominó de más renuncias, y afecta la calidad de atención y la relación con los clientes.\n4) Daño a la marca empleadora si la rotación es alta y visible.\nEl argumento del gerente es erróneo: que haya postulantes no elimina estos costos; reemplazar talento es caro, lento y afecta resultados. Por eso conviene invertir en retención (compensación total, desarrollo, buen liderazgo, clima).",
+      criterios: [
+        { texto: "a) Distingue rotación deseada de no deseada y explica cómo se mide (tasa de rotación: salidas sobre dotación promedio)", peso: 3 },
+        { texto: "b) Explica tres costos o consecuencias concretas de la rotación no deseada", peso: 3 },
+        { texto: "b) Refuta el argumento del gerente: la disponibilidad de postulantes no elimina los costos de reemplazo y pérdida de talento", peso: 2 }
+      ],
+      erroresComunes: [
+        "Considerar toda rotación como negativa (o toda como irrelevante); lo crítico es la rotación no deseada de talento.",
+        "Reducir el costo de la rotación solo al proceso de reclutamiento, olvidando la productividad y el clima.",
+        "No proponer que la respuesta es invertir en retención."
+      ]
+    },
+    {
+      id: "gdp-087",
+      tema: "Rediseño integral del proceso de atracción y selección",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "TecnoRetail, empresa chilena de e-commerce con 250 trabajadores, crece rápido y necesita contratar mucho y rápido. Su proceso actual es caótico: avisos genéricos que atraen cientos de postulaciones irrelevantes, filtro solo por título, una entrevista informal con el jefe y ninguna evaluación estructurada. La rotación en los primeros 90 días llega al 40% y las áreas se quejan de que \"llegan personas que no calzan\".\n\na) Analice tres (3) fallas del proceso de atracción y selección de TecnoRetail, vinculándolas con sus consecuencias.\nb) Rediseñe el proceso proponiendo mejoras para las etapas de definición del perfil, reclutamiento y selección.\nc) Explique cómo la experiencia del candidato y un preview realista del cargo ayudarían a reducir la rotación temprana.",
+      respuestaModelo: "a) Fallas y consecuencias (tres):\n1) Sin perfil por competencias ni descripción del cargo: los avisos genéricos no comunican qué se busca, por lo que atraen un pool masivo pero irrelevante (cientos de postulaciones inservibles) y hacen imposible un filtro pertinente. Consecuencia: ineficiencia y malas contrataciones.\n2) Filtro solo por título y una entrevista informal: se selecciona con instrumentos de baja validez, expuestos a sesgos del jefe (halo, similitud, primera impresión). Consecuencia: personas que cumplen requisitos formales pero no las competencias reales (no calzan).\n3) Sin evaluación estructurada ni del ajuste cultural ni preview del cargo: no se evalúan competencias ni motivación, ni se muestran las condiciones reales. Consecuencia: choque expectativa-realidad y rotación temprana del 40% con sus altos costos.\n\nb) Rediseño por etapas:\n- Definición del perfil: levantar la descripción y especificación del cargo por competencias, ligadas a la estrategia; definir competencias técnicas y conductuales y criterios de evaluación antes de reclutar.\n- Reclutamiento: avisos específicos por competencias, canales adecuados al perfil (redes, referidos internos, portales especializados), trabajo de marca empleadora; combinar fuentes internas y externas según el cargo.\n- Selección estructurada: filtro curricular por competencias, entrevista de screening, pruebas o ejercicios situacionales que midan la capacidad real, entrevista por competencias (STAR) con pauta y escala común, evaluación del ajuste cultural, verificación de referencias y panel de evaluadores para reducir sesgos.\n\nc) La experiencia del candidato importa porque la selección es la primera aproximación a la cultura: un proceso ordenado, respetuoso y comunicativo mejora la aceptación de ofertas y la marca empleadora. El preview realista del cargo (mostrar en la selección las condiciones, metas y desafíos reales, incluso una visita a la operación) ajusta las expectativas antes de entrar, evita el choque en la fase de encuentro de la socialización y, con ello, reduce la rotación temprana: quien acepta sabiendo cómo es el trabajo tiene menos probabilidad de renunciar a las pocas semanas.",
+      criterios: [
+        { texto: "a) Analiza tres fallas del proceso (falta de perfil, instrumentos de baja validez/sesgos, ausencia de evaluación y preview) con sus consecuencias", peso: 4 },
+        { texto: "b) Rediseña las etapas de perfil, reclutamiento y selección con mejoras concretas y pertinentes", peso: 4 },
+        { texto: "c) Explica cómo la experiencia del candidato y el preview realista reducen la rotación temprana (ajuste de expectativas, socialización)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir descripción del cargo (qué hace) con perfil/especificación (qué requisitos) o con el aviso de reclutamiento.",
+        "Rediseñar la selección sin partir de la definición del perfil por competencias.",
+        "Ignorar el vínculo entre experiencia del candidato, preview realista y rotación temprana."
+      ]
+    },
+    {
+      id: "gdp-088",
+      tema: "Compensación total y estrategia de retención del talento",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Consultora Meridiano pierde a sus mejores profesionales jóvenes, que renuncian pese a tener sueldos competitivos. En las entrevistas de salida mencionan falta de reconocimiento, poca flexibilidad, escaso desarrollo y jefaturas distantes. La gerencia insiste en que \"si pagamos bien, no deberían irse\".\n\na) Explique por qué un buen sueldo no basta para retener al talento, apoyándose en al menos dos teorías de la motivación.\nb) Diseñe un esquema de compensación total con sus tres componentes, proponiendo dos ejemplos por componente coherentes con lo que valoran estos profesionales.\nc) Explique cómo cada parte del esquema contribuye a la retención y por qué esto es especialmente relevante para las nuevas generaciones.",
+      respuestaModelo: "a) Un buen sueldo no basta porque el dinero no atiende todas las motivaciones. Según la teoría de los dos factores de Herzberg, el sueldo es un factor higiénico: su ausencia genera insatisfacción, pero su presencia no motiva; lo que motiva son el reconocimiento, el logro, el desarrollo y la responsabilidad, justamente lo que falta en el caso. Según la jerarquía de Maslow, con las necesidades básicas cubiertas por el sueldo, lo insatisfecho son las de estima (reconocimiento) y autorrealización (desarrollo). Puede sumarse la teoría de la equidad de Adams (comparan aportes y recompensas, no solo el monto) y las expectativas de Vroom (si no hay desarrollo ni reconocimiento, el esfuerzo pierde sentido). Por eso profesionales bien pagados pero sin reconocimiento ni futuro se van.\n\nb) Esquema de compensación total (tres componentes, dos ejemplos cada uno):\n1) Compensación monetaria directa: sueldo base competitivo (ya lo tienen) y bonos por desempeño o proyectos; participación en resultados.\n2) Compensación monetaria indirecta (beneficios): seguro complementario de salud, apoyo a la formación (becas, financiamiento de cursos o posgrados), días libres adicionales.\n3) Compensación no monetaria o salario emocional: flexibilidad y trabajo híbrido; programa de reconocimiento y feedback frecuente; planes de desarrollo y carrera; buen liderazgo y propósito.\n\nc) Cada parte contribuye a la retención: la monetaria directa e indirecta asegura equidad interna y externa y cubre la higiene (evita la fuga por sueldo); pero son el reconocimiento, la flexibilidad y el desarrollo (salario emocional) los que atacan las causas reales de las renuncias del caso, activando los factores motivacionales de Herzberg y las necesidades de estima y autorrealización. Esto es especialmente relevante para las nuevas generaciones (millennials y Generación Z), que valoran fuertemente el equilibrio vida-trabajo, la salud mental, el propósito y el crecimiento: para ellas la oferta de valor debe ir mucho más allá del sueldo.",
+      criterios: [
+        { texto: "a) Explica por qué el sueldo no basta usando al menos dos teorías (Herzberg higiénico vs motivacional, Maslow, equidad, expectativas)", peso: 3 },
+        { texto: "b) Diseña la compensación total con sus tres componentes y dos ejemplos coherentes por componente", peso: 4 },
+        { texto: "c) Explica cómo cada parte contribuye a la retención y su especial relevancia para las nuevas generaciones", peso: 3 }
+      ],
+      erroresComunes: [
+        "Reducir la retención a subir sueldos, ignorando reconocimiento, desarrollo y flexibilidad.",
+        "Omitir la compensación monetaria directa (la base) o, al revés, quedarse solo en ella.",
+        "Citar teorías sin conectarlas con las causas de renuncia del caso."
+      ]
+    },
+    {
+      id: "gdp-089",
+      tema: "Transformación digital de RRHH y gestión del cambio",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Finanzas del Sur, empresa chilena del sector financiero con 480 colaboradores y una cultura histórica cercana y de confianza, automatizó de golpe procesos de RR.HH. con inteligencia artificial (filtro de CV, videoentrevistas, bots de consultas, encuestas de clima con IA). El equipo de Personas no participó del diseño y expresa confusión, desmotivación y desconfianza; la gerencia solo les pidió \"adaptarse a los nuevos tiempos\". Hay críticas internas y externas y rotación temprana en algunos procesos.\n\na) Identifique dos (2) focos de resistencia al cambio en el equipo de Personas y proponga una intervención concreta para cada uno.\nb) Como responsable del cambio, describa los pasos que habría seguido para implementarlo, fundamentando con un modelo de gestión del cambio (Lewin, Kotter, ADKAR).\nc) Analice cómo esta transformación puede afectar la cultura y el clima de la organización.",
+      respuestaModelo: "a) Focos de resistencia (dos, con intervención):\n1) Miedo a la pérdida del empleo o de valor (la IA parece reemplazarlos): intervención: comunicar con transparencia el rol futuro del equipo, y capacitar/reconvertir hacia perfiles de mayor valor (analítica de personas, gestión del cambio, liderazgo), mostrando que la IA los complementa, no los sustituye.\n2) Falta de participación y de información (no fueron parte del diseño; solo se les pidió adaptarse): intervención: involucrarlos activamente en el rediseño (mesas de trabajo, pilotos, definición de criterios), y establecer una comunicación clara del porqué y el cómo del cambio, con espacios de escucha.\n\nb) Pasos fundamentados en un modelo (por ejemplo Kotter): 1) Crear sentido de urgencia comunicando las razones del cambio (competitividad, datos de mercado). 2) Formar una coalición que incluya al equipo de Personas y no solo a TI. 3) Construir y comunicar una visión clara del nuevo modelo de RR.HH. 4) Comunicar ampliamente y capacitar. 5) Facilitar la acción y remover obstáculos, con pilotos y participación. 6) Generar victorias tempranas visibles. 7) Consolidar y no cantar victoria antes de tiempo. 8) Anclar el cambio en la cultura. (Con Lewin: descongelar -crear conciencia y disposición-, cambiar -implementar con apoyo y capacitación- y recongelar -reforzar y estabilizar-. Con ADKAR: trabajar conciencia, deseo, conocimiento, habilidad y refuerzo en las personas.) El error del caso fue imponer el cambio sin descongelar ni involucrar.\n\nc) Impacto en cultura y clima: la organización tiene una cultura histórica de cercanía y confianza; automatizar de golpe y sin participación puede chocar con esos valores (choque cultural), erosionando la confianza y el sentido de pertenencia. En el clima se ven afectados factores como la comunicación, la participación, la seguridad/estabilidad percibida, el reconocimiento y la relación con el liderazgo, lo que explica la desmotivación y desconfianza. Bien gestionado (participación, comunicación, reconversión), el cambio puede mejorar eficiencia sin sacrificar la cultura; mal gestionado, deteriora clima, marca empleadora y aumenta la rotación.",
+      criterios: [
+        { texto: "a) Identifica dos focos de resistencia (miedo a la pérdida, falta de participación/información) con una intervención concreta cada uno", peso: 3 },
+        { texto: "b) Describe pasos de implementación fundamentados en un modelo de cambio (Lewin/Kotter/ADKAR), señalando que faltó descongelar/involucrar", peso: 4 },
+        { texto: "c) Analiza el impacto en la cultura (choque con valores de cercanía/confianza) y en factores del clima", peso: 3 }
+      ],
+      erroresComunes: [
+        "Tratar la resistencia como capricho del equipo y no como reacción con causas gestionables.",
+        "Describir el modelo de cambio sin aplicarlo al caso ni señalar el error de imponer sin involucrar.",
+        "Ignorar el choque entre la automatización abrupta y la cultura histórica de cercanía."
+      ]
+    },
+    {
+      id: "gdp-090",
+      tema: "Diagnóstico de clima y plan de intervención integral",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Clínica Vida Plena aplicó una encuesta de clima con resultados críticos: comunicación interna (30% favorable), reconocimiento (28%), carga de trabajo y equilibrio (25%) y relación con las jefaturas (35%). La infraestructura y la remuneración base salen bien evaluadas. La rotación de enfermeras y técnicos aumenta. La gerencia pide \"un plan\", pero advierte que ya hicieron un asado y regalaron un bono navideño sin resultado.\n\na) Diferencie clima de cultura y explique por qué el asado y el bono no movieron los resultados.\nb) Elabore un plan de intervención con una acción concreta para cada una de las cuatro dimensiones críticas, fundamentando cada una.\nc) Explique cómo debe gestionarse el proceso (pasos) para que el plan efectivamente mejore el clima y no quede en buenas intenciones.",
+      respuestaModelo: "a) El clima es la percepción compartida del ambiente de trabajo en un momento dado; la cultura es el conjunto profundo y estable de valores y supuestos. El asado y el bono no movieron los resultados porque son acciones puntuales que no atacan las dimensiones deterioradas: son, en términos de Herzberg, higiene o eventos aislados, mientras que los problemas son de comunicación, reconocimiento, carga y liderazgo. Además, con buena remuneración base ya cubierta, más dinero parejo o un evento social no resuelven déficits de reconocimiento ni de equilibrio; se requiere intervenir donde están las brechas.\n\nb) Plan de intervención (una acción por dimensión):\n1) Comunicación interna: instaurar reuniones periódicas de equipo y canales formales de información bidireccional (por ejemplo, reuniones breves por turno y un canal de dudas), para que la información fluya y se escuche al personal.\n2) Reconocimiento: implementar un programa de reconocimiento ligado al desempeño, con feedback frecuente de las jefaturas y destaque de buenas prácticas clínicas, atacando el 28%.\n3) Carga de trabajo y equilibrio: revisar dotación, turnos y distribución de tareas; ajustar la planificación para equilibrar la carga y cuidar el descanso, dado el desgaste propio del sector salud.\n4) Relación con las jefaturas: capacitar y acompañar a las jefaturas en habilidades de liderazgo, feedback y trato, pues son clave del clima y del reconocimiento.\n\nc) Gestión del proceso (pasos): 1) Devolver los resultados de forma transparente a los equipos; 2) Priorizar junto con ellos las dimensiones críticas; 3) Co-construir los planes de acción con responsables y plazos por área; 4) Implementar y comunicar los avances; 5) Hacer seguimiento y volver a medir para verificar la mejora, cerrando el ciclo. La clave es la participación y que a la medición le sigan acciones visibles y sostenidas: solo así el personal percibe que su opinión genera cambios, se recupera la confianza y baja la rotación.",
+      criterios: [
+        { texto: "a) Diferencia clima de cultura y explica por qué acciones puntuales (asado, bono) no mueven dimensiones deterioradas específicas", peso: 3 },
+        { texto: "b) Propone una acción concreta y fundamentada para cada una de las cuatro dimensiones críticas", peso: 4 },
+        { texto: "c) Describe los pasos de gestión del proceso (devolución, priorización participativa, planes con responsables, seguimiento y nueva medición)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Proponer más beneficios o eventos sin atacar las dimensiones críticas del clima.",
+        "Confundir clima con cultura al fundamentar.",
+        "Entregar acciones sin un proceso participativo ni seguimiento, dejándolas en buenas intenciones."
+      ]
+    },
+    {
+      id: "gdp-091",
+      tema: "Cambio cultural tras una fusión de empresas",
+      dificultad: "dificil",
+      enunciado: "Dos empresas chilenas se fusionan: \"Andina\", jerárquica, formal y orientada al control, y \"Delta\", horizontal, ágil y orientada a la innovación. A un año de la fusión hay choques constantes, dos formas de hacer las cosas que no calzan, fuga de talento de Delta y un clima tenso. La nueva gerencia quiere construir una cultura común.\n\na) Explique, con el modelo de niveles de Schein, por qué integrar dos culturas es difícil y no basta con unificar procesos o logos.\nb) Proponga un proceso de cambio cultural con al menos cuatro (4) acciones para construir una cultura común, fundamentando cada una.\nc) Explique el rol del liderazgo y de la comunicación en un cambio cultural de este tipo.",
+      respuestaModelo: "a) Según Schein, la cultura tiene tres niveles: artefactos (lo visible: oficinas, logos, ritos, lenguaje), valores declarados (lo que se dice valorar) y supuestos básicos (creencias inconscientes que se dan por sentadas, el verdadero núcleo). Integrar dos culturas es difícil porque unificar artefactos (logo, marca, procesos) es lo superficial; lo que choca de verdad son los supuestos básicos y valores profundos: cómo se toman decisiones, cómo se ejerce la autoridad, qué se premia. Andina asume que el control y la jerarquía dan resultados; Delta asume que la autonomía y la agilidad los dan. Esos supuestos, invisibles y arraigados, colisionan aunque se unifiquen los procesos, y por eso la sola integración administrativa no crea una cultura común.\n\nb) Proceso de cambio cultural (cuatro acciones):\n1) Diagnóstico cultural de ambas organizaciones: identificar valores, supuestos y prácticas de cada una y las brechas, para saber qué integrar y qué es incompatible.\n2) Definir la cultura deseada y los valores compartidos: la gerencia, con participación, define el modelo cultural objetivo alineado a la estrategia de la empresa fusionada.\n3) Alinear las prácticas y sistemas de gestión de personas a esa cultura: reclutamiento, evaluación, reconocimiento e incentivos deben premiar las conductas de la cultura deseada (si se quiere colaboración e innovación, se debe medir y premiar).\n4) Trabajar los artefactos y símbolos y generar victorias tempranas: espacios comunes, ritos, historias y equipos mixtos que encarnen la nueva cultura y muestren que funciona.\n\nc) El liderazgo es decisivo: la cultura se cambia principalmente por lo que los líderes hacen, premian y modelan; deben ser ejemplo coherente de la nueva cultura (si predican colaboración pero actúan jerárquicamente, nadie cambia). La comunicación es igualmente central: explicar el porqué del cambio, dar sentido, reducir la incertidumbre y la resistencia, y sostener el relato en el tiempo. Sin liderazgo ejemplar y comunicación constante, el cambio cultural fracasa y se profundiza la fuga de talento.",
+      criterios: [
+        { texto: "a) Usa los niveles de Schein para explicar que el choque está en valores y supuestos profundos, no en los artefactos", peso: 3 },
+        { texto: "b) Propone al menos cuatro acciones fundamentadas de cambio cultural (diagnóstico, cultura deseada, alinear prácticas, símbolos/victorias)", peso: 4 },
+        { texto: "c) Explica el rol del liderazgo (modelar y premiar) y de la comunicación en el cambio cultural", peso: 3 }
+      ],
+      erroresComunes: [
+        "Creer que unificar logos, marca o procesos equivale a integrar culturas.",
+        "Invertir los niveles de Schein o quedarse solo en los artefactos.",
+        "Omitir el rol del liderazgo como principal palanca del cambio cultural."
+      ]
+    },
+    {
+      id: "gdp-092",
+      tema: "Liderazgo y desarrollo de equipos en contexto de crisis",
+      dificultad: "dificil",
+      enunciado: "Una empresa enfrenta una crisis: caída de ventas, incertidumbre y un equipo desmotivado y temeroso por su futuro. El gerente, de estilo autoritario y transaccional, solo exige más esfuerzo y amenaza con despidos, y los resultados empeoran.\n\na) Explique por qué un liderazgo transaccional y autoritario es insuficiente en este contexto, distinguiéndolo del liderazgo transformacional.\nb) Proponga cómo debería liderar el gerente para movilizar al equipo en la crisis, con tres (3) conductas o acciones concretas de liderazgo.\nc) Explique cómo el liderazgo influye en la motivación y el clima del equipo en momentos de incertidumbre.",
+      respuestaModelo: "a) El liderazgo transaccional se basa en el intercambio de recompensas por cumplimiento y en el control; combinado con un estilo autoritario (imponer y amenazar), consigue a lo sumo mínimos por miedo, pero no compromiso. En una crisis con incertidumbre y temor, exigir más y amenazar aumenta el estrés, el miedo y la desmotivación, y erosiona la confianza, por lo que los resultados empeoran. El liderazgo transformacional, en cambio, busca transformar e inspirar: apela a una visión y a metas colectivas, motiva a trascender el interés propio, atiende el desarrollo de las personas y genera compromiso y confianza. En crisis y cambio, es más eficaz porque moviliza a las personas hacia una salida compartida en lugar de paralizarlas por el miedo.\n\nb) Conductas o acciones de liderazgo (tres):\n1) Comunicar una visión clara y honesta de la situación y del camino de salida, dando sentido y reduciendo la incertidumbre (transparencia sin falsas promesas).\n2) Mostrar cercanía y apoyo (liderazgo de apoyo): escuchar, contener la ansiedad, reconocer el esfuerzo y cuidar al equipo, lo que sostiene la moral.\n3) Involucrar y empoderar: hacer participar al equipo en la búsqueda de soluciones, delegar según competencias, fijar metas alcanzables de corto plazo y celebrar victorias tempranas para recuperar la confianza y el impulso.\n\nc) El liderazgo influye directamente en la motivación y el clima porque, en la incertidumbre, las personas miran a su líder para interpretar la situación y regular sus emociones. Un líder que comunica, apoya, reconoce y da sentido genera seguridad psicológica, confianza y compromiso (mejor clima y motivación); un líder que amenaza y controla genera miedo, desconfianza y parálisis (peor clima, más rotación). El estilo de liderazgo es, por tanto, un determinante clave del clima, especialmente en crisis.",
+      criterios: [
+        { texto: "a) Explica por qué el liderazgo transaccional/autoritario es insuficiente en crisis y lo distingue del transformacional", peso: 3 },
+        { texto: "b) Propone tres conductas o acciones concretas de liderazgo para movilizar al equipo (visión/comunicación, apoyo, participación/victorias tempranas)", peso: 4 },
+        { texto: "c) Explica la influencia del liderazgo en la motivación y el clima en contextos de incertidumbre", peso: 3 }
+      ],
+      erroresComunes: [
+        "Presentar el transaccional y el transformacional como opuestos irreconciliables; el transformacional enriquece al transaccional.",
+        "Confundir liderazgo transformacional con autoritarismo carismático.",
+        "Proponer solo motivar sin acciones concretas de comunicación, apoyo y participación."
+      ]
+    },
+    {
+      id: "gdp-093",
+      tema: "Ciclo de capacitación integral y medición de impacto",
+      dificultad: "dificil",
+      enunciado: "Una empresa de servicios invierte mucho en capacitación, pero la gerencia sospecha que no genera impacto: elige cursos de moda, los mismos para todos, sin objetivos claros, y solo mide la satisfacción final. Quiere profesionalizar su gestión de la capacitación.\n\na) Describa las cuatro etapas del ciclo de capacitación y explique el error de la empresa en cada una.\nb) Explique cómo debería evaluar la efectividad usando el modelo de Kirkpatrick y el ROI.\nc) Mencione un mecanismo de financiamiento estatal en Chile y una condición para usarlo.",
+      respuestaModelo: "a) El ciclo de capacitación tiene cuatro etapas:\n1) Detección de Necesidades de Capacitación (DNC): identificar brechas analizando organización, tareas y personas. Error de la empresa: no hace DNC; elige cursos por moda, iguales para todos, sin detectar brechas reales.\n2) Diseño del programa: definir objetivos de aprendizaje claros, métodos y contenidos con foco en la transferencia. Error: no define objetivos de aprendizaje ni adapta el programa a los distintos cargos.\n3) Implementación: ejecutar la actividad. (Es donde menos falla, pero sin las etapas previas pierde sentido.)\n4) Evaluación: medir aprendizaje, transferencia y resultados. Error: solo mide satisfacción (reacción), sin saber si se aprendió, se aplicó ni tuvo impacto.\n\nb) Evaluación con Kirkpatrick en cuatro niveles: 1) Reacción (satisfacción, encuesta); 2) Aprendizaje (pruebas antes/después); 3) Conducta o transferencia (aplicación en el puesto, observación e indicadores a 30-90 días); 4) Resultados (impacto en productividad, calidad, ventas, reclamos, rotación). El ROI (nivel financiero) traduce los resultados a retorno: ROI (%) = (Beneficios - Costos) / Costos x 100, valorizando los beneficios y sumando los costos. Medir antes y después o con grupo de control permite atribuir el cambio a la capacitación. Así se demuestra impacto, no solo satisfacción.\n\nc) En Chile, la franquicia tributaria SENCE (Ley 19.518) permite descontar de impuestos los gastos de capacitación, hasta el 1% de la planilla anual de remuneraciones. Condición (una): ejecutar los cursos a través de organismos autorizados (OTEC, vía OTIC o SENCE) y cumplir requisitos como la asistencia mínima exigida (habitualmente 75%) y los topes por tramo de renta.",
+      criterios: [
+        { texto: "a) Describe las cuatro etapas del ciclo (DNC, diseño, implementación, evaluación) e identifica el error en cada una", peso: 4 },
+        { texto: "b) Explica la evaluación con los cuatro niveles de Kirkpatrick y el ROI con su fórmula", peso: 4 },
+        { texto: "c) Menciona la franquicia SENCE y una condición válida para su uso", peso: 2 }
+      ],
+      erroresComunes: [
+        "Omitir la DNC como origen del ciclo.",
+        "Confundir la evaluación de satisfacción con la de impacto (transferencia y resultados).",
+        "Describir el SENCE como un subsidio directo en lugar de una franquicia tributaria con condiciones."
+      ]
+    },
+    {
+      id: "gdp-094",
+      tema: "Evaluación del desempeño en el trabajo híbrido y a distancia",
+      dificultad: "dificil",
+      enunciado: "Una empresa adoptó el trabajo híbrido y remoto. Algunas jefaturas, acostumbradas a evaluar por la presencia y las horas en la oficina, ahora no saben cómo evaluar a quienes no ven, y tienden a favorecer a los que van presencialmente. Los trabajadores remotos se sienten en desventaja.\n\na) Explique por qué evaluar el desempeño por presencia u horas es inadecuado, especialmente en el trabajo a distancia.\nb) Proponga cómo debería rediseñarse la evaluación del desempeño para un contexto híbrido, con al menos tres (3) elementos.\nc) Analice el sesgo de proximidad y su efecto sobre la equidad, y proponga cómo mitigarlo.",
+      respuestaModelo: "a) Evaluar por presencia u horas confunde estar con aportar: mide un insumo (tiempo visible) y no el resultado ni la contribución real. Siempre fue una mala proxy, pero en el trabajo a distancia es directamente inadecuado, porque la presencia física deja de ser observable y el foco debe estar en objetivos y entregables, no en cuántas horas se ve a la persona. Evaluar por presencia penaliza a quien produce a distancia y premia el presentismo (estar sin necesariamente rendir), distorsionando la evaluación.\n\nb) Rediseño de la evaluación para contexto híbrido (al menos tres elementos):\n1) Evaluación por objetivos y resultados (APO): acordar metas claras y medibles (SMART) y entregables, y evaluar su cumplimiento, no la ubicación ni las horas.\n2) Complementar con competencias observables adaptadas al trabajo remoto (autonomía, comunicación, colaboración digital, responsabilidad), evaluadas con evidencia.\n3) Retroalimentación frecuente y estructurada (reuniones periódicas 1 a 1, seguimiento por hitos) para no perder el contacto y detectar avances y apoyos, más que control de asistencia.\n4) Criterios y expectativas explícitos e iguales para presenciales y remotos.\n\nc) El sesgo de proximidad es la tendencia a valorar mejor y dar más oportunidades a quienes están físicamente presentes y más visibles para la jefatura, aunque no rindan más. Afecta la equidad porque los trabajadores remotos reciben peores evaluaciones, menos reconocimiento y menos ascensos por estar menos a la vista, generando percepción de injusticia (teoría de la equidad) y desmotivación, tal como sienten en el caso. Para mitigarlo: evaluar con criterios objetivos basados en resultados y competencias; capacitar a las jefaturas para reconocer el sesgo; documentar logros de todos por igual; asegurar visibilidad de los remotos (que sus aportes se registren y comuniquen); y usar múltiples fuentes de evaluación (360) para contrastar la mirada del jefe.",
+      criterios: [
+        { texto: "a) Explica por qué evaluar por presencia/horas es inadecuado (mide insumo, no aporte; premia presentismo) sobre todo en trabajo remoto", peso: 3 },
+        { texto: "b) Propone al menos tres elementos de rediseño (objetivos/resultados, competencias adaptadas, feedback frecuente, criterios iguales)", peso: 4 },
+        { texto: "c) Explica el sesgo de proximidad y su efecto en la equidad, y propone cómo mitigarlo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Defender la evaluación por horas o presencia como medida de compromiso.",
+        "Proponer más control y vigilancia digital en vez de evaluación por resultados.",
+        "Ignorar el sesgo de proximidad y su impacto en la equidad y la motivación de los remotos."
+      ]
+    },
+    {
+      id: "gdp-095",
+      tema: "Planificación estratégica de la dotación en expansión",
+      dificultad: "dificil",
+      enunciado: "Una empresa chilena de retail planea abrir 15 nuevas tiendas en dos años, lo que exige incorporar cientos de trabajadores y decenas de jefaturas. Hoy improvisa sus contrataciones cuando ya tiene la urgencia encima, lo que genera vacantes sin cubrir, contrataciones apuradas y alta rotación.\n\na) Explique qué es la planificación estratégica de la dotación y por qué debe anticiparse a la necesidad.\nb) Proponga cómo debería planificar la dotación para esta expansión, con al menos cuatro (4) elementos o etapas.\nc) Analice cómo combinar reclutamiento interno y externo, y el rol del desarrollo y la sucesión para cubrir las jefaturas.",
+      respuestaModelo: "a) La planificación estratégica de la dotación (workforce planning) es el proceso de anticipar y asegurar que la organización cuente con las personas necesarias, en la cantidad, con las competencias y en el momento y lugar adecuados para cumplir su estrategia. Debe anticiparse porque atraer, seleccionar, contratar y formar personas toma tiempo: si se improvisa cuando la necesidad ya es urgente (como en el caso), se cubre mal y apurado, con vacantes descubiertas, malas contrataciones y rotación. Planificar convierte una necesidad futura conocida (15 tiendas) en un plan ordenado de incorporación.\n\nb) Planificación para la expansión (al menos cuatro elementos/etapas):\n1) Traducir la estrategia en demanda de dotación: cuántos cargos y de qué tipo requiere cada tienda (vendedores, cajeros, jefes de tienda) y en qué fechas, según el cronograma de aperturas.\n2) Analizar la oferta interna: inventario de talento y de potencial existente (quiénes podrían ascender o trasladarse) y brechas.\n3) Definir perfiles por competencias y el plan de atracción (canales, marca empleadora, campañas anticipadas), previendo tiempos de reclutamiento y selección.\n4) Plan de formación e inducción escalable para incorporar y poner en régimen a los nuevos con calidad, y presupuesto asociado.\n5) Indicadores y seguimiento (vacantes cubiertas a tiempo, rotación temprana) para ajustar el plan.\n\nc) Para cubrir las jefaturas conviene combinar fuentes: reclutamiento interno, promoviendo y trasladando a colaboradores con buen desempeño y potencial (aprovecha su conocimiento de la cultura, motiva y reduce riesgo), apoyado en planes de desarrollo y sucesión que preparen con anticipación a futuros jefes de tienda (formación, mentoría, matriz de talento); y reclutamiento externo para los cargos que no se pueden cubrir internamente o que requieren experiencia nueva, aportando capacidades frescas. La sucesión es clave: si la empresa desarrolla con tiempo a sus talentos, la expansión encuentra jefaturas listas en vez de tener que salir a buscarlas a último minuto.",
+      criterios: [
+        { texto: "a) Explica la planificación estratégica de la dotación (personas necesarias, competencias, momento y lugar) y por qué anticiparse", peso: 3 },
+        { texto: "b) Propone al menos cuatro elementos/etapas de planificación aplicados a la expansión", peso: 4 },
+        { texto: "c) Analiza la combinación de reclutamiento interno y externo y el rol del desarrollo y la sucesión para las jefaturas", peso: 3 }
+      ],
+      erroresComunes: [
+        "Reducir la planificación de dotación a reaccionar cuando ya hay una vacante urgente.",
+        "Considerar solo el reclutamiento externo, olvidando el talento interno y la sucesión.",
+        "No conectar la dotación con la estrategia ni con los tiempos de los procesos de personas."
+      ]
+    },
+    {
+      id: "gdp-096",
+      tema: "Diagnóstico de motivación y compromiso con múltiples teorías",
+      dificultad: "dificil",
+      enunciado: "En una empresa manufacturera, la gerencia observa tres grupos: operarios que solo cumplen lo mínimo y se quejan del sueldo; supervisores desmotivados porque \"nunca se reconoce lo que hacen\" y no ven futuro; y un grupo de profesionales jóvenes que se aburre porque su trabajo es rutinario y sin desafíos. La gerencia quiere un plan de motivación diferenciado.\n\na) Diagnostique la situación de cada grupo aplicando una teoría de la motivación pertinente a cada uno.\nb) Proponga una acción concreta de motivación para cada grupo, coherente con el diagnóstico.\nc) Explique por qué un mismo incentivo (por ejemplo, un bono igual para todos) no resolvería estas tres situaciones distintas.",
+      respuestaModelo: "a) Diagnóstico por grupo con teoría pertinente:\n1) Operarios que cumplen el mínimo y se quejan del sueldo: hay un factor higiénico deficitario (Herzberg) o necesidades básicas/seguridad no satisfechas (Maslow); mientras el sueldo se perciba injusto (equidad de Adams), no habrá disposición a más. Aquí el problema es de higiene: hay que resolverlo para que deje de generar insatisfacción, aunque por sí solo no motive.\n2) Supervisores desmotivados por falta de reconocimiento y de futuro: fallan los factores motivacionales de Herzberg (reconocimiento, logro, crecimiento) y las necesidades de estima y autorrealización (Maslow); también McClelland (necesidad de logro y de poder no atendidas).\n3) Profesionales jóvenes aburridos por trabajo rutinario: falta enriquecimiento del puesto y desafío; según Herzberg, el contenido del trabajo (la tarea misma) no motiva; según la fijación de metas de Locke, faltan metas retadoras; buscan autorrealización.\n\nb) Acciones diferenciadas (una por grupo):\n1) Operarios: revisar y ordenar la política salarial (equidad interna y externa) para corregir la injusticia percibida y estabilizar la higiene.\n2) Supervisores: programa de reconocimiento ligado al desempeño y plan de desarrollo de carrera/promoción, para atacar el déficit de estima y futuro.\n3) Profesionales jóvenes: enriquecer el trabajo (más autonomía, proyectos desafiantes, rotación, nuevas responsabilidades) y fijar metas retadoras con sentido.\n\nc) Un bono igual para todos no resuelve las tres situaciones porque cada grupo tiene una necesidad distinta: a los operarios les corrige algo la higiene pero no cambia el mínimo esfuerzo; a los supervisores no les da el reconocimiento ni el futuro que echan de menos (y un bono parejo puede incluso agravar la inequidad percibida, Adams); y a los profesionales no les quita el aburrimiento, porque su problema es el contenido del trabajo, no el dinero. La motivación es diferenciada: hay que atacar la necesidad específica de cada grupo, no aplicar una solución monetaria uniforme.",
+      criterios: [
+        { texto: "a) Diagnostica cada grupo con una teoría pertinente (Herzberg higiénico/motivacional, Maslow, equidad, logro, enriquecimiento)", peso: 4 },
+        { texto: "b) Propone una acción concreta y coherente con el diagnóstico para cada grupo", peso: 3 },
+        { texto: "c) Explica por qué un bono uniforme no resuelve necesidades distintas (e incluso puede agravar la inequidad)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Aplicar una sola teoría o una sola solución a situaciones motivacionales distintas.",
+        "Suponer que más dinero resuelve déficits de reconocimiento o de desafío.",
+        "Citar teorías sin diagnosticar con ellas la situación concreta de cada grupo."
+      ]
+    },
+    {
+      id: "gdp-097",
+      tema: "Relaciones laborales colectivas: negociación colectiva y huelga",
+      dificultad: "dificil",
+      enunciado: "En una empresa chilena con sindicato, se inicia un proceso de negociación colectiva. La relación es tensa: la gerencia ve al sindicato como un adversario y amenaza, y el sindicato desconfía y evalúa la huelga. La gerencia pide asesoría sobre cómo manejar el proceso.\n\na) Explique qué es la negociación colectiva y el rol del sindicato en las relaciones laborales, distinguiendo entre relaciones laborales individuales y colectivas.\nb) Distinga entre un enfoque de negociación distributivo (ganar-perder) e integrativo (ganar-ganar) y recomiende cuál conviene a la empresa y por qué.\nc) Explique qué es la huelga y por qué una buena relación laboral colectiva es un activo para la empresa y no solo un riesgo.",
+      respuestaModelo: "a) Las relaciones laborales individuales son las que se dan entre un trabajador y su empleador (contrato individual, condiciones personales). Las relaciones laborales colectivas son las que se dan entre la organización y los trabajadores agrupados, representados por el sindicato. El sindicato es la organización que representa y defiende los intereses de los trabajadores, negocia condiciones y actúa como interlocutor colectivo. La negociación colectiva es el procedimiento reglado por el cual el sindicato (o grupo de trabajadores) y el empleador acuerdan condiciones comunes de trabajo y remuneraciones para un período, plasmadas en un contrato o convenio colectivo.\n\nb) La negociación distributiva es de suma cero (ganar-perder): las partes se reparten un mismo pastel fijo, y lo que gana uno lo pierde el otro; se basa en posiciones y presión. La negociación integrativa busca ganar-ganar: ampliar el pastel, identificar intereses comunes y crear valor para ambas partes (por ejemplo, productividad y mejores condiciones a la vez). Conviene a la empresa un enfoque integrativo (colaborativo), porque construye una relación de largo plazo, reduce el conflicto y la probabilidad de huelga, y mejora el clima; ver al sindicato solo como adversario y amenazar (distributivo/hostil) escala el conflicto y deteriora la confianza, como muestra el caso.\n\nc) La huelga es el derecho colectivo de los trabajadores de suspender colectivamente sus labores como medida de presión dentro de la negociación reglada, cuando no hay acuerdo. Una buena relación laboral colectiva es un activo -no solo un riesgo- porque un sindicato con el que se dialoga con confianza canaliza demandas de forma ordenada, aporta información desde el piso, facilita acuerdos sostenibles, mejora el clima y la reputación de la empresa, y reduce conflictos, ausentismo y rotación. La confrontación permanente, en cambio, cuesta cara: huelgas, mal clima, daño reputacional. Por eso conviene profesionalizar y cuidar la relación laboral colectiva.",
+      criterios: [
+        { texto: "a) Distingue relaciones laborales individuales de colectivas y explica el rol del sindicato y qué es la negociación colectiva", peso: 3 },
+        { texto: "b) Distingue negociación distributiva de integrativa y recomienda de forma fundamentada el enfoque integrativo", peso: 4 },
+        { texto: "c) Explica qué es la huelga y por qué una buena relación laboral colectiva es un activo para la empresa", peso: 3 }
+      ],
+      erroresComunes: [
+        "Ver al sindicato solo como una amenaza y no como un interlocutor legítimo.",
+        "Confundir negociación distributiva con integrativa o creer que siempre alguien debe perder.",
+        "Reducir las relaciones laborales colectivas a un mero riesgo legal, ignorando su valor para el clima y los resultados."
+      ]
+    },
+    {
+      id: "gdp-098",
+      tema: "Desvinculación responsable y outplacement",
+      dificultad: "dificil",
+      enunciado: "Una empresa debe reducir su dotación en un 15% por una reestructuración. La primera vez que despidió gente lo hizo de forma abrupta y fría, lo que generó temor en los que se quedaron (síndrome del sobreviviente), mala imagen y comentarios negativos en redes. Ahora quiere hacerlo de forma responsable.\n\na) Explique el concepto de desvinculación responsable y por qué la forma de despedir impacta no solo a quien sale, sino a quienes permanecen y a la marca empleadora.\nb) Proponga cuatro (4) buenas prácticas para gestionar un proceso de desvinculación responsable, incluyendo el outplacement.\nc) Explique el síndrome del sobreviviente y cómo gestionarlo con quienes permanecen en la empresa.",
+      respuestaModelo: "a) La desvinculación responsable es la gestión del término de la relación laboral de forma respetuosa, justa, transparente y cuidando la dignidad de las personas, tanto de quienes salen como de quienes permanecen. La forma de despedir impacta más allá del que sale porque: los que se quedan observan cómo se trató a sus compañeros y de ahí infieren cómo los tratarían a ellos (afecta su confianza, compromiso y clima: el síndrome del sobreviviente); y porque la reputación de la empresa como empleador (marca empleadora) se juega también en cómo despide, más aún en la era de las redes sociales y las entrevistas de salida, afectando su capacidad futura de atraer talento.\n\nb) Buenas prácticas (cuatro):\n1) Comunicación clara, honesta y a tiempo de las razones de la reestructuración, con criterios objetivos y transparentes para decidir quiénes salen (no arbitrarios).\n2) Trato digno y humano en la comunicación de la desvinculación: en privado, con respeto, por la jefatura, cuidando el cómo y el momento.\n3) Cumplimiento de las obligaciones legales y apoyo en la transición: pago correcto de indemnizaciones y finiquito, y beneficios de acompañamiento.\n4) Outplacement: apoyo a la reinserción laboral de los desvinculados (asesoría, coaching, apoyo en la búsqueda de empleo, redes), que reduce el impacto en las personas y protege la reputación.\n\nc) El síndrome del sobreviviente es el conjunto de reacciones negativas -culpa, miedo, inseguridad, desmotivación, baja de productividad- que experimentan los trabajadores que permanecen tras una ola de despidos. Se gestiona con: comunicación transparente sobre la situación y el futuro de la empresa para reducir la incertidumbre; reconocer y contener las emociones del equipo; reafirmar el rol y el valor de quienes se quedan; involucrarlos en la nueva etapa y en la redistribución de tareas de forma realista (evitando sobrecarga); y liderazgo cercano y de apoyo. Así se recupera la confianza, el compromiso y el clima.",
+      criterios: [
+        { texto: "a) Explica la desvinculación responsable y por qué la forma de despedir impacta a los que quedan y a la marca empleadora", peso: 3 },
+        { texto: "b) Propone cuatro buenas prácticas válidas, incluyendo el outplacement", peso: 4 },
+        { texto: "c) Explica el síndrome del sobreviviente y cómo gestionarlo con quienes permanecen", peso: 3 }
+      ],
+      erroresComunes: [
+        "Ver el despido solo como un trámite legal, ignorando su impacto en clima, sobrevivientes y reputación.",
+        "Confundir outplacement (apoyo a la reinserción del que sale) con la indemnización legal.",
+        "Olvidar gestionar a los que permanecen (síndrome del sobreviviente)."
+      ]
+    },
+    {
+      id: "gdp-099",
+      tema: "Diversidad, equidad e inclusión en la gestión de personas",
+      dificultad: "dificil",
+      enunciado: "Una empresa reconoce que su dotación es muy homogénea y que en sus procesos de selección y promoción tienden a repetirse perfiles similares. Quiere avanzar en diversidad, equidad e inclusión (DEI), pero algunos directivos creen que \"eso es solo cumplir una cuota\".\n\na) Distinga los conceptos de diversidad, equidad e inclusión, y explique por qué no son lo mismo que una cuota.\nb) Explique dos (2) beneficios de gestionar la diversidad para el desempeño y la innovación de la organización.\nc) Proponga tres (3) prácticas concretas de gestión de personas para construir una organización más diversa e inclusiva, abordando los sesgos.",
+      respuestaModelo: "a) La diversidad es la presencia de personas con características distintas (género, edad, origen, experiencia, capacidades, formas de pensar) en la organización: es el quiénes están. La equidad es dar a cada persona lo que necesita para tener oportunidades justas, corrigiendo barreras y sesgos (no es dar lo mismo a todos, sino condiciones justas). La inclusión es lograr que esas personas diversas se sientan valoradas, respetadas y puedan participar y aportar plenamente: es el cómo se las trata e integra. No son lo mismo que una cuota: la cuota es solo un número (diversidad de fachada); sin equidad e inclusión, incorporar personas diversas que luego no son valoradas ni tienen oportunidades reales fracasa. DEI es un cambio cultural, no un trámite de cumplimiento.\n\nb) Beneficios de la diversidad (dos):\n1) Mejor toma de decisiones e innovación: equipos diversos aportan más perspectivas y cuestionan el pensamiento único, lo que mejora la creatividad, la solución de problemas y la innovación, y reduce puntos ciegos.\n2) Mejor comprensión del mercado y del cliente, mayor atracción de talento y reputación: una dotación diversa entiende mejor a clientes diversos y fortalece la marca empleadora; además amplía el pool de talento.\n\nc) Prácticas concretas (tres):\n1) Selección con sesgos controlados: perfiles por competencias, criterios objetivos, paneles diversos, CV sin datos que induzcan sesgo y capacitación de entrevistadores en sesgos inconscientes, para ampliar los perfiles que ingresan.\n2) Promoción y desarrollo equitativos: criterios transparentes, revisar brechas en ascensos y remuneraciones, y programas de mentoría o desarrollo para grupos subrepresentados.\n3) Cultura inclusiva: liderazgo comprometido, políticas de conciliación y respeto, canales de denuncia, medición del clima de inclusión y sensibilización, para que la diversidad se traduzca en pertenencia y aporte real.",
+      criterios: [
+        { texto: "a) Distingue diversidad, equidad e inclusión y explica por qué DEI no es lo mismo que una cuota", peso: 3 },
+        { texto: "b) Explica dos beneficios de la diversidad para el desempeño y la innovación", peso: 3 },
+        { texto: "c) Propone tres prácticas concretas que abordan los sesgos (selección, promoción/desarrollo, cultura inclusiva)", peso: 4 }
+      ],
+      erroresComunes: [
+        "Reducir la DEI a una cuota numérica, sin equidad ni inclusión.",
+        "Confundir equidad (condiciones justas según necesidad) con igualdad (lo mismo para todos).",
+        "Proponer contratar diverso sin abordar los sesgos ni la cultura que asegura la inclusión."
+      ]
+    },
+    {
+      id: "gdp-100",
+      tema: "Employer branding y propuesta de valor al empleado (EVP)",
+      dificultad: "dificil",
+      enunciado: "Una empresa tecnológica compite por talento escaso con grandes compañías que pagan más. No puede ganar solo por sueldo, pero tiene buen ambiente, proyectos interesantes y flexibilidad. Quiere construir una marca empleadora fuerte y una propuesta de valor al empleado (EVP) para atraer y retener talento.\n\na) Explique los conceptos de employer branding (marca empleadora) y propuesta de valor al empleado (EVP), y su relación con la atracción y retención.\nb) Proponga una EVP para esta empresa, desarrollando al menos cuatro (4) elementos o pilares coherentes con lo que puede ofrecer.\nc) Explique cómo se construye y comunica la marca empleadora, y por qué debe ser auténtica y coherente con la experiencia real del empleado.",
+      respuestaModelo: "a) El employer branding o marca empleadora es la reputación e imagen de la organización como lugar para trabajar: cómo es percibida por candidatos y colaboradores. La propuesta de valor al empleado (EVP, Employee Value Proposition) es el conjunto de razones y beneficios -tangibles e intangibles- por los que una persona querría trabajar y permanecer en la empresa: lo que la organización ofrece a cambio del talento y esfuerzo de las personas. Se relacionan con atracción y retención porque una EVP clara y una marca empleadora fuerte hacen que los buenos candidatos quieran postular (atracción) y que los colaboradores quieran quedarse (retención), incluso sin ser la empresa que más paga.\n\nb) EVP para esta empresa (al menos cuatro pilares coherentes con lo que puede ofrecer):\n1) Trabajo con propósito y proyectos desafiantes: participar en productos tecnológicos interesantes y de impacto, que atrae a quienes buscan aprender y crear.\n2) Desarrollo y aprendizaje: crecimiento acelerado, capacitación, exposición a tecnología de punta y planes de carrera.\n3) Flexibilidad y equilibrio: trabajo híbrido/remoto, horarios flexibles, cuidado del bienestar y la salud mental.\n4) Cultura y ambiente: buen clima, equipos horizontales, reconocimiento, autonomía y liderazgo cercano.\n5) Compensación justa y competitiva dentro de sus posibilidades, más beneficios (aunque no sea la que más paga, debe ser equitativa).\n\nc) La marca empleadora se construye desde adentro hacia afuera: primero, cuidando la experiencia real del empleado (selección, onboarding, liderazgo, desarrollo, reconocimiento) que define la EVP vivida; y luego comunicándola de forma coherente en los canales (redes, sitio de empleos, testimonios de colaboradores, presencia en comunidades del rubro). Debe ser auténtica y coherente con la experiencia real porque si se promete una cultura que no existe, el choque expectativa-realidad genera decepción, rotación temprana y mala reputación (los propios trabajadores desmienten el relato en redes y entrevistas de salida). La mejor marca empleadora son colaboradores satisfechos que recomiendan la empresa.",
+      criterios: [
+        { texto: "a) Explica employer branding y EVP y su relación con la atracción y retención de talento", peso: 3 },
+        { texto: "b) Propone una EVP con al menos cuatro pilares coherentes con lo que la empresa puede ofrecer", peso: 4 },
+        { texto: "c) Explica cómo se construye/comunica la marca empleadora y por qué debe ser auténtica y coherente con la experiencia real", peso: 3 }
+      ],
+      erroresComunes: [
+        "Reducir la marca empleadora a publicidad o a un buen aviso, sin la experiencia real que la sustenta.",
+        "Construir una EVP centrada solo en el sueldo, cuando la empresa no compite por precio.",
+        "Prometer una cultura que no existe, generando choque expectativa-realidad y rotación."
+      ]
+    },
+    {
+      id: "gdp-101",
+      tema: "Onboarding y socialización para reducir la rotación temprana",
+      dificultad: "dificil",
+      enunciado: "Una empresa de servicios contrata mucho personal joven, pero un tercio renuncia antes de los tres meses. Al indagar, aparecen patrones: el primer día nadie los esperaba ni les explicó nada; el trabajo real no coincidía con lo ofrecido en la selección; y no lograron integrarse ni sentir pertenencia al equipo.\n\na) Distinga inducción de socialización, describiendo las fases de la socialización (anticipatoria, encuentro y metamorfosis).\nb) Vincule cada patrón detectado en el caso con la falla correspondiente del proceso de incorporación.\nc) Diseñe un programa de onboarding con cuatro (4) iniciativas concretas, indicando qué problema aborda cada una.",
+      respuestaModelo: "a) La inducción es el proceso formal y acotado de recepción del nuevo colaborador (bienvenida, presentación de la empresa, políticas, cultura y funciones del cargo). La socialización es el proceso más amplio y continuo por el cual la persona se integra y se hace parte de la organización, con tres fases: 1) Anticipatoria: las expectativas que la persona se forma antes de entrar (a partir de la selección y de lo que le contaron); 2) Encuentro: el ingreso real, donde compara sus expectativas con la realidad y puede producirse un choque; 3) Metamorfosis: el ajuste pleno, cuando la persona domina su rol, internaliza la cultura y se siente parte.\n\nb) Vinculación de cada patrón con su falla:\n1) El primer día nadie los esperaba ni les explicó nada: falla la inducción formal (no hay proceso de bienvenida), lo que aumenta la ansiedad y la sensación de abandono.\n2) El trabajo real no coincidía con lo ofrecido: falla la socialización anticipatoria (se generaron expectativas irreales en la selección), provocando el choque en la fase de encuentro.\n3) No lograron integrarse ni sentir pertenencia: falla la integración social, por lo que no alcanzan la fase de metamorfosis y renuncian.\n\nc) Programa de onboarding (cuatro iniciativas):\n1) Preview realista del cargo en la selección (mostrar condiciones, tareas y desafíos reales): aborda el choque expectativa-realidad de la fase anticipatoria.\n2) Inducción estructurada la primera semana (bienvenida planificada, presentación de empresa y cultura, entrega de accesos, metas claras del rol): aborda el nadie me explicó nada y reduce la ansiedad.\n3) Sistema de mentor o buddy y actividades de integración con el equipo: aborda la falta de pertenencia y acelera la socialización hacia la metamorfosis.\n4) Seguimiento en hitos (30, 60 y 90 días) con la jefatura y feedback temprano: detecta a tiempo problemas de ajuste y desempeño y permite corregir antes de la renuncia.\nEsto reduce la rotación temprana porque atiende las tres fallas (inducción, expectativas e integración).",
+      criterios: [
+        { texto: "a) Distingue inducción de socialización y describe las tres fases (anticipatoria, encuentro, metamorfosis)", peso: 3 },
+        { texto: "b) Vincula cada patrón del caso con la falla correspondiente (inducción, expectativas anticipatorias, integración)", peso: 3 },
+        { texto: "c) Diseña un programa con cuatro iniciativas concretas indicando qué problema aborda cada una", peso: 4 }
+      ],
+      erroresComunes: [
+        "Usar inducción y socialización como sinónimos.",
+        "Atribuir toda la rotación al sueldo, ignorando la evidencia que apunta a la incorporación.",
+        "Proponer iniciativas genéricas sin conectarlas con las fallas y fases detectadas."
+      ]
+    },
+    {
+      id: "gdp-102",
+      tema: "Seguridad psicológica y bienestar laboral",
+      dificultad: "dificil",
+      enunciado: "En un equipo, las personas no se atreven a plantear errores, dudas ni ideas nuevas por miedo a quedar mal o ser castigadas. Los errores se ocultan hasta que estallan, casi no hay innovación y hay señales de estrés y agotamiento (burnout).\n\na) Explique el concepto de seguridad psicológica y por qué es clave para el aprendizaje, la innovación y la prevención de errores.\nb) Analice la relación entre el estilo de liderazgo, el clima y el bienestar (incluida la salud mental y el burnout) de los equipos.\nc) Proponga tres (3) acciones concretas de gestión de personas para construir seguridad psicológica y cuidar el bienestar del equipo.",
+      respuestaModelo: "a) La seguridad psicológica (Amy Edmondson) es la creencia compartida en un equipo de que es seguro asumir riesgos interpersonales: hablar, plantear dudas, reconocer errores, pedir ayuda o proponer ideas sin temor a ser humillado, castigado o excluido. Es clave porque: permite el aprendizaje (los errores se comparten y se aprende de ellos en vez de ocultarlos), impulsa la innovación (la gente propone ideas y cuestiona sin miedo) y previene errores graves (los problemas se detectan a tiempo porque nadie los esconde). Sin seguridad psicológica, como en el caso, los errores se ocultan hasta estallar y no hay innovación.\n\nb) El estilo de liderazgo es el principal determinante de la seguridad psicológica, el clima y el bienestar: un liderazgo autoritario, que castiga el error y no escucha, genera miedo, silencio, mal clima y estrés crónico; un liderazgo cercano, que da apoyo, escucha, reconoce y trata el error como aprendizaje, genera confianza, buen clima y bienestar. El clima y el bienestar están ligados: ambientes de miedo, sobrecarga y falta de reconocimiento derivan en estrés, desgaste y burnout (agotamiento emocional, cinismo y baja eficacia), que dañan la salud mental, la productividad y aumentan el ausentismo y la rotación. Cuidar el bienestar es, por tanto, una responsabilidad del liderazgo y de la gestión de personas, no solo un tema individual.\n\nc) Acciones concretas (tres):\n1) Formar y comprometer a las jefaturas en liderazgo seguro: modelar la apertura, tratar el error como oportunidad de aprendizaje, pedir opiniones, agradecer las alertas y no castigar al mensajero.\n2) Crear espacios y prácticas de participación y voz: reuniones donde se revisen errores sin culpa (retrospectivas), canales para plantear ideas y dudas, y feedback bidireccional.\n3) Gestionar la carga y la salud: revisar cargas de trabajo y plazos realistas, promover el equilibrio y desconexión, y ofrecer apoyo y programas de bienestar y salud mental, midiendo el clima para actuar a tiempo.",
+      criterios: [
+        { texto: "a) Explica la seguridad psicológica y su rol en el aprendizaje, la innovación y la prevención de errores", peso: 3 },
+        { texto: "b) Analiza la relación entre liderazgo, clima y bienestar/salud mental (burnout)", peso: 3 },
+        { texto: "c) Propone tres acciones concretas para construir seguridad psicológica y cuidar el bienestar", peso: 4 }
+      ],
+      erroresComunes: [
+        "Confundir seguridad psicológica con ausencia de exigencia o con que todo vale; se trata de seguridad para hablar y arriesgar, no de bajar estándares.",
+        "Tratar el bienestar y el burnout como problema individual, ignorando el rol del liderazgo y la carga de trabajo.",
+        "Proponer solo beneficios superficiales sin cambiar el estilo de liderazgo ni la gestión de la carga."
+      ]
+    },
+    {
+      id: "gdp-103",
+      tema: "Analítica de personas (people analytics) para la toma de decisiones",
+      dificultad: "dificil",
+      enunciado: "El área de personas de una empresa toma todas sus decisiones por intuición y no usa datos. La gerencia le pide profesionalizarse con analítica de personas (people analytics), pero hay quienes temen que \"todo se reduzca a números\" y se pierda la dimensión humana.\n\na) Explique qué es la analítica de personas (people analytics) y cómo puede apoyar decisiones en distintos subsistemas de la gestión de personas.\nb) Proponga tres (3) indicadores o métricas de gestión de personas y qué decisión permite mejorar cada uno.\nc) Analice dos (2) riesgos o límites del uso de datos en la gestión de personas y cómo equilibrarlos con el criterio humano y la ética.",
+      respuestaModelo: "a) La analítica de personas (people analytics) es el uso sistemático de datos e indicadores sobre el capital humano para tomar mejores decisiones de gestión de personas, basadas en evidencia y no solo en intuición. Puede apoyar múltiples subsistemas: en atracción y selección (qué fuentes dan mejores contrataciones, qué predice el buen desempeño); en desarrollo (detección de brechas, impacto de la capacitación); en compensación (equidad interna y externa); en desempeño y talento; y en retención (predecir y prevenir la rotación de talento clave). Convierte al área de personas en un socio estratégico que fundamenta sus decisiones.\n\nb) Indicadores y decisiones que permiten mejorar (tres, por ejemplo):\n1) Tasa de rotación (y rotación temprana / de alto desempeño): permite decidir dónde intervenir en retención y evaluar la incorporación y el liderazgo por área.\n2) Tiempo de cobertura de vacantes y calidad de la contratación (desempeño o permanencia del contratado por fuente): permite decidir en qué canales de reclutamiento invertir y cómo planificar la dotación.\n3) Resultados de clima o engagement y ausentismo: permiten priorizar acciones de clima y bienestar y anticipar problemas.\nOtros: brecha salarial y equidad, cobertura de planes de sucesión, impacto (ROI) de la capacitación.\n\nc) Riesgos o límites (dos):\n1) Reduccionismo y deshumanización: no todo lo importante es medible; decidir solo por números puede ignorar el contexto, las personas y aspectos cualitativos, y llevar a decisiones injustas. Se equilibra usando los datos como apoyo al criterio, no como reemplazo, complementando con la mirada cualitativa (conversaciones, contexto).\n2) Sesgos y privacidad/ética: los datos y algoritmos pueden arrastrar sesgos históricos y discriminar, y el uso de datos personales de trabajadores plantea temas de privacidad y confianza. Se equilibra con transparencia, resguardo de datos, auditoría de sesgos, uso ético y agregado de la información, y foco en el bienestar de las personas y no solo en la eficiencia.\nBien usada, la analítica potencia -no reemplaza- el juicio humano y la dimensión ética de la gestión de personas.",
+      criterios: [
+        { texto: "a) Explica qué es people analytics y cómo apoya decisiones en distintos subsistemas de gestión de personas", peso: 3 },
+        { texto: "b) Propone tres indicadores/métricas válidos e indica qué decisión mejora cada uno", peso: 3 },
+        { texto: "c) Analiza dos riesgos/límites (reduccionismo, sesgos/privacidad) y cómo equilibrarlos con criterio humano y ética", peso: 4 }
+      ],
+      erroresComunes: [
+        "Presentar la analítica como sustituto del criterio humano en lugar de un apoyo.",
+        "Proponer métricas sin indicar qué decisión permiten mejorar.",
+        "Ignorar los riesgos de sesgo, privacidad y deshumanización del uso de datos."
+      ]
+    },
+    {
+      id: "gdp-104",
+      tema: "Liderazgo transformacional y cambio cultural",
+      dificultad: "dificil",
+      enunciado: "Una empresa tradicional, jerárquica y con miedo al error, necesita transformarse para innovar y adaptarse. Un nuevo gerente general quiere impulsar el cambio, pero sabe que no basta con emitir instrucciones: debe cambiar la forma de pensar y actuar de las personas.\n\na) Explique por qué un cambio cultural profundo requiere liderazgo transformacional y no solo transaccional.\nb) Describa cuatro (4) conductas o palancas de un líder transformacional para impulsar el cambio cultural.\nc) Integrando un modelo de gestión del cambio (Lewin o Kotter), explique cómo sostener el cambio para que no se revierta con el tiempo.",
+      respuestaModelo: "a) Un cambio cultural profundo implica modificar valores, supuestos y comportamientos arraigados (pasar del miedo al error a la apertura y la innovación), y eso no se logra con órdenes ni con incentivos de intercambio. El liderazgo transaccional se basa en recompensas por cumplimiento y consigue, a lo más, conductas mínimas y superficiales mientras haya premio o control; no cambia la forma de pensar. El liderazgo transformacional, en cambio, transforma a las personas: inspira con una visión, apela a metas colectivas, genera compromiso, modela con el ejemplo y desarrolla a la gente. Por eso es el que se necesita para un cambio cultural: mueve creencias y conductas internas, no solo comportamientos externos temporales.\n\nb) Conductas o palancas del líder transformacional (cuatro):\n1) Influencia idealizada (ser ejemplo): modelar con su propia conducta la nueva cultura (por ejemplo, reconocer sus errores y tratar los del equipo como aprendizaje); la cultura se cambia por lo que el líder hace, no por lo que dice.\n2) Motivación inspiradora: comunicar una visión clara y atractiva del futuro que dé sentido al cambio y entusiasme.\n3) Estimulación intelectual: fomentar el cuestionamiento, las ideas nuevas y la toma de riesgos, dando seguridad psicológica para innovar.\n4) Consideración individualizada: atender y desarrollar a cada persona, apoyarla en la transición y reconocer sus avances.\n\nc) Para sostener el cambio, integrando a Lewin: tras descongelar (crear conciencia de la necesidad y disposición) y cambiar (implementar las nuevas prácticas con apoyo y participación), es crucial la etapa de recongelar: estabilizar y anclar la nueva cultura para que no se revierta. Con Kotter, corresponde a consolidar los logros sin cantar victoria antes de tiempo y anclar el cambio en la cultura (paso final). En la práctica, sostener el cambio requiere: alinear los sistemas de gestión de personas a la nueva cultura (seleccionar, evaluar, reconocer y promover según las nuevas conductas), generar y celebrar victorias tempranas que demuestren que funciona, mantener la comunicación y el ejemplo del liderazgo, y reforzar continuamente. Si no se refuerza, las personas y la organización tienden a volver a las viejas prácticas.",
+      criterios: [
+        { texto: "a) Explica por qué el cambio cultural profundo requiere liderazgo transformacional y no solo transaccional", peso: 3 },
+        { texto: "b) Describe cuatro conductas o palancas del líder transformacional (ejemplo, visión inspiradora, estimulación intelectual, consideración individual)", peso: 4 },
+        { texto: "c) Integra un modelo de cambio (Lewin recongelar / Kotter anclar) y explica cómo sostener el cambio para que no se revierta", peso: 3 }
+      ],
+      erroresComunes: [
+        "Creer que un cambio cultural se logra por instrucciones o incentivos transaccionales.",
+        "Confundir liderazgo transformacional con carisma o autoritarismo, sin las palancas concretas.",
+        "Omitir la etapa de refuerzo/anclaje, con lo que el cambio se revierte con el tiempo."
+      ]
     }
   ]
 });

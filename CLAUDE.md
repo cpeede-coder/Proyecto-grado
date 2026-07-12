@@ -64,9 +64,9 @@ marcador nuevo (ej. `>vN<`).
 **Commits**: terminar el mensaje con `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
 En PowerShell, para mensajes multilínea usar here-string `@'...'@` o `git commit -F archivo.txt` (los `-m` con comillas dan problemas).
 
-## Banco de preguntas (228 preguntas)
+## Banco de preguntas (520 preguntas)
 
-Economía 55 · Administración 44 · Gestión de Personas 45 · Estrategia 42 · Marketing 42.
+104 por materia: Economía · Administración · Gestión de Personas · Estrategia · Marketing (ids `<prefijo>-001` a `-104`). Se amplió de 228 a 520 (2026-07-12) con una flota de subagentes (uno por materia) para que el eslogan "+500 preguntas" fuera verídico.
 
 Cada pregunta es un objeto con este formato **estricto** (respetarlo al agregar):
 
@@ -90,7 +90,7 @@ Criterios prefijados `a)`/`b)`/`c)` si el enunciado tiene partes. En preguntas d
 "explique y grafique", la `respuestaModelo` describe el gráfico y un criterio dice
 "Grafica correctamente…". Español chileno formal.
 
-- **`salioEnExamen: true`** → insignia ⭐ "Tema visto en exámenes reales" (en examen, corrección y explorador). 86 preguntas marcadas. Es el material de **máxima prioridad** de estudio; las demás son cobertura amplia del temario.
+- **`salioEnExamen: true`** → insignia ⭐ "Tema visto en exámenes reales" (en examen, corrección y explorador). 165 preguntas marcadas. Es el material de **máxima prioridad** de estudio; las demás son cobertura amplia del temario.
 - **Calibración de dificultad**: las "difícil" están alineadas al examen real (casos ricos con partes a/b/c, 8–12 pts, cada parte un concepto). El examen real es **sin calculadora** (conceptual/gráfico) — no crear preguntas con cálculo aritmético. No hacerlas más difíciles que el examen real ni más fáciles.
 - Para auditar cobertura o generar preguntas nuevas se usó una flota de subagentes (uno por materia) leyendo textos extraídos de los PDFs. Esos textos vivían en el scratchpad temporal (NO persisten entre sesiones); para re-extraer, usar `pypdf`/`python-docx`/`PyMuPDF` sobre las carpetas `Materia */` y `Temarios */`. Algunos temarios (GDP, Marketing) son PDFs escaneados: renderizar a PNG con PyMuPDF y leer como imagen.
 
@@ -109,7 +109,7 @@ Criterios prefijados `a)`/`b)`/`c)` si el enunciado tiene partes. En preguntas d
 
 ## Modelo freemium (data/acceso.js + js/app.js + Supabase)
 
-- **Demo gratis**: `ACCESO.demoPorMateria` (=4) preguntas por materia + corrección guiada. **Premium** (con código): las 228 + Examen Oficial + corrección IA.
+- **Demo gratis**: `ACCESO.demoPorMateria` (=4) preguntas por materia + corrección guiada. **Premium** (con código): las 520 + Examen Oficial + corrección IA. Además, en demo hay **1 prueba gratis** (un examen): al iniciar el primer examen se marca `localStorage` `examen-grado-demo-usada`; al intentar un segundo, `comenzarExamen()` muestra el popup de pago. El banner alterna entre "🎁 Prueba gratis" y "🔒 Ya usaste tu prueba gratis".
 - **Validación con backend (Supabase)** desde v13: los códigos son de **un solo uso**, amarrados a un **máximo de 2 dispositivos** (celular + notebook), y existen códigos **cortesía** ilimitados para amigos. Reemplazó al viejo gating client-side por hashes (`cyrb53`), que permitía compartir códigos sin límite.
   - **Schema aislado `examen_grado`**: todo (tablas + función) vive en un schema propio, NO en `public`. El usuario reutiliza un proyecto Supabase que ya tenía (llegó al límite de proyectos gratis), así que este simulador queda con datos independientes que no tocan su otro proyecto. Requiere exponerlo: Supabase → **Settings → API → Exposed schemas → agregar `examen_grado`**.
   - **Esquema**: tablas `examen_grado.codigos` (codigo, tipo `pago`|`cortesia`, max_dispositivos) y `examen_grado.dispositivos` (codigo, device_id). RLS activado sin policies → nadie lee las tablas directo. Toda la lógica de canje vive en la función `examen_grado.redeem_code(p_codigo, p_device)` (`security definer`, con `for update` para atomicidad), con `grant usage`(schema) + `execute`(función) para el rol `anon`.

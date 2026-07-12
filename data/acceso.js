@@ -26,7 +26,7 @@ window.ACCESO = {
   supabaseSchema: "examen_grado",
 
   // 2) Mensaje de venta (se muestra cuando el usuario quiere acceso completo).
-  contactoCompra: "Acceso completo por $5.000 (pago único): las 228 preguntas, el modo Examen Oficial y la corrección con IA. Escríbeme por WhatsApp y te envío tu código de acceso.",
+  contactoCompra: "Acceso completo por $5.000 (pago único): las más de 500 preguntas, el modo Examen Oficial y la corrección con IA. Escríbeme por WhatsApp y te envío tu código de acceso.",
 
   // Número de WhatsApp (solo dígitos, con código de país). Se muestra como botón.
   whatsapp: "56998957273",

@@ -5,6 +5,7 @@
 const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_ACCESO = "examen-grado-acceso";
+const CLAVE_DEMO_USADA = "examen-grado-demo-usada";
 
 // ---------------------------------------------------------------------
 // Acceso freemium: demo hasta canjear un código (validado en Supabase).
@@ -73,7 +74,7 @@ function limitarDemo(preguntas) {
 }
 
 function abrirModalAcceso(mensaje) {
-  $("#modal-mensaje").textContent = mensaje || "Con el acceso completo desbloqueas las 228 preguntas, el modo Examen Oficial y la corrección con IA.";
+  $("#modal-mensaje").textContent = mensaje || "Con el acceso completo desbloqueas las más de 500 preguntas, el modo Examen Oficial y la corrección con IA.";
   // Mensaje de venta + botón de WhatsApp (si hay número configurado).
   const cont = $("#modal-contacto");
   cont.textContent = window.ACCESO.contactoCompra || "";
@@ -104,11 +105,28 @@ function desbloquear() {
   reflejarAcceso();
 }
 
+// ¿El usuario ya gastó su prueba gratis (un examen)?
+function demoUsada() {
+  return localStorage.getItem(CLAVE_DEMO_USADA) === "1";
+}
+
+function marcarDemoUsada() {
+  localStorage.setItem(CLAVE_DEMO_USADA, "1");
+  reflejarAcceso();
+}
+
 // Actualiza la interfaz según el estado de acceso (demo vs completo)
 function reflejarAcceso() {
   const libre = estaDesbloqueado();
   $("#banner-demo").classList.toggle("hidden", libre);
   $("#titulo-config").textContent = libre ? "Configura tu examen" : "Configura tu examen (versión demo)";
+  // Texto del banner según si aún tiene su prueba gratis o ya la usó
+  const bannerTexto = $("#banner-demo-texto");
+  if (bannerTexto && !libre) {
+    bannerTexto.innerHTML = demoUsada()
+      ? "<strong>🔒 Ya usaste tu prueba gratis</strong> — desbloquea el <strong>acceso completo</strong> (+500 preguntas, Examen Oficial y corrección con IA) por <strong>$5.000</strong> (pago único)."
+      : "<strong>🎁 Prueba gratis</strong> — tienes <strong>1 examen de práctica gratis</strong>. Después, desbloquea las <strong>+500 preguntas</strong>, el <strong>Examen Oficial</strong> y la <strong>corrección con IA</strong>.";
+  }
   // Marca el chip de examen oficial como bloqueado cuando está en demo
   const chipOficial = document.querySelector('#lista-materias .chip[data-materia="oficial"]');
   if (chipOficial) {
@@ -149,8 +167,8 @@ async function canjearYReflejar() {
   if (r.ok) {
     desbloquear();
     estado.textContent = r.tipo === "cortesia"
-      ? "🎁 ¡Acceso cortesía activado! Ya tienes las 228 preguntas."
-      : "✅ ¡Acceso desbloqueado! Ya tienes las 228 preguntas.";
+      ? "🎁 ¡Acceso cortesía activado! Ya tienes las más de 500 preguntas."
+      : "✅ ¡Acceso desbloqueado! Ya tienes las más de 500 preguntas.";
     estado.style.color = "var(--exito)";
     setTimeout(cerrarModalAcceso, 1500);
   } else {
@@ -380,6 +398,12 @@ function comenzarExamen() {
     return;
   }
 
+  // Candado de la prueba gratis: si ya rindió su examen gratis y no ha pagado.
+  if (!estaDesbloqueado() && demoUsada()) {
+    abrirModalAcceso("🔒 Ya usaste tu prueba gratis. Desbloquea el acceso completo por $5.000 (pago único): más de 500 preguntas, el Examen Oficial y la corrección con IA.");
+    return;
+  }
+
   if (estado.modoOficial) {
     estado.preguntas = construirExamenOficial();
     if (estado.preguntas.length === 0) return;
@@ -412,6 +436,9 @@ function comenzarExamen() {
   } else {
     $("#timer").classList.add("hidden");
   }
+
+  // Consume la prueba gratis al iniciar el examen (solo usuarios en demo).
+  if (!estaDesbloqueado()) marcarDemoUsada();
 
   renderPregunta();
   mostrarPantalla("pantalla-examen");

@@ -773,6 +773,1074 @@ window.BANCO.materias.push({
         "Confundir omnicanalidad con tener varios canales separados (multicanalidad), proponiendo acciones que no los integran",
         "Proponer un único precio para todos, desaprovechando la distinta sensibilidad al precio de los dos grupos"
       ]
+    },
+    {
+      id: "mkt-043",
+      tema: "Psicología del consumidor: jerarquía de necesidades de Maslow",
+      dificultad: "facil",
+      enunciado: "Explique la jerarquía de necesidades de Maslow y su utilidad para el marketing. Describa los cinco (5) niveles y, para tres (3) de ellos, indique un (1) producto o marca que apele principalmente a esa necesidad, justificando la asociación.",
+      respuestaModelo: "La jerarquía de Maslow ordena las necesidades humanas en cinco niveles que se activan de manera ascendente: una vez razonablemente satisfecho un nivel, emerge el siguiente como motivador. Para el marketing es útil porque permite entender qué necesidad profunda satisface un producto y construir mensajes que conecten con ella.\n\n1) Fisiológicas: hambre, sed, descanso. Ejemplo: agua embotellada o alimentos básicos apelan a la supervivencia inmediata.\n2) Seguridad: protección, estabilidad, salud. Ejemplo: seguros, alarmas de hogar o automóviles que destacan airbags y sistemas de frenado apelan a la necesidad de sentirse protegido.\n3) Sociales (pertenencia y afecto): amistad, familia, aceptación. Ejemplo: redes sociales o marcas de bebidas cuyas campañas muestran reuniones y momentos compartidos apelan a la pertenencia.\n4) Estima (reconocimiento y estatus): prestigio, logro. Ejemplo: marcas de lujo, autos premium o relojes de alta gama apelan al estatus y al reconocimiento.\n5) Autorrealización: desarrollo del potencial personal. Ejemplo: cursos, viajes de experiencia o marcas deportivas con el mensaje de \"supera tus límites\" apelan a la realización personal.\n\nLa clave es que un mismo producto puede posicionarse en distintos niveles según cómo se comunique.",
+      criterios: [
+        { texto: "Explica la lógica ascendente de la jerarquía y su utilidad para el marketing", peso: 2 },
+        { texto: "Describe correctamente los cinco niveles en orden", peso: 2 },
+        { texto: "Asocia tres productos o marcas a la necesidad principal que satisfacen, con justificación", peso: 2 }
+      ],
+      erroresComunes: [
+        "Alterar el orden de los niveles o saltarse alguno",
+        "Asociar una marca a un nivel sin justificar por qué apela a esa necesidad",
+        "Confundir la necesidad de estima (estatus) con la social (pertenencia)"
+      ]
+    },
+    {
+      id: "mkt-044",
+      tema: "Persuasión, emociones y sentimientos en la decisión de compra",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "El temario de comportamiento del consumidor incluye la psicología del consumidor: necesidades, persuasión, emociones y sentimientos. Explique la diferencia entre una compra guiada por motivaciones racionales y una guiada por motivaciones emocionales, y describa dos (2) recursos de persuasión que las marcas usan para influir emocionalmente en el consumidor, con un ejemplo de cada uno.",
+      respuestaModelo: "En la decisión de compra conviven dos tipos de motivaciones. Las racionales se basan en atributos objetivos y evaluables: precio, rendimiento, durabilidad, garantía, relación costo-beneficio; el consumidor compara y calcula. Las emocionales se basan en sentimientos, deseos y significados: estatus, seguridad afectiva, nostalgia, pertenencia, placer; el consumidor elige por cómo lo hace sentir la marca. En la práctica casi toda compra combina ambas, pero el peso relativo varía según el producto (un seguro es más racional; un perfume, más emocional).\n\nDos recursos de persuasión emocional:\n1) Storytelling (narrativa de marca): contar una historia con la que el consumidor se identifica, asociando el producto a emociones. Ejemplo: una campaña navideña que muestra reencuentros familiares para vincular la marca con el afecto, más que con el atributo del producto.\n2) Prueba social y testimonios: mostrar que otras personas confían en la marca activa el sentimiento de pertenencia y reduce el temor a equivocarse. Ejemplo: reseñas de clientes reales y cifras de \"miles de personas ya lo eligieron\" en un e-commerce. (También válidos: apelación al miedo o a la aspiración, uso de referentes/influencers, escasez y urgencia.)",
+      criterios: [
+        { texto: "Distingue motivaciones racionales (atributos objetivos) de emocionales (sentimientos y significados)", peso: 2 },
+        { texto: "Reconoce que ambas suelen convivir y su peso depende del producto", peso: 1 },
+        { texto: "Describe dos recursos de persuasión emocional con un ejemplo cada uno", peso: 3 }
+      ],
+      erroresComunes: [
+        "Afirmar que la compra es puramente racional o puramente emocional, sin reconocer que conviven",
+        "Confundir un recurso de persuasión (storytelling) con un medio de comunicación (televisión)",
+        "Dar ejemplos que apelan a atributos racionales cuando se pide persuasión emocional"
+      ]
+    },
+    {
+      id: "mkt-045",
+      tema: "Preferencias de producto, canal y marca",
+      dificultad: "facil",
+      enunciado: "El comportamiento del consumidor se expresa en preferencias de producto, de canal y de marca. Explique en qué consiste cada uno de estos tres tipos de preferencia y por qué es relevante para una empresa conocerlas. Ilustre con un ejemplo integrado de un mismo consumidor comprando un producto.",
+      respuestaModelo: "Las preferencias del consumidor operan en tres dimensiones que la empresa debe entender para ajustar su oferta:\n\n1) Preferencia de producto: qué características, formatos o atributos valora el consumidor (tamaño, sabor, funcionalidad, diseño). Conocerla permite desarrollar el producto correcto y priorizar atributos en la propuesta de valor.\n2) Preferencia de canal: dónde y cómo prefiere comprar (tienda física, e-commerce, app, retail, venta directa) y también dónde se informa antes de comprar. Conocerla permite estar presente en los puntos de contacto correctos y diseñar la experiencia de compra.\n3) Preferencia de marca: qué marca elige y por qué (confianza, imagen, lealtad, precio). Conocerla permite gestionar el posicionamiento y la fidelización.\n\nEjemplo integrado: una persona que compra zapatillas para correr prefiere un modelo liviano con buena amortiguación (producto), investiga en el sitio web y redes pero prueba y compra en tienda física para calzarlas (canal, comportamiento webrooming) y es leal a una marca deportiva específica por su reputación y experiencias previas (marca). Si la empresa conoce estas tres preferencias, puede ofrecer el modelo adecuado, en el canal correcto y reforzando la relación con la marca.",
+      criterios: [
+        { texto: "Explica correctamente las preferencias de producto, canal y marca", peso: 3 },
+        { texto: "Justifica por qué es relevante para la empresa conocer cada una", peso: 2 },
+        { texto: "Entrega un ejemplo integrado coherente de un mismo consumidor", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir preferencia de canal con preferencia de producto",
+        "Describir las preferencias sin explicar su utilidad para la empresa",
+        "Dar tres ejemplos inconexos en lugar de un caso integrado"
+      ]
+    },
+    {
+      id: "mkt-046",
+      tema: "Clasificación de bienes de consumo (conveniencia, comparación, especialidad)",
+      dificultad: "facil",
+      enunciado: "Explique la clasificación de los bienes de consumo en bienes de conveniencia, de comparación (o compra comparada), de especialidad y no buscados. Para cada tipo, indique una (1) característica de compra y un (1) ejemplo, y señale una implicancia de esta clasificación para la estrategia de distribución.",
+      respuestaModelo: "Los bienes de consumo se clasifican según el esfuerzo de compra que el consumidor está dispuesto a realizar:\n\n1) Bienes de conveniencia: se compran con frecuencia, de forma inmediata y con mínimo esfuerzo de comparación (pan, bebidas, diarios). Implicancia de distribución: requieren distribución intensiva, presencia en la mayor cantidad de puntos de venta posible.\n2) Bienes de comparación: el consumidor compara precio, calidad y estilo antes de decidir; compra menos frecuente y más planificada (ropa, electrodomésticos, muebles). Implicancia: distribución selectiva, en puntos de venta escogidos donde el cliente pueda comparar.\n3) Bienes de especialidad: tienen características o marca únicas por las que el consumidor hace un esfuerzo especial de compra y no acepta sustitutos (autos de lujo, alta relojería, ropa de diseñador). Implicancia: distribución exclusiva, uno o pocos puntos con alto control de imagen.\n4) Bienes no buscados: el consumidor no los conoce o no piensa en comprarlos hasta que surge la necesidad (seguros de vida, servicios funerarios). Implicancia: requieren venta personal y comunicación proactiva, ya que no hay búsqueda espontánea.\n\nLa clasificación es clave porque el tipo de bien determina la estrategia de distribución, precio y promoción.",
+      criterios: [
+        { texto: "Describe los cuatro tipos de bienes con una característica de compra de cada uno", peso: 3 },
+        { texto: "Entrega un ejemplo pertinente por cada tipo", peso: 2 },
+        { texto: "Conecta cada tipo con su implicancia de distribución (intensiva, selectiva, exclusiva, venta personal)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir bienes de especialidad con bienes de comparación",
+        "Olvidar los bienes no buscados o no reconocer que exigen comunicación proactiva",
+        "No conectar la clasificación con la estrategia de distribución"
+      ]
+    },
+    {
+      id: "mkt-047",
+      tema: "Relaciones públicas y marketing directo",
+      dificultad: "facil",
+      enunciado: "Dentro de la mezcla de comunicación de marketing, explique en qué consisten las relaciones públicas (RR.PP.) y el marketing directo. Para cada herramienta, señale su objetivo principal, una (1) ventaja y un (1) ejemplo concreto de aplicación.",
+      respuestaModelo: "Ambas son herramientas de la mezcla de comunicación (CIM), pero cumplen roles distintos.\n\nRelaciones públicas (RR.PP.): buscan construir y proteger la imagen y reputación de la empresa gestionando su relación con distintos públicos (medios, comunidad, autoridades) mediante comunicaciones no pagadas directamente como notas de prensa, eventos, patrocinios y gestión de crisis. Objetivo principal: generar credibilidad e imagen favorable. Ventaja: alta credibilidad, porque el mensaje llega a través de terceros (prensa, opinión pública) y no como publicidad pagada, además de bajo costo relativo. Ejemplo: una empresa de alimentos que difunde su programa de reciclaje y logra cobertura en medios y prensa especializada.\n\nMarketing directo: comunicación directa e individual con clientes seleccionados para obtener una respuesta inmediata y medible (email marketing, mensajería, catálogos, telemarketing). Objetivo principal: generar una acción o respuesta concreta (compra, registro). Ventaja: es personalizable y medible, permite dirigirse a segmentos específicos y evaluar resultados. Ejemplo: un e-commerce que envía por correo una oferta personalizada según las compras anteriores del cliente.",
+      criterios: [
+        { texto: "Define correctamente las relaciones públicas y su foco en imagen/reputación", peso: 2 },
+        { texto: "Define correctamente el marketing directo y su foco en respuesta medible y personalizada", peso: 2 },
+        { texto: "Indica objetivo, una ventaja y un ejemplo para cada herramienta", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir relaciones públicas con publicidad pagada",
+        "Reducir el marketing directo solo a \"enviar correos\" sin mencionar su carácter medible y personalizado",
+        "Omitir la ventaja de credibilidad de las RR.PP. frente a la publicidad"
+      ]
+    },
+    {
+      id: "mkt-048",
+      tema: "Personas y marketing interno en los servicios",
+      dificultad: "facil",
+      enunciado: "En el marketing de servicios, la P de \"Personas\" es clave. Explique por qué el personal de contacto es determinante en la percepción de calidad de un servicio y en qué consiste el marketing interno. Proponga dos (2) acciones concretas de marketing interno para una empresa de servicios.",
+      respuestaModelo: "En los servicios, el personal de contacto es parte del producto: como el servicio es intangible e inseparable de quien lo presta, el cliente evalúa la calidad en gran medida por la interacción con las personas (trato, empatía, conocimiento, rapidez). Un mismo servicio puede percibirse como excelente o deficiente según quién lo entregue; por eso las personas son la \"primera línea\" y un factor diferenciador.\n\nEl marketing interno consiste en tratar a los empleados como clientes internos: capacitarlos, motivarlos y alinearlos con la propuesta de valor para que entreguen una experiencia coherente al cliente externo. La lógica es que un empleado satisfecho, informado y comprometido atiende mejor.\n\nDos acciones concretas de marketing interno:\n1) Programa de capacitación continua en atención al cliente y en el conocimiento del servicio, de modo que todo el personal sepa resolver dudas y problemas con criterio uniforme.\n2) Sistema de reconocimiento e incentivos al buen servicio (por ejemplo, reconocer al colaborador mejor evaluado por los clientes), reforzando la motivación y la cultura de servicio. (También válidos: comunicación interna clara de la propuesta de valor, buen clima laboral, empoderamiento para resolver reclamos en el momento.)",
+      criterios: [
+        { texto: "Explica por qué el personal de contacto determina la percepción de calidad (intangibilidad e inseparabilidad)", peso: 2 },
+        { texto: "Define el marketing interno como tratar al empleado como cliente interno", peso: 2 },
+        { texto: "Propone dos acciones concretas y pertinentes de marketing interno", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar a las personas como un costo y no como parte de la propuesta de valor",
+        "Confundir marketing interno con comunicación publicitaria hacia el cliente externo",
+        "Proponer acciones genéricas (\"motivar al personal\") sin concretarlas"
+      ]
+    },
+    {
+      id: "mkt-049",
+      tema: "Gestión de categorías: roles y principios",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste la gestión de categorías (category management) y cuál es su beneficio principal. Describa tres (3) de los roles de categoría (por ejemplo: destino, rutina, conveniencia u ocasional/estacional) e indique cómo se gestiona cada uno en el punto de venta.",
+      respuestaModelo: "La gestión de categorías es un enfoque de trabajo conjunto entre el proveedor (fabricante) y el distribuidor (retailer) que administra grupos de productos (categorías) como unidades estratégicas de negocio, tomando decisiones de surtido, precio, exhibición y promoción según el comportamiento del consumidor. Su beneficio principal es maximizar el valor para el consumidor y la rentabilidad de la categoría, evitando gestionar producto por producto de forma aislada.\n\nRoles de categoría (cómo el retailer define la función de cada categoría en su negocio):\n1) Categoría destino: aquella por la que el cliente elige la tienda; el retailer busca ser el referente. Se gestiona con surtido amplio, precios competitivos y exhibición destacada (ej.: vinos en un supermercado que quiere ser referente en esa categoría).\n2) Categoría de rutina (o habitual): compras frecuentes y planificadas que sostienen el flujo del negocio. Se gestiona asegurando disponibilidad constante, buen surtido y precios consistentes (ej.: lácteos, abarrotes).\n3) Categoría de conveniencia: compras de impulso o complementarias que aumentan el ticket. Se gestiona con ubicación estratégica cerca de cajas o de categorías relacionadas (ej.: pilas, snacks, golosinas).\n4) Categoría ocasional/estacional: relevante en momentos puntuales del año. Se gestiona con exhibiciones temporales y promociones (ej.: útiles escolares en marzo).",
+      criterios: [
+        { texto: "Define la gestión de categorías como trabajo conjunto proveedor-distribuidor por grupos de productos", peso: 2 },
+        { texto: "Señala su beneficio (valor para el consumidor y rentabilidad de la categoría)", peso: 1 },
+        { texto: "Describe tres roles de categoría con su forma de gestión en el punto de venta", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir la categoría con un solo producto o marca en vez de un grupo estratégico",
+        "No distinguir los roles de categoría entre sí",
+        "Olvidar que la gestión de categorías implica colaboración entre proveedor y retailer"
+      ]
+    },
+    {
+      id: "mkt-050",
+      tema: "Embudo de conversión (funnel) de marketing",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste el embudo de conversión (funnel) de marketing y describa sus etapas principales (conocimiento, interés/consideración, deseo y acción/conversión). Para cada etapa, indique una (1) acción de marketing adecuada y explique por qué el embudo se estrecha de una etapa a la siguiente.",
+      respuestaModelo: "El embudo de conversión representa el recorrido del consumidor desde que conoce una marca hasta que compra, y se llama embudo porque en cada etapa se pierde una parte de las personas: muchas conocen la marca, menos se interesan, aún menos desean el producto y solo una fracción finalmente compra. Sirve para diagnosticar en qué etapa se pierden clientes y qué acción aplicar.\n\nEtapas y acción adecuada:\n1) Conocimiento (awareness): el consumidor se entera de que la marca existe. Acción: publicidad de alcance, contenido en redes, SEO y presencia de marca.\n2) Interés / consideración: evalúa la marca frente a alternativas. Acción: contenido de valor, comparativas, reseñas, demostraciones que informen y generen preferencia.\n3) Deseo: quiere el producto, la marca se vuelve una opción preferida. Acción: ofertas, testimonios, pruebas gratuitas o demostraciones que refuercen el valor.\n4) Acción / conversión: concreta la compra. Acción: llamado a la acción claro, facilidades de pago, cupón de cierre, checkout sencillo.\n\nEl embudo se estrecha porque no todos los que conocen la marca avanzan: hay filtros de interés, presupuesto, competencia y fricción en cada paso. El objetivo del marketing es aumentar la tasa de conversión entre etapas y, tras la compra, fidelizar (algunos modelos agregan una etapa de lealtad/recompra).",
+      criterios: [
+        { texto: "Explica el concepto de embudo y por qué se estrecha en cada etapa", peso: 2 },
+        { texto: "Describe las cuatro etapas en orden (conocimiento, interés, deseo, acción)", peso: 2 },
+        { texto: "Asocia una acción de marketing pertinente a cada etapa", peso: 2 }
+      ],
+      erroresComunes: [
+        "Alterar el orden de las etapas del embudo",
+        "Proponer la misma acción para todas las etapas",
+        "No explicar por qué se pierde audiencia entre una etapa y la siguiente"
+      ]
+    },
+    {
+      id: "mkt-051",
+      tema: "Público objetivo y estrategia creativa publicitaria",
+      dificultad: "facil",
+      enunciado: "Explique qué es el público objetivo de una campaña publicitaria y por qué definirlo es el punto de partida de la estrategia creativa. Describa dos (2) elementos que componen una estrategia creativa (por ejemplo: mensaje o promesa, tono, ejecución) y aplíquelos a un ejemplo de campaña para un producto que usted elija.",
+      respuestaModelo: "El público objetivo es el grupo específico de consumidores al que se dirige la campaña, definido a partir de la segmentación (edad, estilo de vida, necesidades, comportamiento). Definirlo es el punto de partida porque todas las decisiones creativas —qué decir, cómo decirlo y en qué medios— dependen de a quién se le habla; sin público definido, el mensaje se diluye y no conecta con nadie.\n\nLa estrategia creativa traduce el objetivo de comunicación en un mensaje persuasivo. Dos elementos:\n1) Mensaje o promesa central: la idea principal y el beneficio que se quiere transmitir (el \"qué decir\"). Debe ser relevante para el público y coherente con el posicionamiento.\n2) Tono y ejecución: el estilo con que se comunica el mensaje (el \"cómo decirlo\"): emocional, humorístico, testimonial, aspiracional, y su materialización en imágenes, música y formato.\n\nEjemplo: campaña de una bebida isotónica dirigida a jóvenes deportistas urbanos (público objetivo). Mensaje/promesa: \"recupera tu energía para seguir entrenando\". Tono y ejecución: enérgico e inspirador, con deportistas reales en escenarios urbanos y música motivadora, difundido en redes sociales donde está el público. Así la creatividad responde directamente a quién es el público y qué lo motiva.",
+      criterios: [
+        { texto: "Define el público objetivo y su origen en la segmentación", peso: 2 },
+        { texto: "Explica por qué definir el público antecede a la estrategia creativa", peso: 1 },
+        { texto: "Describe dos elementos de la estrategia creativa (mensaje, tono/ejecución)", peso: 2 },
+        { texto: "Aplica los elementos a un ejemplo de campaña coherente con el público", peso: 1 }
+      ],
+      erroresComunes: [
+        "Definir el público de forma tan amplia que no orienta la creatividad (\"todo el mundo\")",
+        "Confundir el mensaje (qué se dice) con el medio (dónde se dice)",
+        "Proponer una ejecución creativa incoherente con el público objetivo"
+      ]
+    },
+    {
+      id: "mkt-052",
+      tema: "Tipos de marca: fabricante, marca propia y marca blanca",
+      dificultad: "facil",
+      enunciado: "Explique la diferencia entre marca del fabricante, marca propia (del distribuidor) y marca blanca o genérica. Para cada tipo indique quién la gestiona, una (1) ventaja para el consumidor o el retailer, y un (1) ejemplo del retail chileno.",
+      respuestaModelo: "Los productos en el punto de venta pueden llevar distintos tipos de marca según quién sea su dueño y quién la gestione:\n\n1) Marca del fabricante (marca nacional o comercial): pertenece y es gestionada por la empresa que produce el bien; invierte en su desarrollo, publicidad y posicionamiento. Ventaja: para el consumidor, respaldo, reputación y consistencia de calidad conocida. Ejemplo: bebidas, detergentes o alimentos de marcas líderes reconocidas que se venden en cualquier supermercado.\n2) Marca propia (marca del distribuidor o retailer): pertenece a la cadena que la comercializa, la cual la encarga a un fabricante y la vende con su propio nombre o una marca creada por ella. Ventaja: para el retailer, mayor margen y fidelización a su cadena; para el consumidor, buen precio con calidad respaldada por la cadena. Ejemplo: las líneas de marca propia de las grandes cadenas de supermercados chilenas.\n3) Marca blanca o genérica: productos básicos sin gran inversión en marca, que compiten principalmente por precio y presentación sobria. Ventaja: precio bajo para el consumidor sensible al precio. Ejemplo: productos genéricos de bajo costo en abarrotes.\n\nLa diferencia central está en la propiedad y gestión de la marca y en la estrategia (posicionamiento y margen vs. precio).",
+      criterios: [
+        { texto: "Distingue los tres tipos de marca según quién es su dueño y la gestiona", peso: 3 },
+        { texto: "Indica una ventaja para el consumidor o el retailer en cada caso", peso: 2 },
+        { texto: "Entrega un ejemplo pertinente del retail para cada tipo", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir marca propia (del retailer) con marca del fabricante",
+        "Afirmar que la marca blanca siempre es de mala calidad",
+        "No identificar quién gestiona cada tipo de marca"
+      ]
+    },
+    {
+      id: "mkt-053",
+      tema: "Planificación de medios y principios de la comunicación",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste la planificación de medios en una campaña de comunicación y describa los conceptos de alcance, frecuencia y medios propios/pagados/ganados. Señale por qué es importante elegir bien los medios según el público objetivo, con un ejemplo.",
+      respuestaModelo: "La planificación de medios es el proceso de decidir dónde, cuándo y con qué intensidad se difundirá el mensaje publicitario para llegar al público objetivo de forma eficiente, optimizando el presupuesto. Sus conceptos clave:\n\n- Alcance: cantidad o porcentaje del público objetivo que se expone al menos una vez al mensaje en un periodo. Responde a \"¿a cuántos llego?\".\n- Frecuencia: número promedio de veces que cada persona del público se expone al mensaje. Responde a \"¿cuántas veces lo ve cada uno?\". Existe un equilibrio: poca frecuencia no fija el mensaje; demasiada satura.\n- Tipos de medios: propios (canales de la marca: sitio web, redes, local), pagados (espacios comprados: avisos, publicidad digital, TV) y ganados (cobertura obtenida sin pagar: menciones en prensa, recomendaciones, viralización).\n\nElegir bien los medios importa porque cada público consume medios distintos: gastar en un medio que el público no usa desperdicia presupuesto. Ejemplo: para llegar a jóvenes urbanos conviene priorizar redes sociales y creadores de contenido (medios pagados y ganados digitales) más que la prensa escrita; para un público adulto mayor puede ser más efectiva la televisión o la radio. La combinación correcta maximiza alcance y frecuencia útil al menor costo.",
+      criterios: [
+        { texto: "Define la planificación de medios y su objetivo de eficiencia", peso: 2 },
+        { texto: "Explica correctamente alcance y frecuencia", peso: 2 },
+        { texto: "Distingue medios propios, pagados y ganados", peso: 1 },
+        { texto: "Justifica la elección de medios según el público con un ejemplo", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir alcance (cuántos) con frecuencia (cuántas veces)",
+        "Creer que \"más frecuencia siempre es mejor\", ignorando la saturación",
+        "Elegir medios sin considerar los hábitos del público objetivo"
+      ]
+    },
+    {
+      id: "mkt-054",
+      tema: "Proceso de adopción de un nuevo producto",
+      dificultad: "facil",
+      enunciado: "Describa las cinco (5) etapas del proceso de adopción de un nuevo producto por parte del consumidor (conciencia, interés, evaluación, prueba y adopción). Explique además dos (2) características del producto que aceleran o frenan su adopción (por ejemplo: ventaja relativa, complejidad, posibilidad de prueba).",
+      respuestaModelo: "El proceso de adopción describe los pasos mentales que sigue un consumidor individual desde que conoce una innovación hasta que la incorpora a su uso habitual:\n\n1) Conciencia: el consumidor se entera de que el producto existe, pero tiene poca información.\n2) Interés: busca más información porque le despierta curiosidad.\n3) Evaluación: analiza si vale la pena probarlo, comparándolo con sus alternativas.\n4) Prueba: lo usa a pequeña escala o por primera vez para estimar su valor.\n5) Adopción: decide usarlo de forma plena y regular.\n\nCaracterísticas del producto que influyen en la velocidad de adopción:\n1) Ventaja relativa: cuánto mejor es percibido frente a lo que reemplaza; a mayor ventaja evidente, adopción más rápida.\n2) Posibilidad de prueba (divisibilidad): si el consumidor puede probarlo sin gran compromiso (muestras, versiones gratuitas), adopta más rápido.\n(También válidas: compatibilidad con hábitos y valores; complejidad —a mayor complejidad, adopción más lenta—; observabilidad —si los resultados son visibles para otros, se acelera—.)\n\nEste proceso individual se relaciona con la difusión de innovaciones en el mercado (innovadores, adoptadores tempranos, etc.), pero se refiere al recorrido de cada persona.",
+      criterios: [
+        { texto: "Describe las cinco etapas del proceso de adopción en orden", peso: 3 },
+        { texto: "Explica dos características del producto que aceleran o frenan la adopción", peso: 2 },
+        { texto: "Distingue el proceso individual de adopción de la difusión en el mercado", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir las etapas de adopción individual con las categorías de adoptantes (Rogers)",
+        "Omitir la etapa de prueba, clave antes de la adopción plena",
+        "No relacionar las características del producto con la velocidad de adopción"
+      ]
+    },
+    {
+      id: "mkt-055",
+      tema: "Desarrollo de nuevos productos: etapas del proceso",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa chilena de alimentos saludables quiere lanzar una nueva línea de snacks a base de legumbres nacionales. Describa el proceso de desarrollo de nuevos productos identificando cinco (5) de sus etapas en orden. Para tres (3) de esas etapas, indique una (1) acción o decisión concreta que la empresa debería tomar en el caso.",
+      respuestaModelo: "El desarrollo de nuevos productos es un proceso estructurado que reduce el riesgo de fracaso al filtrar ideas en etapas sucesivas. Etapas principales:\n\n1) Generación de ideas: buscar ideas en fuentes internas (I+D, ventas) y externas (clientes, tendencias, competencia). Acción en el caso: recoger tendencias de consumo saludable y detectar el interés por proteína vegetal y productos locales para generar conceptos de snacks de legumbres.\n2) Tamizado o filtrado de ideas: descartar las ideas inviables o poco atractivas según criterios de mercado y capacidad. Acción: evaluar cuáles formatos (garbanzo tostado, snack de lenteja) son factibles con la capacidad productiva y el presupuesto.\n3) Desarrollo y prueba del concepto: convertir la idea en un concepto detallado y testearlo con consumidores. Acción: presentar el concepto \"snack alto en proteína, de legumbres chilenas, sin frituras\" a un panel del público objetivo y medir su interés.\n4) Desarrollo del producto y marketing mix: crear el prototipo y definir producto, precio, plaza y promoción. Acción: desarrollar recetas y empaque, y definir precio y canal (supermercados, tiendas saludables).\n5) Prueba de mercado: lanzar en escala limitada para evaluar respuesta real antes del lanzamiento masivo. Acción: vender en algunas tiendas o regiones para ajustar sabor, precio y presentación.\n6) Comercialización (lanzamiento): lanzamiento a escala completa con soporte de marketing.\n\nEl orden importa: cada etapa filtra y reduce la incertidumbre antes de invertir en la siguiente.",
+      criterios: [
+        { texto: "Identifica cinco etapas del proceso en orden correcto", peso: 3 },
+        { texto: "Propone una acción concreta y pertinente para tres etapas, aplicada al caso", peso: 3 },
+        { texto: "Demuestra que el proceso filtra el riesgo etapa a etapa antes de invertir", peso: 2 }
+      ],
+      erroresComunes: [
+        "Saltar la prueba de concepto o la prueba de mercado, etapas clave para reducir riesgo",
+        "Confundir el desarrollo de nuevos productos con el ciclo de vida del producto",
+        "Describir las etapas sin aterrizarlas al caso concreto"
+      ]
+    },
+    {
+      id: "mkt-056",
+      tema: "Gestión de categorías: proceso y ejecuciones tácticas",
+      dificultad: "media",
+      enunciado: "Un supermercado regional quiere mejorar el desempeño de su categoría de \"desayuno\" (cereales, leches, mermeladas, café). Aplicando los pasos del proceso de gestión de categorías, proponga cómo abordaría: a) la definición y rol de la categoría, y b) dos (2) ejecuciones tácticas concretas (surtido, precio, exhibición/planograma o promoción) para mejorar sus resultados.",
+      respuestaModelo: "La gestión de categorías administra un grupo de productos como una unidad de negocio, con foco en el consumidor y en la rentabilidad conjunta.\n\na) Definición y rol de la categoría: primero se define qué productos integran la categoría \"desayuno\" desde la lógica del consumidor (todo lo que arma la ocasión de desayunar) y se le asigna un rol. En un supermercado familiar, el desayuno suele ser una categoría de rutina/habitual e incluso destino, porque es una compra frecuente y sostiene el flujo del negocio: la decisión estratégica es asegurar disponibilidad permanente, surtido completo y precios consistentes para que el cliente resuelva todo su desayuno en la tienda.\n\nb) Ejecuciones tácticas (dos):\n1) Surtido y exhibición (planograma): agrupar físicamente los productos de la ocasión desayuno o ubicarlos con lógica de flujo (cereales junto a leches), ordenando el planograma según rotación y margen, dando más espacio a los productos de mayor venta y ubicando a la altura de los ojos los de mayor rentabilidad. Esto facilita la compra y aumenta el ticket.\n2) Promoción cruzada: armar promociones que combinen productos complementarios de la categoría (ej.: descuento al llevar café + leche, o cereal + leche), incentivando la compra conjunta y elevando el valor de la canasta. (También válidas: precios psicológicos, señalética de la ocasión, degustaciones.)\n\nEl proceso completo incluye definir la categoría, su rol, evaluarla con métricas (participación, margen, rotación), fijar estrategia y tácticas, e implementar y revisar resultados, siempre en colaboración con los proveedores.",
+      criterios: [
+        { texto: "a) Define la categoría desde la óptica del consumidor y le asigna un rol coherente", peso: 3 },
+        { texto: "b) Propone dos ejecuciones tácticas concretas (surtido/planograma, precio, exhibición o promoción)", peso: 3 },
+        { texto: "Conecta las tácticas con el objetivo de mejorar resultados (ticket, rotación, margen)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Gestionar producto por producto en vez de la categoría como unidad",
+        "Proponer tácticas sin definir antes el rol de la categoría",
+        "Olvidar el rol del proveedor y de las métricas en el proceso"
+      ]
+    },
+    {
+      id: "mkt-057",
+      tema: "Trade marketing y relación con el canal",
+      dificultad: "media",
+      enunciado: "Una empresa productora de bebidas artesanales quiere ganar presencia en supermercados y almacenes de barrio, donde compite por espacio con grandes marcas. Explique qué es el trade marketing y proponga tres (3) acciones de trade marketing dirigidas al canal (no al consumidor final) para mejorar su presencia y rotación en el punto de venta.",
+      respuestaModelo: "El trade marketing es el conjunto de estrategias y acciones orientadas al canal de distribución (mayoristas, minoristas, almacenes) para lograr que el producto esté bien exhibido, disponible y con rotación en el punto de venta. A diferencia del marketing dirigido al consumidor final, el trade marketing busca \"venderle al canal\" y trabajar con él para que el producto se mueva desde la góndola hacia el consumidor.\n\nTres acciones de trade marketing dirigidas al canal:\n1) Incentivos y condiciones comerciales al canal: descuentos por volumen, márgenes atractivos, plazos de pago o bonificaciones por cumplimiento de metas, para motivar al retailer a comprar, exhibir y recomendar la marca.\n2) Material de punto de venta y exhibición (merchandising): entregar exhibidores, señalética, cabeceras de góndola y asegurar un planograma con buena ubicación y facing, de modo que el producto sea visible y fácil de encontrar frente a marcas grandes.\n3) Capacitación y apoyo al canal: formar a los reponedores o dueños de almacén sobre el producto y sus argumentos de venta, y apoyar con gestión de inventario para evitar quiebres de stock. (También válidas: promociones conjuntas con el retailer, degustaciones coordinadas, programas de fidelización al canal.)\n\nEstas acciones mejoran la disponibilidad, visibilidad y rotación, que son la puerta de entrada para que el consumidor final llegue al producto.",
+      criterios: [
+        { texto: "Define el trade marketing como acciones orientadas al canal, distinguiéndolo del marketing al consumidor final", peso: 2 },
+        { texto: "Propone tres acciones concretas dirigidas al canal (incentivos, exhibición, capacitación/apoyo)", peso: 4 },
+        { texto: "Conecta las acciones con disponibilidad, visibilidad y rotación en el punto de venta", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer acciones dirigidas al consumidor final en vez de al canal",
+        "Confundir trade marketing con publicidad masiva",
+        "Olvidar que el objetivo es la rotación y presencia en el punto de venta"
+      ]
+    },
+    {
+      id: "mkt-058",
+      tema: "Marca: brand equity y sus fuentes",
+      dificultad: "media",
+      enunciado: "Explique qué es el valor de marca o brand equity y por qué es un activo estratégico para la empresa. Describa cuatro (4) fuentes o dimensiones del valor de marca (por ejemplo: notoriedad/conciencia, asociaciones e imagen, calidad percibida y lealtad) y explique cómo cada una beneficia a la empresa.",
+      respuestaModelo: "El valor de marca o brand equity es el valor adicional que una marca aporta a un producto más allá de sus atributos funcionales, derivado de las percepciones, experiencias y asociaciones que los consumidores tienen sobre ella. Es un activo estratégico porque permite cobrar un precio superior, facilita la extensión a nuevos productos, genera preferencia frente a la competencia y actúa como barrera de entrada; una marca fuerte reduce el riesgo percibido por el consumidor.\n\nCuatro fuentes o dimensiones:\n1) Notoriedad o conciencia de marca (awareness): cuánto conocen y recuerdan la marca. Beneficio: una marca top of mind entra en el conjunto de consideración y es elegida con más frecuencia; reduce el costo de captación.\n2) Asociaciones e imagen de marca: los atributos, beneficios y valores que el consumidor vincula a la marca. Beneficio: diferencian la oferta, sostienen el posicionamiento y justifican un precio premium (ej.: asociarla a sustentabilidad o prestigio).\n3) Calidad percibida: la percepción global de calidad y confiabilidad, independiente de la calidad objetiva. Beneficio: aumenta la disposición a pagar y la preferencia, y facilita recomendaciones.\n4) Lealtad de marca: el grado de fidelidad y recompra. Beneficio: asegura ingresos recurrentes, reduce sensibilidad al precio y baja el costo de retención frente al de captación.\n\nGestionar estas dimensiones (construir notoriedad, cuidar asociaciones, sostener calidad y fomentar lealtad) es lo que hace crecer el brand equity en el tiempo.",
+      criterios: [
+        { texto: "Define brand equity como valor añadido derivado de percepciones del consumidor y explica por qué es un activo", peso: 3 },
+        { texto: "Describe cuatro fuentes o dimensiones del valor de marca", peso: 3 },
+        { texto: "Explica el beneficio para la empresa de cada dimensión", peso: 2 }
+      ],
+      erroresComunes: [
+        "Reducir el valor de marca solo al logo o al nombre",
+        "Confundir calidad percibida con calidad objetiva del producto",
+        "No conectar cada dimensión con un beneficio concreto para la empresa"
+      ]
+    },
+    {
+      id: "mkt-059",
+      tema: "Reposicionamiento de marca",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una marca chilena tradicional de ropa, percibida como \"anticuada\" por el público joven, quiere reposicionarse para volverse relevante sin perder a sus clientes actuales. Explique qué es el reposicionamiento de marca y cuándo se justifica, y proponga tres (3) acciones concretas para reposicionar la marca, advirtiendo un (1) riesgo del proceso.",
+      respuestaModelo: "El reposicionamiento consiste en modificar la percepción que el consumidor tiene de una marca para ocupar un lugar distinto y más deseable en su mente, ajustando su posicionamiento actual. Se justifica cuando la imagen de la marca quedó obsoleta o desalineada con el mercado, cuando cambian las preferencias del público, cuando aparece nueva competencia o cuando la marca quiere llegar a un nuevo segmento. En el caso, la marca es percibida como anticuada por los jóvenes, lo que amenaza su relevancia futura.\n\nTres acciones concretas de reposicionamiento:\n1) Renovar la identidad y el estilo del producto: actualizar diseño, colecciones y experiencia de compra para conectar con códigos actuales, sin abandonar los atributos que valoran los clientes leales (calidad, confianza).\n2) Cambiar el mensaje y los medios de comunicación: nueva narrativa de marca, presencia en redes sociales y colaboraciones o embajadores que resuenen con el público joven, comunicando el nuevo posicionamiento.\n3) Ampliar o ajustar la propuesta (canales y productos): incorporar e-commerce, líneas más contemporáneas o ediciones que atraigan al nuevo segmento, manteniendo las líneas clásicas para no perder a los actuales.\n\nRiesgo principal: alienar a los clientes actuales o generar una crisis de identidad; si el cambio es demasiado abrupto o poco creíble, la marca puede perder a su base leal sin ganar al nuevo público (\"quedar en tierra de nadie\"). Por eso el reposicionamiento debe ser coherente, gradual y respaldado por cambios reales en el producto, no solo estéticos.",
+      criterios: [
+        { texto: "Define el reposicionamiento como cambio de percepción y señala cuándo se justifica", peso: 3 },
+        { texto: "Propone tres acciones concretas y coherentes de reposicionamiento", peso: 3 },
+        { texto: "Advierte un riesgo válido (perder clientes actuales, cambio poco creíble)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir reposicionamiento con un simple cambio de logo o eslogan superficial",
+        "Ignorar el riesgo de perder a los clientes leales actuales",
+        "Proponer un giro tan radical que rompe la coherencia y credibilidad de la marca"
+      ]
+    },
+    {
+      id: "mkt-060",
+      tema: "Omnicanalidad y experiencia integrada",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una tienda chilena de artículos deportivos vende en locales físicos, sitio web y app, pero cada canal opera por separado: los precios difieren, el stock no está integrado y el cliente no puede combinar canales. Explique la diferencia entre multicanalidad y omnicanalidad y proponga tres (3) acciones concretas para que la tienda entregue una experiencia omnicanal.",
+      respuestaModelo: "La multicanalidad significa tener varios canales de venta y comunicación (tienda, web, app) que operan de forma independiente, sin integración entre sí: cada uno tiene su propio inventario, precios y experiencia. La omnicanalidad, en cambio, integra todos los canales en una experiencia única, coherente y sin fricciones, donde el cliente puede iniciar en un canal y continuar en otro con información sincronizada. La tienda del caso hoy es multicanal (canales separados) y debe pasar a omnicanal.\n\nTres acciones concretas para lograr omnicanalidad:\n1) Integrar inventario y precios entre canales: un único stock y política de precios consistente, de modo que el cliente vea disponibilidad real por tienda y no encuentre precios distintos entre web y local.\n2) Habilitar servicios que conecten canales: \"compra online y retira en tienda\" (click & collect), compra en tienda con despacho a domicilio, y devoluciones en cualquier canal. Esto permite al cliente combinar lo digital y lo físico según su conveniencia.\n3) Unificar los datos y la relación con el cliente: una ficha única de cliente (historial de compras, carrito, programa de fidelización) accesible desde cualquier canal, para personalizar la atención y dar continuidad a la experiencia.\n\nLa clave es que la marca se perciba como una sola, sin importar el canal, aprovechando además que muchos clientes investigan online antes de comprar en tienda (webrooming) o viceversa.",
+      criterios: [
+        { texto: "Distingue claramente multicanalidad (canales separados) de omnicanalidad (canales integrados)", peso: 3 },
+        { texto: "Propone tres acciones concretas que integran canales físico y digital", peso: 3 },
+        { texto: "Las acciones apuntan a una experiencia coherente y sin fricciones para el cliente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir tener muchos canales (multicanal) con integrarlos (omnicanal)",
+        "Proponer acciones que no conectan los canales entre sí",
+        "Olvidar la integración de inventario, precios y datos del cliente"
+      ]
+    },
+    {
+      id: "mkt-061",
+      tema: "E-commerce y canales digitales de distribución",
+      dificultad: "media",
+      enunciado: "Una pyme chilena que fabrica productos de decoración quiere vender por internet a todo el país. Analice dos (2) alternativas de canal digital: a) tienda propia de e-commerce y b) venta a través de marketplaces establecidos. Para cada una indique una (1) ventaja y una (1) desventaja, y recomiende fundadamente una combinación.",
+      respuestaModelo: "Vender online exige elegir entre canales digitales con lógicas distintas:\n\na) Tienda propia de e-commerce (canal directo, nivel 0): la empresa vende desde su propio sitio.\n- Ventaja: control total de la marca, del precio y de la relación con el cliente (datos, personalización, márgenes completos sin comisiones).\n- Desventaja: requiere generar tráfico por cuenta propia (inversión en marketing digital, SEO, publicidad) y resolver logística y pagos; el alcance inicial es bajo porque nadie conoce el sitio.\n\nb) Marketplaces establecidos (canal con intermediario digital): la empresa vende a través de grandes plataformas.\n- Ventaja: acceso inmediato a un enorme flujo de compradores y a la confianza y logística de la plataforma, acelerando las ventas sin construir audiencia desde cero.\n- Desventaja: cobran comisiones que reducen el margen, imponen reglas y se compite en un entorno saturado donde es difícil diferenciar la marca y donde el cliente es de la plataforma, no de la pyme.\n\nRecomendación: una estrategia combinada. Iniciar apalancándose en marketplaces para ganar volumen, visibilidad y validación rápida, mientras en paralelo se construye la tienda propia para capturar datos, márgenes y relación directa. Con el tiempo, migrar a los clientes fieles hacia el canal propio (con beneficios exclusivos) y usar el marketplace para captar nuevos. Esto equilibra alcance (marketplace) con control y rentabilidad (tienda propia), gestionando ambos con coherencia de precio y marca.",
+      criterios: [
+        { texto: "a) Identifica una ventaja y una desventaja de la tienda propia de e-commerce", peso: 2 },
+        { texto: "b) Identifica una ventaja y una desventaja de los marketplaces", peso: 2 },
+        { texto: "Recomienda una combinación fundamentada (alcance vs. control/margen)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Ignorar el costo de generar tráfico propio en la tienda de e-commerce",
+        "Olvidar las comisiones y la pérdida de relación con el cliente en marketplaces",
+        "Recomendar un único canal sin justificar frente a la alternativa"
+      ]
+    },
+    {
+      id: "mkt-062",
+      tema: "Comunicaciones integradas de marketing (CIM): diseño de campaña",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una marca chilena de café de especialidad lanzará una nueva línea lista para tomar (cold brew en lata) dirigida a jóvenes profesionales. Proponga tres (3) estrategias de Comunicaciones Integradas de Marketing (CIM) para el lanzamiento. Para cada una indique: la herramienta de comunicación utilizada, el objetivo que busca y un ejemplo concreto de aplicación.",
+      respuestaModelo: "Las Comunicaciones Integradas de Marketing (CIM) combinan de forma coordinada distintas herramientas de comunicación para entregar un mensaje coherente al público objetivo. Tres estrategias para el lanzamiento del cold brew:\n\n1) Herramienta: publicidad en medios digitales y redes sociales. Objetivo: generar conocimiento (awareness) del nuevo producto en el público joven profesional. Ejemplo: campaña en Instagram y TikTok con contenido corto que muestre el cold brew como la energía práctica para la jornada laboral, con creadores de contenido del segmento.\n2) Herramienta: promoción de ventas y sampling (degustación). Objetivo: estimular la prueba del producto, clave en un lanzamiento donde nadie lo conoce. Ejemplo: degustaciones gratuitas en cowork, universidades y estaciones de metro en horario de la mañana, más un cupón de descuento para la primera compra.\n3) Herramienta: marketing directo / CRM (email y redes). Objetivo: convertir el interés en compra y fidelizar, construyendo base de datos. Ejemplo: quienes participan de la degustación se suscriben y reciben una oferta personalizada y contenido sobre nuevas variedades, incentivando la recompra.\n\nLas tres estrategias comparten un mensaje y una identidad coherentes (café de especialidad, práctico y de calidad), lo que constituye la esencia de la comunicación integrada: cada herramienta cumple un rol distinto (conocer, probar, convertir) dentro de una misma campaña.",
+      criterios: [
+        { texto: "Propone tres estrategias, cada una con su herramienta de comunicación identificada", peso: 3 },
+        { texto: "Indica un objetivo pertinente para cada estrategia (conocer, probar, convertir/fidelizar)", peso: 3 },
+        { texto: "Entrega un ejemplo concreto de aplicación por estrategia y mantiene coherencia de mensaje (CIM)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer tres variantes de la misma herramienta (solo publicidad) en vez de una mezcla",
+        "Omitir el objetivo o el ejemplo concreto de cada estrategia",
+        "No mantener la coherencia del mensaje entre herramientas (esencia de las CIM)"
+      ]
+    },
+    {
+      id: "mkt-063",
+      tema: "Publicidad: roles, estereotipos y marketing con propósito",
+      dificultad: "media",
+      enunciado: "En la publicidad actual se discute el uso de roles y estereotipos, y crece el marketing con propósito (causas sociales o ambientales). Explique qué son los estereotipos en la publicidad y por qué su uso es cuestionado, y analice un (1) beneficio y un (1) riesgo del marketing con propósito para una marca.",
+      respuestaModelo: "Los estereotipos en la publicidad son representaciones simplificadas y generalizadas de grupos de personas (por género, edad, origen, ocupación) que las marcas han usado históricamente para comunicar rápido y conectar con audiencias. Su uso es cuestionado porque puede reforzar prejuicios y roles rígidos (por ejemplo, asociar ciertas tareas del hogar solo a la mujer), resultar excluyente o discriminatorio, y hoy genera rechazo en consumidores más conscientes y diversos, dañando la imagen de la marca. La tendencia es hacia una publicidad más inclusiva y representativa de la realidad.\n\nMarketing con propósito: es cuando la marca vincula su comunicación y acción a una causa social o ambiental (sustentabilidad, inclusión, salud).\n- Beneficio: fortalece el vínculo emocional y la diferenciación; los consumidores —especialmente jóvenes— valoran y prefieren marcas con valores coherentes, lo que mejora la reputación, la lealtad y puede justificar un precio premium.\n- Riesgo: el \"lavado de imagen\" o purpose-washing/greenwashing: si el propósito es solo discurso y no se respalda con acciones reales y coherentes, el consumidor lo percibe como oportunismo, lo que provoca crisis de reputación y pérdida de confianza. El propósito debe ser auténtico y consistente con lo que la marca realmente hace.",
+      criterios: [
+        { texto: "Explica qué son los estereotipos publicitarios y por qué su uso es cuestionado", peso: 3 },
+        { texto: "Identifica un beneficio válido del marketing con propósito", peso: 2 },
+        { texto: "Identifica un riesgo válido (purpose-washing/greenwashing) y la necesidad de autenticidad", peso: 3 }
+      ],
+      erroresComunes: [
+        "Defender el uso de estereotipos sin reconocer su cuestionamiento actual",
+        "Presentar el marketing con propósito solo como beneficio, ignorando el riesgo de incoherencia",
+        "No advertir que el propósito debe respaldarse con acciones reales"
+      ]
+    },
+    {
+      id: "mkt-064",
+      tema: "Marketing de afiliación e influencers",
+      dificultad: "media",
+      enunciado: "Una tienda online chilena de cosmética natural quiere crecer usando creadores de contenido (influencers) y marketing de afiliación. Explique en qué consiste cada uno y sus diferencias, y proponga cómo estructuraría una acción con influencers cuidando la coherencia con la marca y midiendo resultados.",
+      respuestaModelo: "El marketing con influencers consiste en colaborar con creadores de contenido que tienen audiencia y credibilidad en un nicho, para que recomienden o muestren la marca a sus seguidores, aprovechando su capacidad de prescripción. El marketing de afiliación es un modelo en el que terceros (afiliados, que pueden ser influencers, sitios o clientes) promueven el producto y reciben una comisión por cada venta o acción concreta generada, normalmente rastreada con un código o enlace único. La diferencia clave: el trabajo con influencers puede pagarse por exposición o contenido (independiente de la venta), mientras que la afiliación paga por resultados (comisión por venta); de hecho, ambos se combinan cuando al influencer se le da un código de afiliado.\n\nCómo estructurar la acción cuidando coherencia y medición:\n1) Selección coherente: elegir microinfluencers del mundo de la belleza natural y sustentable, cuyos valores y audiencia calcen con la marca (más relevante que el mero número de seguidores), para que la recomendación sea creíble.\n2) Contenido auténtico: acordar contenido honesto (uso real del producto, rutinas), respetando el estilo del creador y transparentando que es una colaboración, para no dañar la credibilidad.\n3) Medición con afiliación: entregar a cada influencer un código de descuento o enlace único, de modo de medir ventas atribuibles, tasa de conversión y retorno de cada colaboración (ROI), y escalar con los que mejor funcionan.\n\nAsí se combina el alcance y credibilidad de los influencers con la medición por resultados de la afiliación.",
+      criterios: [
+        { texto: "Define marketing con influencers y marketing de afiliación y los distingue (exposición vs. pago por resultado)", peso: 3 },
+        { texto: "Estructura la selección de influencers cuidando la coherencia con la marca", peso: 2 },
+        { texto: "Incorpora medición de resultados (códigos/enlaces, conversión, ROI)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir influencers (pago por contenido/exposición) con afiliación (pago por venta)",
+        "Elegir influencers solo por cantidad de seguidores, ignorando la coherencia con la marca",
+        "No definir cómo se medirán los resultados de la acción"
+      ]
+    },
+    {
+      id: "mkt-065",
+      tema: "Promoción de ventas e incentivos",
+      dificultad: "media",
+      enunciado: "Explique qué es la promoción de ventas y en qué se diferencia de la publicidad. Describa cuatro (4) tipos de promoción de ventas dirigidas al consumidor (por ejemplo: descuentos, cupones, muestras, 2x1, concursos, programas de puntos) con un ejemplo de cada uno, y advierta un (1) riesgo de abusar de las promociones.",
+      respuestaModelo: "La promoción de ventas es un conjunto de incentivos de corto plazo diseñados para estimular la compra o venta inmediata de un producto. Se diferencia de la publicidad en el horizonte y objetivo: la publicidad construye imagen y preferencia en el mediano-largo plazo (persuade y recuerda), mientras la promoción de ventas busca una respuesta rápida y medible \"aquí y ahora\" mediante un beneficio tangible.\n\nCuatro tipos dirigidos al consumidor:\n1) Descuentos y rebajas: reducción temporal de precio. Ejemplo: 20% de descuento por lanzamiento.\n2) Cupones: vale que otorga un beneficio al canjearlo. Ejemplo: cupón digital de $2.000 en la próxima compra.\n3) Muestras gratis (sampling): entregar el producto para probarlo. Ejemplo: degustación de un nuevo snack en el supermercado.\n4) Ofertas de volumen (2x1, 3x2): más producto por el mismo valor. Ejemplo: lleva 2 y paga 1 en bebidas. (También válidos: concursos y sorteos, programas de puntos/fidelización, regalos por compra.)\n\nRiesgo de abusar de las promociones: acostumbrar al consumidor a comprar solo en oferta, erosionando el precio de referencia y el margen, y dañando la percepción de valor de la marca (se percibe como \"barata\" y pierde poder para vender a precio pleno). Las promociones deben usarse de forma táctica y acotada, no como estrategia permanente.",
+      criterios: [
+        { texto: "Define la promoción de ventas y la diferencia de la publicidad (corto plazo vs. imagen)", peso: 2 },
+        { texto: "Describe cuatro tipos de promoción al consumidor con un ejemplo cada uno", peso: 4 },
+        { texto: "Advierte un riesgo válido del abuso de promociones (erosión de precio, margen e imagen)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir promoción de ventas con publicidad",
+        "Repetir un mismo tipo de promoción con distintos nombres",
+        "No advertir el riesgo de erosionar margen y percepción de valor"
+      ]
+    },
+    {
+      id: "mkt-066",
+      tema: "Fijación de precios basada en el valor percibido",
+      dificultad: "media",
+      enunciado: "Una empresa chilena de muebles diseñados a medida no quiere competir por costos frente a muebles importados baratos. Explique en qué consiste la fijación de precios basada en el valor percibido y en qué se diferencia de la fijación basada en costos. Proponga cómo la empresa podría sustentar un precio alto a partir del valor percibido.",
+      respuestaModelo: "La fijación de precios basada en el valor percibido parte de cuánto vale el producto para el cliente (el valor y los beneficios que percibe) y fija el precio en función de esa percepción, no de lo que cuesta producirlo. La fijación basada en costos, en cambio, calcula el precio sumando un margen al costo unitario (costo + utilidad), sin considerar directamente cuánto está dispuesto a pagar el cliente. La diferencia central: el método por valor mira al cliente y al mercado; el método por costos mira hacia adentro de la empresa. El riesgo de fijar solo por costos es dejar dinero sobre la mesa (si el cliente pagaría más) o quedar caro (si el cliente valora menos).\n\nCómo la empresa puede sustentar un precio alto por valor percibido:\n1) Comunicar y hacer tangibles los atributos que generan valor: diseño exclusivo a medida, materiales de calidad, durabilidad, manufactura local y artesanal, garantía y servicio personalizado; estos justifican pagar más que por un mueble genérico importado.\n2) Construir una experiencia y marca premium: asesoría de diseño, showroom cuidado, packaging y postventa que refuercen la percepción de exclusividad.\n3) Segmentar hacia clientes que valoran lo único y personalizado (no sensibles al precio) y evitar compararse en el terreno del precio con los importados: el argumento es \"un mueble hecho para ti que dura\", no \"barato\".\n\nAsí, el precio refleja el valor percibido y la disposición a pagar del segmento correcto, capturando mayor excedente y protegiendo el margen.",
+      criterios: [
+        { texto: "Explica la fijación por valor percibido (parte del cliente) y la diferencia de la basada en costos (parte del costo)", peso: 3 },
+        { texto: "Propone atributos que sustentan el valor percibido para justificar el precio alto", peso: 3 },
+        { texto: "Orienta la estrategia al segmento correcto, evitando competir por precio con los importados", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir el método por valor con el método por costos",
+        "Sustentar el precio alto sin identificar atributos que el cliente valore",
+        "Caer en competir por precio con los productos importados de bajo costo"
+      ]
+    },
+    {
+      id: "mkt-067",
+      tema: "Sensibilidad de precios y factores que la afectan",
+      dificultad: "media",
+      enunciado: "Explique el concepto de sensibilidad al precio (elasticidad precio de la demanda) y su importancia para las decisiones de marketing. Describa tres (3) factores que hacen a un consumidor más o menos sensible al precio, con un ejemplo de cada uno, y explique qué implica para la fijación de precios que la demanda sea inelástica.",
+      respuestaModelo: "La sensibilidad al precio (elasticidad precio de la demanda) mide cuánto cambia la cantidad demandada ante una variación en el precio. Una demanda elástica (alta sensibilidad) cae mucho si sube el precio; una inelástica (baja sensibilidad) apenas varía. Es clave en marketing porque determina cuánto margen se puede aplicar y cómo reaccionará la demanda a cambios de precio o promociones.\n\nTres factores que afectan la sensibilidad:\n1) Existencia de sustitutos: mientras más y mejores sustitutos, más sensible el consumidor (puede cambiar de marca). Ejemplo: en bebidas gaseosas genéricas, una pequeña alza empuja al cliente a otra marca. Con pocos sustitutos, es menos sensible (ej.: un medicamento sin alternativa).\n2) Importancia del gasto en el presupuesto: si el producto representa una parte grande del presupuesto, el consumidor es más sensible; si es un gasto menor, menos. Ejemplo: es muy sensible al precio de un auto, poco al de un chicle.\n3) Diferenciación y valor percibido / marca: productos únicos o con fuerte marca reducen la sensibilidad porque el cliente los valora y no acepta sustitutos. Ejemplo: un consumidor leal a una marca de zapatillas premium tolera precios altos. (También válidos: urgencia o necesidad, facilidad de comparar precios.)\n\nImplicancia de una demanda inelástica: la empresa tiene mayor poder para subir precios o mantener márgenes altos sin perder muchas ventas, porque el consumidor es poco sensible. Conviene entonces fijar precios por valor y no entrar en guerras de precios; las promociones agresivas serían innecesarias y solo sacrificarían margen.",
+      criterios: [
+        { texto: "Define la sensibilidad/elasticidad al precio y su importancia para el marketing", peso: 3 },
+        { texto: "Describe tres factores que afectan la sensibilidad con un ejemplo cada uno", peso: 3 },
+        { texto: "Explica la implicancia de una demanda inelástica para la fijación de precios", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir demanda elástica con inelástica",
+        "Dar factores sin ejemplo o sin conectar con la sensibilidad",
+        "No extraer la implicancia de la inelasticidad para el margen y el precio"
+      ]
+    },
+    {
+      id: "mkt-068",
+      tema: "Estrategias de precio: líneas de productos y precios psicológicos",
+      dificultad: "media",
+      enunciado: "Una cadena chilena de cafeterías quiere ordenar los precios de su carta. Explique en qué consisten dos (2) estrategias de fijación de precios de línea de productos: precios por línea (price lining/versiones) y precios de productos complementarios o paquetes (bundling). Explique además qué son los precios psicológicos y proponga cómo aplicaría estas ideas a la carta de la cafetería.",
+      respuestaModelo: "Cuando una empresa vende varios productos relacionados, fija precios pensando en la línea completa, no producto por producto aislado.\n\n1) Precios por línea (price lining / versiones): ofrecer versiones a distintos niveles de precio que reflejan distintos niveles de valor, guiando al cliente entre \"bueno, mejor, óptimo\". Ejemplo en la cafetería: café tamaño chico, mediano y grande, o líneas estándar / de especialidad / premium, con saltos de precio que hagan atractivo subir de nivel.\n2) Precios de paquete o bundling (y complementarios): agrupar productos complementarios a un precio conjunto menor que la suma por separado, elevando el ticket. Ejemplo: combo café + sándwich + jugo a precio promocional; el pan y el café son complementarios y el paquete incentiva llevar más.\n\nPrecios psicológicos: técnicas que aprovechan cómo el consumidor percibe los precios más que su valor exacto. El más común es el precio terminado en 9 o \"quebrado\" (ej.: $2.990 en vez de $3.000), que se percibe notoriamente más bajo; también el precio de referencia (mostrar el precio anterior tachado) o el precio de prestigio (redondo y alto para señalar calidad). Aplicación a la carta: usar precios terminados en 90 para las líneas de acceso, ofrecer combos con ahorro visible frente a la compra separada y estructurar tamaños/versiones para que el cliente perciba conveniencia en subir al tamaño mediano (efecto señuelo), maximizando el valor de la compra.",
+      criterios: [
+        { texto: "Explica los precios por línea/versiones (bueno-mejor-óptimo) con aplicación al caso", peso: 3 },
+        { texto: "Explica el bundling/paquetes de complementarios con aplicación al caso", peso: 2 },
+        { texto: "Define los precios psicológicos y propone su aplicación a la carta", peso: 3 }
+      ],
+      erroresComunes: [
+        "Fijar cada producto por separado sin lógica de línea",
+        "Confundir bundling (paquete a menor precio) con simple descuento",
+        "Reducir los precios psicológicos solo al \"terminar en 9\" sin entender la percepción"
+      ]
+    },
+    {
+      id: "mkt-069",
+      tema: "Procesos de marketing en la industria de servicios",
+      dificultad: "media",
+      enunciado: "En el marketing de servicios, la P de \"Procesos\" es determinante. Explique por qué los procesos son especialmente importantes en los servicios (frente a los bienes) y analice, para una clínica dental, cómo un buen diseño de procesos mejora la experiencia del cliente. Proponga dos (2) mejoras concretas de procesos.",
+      respuestaModelo: "Los procesos son el conjunto de actividades, flujos y procedimientos mediante los cuales se produce y entrega el servicio al cliente. Son especialmente importantes en los servicios porque, a diferencia de un bien tangible, el servicio se produce y consume simultáneamente y el cliente participa y presencia el proceso: los tiempos de espera, los pasos, la coordinación y la consistencia forman parte de lo que el cliente experimenta y evalúa. Un proceso deficiente (esperas, trámites, descoordinación) arruina la percepción de calidad aunque el resultado técnico sea bueno; un proceso fluido genera confianza y satisfacción.\n\nEn una clínica dental, un buen diseño de procesos mejora la experiencia en: agendamiento simple, tiempos de espera cortos, atención coordinada entre recepción y profesional, claridad del tratamiento y del pago, y seguimiento posterior. Todo esto reduce la fricción y la ansiedad del paciente.\n\nDos mejoras concretas de procesos:\n1) Agendamiento y recordatorios digitales: reserva de horas online, confirmación y recordatorio automático por WhatsApp, y ficha del paciente disponible para el dentista, reduciendo esperas e inasistencias.\n2) Estandarizar el flujo de atención y postventa: un protocolo claro de recepción, atención puntual, explicación del tratamiento y presupuesto sin sorpresas, más un seguimiento posterior (llamado o mensaje) para controlar la evolución y agendar el próximo control. Esto entrega consistencia y cuidado percibido.",
+      criterios: [
+        { texto: "Explica por qué los procesos son críticos en servicios (producción-consumo simultáneos, cliente presente)", peso: 3 },
+        { texto: "Analiza cómo el diseño de procesos afecta la experiencia del cliente en la clínica", peso: 2 },
+        { texto: "Propone dos mejoras concretas de procesos aplicadas al caso", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir procesos con el resultado técnico del servicio",
+        "No reconocer que el cliente participa y presencia el proceso en los servicios",
+        "Proponer mejoras genéricas sin aterrizarlas a la clínica"
+      ]
+    },
+    {
+      id: "mkt-070",
+      tema: "Evidencia física y ambiente de servicio (servicescape)",
+      dificultad: "media",
+      enunciado: "La evidencia física es una de las 7P del marketing de servicios. Explique qué es la evidencia física (physical evidence / servicescape) y por qué ayuda a reducir la intangibilidad del servicio. Analice, para un restaurante, cuatro (4) elementos de evidencia física y cómo influyen en la percepción de calidad y en la decisión del cliente.",
+      respuestaModelo: "La evidencia física es el conjunto de elementos tangibles que rodean y acompañan al servicio y que permiten al cliente percibir y evaluar su calidad: instalaciones, ambiente, mobiliario, uniformes, señalética, materiales, sitio web y todo lo visible. Ayuda a reducir la intangibilidad del servicio porque, al no poder \"probar\" el servicio antes de comprarlo, el cliente usa estas señales tangibles como pistas de calidad y confianza (\"si el lugar se ve cuidado, el servicio será cuidado\"). La evidencia física gestiona la primera impresión y las expectativas.\n\nCuatro elementos en un restaurante y su influencia:\n1) Ambientación y decoración (iluminación, música, orden, limpieza): comunican el estilo y la calidad; un ambiente cuidado y coherente con la propuesta (acogedor, elegante o familiar) predispone positivamente y justifica el precio.\n2) Presentación del personal (uniformes, higiene, aseo): transmite profesionalismo y confianza en la manipulación de alimentos.\n3) Vajilla, mantelería y presentación de los platos: refuerzan la percepción de calidad y cuidado; la estética de la comida es parte del valor.\n4) Espacios y señalética (baños limpios, distribución de mesas, carta bien diseñada): la limpieza de los baños y la comodidad del espacio son señales potentes de higiene y respeto por el cliente, e influyen en la satisfacción y en la recomendación.\n\nEstos elementos influyen en la decisión porque generan expectativas antes de consumir y confirman (o no) la calidad durante la experiencia, afectando la satisfacción, la recompra y el boca a boca.",
+      criterios: [
+        { texto: "Define la evidencia física y explica cómo reduce la intangibilidad del servicio", peso: 3 },
+        { texto: "Analiza cuatro elementos de evidencia física en el restaurante", peso: 3 },
+        { texto: "Conecta los elementos con la percepción de calidad y la decisión del cliente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir evidencia física con el producto o servicio en sí (la comida) en vez del entorno tangible",
+        "Listar elementos sin explicar cómo influyen en la percepción",
+        "Olvidar que la evidencia física gestiona expectativas por la intangibilidad"
+      ]
+    },
+    {
+      id: "mkt-071",
+      tema: "Cultura organizacional orientada al cliente",
+      dificultad: "media",
+      enunciado: "Una empresa de servicios financieros quiere pasar de una cultura centrada en cumplir metas de venta a una cultura orientada al cliente. Explique qué significa una cultura organizacional orientada al cliente y su relación con la P de \"Personas\" del marketing de servicios. Proponga tres (3) acciones para instalar esa cultura.",
+      respuestaModelo: "Una cultura organizacional orientada al cliente es aquella en que los valores, creencias y comportamientos compartidos en la empresa ponen la satisfacción y las necesidades del cliente en el centro de las decisiones de todos los niveles, no solo del área comercial. No es un eslogan: se refleja en cómo se contrata, capacita, mide y premia a las personas. Se relaciona directamente con la P de \"Personas\" porque son los colaboradores quienes entregan el servicio y materializan (o no) esa orientación en cada interacción; una cultura centrada solo en metas de venta puede llevar a presionar al cliente y dañar la relación de largo plazo, mientras una cultura orientada al cliente prioriza resolver su necesidad, lo que a la larga genera lealtad e ingresos sostenibles.\n\nTres acciones para instalarla:\n1) Alinear incentivos y métricas al cliente: incorporar indicadores de satisfacción, NPS y retención en la evaluación y los bonos, no solo el volumen de venta, para que el comportamiento deseado sea el que se premia.\n2) Capacitación y empoderamiento: formar a las personas en atención y darles autonomía para resolver problemas del cliente en el momento (por ejemplo, corregir un cobro), reforzando el marketing interno.\n3) Liderazgo y ejemplo desde la gerencia: que los líderes comuniquen y modelen la orientación al cliente, compartan casos reales y reconozcan públicamente a quienes la encarnan, consolidando los valores en la práctica diaria.\n\nLa cultura cambia cuando cambian las señales concretas (qué se mide, premia y modela), no solo el discurso.",
+      criterios: [
+        { texto: "Define la cultura orientada al cliente como valores y comportamientos centrados en el cliente en toda la organización", peso: 3 },
+        { texto: "Relaciona la cultura con la P de Personas y el marketing interno", peso: 2 },
+        { texto: "Propone tres acciones concretas (incentivos/métricas, capacitación/empoderamiento, liderazgo)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir cultura orientada al cliente con un simple lema o campaña interna",
+        "No alinear los incentivos y métricas, dejando la cultura solo en el discurso",
+        "Olvidar el rol del liderazgo en modelar la cultura"
+      ]
+    },
+    {
+      id: "mkt-072",
+      tema: "Técnicas de retención de clientes",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa chilena de suscripción de streaming local enfrenta una alta tasa de cancelación mensual (churn). Explique la diferencia entre captar y retener clientes y por qué la retención suele ser más rentable. Proponga tres (3) técnicas de retención concretas para reducir el churn, fundamentando cada una.",
+      respuestaModelo: "Captar clientes es atraer y convertir a nuevos usuarios; retener es lograr que los clientes actuales sigan comprando o suscritos en el tiempo. La retención suele ser más rentable porque adquirir un cliente nuevo cuesta varias veces más que mantener uno existente (inversión en publicidad y promociones de captación), y porque el cliente retenido compra de forma recurrente, es menos sensible al precio y recomienda, elevando su valor de vida (CLV). En un negocio de suscripción, reducir el churn tiene impacto directo en los ingresos recurrentes.\n\nTres técnicas de retención:\n1) Personalización y valor continuo: usar los datos de consumo para recomendar contenido relevante y comunicar novedades ajustadas al gusto del usuario. Fundamento: si el cliente percibe que la plataforma le aporta valor constante y \"lo conoce\", disminuye su motivo para cancelar.\n2) Programa de beneficios y fidelización: precios preferentes por permanencia, contenido exclusivo o planes anuales con descuento. Fundamento: crea un costo de cambio y un incentivo económico y emocional a quedarse.\n3) Retención proactiva ante señales de fuga: detectar usuarios que bajaron su uso y contactarlos con incentivos o encuestas antes de que cancelen; y ofrecer alternativas de pausa o baja de plan en vez de la cancelación total. Fundamento: actuar antes del abandono es más efectivo que intentar recuperarlos después, y una opción de \"pausa\" evita perder al cliente por completo.\n\nMedir el churn y el CLV permite priorizar a los segmentos más valiosos y evaluar el efecto de estas técnicas.",
+      criterios: [
+        { texto: "Distingue captación de retención y explica por qué la retención es más rentable (costo y CLV)", peso: 3 },
+        { texto: "Propone tres técnicas de retención concretas y pertinentes al negocio de suscripción", peso: 3 },
+        { texto: "Fundamenta cada técnica (por qué reduce el churn)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer técnicas de captación cuando se pide retención",
+        "Describir técnicas sin fundamentar por qué reducen la cancelación",
+        "Ignorar la retención proactiva ante señales tempranas de fuga"
+      ]
+    },
+    {
+      id: "mkt-073",
+      tema: "Recuperación del servicio y gestión de reclamos",
+      dificultad: "media",
+      enunciado: "Una aerolínea recibe un reclamo de un pasajero por un vuelo retrasado y equipaje demorado. Explique qué es la recuperación del servicio (service recovery) y la \"paradoja de la recuperación\". Proponga un protocolo de cuatro (4) pasos para gestionar el reclamo y convertir una mala experiencia en una oportunidad de fidelización.",
+      respuestaModelo: "La recuperación del servicio (service recovery) es el conjunto de acciones que emprende una empresa para responder a una falla en el servicio y restaurar la satisfacción del cliente afectado. La \"paradoja de la recuperación\" señala que un cliente cuyo problema fue resuelto de forma excelente puede quedar incluso más satisfecho y leal que uno que nunca tuvo problemas, porque comprueba que la empresa responde y se preocupa. Esto no justifica fallar a propósito, pero muestra que un reclamo bien gestionado es una oportunidad de fidelización, mientras uno mal gestionado provoca fuga y mala reputación (boca a boca negativo, redes).\n\nProtocolo de cuatro pasos:\n1) Escuchar y reconocer: atender rápido, dejar que el pasajero exprese el problema, disculparse con empatía y validar su molestia sin excusas defensivas.\n2) Resolver con rapidez y justicia: dar una solución concreta y proporcional (localizar y despachar el equipaje con prioridad, informar plazos reales), empoderando al personal de primera línea para actuar sin trámites lentos.\n3) Compensar de forma adecuada: ofrecer una reparación justa según la gravedad (millas, voucher, reembolso de gastos), que el cliente perciba como un gesto genuino, no simbólico.\n4) Seguir y aprender: confirmar que el problema se resolvió, hacer seguimiento posterior y registrar la causa raíz para corregir el proceso y evitar que se repita.\n\nUn protocolo así transforma la falla en una demostración de compromiso, aumentando la probabilidad de retener y hasta fidelizar al pasajero.",
+      criterios: [
+        { texto: "Define la recuperación del servicio y explica la paradoja de la recuperación", peso: 3 },
+        { texto: "Propone un protocolo de cuatro pasos coherente (escuchar, resolver, compensar, seguir)", peso: 3 },
+        { texto: "Muestra cómo el buen manejo del reclamo fideliza y el mal manejo daña la reputación", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar el reclamo como una molestia y no como oportunidad de fidelización",
+        "Ofrecer compensación sin resolver el problema de fondo",
+        "Omitir el seguimiento y la corrección de la causa raíz"
+      ]
+    },
+    {
+      id: "mkt-074",
+      tema: "Programas de fidelización y clubes de clientes",
+      dificultad: "media",
+      enunciado: "Una farmacia chilena quiere lanzar un programa de fidelización. Explique los objetivos de un programa de fidelización y describa tres (3) tipos o mecánicas (por ejemplo: puntos, niveles/tiers, beneficios exclusivos, cashback). Advierta dos (2) condiciones para que el programa realmente fidelice y no solo entregue descuentos.",
+      respuestaModelo: "Un programa de fidelización es un sistema estructurado de recompensas que busca incentivar la recompra, aumentar la frecuencia y el gasto, y fortalecer el vínculo emocional con la marca. Sus objetivos: retener clientes, elevar el valor de vida del cliente (CLV), obtener datos de comportamiento para personalizar, y diferenciarse de la competencia.\n\nTres tipos o mecánicas:\n1) Programa de puntos: cada compra acumula puntos canjeables por descuentos o productos. Simple y transversal; premia la recurrencia.\n2) Niveles o tiers: el cliente sube de categoría (ej.: plata, oro) según su gasto o antigüedad, con beneficios crecientes. Genera aspiración y sensación de estatus, e incentiva a comprar más para \"subir de nivel\".\n3) Beneficios exclusivos / club: acceso a precios, preventas, despacho preferente o atención especial por ser miembro. Refuerza pertenencia más allá del descuento. (También válido: cashback, que devuelve un porcentaje del gasto.)\n\nDos condiciones para que fidelice de verdad:\n1) Debe entregar valor percibido real y alcanzable: si los beneficios son mínimos o muy difíciles de canjear, el cliente no lo valora; y no debe reducirse a un descuento permanente que erosiona el margen sin crear vínculo.\n2) Debe usar los datos para personalizar y crear relación: la ventaja del programa es conocer al cliente y ofrecerle lo relevante (recordatorios de recompra de sus productos habituales, salud); si solo da puntos genéricos, cualquier competidor lo iguala y no hay lealtad real.\n\nLa fidelización genuina combina recompensa económica, reconocimiento y personalización, no solo precio.",
+      criterios: [
+        { texto: "Explica los objetivos del programa de fidelización (recompra, CLV, datos, vínculo)", peso: 2 },
+        { texto: "Describe tres tipos o mecánicas de fidelización", peso: 3 },
+        { texto: "Advierte dos condiciones para que fidelice y no sea solo descuento (valor real, uso de datos)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Reducir el programa a entregar descuentos, sin crear vínculo ni usar datos",
+        "Diseñar beneficios inalcanzables o irrelevantes para el cliente",
+        "Olvidar el objetivo de obtener y usar datos para personalizar"
+      ]
+    },
+    {
+      id: "mkt-075",
+      tema: "Métricas de marketing digital (CAC, ROAS, conversión)",
+      dificultad: "media",
+      enunciado: "El gerente de una tienda online chilena quiere evaluar la eficacia de su inversión en marketing digital. Explique las siguientes métricas y para qué sirve cada una: costo de adquisición de cliente (CAC), retorno de la inversión publicitaria (ROAS) y tasa de conversión. Explique además por qué el CAC debe analizarse junto al valor de vida del cliente (CLV).",
+      respuestaModelo: "En marketing digital, las métricas permiten evaluar si la inversión genera resultados y dónde optimizar:\n\n1) Costo de adquisición de cliente (CAC): cuánto cuesta, en promedio, conseguir un cliente nuevo (inversión en marketing y ventas dividida por los clientes captados). Sirve para saber cuán eficiente es la captación; si el CAC sube demasiado, la adquisición se vuelve insostenible.\n2) Retorno de la inversión publicitaria (ROAS): ingresos generados por cada unidad de dinero invertida en publicidad (ingresos atribuibles / gasto publicitario). Sirve para evaluar la rentabilidad de las campañas y comparar canales o anuncios: un ROAS mayor a 1 indica que la campaña genera más ingresos que su costo.\n3) Tasa de conversión: porcentaje de visitantes o interesados que realizan la acción deseada (comprar, registrarse), sobre el total. Sirve para medir la eficacia del embudo y del sitio: una baja conversión con alto tráfico indica fricción o mala segmentación.\n\nPor qué el CAC debe analizarse junto al CLV: el valor de vida del cliente (CLV) es cuánto ingreso genera un cliente durante toda su relación con la marca. El CAC solo cobra sentido comparado con el CLV: si captar un cliente cuesta más de lo que ese cliente aportará (CAC mayor que CLV), el negocio pierde dinero aunque venda mucho; lo saludable es que el CLV supere con holgura al CAC (una regla habitual es CLV varias veces el CAC). Así, la decisión no es solo \"captar barato\", sino captar clientes cuyo valor futuro justifique la inversión, priorizando canales y segmentos con mejor relación CLV/CAC.",
+      criterios: [
+        { texto: "Explica correctamente CAC, ROAS y tasa de conversión y para qué sirve cada uno", peso: 4 },
+        { texto: "Explica la relación CAC-CLV y por qué deben analizarse juntos", peso: 3 },
+        { texto: "Conecta las métricas con decisiones de optimización de la inversión", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir CAC (costo de captar) con CLV (valor que aporta el cliente)",
+        "Interpretar el ROAS o la conversión de forma aislada sin relación con la rentabilidad",
+        "Buscar solo minimizar el CAC sin considerar el valor futuro del cliente"
+      ]
+    },
+    {
+      id: "mkt-076",
+      tema: "Productividad de marketing y retorno de la inversión (ROI)",
+      dificultad: "media",
+      enunciado: "La gerencia general le pide al área de marketing que demuestre con datos el aporte de su gasto. Explique qué es la medición de la productividad de marketing y el ROI de marketing, y por qué es importante. Analice dos (2) dificultades para medir el retorno de las acciones de marketing y cómo abordarlas.",
+      respuestaModelo: "La medición de la productividad de marketing consiste en evaluar la relación entre los recursos invertidos en marketing y los resultados obtenidos (ventas, participación, clientes, valor de marca), para justificar el gasto y mejorar la asignación de recursos. El ROI de marketing (retorno de la inversión) compara la ganancia atribuible a una acción de marketing con su costo, mostrando si la inversión rindió. Es importante porque el marketing dejó de verse como un gasto \"de fe\": debe rendir cuentas, priorizar lo que funciona y hablar el lenguaje financiero de la gerencia.\n\nDos dificultades para medir el retorno y cómo abordarlas:\n1) Atribución: muchas acciones influyen a la vez y no siempre es claro cuál generó la venta (una compra puede venir de una campaña, una recomendación y una promoción combinadas). Además, algunos efectos son de largo plazo. Cómo abordarla: usar herramientas de seguimiento digital (códigos, enlaces, analítica), modelos de atribución y experimentos controlados (A/B testing) para aislar el efecto de cada acción.\n2) Intangibles y largo plazo: parte del valor del marketing es construir marca, notoriedad y reputación, cuyo retorno no se ve de inmediato en ventas. Cómo abordarla: complementar las métricas de resultado de corto plazo (ventas, ROI) con métricas intermedias e intangibles (notoriedad, NPS, valor de marca, engagement), entendiendo que algunas acciones son inversión de mediano plazo.\n\nLa clave es combinar métricas financieras y de marca, y no exigir a toda acción un retorno inmediato en ventas.",
+      criterios: [
+        { texto: "Define la productividad de marketing y el ROI de marketing y su importancia", peso: 3 },
+        { texto: "Analiza dos dificultades de medición (atribución, intangibles/largo plazo)", peso: 3 },
+        { texto: "Propone cómo abordar cada dificultad", peso: 2 }
+      ],
+      erroresComunes: [
+        "Creer que todo el valor del marketing se mide solo en ventas inmediatas",
+        "Ignorar el problema de atribución entre múltiples acciones",
+        "No proponer soluciones (analítica, experimentos, métricas intermedias)"
+      ]
+    },
+    {
+      id: "mkt-077",
+      tema: "Comportamiento del consumidor: proceso de decisión aplicado",
+      dificultad: "media",
+      enunciado: "Una familia chilena está por comprar su primer vehículo eléctrico. Analice su proceso de decisión de compra recorriendo las cinco etapas y, para cada una, señale una (1) acción de marketing que un concesionario podría implementar para influir positivamente en esa etapa. Ponga énfasis en la etapa post-compra.",
+      respuestaModelo: "El proceso de decisión de compra tiene cinco etapas; se aplican a la compra de un auto eléctrico junto con una acción de marketing del concesionario:\n\n1) Reconocimiento de la necesidad: la familia percibe la necesidad (ahorro en combustible, conciencia ambiental, auto más moderno). Acción: comunicación que active la necesidad, mostrando el ahorro y los beneficios de electromovilidad.\n2) Búsqueda de información: investigan autonomía, carga, precio, incentivos. Acción: contenido claro y comparativo en el sitio web, simuladores de ahorro y asesoría experta que resuelva dudas técnicas.\n3) Evaluación de alternativas: comparan modelos y marcas según autonomía, precio, garantía, red de carga. Acción: destacar los atributos diferenciales y ofrecer test drive para que vivan la experiencia.\n4) Decisión de compra: eligen y concretan; pueden influir el financiamiento y factores de último momento. Acción: facilitar el cierre con financiamiento a medida, bono de carga hogareña o instalación de cargador incluida.\n5) Comportamiento post-compra: evalúan su satisfacción; en un producto nuevo y de alto desembolso, el riesgo de disonancia (arrepentimiento) es alto. Acción (énfasis): acompañamiento post-venta intensivo: onboarding sobre el uso y la carga, seguimiento a los primeros meses, garantía y soporte accesibles, y comunidad de usuarios. Esto reduce la disonancia, aumenta la satisfacción y fomenta la recomendación y la lealtad a la marca.\n\nLa etapa post-compra es crítica porque de ella dependen la recompra, el boca a boca y la reputación, especialmente en una categoría nueva donde el cliente necesita sentirse respaldado.",
+      criterios: [
+        { texto: "Recorre las cinco etapas en orden aplicadas a la compra del auto eléctrico", peso: 3 },
+        { texto: "Propone una acción de marketing pertinente del concesionario para cada etapa", peso: 3 },
+        { texto: "Profundiza en la etapa post-compra y la disonancia, con acciones para reducirla", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar la post-compra como el fin del proceso y no como clave para lealtad y recomendación",
+        "Confundir búsqueda de información con evaluación de alternativas",
+        "Proponer acciones genéricas no ligadas a la etapa correspondiente"
+      ]
+    },
+    {
+      id: "mkt-078",
+      tema: "Grupos de referencia e influencia social en la compra",
+      dificultad: "media",
+      enunciado: "Explique qué son los grupos de referencia y cómo influyen en las decisiones de compra del consumidor. Distinga entre grupos de pertenencia, aspiracionales y disociativos, con un ejemplo de cada uno, y analice cómo una marca de ropa juvenil puede aprovechar esta influencia social en su estrategia.",
+      respuestaModelo: "Los grupos de referencia son los grupos que sirven de marco de comparación o influencia para las actitudes y comportamientos de una persona, incluidas sus decisiones de compra. Influyen porque el consumidor busca aceptación, pertenencia o proyectar una imagen, y ajusta sus elecciones (marcas, estilos) a lo que el grupo valora; su efecto es mayor en productos visibles y ligados a la identidad (ropa, tecnología, autos).\n\nTipos:\n1) Grupos de pertenencia: aquellos a los que la persona efectivamente pertenece (familia, amigos, compañeros). Ejemplo: un joven compra la marca de zapatillas que usa su grupo de amigos para integrarse.\n2) Grupos aspiracionales: aquellos a los que la persona desea pertenecer o parecerse. Ejemplo: adoptar el estilo de un artista, deportista o influencer admirado.\n3) Grupos disociativos: aquellos con los que la persona NO quiere ser identificada y por eso evita sus marcas o estilos. Ejemplo: rechazar una marca porque la asocia a un grupo con el que no se identifica.\n\nCómo aprovecharlo una marca de ropa juvenil:\n- Trabajar con referentes aspiracionales (influencers, artistas) coherentes con el público, para que la marca se asocie al grupo al que los jóvenes desean parecerse.\n- Fomentar pertenencia y comunidad: crear identidad de grupo alrededor de la marca (contenido, eventos, ediciones que unan a los seguidores), activando la influencia del grupo de pertenencia.\n- Cuidar no asociarse a un grupo disociativo del target, gestionando la imagen para no alejar al público objetivo.\n\nAsí la marca convierte la presión social en preferencia de marca.",
+      criterios: [
+        { texto: "Define los grupos de referencia y cómo influyen en la compra (pertenencia, identidad, productos visibles)", peso: 3 },
+        { texto: "Distingue grupos de pertenencia, aspiracionales y disociativos con un ejemplo cada uno", peso: 3 },
+        { texto: "Analiza cómo la marca de ropa aprovecha la influencia social", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir grupos aspiracionales con grupos de pertenencia",
+        "Olvidar los grupos disociativos y su efecto de rechazo",
+        "No aterrizar la influencia social a la estrategia de la marca"
+      ]
+    },
+    {
+      id: "mkt-079",
+      tema: "Estrategia de nicho y especialización de mercado",
+      dificultad: "media",
+      enunciado: "Una pequeña empresa chilena de alimentos para mascotas con dietas especiales (sin granos, para perros con alergias) no puede competir de frente con las grandes marcas. Explique en qué consiste la estrategia de nicho (especialista) y sus ventajas y riesgos. Proponga cómo esta empresa puede construir y defender una posición de nicho rentable.",
+      respuestaModelo: "La estrategia de nicho o de especialista consiste en concentrarse en un segmento pequeño y específico del mercado, atendiéndolo mejor que nadie, en lugar de competir por el mercado masivo. Es propia de empresas con recursos limitados frente a líderes grandes: en vez de enfrentar al líder de frente, elige un espacio donde la especialización le da ventaja.\n\nVentajas: menor competencia directa (los grandes no atienden bien nichos pequeños), alta lealtad y disposición a pagar de un cliente cuyas necesidades específicas son bien resueltas, márgenes más altos por especialización y eficiencia al enfocar recursos. Riesgos: el nicho puede ser demasiado pequeño o dejar de crecer; puede desaparecer si cambian las preferencias; y si se vuelve atractivo, un competidor grande puede entrar.\n\nCómo construir y defender la posición de nicho:\n1) Especialización profunda: dominar la necesidad del nicho (dietas para perros con alergias) con productos, formulación y asesoría veterinaria que las marcas masivas no ofrecen, volviéndose la experta reconocida.\n2) Relación cercana y comunidad: contacto directo con los dueños (asesoría, seguimiento, contenido educativo, comunidad), generando lealtad difícil de replicar por un gran competidor.\n3) Barreras de defensa: construir marca y confianza en el nicho, alianzas con veterinarios y tiendas especializadas, y ampliar la oferta dentro del mismo nicho (otras dietas especiales) para crecer sin diluirse.\n\nEl objetivo es ser insustituible para ese cliente específico, de modo que aunque el nicho sea pequeño, sea rentable y defendible.",
+      criterios: [
+        { texto: "Define la estrategia de nicho/especialista y su lógica frente a competidores grandes", peso: 3 },
+        { texto: "Señala ventajas y riesgos de la estrategia de nicho", peso: 2 },
+        { texto: "Propone cómo construir y defender el nicho (especialización, relación, barreras)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Recomendar competir de frente con las grandes marcas en el mercado masivo",
+        "Ignorar los riesgos del nicho (tamaño, entrada de grandes competidores)",
+        "Proponer una especialización superficial que un competidor grande puede copiar"
+      ]
+    },
+    {
+      id: "mkt-080",
+      tema: "Diferenciación y fuentes de ventaja competitiva en marketing",
+      dificultad: "media",
+      enunciado: "Explique qué es la diferenciación como fuente de ventaja competitiva en marketing y por qué es clave para evitar competir solo por precio. Describa cuatro (4) bases sobre las que una empresa puede diferenciarse (por ejemplo: producto, servicio, personal, imagen/marca, canal) con un ejemplo de cada una, y señale una condición para que la diferenciación sea efectiva.",
+      respuestaModelo: "La diferenciación consiste en dotar a la oferta de atributos distintivos y valorados por el cliente que la hagan percibirse como única y superior frente a la competencia. Es una fuente de ventaja competitiva porque permite a la empresa evitar la guerra de precios: si el cliente percibe que un producto es distinto y mejor para sus necesidades, está dispuesto a pagar más y a preferirlo, en lugar de decidir solo por el precio más bajo (que lleva a erosionar márgenes).\n\nCuatro bases de diferenciación:\n1) Por producto: características, diseño, calidad o desempeño superiores. Ejemplo: un smartphone con mejor cámara o batería.\n2) Por servicio: entrega, instalación, postventa o soporte destacados. Ejemplo: garantía extendida y servicio técnico rápido a domicilio.\n3) Por personal: personal más capacitado y confiable. Ejemplo: asesores expertos en una tienda especializada.\n4) Por imagen/marca: identidad, reputación y significados de la marca. Ejemplo: una marca asociada a estatus o sustentabilidad. (También válida: por canal, cobertura o experiencia de compra distintiva.)\n\nCondición para que la diferenciación sea efectiva: debe ser valorada por el cliente y percibida como relevante (no diferenciarse en algo que al cliente no le importa), y difícil de imitar por la competencia; además, la empresa debe poder comunicarla y sostenerla. Una diferencia irrelevante, fácilmente copiable o mal comunicada no genera ventaja real.",
+      criterios: [
+        { texto: "Define la diferenciación y explica por qué evita competir solo por precio", peso: 3 },
+        { texto: "Describe cuatro bases de diferenciación con un ejemplo cada una", peso: 3 },
+        { texto: "Señala una condición para que la diferenciación sea efectiva (valorada y difícil de imitar)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir diferenciarse con simplemente bajar el precio",
+        "Proponer diferencias que el cliente no valora o que son fácilmente imitables",
+        "No mencionar la necesidad de comunicar y sostener la diferenciación"
+      ]
+    },
+    {
+      id: "mkt-081",
+      tema: "Ciclo de vida del producto: estrategias en madurez y declive",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una marca chilena de bebidas gaseosas tradicional ve que su producto estrella lleva años en madurez y comienza a mostrar señales de declive por el cambio hacia opciones más saludables. Explique las características de las etapas de madurez y declive del ciclo de vida y proponga tres (3) estrategias concretas para extender la vida del producto o gestionar su declive.",
+      respuestaModelo: "En el ciclo de vida del producto, la madurez y el declive exigen estrategias distintas a las de crecimiento.\n\nMadurez: las ventas alcanzan su punto máximo y se estabilizan, el mercado está saturado, la competencia es intensa y la lucha es por participación (robar clientes a rivales). Los márgenes se presionan y la marca depende de la retención y la diferenciación. Declive: las ventas caen de forma sostenida por cambios en preferencias (aquí, la tendencia saludable), nuevos sustitutos o saturación; hay que decidir entre revitalizar, cosechar o retirar.\n\nTres estrategias concretas:\n1) Modificación del producto (revitalización): reformular o extender la línea hacia la tendencia saludable (versiones sin azúcar, con stevia, tamaños o sabores nuevos), para recuperar relevancia y captar al consumidor que migra. Es una forma de \"desarrollo de producto\" que alarga el ciclo.\n2) Modificación del mercado o reposicionamiento: buscar nuevos usos, ocasiones o segmentos (por ejemplo, posicionar la versión sin azúcar para nuevas ocasiones de consumo), y refrescar la comunicación para conectar con las nuevas generaciones.\n3) Gestión del declive con foco y eficiencia: si una variante ya no es rentable, aplicar cosecha (harvesting: reducir inversión y exprimir el flujo), concentrarse en los nichos y canales que aún la valoran, y racionalizar el portafolio, reasignando recursos a las versiones con futuro.\n\nLa decisión depende de si el declive es reversible (conviene revitalizar) o estructural (conviene cosechar o retirar ordenadamente), evitando invertir a fondo en un producto sin futuro.",
+      criterios: [
+        { texto: "Describe las características de madurez (saturación, competencia por participación) y declive (caída sostenida)", peso: 3 },
+        { texto: "Propone tres estrategias concretas (modificación de producto, de mercado/reposicionamiento, gestión del declive)", peso: 3 },
+        { texto: "Distingue cuándo revitalizar y cuándo cosechar/retirar según el tipo de declive", peso: 2 }
+      ],
+      erroresComunes: [
+        "Aplicar estrategias de introducción o crecimiento a un producto en madurez/declive",
+        "Invertir a fondo en un producto en declive estructural sin evaluar la cosecha",
+        "Confundir madurez (ventas estables máximas) con declive (ventas cayendo)"
+      ]
+    },
+    {
+      id: "mkt-082",
+      tema: "Estrategias de posicionamiento (por atributo, uso, competidor)",
+      dificultad: "media",
+      enunciado: "Explique qué es una estrategia de posicionamiento y describa cuatro (4) bases distintas sobre las que se puede posicionar una marca (por ejemplo: por atributo/beneficio, por uso u ocasión, por usuario, por precio-calidad, frente al competidor). Para cada base entregue un ejemplo, y explique por qué una marca debe elegir una base clara y no varias a la vez.",
+      respuestaModelo: "Una estrategia de posicionamiento define el lugar distintivo que la marca quiere ocupar en la mente del consumidor frente a la competencia, eligiendo sobre qué atributo o idea central construir esa percepción. Existen distintas bases:\n\n1) Por atributo o beneficio: destacar una característica o beneficio clave. Ejemplo: una pasta dental posicionada por \"protección anti-caries\" o un auto por \"seguridad\".\n2) Por uso u ocasión: asociar la marca a un momento o forma de uso. Ejemplo: una bebida energética \"para rendir en la jornada\" o un vino sin alcohol \"para brindar sin consumir alcohol\".\n3) Por usuario: dirigirse a un tipo de consumidor. Ejemplo: una línea de cuidado \"para piel sensible\" o productos \"para deportistas\".\n4) Por precio-calidad o frente al competidor: ubicarse como la mejor relación precio-calidad, como premium, o directamente contra un rival (\"la alternativa a...\"). Ejemplo: una marca que se posiciona como \"la calidad premium accesible\".\n\nPor qué elegir una base clara y no varias: la mente del consumidor es limitada y saturada de mensajes; una marca que intenta ser \"todo para todos\" (barata, premium, para jóvenes y adultos, por mil atributos) no logra grabar ninguna idea y se vuelve confusa e indistinta. El posicionamiento efectivo es simple, consistente y enfocado en una idea diferenciadora que el cliente pueda recordar y asociar. Elegir una base clara permite comunicar de forma coherente y sostenida, y construir una identidad sólida.",
+      criterios: [
+        { texto: "Define la estrategia de posicionamiento como el lugar distintivo en la mente del consumidor", peso: 2 },
+        { texto: "Describe cuatro bases de posicionamiento con un ejemplo cada una", peso: 4 },
+        { texto: "Explica por qué se debe elegir una base clara y enfocada, no varias a la vez", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir posicionamiento con segmentación",
+        "Proponer posicionar la marca en muchos atributos a la vez, diluyendo el mensaje",
+        "Dar ejemplos que no corresponden a la base de posicionamiento indicada"
+      ]
+    },
+    {
+      id: "mkt-083",
+      tema: "Selección de mercado meta y estrategias de cobertura",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Tras segmentar el mercado, una empresa debe decidir a qué segmentos dirigirse (targeting). Explique los criterios para evaluar el atractivo de un segmento y describa las tres (3) estrategias de cobertura de mercado (indiferenciada, diferenciada/multisegmento y concentrada/de nicho). Recomiende, con un ejemplo, cuál conviene a una startup con recursos limitados.",
+      respuestaModelo: "El targeting o selección del mercado meta es la etapa en que, tras segmentar, la empresa evalúa los segmentos y decide a cuáles dirigirse.\n\nCriterios para evaluar el atractivo de un segmento: tamaño y crecimiento (que sea suficientemente grande y con proyección), rentabilidad potencial, accesibilidad (que se pueda alcanzar y atender con los canales disponibles), nivel de competencia, y compatibilidad con los recursos, capacidades y objetivos de la empresa. No basta que un segmento sea grande: debe ser rentable y alcanzable para la empresa.\n\nTres estrategias de cobertura:\n1) Indiferenciada (marketing masivo): atender todo el mercado con una sola mezcla, ignorando diferencias. Ventaja: economías de escala; riesgo: no satisface bien a nadie en particular. Propia de productos muy commodity.\n2) Diferenciada o multisegmento: atender varios segmentos con mezclas adaptadas a cada uno. Ventaja: mayor cobertura y satisfacción; costo: mayor complejidad y gasto.\n3) Concentrada o de nicho: enfocar todos los recursos en un solo segmento, atendiéndolo muy bien. Ventaja: especialización y eficiencia con pocos recursos; riesgo: depender de un solo segmento.\n\nRecomendación para una startup con recursos limitados: la estrategia concentrada o de nicho. Ejemplo: una startup de cosmética natural debería enfocarse primero en un nicho específico (consumidores veganos conscientes de la sustentabilidad) y atenderlo mejor que nadie, en lugar de dispersar sus escasos recursos intentando cubrir todo el mercado. Una vez consolidada, puede expandirse a otros segmentos (estrategia diferenciada).",
+      criterios: [
+        { texto: "Explica los criterios de atractivo de un segmento (tamaño, crecimiento, rentabilidad, accesibilidad, compatibilidad)", peso: 3 },
+        { texto: "Describe las tres estrategias de cobertura con sus ventajas/riesgos", peso: 3 },
+        { texto: "Recomienda la estrategia concentrada para la startup con un ejemplo fundamentado", peso: 2 }
+      ],
+      erroresComunes: [
+        "Elegir un segmento solo por su tamaño, sin evaluar rentabilidad y accesibilidad",
+        "Confundir la estrategia diferenciada (varios segmentos con mezclas distintas) con la indiferenciada",
+        "Recomendar cobertura masiva a una empresa con recursos limitados"
+      ]
+    },
+    {
+      id: "mkt-084",
+      tema: "Diseño de la propuesta de valor (perfil del cliente y mapa de valor)",
+      dificultad: "media",
+      enunciado: "Explique cómo se diseña una propuesta de valor conectando las necesidades del cliente con la oferta de la empresa, usando la lógica de perfil del cliente (trabajos, dolores y beneshechos/ganancias) y mapa de valor (productos, aliviadores de dolores y creadores de beneficios). Aplíquelo a un servicio de reparto de comida saludable a domicilio.",
+      respuestaModelo: "Diseñar una propuesta de valor consiste en lograr un calce (fit) entre lo que el cliente necesita y lo que la empresa ofrece. Se trabaja en dos lados:\n\nPerfil del cliente (lo que le ocurre al cliente):\n- Trabajos (jobs): lo que el cliente intenta resolver o lograr. Ej.: alimentarse sano sin dedicar tiempo a cocinar.\n- Dolores (pains): frustraciones y obstáculos. Ej.: falta de tiempo, comida chatarra por conveniencia, culpa por comer mal, dificultad para planificar menús.\n- Beneficios/ganancias esperadas (gains): resultados deseados. Ej.: sentirse bien y con energía, ahorrar tiempo, comer variado y rico.\n\nMapa de valor (lo que ofrece la empresa):\n- Productos y servicios: el servicio de reparto de comida saludable lista para comer, con menús balanceados.\n- Aliviadores de dolores (pain relievers): cómo elimina las frustraciones. Ej.: entrega a domicilio en horarios convenientes, menús diseñados por nutricionista (evita la culpa y la mala alimentación), sin necesidad de comprar ni cocinar (ahorra tiempo).\n- Creadores de beneficios (gain creators): cómo genera las ganancias deseadas. Ej.: variedad semanal, ingredientes frescos y locales, información nutricional, y opción de personalizar según objetivos (bajar de peso, deporte).\n\nEl calce se logra cuando los aliviadores y creadores del mapa de valor responden directamente a los dolores y beneficios del perfil del cliente. La propuesta de valor resultante podría ser: \"Comida saludable, rica y lista, entregada en tu casa, para que comas bien sin perder tiempo ni pensar en el menú\". Este método asegura que la oferta no se diseñe \"hacia adentro\", sino desde las necesidades reales del cliente.",
+      criterios: [
+        { texto: "Explica el perfil del cliente (trabajos, dolores, beneficios) correctamente", peso: 3 },
+        { texto: "Explica el mapa de valor (productos, aliviadores de dolores, creadores de beneficios)", peso: 3 },
+        { texto: "Aplica el calce al caso del reparto de comida saludable y redacta una propuesta coherente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Diseñar la oferta \"hacia adentro\" sin partir de las necesidades del cliente",
+        "Confundir dolores (frustraciones) con beneficios esperados (ganancias)",
+        "No conectar los aliviadores/creadores con los dolores/beneficios específicos"
+      ]
+    },
+    {
+      id: "mkt-085",
+      tema: "Roles de los intermediarios y funciones del canal",
+      dificultad: "media",
+      enunciado: "Explique qué son los intermediarios en un canal de distribución y por qué, pese a agregar un margen, muchas empresas prefieren usarlos en vez de vender directo. Describa cuatro (4) funciones que cumplen los intermediarios (por ejemplo: logística/transporte, fraccionamiento de lotes, información de mercado, financiamiento, surtido) y explique el concepto de niveles de canal.",
+      respuestaModelo: "Los intermediarios son los agentes que se ubican entre el fabricante y el consumidor final en el canal de distribución (mayoristas, distribuidores, minoristas). Aunque agregan un margen que encarece el producto, las empresas los usan porque cumplen funciones que ellas no podrían realizar tan eficientemente: los intermediarios reducen el número total de transacciones y contactos necesarios, aportan cobertura, cercanía al cliente e infraestructura, de modo que muchas veces el costo de distribuir directo sería mayor y menos efectivo.\n\nCuatro funciones de los intermediarios:\n1) Logística y transporte: trasladan y almacenan los productos, acercándolos al punto de consumo.\n2) Fraccionamiento de lotes (ajuste de cantidades): compran en grandes volúmenes al fabricante y los dividen en cantidades adecuadas para el minorista o el consumidor.\n3) Surtido y variedad: reúnen productos de distintos fabricantes en un mismo punto, ofreciendo al cliente un surtido conveniente.\n4) Información de mercado y financiamiento: aportan información sobre la demanda y los clientes, promueven el producto y a veces financian (dan crédito o asumen inventario). (También válidas: asunción de riesgos, servicio postventa.)\n\nNiveles de canal: indican cuántos intermediarios hay entre fabricante y consumidor. Canal nivel 0 (directo): fabricante-consumidor, sin intermediarios (venta directa, e-commerce propio). Nivel 1: fabricante-minorista-consumidor. Nivel 2: fabricante-mayorista-minorista-consumidor, y así sucesivamente. A más niveles, mayor cobertura pero menor control y margen para el fabricante. La elección del número de niveles depende del producto, el mercado y la estrategia de distribución.",
+      criterios: [
+        { texto: "Explica qué son los intermediarios y por qué se usan pese a su margen (eficiencia, menos transacciones, cobertura)", peso: 3 },
+        { texto: "Describe cuatro funciones de los intermediarios", peso: 3 },
+        { texto: "Explica el concepto de niveles de canal (0, 1, 2) y su relación con control y cobertura", peso: 2 }
+      ],
+      erroresComunes: [
+        "Ver a los intermediarios solo como un sobrecosto, sin reconocer sus funciones",
+        "Confundir los niveles de canal o contar mal los intermediarios",
+        "No relacionar más niveles con mayor cobertura pero menor control y margen"
+      ]
+    },
+    {
+      id: "mkt-086",
+      tema: "Caso integrador: creación de una nueva categoría (ciclo de vida, descreme y educación del consumidor)",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "\"AGUAKEFIR\" es un emprendimiento chileno que introduce al país una bebida probiótica fermentada, prácticamente desconocida para el consumidor local. No existen referencias de precio ni de categoría; el consumidor no sabe qué es ni cuánto debería costar. La empresa competirá luego con grandes marcas de bebidas.\n\na) Ubique el producto en el ciclo de vida y explique dos (2) desafíos de marketing propios de esa etapa cuando además se está creando una categoría nueva.\n\nb) Recomiende fundadamente una estrategia de precio de introducción (descreme o penetración) considerando que no hay referencias de precio y que se debe construir percepción de valor. Indique un método de fijación de precios pertinente.\n\nc) Proponga dos (2) acciones concretas de marketing para educar al consumidor y estimular la prueba de la categoría, justificando cada una.",
+      respuestaModelo: "a) El producto está en la etapa de introducción del ciclo de vida: ventas bajas, altos costos por cliente, sin competencia directa pero también sin conocimiento de la categoría. Al crear una categoría nueva, los desafíos son: (1) generar conciencia y educar: el consumidor no sabe qué es el producto, sus beneficios ni cómo consumirlo, por lo que hay que enseñar antes de vender; (2) construir credibilidad y percepción de valor/precio desde cero: sin referencias, el cliente no sabe cuánto vale, y hay que instalar un precio de referencia y confianza en una categoría sin precedentes.\n\nb) Recomendación: dado que no hay referencias de precio, el producto es innovador y se busca construir percepción de valor (y financiar la educación del mercado), es coherente una estrategia de descreme: precio inicial relativamente alto dirigido a los consumidores pioneros dispuestos a pagar por la novedad y los beneficios de salud, que además señala calidad y permite márgenes para reinvertir en educar el mercado; luego se baja gradualmente para masificar. El riesgo (baja adopción inicial) se mitiga porque al principio se apunta a innovadores. Método de fijación pertinente: basado en el valor percibido (fijar el precio según los beneficios de salud y exclusividad que percibe el pionero), complementado con un piso basado en costos que asegure rentabilidad. (Una defensa sólida de penetración también es aceptable si se argumenta bajar la barrera de prueba; lo esencial es la coherencia.)\n\nc) Acciones para educar y estimular la prueba:\n1) Degustaciones y sampling en puntos estratégicos (tiendas saludables, gimnasios, ferias): permiten probar el producto desconocido sin riesgo, resolviendo la barrera de \"no sé a qué sabe\"; la prueba es clave en la adopción de una categoría nueva.\n2) Contenido educativo en redes y punto de venta (qué es, beneficios probióticos, cómo y cuándo consumirlo), con apoyo de referentes de salud/nutrición: construye conocimiento y credibilidad, avanzando al consumidor por el proceso de adopción (conciencia, interés, evaluación, prueba). (También válidas: alianzas con nutricionistas, garantía de satisfacción, formato de prueba pequeño y económico.)\n\nAmbas acciones atacan el desafío central de la introducción de una categoría nueva: educar y hacer probar.",
+      criterios: [
+        { texto: "a) Ubica el producto en introducción y explica dos desafíos propios de crear una categoría nueva (educar, construir percepción de valor)", peso: 3 },
+        { texto: "b) Recomienda una estrategia de precio de introducción fundamentada y coherente con la ausencia de referencias", peso: 3 },
+        { texto: "b) Indica un método de fijación de precios pertinente (valor percibido / costos como piso)", peso: 2 },
+        { texto: "c) Propone dos acciones concretas de educación y prueba con justificación", peso: 3 }
+      ],
+      erroresComunes: [
+        "No reconocer que crear una categoría exige educar antes que vender",
+        "Confundir la estrategia de precio (descreme/penetración) con el método de fijación",
+        "Proponer acciones de educación sin justificar cómo estimulan la prueba y adopción"
+      ]
+    },
+    {
+      id: "mkt-087",
+      tema: "Caso integrador: marca resucitada (activo de marca, experiencia y modelo omnicanal)",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Una icónica cadena de tiendas de juguetes que quebró y desapareció hace años planea relanzarse en Chile mediante una alianza con un gran retailer local. La marca conserva alto reconocimiento y nostalgia, pero el mercado hoy es digital, experiencial y competitivo.\n\na) Explique por qué una marca puede seguir siendo un \"activo latente\" pese a que la empresa haya cerrado, usando el concepto de valor de marca (brand equity).\n\nb) El relanzamiento no puede ser \"volver a abrir tiendas como antes\". Proponga un modelo omnicanal y experiencial para el regreso, con tres (3) acciones concretas que integren lo físico, lo digital y la experiencia.\n\nc) Analice un (1) beneficio y un (1) riesgo de apoyarse en la nostalgia, y una (1) ventaja de aliarse con un retailer local para entrar al mercado chileno.",
+      respuestaModelo: "a) Una marca puede ser un activo latente porque el valor de marca (brand equity) reside en la mente de los consumidores —notoriedad, recuerdos, asociaciones emocionales, confianza— y no desaparece automáticamente cuando cierra la operación. Aunque la empresa quebró, el nombre sigue teniendo alto reconocimiento y una carga afectiva (nostalgia) construida durante décadas; ese capital de marca es un activo que puede reactivarse para relanzar con una ventaja que una marca nueva no tiene: la gente ya la conoce y la quiere. Por eso los derechos de la marca se compran y se relanzan.\n\nb) Modelo omnicanal y experiencial (tres acciones que integran físico, digital y experiencia):\n1) Tiendas experienciales de formato reducido dentro del retailer aliado (tienda dentro de tienda): espacios con zonas interactivas para jugar y probar, no solo estantes, convirtiendo la visita en una experiencia y no una mera transacción.\n2) Integración digital: e-commerce y app sincronizados con las tiendas (stock, click & collect, catálogo interactivo), de modo que el cliente investigue, compre y retire combinando canales; contenido digital (comunidad, lanzamientos) que extienda la marca más allá del local.\n3) Experiencias y eventos que activen la nostalgia y el vínculo familiar: eventos temáticos, personajes icónicos de la marca, y programa de fidelización que conecte a padres (nostalgia) con hijos (nuevo público). El objetivo es un ecosistema físico-digital-experiencial coherente.\n\nc) Nostalgia: beneficio → genera conexión emocional inmediata, reconocimiento y confianza sin partir de cero, atrayendo a los adultos que la vivieron. Riesgo → quedarse \"solo en la nostalgia\": si el relanzamiento revive lo que fue sin conectar con lo que el consumidor espera hoy (digital, experiencia, nuevas generaciones), queda como un ejercicio de branding sin sustancia y fracasa. Ventaja de aliarse con un retailer local: aporta conocimiento del mercado, canales, logística y relación con el consumidor chileno, acelerando la entrada y reduciendo el riesgo de operar en un mercado que la marca global no conoce.",
+      criterios: [
+        { texto: "a) Explica la marca como activo latente usando el brand equity (notoriedad, asociaciones, confianza en la mente del consumidor)", peso: 3 },
+        { texto: "b) Propone un modelo omnicanal con tres acciones que integran físico, digital y experiencia", peso: 4 },
+        { texto: "c) Analiza un beneficio y un riesgo de la nostalgia y una ventaja de la alianza local", peso: 3 }
+      ],
+      erroresComunes: [
+        "Reducir el relanzamiento a reabrir tiendas iguales a las del pasado",
+        "Apoyarse solo en la nostalgia sin conectar con las expectativas actuales (digital, experiencia)",
+        "Ignorar el aporte estratégico del socio local (mercado, canales, logística)"
+      ]
+    },
+    {
+      id: "mkt-088",
+      tema: "Caso integrador: segmentación, posicionamiento y mezcla de comunicación",
+      dificultad: "dificil",
+      enunciado: "\"PEDALEA\" es una nueva marca chilena de bicicletas eléctricas urbanas de precio medio, pensada para desplazarse al trabajo en ciudad evitando el tráfico. Ingresa a un mercado con bicicletas baratas de baja calidad y con modelos importados caros.\n\na) Defina el segmento objetivo desarrollando las cuatro (4) variables de segmentación (geográfica, demográfica, psicográfica y conductual) con un atributo aplicado al caso en cada una.\n\nb) Redacte una declaración de posicionamiento (público objetivo, categoría, beneficio diferencial y razón para creer) e identifique la base de posicionamiento utilizada.\n\nc) Proponga dos (2) estrategias de comunicación integrada (CIM) para el lanzamiento, indicando herramienta, objetivo y ejemplo en cada una.",
+      respuestaModelo: "a) Segmentación del target de PEDALEA:\n- Geográfica: habitantes de comunas urbanas con tráfico y ciclovías (ej.: Providencia, Ñuñoa, Santiago Centro), donde el desplazamiento diario es un problema.\n- Demográfica: hombres y mujeres de 25 a 45 años, profesionales y trabajadores de ingreso medio, que se trasladan a diario al trabajo.\n- Psicográfica: personas con estilo de vida urbano, activo y consciente del medio ambiente, que valoran la eficiencia del tiempo y evitar el estrés del tráfico y el transporte público.\n- Conductual: buscan el beneficio de un transporte rápido, económico y sustentable para el commuting; uso frecuente (diario), con potencial de lealtad si el producto es confiable.\n\nb) Declaración de posicionamiento: \"Para profesionales urbanos que quieren llegar al trabajo rápido y sin estrés (público objetivo), PEDALEA es la bicicleta eléctrica urbana (categoría) que ofrece un desplazamiento diario ágil, económico y confiable (beneficio diferencial), gracias a su equilibrio entre calidad y precio medio, autonomía suficiente para la ciudad y servicio técnico local (razón para creer)\". Base de posicionamiento utilizada: principalmente por beneficio y uso/ocasión (el commuting urbano), combinada con precio-calidad (la opción confiable de precio medio frente a las baratas malas y las importadas caras).\n\nc) Estrategias CIM:\n1) Herramienta: medios digitales y redes sociales (con creadores de contenido de movilidad urbana). Objetivo: generar conocimiento y preferencia en el público objetivo. Ejemplo: contenido que muestre el ahorro de tiempo y dinero frente al auto o el transporte público en trayectos reales de Santiago.\n2) Herramienta: promoción de ventas / prueba (test ride). Objetivo: estimular la prueba y reducir el riesgo percibido de un producto nuevo. Ejemplo: jornadas de prueba en zonas de oficinas y ciclovías, con financiamiento en cuotas y garantía extendida como incentivo de cierre.\n\nAmbas mantienen un mensaje coherente (movilidad urbana ágil, confiable y de precio justo), esencia de la comunicación integrada.",
+      criterios: [
+        { texto: "a) Desarrolla las cuatro variables de segmentación con un atributo aplicado al caso en cada una, sin confundir psicográfica y conductual", peso: 3 },
+        { texto: "b) Redacta una declaración de posicionamiento completa e identifica la base utilizada", peso: 3 },
+        { texto: "c) Propone dos estrategias CIM con herramienta, objetivo y ejemplo, con mensaje coherente", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir la variable psicográfica (estilo de vida) con la conductual (beneficio, frecuencia)",
+        "Redactar un eslogan en vez de una declaración de posicionamiento con sus componentes",
+        "Proponer estrategias CIM sin objetivo claro o sin coherencia de mensaje"
+      ]
+    },
+    {
+      id: "mkt-089",
+      tema: "Caso integrador: estrategia de canal y conflicto entre canales",
+      dificultad: "dificil",
+      enunciado: "\"NORDICA\" es una marca chilena de ropa outdoor que vende a través de tres canales: su propio e-commerce, tiendas multimarca (retailers) y, desde hace poco, sus propias tiendas físicas. Los retailers reclaman que la marca les \"quita ventas\" al vender más barato en su web, y hay quejas de precios distintos entre canales.\n\na) Explique qué es un conflicto de canal y por qué se está produciendo en NORDICA.\n\nb) Proponga tres (3) medidas para gestionar el conflicto y avanzar hacia una estrategia coherente (idealmente omnicanal), cuidando la relación con los retailers.\n\nc) La marca evalúa qué estrategia de cobertura de distribución adoptar (intensiva, selectiva o exclusiva). Recomiende una fundadamente según el posicionamiento de una marca outdoor de valor.",
+      respuestaModelo: "a) Un conflicto de canal ocurre cuando los distintos miembros o canales de distribución de una empresa tienen desacuerdos o compiten entre sí, perjudicando la relación y el desempeño del sistema. En NORDICA se produce un conflicto vertical/horizontal porque la marca compite con sus propios retailers: al vender más barato en su e-commerce y propias tiendas, canibaliza las ventas de los multimarca que también ofrecen sus productos. La inconsistencia de precios entre canales es la causa central: los retailers sienten que la marca los desplaza y compite deslealmente con ellos.\n\nb) Medidas para gestionar el conflicto:\n1) Política de precios coherente entre canales: mantener un precio de venta al público consistente en web, tiendas propias y retailers (evitar que el canal propio sea sistemáticamente más barato), de modo que el retailer no quede en desventaja. Las promociones deben coordinarse.\n2) Diferenciar roles y surtido por canal: asignar a cada canal un rol claro (ej.: exclusivos o líneas premium en tiendas propias; surtido amplio en retailers; conveniencia y cobertura nacional en e-commerce), reduciendo la competencia directa por el mismo producto al mismo precio.\n3) Integración omnicanal colaborativa: usar el e-commerce para derivar tráfico a los retailers (mostrar stock por tienda, click & collect en el multimarca), compartir datos y apoyar con marketing y trade marketing, de modo que los canales se complementen en vez de competir.\n\nc) Estrategia de cobertura recomendada: distribución selectiva. Una marca outdoor de valor no debería usar distribución intensiva (masiva) porque diluiría su posicionamiento y presionaría los precios; la exclusiva limitaría demasiado su alcance. La selectiva —presencia en un número acotado de retailers y tiendas coherentes con la marca (especializados en outdoor, con buena exhibición y servicio)— protege la imagen, mantiene control sobre precio y experiencia, y permite crecer sin conflicto ni erosión de marca.",
+      criterios: [
+        { texto: "a) Define el conflicto de canal y explica por qué ocurre en NORDICA (canibalización, precios inconsistentes)", peso: 3 },
+        { texto: "b) Propone tres medidas coherentes (precios consistentes, roles por canal, integración omnicanal)", peso: 4 },
+        { texto: "c) Recomienda distribución selectiva fundamentada en el posicionamiento de valor", peso: 3 }
+      ],
+      erroresComunes: [
+        "No identificar la inconsistencia de precios como causa del conflicto",
+        "Proponer eliminar canales en vez de coordinarlos y diferenciar sus roles",
+        "Recomendar distribución intensiva, erosionando el posicionamiento de la marca outdoor"
+      ]
+    },
+    {
+      id: "mkt-090",
+      tema: "Caso integrador: calidad de servicio y brechas de expectativas",
+      dificultad: "dificil",
+      enunciado: "Un hotel boutique en el sur de Chile recibe evaluaciones contradictorias: su publicidad promete una \"experiencia de lujo cercano\", pero los huéspedes reclaman por demoras en el check-in, personal poco informado y diferencias entre las fotos y la realidad de las habitaciones.\n\na) Explique el concepto de calidad de servicio como la brecha entre expectativas y percepción del cliente, e identifique al menos dos (2) brechas que se observan en el caso (por ejemplo, entre lo que se promete y lo que se entrega).\n\nb) Usando las 7P de servicios, proponga una (1) acción de mejora en tres (3) P distintas (por ejemplo procesos, personas, evidencia física o promoción) para cerrar esas brechas.\n\nc) Proponga una (1) métrica para monitorear la calidad del servicio y explique cómo la usaría para la mejora continua.",
+      respuestaModelo: "a) La calidad de servicio se entiende como la diferencia (brecha) entre las expectativas que el cliente trae y la percepción de lo que efectivamente recibe: hay calidad cuando la percepción iguala o supera las expectativas, y falla cuando queda por debajo. En el caso se observan varias brechas: (1) brecha entre la comunicación/promesa y la entrega: la publicidad promete \"lujo\" y fotos que no coinciden con la realidad, inflando expectativas que el servicio no cumple; (2) brecha en la entrega del servicio: procesos deficientes (demoras en el check-in) y personal poco preparado hacen que el desempeño real quede bajo el estándar prometido. Estas brechas generan insatisfacción precisamente porque se prometió más de lo que se entrega.\n\nb) Acciones de mejora en tres P:\n- Procesos: rediseñar el check-in (pre-registro online, asignación anticipada de habitación, llegada express) para eliminar las demoras y hacer fluida la llegada.\n- Personas: capacitar al personal en conocimiento del hotel, del entorno y en protocolos de atención, y empoderarlo para resolver, de modo que encarne el \"lujo cercano\" prometido (marketing interno).\n- Promoción (comunicación): alinear la publicidad con la realidad: usar fotos fieles y gestionar expectativas honestas, para no crear una brecha entre lo prometido y lo entregado. (También válida: evidencia física, mejorando la habitación para que iguale la imagen proyectada.)\n\nc) Métrica: el NPS (Net Promoter Score) o una encuesta de satisfacción post-estadía que mida la brecha percibida. Cómo usarla: aplicarla sistemáticamente al finalizar la estadía, segmentar los resultados por punto de contacto (check-in, habitación, atención) para detectar dónde están las brechas, y establecer un ciclo de mejora continua: medir, identificar la causa raíz de las bajas evaluaciones, corregir el proceso o capacitar, y volver a medir para verificar la mejora.",
+      criterios: [
+        { texto: "a) Explica la calidad de servicio como brecha expectativa-percepción e identifica dos brechas del caso", peso: 3 },
+        { texto: "b) Propone una acción de mejora en tres P distintas, coherentes para cerrar las brechas", peso: 4 },
+        { texto: "c) Propone una métrica de calidad y explica su uso para la mejora continua", peso: 3 }
+      ],
+      erroresComunes: [
+        "No relacionar la insatisfacción con la brecha entre lo prometido y lo entregado",
+        "Proponer mejoras concentradas en una sola P en vez de tres distintas",
+        "Elegir una métrica sin explicar cómo se usa para corregir y mejorar"
+      ]
+    },
+    {
+      id: "mkt-091",
+      tema: "Caso integrador: surtido, planograma y ejecución en el punto de venta",
+      dificultad: "dificil",
+      enunciado: "Una cadena chilena de minimarkets quiere mejorar la rentabilidad de la categoría \"snacks y golosinas\", que tiene mucha rotación pero desorden en la exhibición y quiebres de stock. Trabaja con varios proveedores.\n\na) Explique cómo aplicaría la gestión de categorías para diagnosticar y ordenar esta categoría (rol de la categoría, análisis con métricas y colaboración con proveedores).\n\nb) Proponga dos (2) decisiones concretas de surtido y planograma (espacio, ubicación, facing) para mejorar ventas y rentabilidad, justificándolas.\n\nc) Proponga dos (2) métricas para evaluar el desempeño de la categoría y explique qué decisión tomaría según cada una.",
+      respuestaModelo: "a) Aplicación de la gestión de categorías: primero, definir el rol de la categoría: \"snacks y golosinas\" en un minimarket es una categoría de conveniencia e impulso (y de rutina), que aporta margen y aumenta el ticket. Su gestión debe potenciar la compra por impulso. Segundo, analizar con métricas: revisar ventas, rotación, margen y participación de cada producto y subgrupo para distinguir los de alta rotación y margen de los de bajo desempeño, y detectar la causa de los quiebres (mala reposición, mal pronóstico). Tercero, colaborar con proveedores: trabajar con ellos (que conocen su categoría) para definir surtido óptimo, planograma y reposición, en una lógica de gestión conjunta que beneficie a ambos.\n\nb) Decisiones de surtido y planograma:\n1) Racionalizar el surtido y asignar espacio por desempeño: eliminar los productos de baja rotación y margen que solo generan desorden y quiebres, y dar más facings (frentes) y mejor espacio a los de mayor venta y rentabilidad. Justificación: el espacio es limitado y debe asignarse según lo que más vende y deja margen, reduciendo quiebres de los productos clave.\n2) Ubicación estratégica de impulso: situar los snacks y golosinas de alto margen cerca de las cajas y a la altura de los ojos (y golosinas infantiles a menor altura), con un planograma ordenado por subcategorías. Justificación: al ser compra por impulso, la ubicación visible junto a la caja incrementa la venta incremental y el ticket.\n\nc) Métricas y decisiones:\n1) Rotación de inventario (y tasa de quiebre de stock): si un producto clave rota mucho pero se quiebra, la decisión es mejorar la reposición y el pronóstico o aumentar su espacio. Si un producto rota muy poco, evaluar sacarlo del surtido.\n2) Margen y ventas por espacio (rentabilidad por metro/facing): si un producto ocupa mucho espacio con bajo aporte de margen, reasignar ese espacio a productos más rentables. La decisión general es optimizar surtido y planograma para maximizar la rentabilidad de la categoría, no solo el volumen.",
+      criterios: [
+        { texto: "a) Aplica la gestión de categorías: define el rol, propone análisis con métricas y colaboración con proveedores", peso: 3 },
+        { texto: "b) Propone dos decisiones concretas de surtido y planograma justificadas (espacio, ubicación, facing)", peso: 4 },
+        { texto: "c) Propone dos métricas y la decisión asociada a cada una", peso: 3 }
+      ],
+      erroresComunes: [
+        "No asignar un rol a la categoría antes de decidir tácticas",
+        "Asignar espacio por intuición y no por rotación y margen",
+        "Proponer métricas sin indicar qué decisión gatillan"
+      ]
+    },
+    {
+      id: "mkt-092",
+      tema: "Caso integrador: estrategia de precios en un portafolio (líneas y versiones)",
+      dificultad: "dificil",
+      enunciado: "\"LUMEN\" es una marca chilena de productos de cuidado de la piel que quiere ordenar su portafolio con tres líneas: una de acceso (masiva), una intermedia y una premium (dermatológica). Enfrenta clientes de distinta sensibilidad al precio.\n\na) Explique cómo usaría una estrategia de precios por línea de productos (bueno-mejor-óptimo) para atender a segmentos con distinta sensibilidad al precio, indicando el método de fijación de precios más pertinente para la línea de acceso y para la premium.\n\nb) Explique el riesgo de canibalización entre líneas y proponga dos (2) medidas para evitar que la línea premium pierda ventas frente a la intermedia y de acceso.\n\nc) Proponga cómo comunicaría el valor de la línea premium para justificar su precio superior (posicionamiento y propuesta de valor).",
+      respuestaModelo: "a) Estrategia de precios por línea (bueno-mejor-óptimo): LUMEN fija precios escalonados que reflejan distintos niveles de valor y atienden a distintos segmentos según su sensibilidad al precio y disposición a pagar. La línea de acceso capta al segmento sensible al precio (demanda más elástica) y la premium al segmento que valora resultados y respaldo dermatológico y es poco sensible al precio (demanda inelástica); la intermedia cubre el medio. Método de fijación: para la línea de acceso, fijación basada en la competencia y en costos (precio alineado al mercado masivo, con estructura de costos eficiente que asegure margen), porque compite por precio; para la premium, fijación basada en el valor percibido, cuyo precio refleje la eficacia, los ingredientes, el respaldo dermatológico y la experiencia, capturando la mayor disposición a pagar de ese segmento.\n\nb) Canibalización: ocurre cuando una línea le \"roba\" ventas a otra de la misma marca en vez de sumar clientes nuevos; el riesgo es que clientes que pagarían la premium compren la intermedia o de acceso, reduciendo el margen total. Medidas para evitarlo:\n1) Diferenciación real y clara entre líneas: que la premium tenga atributos, ingredientes y resultados notoriamente superiores y comunicados, de modo que quien busca esos beneficios no se conforme con la línea inferior; evitar que las líneas se solapen demasiado.\n2) Gestión de la brecha de precios y del posicionamiento: escalonar precios y beneficios de forma que cada línea tenga un target y un valor propios (segmentación por beneficio), y no promocionar agresivamente la intermedia hacia el público premium.\n\nc) Comunicación del valor de la premium: posicionarla por atributo/beneficio y respaldo (dermatológico, eficacia probada, ingredientes de calidad), con una propuesta de valor centrada en resultados y confianza (\"cuidado dermatológico avanzado para tu piel\"). Usar evidencia (test, recomendación de especialistas), packaging y experiencia premium, y canales coherentes (farmacias dermatológicas, asesoría), de modo que el cliente perciba que el precio superior corresponde a un valor superior y no a la misma fórmula más cara.",
+      criterios: [
+        { texto: "a) Explica la estrategia de precios por línea y asigna el método de fijación pertinente a acceso (costos/competencia) y premium (valor)", peso: 3 },
+        { texto: "b) Explica la canibalización y propone dos medidas para evitarla (diferenciación, gestión de brechas/posicionamiento)", peso: 4 },
+        { texto: "c) Propone cómo comunicar el valor de la premium para justificar su precio (posicionamiento y propuesta de valor)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Fijar todas las líneas con el mismo método sin considerar la distinta sensibilidad al precio",
+        "No diferenciar suficientemente las líneas, favoreciendo la canibalización",
+        "Justificar el precio premium sin atributos ni comunicación de valor"
+      ]
+    },
+    {
+      id: "mkt-093",
+      tema: "Caso integrador: expansión internacional y adaptación de la mezcla de marketing",
+      dificultad: "dificil",
+      enunciado: "Una empresa chilena de snacks saludables, líder en su país, quiere expandirse a mercados de la región (Perú, México y Brasil). Cada país tiene hábitos de consumo, idioma y canales distintos.\n\na) Explique el dilema entre estandarización y adaptación de la mezcla de marketing en la expansión internacional, con sus ventajas y desventajas.\n\nb) Para el ingreso a estos mercados, proponga cómo adaptaría dos (2) elementos de la mezcla de marketing (producto, precio, plaza o promoción) a las diferencias locales, con ejemplos.\n\nc) Proponga tres (3) estrategias de entrada/distribución posibles (por ejemplo: distribuidores locales, alianzas estratégicas, operación directa) y recomiende cuál usar según el nivel de conocimiento y riesgo de cada mercado.",
+      respuestaModelo: "a) El dilema estandarización vs. adaptación: estandarizar significa usar la misma mezcla de marketing (producto, precio, comunicación) en todos los países; adaptar significa ajustarla a cada mercado local. Estandarización: ventajas → economías de escala, consistencia global de marca, menores costos; desventajas → puede no calzar con gustos, idioma, precios y canales locales, perdiendo relevancia. Adaptación: ventajas → mayor pertinencia y aceptación local, respeta hábitos y regulaciones; desventajas → mayor costo y complejidad, menor escala. En la práctica se busca un equilibrio (\"glocalización\"): mantener la esencia global y adaptar lo necesario.\n\nb) Adaptación de dos elementos:\n- Producto: ajustar sabores, ingredientes y formatos a los gustos locales (ej.: perfiles de sabor más dulces o picantes según el país, tamaños de porción según el hábito de consumo) y cumplir el etiquetado/regulación de cada país.\n- Promoción/comunicación: adaptar idioma, mensajes y referentes culturales, y los medios según lo que consume cada público (ej.: campañas y creadores de contenido locales en cada país). También puede adaptarse el precio (según poder adquisitivo y competencia local) o la plaza (canales predominantes en cada país).\n\nc) Estrategias de entrada/distribución:\n1) Distribuidores locales: usar distribuidores que ya conocen el mercado y tienen canales; conviene en mercados donde la empresa tiene poco conocimiento y quiere entrar rápido con menor inversión y riesgo.\n2) Alianzas estratégicas con socios nacionales: asociarse con un socio local; conviene en mercados con regulaciones exigentes o barreras (por ejemplo, un mercado grande y complejo), donde el socio aporta cumplimiento y acceso.\n3) Operación/distribución directa: la empresa distribuye por sí misma; conviene en mercados más cercanos o conocidos y de menor riesgo, donde puede controlar la operación y capturar más margen.\n\nRecomendación: escalonar según conocimiento y riesgo: entrar con distribuidores o alianzas en los mercados más lejanos o complejos, y operar directo donde el mercado es más conocido y manejable, ajustando la estrategia a medida que se aprende de cada país.",
+      criterios: [
+        { texto: "a) Explica el dilema estandarización vs. adaptación con ventajas y desventajas", peso: 3 },
+        { texto: "b) Adapta dos elementos de la mezcla de marketing a las diferencias locales con ejemplos", peso: 3 },
+        { texto: "c) Propone tres estrategias de entrada/distribución y recomienda según conocimiento y riesgo de cada mercado", peso: 4 }
+      ],
+      erroresComunes: [
+        "Asumir que la misma mezcla funciona igual en todos los países (estandarización total)",
+        "Proponer adaptaciones genéricas sin ejemplos concretos por mercado",
+        "No relacionar la estrategia de entrada con el nivel de conocimiento y riesgo del mercado"
+      ]
+    },
+    {
+      id: "mkt-094",
+      tema: "Caso integrador: comportamiento del consumidor y diseño de propuesta de valor",
+      dificultad: "dificil",
+      enunciado: "\"CUIDA\" es un emprendimiento chileno que quiere ofrecer un servicio de acompañamiento y cuidado a domicilio para adultos mayores, contratado por sus hijos adultos que trabajan y viven lejos.\n\na) Analice el comportamiento de compra: distinga quién es el usuario, quién el comprador/decisor y qué tipo de compra es (nivel de involucramiento y riesgo percibido), fundamentando.\n\nb) Diseñe la propuesta de valor identificando los principales \"dolores\" y \"beneficios esperados\" del comprador (los hijos) y del usuario (el adulto mayor), y cómo el servicio los resuelve.\n\nc) Proponga dos (2) acciones de marketing para generar confianza y reducir el riesgo percibido en este tipo de servicio sensible.",
+      respuestaModelo: "a) Comportamiento de compra: hay que distinguir roles. El usuario del servicio es el adulto mayor (quien lo recibe), pero el comprador/decisor y quien paga suele ser el hijo adulto (a veces junto a otros hermanos, que actúan como influenciadores). Esto es clave porque el marketing debe dirigirse principalmente a los hijos (decisores), sin descuidar la aceptación del adulto mayor (usuario), que puede vetar el servicio si no le agrada. Es una compra de alto involucramiento y alto riesgo percibido: se trata del bienestar y la seguridad de un ser querido, con fuerte carga emocional (culpa, preocupación) y riesgo funcional (¿será confiable el cuidador?), social y financiero. Por ello el proceso de decisión es extenso: búsqueda cuidadosa de información, evaluación de confianza y referencias antes de decidir.\n\nb) Propuesta de valor (dolores y beneficios):\n- Del comprador (hijos): dolores → preocupación y culpa por no poder cuidar personalmente, distancia, falta de tiempo, miedo a dejar a su padre/madre con desconocidos. Beneficios esperados → tranquilidad, confianza, información y control de que su ser querido está bien atendido. El servicio los resuelve con cuidadores certificados, reportes y comunicación constante, y respaldo ante emergencias.\n- Del usuario (adulto mayor): dolores → soledad, pérdida de autonomía, temor a ser tratado sin dignidad. Beneficios esperados → compañía, cuidado respetuoso, mantener su autonomía y calidad de vida. El servicio lo resuelve con acompañamiento cálido y personalizado.\nPropuesta de valor integrada: \"Cuidado profesional y cariñoso a domicilio para que tu padre o madre esté bien atendido y tú tengas tranquilidad, aunque estés lejos\".\n\nc) Acciones para generar confianza y reducir el riesgo percibido:\n1) Señales de credibilidad y respaldo: cuidadores certificados y con antecedentes verificados, testimonios y reseñas reales de otras familias, protocolos claros y seguro/garantía; publicarlos de forma visible reduce el riesgo funcional y social.\n2) Transparencia y prueba: entrevista y match previo del cuidador con la familia, reportes periódicos y app de seguimiento, y un periodo o visita de prueba sin compromiso. Esto permite al decisor \"ver\" el servicio antes de comprometerse y reduce la incertidumbre propia de un servicio intangible y sensible.",
+      criterios: [
+        { texto: "a) Distingue usuario, comprador/decisor e influenciadores, y clasifica la compra por involucramiento y riesgo percibido, con fundamento", peso: 3 },
+        { texto: "b) Diseña la propuesta de valor con dolores y beneficios del comprador y del usuario y cómo el servicio los resuelve", peso: 4 },
+        { texto: "c) Propone dos acciones para generar confianza y reducir el riesgo percibido", peso: 3 }
+      ],
+      erroresComunes: [
+        "No distinguir entre el usuario (adulto mayor) y el decisor/comprador (los hijos)",
+        "Tratar la compra como de bajo involucramiento, ignorando la carga emocional y el riesgo",
+        "Proponer la propuesta de valor solo para uno de los dos (usuario o comprador)"
+      ]
+    },
+    {
+      id: "mkt-095",
+      tema: "Caso integrador: fidelización, CLV y programa de lealtad con datos",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Una cadena chilena de supermercados quiere lanzar un programa de fidelización con tarjeta y app para aumentar la retención y el gasto de sus clientes, aprovechando los datos de compra.\n\na) Explique el concepto de valor de vida del cliente (CLV) y por qué justifica invertir en fidelización, relacionándolo con la retención y el churn.\n\nb) Diseñe el programa de fidelización: proponga su mecánica (tipo de recompensa) y dos (2) formas concretas de usar los datos de compra para personalizar y aumentar el gasto.\n\nc) Proponga dos (2) métricas (KPIs) para evaluar el éxito del programa y explique qué indicaría cada una.",
+      respuestaModelo: "a) El valor de vida del cliente (CLV) es el ingreso o beneficio neto que un cliente genera durante toda su relación con la empresa, no en una sola compra. Justifica invertir en fidelización porque un cliente retenido compra de forma recurrente durante años, y aumentar su permanencia y frecuencia eleva su CLV; además, retener es más barato que captar. Se relaciona con la retención y el churn: cada punto de churn (clientes que se van) destruye CLV futuro, mientras que subir la retención multiplica el valor acumulado de la base. Por eso conviene gastar en un programa que retenga y haga comprar más, siempre que el valor generado supere su costo.\n\nb) Diseño del programa:\n- Mecánica: programa de puntos acumulables por compra, canjeables por descuentos o productos, combinado con niveles/beneficios exclusivos (precios de socio, ofertas personalizadas, despacho preferente) para generar aspiración y pertenencia. La tarjeta/app identifica al cliente en cada compra.\n- Uso de datos (dos formas):\n1) Ofertas personalizadas según historial: analizar qué compra cada cliente y enviarle promociones de sus productos habituales y de complementos (venta cruzada), y recordatorios de recompra. Esto aumenta la frecuencia y el ticket porque la oferta es relevante.\n2) Segmentación y reactivación: identificar patrones (clientes de alto valor, clientes que bajaron su frecuencia) para dar beneficios diferenciados a los más valiosos y campañas de reactivación a quienes muestran señales de fuga, optimizando el gasto del programa.\n\nc) Métricas (KPIs):\n1) Tasa de retención / churn de socios: indica si el programa efectivamente reduce el abandono y fideliza; si la retención sube, el programa funciona.\n2) Frecuencia de compra y ticket promedio (o gasto anual) de los socios vs. no socios: indica si el programa aumenta el gasto y la recurrencia; una diferencia positiva de los socios muestra impacto en el CLV. (También válidas: tasa de canje, participación de socios en las ventas, CLV promedio.) El éxito se evalúa comparando el mayor valor generado por los socios contra el costo del programa.",
+      criterios: [
+        { texto: "a) Define el CLV y explica por qué justifica invertir en fidelización, ligándolo a retención y churn", peso: 3 },
+        { texto: "b) Diseña la mecánica del programa y dos formas concretas de usar los datos para personalizar y aumentar el gasto", peso: 4 },
+        { texto: "c) Propone dos KPIs y explica qué indica cada uno", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir CLV con el valor de una sola compra",
+        "Diseñar el programa como puro descuento sin uso de datos ni personalización",
+        "Proponer KPIs que no reflejan retención ni aumento de gasto"
+      ]
+    },
+    {
+      id: "mkt-096",
+      tema: "Caso integrador: estrategias competitivas del retador de mercado",
+      dificultad: "dificil",
+      enunciado: "\"FRESKA\" es la tercera marca de jugos naturales en Chile, detrás de un líder dominante y un segundo actor fuerte. Quiere ganar participación de mercado sin provocar una guerra de precios que la destruya.\n\na) Ubique a FRESKA dentro de las estrategias competitivas (líder, retador, seguidor, especialista/nicho) y explique qué implica ser un retador de mercado.\n\nb) Proponga dos (2) estrategias de ataque propias de un retador (por ejemplo: ataque por diferenciación, por flancos/segmentos desatendidos, por innovación) que FRESKA podría usar frente al líder, evitando la confrontación directa por precio.\n\nc) Explique un (1) riesgo de atacar frontalmente al líder y cómo la diferenciación ayuda a mitigarlo.",
+      respuestaModelo: "a) FRESKA es un retador de mercado (market challenger): no es líder, pero tiene tamaño y ambición para disputar participación a los que están arriba. Ser retador implica adoptar una postura activa y agresiva para ganar cuota, eligiendo a quién atacar (al líder, a pares o a marcas débiles) y con qué armas, pero de forma inteligente: un retador con menos recursos que el líder no debe imitarlo ni enfrentarlo donde el líder es fuerte, sino buscar ventajas donde pueda ganar.\n\nb) Estrategias de ataque para FRESKA (evitando la guerra de precios):\n1) Ataque por diferenciación/innovación: ofrecer algo que el líder no tiene —jugos 100% naturales sin azúcar añadida, nuevos sabores o formatos, packaging sustentable— y posicionarse por salud y autenticidad. Al competir por atributos y no por precio, FRESKA atrae a los consumidores que el líder no satisface plenamente, sin destruir márgenes.\n2) Ataque por flancos (segmentos u ocasiones desatendidos): enfocarse en un segmento u ocasión donde el líder es débil (ej.: consumo saludable en gimnasios y oficinas, o un canal donde el líder tiene poca presencia), ganando terreno donde no hay confrontación frontal. (También válida: ataque por canal o por mejor servicio al canal/trade marketing.)\n\nc) Riesgo de atacar frontalmente al líder: el líder tiene más recursos, escala y lealtad, por lo que puede responder con fuerza (bajar precios, aumentar publicidad) y, en una guerra directa —sobre todo de precios—, el retador con menos espalda financiera pierde margen y puede quedar debilitado o expulsado. La diferenciación mitiga este riesgo porque traslada la competencia a un terreno donde FRESKA tiene ventaja (atributos valorados que el líder no ofrece) en lugar del precio: el cliente elige a FRESKA por su propuesta distinta, y el líder no puede simplemente aplastarla bajando precios, ya que no compite por lo mismo. Así FRESKA crece de forma más defendible y sostenible.",
+      criterios: [
+        { texto: "a) Identifica a FRESKA como retador y explica qué implica esa estrategia competitiva", peso: 3 },
+        { texto: "b) Propone dos estrategias de ataque de retador (diferenciación/innovación, flancos) que evitan la guerra de precios", peso: 4 },
+        { texto: "c) Explica un riesgo del ataque frontal y cómo la diferenciación lo mitiga", peso: 3 }
+      ],
+      erroresComunes: [
+        "Recomendar competir de frente por precio contra el líder",
+        "Confundir el rol de retador con el de seguidor o especialista",
+        "Proponer ataques sin considerar dónde el líder es débil o dónde FRESKA tiene ventaja"
+      ]
+    },
+    {
+      id: "mkt-097",
+      tema: "Caso integrador: sostenibilidad como eje de posicionamiento y marca",
+      dificultad: "dificil",
+      enunciado: "\"RAÍZ\" es una marca chilena de productos de aseo del hogar que quiere posicionarse en torno a la sostenibilidad (envases retornables, fórmulas biodegradables, producción local). El mercado tiene consumidores escépticos por el \"greenwashing\" de otras marcas.\n\na) Explique cómo la sostenibilidad puede ser una base de posicionamiento y diferenciación, y qué condiciones debe cumplir para ser creíble y no percibirse como greenwashing.\n\nb) Redacte la propuesta de valor de RAÍZ integrando el atributo de sostenibilidad con un beneficio funcional (no basta con \"ser verde\").\n\nc) Proponga dos (2) acciones de comunicación (CIM) que respalden el posicionamiento sostenible con hechos, y una (1) métrica para monitorear la percepción de la marca.",
+      respuestaModelo: "a) La sostenibilidad puede ser una base de posicionamiento por atributo/valores: la marca ocupa en la mente del consumidor el lugar de \"la opción responsable con el medio ambiente\", diferenciándose de competidores tradicionales. Es un diferenciador potente porque un segmento creciente de consumidores valora y prefiere marcas coherentes con el cuidado ambiental, y está dispuesto a pagar por ello. Sin embargo, para ser creíble y no percibirse como greenwashing (lavado de imagen verde), debe cumplir condiciones: ser auténtica y respaldada por hechos verificables (certificaciones, datos, trazabilidad), consistente en toda la operación (no solo en el discurso), transparente (incluso sobre lo que falta por mejorar) y no exagerada. El consumidor escéptico castiga la incoherencia entre lo que la marca dice y hace; por eso el propósito debe estar respaldado por acciones reales.\n\nb) Propuesta de valor de RAÍZ: \"Productos de aseo que limpian eficazmente tu hogar y cuidan el planeta: fórmulas biodegradables y envases retornables, con la potencia que tu casa necesita\". Integra el atributo de sostenibilidad (biodegradable, retornable, local) con un beneficio funcional (limpia eficazmente): esto es clave porque el consumidor no sacrifica desempeño por sostenibilidad; el producto debe funcionar bien Y ser sostenible. La sostenibilidad diferencia, pero el beneficio funcional es la base que el cliente exige.\n\nc) Acciones de comunicación (CIM) respaldadas por hechos:\n1) Transparencia y evidencia: comunicar certificaciones, la huella ambiental real, el sistema de retorno de envases y datos concretos (ej.: cuántos envases se han reutilizado), en el empaque y canales digitales; los hechos verificables construyen credibilidad frente al escepticismo.\n2) Relaciones públicas y educación: mostrar la producción local y las prácticas sostenibles (contenido \"detrás de escena\", alianzas con organizaciones ambientales), generando cobertura y prueba social creíble en vez de solo publicidad autoproclamada.\nMétrica para monitorear la percepción: encuestas de percepción de marca / asociación de marca (qué atributos asocia el consumidor a RAÍZ) y NPS, midiendo si la marca es percibida como genuinamente sostenible y confiable; también seguimiento de menciones y sentimiento en redes. Con ello se detecta a tiempo cualquier brecha de credibilidad.",
+      criterios: [
+        { texto: "a) Explica la sostenibilidad como base de posicionamiento/diferenciación y las condiciones para no caer en greenwashing", peso: 3 },
+        { texto: "b) Redacta una propuesta de valor que integra sostenibilidad con un beneficio funcional", peso: 3 },
+        { texto: "c) Propone dos acciones de comunicación respaldadas por hechos y una métrica de percepción de marca", peso: 4 }
+      ],
+      erroresComunes: [
+        "Posicionar solo en \"ser verde\" sin un beneficio funcional que el cliente exige",
+        "No abordar las condiciones de credibilidad frente al greenwashing",
+        "Proponer comunicación autoproclamada sin hechos ni evidencia verificable"
+      ]
+    },
+    {
+      id: "mkt-098",
+      tema: "Caso integrador: transformación digital del marketing (embudo, métricas y contenidos)",
+      dificultad: "dificil",
+      enunciado: "Una tienda chilena de productos para mascotas, tradicionalmente física, quiere digitalizar su marketing para vender online. Hoy tiene mucho tráfico web pero pocas ventas, y no mide resultados.\n\na) Diagnostique el problema usando el concepto de embudo de conversión: explique dónde podría estar la fuga si hay mucho tráfico pero pocas ventas, y proponga una acción para cada etapa del embudo.\n\nb) Proponga una estrategia de marketing de contenidos para atraer y convertir clientes, con dos (2) ejemplos concretos de contenido y su objetivo dentro del embudo.\n\nc) Proponga tres (3) métricas para gestionar el desempeño digital y explique qué decisión tomaría según cada una.",
+      respuestaModelo: "a) Diagnóstico con el embudo de conversión: el embudo va de conocimiento → interés/consideración → deseo → acción (compra). Si hay mucho tráfico (parte alta llena) pero pocas ventas (parte baja vacía), la fuga está en las etapas intermedias y finales: los visitantes llegan pero no avanzan a la compra. Posibles causas: mala experiencia del sitio, falta de confianza, precios o despacho poco claros, checkout complicado, o tráfico poco calificado. Acciones por etapa:\n- Conocimiento: mantener/atraer tráfico calificado (SEO, redes) apuntando al público correcto, no solo volumen.\n- Interés/consideración: mejorar fichas de producto, información clara, reseñas y contenido útil que genere confianza.\n- Deseo: ofrecer prueba social, garantías, recomendaciones personalizadas y promociones que inclinen la decisión.\n- Acción/conversión: simplificar el checkout, ofrecer medios de pago y despacho claros, recuperar carritos abandonados con recordatorios. El foco está en reducir la fricción donde se pierde a la gente.\n\nb) Estrategia de marketing de contenidos: crear contenido de valor que atraiga y eduque al dueño de mascota, construyendo confianza y guiándolo hacia la compra. Ejemplos:\n1) Contenido educativo (blog/redes): \"guía de alimentación según la edad del perro\" o videos de cuidado. Objetivo en el embudo: atraer y generar conocimiento e interés (parte alta), posicionando a la tienda como experta confiable.\n2) Contenido de conversión: recomendaciones de productos, comparativas y testimonios, con llamado a la acción y ofertas. Objetivo: consideración/deseo y acción (parte baja), convirtiendo al visitante informado en comprador.\n\nc) Métricas y decisiones:\n1) Tasa de conversión (visitas que compran): si es baja con alto tráfico, la decisión es optimizar el sitio y el checkout (reducir fricción) y calificar mejor el tráfico.\n2) Tasa de abandono de carrito: si es alta, implementar recuperación de carritos (email/recordatorio) y revisar costos de despacho o pasos del pago.\n3) CAC vs. CLV (costo de adquisición vs. valor del cliente): si el CAC se acerca o supera al CLV, la decisión es ajustar la inversión hacia los canales y segmentos más rentables y fomentar la recompra (fidelización) para elevar el CLV.",
+      criterios: [
+        { texto: "a) Diagnostica la fuga con el embudo (tráfico alto, conversión baja) y propone una acción por etapa", peso: 4 },
+        { texto: "b) Propone una estrategia de contenidos con dos ejemplos y su objetivo en el embudo", peso: 3 },
+        { texto: "c) Propone tres métricas digitales y la decisión asociada a cada una", peso: 3 }
+      ],
+      erroresComunes: [
+        "Atribuir el problema solo a \"falta de tráfico\" cuando el tráfico es alto y la conversión baja",
+        "Proponer contenido sin objetivo claro dentro del embudo",
+        "Listar métricas sin indicar qué decisión gatillan"
+      ]
+    },
+    {
+      id: "mkt-099",
+      tema: "Caso integrador: análisis de portafolio y reasignación de recursos de marca",
+      dificultad: "dificil",
+      enunciado: "Un holding chileno de alimentos tiene cuatro marcas: A (líder en un mercado que ya no crece, muy rentable), B (marca fuerte en una categoría en fuerte crecimiento), C (marca pequeña en una categoría atractiva y creciente, pero con baja participación) y D (marca pequeña en un mercado estancado, sin ventaja).\n\na) Clasifique las cuatro marcas en la matriz BCG (estrella, vaca lechera, interrogante, perro) justificando cada una según crecimiento del mercado y participación relativa.\n\nb) Proponga la decisión estratégica y de asignación de recursos para cada marca (invertir, sostener, seleccionar/decidir, desinvertir), explicando el flujo de recursos entre ellas.\n\nc) Señale una (1) limitación de la BCG para esta decisión y cómo la matriz GE/McKinsey la complementaría.",
+      respuestaModelo: "a) Clasificación BCG (dimensiones: crecimiento del mercado y participación relativa):\n- Marca A: mercado que ya no crece + alta participación (líder) + muy rentable → Vaca lechera.\n- Marca B: categoría en fuerte crecimiento + posición fuerte (alta participación) → Estrella.\n- Marca C: categoría atractiva y creciente + baja participación → Interrogante (incógnita).\n- Marca D: mercado estancado + baja participación + sin ventaja → Perro.\n\nb) Decisiones y flujo de recursos:\n- A (vaca lechera): sostener con inversión moderada y cosechar su excedente de caja; es la fuente que financia al resto. Decisión: mantener liderazgo eficientemente y extraer flujo.\n- B (estrella): invertir fuerte para sostener el liderazgo mientras el mercado crece; consume caja pero es el futuro. Con el tiempo, al madurar el mercado, se convertirá en la próxima vaca lechera.\n- C (interrogante): decisión selectiva: invertir agresivamente para intentar convertirla en estrella (ganar participación en una categoría atractiva) o desinvertir si no hay ventaja alcanzable. Requiere análisis; no se puede financiar todo.\n- D (perro): desinvertir, liquidar o mantener solo si aporta complementariedad; no destinarle recursos que rinden más en B o C.\nFlujo: el excedente de A (vaca) financia la inversión en B (estrella) y en la C (interrogante) elegida; D libera recursos al salir. Así se equilibra el portafolio entre generadores y consumidores de caja.\n\nc) Limitación de la BCG: simplifica el análisis a solo dos variables (crecimiento y participación relativa), que no capturan toda la realidad: la participación no equivale a fortaleza competitiva (ignora marca, costos, capacidades) ni el crecimiento refleja todo el atractivo (rentabilidad, riesgo, barreras); además no considera sinergias entre marcas. La matriz GE/McKinsey lo complementa con una estructura 3x3 y dos dimensiones compuestas —atractivo de la industria y fortaleza competitiva—, cada una construida con múltiples factores ponderados, entregando un diagnóstico más matizado (invertir/crecer, selectividad, cosechar/desinvertir) para decidir, por ejemplo, si la interrogante C realmente vale la inversión.",
+      criterios: [
+        { texto: "a) Clasifica correctamente las cuatro marcas en la BCG justificando por crecimiento y participación", peso: 3 },
+        { texto: "b) Propone la decisión y asignación de recursos de cada marca y explica el flujo de caja entre ellas", peso: 4 },
+        { texto: "c) Señala una limitación de la BCG y cómo la GE/McKinsey la complementa", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir participación relativa (vs. el mayor competidor) con participación absoluta",
+        "No explicar el flujo de recursos (la vaca financia estrella e interrogante)",
+        "Afirmar que el 'perro' debe eliminarse siempre, ignorando posibles complementariedades"
+      ]
+    },
+    {
+      id: "mkt-100",
+      tema: "Caso integrador: publicidad, medios y estrategia creativa de campaña",
+      dificultad: "dificil",
+      enunciado: "Una marca chilena de calzado deportivo lanzará una campaña para su nueva zapatilla de running dirigida a corredores aficionados de 25 a 40 años. Dispone de un presupuesto acotado.\n\na) Defina el público objetivo y el objetivo de comunicación de la campaña (¿informar, persuadir o recordar?), justificando.\n\nb) Desarrolle la estrategia creativa: proponga el mensaje o promesa central, el tono y una idea de ejecución coherentes con el público.\n\nc) Proponga un plan de medios con dos (2) medios pertinentes al público y al presupuesto, justificando su elección con los conceptos de alcance y frecuencia, e incluya un (1) medio ganado.",
+      respuestaModelo: "a) Público objetivo: hombres y mujeres de 25 a 40 años, corredores aficionados urbanos, activos, que entrenan regularmente, siguen su rendimiento y buscan mejorar; valoran la funcionalidad (amortiguación, liviandad) y el estilo. Objetivo de comunicación: como es una zapatilla nueva (lanzamiento), el objetivo principal es informar y persuadir: dar a conocer el producto y sus beneficios diferenciales y generar preferencia/prueba. La publicidad recordatoria sería para productos maduros; aquí, al ser nuevo, primero hay que instalar conocimiento y convencer.\n\nb) Estrategia creativa:\n- Mensaje/promesa central: \"la zapatilla que te impulsa a superar tu propia marca\" — beneficio de rendimiento y superación personal, relevante para el corredor aficionado.\n- Tono: inspirador, cercano y auténtico (no elitista): mostrar corredores reales, no solo atletas de élite, para que el público se identifique.\n- Idea de ejecución: piezas que sigan a corredores comunes en sus rutas urbanas al amanecer, destacando cómo la zapatilla los acompaña en su progreso, con mensajes de superación y datos de la tecnología del producto. Coherente con la motivación del público (mejorar, sentirse capaz).\n\nc) Plan de medios (presupuesto acotado, público joven-adulto digital):\n1) Redes sociales y publicidad digital segmentada (Instagram, YouTube, apps de running): permiten gran alcance dentro del público exacto a bajo costo y buena frecuencia gracias a la segmentación precisa (edad, intereses: running, fitness), evitando gastar en audiencias irrelevantes. Alto retorno con presupuesto acotado.\n2) Marketing con creadores de contenido / referentes de running (medio que combina pagado y ganado): microinfluencers del mundo runner dan credibilidad y frecuencia con audiencias afines.\nMedio ganado: cobertura y recomendación espontánea: buscar que la campaña y el producto generen conversación, reseñas de usuarios y menciones en comunidades de running (clubes, grupos), amplificando el alcance sin costo adicional. Así se maximizan alcance y frecuencia útil en el público correcto, cuidando el presupuesto.",
+      criterios: [
+        { texto: "a) Define el público objetivo y justifica el objetivo de comunicación (informar/persuadir en un lanzamiento)", peso: 3 },
+        { texto: "b) Desarrolla la estrategia creativa (mensaje/promesa, tono, ejecución) coherente con el público", peso: 4 },
+        { texto: "c) Propone un plan de medios con dos medios pertinentes usando alcance y frecuencia, e incluye un medio ganado", peso: 3 }
+      ],
+      erroresComunes: [
+        "Elegir el objetivo de recordar para un producto nuevo que aún nadie conoce",
+        "Proponer una ejecución creativa incoherente con la motivación del público",
+        "Elegir medios masivos costosos que no calzan con el público ni con el presupuesto acotado"
+      ]
+    },
+    {
+      id: "mkt-101",
+      tema: "Caso integrador: innovación y difusión (cruce del abismo)",
+      dificultad: "dificil",
+      enunciado: "Una startup chilena de tecnología lanzó una app de gestión financiera con inteligencia artificial. Los primeros usuarios (entusiastas de la tecnología) la adoptaron con rapidez, pero el crecimiento se estancó al intentar llegar al público masivo.\n\na) Explique la teoría de difusión de innovaciones y las categorías de adoptantes (innovadores, adoptadores tempranos, mayoría temprana, mayoría tardía, rezagados), ubicando en qué punto está la app.\n\nb) Explique el concepto del \"abismo\" (chasm) entre los adoptadores tempranos y la mayoría temprana, y por qué el crecimiento se estancó.\n\nc) Proponga tres (3) acciones de marketing para \"cruzar el abismo\" y llegar a la mayoría temprana, considerando qué valora ese grupo (a diferencia de los entusiastas).",
+      respuestaModelo: "a) La difusión de innovaciones (Rogers) describe cómo un nuevo producto se propaga en el mercado a través de grupos que adoptan en distintos momentos según su actitud ante la novedad y el riesgo:\n- Innovadores: entusiastas de la tecnología, primeros en probar, toleran fallas.\n- Adoptadores tempranos: líderes de opinión que adoptan pronto buscando ventaja.\n- Mayoría temprana: pragmáticos, adoptan cuando el producto está probado y hay referencias.\n- Mayoría tardía: escépticos, adoptan por presión o cuando es estándar.\n- Rezagados: últimos, reacios al cambio.\nLa app está entre los innovadores y adoptadores tempranos (los entusiastas ya la usan), pero no logra pasar a la mayoría temprana.\n\nb) El \"abismo\" (chasm) es la brecha crítica entre los adoptadores tempranos y la mayoría temprana, donde muchos productos innovadores se estancan o fracasan. Ocurre porque ambos grupos son muy distintos: los tempranos son visionarios que se entusiasman con la novedad y la tecnología en sí y toleran imperfecciones; la mayoría temprana son pragmáticos que NO compran por la tecnología, sino por soluciones probadas, confiables, fáciles de usar y con respaldo y referencias. El crecimiento se estancó porque lo que atrajo a los entusiastas (ser novedoso y sofisticado) no convence al público masivo, que necesita confianza, simplicidad y utilidad clara.\n\nc) Acciones para cruzar el abismo hacia la mayoría temprana:\n1) Simplificar y enfocar el producto en un beneficio claro y concreto: comunicar la utilidad práctica (\"ordena tus finanzas y ahorra sin esfuerzo\") en vez de la sofisticación de la IA, y hacer la app muy fácil de usar; la mayoría valora la solución, no la tecnología.\n2) Construir confianza y prueba social: testimonios de usuarios comunes, casos de éxito, reseñas, seguridad de los datos, respaldo o alianzas (bancos, medios), y garantías; los pragmáticos necesitan referencias y bajo riesgo.\n3) Enfocarse en un segmento/nicho pragmático específico y dominarlo (ej.: jóvenes profesionales que quieren ahorrar), entregando una solución completa para ese caso de uso, generando boca a boca dentro del grupo y expandiéndose desde ahí. También reducir la fricción de entrada (versión gratuita, onboarding guiado). El foco es pasar del discurso \"tecnología innovadora\" al discurso \"solución confiable y fácil que ya usan personas como tú\".",
+      criterios: [
+        { texto: "a) Explica la difusión de innovaciones y las categorías de adoptantes, ubicando la app", peso: 3 },
+        { texto: "b) Explica el abismo entre adoptadores tempranos y mayoría temprana y por qué se estancó el crecimiento", peso: 3 },
+        { texto: "c) Propone tres acciones para cruzar el abismo coherentes con lo que valora la mayoría temprana", peso: 4 }
+      ],
+      erroresComunes: [
+        "Confundir las categorías de adoptantes o su orden",
+        "No entender que la mayoría temprana valora soluciones probadas, no la tecnología en sí",
+        "Proponer seguir comunicando la sofisticación tecnológica que atrajo a los entusiastas"
+      ]
+    },
+    {
+      id: "mkt-102",
+      tema: "Caso integrador: pricing y percepción de valor en servicios",
+      dificultad: "dificil",
+      enunciado: "\"ZEN\" es una cadena chilena de estudios de yoga y bienestar. Compite con apps de ejercicio baratas y con gimnasios. Quiere fijar sus precios de forma que reflejen el valor de la experiencia presencial y la comunidad, sin ahuyentar a clientes nuevos.\n\na) Explique por qué fijar precios en servicios es más complejo que en bienes (intangibilidad, rol de la percepción y de la evidencia física) y qué método de fijación de precios recomienda para ZEN.\n\nb) Proponga una estructura de precios con al menos dos (2) opciones (por ejemplo: plan mensual, pase individual, membresía premium) que atienda distinta sensibilidad al precio y facilite la prueba de nuevos clientes.\n\nc) Proponga dos (2) acciones para reforzar la percepción de valor que justifique el precio (evidencia física, experiencia, comunidad).",
+      respuestaModelo: "a) Fijar precios en servicios es más complejo que en bienes porque el servicio es intangible: el cliente no puede evaluar su calidad antes de consumirlo, por lo que el precio mismo se convierte en una señal de calidad (un precio muy bajo puede leerse como servicio de baja calidad, y uno coherente con la experiencia comunica valor). Además, el valor depende de la percepción y de la experiencia (ambiente, instructores, comunidad) y no de un costo de materiales claro; y la evidencia física (el estudio, su ambientación) ayuda a justificar el precio al hacer tangible la calidad. Por eso, el método recomendado para ZEN es la fijación basada en el valor percibido: el precio debe reflejar la experiencia presencial, la guía profesional y la comunidad —lo que las apps baratas no ofrecen—, y no fijarse solo por costos ni por igualar a la app.\n\nb) Estructura de precios con varias opciones (para distinta sensibilidad y para facilitar la prueba):\n1) Clase individual (pase suelto) y clase de prueba gratuita o a precio bajo: baja la barrera de entrada para el cliente nuevo o sensible al precio y permite \"probar\" el servicio intangible antes de comprometerse.\n2) Plan mensual ilimitado: para el cliente habitual, mejor valor por asistencia frecuente, fomentando la recurrencia.\n3) Membresía premium: incluye beneficios exclusivos (workshops, acceso prioritario, contenido, comunidad), capturando al segmento que valora más y está dispuesto a pagar (poco sensible al precio).\nEsta estructura (versiones bueno-mejor-óptimo) segmenta por disposición a pagar y facilita convertir a los nuevos desde la prueba hacia planes recurrentes.\n\nc) Acciones para reforzar la percepción de valor:\n1) Evidencia física y experiencia: cuidar el espacio (ambientación, limpieza, aromas, música), instructores certificados y un servicio impecable, de modo que el cliente perciba calidad tangible que justifica pagar más que una app.\n2) Comunidad y pertenencia: crear comunidad (eventos, grupos, seguimiento personalizado, logros compartidos) que las apps no pueden replicar; el sentido de pertenencia y el acompañamiento son el valor diferencial que sostiene el precio y fideliza. Comunicar estos atributos hace que el precio se perciba como justo por el valor entregado.",
+      criterios: [
+        { texto: "a) Explica por qué el pricing en servicios es más complejo (intangibilidad, percepción, evidencia física) y recomienda fijación por valor", peso: 3 },
+        { texto: "b) Propone una estructura de precios con al menos dos opciones que atiende distinta sensibilidad y facilita la prueba", peso: 4 },
+        { texto: "c) Propone dos acciones que refuerzan la percepción de valor (experiencia, comunidad)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Recomendar competir por precio igualando a las apps baratas, destruyendo el valor percibido",
+        "Ofrecer un único precio sin opciones para distinta sensibilidad ni prueba",
+        "No conectar la percepción de valor con la experiencia y la comunidad (diferencial del servicio presencial)"
+      ]
+    },
+    {
+      id: "mkt-103",
+      tema: "Caso integrador: co-creación de marca y comunidad de clientes",
+      dificultad: "dificil",
+      enunciado: "\"LOCAL\" es una marca chilena de indumentaria urbana con una base de seguidores muy fiel en redes sociales. Quiere crecer profundizando el vínculo con su comunidad y convirtiéndola en motor de marca.\n\na) Explique los conceptos de comunidad de marca y co-creación, y por qué una comunidad fiel es un activo de marketing valioso (relación con lealtad, boca a boca y valor de marca).\n\nb) Proponga dos (2) acciones concretas de co-creación con la comunidad (por ejemplo: participación en diseño, contenido generado por usuarios, ediciones colaborativas) y su beneficio.\n\nc) Analice un (1) riesgo de involucrar a la comunidad en las decisiones de marca y cómo lo gestionaría.",
+      respuestaModelo: "a) Una comunidad de marca es un grupo de consumidores que comparten identificación con la marca y se relacionan entre sí en torno a ella (en redes, eventos, grupos), sintiéndose parte de algo. La co-creación es involucrar a esos consumidores en la creación de valor: aportar ideas, diseñar, generar contenido o decidir sobre productos junto a la marca. Una comunidad fiel es un activo valioso porque: fortalece la lealtad y el sentido de pertenencia (los miembros recompran y defienden la marca), potencia el boca a boca y la prueba social (los seguidores recomiendan y difunden, reduciendo el costo de captación) y aumenta el valor de marca (brand equity) mediante asociaciones positivas y engagement; además, entrega información directa sobre lo que el cliente quiere. En síntesis, convierte a los clientes en embajadores y coproductores.\n\nb) Acciones de co-creación:\n1) Participación en el diseño / ediciones colaborativas: invitar a la comunidad a votar o proponer diseños, colores o colaboraciones, y lanzar ediciones limitadas creadas con ellos. Beneficio: productos con alta aceptación asegurada (ya los validó la comunidad), mayor vínculo emocional (\"esto lo hicimos juntos\") y expectativa/deseo por el lanzamiento.\n2) Contenido generado por usuarios (UGC): incentivar a los seguidores a compartir fotos usando la marca, con concursos o destacándolos en los canales oficiales. Beneficio: contenido auténtico y masivo a bajo costo, prueba social poderosa y mayor alcance y pertenencia. (También válidas: programa de embajadores, comunidad/club con beneficios, eventos.)\n\nc) Riesgo de involucrar a la comunidad: pérdida de control sobre la marca y posibles conflictos: la comunidad puede pedir direcciones incoherentes con la identidad o los recursos de la marca, generar expectativas que no se cumplen, o reaccionar negativamente si se sienten \"usados\" o si sus aportes se ignoran; también el contenido de usuarios puede ser inapropiado. Cómo gestionarlo: definir reglas y un marco claro de participación (qué se co-crea y qué no), mantener la coherencia con la identidad y valores de la marca como filtro, comunicar con transparencia las decisiones (agradecer y explicar por qué se elige o no una propuesta) y moderar el contenido. Así se aprovecha la energía de la comunidad sin perder el rumbo estratégico de la marca.",
+      criterios: [
+        { texto: "a) Explica comunidad de marca y co-creación y por qué una comunidad fiel es un activo (lealtad, boca a boca, valor de marca)", peso: 3 },
+        { texto: "b) Propone dos acciones concretas de co-creación con su beneficio", peso: 4 },
+        { texto: "c) Analiza un riesgo de involucrar a la comunidad y cómo gestionarlo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir comunidad de marca con simple base de seguidores pasivos",
+        "Proponer acciones de comunicación unidireccional en vez de co-creación real",
+        "Ignorar el riesgo de perder control o coherencia de marca al abrir decisiones a la comunidad"
+      ]
+    },
+    {
+      id: "mkt-104",
+      tema: "Caso integrador: plan de marketing para un emprendimiento chileno (STP, mezcla y métricas)",
+      dificultad: "dificil",
+      enunciado: "\"MASA\" es un emprendimiento chileno que quiere lanzar una panadería-café de masa madre, con productos artesanales y espacio para trabajar, partiendo con un local en una comuna urbana. Le piden esbozar un plan de marketing coherente.\n\na) Aplique el proceso STP: defina un segmento objetivo (con las variables relevantes), la estrategia de targeting y una declaración de posicionamiento para MASA.\n\nb) Diseñe la mezcla de marketing (al menos producto, precio, plaza y promoción) coherente con el posicionamiento, con una decisión concreta en cada P.\n\nc) Proponga un (1) objetivo de marketing y dos (2) métricas (KPIs) para evaluar el éxito del lanzamiento, coherentes con el objetivo.",
+      respuestaModelo: "a) Proceso STP para MASA:\n- Segmentación y segmento objetivo: geográfica → residentes y trabajadores de la comuna urbana y aledañas, con flujo peatonal y oficinas/cowork; demográfica → adultos jóvenes y profesionales de 25 a 45 años, ingreso medio y medio-alto; psicográfica → estilo de vida urbano, valoran lo artesanal, saludable, local y con identidad, y buscan ambientes para trabajar/reunirse; conductual → buscan calidad y experiencia por sobre precio bajo, con potencial de visita frecuente (desayuno, pausa laboral).\n- Targeting: estrategia concentrada/de nicho al inicio (foco en ese segmento local que valora la masa madre artesanal y el espacio para trabajar), coherente con un emprendimiento de recursos limitados y un solo local.\n- Declaración de posicionamiento: \"Para quienes valoran el pan y el café auténticos y buscan un lugar cálido para trabajar o reunirse (público objetivo), MASA es la panadería-café de masa madre (categoría) que ofrece productos artesanales de calidad en un ambiente acogedor (beneficio diferencial), gracias a su elaboración lenta y natural y un espacio pensado para quedarse (razón para creer)\". Base: por atributo/beneficio y por uso/ocasión.\n\nb) Mezcla de marketing coherente:\n- Producto: panes de masa madre y pastelería artesanal + café de especialidad; decisión concreta: carta acotada y de alta calidad, con opciones para llevar y para consumir en el local (y alternativas veganas/sin gluten para ampliar ocasiones).\n- Precio: fijación basada en el valor percibido, precio medio-alto acorde a lo artesanal; decisión: precios que reflejen la calidad (sin competir con panadería industrial), con combos de desayuno para incentivar el ticket.\n- Plaza: canal directo en el local físico bien ubicado (flujo peatonal), complementado con despacho por app y ventas por encargo; decisión: local como centro de la experiencia + presencia en apps de delivery para alcance.\n- Promoción: marketing digital local (Instagram con contenido del proceso artesanal), inauguración con degustación, y programa de cliente frecuente; decisión concreta: campaña de lanzamiento en redes segmentada a la comuna + clase/degustación de masa madre para generar prueba y boca a boca.\n\nc) Objetivo de marketing (ejemplo): \"alcanzar X clientes recurrentes y un ticket promedio Y en los primeros 6 meses\" o \"posicionar a MASA como referente de masa madre en la comuna\". Métricas (KPIs):\n1) Ventas y ticket promedio (y su evolución mensual): mide crecimiento y si la estrategia de valor eleva el gasto.\n2) Tasa de clientes recurrentes / frecuencia de visita (vía programa de fidelización) y/o NPS: mide fidelización y satisfacción, claves para un negocio de recurrencia. (También válidas: costo de adquisición vs. valor del cliente, seguidores y engagement, participación de recompra.) Los KPIs deben ser coherentes con el objetivo elegido y permitir ajustar la estrategia.",
+      criterios: [
+        { texto: "a) Aplica STP: define segmento con variables, estrategia de targeting y una declaración de posicionamiento coherente", peso: 4 },
+        { texto: "b) Diseña la mezcla de marketing (4P) con una decisión concreta por P, coherente con el posicionamiento", peso: 4 },
+        { texto: "c) Propone un objetivo de marketing y dos KPIs coherentes con él", peso: 2 }
+      ],
+      erroresComunes: [
+        "Definir la mezcla de marketing incoherente con el posicionamiento (ej.: precio bajo para una propuesta artesanal premium)",
+        "Saltarse alguna etapa del STP o confundir segmentación con posicionamiento",
+        "Proponer KPIs que no se relacionan con el objetivo planteado"
+      ]
     }
   ]
 });

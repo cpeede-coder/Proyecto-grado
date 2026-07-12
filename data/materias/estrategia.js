@@ -824,7 +824,1155 @@ window.BANCO.materias.push({
         "Recomendar a Cielos del Sur 'mejorar un poco todo' o mantener su posición intermedia, sin comprometerse con una estrategia genérica clara",
         "Omitir las barreras de movilidad o el análisis del ciclo de vida, respondiendo solo con teoría general"
       ]
-    }
+    },
+
+    // ================= PREGUNTAS NUEVAS (est-043 a est-104) =================
+
+    // ---- FÁCIL (est-043 a est-054) ----
+
+    {
+      id: "est-043",
+      tema: "U1. Dimensiones de la estrategia empresarial",
+      dificultad: "facil",
+      enunciado: "Explique cuatro (4) de las principales dimensiones de la estrategia empresarial (temporal, competitiva, organizacional, económica y dinámica), indicando qué aporta cada una a la comprensión de la estrategia. Concluya por qué la estrategia no puede reducirse solo a la dimensión económica de corto plazo.",
+      respuestaModelo: "La estrategia es un fenómeno multidimensional. Sus principales dimensiones son:\n\n1) Dimensión temporal: la estrategia tiene un enfoque de largo plazo y considera distintos horizontes de tiempo y la evolución futura del entorno. Aporta la mirada anticipatoria: no se decide solo para hoy, sino proyectando el futuro.\n\n2) Dimensión competitiva: define cómo competir en una industria; incluye el posicionamiento, la ventaja competitiva y la diferenciación frente a rivales. Aporta el foco en ser distinto y superior a los competidores.\n\n3) Dimensión organizacional: alinea recursos, capacidades, estructura y cultura; recuerda que la ejecución es tan relevante como la formulación ('no existe estrategia sin ejecución').\n\n4) Dimensión económica: busca la creación de valor y la rentabilidad, evaluando costos, ingresos y eficiencia en el uso de recursos.\n\n5) Dimensión dinámica: la estrategia no es estática; requiere monitoreo, aprendizaje y ajustes constantes ante los cambios del entorno.\n\nLa estrategia no puede reducirse a la dimensión económica de corto plazo porque una utilidad inmediata sin ventaja competitiva sostenible, sin coherencia organizacional ni adaptación al entorno no asegura desempeño superior en el tiempo; la creación de valor de largo plazo exige integrar todas las dimensiones.",
+      criterios: [
+        { texto: "Explica correctamente cuatro dimensiones de la estrategia con su aporte respectivo", peso: 4 },
+        { texto: "Distingue claramente la dimensión temporal (largo plazo) de la competitiva (cómo competir)", peso: 1 },
+        { texto: "Concluye por qué la estrategia no se reduce a la dimensión económica de corto plazo (integración de dimensiones y sostenibilidad)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir las dimensiones de la estrategia con los niveles corporativo/competitivo/funcional",
+        "Reducir la estrategia a un objetivo financiero de corto plazo, ignorando la ejecución y la adaptación"
+      ]
+    },
+
+    {
+      id: "est-044",
+      tema: "U3. Barreras de entrada y amenaza de nuevos entrantes",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "En el marco del análisis de las 5 Fuerzas de Porter, explique qué es una barrera de entrada y su relación con la amenaza de nuevos entrantes. Describa cuatro (4) tipos de barreras de entrada y explique cómo cada una protege la rentabilidad de las empresas ya instaladas.",
+      respuestaModelo: "Una barrera de entrada es todo factor que dificulta o encarece el ingreso de nuevas empresas a una industria. Su relación con la amenaza de nuevos entrantes es inversa: mientras más altas las barreras, menor es la amenaza de entrada y mayor la protección de la rentabilidad de las empresas instaladas.\n\nCuatro tipos de barreras de entrada:\n1) Economías de escala: las empresas establecidas producen a gran volumen con costos unitarios menores; un entrante debe ingresar a gran escala (riesgoso) o aceptar costos más altos. Protege porque el nuevo entrante parte en desventaja de costos.\n2) Diferenciación de producto y lealtad de marca: los clientes prefieren marcas conocidas; el entrante debe invertir fuertemente para ganar reconocimiento. Protege elevando el costo de captar clientes.\n3) Requerimientos de capital: industrias que exigen alta inversión inicial (plantas, tecnología, publicidad) disuaden a entrantes con menos recursos.\n4) Acceso a canales de distribución: si los canales están copados o vinculados a los incumbentes, el entrante tiene dificultad para llegar al cliente. También son válidas las regulaciones gubernamentales (licencias, permisos) y los costos de cambio del cliente.\n\nEn conjunto, las barreras altas reducen la amenaza de entrada, permitiendo que las empresas instaladas sostengan precios y márgenes más altos.",
+      criterios: [
+        { texto: "Define barrera de entrada y su relación inversa con la amenaza de nuevos entrantes", peso: 2 },
+        { texto: "Describe cuatro tipos de barreras de entrada correctas (escala, diferenciación, capital, canales, regulación)", peso: 3 },
+        { texto: "Explica cómo las barreras protegen la rentabilidad de las empresas instaladas", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir barreras de entrada con barreras de salida",
+        "Nombrar las barreras sin explicar cómo protegen la rentabilidad de los incumbentes"
+      ]
+    },
+
+    {
+      id: "est-045",
+      tema: "U3. Amenaza de sustitutos y su distinción de la rivalidad directa",
+      dificultad: "facil",
+      enunciado: "Explique qué es la amenaza de productos sustitutos dentro del modelo de las 5 Fuerzas de Porter y distíngala claramente de la rivalidad entre competidores directos. Indique dos (2) factores que determinan la intensidad de esta amenaza y entregue un ejemplo de sustituto para una industria a su elección.",
+      respuestaModelo: "La amenaza de productos sustitutos evalúa la existencia de productos o servicios que satisfacen la misma necesidad del cliente, pero desde una categoría distinta. Limita el precio y la rentabilidad de la industria, porque si el producto principal sube demasiado de precio, el cliente migra al sustituto.\n\nDistinción con la rivalidad directa: los competidores directos ofrecen el mismo tipo de producto dentro de la misma industria (por ejemplo, dos aerolíneas), mientras que el sustituto proviene de otra categoría que resuelve la misma necesidad (por ejemplo, una videollamada frente a un viaje de negocios). Confundirlos lleva a subestimar amenazas que no vienen de los rivales evidentes.\n\nDos factores que determinan su intensidad: (1) la relación precio-calidad del sustituto (mientras mejor sea esta relación, mayor la amenaza); (2) los costos de cambio del cliente (si son bajos, es más fácil que el cliente adopte el sustituto). También influye la disponibilidad de alternativas.\n\nEjemplo: para la industria del café de cafetería, un sustituto es preparar café de calidad en casa con métodos accesibles; para el cine, las plataformas de streaming.",
+      criterios: [
+        { texto: "Define la amenaza de sustitutos como productos de otra categoría que satisfacen la misma necesidad y limitan precios", peso: 2 },
+        { texto: "Distingue correctamente sustituto (otra categoría) de competidor directo (misma industria)", peso: 2 },
+        { texto: "Indica dos factores de intensidad (precio-calidad del sustituto, costos de cambio) y da un ejemplo pertinente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Tratar a los competidores directos como si fueran sustitutos",
+        "No mencionar los costos de cambio ni la relación precio-calidad del sustituto"
+      ]
+    },
+
+    {
+      id: "est-046",
+      tema: "U2. Necesidad de crecimiento de la empresa",
+      dificultad: "facil",
+      enunciado: "Explique por qué las empresas tienen necesidad de crecer y describa tres (3) motivos estratégicos que justifican el crecimiento. Finalmente, explique por qué el crecimiento solo es estratégicamente válido si crea valor.",
+      respuestaModelo: "Las empresas necesitan crecer para sostener o aumentar su competitividad en el tiempo. El estancamiento suele traducirse en pérdida de posición relativa frente a competidores que sí crecen.\n\nTres motivos estratégicos del crecimiento:\n1) Mantener o aumentar la rentabilidad y aprovechar economías de escala y de ámbito: al crecer, la empresa distribuye costos fijos en más unidades y comparte recursos entre negocios.\n2) Enfrentar una mayor competencia y responder a cambios tecnológicos y del entorno: el tamaño otorga poder de negociación y capacidad de inversión para adaptarse.\n3) Reducir riesgos asociados a la dependencia de un solo negocio o mercado: diversificar fuentes de ingreso disminuye la vulnerabilidad ante shocks de una industria.\n\nSin embargo, el crecimiento solo es estratégicamente válido si crea valor: crecer por crecer (más grande) no garantiza más rentabilidad. Un crecimiento incoherente con la misión y las capacidades genera costos de coordinación, burocracia y problemas de agencia que destruyen valor. 'Más grande no siempre es mejor; más coherente sí': el crecimiento debe apoyarse en sinergias reales y coherencia estratégica.",
+      criterios: [
+        { texto: "Explica la necesidad de crecer y el riesgo de no crecer (pérdida de competitividad)", peso: 2 },
+        { texto: "Describe tres motivos estratégicos del crecimiento (escala/ámbito, competencia/adaptación, reducción de riesgo)", peso: 2 },
+        { texto: "Argumenta que el crecimiento solo es válido si crea valor (coherencia y sinergias, riesgos de crecer sin foco)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Afirmar que crecer siempre es positivo, sin considerar la creación de valor",
+        "Confundir crecimiento (más tamaño) con diversificación (nuevos negocios) sin distinguirlos"
+      ]
+    },
+
+    {
+      id: "est-047",
+      tema: "U4. Creación de valor: eficiencia y eficacia",
+      dificultad: "facil",
+      enunciado: "Defina qué significa crear valor estratégico y presente la fórmula del valor económico (disposición a pagar y costo). Distinga entre eficiencia y eficacia, y explique por qué la creación de valor sostenible exige ambas.",
+      respuestaModelo: "Crear valor estratégico significa generar beneficios percibidos por el cliente superiores a los costos incurridos para producirlos, de manera consistente y sostenible. El valor se crea cuando el cliente está dispuesto a pagar más de lo que a la empresa le cuesta producir el bien o servicio.\n\nLa fórmula del valor económico es: Valor económico = Disposición a pagar del cliente (DAP) − Costo de la empresa. La estrategia funcional busca maximizar esta diferencia, ya sea aumentando la DAP (diferenciación) o reduciendo el costo (eficiencia).\n\nDistinción:\n- Eficiencia: hacer las cosas bien, con el menor costo o el mejor uso de recursos.\n- Eficacia: hacer las cosas correctas, es decir, las alineadas con la estrategia y el posicionamiento.\n\nLa creación de valor sostenible exige ambas: una empresa muy eficiente pero que hace lo incorrecto (mal alineada con la estrategia) desperdicia recursos en la dirección equivocada; una empresa eficaz pero ineficiente hace lo correcto a un costo insostenible. Solo combinando eficiencia (menor costo) y eficacia (foco estratégico) se maximiza el valor económico de forma sostenible.",
+      criterios: [
+        { texto: "Define creación de valor y presenta la fórmula valor económico = DAP − costo", peso: 2 },
+        { texto: "Distingue correctamente eficiencia (hacer bien, menor costo) de eficacia (hacer lo correcto, alineado a la estrategia)", peso: 2 },
+        { texto: "Explica por qué la creación de valor sostenible requiere ambas simultáneamente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Usar eficiencia y eficacia como sinónimos",
+        "Definir la creación de valor solo como reducción de costos, omitiendo la disposición a pagar"
+      ]
+    },
+
+    {
+      id: "est-048",
+      tema: "U3. Poder de negociación de proveedores y clientes",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "Dentro del modelo de las 5 Fuerzas de Porter, explique en qué consisten el poder de negociación de los proveedores y el poder de negociación de los clientes. Indique dos (2) factores que aumentan cada uno de estos poderes y explique cómo afectan la rentabilidad de la empresa.",
+      respuestaModelo: "El poder de negociación de los proveedores es la capacidad de los proveedores para influir en los precios, la calidad o las condiciones de los insumos que venden a la industria. El poder de negociación de los clientes es la capacidad de los compradores para presionar precios y condiciones a la baja.\n\nFactores que aumentan el poder de los proveedores: (1) existen pocos proveedores o están concentrados; (2) no hay sustitutos para el insumo o el proveedor puede integrarse hacia adelante. Cuando el proveedor es poderoso, captura parte del margen (sube precios de insumos), reduciendo la rentabilidad de la empresa.\n\nFactores que aumentan el poder de los clientes: (1) compran grandes volúmenes o están concentrados; (2) los productos están poco diferenciados, hay muchos sustitutos y los costos de cambio son bajos. Cuando el cliente es poderoso, exige menores precios y mejores condiciones, presionando los márgenes de la empresa.\n\nEn ambos casos, un poder de negociación alto en cualquiera de los dos extremos de la cadena transfiere valor fuera de la empresa y reduce su rentabilidad potencial.",
+      criterios: [
+        { texto: "Define el poder de negociación de proveedores y de clientes correctamente", peso: 2 },
+        { texto: "Indica dos factores que aumentan el poder de los proveedores y dos que aumentan el de los clientes", peso: 2 },
+        { texto: "Explica cómo cada poder reduce la rentabilidad de la empresa (transferencia de valor/presión de márgenes)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir los factores que dan poder a proveedores con los que dan poder a clientes",
+        "No conectar el poder de negociación con el efecto sobre la rentabilidad"
+      ]
+    },
+
+    {
+      id: "est-049",
+      tema: "U2. Fusión y adquisición: definición y diferencias",
+      dificultad: "facil",
+      enunciado: "Defina qué es una fusión y qué es una adquisición como mecanismos de crecimiento externo, señalando la diferencia clave entre ambas. Indique dos (2) motivaciones estratégicas de las F&A y por qué su crecimiento no garantiza la creación de valor.",
+      respuestaModelo: "Las fusiones y adquisiciones (F&A) son mecanismos de crecimiento externo mediante los cuales una empresa expande o reestructura sus actividades combinándose con otra organización o comprándola.\n\nFusión: combinación de dos o más empresas en una nueva entidad; las empresas originales dejan de existir como entidades separadas.\nAdquisición: una empresa compra el control de otra, que puede seguir existiendo legalmente; la empresa adquiriente mantiene el control estratégico.\nLa diferencia clave está en la entidad resultante: en la fusión nace una nueva empresa y desaparecen las originales; en la adquisición una empresa absorbe el control de otra que puede subsistir.\n\nDos motivaciones estratégicas: (1) crear valor mediante sinergias operativas, economías de escala y de ámbito y reducción de costos; (2) ganar poder de mercado o acceder a recursos estratégicos (tecnología, marca, I+D) y entrar rápido a nuevos mercados.\n\nEl crecimiento vía F&A no garantiza creación de valor porque las principales fallas ocurren en la integración: sobreestimación de sinergias, choques culturales, problemas de coordinación y costos de agencia. Por eso el objetivo (que el valor conjunto supere la suma individual) solo se logra si las sinergias son reales y la integración se ejecuta bien.",
+      criterios: [
+        { texto: "Define fusión (nueva entidad, desaparecen las originales) y adquisición (compra de control, la otra puede subsistir)", peso: 2 },
+        { texto: "Señala la diferencia clave entre ambas", peso: 1 },
+        { texto: "Indica dos motivaciones estratégicas de las F&A", peso: 2 },
+        { texto: "Explica por qué el crecimiento vía F&A no garantiza valor (fallas de integración, sobreestimación de sinergias)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Usar fusión y adquisición como sinónimos, sin distinguir la entidad resultante",
+        "Afirmar que toda F&A crea valor, ignorando los riesgos de integración"
+      ]
+    },
+
+    {
+      id: "est-050",
+      tema: "U2. Alianzas estratégicas y joint ventures",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "Defina qué es una alianza estratégica y qué es un joint venture, señalando su diferencia. Explique dos (2) características que distinguen a las alianzas de una fusión o adquisición y una situación en que convenga preferir una alianza.",
+      respuestaModelo: "Una alianza estratégica es un acuerdo de cooperación entre dos o más empresas que comparten recursos, conocimientos o actividades, manteniendo su independencia legal. Un joint venture es una forma particular de alianza en la cual se crea una nueva empresa conjunta, mientras las empresas matrices siguen existiendo de forma independiente. La diferencia es que el joint venture implica constituir una entidad nueva compartida; la alianza en general puede no crear una entidad, sino solo un acuerdo de colaboración.\n\nDos características que distinguen a las alianzas de una fusión/adquisición: (1) menor compromiso de recursos e inversión y control compartido (no total); (2) mayor flexibilidad estratégica y riesgo moderado, con integración solo parcial en lugar de la integración compleja de una F&A. Además, las empresas conservan su independencia.\n\nConviene preferir una alianza cuando la empresa quiere acceder a un mercado, tecnología o capacidad con bajo compromiso de recursos, compartir riesgos y aprender antes de comprometerse más (por ejemplo, entrar a un mercado extranjero con regulaciones exigentes de la mano de un socio local), especialmente si una adquisición sería demasiado costosa o riesgosa (choque cultural, incertidumbre).",
+      criterios: [
+        { texto: "Define alianza estratégica (cooperación con independencia legal) y joint venture (nueva empresa conjunta) con su diferencia", peso: 2 },
+        { texto: "Explica dos características que distinguen la alianza de una F&A (menor compromiso/control compartido, flexibilidad/riesgo moderado)", peso: 2 },
+        { texto: "Identifica una situación en que convenga preferir la alianza (bajo compromiso, socio local, aprendizaje, compartir riesgos)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir joint venture (crea nueva empresa) con una fusión (desaparecen las originales)",
+        "Afirmar que la alianza da control total, cuando el control es compartido"
+      ]
+    },
+
+    {
+      id: "est-051",
+      tema: "U5. Innovación disruptiva como herramienta estratégica moderna",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste el concepto de innovación disruptiva como herramienta moderna de análisis estratégico. Describa dos (2) efectos que una disrupción puede tener sobre las empresas establecidas y entregue un ejemplo ilustrativo.",
+      respuestaModelo: "La innovación disruptiva analiza cómo nuevas tecnologías o modelos de negocio cambian las reglas competitivas de una industria. Suele comenzar atendiendo segmentos poco exigentes o desatendidos, o creando propuestas más simples y accesibles, y luego mejora hasta desplazar a las empresas establecidas.\n\nDos efectos sobre las empresas establecidas: (1) desplazamiento o pérdida de relevancia: los incumbentes, enfocados en sus clientes más rentables, subestiman al entrante disruptivo hasta que este captura el mercado (sus ventajas competitivas se vuelven obsoletas); (2) reducción de los ciclos de vida de productos y presión por innovar continuamente, ya que la disrupción acorta el tiempo durante el cual una ventaja se sostiene. La herramienta permite anticipar tanto amenazas (ser desplazado) como oportunidades (liderar la disrupción).\n\nEjemplo ilustrativo: el streaming digital que desplazó al arriendo de películas en tienda física; o la fotografía digital y luego los smartphones frente a la fotografía tradicional de rollo. En ambos casos, un nuevo modelo cambió las reglas y desplazó a los líderes establecidos que no se adaptaron a tiempo.",
+      criterios: [
+        { texto: "Explica la innovación disruptiva como nuevo modelo/tecnología que cambia las reglas competitivas (entra por segmentos desatendidos o propuestas más accesibles)", peso: 2 },
+        { texto: "Describe dos efectos sobre las empresas establecidas (desplazamiento/obsolescencia, ciclos más cortos/presión por innovar)", peso: 2 },
+        { texto: "Entrega un ejemplo ilustrativo pertinente", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir cualquier novedad o mejora incremental con una innovación disruptiva",
+        "No explicar por qué las empresas establecidas suelen reaccionar tarde"
+      ]
+    },
+
+    {
+      id: "est-052",
+      tema: "U4. Encaje estratégico y sistema de actividades",
+      dificultad: "facil",
+      enunciado: "Explique qué es el sistema de actividades de una empresa y el concepto de encaje estratégico (fit). Distinga los tres tipos de encaje (simple, de refuerzo y de optimización) y explique por qué un buen encaje hace más sostenible la ventaja competitiva.",
+      respuestaModelo: "El sistema de actividades es el conjunto de decisiones operativas de una empresa que refuerzan su posicionamiento estratégico, se complementan entre sí y resultan difíciles de imitar. La ventaja competitiva no surge de una sola actividad, sino del encaje estratégico (fit): la forma en que las actividades se coordinan y encajan entre sí.\n\nTres tipos de encaje:\n1) Encaje simple: coherencia básica entre cada actividad y la estrategia general (cada actividad apunta en la misma dirección).\n2) Encaje de refuerzo: las actividades se potencian mutuamente, de modo que cada una amplifica el efecto de las otras.\n3) Encaje de optimización: la coordinación entre actividades reduce costos o aumenta el valor, eliminando esfuerzos redundantes.\n\nUn buen encaje hace más sostenible la ventaja porque un competidor que copia una actividad aislada no reproduce el resultado: debe replicar todo el sistema y sus interacciones, lo que es mucho más difícil ('imitar no es copiar una actividad, sino todo el sistema'). Cuanto mayor el encaje, mayor la complejidad organizacional y la barrera a la imitación.",
+      criterios: [
+        { texto: "Define sistema de actividades y encaje estratégico (fit) como fuente de ventaja", peso: 2 },
+        { texto: "Distingue los tres tipos de encaje (simple, de refuerzo, de optimización)", peso: 2 },
+        { texto: "Explica por qué el encaje dificulta la imitación y sostiene la ventaja (copiar el sistema completo es difícil)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Atribuir la ventaja competitiva a una sola actividad destacada y no al sistema",
+        "Confundir el encaje estratégico con la simple eficiencia operativa de una actividad"
+      ]
+    },
+
+    {
+      id: "est-053",
+      tema: "U2. Tipología de recursos en el enfoque basado en recursos (RBV)",
+      dificultad: "facil",
+      enunciado: "En el marco del enfoque basado en recursos (RBV), distinga entre recursos y capacidades. Clasifique los recursos en tangibles, intangibles y humanos con un ejemplo de cada uno, y explique por qué los recursos por sí solos no garantizan ventaja competitiva.",
+      respuestaModelo: "El enfoque basado en recursos (RBV) plantea que la ventaja competitiva se origina principalmente al interior de la empresa, porque las empresas son heterogéneas: no todas poseen los mismos recursos y capacidades, aun compitiendo en la misma industria.\n\nDistinción:\n- Recursos: son los activos que la empresa controla y que le permiten implementar su estrategia.\n- Capacidades: son la habilidad de la empresa para coordinar y combinar esos recursos de manera eficiente; surgen del uso repetido, la experiencia y la cultura organizacional.\n\nClasificación de recursos:\n- Tangibles: activos físicos y financieros. Ejemplo: maquinaria, infraestructura, capital.\n- Intangibles: activos no físicos. Ejemplo: marca, reputación, patentes, cultura organizacional.\n- Humanos: habilidades, experiencia, talento y liderazgo de las personas. Ejemplo: un equipo técnico altamente calificado.\n\nLos recursos por sí solos no garantizan ventaja competitiva porque su valor depende de cómo se combinan y explotan: sin capacidades que los coordinen y sin cumplir los criterios VRIO (valioso, raro, inimitable y explotado por la organización), un recurso puede estar subutilizado o ser fácilmente imitable. La ventaja nace desde dentro, pero requiere capacidades y organización para materializarse.",
+      criterios: [
+        { texto: "Distingue recursos (activos que controla la empresa) de capacidades (habilidad para combinarlos)", peso: 2 },
+        { texto: "Clasifica los recursos en tangibles, intangibles y humanos con un ejemplo de cada uno", peso: 2 },
+        { texto: "Explica por qué los recursos por sí solos no garantizan ventaja (requieren capacidades y VRIO)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir recursos con capacidades (tratar la 'capacidad de innovar' como un recurso tangible)",
+        "Afirmar que basta con poseer buenos recursos para tener ventaja competitiva"
+      ]
+    },
+
+    {
+      id: "est-054",
+      tema: "U3. Misión de la empresa como unidad de negocio",
+      dificultad: "facil",
+      enunciado: "Explique qué define la misión de una empresa entendida como unidad de negocio y en qué se diferencia de la misión corporativa. Señale tres (3) funciones estratégicas de una misión de negocio bien definida y qué ocurre cuando está mal definida.",
+      respuestaModelo: "La misión de la empresa como unidad de negocio define su propósito competitivo dentro de una industria específica: qué valor entrega al cliente, a qué segmento sirve, en qué mercado compite y qué la diferencia de sus competidores. Se diferencia de la misión corporativa en su alcance: la corporativa define en qué negocios e industrias participa la empresa (el ámbito y los límites del grupo), mientras que la de negocio se centra en cómo competir y posicionarse dentro de una industria puntual.\n\nTres funciones estratégicas de una misión de negocio bien definida:\n1) Delimita el campo de competencia y define el propósito dentro de la industria, evitando dispersiones estratégicas.\n2) Alinea los recursos y actividades hacia una propuesta de valor coherente.\n3) Orienta las decisiones de posicionamiento y da coherencia a la estrategia competitiva.\n\nCuando la misión está mal definida, la empresa genera estrategias inconsistentes: compite en todo y en nada, dispersa recursos, no logra un posicionamiento claro y su propuesta de valor pierde coherencia frente al cliente y frente a los competidores.",
+      criterios: [
+        { texto: "Define la misión de la unidad de negocio (propósito competitivo, valor, segmento, mercado, diferenciación)", peso: 2 },
+        { texto: "Diferencia la misión de negocio (cómo competir en una industria) de la corporativa (en qué industrias participar)", peso: 2 },
+        { texto: "Señala tres funciones estratégicas y qué ocurre con una misión mal definida (estrategias inconsistentes)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir la misión de negocio con la misión corporativa",
+        "Reducir la misión a un lema publicitario sin función estratégica"
+      ]
+    },
+
+    // ---- MEDIA (est-055 a est-085) ----
+
+    {
+      id: "est-055",
+      tema: "U3. Aplicación de las 5 Fuerzas a la industria del delivery de comida",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "RappiYa es una de varias aplicaciones de delivery de comida que operan en las principales ciudades de Chile. En el mercado conviven al menos cuatro plataformas grandes que compiten agresivamente con promociones y descuentos. Los restaurantes que se suman a la app pueden estar en varias plataformas a la vez y negocian comisiones. Los repartidores trabajan simultáneamente para distintas apps. Para los usuarios, cambiar de aplicación no tiene costo: comparan precios y tiempos entre apps antes de pedir. Además, muchos clientes optan por llamar directamente al restaurante o cocinar en casa.\n\na) Analice las tres (3) fuerzas competitivas que considere más intensas en esta industria, clasificando su intensidad y justificando con evidencias del caso.\n\nb) Concluya sobre el atractivo (rentabilidad potencial) de la industria del delivery y derive una implicancia estratégica para RappiYa.",
+      respuestaModelo: "a) Fuerzas más intensas:\n- Rivalidad entre competidores existentes: ALTA. Evidencia: al menos cuatro plataformas grandes compiten agresivamente con promociones y descuentos, con productos poco diferenciados. La guerra de promociones presiona márgenes.\n- Poder de negociación de los clientes (usuarios): ALTO. Evidencia: cambiar de app no tiene costo (costos de cambio bajos), comparan precios y tiempos entre apps y hay sustitutos disponibles; esto los hace muy sensibles al precio.\n- Poder de negociación de los proveedores complementarios (restaurantes y repartidores): relevante y creciente. Evidencia: los restaurantes operan en varias plataformas a la vez y negocian comisiones; los repartidores trabajan para varias apps (multi-homing), lo que reduce la exclusividad y el control de la plataforma. También es válido considerar la amenaza de sustitutos (llamar al restaurante, cocinar en casa).\n\nb) Conclusión: la industria es de bajo atractivo/rentabilidad. Combina rivalidad intensa, clientes poderosos y sensibles al precio, y baja exclusividad de restaurantes y repartidores por el multi-homing. Implicancia estratégica para RappiYa: en vez de competir solo por precio (guerra insostenible), debe crear costos de cambio y diferenciación (programa de fidelización, exclusividades con restaurantes atractivos, mejor experiencia y tiempos, integración de servicios) para reducir la comparación por precio y capturar valor de forma sostenible.",
+      criterios: [
+        { texto: "a) Analiza tres fuerzas pertinentes con intensidad y evidencias del caso (rivalidad, poder de usuarios, multi-homing de restaurantes/repartidores o sustitutos)", peso: 4 },
+        { texto: "b) Concluye fundadamente sobre el atractivo/rentabilidad de la industria integrando las fuerzas", peso: 2 },
+        { texto: "b) Deriva una implicancia estratégica pertinente para la empresa (diferenciación/costos de cambio en vez de guerra de precios)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Analizar a RappiYa como empresa en vez de la industria del delivery",
+        "Listar las cinco fuerzas de memoria sin usar las evidencias del caso ni concluir el atractivo",
+        "Ignorar el multi-homing (que restaurantes y repartidores operen en varias apps) al evaluar el poder de proveedores"
+      ]
+    },
+
+    {
+      id: "est-056",
+      tema: "U4. Cadena de valor aplicada a una empresa de servicios",
+      dificultad: "media",
+      enunciado: "Clínica Aurora es un centro de salud privado de tamaño medio que busca diferenciarse por la calidad de la atención y la experiencia del paciente, no por precio. Su gerencia quiere usar la cadena de valor para entender de dónde proviene su valor.\n\na) Explique cómo se adapta el modelo de la cadena de valor de Porter a una empresa de servicios como una clínica, identificando tres (3) actividades primarias y describiendo qué implican en este contexto.\n\nb) Identifique dos (2) actividades (primarias o de apoyo) que constituyan las principales fuentes de diferenciación para Clínica Aurora y justifique cómo cada una crea valor percibido por el paciente.",
+      respuestaModelo: "a) La cadena de valor descompone a la empresa en actividades que crean valor para el cliente; en una empresa de servicios las actividades primarias se reinterpretan porque no hay un producto físico que fabricar, sino un servicio que se produce y consume en la interacción con el cliente. Tres actividades primarias adaptadas:\n- Logística interna: gestión de insumos clínicos, disponibilidad de horas, camas, pabellones e insumos médicos (recepción y almacenamiento de fármacos y materiales).\n- Operaciones: la prestación del servicio médico en sí (consultas, diagnósticos, procedimientos, hospitalización), donde se 'produce' el valor en el contacto con el paciente.\n- Marketing y ventas: captación de pacientes, convenios con aseguradoras, agendamiento y comunicación de la propuesta de valor.\n(También válida la logística externa como coordinación de entrega/derivación y el servicio postventa como seguimiento y control posterior.)\n\nb) Actividades fuente de diferenciación:\n- Servicios (postventa/seguimiento del paciente): control post-atención, recordatorios, acompañamiento y resolución de dudas. Crea valor porque aumenta la percepción de cuidado integral y la fidelización, justificando el precio superior.\n- Gestión de recursos humanos (apoyo): selección, capacitación y trato del personal médico y de contacto. Crea valor porque en salud la experiencia depende críticamente de la competencia y calidez del equipo; un personal excelente eleva el valor percibido. (También válido el desarrollo tecnológico: equipamiento y sistemas que mejoran diagnóstico y experiencia.)\nLa coherencia entre estas actividades (operaciones de calidad, personal capacitado y seguimiento) forma un sistema difícil de imitar, alineado con la estrategia de diferenciación.",
+      criterios: [
+        { texto: "a) Explica la adaptación de la cadena de valor a servicios e identifica tres actividades primarias con su implicancia en la clínica", peso: 3 },
+        { texto: "b) Identifica dos actividades como fuentes de diferenciación (servicio, RR.HH., desarrollo tecnológico) correctamente clasificadas", peso: 2 },
+        { texto: "b) Justifica cómo cada actividad crea valor percibido por el paciente y sostiene la diferenciación", peso: 2 }
+      ],
+      erroresComunes: [
+        "Aplicar la cadena de valor solo a empresas de manufactura, sin adaptarla al servicio",
+        "Clasificar la gestión de recursos humanos o el desarrollo tecnológico como actividades primarias",
+        "Confundir la cadena de valor interna con la cadena de suministro externa"
+      ]
+    },
+
+    {
+      id: "est-057",
+      tema: "U4. Identificación de la estrategia genérica en un caso",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "MegaAhorro es una cadena de supermercados que opera locales grandes en las afueras de las ciudades, con góndolas de bodega, escasa decoración y autoservicio total. Trabaja con un surtido acotado de productos de alta rotación, negocia grandes volúmenes con proveedores, mantiene su marca propia como eje del surtido y ofrece precios sistemáticamente más bajos que la competencia. Su publicidad se centra exclusivamente en el precio.\n\na) Determine qué estrategia genérica de Porter implementa MegaAhorro, justificando con tres (3) evidencias concretas del caso.\n\nb) Explique qué tipo de actividades y trade-offs (renuncias) exige esta estrategia y por qué no podría, simultáneamente, buscar una diferenciación premium sin quedar 'atrapada en el medio'.",
+      respuestaModelo: "a) MegaAhorro implementa una estrategia de liderazgo en costos: busca ser el productor/vendedor de menor costo de la industria para ofrecer precios más bajos con márgenes razonables. Tres evidencias: (1) locales grandes en las afueras (menor costo de arriendo), góndolas de bodega y escasa decoración (bajos costos de operación); (2) surtido acotado de alta rotación y grandes volúmenes negociados con proveedores (economías de escala y poder de compra que reducen costos); (3) precios sistemáticamente más bajos y publicidad centrada solo en el precio (propuesta de valor basada en costo). El autoservicio total y la marca propia refuerzan la eficiencia.\n\nb) Esta estrategia exige actividades de alta eficiencia operativa: procesos estandarizados, control estricto de gastos, economías de escala, logística optimizada y surtido reducido. Sus trade-offs son claros: renuncia a la variedad amplia, al servicio personalizado, a la ambientación atractiva y a la ubicación céntrica de conveniencia. No podría simultáneamente buscar diferenciación premium (locales sofisticados, amplio surtido, servicio y experiencia superiores) porque esas actividades elevan los costos y son incompatibles con el sistema de bajo costo: intentar ambas la dejaría 'atrapada en el medio', sin la estructura de costos del líder ni la propuesta de valor que justifique un precio superior, obteniendo bajo desempeño. Cada estrategia genérica exige un sistema de actividades distinto con renuncias que no son combinables libremente.",
+      criterios: [
+        { texto: "a) Identifica el liderazgo en costos como estrategia genérica", peso: 2 },
+        { texto: "a) Justifica con tres evidencias concretas del caso (bajos costos operativos, escala/volumen, precios bajos y foco en precio)", peso: 3 },
+        { texto: "b) Explica las actividades y trade-offs que exige la estrategia (eficiencia, renuncia a variedad/servicio/experiencia)", peso: 2 },
+        { texto: "b) Argumenta por qué combinarla con diferenciación premium llevaría a 'atrapado en el medio'", peso: 1 }
+      ],
+      erroresComunes: [
+        "Definir liderazgo en costos como 'vender barato' sin mencionar la estructura de costos inferior",
+        "Afirmar que puede ser líder en costos y diferenciada premium a la vez sin reconocer los trade-offs",
+        "Confundir el liderazgo en costos con la estrategia de enfoque"
+      ]
+    },
+
+    {
+      id: "est-058",
+      tema: "U2. Análisis VRIO de una capacidad organizacional",
+      dificultad: "media",
+      enunciado: "Pastelería Trewa es una cadena regional cuyo principal activo es una cultura de servicio y una receta de elaboración artesanal transmitida y perfeccionada durante 25 años entre sus maestros pasteleros, quienes forman a los nuevos integrantes mediante un largo aprendizaje interno. Sus productos tienen fama de calidad constante que la competencia, que rota mucho personal y compra insumos industriales, no logra igualar. La empresa ha institucionalizado este saber en manuales, programas de formación y una estructura que premia la permanencia.\n\nAplique el modelo VRIO para evaluar si la capacidad de elaboración artesanal de Trewa constituye una fuente de ventaja competitiva sostenible, analizando cada uno de los cuatro criterios con evidencias del caso y concluyendo.",
+      respuestaModelo: "El modelo VRIO evalúa si un recurso o capacidad es fuente de ventaja competitiva sostenible según cuatro criterios: Valioso, Raro, Inimitable y explotado por la Organización.\n\n- Valioso (V): Sí. La capacidad de elaboración artesanal permite ofrecer calidad constante, atributo que sustenta la propuesta de valor y la fama de la marca; aprovecha la oportunidad de un cliente que valora la calidad y neutraliza la amenaza de competidores industriales.\n- Raro (R): Sí. El caso indica que la competencia no logra igualar la calidad constante; el saber acumulado por 25 años entre maestros pasteleros es escaso en la industria.\n- Inimitable (I): Sí. Descansa en conocimiento tácito, aprendizaje acumulado y cultura organizacional construidos durante 25 años; hay ambigüedad causal y dependencia de la trayectoria: un competidor no puede comprar ni copiar rápidamente este saber, sobre todo cuando rota mucho personal.\n- Organización (O): Sí. La empresa está organizada para explotar la capacidad: institucionalizó el saber en manuales, programas de formación y una estructura que premia la permanencia, evitando que el conocimiento se pierda.\n\nConclusión: como la capacidad cumple los cuatro criterios (V, R, I y O), constituye una fuente de ventaja competitiva sostenible. A diferencia de casos donde falla la Organización, aquí Trewa sí ha institucionalizado el recurso, por lo que la ventaja no depende solo de individuos y es defendible en el tiempo. Su prioridad es seguir protegiendo la transmisión del conocimiento y la baja rotación.",
+      criterios: [
+        { texto: "Explica los cuatro criterios VRIO (Valioso, Raro, Inimitable, Organización)", peso: 2 },
+        { texto: "Evalúa cada criterio con evidencias del caso (calidad constante, saber escaso, conocimiento tácito de 25 años, institucionalización)", peso: 4 },
+        { texto: "Concluye correctamente que cumple los cuatro criterios y por tanto es ventaja sostenible", peso: 1 }
+      ],
+      erroresComunes: [
+        "Evaluar VRIO repitiendo las definiciones sin anclarlas a las evidencias del caso",
+        "Concluir que hay ventaja sostenible cumpliendo solo V, R e I sin analizar la Organización",
+        "Confundir el recurso (insumos, recetas) con la capacidad (habilidad de elaborar con calidad constante)"
+      ]
+    },
+
+    {
+      id: "est-059",
+      tema: "U3. Mapa de grupos estratégicos en la industria hotelera",
+      dificultad: "media",
+      enunciado: "En la industria hotelera de una ciudad turística conviven: grandes cadenas internacionales de lujo (alto precio, servicio completo, marca global); hoteles boutique de diseño (precio medio-alto, experiencia única, pocas habitaciones); hostales y alojamientos económicos (precio bajo, servicios mínimos, alta rotación); y plataformas de arriendo entre particulares.\n\na) Proponga dos (2) variables estratégicas pertinentes para construir un mapa de grupos estratégicos de esta industria y describa los grupos que se forman.\n\nb) Explique por qué la rivalidad es más intensa dentro de cada grupo que entre grupos e identifique dos (2) barreras de movilidad que dificultan que un hotel cambie de grupo.",
+      respuestaModelo: "a) Los grupos estratégicos son conjuntos de empresas de una misma industria que siguen estrategias similares. Dos variables pertinentes para el mapa: nivel de precio/servicio (de económico y básico a lujo con servicio completo) y grado de estandarización versus experiencia diferenciada (cadena estandarizada frente a propuesta única de diseño). También sería válido el tamaño/escala o el alcance de marca (local vs global).\n\nGrupos que se forman: (1) grandes cadenas internacionales de lujo: alto precio, servicio completo, marca global, estandarización; (2) hoteles boutique de diseño: precio medio-alto, experiencia única y personalizada, pocas habitaciones; (3) hostales y alojamientos económicos: precio bajo, servicios mínimos, alta rotación; (4) plataformas de arriendo entre particulares, que operan con un modelo distinto (sin activos propios). \n\nb) La rivalidad es más intensa dentro de cada grupo porque las empresas de un mismo grupo disputan a los mismos clientes con propuestas de valor similares (un hotel de lujo compite con otros de lujo, no con un hostal). Entre grupos la rivalidad es menor por las barreras de movilidad. Dos barreras concretas: (i) inversiones específicas y escala: pasar del segmento económico al de lujo exige infraestructura, ubicación premium y una marca reconocida que toman años y gran inversión; (ii) marca, reputación y capacidades de servicio: el posicionamiento boutique o de lujo descansa en reputación, personal experto y una cultura de servicio difíciles de construir rápido. Estas barreras explican la estabilidad de los grupos y las diferencias de rentabilidad entre ellos.",
+      criterios: [
+        { texto: "a) Define grupos estratégicos y propone dos variables de mapeo pertinentes y no redundantes", peso: 2 },
+        { texto: "a) Describe los grupos resultantes de la industria hotelera coherentes con las variables elegidas", peso: 2 },
+        { texto: "b) Explica que la rivalidad es mayor intra-grupo (mismos clientes, propuestas similares)", peso: 2 },
+        { texto: "b) Identifica dos barreras de movilidad concretas aplicadas al caso", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir grupos estratégicos con segmentos de clientes",
+        "Elegir dos variables redundantes (por ejemplo, dos medidas de precio) para el mapa",
+        "Omitir las barreras de movilidad al explicar la estabilidad de los grupos"
+      ]
+    },
+
+    {
+      id: "est-060",
+      tema: "U2. Decisión de integración vertical hacia adelante",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Textil Andino fabrica prendas de vestir y hoy vende toda su producción a grandes tiendas por departamento, que capturan un margen elevado, imponen condiciones de precio y plazos de pago, y controlan la relación con el consumidor final. La gerencia evalúa abrir tiendas propias y un canal de e-commerce para vender directamente al consumidor.\n\na) Identifique qué tipo y dirección de integración representa esta decisión y explique dos (2) beneficios y dos (2) riesgos de avanzar en ella, anclados al caso.\n\nb) Explique qué determinantes debería evaluar Textil Andino para decidir entre integrar el canal de venta o seguir dependiendo de las tiendas por departamento.",
+      respuestaModelo: "a) Abrir tiendas propias y e-commerce es una integración vertical hacia adelante: la empresa internaliza la etapa de distribución y venta al cliente final, acercándose al consumidor y dejando de depender de los intermediarios (las tiendas por departamento).\n\nBeneficios (anclados al caso): (i) captura del margen del intermediario: hoy las tiendas por departamento capturan un margen elevado; vendiendo directo, Textil Andino se apropia de ese margen. (ii) Control de la relación con el consumidor y de la marca: obtiene información directa del cliente, controla la experiencia y el posicionamiento, y deja de someterse a las condiciones de precio y plazos que le imponen las tiendas.\n\nRiesgos: (i) alta inversión y aumento de costos fijos: abrir y operar tiendas y un canal digital exige capital, logística y personal, elevando la estructura de costos y la rigidez. (ii) Pérdida de foco y de un canal masivo: la empresa asume una actividad (retail) distinta de su competencia central (fabricar prendas) y podría perder el volumen y la cobertura que le daban las grandes tiendas, además de generar conflicto de canal con ellas.\n\nb) Determinantes a evaluar: comparar los costos de transacción del mercado (dependencia, condiciones impuestas, riesgo de oportunismo de las tiendas, pérdida de contacto con el cliente) con los costos de coordinación interna de operar el canal propio. Conviene integrar cuando existen activos específicos, alto riesgo de oportunismo y cuando el control del canal fortalece la ventaja competitiva y captura sinergias; conviene seguir externalizando si el canal propio resulta ineficiente o si las tiendas aportan un volumen y cobertura difíciles de reemplazar. No siempre conviene integrar: depende de esta comparación de costos.",
+      criterios: [
+        { texto: "a) Identifica la decisión como integración vertical hacia adelante, justificada", peso: 2 },
+        { texto: "a) Explica dos beneficios (captura de margen, control del cliente/marca) y dos riesgos (inversión/costos fijos, pérdida de foco/conflicto de canal) anclados al caso", peso: 3 },
+        { texto: "b) Explica los determinantes: costos de transacción vs coordinación interna, activos específicos, oportunismo, capacidades", peso: 3 }
+      ],
+      erroresComunes: [
+        "Invertir la dirección de integración (llamar 'hacia atrás' a la apertura de canales de venta)",
+        "Clasificar la decisión como integración horizontal o diversificación",
+        "Recomendar integrar sin evaluar los determinantes (costos de transacción vs costos internos)"
+      ]
+    },
+
+    {
+      id: "est-061",
+      tema: "U2. Modo de entrada a un mercado internacional según recursos",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "CervezArtes, cervecería artesanal chilena con recursos limitados y sin experiencia internacional, agotó su crecimiento local y quiere exportar. Evalúa dos mercados: Argentina, culturalmente cercano, con canales de distribución similares y baja complejidad regulatoria; y Alemania, mercado grande y sofisticado pero con estándares de calidad y regulación muy exigentes, canales complejos y fuerte competencia local.\n\na) Explique tres (3) criterios que determinan la elección del modo de entrada a un mercado internacional.\n\nb) Recomiende un modo de entrada para cada mercado, justificando con las características del mercado y los recursos de la empresa.",
+      respuestaModelo: "a) La elección del modo de entrada (exportación, alianzas estratégicas, joint ventures, F&A o inversión directa) depende principalmente de: (i) el nivel de riesgo que la empresa está dispuesta a asumir (país, regulación, competencia); (ii) los recursos disponibles (financieros, humanos y de gestión), pues los modos con mayor compromiso exigen más inversión; (iii) el grado de control deseado sobre la operación, la marca y la calidad; y (iv) el conocimiento del mercado local (cultura, regulación, canales), que puede suplirse con un socio local. A mayor control deseado, mayor inversión y riesgo; a menor conocimiento local, más valioso un socio.\n\nb) Para Argentina se recomienda la exportación directa apoyada en distribuidores locales: es el modo de menor riesgo e inversión, coherente con los recursos limitados y la falta de experiencia internacional de CervezArtes; la cercanía cultural y la similitud de canales reducen la necesidad de adaptación y de un socio con control local.\n\nPara Alemania se recomienda una alianza estratégica con un distribuidor o socio local especializado (o, si hubiera más recursos, un joint venture): los estándares de calidad y regulación exigentes, los canales complejos y la fuerte competencia local hacen muy riesgosa una entrada en solitario. El socio aporta conocimiento del mercado, cumplimiento regulatorio y acceso a canales, permitiendo una entrada con menor compromiso de recursos que una inversión directa, compartiendo riesgos. Debe gestionarse el riesgo de oportunismo del socio con contratos y objetivos claros.",
+      criterios: [
+        { texto: "a) Explica al menos tres criterios de elección del modo de entrada (riesgo, recursos, control, conocimiento del mercado)", peso: 3 },
+        { texto: "b) Recomienda para Argentina un modo de bajo compromiso (exportación/distribuidor) justificado con el caso", peso: 2 },
+        { texto: "b) Recomienda para Alemania una alianza/joint venture con socio local justificada con el caso (regulación exigente, canales complejos)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Recomendar el mismo modo de entrada para ambos mercados sin considerar sus diferencias",
+        "Proponer inversión directa ignorando que la empresa tiene recursos limitados",
+        "Confundir el modo de entrada (estrategia corporativa) con la estrategia genérica competitiva"
+      ]
+    },
+
+    {
+      id: "est-062",
+      tema: "U3. Análisis PESTEL aplicado a una industria",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "SolarHogar instala paneles solares fotovoltaicos para viviendas en Chile. Su gerencia observa: nuevas leyes que incentivan la generación domiciliaria y permiten vender excedentes a la red; caída sostenida en el costo de la tecnología de paneles; creciente conciencia ambiental de los consumidores; alzas en las tarifas eléctricas tradicionales; y cierta incertidumbre política sobre la continuidad de los subsidios.\n\na) Identifique cuatro (4) factores del macroentorno (PESTEL) presentes en el caso, clasificando cada uno en su dimensión e indicando si constituye una oportunidad o una amenaza.\n\nb) Explique la diferencia entre el análisis del macroentorno (PESTEL) y el del microentorno (5 fuerzas), y por qué SolarHogar debe usar ambos.",
+      respuestaModelo: "a) Factores PESTEL (cuatro, entre los siguientes):\n- Legal/Político: nuevas leyes que incentivan la generación domiciliaria y permiten vender excedentes. OPORTUNIDAD, porque amplía la demanda y mejora la rentabilidad para el cliente.\n- Tecnológico: caída sostenida del costo de los paneles. OPORTUNIDAD, porque abarata la solución y masifica el mercado.\n- Social: creciente conciencia ambiental de los consumidores. OPORTUNIDAD, porque aumenta la disposición a adoptar energía limpia.\n- Económico: alzas en las tarifas eléctricas tradicionales. OPORTUNIDAD, porque hace más atractiva la inversión en paneles (mayor ahorro).\n- Político (riesgo): incertidumbre sobre la continuidad de los subsidios. AMENAZA, porque un cambio regulatorio podría frenar la demanda.\n\nb) Diferencia: el macroentorno (PESTEL) analiza factores generales y no controlables (políticos, económicos, sociales, tecnológicos, legales, ambientales) que afectan a toda la industria; el microentorno (5 fuerzas) analiza los actores que interactúan directamente con la empresa dentro de su industria (competidores, proveedores, clientes, sustitutos, nuevos entrantes) y determina la intensidad competitiva y la rentabilidad potencial. SolarHogar debe usar ambos porque el PESTEL le permite anticipar oportunidades y amenazas estructurales (regulación, tecnología, tarifas), mientras las 5 fuerzas le indican cuán atractiva y rentable es la industria y cómo posicionarse; ninguno reemplaza al otro y son complementarios.",
+      criterios: [
+        { texto: "a) Identifica cuatro factores PESTEL correctamente clasificados en su dimensión con evidencia del caso", peso: 3 },
+        { texto: "a) Clasifica cada factor como oportunidad o amenaza con coherencia", peso: 2 },
+        { texto: "b) Distingue macroentorno (PESTEL, factores generales no controlables) de microentorno (5 fuerzas) y justifica usar ambos", peso: 3 }
+      ],
+      erroresComunes: [
+        "Clasificar mal la dimensión de un factor (por ejemplo, llamar 'económico' a una ley)",
+        "Mezclar factores del macroentorno con las 5 fuerzas del microentorno",
+        "No indicar si cada factor es oportunidad o amenaza para la empresa"
+      ]
+    },
+
+    {
+      id: "est-063",
+      tema: "U3. Complementadores y coopetencia en un ecosistema digital",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "ConsolaX fabrica una consola de videojuegos. Sus ejecutivos observan que las ventas dependen críticamente de la cantidad y calidad de los videojuegos disponibles, del catálogo de accesorios compatibles y de los servicios de streaming que funcionan en la consola. Además, evalúan acordar con una consola rival un estándar técnico común para accesorios, de modo de ampliar la oferta para todos los jugadores.\n\na) Explique el concepto de complementadores (6ª fuerza) e identifique dos (2) complementadores del caso, justificando cómo cada uno afecta el valor del producto de ConsolaX.\n\nb) Analice la conveniencia de acordar el estándar común con un rival a la luz del concepto de coopetencia (ambientes de colaboración), indicando un beneficio y un riesgo.",
+      respuestaModelo: "a) Los complementadores son la sexta fuerza competitiva: empresas cuyos productos o servicios aumentan el valor del producto principal cuando se consumen conjuntamente. No compiten directamente con la empresa, pero influyen en su rentabilidad y posicionamiento, porque su disponibilidad y calidad aumentan la demanda del producto principal.\n\nComplementadores del caso: (i) los desarrolladores de videojuegos y su catálogo: sin juegos atractivos la consola pierde valor de uso; a mayor cantidad y calidad de juegos, mayor demanda de la consola (clásico efecto de red indirecto entre consola y juegos). (ii) Los fabricantes de accesorios compatibles y los servicios de streaming: amplían las funcionalidades y el valor percibido de la consola, aumentando la disposición a pagar y la retención de usuarios. En ambos casos, actores externos que no son rivales elevan el valor del producto principal.\n\nb) Acordar un estándar técnico común con un rival es un caso de coopetencia (ambientes de colaboración): las empresas compiten y cooperan simultáneamente. Beneficio: al unificar el estándar de accesorios se amplía la oferta de complementos para todos los jugadores, creciendo el valor de la categoría y la disposición a comprar consolas (se crea valor conjunto antes de competir por su distribución); además puede levantar barreras frente a entrantes. Riesgo: la colaboración puede diluir una ventaja propia (si la exclusividad de accesorios era un diferenciador) o transferir información y aprendizaje al rival que este aproveche luego en la etapa competitiva. Debe definirse claramente qué se comparte (el estándar de accesorios) y qué se protege (juegos exclusivos, tecnología propia, precios).",
+      criterios: [
+        { texto: "a) Define los complementadores como 6ª fuerza (aumentan el valor del producto principal sin competir directamente)", peso: 2 },
+        { texto: "a) Identifica dos complementadores del caso (juegos, accesorios, streaming) y justifica su efecto sobre el valor y la demanda", peso: 3 },
+        { texto: "b) Explica la coopetencia aplicada al estándar común y señala un beneficio y un riesgo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Clasificar a los complementadores como proveedores o sustitutos dentro de las 5 fuerzas clásicas",
+        "Tratar toda colaboración con un rival como colusión o algo siempre negativo",
+        "No justificar cómo el complementador afecta el valor del producto principal"
+      ]
+    },
+
+    {
+      id: "est-064",
+      tema: "U2. Diversificación relacionada versus no relacionada",
+      dificultad: "media",
+      enunciado: "Molinos del Valle produce harina y derivados del trigo, con fuerte capacidad logística, marca reconocida y relaciones con la industria panadera. Evalúa dos alternativas de diversificación: (A) entrar al negocio de pastas y masas congeladas, aprovechando su harina, sus canales y su marca; o (B) adquirir una empresa de servicios de vigilancia y seguridad privada, atraída solo por su alta rentabilidad reciente.\n\na) Clasifique cada alternativa según el tipo de diversificación (relacionada o no relacionada) y justifique.\n\nb) Usando la regla de creación de valor Vab > Va + Vb, explique en cuál alternativa es más probable crear valor, identificando dos (2) sinergias concretas en esa alternativa y el principal riesgo de la otra.",
+      respuestaModelo: "a) La alternativa A (pastas y masas congeladas) es diversificación relacionada: comparte recursos, capacidades y actividades con el negocio original (la harina como insumo, los canales de distribución, la marca y la relación con la industria de alimentos). La alternativa B (seguridad privada) es diversificación no relacionada o de conglomeración: no existe vínculo directo con el giro molinero; la atrae solo la rentabilidad reciente.\n\nb) La regla de la estrategia corporativa exige que el valor conjunto de los negocios supere la suma de sus valores individuales (Vab > Va + Vb), lo que se logra mediante sinergias reales. En la alternativa A es más probable crear valor, porque hay sinergias verificables. Dos sinergias concretas: (i) sinergia de insumos y operaciones: usar su propia harina y capacidad productiva para las pastas y masas, reduciendo costos e integrando la cadena; (ii) sinergias comerciales y de marca: aprovechar los canales de distribución existentes, la marca reconocida y las relaciones con clientes del rubro alimentos para colocar el nuevo producto. (También válida la transferencia de conocimiento en trigo y alimentos.)\n\nEl principal riesgo de la alternativa B es la destrucción de valor por ausencia de sinergias y de capacidades: Molinos del Valle no tiene competencias en seguridad, no comparte recursos ni clientes, y decidir solo por la rentabilidad reciente es una motivación de agencia típica ('un buen management sirve para cualquier negocio' es una falacia). Se sumarían costos de coordinación y asimetrías de información sobre un negocio que la empresa no entiende. Por eso, más grande no es mejor si no es coherente.",
+      criterios: [
+        { texto: "a) Clasifica A como diversificación relacionada y B como no relacionada, justificando ambas", peso: 2 },
+        { texto: "b) Explica la regla Vab > Va + Vb (el valor conjunto debe superar la suma individual mediante sinergias)", peso: 2 },
+        { texto: "b) Identifica dos sinergias concretas de la alternativa A (insumos/operaciones, canales/marca)", peso: 2 },
+        { texto: "b) Identifica el principal riesgo de la alternativa B (ausencia de sinergias/capacidades, motivación de agencia)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Justificar la diversificación no relacionada solo por la rentabilidad del sector objetivo",
+        "Confundir diversificación relacionada con integración vertical",
+        "Afirmar que diversificar siempre crea valor, ignorando la regla Vab > Va + Vb"
+      ]
+    },
+
+    {
+      id: "est-065",
+      tema: "U3. Fuentes del posicionamiento estratégico (variedad, necesidades y acceso)",
+      dificultad: "media",
+      enunciado: "Explique el concepto de posicionamiento estratégico según Porter y por qué implica elegir y renunciar ('la estrategia es elegir qué no hacer'). Luego, describa las tres (3) fuentes o bases del posicionamiento —basado en variedad, basado en necesidades y basado en acceso— entregando un ejemplo de cada una.",
+      respuestaModelo: "El posicionamiento estratégico define cómo la empresa decide competir dentro de una industria y qué lugar ocupa en la mente del cliente frente a sus competidores. Se basa en elecciones conscientes, implica renuncias estratégicas (trade-offs), debe ser difícil de imitar y consistente en el tiempo. No se trata de ser mejor en todo, sino de ser distinto: por eso 'la estrategia es elegir qué no hacer'; sin renuncias no hay posicionamiento, porque intentar servir a todos y hacer todo diluye la propuesta de valor y no permite un sistema de actividades coherente.\n\nTres fuentes del posicionamiento:\n1) Basado en variedad: la empresa se especializa en producir un subconjunto de los productos o servicios de la industria, atendiendo a muchos clientes pero cubriendo solo parte de sus necesidades. Ejemplo: una cadena que ofrece solo cambio rápido de aceite para autos (no todo el servicio mecánico).\n2) Basado en necesidades: la empresa atiende la mayoría o todas las necesidades de un grupo particular de clientes. Ejemplo: un banco enfocado íntegramente en clientes de altos patrimonios con una oferta integral para ese segmento.\n3) Basado en acceso: la empresa segmenta clientes que son accesibles de maneras distintas (por geografía, escala o canal), diseñando actividades para llegar a ellos. Ejemplo: un formato de tienda pequeña diseñado para clientes de zonas rurales o de baja densidad.\n\nEn los tres casos, el posicionamiento se materializa en un sistema coherente de actividades: la ventaja competitiva surge de cómo encajan entre sí, no de una actividad aislada.",
+      criterios: [
+        { texto: "Define el posicionamiento estratégico (elecciones, renuncias, difícil de imitar, consistente) y explica por qué implica renunciar", peso: 3 },
+        { texto: "Describe las tres fuentes del posicionamiento (variedad, necesidades, acceso)", peso: 3 },
+        { texto: "Entrega un ejemplo pertinente de cada fuente", peso: 1 }
+      ],
+      erroresComunes: [
+        "Definir posicionamiento como 'ser el mejor en todo', omitiendo las renuncias",
+        "Confundir el posicionamiento basado en necesidades con la segmentación de marketing tradicional sin conectarlo al sistema de actividades",
+        "No dar ejemplos que distingan claramente las tres bases"
+      ]
+    },
+
+    {
+      id: "est-066",
+      tema: "U2. Triángulo Corporativo aplicado a una decisión de diversificación",
+      dificultad: "media",
+      enunciado: "Grupo Lircay, dueño de una empresa forestal con capacidades logísticas y de manejo de plantaciones, evalúa entrar al negocio de tableros y muebles de madera. La industria de muebles crece de forma moderada y es competitiva. El grupo posee madera propia, capacidad logística y conocimiento del recurso, pero no tiene experiencia en diseño ni en retail de muebles.\n\nAplique los tres componentes del Modelo del Triángulo Corporativo (atractivo de la industria, ventaja competitiva y sinergias corporativas) para evaluar si esta diversificación crea valor, y concluya con una recomendación.",
+      respuestaModelo: "El Triángulo Corporativo evalúa si una estrategia corporativa crea valor mediante tres componentes que deben reforzarse mutuamente; si uno falla, se destruye valor.\n\n1) Atractivo de la industria: medio. La industria de muebles crece de forma moderada y es competitiva, por lo que su rentabilidad estructural no es especialmente alta, aunque tampoco nula. Este vértice es aceptable pero no sobresaliente.\n\n2) Ventaja competitiva de la empresa: parcial. Grupo Lircay aporta ventajas reales en la parte inicial de la cadena: madera propia, capacidad logística y conocimiento del recurso, que le dan ventaja en costos de insumo (tableros). Sin embargo, no tiene experiencia en diseño ni en retail de muebles, donde no posee capacidades superiores al mercado. La ventaja es clara en tableros, débil en muebles terminados.\n\n3) Sinergias corporativas: existen en la integración de insumos (madera propia y logística) hacia los tableros, capturando el margen del insumo y aprovechando economías de ámbito. Son más débiles hacia el mueble final, donde el negocio exige competencias distintas (diseño, marca, canal).\n\nConclusión y recomendación: la diversificación crea valor de manera acotada. Es más sólida si el grupo se concentra en tableros y productos de madera intermedios, donde los tres vértices se refuerzan (ventaja de insumos y sinergias reales). Avanzar hasta muebles de diseño y retail es más riesgoso, porque en ese tramo falla la ventaja competitiva y las sinergias se debilitan. Recomendación: entrar por tableros (diversificación relacionada sólida) y, para el mueble final, considerar una alianza con una empresa que aporte diseño y canal, en lugar de hacerlo en solitario.",
+      criterios: [
+        { texto: "Aplica el atractivo de la industria de muebles con evidencia (crecimiento moderado, competitiva)", peso: 2 },
+        { texto: "Aplica la ventaja competitiva distinguiendo la fortaleza en insumos/tableros de la debilidad en diseño/retail", peso: 2 },
+        { texto: "Aplica las sinergias corporativas (integración de madera y logística) y su alcance", peso: 2 },
+        { texto: "Concluye con una recomendación coherente (concentrarse en tableros; alianza para el mueble final)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Evaluar solo el atractivo de la industria y omitir la ventaja competitiva y las sinergias",
+        "Confundir el Triángulo Corporativo con las 5 fuerzas o con el FODA",
+        "Concluir que se crea valor sin advertir que falla la ventaja en diseño/retail"
+      ]
+    },
+
+    {
+      id: "est-067",
+      tema: "U5. Capacidades dinámicas frente a un entorno cambiante",
+      dificultad: "media",
+      enunciado: "Editorial Faro fue líder en enciclopedias y libros de referencia impresos. La irrupción de internet, los buscadores y los contenidos digitales gratuitos erosionaron su negocio. Algunas editoriales competidoras desaparecieron; Faro, en cambio, reconvirtió su catálogo a plataformas de contenidos educativos digitales, formó equipos de datos y aprendizaje, y hoy actualiza su oferta continuamente.\n\na) Explique el concepto de capacidades dinámicas y en qué se diferencian de las capacidades operativas ordinarias.\n\nb) Identifique dos (2) capacidades dinámicas que Faro desarrolló para sobrevivir, con evidencias del caso, y explique por qué son clave en entornos de ventaja competitiva transitoria.",
+      respuestaModelo: "a) Las capacidades dinámicas son la habilidad de la empresa para integrar, construir y reconfigurar sus recursos y competencias para adaptarse a entornos cambiantes. Se diferencian de las capacidades operativas ordinarias (que permiten hacer bien lo que la empresa ya hace, como producir o vender con eficiencia) en que operan sobre la propia base de recursos: la transforman, la renuevan y la reorientan cuando el entorno cambia. Las operativas mantienen el negocio actual; las dinámicas permiten cambiar el negocio.\n\nb) Capacidades dinámicas de Faro (con evidencias): (i) capacidad de reconfiguración/transformación del modelo de negocio: reconvirtió su catálogo impreso a plataformas de contenidos educativos digitales, es decir, redefinió su propuesta de valor ante la disrupción de internet; (ii) capacidad de aprendizaje e integración de nuevas competencias: formó equipos de datos y aprendizaje y actualiza su oferta continuamente, incorporando competencias digitales que antes no tenía.\n\nEstas capacidades son clave en entornos de ventaja competitiva transitoria porque en ellos la imitación, los cambios tecnológicos y los nuevos entrantes hacen que ninguna ventaja dure para siempre: la empresa debe crear, explotar y renovar ventajas continuamente. Faro sobrevivió precisamente porque supo reconfigurar sus recursos, mientras competidores con solo capacidades operativas (buenos en el negocio impreso) desaparecieron al no adaptarse. Hoy la ventaja se sostiene desde la capacidad de cambiar, no desde un activo fijo.",
+      criterios: [
+        { texto: "a) Define capacidades dinámicas (integrar, construir, reconfigurar recursos) y las distingue de las operativas ordinarias", peso: 3 },
+        { texto: "b) Identifica dos capacidades dinámicas de Faro con evidencias del caso (reconversión del modelo, aprendizaje/integración de competencias)", peso: 3 },
+        { texto: "b) Explica por qué son clave en entornos de ventaja transitoria (renovar ventajas continuamente)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir capacidades dinámicas con capacidades operativas (hacer bien lo de siempre)",
+        "Nombrar capacidades genéricas sin anclarlas a las evidencias del caso",
+        "No conectar las capacidades dinámicas con la noción de ventaja competitiva transitoria"
+      ]
+    },
+
+    {
+      id: "est-068",
+      tema: "U4. Barreras a la imitación y sustentabilidad de la ventaja",
+      dificultad: "media",
+      enunciado: "Dos empresas de la misma industria obtienen resultados muy distintos. La empresa líder sostiene su ventaja hace más de una década sin que los competidores logren replicarla, pese a que su estrategia es públicamente conocida.\n\na) Explique por qué una ventaja competitiva puede ser sostenible aunque la estrategia sea conocida, distinguiendo entre ventaja temporal y ventaja sostenible.\n\nb) Describa tres (3) barreras a la imitación (o fuentes de sustentabilidad) que expliquen por qué los competidores no logran copiar a la empresa líder.",
+      respuestaModelo: "a) Una ventaja competitiva es temporal cuando surge rápidamente pero puede ser imitada; es sostenible cuando se mantiene en el tiempo gracias a barreras estratégicas que impiden o encarecen la imitación. Que la estrategia sea públicamente conocida no basta para copiarla: conocer 'qué hace' la empresa no equivale a poder replicar 'cómo lo hace' ni todo su sistema de actividades. La ventaja sostenible reside en la coherencia del sistema y en recursos difíciles de imitar, no en un secreto puntual. Por eso una estrategia conocida puede seguir siendo defendible.\n\nb) Tres barreras a la imitación / fuentes de sustentabilidad:\n1) Encaje del sistema de actividades: la ventaja surge de cómo encajan muchas actividades entre sí (encaje de refuerzo y optimización). Imitar una actividad aislada no reproduce el resultado; habría que copiar todo el sistema y sus interacciones, lo que es muy costoso.\n2) Recursos y capacidades difíciles de imitar y ambigüedad causal: know-how, cultura organizacional, marca y aprendizaje acumulado no se compran en el mercado; además, los competidores muchas veces no logran identificar con exactitud cuál es la fuente de la ventaja (ambigüedad causal).\n3) Trade-offs y costos hundidos: la estrategia exige renuncias claras; un imitador que quiera copiar debería abandonar su propio posicionamiento y asumir esas renuncias, lo que rara vez está dispuesto a hacer. También actúan las economías de escala y la complejidad organizacional. La innovación y adaptación continuas refuerzan la barrera, pues la empresa mejora antes de ser alcanzada.",
+      criterios: [
+        { texto: "a) Distingue ventaja temporal de sostenible y explica por qué una estrategia conocida puede seguir siendo defendible", peso: 3 },
+        { texto: "b) Describe tres barreras a la imitación / fuentes de sustentabilidad correctas (encaje del sistema, recursos difíciles de imitar/ambigüedad causal, trade-offs/escala)", peso: 4 },
+        { texto: "b) Conecta las barreras con la imposibilidad de copiar el sistema completo", peso: 1 }
+      ],
+      erroresComunes: [
+        "Afirmar que una estrategia conocida siempre puede copiarse fácilmente",
+        "Confundir la ventaja sostenible con un secreto o patente puntual, ignorando el sistema de actividades",
+        "Listar barreras sin explicar por qué impiden la imitación"
+      ]
+    },
+
+    {
+      id: "est-069",
+      tema: "U2. Competencias esenciales como base del crecimiento",
+      dificultad: "media",
+      enunciado: "TecnoSur partió fabricando motores eléctricos de precisión y, con los años, desarrolló una competencia distintiva en miniaturización y control de precisión. A partir de ella, ingresó con éxito a herramientas eléctricas, luego a equipamiento médico de precisión y a componentes para robótica.\n\na) Defina qué es una competencia esencial (core competence) y señale los tres (3) criterios que la caracterizan.\n\nb) Explique cómo la competencia esencial de TecnoSur guía su crecimiento y diversificación, y por qué esta diversificación es más probable que cree valor que una hacia negocios no relacionados.",
+      respuestaModelo: "a) Una competencia esencial (core competence) es una capacidad clave de la empresa que constituye la base de su ventaja competitiva y de su crecimiento. Se caracteriza por tres criterios: (1) permite acceder a diversos mercados (es aplicable a más de un negocio); (2) contribuye significativamente a la propuesta de valor percibida por el cliente; y (3) es difícil de imitar por los competidores. Surge de la combinación de recursos y capacidades mediante el aprendizaje acumulado.\n\nb) La competencia esencial de TecnoSur es la miniaturización y el control de precisión. Guía su crecimiento porque la empresa se expande hacia negocios donde esa competencia puede ser aprovechada y transferida: de motores de precisión a herramientas eléctricas, equipamiento médico y robótica; en todos ellos la precisión y la miniaturización son fuente de valor. Así, el crecimiento no es azaroso, sino apalancado en aquello que la empresa sabe hacer mejor que otros.\n\nEsta diversificación relacionada es más probable que cree valor que una hacia negocios no relacionados porque comparte y transfiere una capacidad valiosa, rara y difícil de imitar entre los negocios: genera sinergias (economías de ámbito, transferencia de conocimiento) que hacen que el valor conjunto supere la suma individual. En cambio, diversificar hacia negocios sin relación con la competencia esencial no aprovecha esa base, agrega costos de coordinación y suele destruir valor. 'La diversificación es más efectiva cuando se apoya en competencias esenciales'.",
+      criterios: [
+        { texto: "a) Define competencia esencial y señala sus tres criterios (acceso a diversos mercados, aporte a la propuesta de valor, difícil de imitar)", peso: 3 },
+        { texto: "b) Explica cómo la competencia esencial (miniaturización/precisión) guía el crecimiento de TecnoSur con evidencias del caso", peso: 3 },
+        { texto: "b) Argumenta por qué la diversificación apoyada en la competencia esencial crea más valor que una no relacionada", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir competencia esencial con cualquier actividad que la empresa realiza",
+        "No aplicar los tres criterios que distinguen una competencia esencial",
+        "Afirmar que diversificar a cualquier negocio rentable es igual de valioso, sin considerar la competencia esencial"
+      ]
+    },
+
+    {
+      id: "est-070",
+      tema: "U5. Estrategia de plataformas y ecosistemas de negocio",
+      dificultad: "media",
+      enunciado: "PagaFácil es una plataforma de pagos que conecta a comercios, consumidores y bancos. Su valor crece mientras más comercios la aceptan y más usuarios la utilizan. Sus ejecutivos afirman que 'la ventaja ya no está solo en la empresa, sino en el ecosistema que construimos'.\n\na) Explique en qué consiste la estrategia basada en plataformas y ecosistemas y el rol de los efectos de red y los complementadores.\n\nb) Explique por qué, en un negocio de plataforma, la ventaja competitiva puede ser más difícil de imitar que en un negocio tradicional, y un riesgo estratégico propio de este modelo.",
+      respuestaModelo: "a) La estrategia basada en plataformas y ecosistemas concibe la ventaja competitiva no solo desde los recursos internos de la empresa, sino desde la red de valor que la empresa orquesta: las interacciones entre distintos actores (en el caso, comercios, consumidores y bancos) y los complementadores que agregan valor. El rol de los efectos de red es central: el valor de la plataforma aumenta con la cantidad de participantes (más comercios atraen más usuarios y viceversa), generando un círculo virtuoso. Los complementadores (aplicaciones, servicios integrados, bancos) elevan el valor de la plataforma para todos. La ventaja surge del ecosistema, no solo de la empresa.\n\nb) En un negocio de plataforma la ventaja puede ser más difícil de imitar porque un competidor no solo debe replicar la tecnología, sino reconstruir toda la red de participantes y los efectos de red acumulados: hay que atraer simultáneamente a los dos lados del mercado (comercios y usuarios), lo que crea una barrera de 'masa crítica' y costos de cambio para quienes ya están en la red. Además, los datos y las relaciones acumuladas refuerzan la posición.\n\nUn riesgo estratégico propio del modelo: el problema del 'huevo y la gallina' o la dependencia de alcanzar y sostener la masa crítica; si un lado del mercado se retira (por ejemplo, comercios que adoptan una plataforma rival o el multi-homing de los usuarios), los efectos de red pueden revertirse rápidamente. También existe el riesgo de que un complementador clave se convierta en competidor o de una regulación que altere las reglas del ecosistema.",
+      criterios: [
+        { texto: "a) Explica la estrategia de plataformas/ecosistemas (ventaja desde la red de valor, no solo la empresa)", peso: 2 },
+        { texto: "a) Explica el rol de los efectos de red y de los complementadores en el caso", peso: 3 },
+        { texto: "b) Explica por qué la ventaja es difícil de imitar (reconstruir la red, masa crítica, costos de cambio) y señala un riesgo del modelo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Analizar la plataforma como una empresa tradicional, ignorando los efectos de red",
+        "Confundir efectos de red con simple economías de escala",
+        "No identificar el riesgo de masa crítica o de multi-homing propio de las plataformas"
+      ]
+    },
+
+    {
+      id: "est-071",
+      tema: "U4. Creación y captura de valor: reparto entre empresa y cliente",
+      dificultad: "media",
+      enunciado: "Una empresa vende un servicio por el que sus clientes estarían dispuestos a pagar hasta $100 (disposición a pagar). Producirlo le cuesta $40. Hoy cobra un precio de $70.\n\na) Explique, con estos valores, cómo se reparte el valor económico creado entre la empresa y el cliente, definiendo disposición a pagar, precio y costo.\n\nb) Explique qué le ocurre a la captura de valor de la empresa si entran competidores que ofrecen un servicio equivalente, y qué debería hacer la empresa para proteger su captura de valor sin caer en una guerra de precios.",
+      respuestaModelo: "a) El valor económico creado es la diferencia entre la disposición a pagar del cliente (DAP) y el costo de la empresa: $100 − $40 = $60. Este valor se reparte según el precio ($70):\n- El excedente que captura la empresa (su margen) es Precio − Costo = $70 − $40 = $30.\n- El excedente que captura el cliente es DAP − Precio = $100 − $70 = $30.\nDefiniciones: la disposición a pagar es el máximo que el cliente está dispuesto a pagar por el beneficio percibido; el precio es lo que efectivamente se cobra; el costo es lo que a la empresa le cuesta producir. El precio determina cómo se reparte el valor creado entre ambos: cuanto más cerca esté el precio de la DAP, más valor captura la empresa; cuanto más cerca del costo, más captura el cliente.\n\nb) Si entran competidores con un servicio equivalente, la competencia presiona el precio a la baja (tiende a acercarse al costo), por lo que la captura de valor de la empresa (su margen) se reduce y el cliente captura una porción mayor del valor. Para proteger su captura sin caer en una guerra de precios, la empresa no debe competir bajando el precio, sino aumentar la disposición a pagar mediante diferenciación (mejor calidad, marca, servicio, experiencia, atributos únicos) y crear costos de cambio, de modo que los clientes valoren más su oferta y estén dispuestos a pagar un precio superior. Alternativamente, puede reducir sus costos para ampliar el margen. La clave es agrandar la brecha DAP − Costo y sostener un precio que capture parte de ese valor.",
+      criterios: [
+        { texto: "a) Define DAP, precio y costo y calcula el valor económico creado ($60) con los datos", peso: 2 },
+        { texto: "a) Explica el reparto entre excedente de la empresa ($30) y del cliente ($30) según el precio", peso: 3 },
+        { texto: "b) Explica el efecto de la competencia sobre el margen y propone proteger la captura vía diferenciación/costos de cambio en vez de guerra de precios", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir precio con disposición a pagar (asumir que el cliente paga siempre su máximo)",
+        "Definir el valor creado como el precio, en vez de DAP menos costo",
+        "Recomendar bajar el precio ante la competencia, reduciendo aún más la captura de valor"
+      ]
+    },
+
+    {
+      id: "est-072",
+      tema: "U5. Matriz de las cuatro acciones (eliminar-reducir-incrementar-crear)",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "GymFlow quiere crear un océano azul en la industria de los gimnasios, dominada por dos grupos: cadenas masivas de bajo precio con instalaciones enormes y muchas máquinas, y estudios boutique caros de clases guiadas. GymFlow busca ofrecer, a un precio medio-bajo, entrenamiento funcional guiado en espacios pequeños de barrio, con horarios flexibles vía app y sin contratos de permanencia.\n\na) Explique el concepto de innovación en valor y por qué diferencia al océano azul de la competencia tradicional (océano rojo).\n\nb) Aplique la matriz de las cuatro acciones (eliminar, reducir, incrementar y crear) a la propuesta de GymFlow, proponiendo al menos un elemento para cada acción.",
+      respuestaModelo: "a) La innovación en valor es el pilar de la estrategia de océano azul: consiste en perseguir simultáneamente la diferenciación y el bajo costo, en lugar de elegir entre uno u otro. Se logra reconfigurando los factores en que compite la industria: eliminando y reduciendo aquellos que encarecen sin aportar valor, e incrementando y creando aquellos que el cliente sí valora. Esto diferencia al océano azul (crear un espacio de mercado nuevo, poco disputado) de la competencia tradicional u océano rojo (competir en un mercado saturado por los mismos factores, disputando la misma demanda y erosionando márgenes). GymFlow no compite ni como cadena masiva ni como boutique caro: crea una propuesta nueva.\n\nb) Matriz de las cuatro acciones para GymFlow:\n- Eliminar: los contratos de permanencia y quizás las grandes instalaciones costosas (piscinas, enormes salas de máquinas) que elevan costos sin ser valoradas por su público.\n- Reducir: la superficie y la cantidad de máquinas (espacios pequeños de barrio), y el precio respecto de los estudios boutique.\n- Incrementar: la cercanía/conveniencia (locales de barrio) y la flexibilidad de horarios.\n- Crear: la reserva y gestión de clases vía app, el entrenamiento funcional guiado a precio medio-bajo y la ausencia de permanencia (libertad de contratación) como atributo nuevo.\n\nAsí GymFlow logra, a la vez, menores costos que un boutique y mayor valor (guía y flexibilidad) que una cadena masiva impersonal: innovación en valor.",
+      criterios: [
+        { texto: "a) Explica la innovación en valor (diferenciación y bajo costo simultáneos) y la diferencia océano azul/rojo", peso: 3 },
+        { texto: "b) Aplica las cuatro acciones (eliminar, reducir, incrementar, crear) con al menos un elemento pertinente cada una", peso: 4 },
+        { texto: "b) Muestra que la propuesta logra menor costo y mayor valor a la vez (coherencia con innovación en valor)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Clasificar la estrategia como simple diferenciación, omitiendo el componente de menor costo",
+        "Confundir las cuatro acciones (por ejemplo, poner en 'crear' algo que ya ofrece la industria)",
+        "No conectar la matriz con la reducción de costos y el aumento de valor simultáneos"
+      ]
+    },
+
+    {
+      id: "est-073",
+      tema: "U3. Definición de la industria y su amplitud",
+      dificultad: "media",
+      enunciado: "Una empresa que fabrica bicicletas urbanas debe analizar la industria en que compite. Un ejecutivo propone definirla como 'la industria del transporte'; otro, como 'la industria de las bicicletas de aluminio plegables'.\n\na) Explique por qué definir correctamente la industria es clave para el análisis estratégico y qué criterios deben usarse para definirla.\n\nb) Evalúe las dos definiciones propuestas (demasiado amplia y demasiado estrecha), explique los errores que induciría cada una y proponga una definición equilibrada de la industria.",
+      respuestaModelo: "a) La industria es el conjunto de empresas que ofrecen productos o servicios que son sustitutos cercanos entre sí. Definirla correctamente es clave porque determina quiénes son los competidores, influye en el análisis de rentabilidad (atractivo) y afecta la elección de la estrategia competitiva; 'definir mal la industria es competir a ciegas'. Los criterios para definirla son: el tipo de producto o servicio, las necesidades que satisface, los sustitutos disponibles y el ámbito geográfico del mercado.\n\nb) Evaluación de las definiciones:\n- 'La industria del transporte' es demasiado amplia: incluiría autos, buses, metro, motos y caminatas, actores que no son sustitutos cercanos de una bicicleta urbana. Induciría a diluir el análisis, sobreestimar competidores irrelevantes y perder foco al analizar la rivalidad y el atractivo.\n- 'Las bicicletas de aluminio plegables' es demasiado estrecha: dejaría fuera a otras bicicletas urbanas (de otros materiales o formatos) que sí son sustitutos cercanos y competidores directos. Induciría a subestimar la competencia y a un análisis incompleto.\n\nUna definición equilibrada sería: la industria de las bicicletas urbanas (y quizás scooters/medios de micromovilidad personal si son sustitutos cercanos) en el ámbito geográfico donde compite la empresa. Considera el tipo de producto, la necesidad que satisface (movilidad urbana personal), los sustitutos cercanos y el alcance geográfico, sin ser ni tan amplia que diluya el análisis ni tan estrecha que excluya competidores relevantes.",
+      criterios: [
+        { texto: "a) Explica por qué definir bien la industria es clave (competidores, rentabilidad, estrategia) y menciona los criterios (producto, necesidad, sustitutos, geografía)", peso: 3 },
+        { texto: "b) Evalúa la definición demasiado amplia y la demasiado estrecha, explicando el error que induce cada una", peso: 3 },
+        { texto: "b) Propone una definición equilibrada y justificada de la industria", peso: 2 }
+      ],
+      erroresComunes: [
+        "No usar los criterios (necesidad, sustitutos, geografía) para definir la industria",
+        "Confundir una definición amplia con una mejor definición",
+        "Proponer una definición equilibrada sin justificar por qué evita ambos extremos"
+      ]
+    },
+
+    {
+      id: "est-074",
+      tema: "U2. Integración horizontal mediante fusión de competidores",
+      dificultad: "media",
+      enunciado: "Dos clínicas dentales de tamaño medio, competidoras en la misma ciudad, evalúan fusionarse para formar una sola red. Ambas atienden a un público similar, tienen sistemas y marcas parecidas, y compiten intensamente por precio.\n\na) Identifique qué tipo de estrategia corporativa representa esta fusión y explique dos (2) beneficios y dos (2) riesgos de avanzar en ella, anclados al caso.\n\nb) Explique bajo qué condición esta integración horizontal crearía valor y por qué no siempre 'más grande' es mejor.",
+      respuestaModelo: "a) La fusión de dos competidoras del mismo nivel productivo es una integración horizontal: expansión de la empresa dentro de la misma etapa de la cadena de valor, incorporando el negocio de un competidor directo.\n\nBeneficios (anclados al caso): (i) economías de escala y de ámbito y mayor poder de negociación: al unir ambas clínicas se comparten costos fijos (equipos, sistemas, administración) y se negocia mejor con proveedores de insumos dentales; (ii) reducción de la intensidad competitiva y mayor participación de mercado: al dejar de competir entre sí por precio, alivian la guerra de precios y ganan cuota, mejorando márgenes.\n\nRiesgos: (i) choque de culturas y problemas de coordinación: fusionar dos organizaciones con marcas y sistemas parecidos pero equipos distintos puede generar conflictos y pérdida de talento; (ii) deseconomías de escala y burocracia: la organización más grande puede volverse más lenta y burocrática, además de que las sinergias esperadas suelen sobreestimarse.\n\nb) La integración horizontal crea valor solo si el valor conjunto supera la suma individual gracias a sinergias reales (economías de escala/ámbito, mayor poder de negociación, menor rivalidad) que se materializan en la práctica y no solo en el papel. No siempre 'más grande' es mejor: si las sinergias se sobreestiman, la integración de culturas fracasa o aparecen deseconomías y burocracia, la fusión destruye valor. 'Más grande no siempre es mejor; más coherente sí'.",
+      criterios: [
+        { texto: "a) Identifica la fusión como integración horizontal, justificada", peso: 2 },
+        { texto: "a) Explica dos beneficios (escala/ámbito/poder de negociación, menor rivalidad/cuota) y dos riesgos (choque cultural/coordinación, deseconomías/sobreestimación) anclados al caso", peso: 4 },
+        { texto: "b) Explica la condición de creación de valor (sinergias reales, Vab > Va + Vb) y por qué 'más grande' no siempre es mejor", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir integración horizontal (mismo nivel, competidor) con integración vertical (otra etapa)",
+        "Afirmar que la fusión siempre reduce costos, ignorando deseconomías y choque cultural",
+        "No condicionar la creación de valor a sinergias reales"
+      ]
+    },
+
+    {
+      id: "est-075",
+      tema: "U3. Análisis dinámico del entorno y estrategia always-on",
+      dificultad: "media",
+      enunciado: "Una empresa de retail tradicional realiza cada cinco años un gran estudio de su entorno y fija un plan estratégico rígido para ese periodo. En los últimos años ha sido sorprendida por cambios rápidos: nuevos competidores digitales, cambios de hábito del consumidor y disrupciones tecnológicas que no anticipó.\n\na) Explique por qué el análisis del entorno debe ser dinámico y continuo, y no un ejercicio estático cada varios años.\n\nb) Describa dos (2) características de un análisis dinámico del entorno ('always-on strategy') y explique cómo ayudarían a esta empresa a no ser sorprendida.",
+      respuestaModelo: "a) El análisis del entorno debe ser dinámico y continuo porque el entorno cambia constantemente por factores económicos, tecnológicos, sociales y competitivos; las ventajas competitivas son cada vez más transitorias y las disrupciones aparecen rápido. Un estudio estático cada cinco años deja a la empresa 'ciega' entre un análisis y otro: para cuando detecta un cambio, este ya la afectó. En entornos volátiles e inciertos, un plan rígido de largo plazo se vuelve obsoleto y no permite reaccionar a tiempo; por eso la estrategia moderna es un proceso dinámico y adaptable, no un plan fijo.\n\nb) Dos características de un análisis dinámico ('always-on strategy'):\n1) Monitoreo permanente del entorno e identificación temprana de disrupciones: en vez de mirar cada cinco años, la empresa vigila continuamente señales de cambio (nuevos competidores, tecnologías, hábitos). Esto le permitiría detectar a los competidores digitales y los cambios de hábito apenas emergen, no cuando ya la golpearon.\n2) Ajustes estratégicos constantes y evaluación de escenarios futuros: la empresa revisa y adapta su estrategia de forma iterativa y prepara distintos escenarios. Así podría responder con agilidad (por ejemplo, acelerar su canal digital) antes de ser sorprendida, apoyándose en capacidades dinámicas. El objetivo es anticipar y actuar, porque 'analizar el entorno sin actuar no genera ventaja competitiva'.",
+      criterios: [
+        { texto: "a) Explica por qué el análisis del entorno debe ser dinámico y continuo (entorno cambiante, ventaja transitoria, riesgo del plan rígido)", peso: 3 },
+        { texto: "b) Describe dos características del análisis dinámico (monitoreo permanente/detección temprana, ajustes constantes/escenarios)", peso: 3 },
+        { texto: "b) Conecta esas características con cómo evitarían que la empresa sea sorprendida", peso: 2 }
+      ],
+      erroresComunes: [
+        "Defender el plan quinquenal rígido como suficiente en un entorno dinámico",
+        "Describir el análisis dinámico sin conectarlo con la acción estratégica",
+        "Confundir análisis dinámico con hacer más estudios del mismo tipo, pero más seguido"
+      ]
+    },
+
+    {
+      id: "est-076",
+      tema: "U5. Creación de valor compartido (CSV) frente a la RSC tradicional",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa de alimentos compra su materia prima a cientos de pequeños agricultores. Su gerente propone destinar un monto anual a donaciones para 'mejorar la imagen'. La subgerenta de sostenibilidad propone, en cambio, un programa de asistencia técnica y compra a precio justo que mejore la productividad y calidad de los agricultores.\n\na) Distinga la Responsabilidad Social Corporativa (RSC) tradicional de la Creación de Valor Compartido (CSV).\n\nb) Explique por qué la propuesta de la subgerenta genera simultáneamente valor económico y social, y por qué la sostenibilidad puede ser una fuente de ventaja competitiva y no un mero gasto.",
+      respuestaModelo: "a) La RSC tradicional entiende la responsabilidad social como filantropía desconectada del negocio: hacer donaciones o acciones sociales, muchas veces para mejorar la imagen, con un presupuesto acotado y sin resolver los problemas de fondo ni impactar la estrategia. La Creación de Valor Compartido (CSV), en cambio, integra la generación de beneficios económicos y sociales en la propia estrategia y operación de la empresa: redefine productos, mercados y la cadena de valor de modo que resolver un problema social sea, a la vez, un buen negocio. No son objetivos opuestos, sino interdependientes.\n\nb) La propuesta de la subgerenta (asistencia técnica y compra a precio justo a los agricultores) es CSV porque crea valor social y económico simultáneamente: socialmente mejora el ingreso y las capacidades de cientos de pequeños agricultores; económicamente le asegura a la empresa una materia prima de mayor productividad, calidad y continuidad, fortaleciendo su cadena de suministro. Es una intervención en la cadena de valor, no una donación aislada. La donación 'para la imagen' es RSC tradicional: no mejora la calidad del insumo ni la competitividad.\n\nLa sostenibilidad puede ser fuente de ventaja competitiva porque hoy 'no hay ventaja competitiva sin legitimidad social': reduce riesgos regulatorios y reputacionales, asegura el abastecimiento, mejora la reputación y la lealtad de clientes, y puede sustentar diferenciación (productos certificados) y eficiencia. Deja de ser un gasto filantrópico para convertirse en estrategia de largo plazo.",
+      criterios: [
+        { texto: "a) Distingue RSC tradicional (filantropía, imagen, desconectada) de CSV (valor económico y social integrado a la estrategia)", peso: 3 },
+        { texto: "b) Explica cómo la propuesta genera valor económico y social simultáneamente (cadena de valor, calidad y continuidad del insumo, ingreso de agricultores)", peso: 3 },
+        { texto: "b) Argumenta que la sostenibilidad puede ser ventaja competitiva y no un gasto (riesgos, reputación, diferenciación, legitimidad)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir CSV con RSC tradicional o con filantropía",
+        "Presentar la sostenibilidad solo como un costo o una obligación",
+        "No mostrar el doble beneficio (económico y social) de la propuesta de CSV"
+      ]
+    },
+
+    {
+      id: "est-077",
+      tema: "U4. Estrategia de enfoque (nicho) y sus riesgos",
+      dificultad: "media",
+      enunciado: "Aromo es una empresa que fabrica calzado ortopédico a medida exclusivamente para personas con condiciones de pie diabético, atendiendo un segmento muy específico que las grandes marcas no cubren bien. Cobra precios altos y tiene clientes muy fieles.\n\na) Explique la estrategia genérica de enfoque (nicho) y distíngala de la diferenciación amplia y del liderazgo en costos.\n\nb) Identifique dos (2) riesgos propios de una estrategia de enfoque como la de Aromo y una recomendación para mitigarlos.",
+      respuestaModelo: "a) La estrategia de enfoque (o nicho) consiste en concentrarse en un segmento específico y estrecho del mercado y atenderlo mejor que los competidores, ya sea con bajos costos (enfoque en costos) o con alta diferenciación (enfoque en diferenciación) dentro de ese nicho. Aromo aplica un enfoque de diferenciación: se concentra en un segmento muy específico (personas con pie diabético) con un producto a medida de alto valor y precio.\n\nSe distingue de la diferenciación amplia en el alcance del mercado: la diferenciación amplia ofrece atributos únicos a un mercado masivo, mientras el enfoque los ofrece solo a un segmento estrecho. Se distingue del liderazgo en costos porque este busca el menor costo para un mercado masivo con productos estandarizados, mientras el enfoque adapta actividades a las necesidades particulares del nicho (aquí, a medida y de alto valor, no de bajo costo masivo).\n\nb) Dos riesgos del enfoque de Aromo: (i) dependencia de un segmento pequeño: si el nicho se contrae, cambian sus necesidades o aparece una solución sustituta (por ejemplo, un tratamiento médico que reduzca la necesidad de calzado especial), la empresa queda muy expuesta; (ii) que un competidor grande decida entrar al nicho (o 'sobre-segmentar' aún más) aprovechando su escala y recursos, erosionando la posición de Aromo. Recomendación para mitigar: profundizar la relación y los costos de cambio con los clientes del nicho (servicio, seguimiento médico, personalización difícil de imitar) y, con cautela, evaluar nichos adyacentes relacionados (otras condiciones del pie) que apalanquen la misma competencia, sin diluir el foco que sustenta su ventaja.",
+      criterios: [
+        { texto: "a) Explica la estrategia de enfoque/nicho y la clasifica correctamente en el caso (enfoque en diferenciación)", peso: 2 },
+        { texto: "a) Distingue el enfoque de la diferenciación amplia y del liderazgo en costos (alcance del mercado)", peso: 2 },
+        { texto: "b) Identifica dos riesgos propios del enfoque (dependencia del nicho, entrada de un competidor grande) y una recomendación de mitigación", peso: 4 }
+      ],
+      erroresComunes: [
+        "Confundir enfoque (segmento estrecho) con diferenciación amplia (mercado masivo)",
+        "Creer que todo producto premium es 'de nicho'",
+        "No identificar la vulnerabilidad de depender de un segmento pequeño"
+      ]
+    },
+
+    {
+      id: "est-078",
+      tema: "U1. Evolución del pensamiento estratégico: posicionamiento versus recursos",
+      dificultad: "media",
+      enunciado: "Dos consultores debaten sobre el origen de la ventaja competitiva de una empresa. Uno sostiene que 'la rentabilidad la determina la industria: hay que elegir bien dónde competir y posicionarse frente a las cinco fuerzas'. El otro afirma que 'la ventaja nace desde dentro: son los recursos y capacidades únicos los que explican por qué unas empresas ganan más que otras en la misma industria'.\n\na) Identifique a qué enfoque del pensamiento estratégico corresponde cada postura y ubíquelos en la evolución histórica de la estrategia.\n\nb) Explique por qué ambos enfoques son complementarios y no excluyentes para analizar la estrategia de una empresa.",
+      respuestaModelo: "a) La primera postura corresponde al enfoque de posicionamiento (años 80), asociado a Michael Porter y el análisis estructural de la industria: la industria determina la rentabilidad y la clave es el posicionamiento competitivo frente a las cinco fuerzas y las barreras de entrada. La segunda postura corresponde al enfoque basado en recursos (RBV, años 90): la ventaja competitiva surge desde el interior de la empresa, de recursos y capacidades únicos, lo que explica por qué empresas de una misma industria obtienen resultados distintos (las empresas son heterogéneas).\n\nEn la evolución histórica de la estrategia: primero estuvo el enfoque de planificación (60-70), luego el de posicionamiento (80), después el basado en recursos (90), seguido por las capacidades dinámicas (2000 en adelante) y la ventaja competitiva transitoria (actualidad).\n\nb) Ambos enfoques son complementarios y no excluyentes porque analizan la ventaja competitiva desde ángulos distintos: el de posicionamiento aporta el análisis externo (qué tan atractiva es la industria y cómo posicionarse frente a las fuerzas competitivas), mientras el RBV aporta el análisis interno (qué recursos y capacidades sostienen la ventaja). Una estrategia sólida combina ambos: elegir una industria/posición atractiva y, a la vez, apalancarse en recursos y capacidades valiosos, raros e inimitables. De hecho, las implicancias estratégicas modernas señalan combinar análisis externo e interno; el RBV, por sí solo, corre el riesgo de miopía interna, y el posicionamiento, por sí solo, ignora las diferencias entre empresas de la misma industria.",
+      criterios: [
+        { texto: "a) Identifica la postura de posicionamiento (Porter, la industria determina la rentabilidad) y la de recursos (RBV, ventaja desde dentro)", peso: 3 },
+        { texto: "a) Ubica ambos enfoques en la evolución histórica del pensamiento estratégico", peso: 2 },
+        { texto: "b) Explica por qué son complementarios (análisis externo e interno) y no excluyentes", peso: 3 }
+      ],
+      erroresComunes: [
+        "Presentar los enfoques como mutuamente excluyentes en vez de complementarios",
+        "Confundir el enfoque de posicionamiento con el de recursos",
+        "No situar los enfoques en la evolución histórica de la estrategia"
+      ]
+    },
+
+    {
+      id: "est-079",
+      tema: "U2. Motivaciones de agencia y riesgos en la diversificación",
+      dificultad: "media",
+      enunciado: "El gerente general de un conglomerado impulsa una serie de adquisiciones en negocios sin relación con el giro principal. Los analistas notan que las adquisiciones aumentan el tamaño y el prestigio del gerente, pero no la rentabilidad del grupo, y que varias destruyen valor.\n\na) Explique qué son los problemas de agencia y cómo pueden distorsionar las decisiones de crecimiento y diversificación.\n\nb) Distinga entre un crecimiento que crea valor y uno que responde a motivaciones de agencia, e indique dos (2) señales de alerta y un mecanismo para mitigar este problema.",
+      respuestaModelo: "a) Los problemas de agencia surgen de la separación entre la propiedad (accionistas) y la gestión (directivos): los ejecutivos pueden tomar decisiones que persiguen sus propios intereses (mayor tamaño, poder, prestigio, remuneración) en lugar de maximizar el valor para los accionistas. En las decisiones de crecimiento y diversificación esto distorsiona la lógica estratégica: se crece o diversifica no porque cree valor, sino porque agranda el 'imperio' del directivo, aun a costa de destruir valor (costos de coordinación, burocracia, sobreestimación de sinergias).\n\nb) Un crecimiento que crea valor cumple la regla Vab > Va + Vb: se apoya en sinergias reales, coherencia con la misión y las capacidades, y aumenta la rentabilidad conjunta. Un crecimiento por motivaciones de agencia aumenta el tamaño sin aumentar (o incluso reduciendo) la rentabilidad, y suele carecer de sinergias.\n\nDos señales de alerta en el caso: (i) las adquisiciones aumentan el tamaño y el prestigio del gerente pero no la rentabilidad; (ii) se diversifica hacia negocios sin relación con el giro (sin sinergias ni capacidades compartidas). Un mecanismo para mitigar el problema de agencia: fortalecer el gobierno corporativo (directorio independiente y activo que evalúe cada operación con criterios de creación de valor, due diligence rigurosa) y alinear los incentivos de la gerencia con la rentabilidad y el valor de largo plazo para los accionistas, no con el tamaño.",
+      criterios: [
+        { texto: "a) Explica los problemas de agencia (separación propiedad-gestión, intereses del directivo) y su efecto en crecimiento/diversificación", peso: 3 },
+        { texto: "b) Distingue crecimiento que crea valor (sinergias, Vab > Va + Vb) del motivado por agencia (tamaño sin rentabilidad)", peso: 3 },
+        { texto: "b) Indica dos señales de alerta del caso y un mecanismo de mitigación (gobierno corporativo, incentivos alineados)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir problemas de agencia con simples errores de gestión sin conflicto de intereses",
+        "Justificar la diversificación solo por el crecimiento del tamaño",
+        "No proponer mecanismos de gobierno corporativo o alineación de incentivos"
+      ]
+    },
+
+    {
+      id: "est-080",
+      tema: "U4. Encaje del sistema de actividades en una aerolínea de bajo costo",
+      dificultad: "media",
+      enunciado: "Una aerolínea de bajo costo logra tarifas muy inferiores a las tradicionales mediante un conjunto de decisiones: usa un solo tipo de avión, opera rutas punto a punto de alta densidad, cobra por separado equipaje y servicios a bordo, vende principalmente por su web, hace rotaciones rápidas en tierra y no ofrece salones ni programa de conexiones.\n\na) Explique por qué la ventaja de esta aerolínea no proviene de una sola actividad, sino del encaje del sistema de actividades.\n\nb) Explique por qué a una aerolínea tradicional le resulta tan difícil imitar este modelo, relacionándolo con los trade-offs y las barreras a la imitación.",
+      respuestaModelo: "a) La ventaja de la aerolínea de bajo costo no proviene de una actividad aislada (por ejemplo, 'cobrar por el equipaje'), sino del encaje del sistema de actividades: un conjunto de decisiones que se refuerzan y optimizan mutuamente y que, en conjunto, permiten una estructura de costos muy baja. Un solo tipo de avión reduce costos de mantenimiento y capacitación; las rutas punto a punto de alta densidad y las rotaciones rápidas en tierra maximizan la utilización de los aviones; la venta por web elimina intermediarios; el cobro separado de servicios baja la tarifa base; y no ofrecer salones ni conexiones evita costos y complejidad. Cada decisión potencia a las demás (encaje de refuerzo y de optimización): el valor y la ventaja surgen del sistema completo, no de una pieza.\n\nb) A una aerolínea tradicional le resulta muy difícil imitar el modelo por los trade-offs y las barreras a la imitación. Copiar una actividad aislada (por ejemplo, cobrar por el equipaje) no reproduce la ventaja: para lograr los costos bajos habría que replicar todo el sistema. Pero hacerlo exige renuncias incompatibles con su propio posicionamiento: debería abandonar sus conexiones internacionales, salones VIP, flota diversa y servicio completo, es decir, canibalizar el negocio que la sostiene. Estos trade-offs, sumados a la complejidad organizacional, los costos hundidos y la coherencia del sistema del competidor de bajo costo, hacen que imitar sea costoso y arriesgado. Por eso la ventaja del modelo low cost es sostenible pese a ser conocido: 'imitar no es copiar una actividad, sino todo el sistema'.",
+      criterios: [
+        { texto: "a) Explica que la ventaja proviene del encaje del sistema de actividades y no de una actividad aislada, con ejemplos del caso", peso: 4 },
+        { texto: "b) Explica por qué la aerolínea tradicional no puede imitarlo por los trade-offs (renuncias incompatibles con su posicionamiento)", peso: 2 },
+        { texto: "b) Relaciona la dificultad de imitación con las barreras (copiar el sistema completo, complejidad, costos hundidos)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Atribuir la ventaja a una sola decisión (por ejemplo, 'cobrar por el equipaje')",
+        "No explicar los trade-offs que impiden a la aerolínea tradicional imitar el modelo",
+        "Confundir eficiencia operativa aislada con el encaje del sistema de actividades"
+      ]
+    },
+
+    {
+      id: "est-081",
+      tema: "U5. Ventaja competitiva transitoria y renovación continua",
+      dificultad: "media",
+      enunciado: "Una empresa tecnológica alcanzó una posición dominante con un producto innovador. Su gerente afirma: 'ya logramos la ventaja competitiva, ahora solo debemos defenderla y explotarla'. Un asesor le advierte que, en su industria, esa mentalidad es peligrosa.\n\na) Explique el concepto de ventaja competitiva transitoria y por qué en entornos dinámicos la ventaja sostenible es la excepción y no la regla.\n\nb) Explique por qué la afirmación del gerente es riesgosa y qué debería hacer la empresa para competir bajo la lógica de la ventaja transitoria.",
+      respuestaModelo: "a) La ventaja competitiva transitoria es la noción, propia de la etapa actual del pensamiento estratégico, de que en entornos dinámicos las ventajas competitivas no duran indefinidamente: la imitación, los cambios tecnológicos acelerados y la entrada de nuevos competidores erosionan rápidamente cualquier posición. Por eso la ventaja sostenible de largo plazo es la excepción y no la regla; las empresas deben crear, explotar y abandonar ventajas de forma continua, encadenando ventajas temporales en lugar de aferrarse a una sola.\n\nb) La afirmación del gerente ('ya logramos la ventaja, solo hay que defenderla') es riesgosa porque asume que la ventaja es permanente y estática. En una industria tecnológica dinámica, esa mentalidad lleva a la complacencia: mientras la empresa 'defiende' su producto, competidores e innovaciones disruptivas erosionan su posición, y cuando reacciona ya es tarde (rigidez estratégica y miopía). Para competir bajo la lógica de la ventaja transitoria, la empresa debería: desarrollar capacidades dinámicas (integrar, construir y reconfigurar recursos), innovar continuamente y explorar nuevas ventajas antes de que la actual se agote, monitorear el entorno de forma permanente y estar dispuesta a canibalizar sus propios productos. La clave es renovar la ventaja proactivamente, no solo defender la existente.",
+      criterios: [
+        { texto: "a) Explica la ventaja competitiva transitoria y por qué la sostenible es la excepción en entornos dinámicos (imitación, cambio tecnológico, entrantes)", peso: 3 },
+        { texto: "b) Explica por qué la afirmación del gerente es riesgosa (complacencia, rigidez, miopía)", peso: 2 },
+        { texto: "b) Propone cómo competir bajo la ventaja transitoria (capacidades dinámicas, innovación continua, renovar ventajas)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Asumir que toda ventaja competitiva es permanente si se defiende bien",
+        "Confundir explotar la ventaja actual con renovarla continuamente",
+        "No proponer capacidades dinámicas ni innovación continua"
+      ]
+    },
+
+    {
+      id: "est-082",
+      tema: "U2. Coherencia entre misión, visión y decisiones de crecimiento",
+      dificultad: "media",
+      enunciado: "Una empresa familiar declara una visión de 'ser líder regional en alimentos saludables de origen local' y una misión centrada en calidad y cercanía con productores locales. Sin embargo, su directorio evalúa adquirir una fábrica de bebidas azucaradas importadas porque es rentable.\n\na) Explique la función estratégica de la misión, la visión y los objetivos estratégicos, y cómo se relacionan con las decisiones de crecimiento y diversificación.\n\nb) Analice la coherencia de la adquisición evaluada con la misión y la visión declaradas, y explique por qué el crecimiento sin coherencia estratégica puede destruir valor.",
+      respuestaModelo: "a) La misión define la razón de ser de la empresa (qué hace, para quién y con qué propósito) y orienta las decisiones corporativas, dando coherencia al crecimiento y la diversificación; delimita el marco de actuación. La visión expresa el estado futuro deseado y guía las decisiones de expansión y transformación, proporcionando dirección. Los objetivos estratégicos son metas concretas, medibles y de largo plazo, coherentes con misión y visión, que guían la asignación de recursos. En cuanto al crecimiento: la visión define hacia dónde crecer, la misión delimita hasta dónde crecer y los objetivos determinan cómo y a qué ritmo; la diversificación es un medio, no un fin.\n\nb) La adquisición de una fábrica de bebidas azucaradas importadas es incoherente con la misión y la visión declaradas: la visión apunta a liderar en alimentos saludables de origen local, y la misión enfatiza calidad y cercanía con productores locales. Unas bebidas azucaradas importadas contradicen tanto lo 'saludable' como lo 'local', y no aprovechan las capacidades ni las relaciones con productores locales. Se estaría diversificando solo por rentabilidad, sin coherencia estratégica (posible motivación de agencia).\n\nEl crecimiento sin coherencia estratégica puede destruir valor porque genera dispersión, confunde el posicionamiento y la marca frente a los clientes, no captura sinergias reales y agrega costos de coordinación; además, puede dañar la reputación construida en torno a lo saludable y local. 'El crecimiento solo es estratégico si crea valor' y debe estar alineado con la misión y las capacidades de la firma: más grande no es mejor si no es coherente.",
+      criterios: [
+        { texto: "a) Explica la función estratégica de misión, visión y objetivos y su relación con el crecimiento/diversificación (hacia dónde, hasta dónde, cómo)", peso: 3 },
+        { texto: "b) Analiza la incoherencia de la adquisición con la misión/visión declaradas (no saludable, no local, sin sinergias)", peso: 3 },
+        { texto: "b) Explica por qué el crecimiento sin coherencia destruye valor (dispersión, daño de marca, ausencia de sinergias)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir misión con visión al analizar la coherencia",
+        "Justificar la adquisición solo por su rentabilidad, ignorando la coherencia estratégica",
+        "No conectar el crecimiento con la creación o destrucción de valor"
+      ]
+    },
+
+    {
+      id: "est-083",
+      tema: "U3. Análisis de la rivalidad y el ciclo de vida de la industria",
+      dificultad: "media",
+      enunciado: "La industria de las bebidas energéticas pasó, en pocos años, de tener uno o dos actores pioneros con altos márgenes a estar poblada de decenas de marcas que compiten con promociones, lanzamientos constantes y presión de precios de los supermercados.\n\na) Explique cómo cambia la intensidad de la rivalidad a medida que una industria transita de una etapa emergente a una etapa de madurez.\n\nb) Identifique dos (2) factores que intensifican la rivalidad en la etapa madura de esta industria y explique una implicancia estratégica para una marca que quiera sostener su rentabilidad.",
+      respuestaModelo: "a) La intensidad de la rivalidad cambia a lo largo del ciclo de vida de la industria. En la etapa emergente hay pocos actores, la demanda crece rápido y cada empresa puede crecer sin quitarle clientes a las demás, por lo que la rivalidad es baja y los márgenes altos (como los pioneros de las energéticas). A medida que la industria madura, el crecimiento de la demanda se desacelera, entran muchos competidores atraídos por la rentabilidad inicial, los productos se estandarizan y la única forma de crecer es quitando cuota a los rivales: la rivalidad se intensifica, aparecen guerras de precios y promociones, y los márgenes se comprimen.\n\nb) Dos factores que intensifican la rivalidad en la etapa madura de las bebidas energéticas: (i) alto número de competidores y bajo crecimiento del mercado (decenas de marcas disputando una demanda que ya no crece tan rápido), lo que obliga a competir por cuota; (ii) baja diferenciación de los productos y alto poder de los canales (supermercados que presionan precios), lo que empuja a competir por precio y promociones. También influyen los lanzamientos constantes.\n\nImplicancia estratégica para sostener la rentabilidad: la marca no debería entrar en la guerra de precios, sino diferenciarse claramente (marca, posicionamiento, innovación de producto, segmentos específicos) y construir lealtad y costos de cambio, o buscar nichos/espacios menos disputados (lógica de océano azul), de modo de reducir la comparación por precio y proteger sus márgenes en un entorno maduro.",
+      criterios: [
+        { texto: "a) Explica cómo cambia la rivalidad de la etapa emergente (baja, alta rentabilidad) a la madura (alta, márgenes comprimidos) según el ciclo de vida", peso: 3 },
+        { texto: "b) Identifica dos factores que intensifican la rivalidad en la madurez (muchos competidores/bajo crecimiento, baja diferenciación/poder del canal)", peso: 3 },
+        { texto: "b) Explica una implicancia estratégica para sostener la rentabilidad (diferenciación/lealtad/nicho en vez de guerra de precios)", peso: 2 }
+      ],
+      erroresComunes: [
+        "No relacionar la intensidad de la rivalidad con la etapa del ciclo de vida",
+        "Confundir la rivalidad (competidores directos) con otras fuerzas al analizar la madurez",
+        "Recomendar competir por precio en una industria madura, comprimiendo aún más los márgenes"
+      ]
+    },
+
+    {
+      id: "est-084",
+      tema: "U2. Elección del mecanismo de crecimiento: interno, F&A o alianza",
+      dificultad: "media",
+      enunciado: "Una empresa quiere entrar a un nuevo negocio y evalúa tres caminos: desarrollarlo internamente desde cero (crecimiento orgánico), adquirir una empresa que ya opera en ese negocio, o formar una alianza estratégica con un actor establecido.\n\na) Compare los tres mecanismos de crecimiento en términos de velocidad, control, riesgo e inversión.\n\nb) Indique en qué condiciones convendría cada mecanismo, entregando un criterio de decisión para elegir entre ellos.",
+      respuestaModelo: "a) Comparación de los tres mecanismos:\n- Crecimiento interno (orgánico): la empresa desarrolla el negocio desde cero. Es más lento, pero otorga control total, permite construir capacidades propias y mantener la coherencia cultural; el riesgo es de ejecución y de tiempo, con inversión gradual.\n- Adquisición (F&A): comprar una empresa que ya opera en el negocio. Es rápido (entrada inmediata) y da control total, pero exige alta inversión y concentra el riesgo (sobreprecio, sobreestimación de sinergias y, sobre todo, integración cultural).\n- Alianza estratégica: cooperar con un actor establecido. Es relativamente rápida, con menor inversión y riesgo compartido, pero implica control compartido, flexibilidad alta e integración solo parcial, con riesgo de oportunismo del socio.\n\nb) Condiciones para cada mecanismo:\n- Conviene el crecimiento interno cuando la empresa posee o puede desarrollar las capacidades necesarias, el tiempo no es crítico y quiere control total y coherencia (evita sobreprecios y choques culturales).\n- Conviene la adquisición cuando la velocidad es crítica, el negocio requiere activos o capacidades difíciles de construir internamente y se busca control total, y la empresa tiene recursos para invertir y gestionar la integración.\n- Conviene la alianza cuando se quiere acceder a capacidades o mercados con bajo compromiso de recursos, compartir riesgos y aprender antes de comprometerse más, o cuando adquirir sería demasiado costoso o riesgoso.\n\nCriterio de decisión: elegir según la disponibilidad de capacidades propias, la urgencia (velocidad requerida), los recursos disponibles, el nivel de control deseado y el riesgo aceptable, buscando siempre que el mecanismo maximice la creación de valor (sinergias reales) y no solo el tamaño.",
+      criterios: [
+        { texto: "a) Compara los tres mecanismos en velocidad, control, riesgo e inversión", peso: 4 },
+        { texto: "b) Indica en qué condiciones conviene cada mecanismo", peso: 3 },
+        { texto: "b) Entrega un criterio de decisión coherente (capacidades, urgencia, recursos, control, riesgo, creación de valor)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Afirmar que la adquisición siempre es mejor por ser más rápida, ignorando su riesgo de integración",
+        "No distinguir el crecimiento interno del externo",
+        "Elegir un mecanismo sin criterios (control, recursos, riesgo, velocidad)"
+      ]
+    },
+
+    {
+      id: "est-085",
+      tema: "U4. Identificación de la fuente de ventaja: costos versus diferenciación",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Dos empresas compiten en la misma industria de muebles. La Empresa A produce en serie modelos estándar, con procesos automatizados y ubicación de fábrica de bajo costo, y vende a precios bajos. La Empresa B fabrica muebles de diseño exclusivo, con maderas nobles, ebanistas expertos y un servicio de asesoría personalizada, cobrando precios altos.\n\na) Identifique la fuente de ventaja competitiva de cada empresa (liderazgo en costos o diferenciación) y justifique con evidencias del caso.\n\nb) Explique por qué cada empresa requiere un sistema de actividades distinto y qué pasaría si intentaran adoptar la estrategia de la otra sin renunciar a la propia.",
+      respuestaModelo: "a) La Empresa A tiene una ventaja competitiva basada en liderazgo en costos: genera valor produciendo a menor costo que los competidores. Evidencias: producción en serie de modelos estándar, procesos automatizados, ubicación de fábrica de bajo costo y precios bajos; su propuesta se sustenta en una estructura de costos inferior.\n\nLa Empresa B tiene una ventaja basada en diferenciación: ofrece atributos únicos valorados por el cliente que permiten cobrar un precio superior. Evidencias: muebles de diseño exclusivo, maderas nobles, ebanistas expertos y asesoría personalizada, con precios altos; el cliente paga más por el mayor valor percibido.\n\nb) Cada empresa requiere un sistema de actividades distinto porque las estrategias genéricas exigen configuraciones incompatibles: el liderazgo en costos requiere estandarización, automatización, eficiencia y control de gastos; la diferenciación requiere diseño, artesanía, calidad de insumos, talento experto y servicio, que son costosos. Son actividades no combinables libremente, con trade-offs claros.\n\nSi la Empresa A intentara diferenciarse (diseño exclusivo, maderas nobles) sin renunciar a su modelo de bajo costo, elevaría sus costos y perdería su ventaja de precio; si la Empresa B intentara competir por precios bajos sin renunciar a su diseño artesanal, no lograría la estructura de costos del líder. En ambos casos quedarían 'atrapadas en el medio': sin la mejor estructura de costos ni una diferenciación clara que justifique el precio, con bajo desempeño. 'Sin trade-offs no hay estrategia'.",
+      criterios: [
+        { texto: "a) Identifica la ventaja de A (liderazgo en costos) y de B (diferenciación) con evidencias del caso", peso: 4 },
+        { texto: "b) Explica por qué cada estrategia requiere un sistema de actividades distinto (configuraciones incompatibles, trade-offs)", peso: 2 },
+        { texto: "b) Explica el riesgo de 'atrapado en el medio' si intentaran adoptar la estrategia de la otra sin renunciar a la propia", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir liderazgo en costos con diferenciación o describirlos de forma intercambiable",
+        "Afirmar que una empresa puede maximizar costos bajos y diferenciación premium a la vez sin trade-offs",
+        "No conectar la fuente de ventaja con el sistema de actividades requerido"
+      ]
+    },
+
+    // ---- DIFÍCIL (est-086 a est-104) ----
+
+    {
+      id: "est-086",
+      tema: "U3/U4. Análisis externo (PESTEL y 5 Fuerzas) y estrategia genérica en un caso",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "VerdeCiclo: moda circular desde Chile\n\nVerdeCiclo es una empresa chilena que confecciona ropa a partir de textiles reciclados y recuperados. Nació aprovechando una creciente conciencia ambiental de los consumidores y una regulación cada vez más estricta sobre residuos textiles, que penaliza a la industria de la moda desechable. Su propuesta destaca trazabilidad del origen del material, diseño de autor y bajo impacto ambiental, con precios entre 25% y 40% superiores a la moda masiva. Vende en tiendas propias de barrios acomodados, ferias de diseño y e-commerce.\n\nEn los últimos dos años, grandes cadenas de fast fashion lanzaron 'líneas eco' a precios bajos, apoyadas en sus marcas y su acceso privilegiado a las grandes tiendas. Además, el abastecimiento de textil reciclado de calidad depende de pocos centros de acopio, cuyos precios y volúmenes varían. Las grandes tiendas por departamento, que concentran gran parte de la venta de vestuario, exigen descuentos y plazos que VerdeCiclo ha evitado, manteniéndose en canales donde el cliente valora y paga su propuesta.\n\nA partir del caso, responda:\n\na) Identifique tres (3) factores del macroentorno (PESTEL) relevantes para VerdeCiclo, clasificando cada uno en su dimensión e indicando si es oportunidad o amenaza, con evidencia del caso.\n\nb) Evalúe las tres (3) fuerzas competitivas de Porter más relevantes para esta industria, clasificando su intensidad con evidencia, y concluya sobre el atractivo de la industria.\n\nc) Determine qué estrategia genérica de Porter implementa VerdeCiclo, justificando con tres (3) evidencias del caso y descartando explícitamente la alternativa con la que suele confundirse.",
+      respuestaModelo: "a) Factores PESTEL (tres, entre los siguientes):\n- Legal: regulación cada vez más estricta sobre residuos textiles que penaliza la moda desechable. OPORTUNIDAD, porque favorece a productos de bajo impacto como los de VerdeCiclo.\n- Social: creciente conciencia ambiental de los consumidores. OPORTUNIDAD, porque valida su propuesta de valor y sustenta su precio superior.\n- Ambiental/Económico: la variabilidad de precios y volúmenes del textil reciclado y su dependencia de pocos centros de acopio. AMENAZA (dimensión económica/ambiental de abastecimiento), porque encarece y hace incierto el insumo. (También válido Tecnológico por la trazabilidad.)\n\nb) Fuerzas más relevantes:\n- Rivalidad entre competidores: ALTA y creciente. Evidencia: grandes cadenas de fast fashion lanzaron 'líneas eco' a precios bajos con marcas consolidadas, compitiendo por el mismo consumidor consciente.\n- Poder de negociación de los clientes (canal): ALTO en las tiendas por departamento, que concentran la venta de vestuario y exigen descuentos y plazos; menor en los canales especializados donde VerdeCiclo se ha mantenido (el consumidor final valora y paga el premium).\n- Poder de negociación de los proveedores: ALTO. Evidencia: el textil reciclado de calidad depende de pocos centros de acopio con precios y volúmenes variables (insumo escaso y sin sustituto fácil si se quiere mantener la identidad).\nConclusión: la industria es de atractivo medio y decreciente: la demanda crece (oportunidad estructural), pero la entrada de grandes actores intensifica la rivalidad y los canales y proveedores presionan los márgenes. La rentabilidad dependerá de sostener una posición diferenciada.\n\nc) Estrategia genérica: DIFERENCIACIÓN. Evidencias: (1) precios 25%-40% superiores a la moda masiva, sostenidos en la disposición a pagar del cliente; (2) atributos únicos valorados: trazabilidad del origen, diseño de autor y bajo impacto ambiental; (3) canales donde el cliente valora la propuesta (tiendas de diseño, e-commerce propio) y una marca con identidad sustentable difícil de imitar. Se descarta el ENFOQUE/nicho (error frecuente): aunque vende en canales selectos, VerdeCiclo apunta al mercado amplio de consumidores conscientes, no a un segmento estrecho definido; el canal es una decisión de distribución coherente con su diferenciación, no una estrategia de nicho. Tampoco es liderazgo en costos, pues su abastecimiento es caro y su competencia por precio la dan los grandes actores.",
+      criterios: [
+        { texto: "a) Identifica tres factores PESTEL correctamente clasificados en su dimensión con evidencia del caso", peso: 2 },
+        { texto: "a) Clasifica cada factor como oportunidad o amenaza con justificación", peso: 1 },
+        { texto: "b) Evalúa tres fuerzas pertinentes con intensidad y evidencias (rivalidad creciente, poder del canal, poder de proveedores)", peso: 3 },
+        { texto: "b) Concluye fundadamente sobre el atractivo de la industria integrando las fuerzas", peso: 2 },
+        { texto: "c) Identifica DIFERENCIACIÓN y la respalda con tres evidencias del caso (precio premium, atributos únicos, marca/trazabilidad)", peso: 3 },
+        { texto: "c) Descarta explícitamente el enfoque/nicho (mercado amplio; el canal no define la estrategia) y el liderazgo en costos", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir diferenciación con enfoque/nicho por vender en canales selectos o a precio premium",
+        "Mezclar el análisis PESTEL (macroentorno) con las 5 fuerzas (microentorno), duplicando factores",
+        "Aplicar las 5 fuerzas a VerdeCiclo como empresa en vez de a la industria, y no concluir el atractivo"
+      ]
+    },
+
+    {
+      id: "est-087",
+      tema: "U4/U2. FODA, cadena de valor y estrategia de crecimiento",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Manos de Chiloé: tejidos con identidad\n\nManos de Chiloé es una empresa chilena que produce prendas de lana tejidas por una red de más de 200 artesanas del archipiélago, con lana de oveja local, teñidos naturales y diseños tradicionales reinterpretados. Sus productos son reconocidos por su autenticidad y calidad, y la empresa mantiene una relación de comercio justo con las tejedoras, lo que refuerza su marca. Su capacidad de producción, sin embargo, es limitada y artesanal: los pedidos grandes tienen esperas de meses. Vende casi exclusivamente en Chile, en dos tiendas propias y su web, con costos unitarios muy superiores a la ropa industrial importada. Su base de clientes es leal pero acotada. El directorio se propuso duplicar su tamaño en cinco años y evalúa el salto internacional hacia mercados que valoran productos con identidad y sostenibilidad.\n\nA partir del caso, responda:\n\na) Identifique dos (2) fortalezas y dos (2) debilidades de Manos de Chiloé, definiendo previamente qué es una fortaleza y una debilidad, y fundamentando cada una con evidencia del caso y su impacto.\n\nb) A partir del modelo de la cadena de valor, identifique dos (2) actividades primarias y una (1) actividad de apoyo que sean fuentes de diferenciación, justificando con el caso.\n\nc) Proponga una estrategia de crecimiento corporativa coherente con el objetivo del directorio, recomendando un modo de entrada internacional según los recursos de la empresa, y señale un riesgo relevante de su propuesta.",
+      respuestaModelo: "a) Una fortaleza es una característica interna distintiva, valiosa y difícil de imitar que deja a la empresa en posición superior; una debilidad es un aspecto interno en que la empresa es inferior a sus competidores y que limita su éxito. Ambas son internas (no del entorno).\n\nFortalezas: (1) Marca auténtica y capacidad artesanal con identidad: lana local, teñidos naturales, diseños tradicionales y red de artesanas de comercio justo; es rara y difícil de imitar y sustenta la reputación. Impacto: lealtad de clientes y disposición a pagar. (2) Relación de comercio justo con más de 200 tejedoras: activo relacional y reputacional que refuerza la marca y asegura el saber artesanal. Impacto: diferenciación y sostenibilidad de la propuesta.\n\nDebilidades: (1) Capacidad productiva limitada y artesanal: los pedidos grandes esperan meses; restringe el crecimiento y frustra la demanda. (2) Costos unitarios altos y dependencia de un solo mercado con base de clientes acotada: la concentración en Chile y el costo elevado frente a la ropa importada limitan la escala y aumentan el riesgo. Impacto: techo al crecimiento y vulnerabilidad.\n\nb) Actividades primarias fuentes de diferenciación: (1) Operaciones: el tejido artesanal con lana local y teñidos naturales explica la autenticidad y calidad, atributo central de valor. (2) Marketing y ventas: la construcción de una marca con identidad de Chiloé y comercio justo, y el canal directo, comunican y capturan el valor. (También válido Servicios.) Actividad de apoyo: Gestión de recursos humanos / abastecimiento vinculado a la red de artesanas: la selección, coordinación y desarrollo de las tejedoras y el acceso a la lana local es la base del atributo diferenciador (también defendible desarrollo tecnológico/diseño). La coherencia entre estas actividades forma un sistema difícil de imitar.\n\nc) Estrategia corporativa: crecimiento vía internacionalización (ampliación del ámbito geográfico), coherente con un mercado local acotado y una marca con identidad que mercados extranjeros valoran. Modo de entrada recomendado: exportación con distribuidores especializados o e-commerce transfronterizo hacia mercados que valoran identidad y sostenibilidad, con bajo compromiso inicial; es coherente con recursos limitados, evita grandes inversiones y aprovecha la reputación de nicho. Antes de escalar, debe resolver la restricción de capacidad productiva (ampliar la red de artesanas o incorporar capacidad cuidando la calidad). Riesgo relevante: crecer en volumen puede erosionar la autenticidad y calidad artesanal que sustentan la ventaja (incoherencia entre crecimiento y sistema de actividades); además, en el exterior compite con productos industriales de menor costo, por lo que debe sostener la diferenciación y no competir por precio. (También se acepta una alianza con un retailer internacional de productos con identidad, bien justificada.)",
+      criterios: [
+        { texto: "a) Define fortaleza y debilidad como factores internos y las distingue de oportunidades/amenazas", peso: 1 },
+        { texto: "a) Identifica dos fortalezas y dos debilidades del caso con evidencia e impacto", peso: 3 },
+        { texto: "b) Identifica dos actividades primarias y una de apoyo como fuentes de diferenciación, correctamente clasificadas y con evidencia", peso: 3 },
+        { texto: "c) Propone internacionalización con modo de entrada de bajo compromiso justificado en los recursos, aborda la restricción de capacidad y señala un riesgo (erosión de la diferenciación)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Presentar oportunidades o amenazas del entorno como fortalezas o debilidades internas",
+        "Clasificar mal las actividades de la cadena de valor (por ejemplo, marketing como actividad de apoyo)",
+        "Recomendar una expansión internacional agresiva ignorando la restricción de capacidad y los recursos limitados"
+      ]
+    },
+
+    {
+      id: "est-088",
+      tema: "U2/U4. VRIO, sustentabilidad de la ventaja y capacidades dinámicas",
+      dificultad: "dificil",
+      enunciado: "DataAgro: analítica para el campo\n\nDataAgro ofrece un servicio de analítica y recomendaciones agronómicas basado en datos. Su activo central es una base de datos propietaria construida durante ocho años con información de miles de hectáreas monitoreadas, que alimenta modelos de predicción cada vez más precisos; ningún competidor posee algo similar. También cuenta con un equipo mixto de agrónomos y científicos de datos que trabaja integradamente, y con contratos de largo plazo con grandes agrícolas. La empresa ha institucionalizado sus procesos de mejora del modelo. Sin embargo, aparecieron dos startups con soluciones parecidas a menor precio y una gran empresa global de agrotecnología anunció su entrada al país.\n\nA partir del caso, responda:\n\na) Evalúe mediante el modelo VRIO dos (2) recursos o capacidades de DataAgro, concluyendo si constituyen fuente de ventaja competitiva sostenible.\n\nb) Explique el concepto de ventaja competitiva transitoria y por qué la entrada de imitadores y de un actor global la vuelve relevante para DataAgro.\n\nc) Proponga y justifique dos (2) fuentes de sustentabilidad o capacidades dinámicas que DataAgro debería reforzar para sostener su ventaja en el tiempo.",
+      respuestaModelo: "a) VRIO (Valioso, Raro, Inimitable, Organización):\n- Recurso 1: la base de datos propietaria de ocho años. Valiosa (mejora continuamente la precisión de los modelos y la propuesta de valor), Rara (ningún competidor la posee), Inimitable (requiere años de acumulación de datos en terreno y escala; ambigüedad causal y dependencia de la trayectoria; no se compra en el mercado), y explotada por la Organización (procesos institucionalizados de mejora del modelo). Cumple los cuatro criterios: ventaja competitiva sostenible.\n- Capacidad 2: el equipo integrado de agrónomos y científicos de datos. Valiosa (traduce datos en recomendaciones útiles), Rara (la combinación de ambos perfiles trabajando integradamente es escasa), Inimitable en el corto plazo (conocimiento tácito, cultura y coordinación construidas en el tiempo), y organizada para explotarse. También sostiene ventaja competitiva. Los contratos de largo plazo agregan costos de cambio.\n\nb) La ventaja competitiva transitoria es la noción de que en entornos dinámicos las ventajas no duran indefinidamente: la imitación, los cambios tecnológicos y los nuevos entrantes las erosionan, obligando a crear, explotar y renovar ventajas continuamente. Es relevante para DataAgro porque las dos startups con soluciones parecidas a menor precio y la entrada de un actor global amenazan con imitar o superar su oferta: la tecnología de análisis se hace más accesible, por lo que confiarse en la ventaja actual sería un error.\n\nc) Fuentes de sustentabilidad / capacidades dinámicas a reforzar: (1) Profundizar los costos de cambio y el encaje del sistema: integrar aún más el servicio en la operación de las grandes agrícolas (recomendaciones, certificaciones, integración con sus sistemas) de modo que cambiar de proveedor sea costoso y no baste con copiar una funcionalidad. (2) Capacidades dinámicas e innovación continua: usar la base de datos única para lanzar nuevas aplicaciones (nuevos cultivos, predicción climática, sostenibilidad) y renovar la ventaja antes de que se erosione, además de expandirse a nuevos mercados donde el actor global aún no llega. Lo que los imitadores pueden copiar es una funcionalidad aislada, no el sistema completo (datos + equipo + relaciones + mejora continua).",
+      criterios: [
+        { texto: "a) Evalúa dos recursos/capacidades con los cuatro criterios VRIO anclados al caso (base de datos, equipo integrado, contratos)", peso: 3 },
+        { texto: "a) Concluye correctamente sobre la sostenibilidad (cumplen VRIO; se copia una funcionalidad, no el sistema)", peso: 1 },
+        { texto: "b) Explica la ventaja competitiva transitoria y por qué la entrada de imitadores/actor global la vuelve relevante", peso: 2 },
+        { texto: "c) Propone dos fuentes de sustentabilidad o capacidades dinámicas pertinentes y justificadas (costos de cambio/encaje, innovación continua/reconfiguración)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Evaluar VRIO sobre recursos genéricos ('buena tecnología') sin las evidencias del caso",
+        "Concluir ventaja sostenible cumpliendo solo V, R e I, omitiendo la Organización",
+        "Proponer 'seguir innovando' sin mecanismos concretos (costos de cambio, encaje, capacidades dinámicas)"
+      ]
+    },
+
+    {
+      id: "est-089",
+      tema: "U3/U4. Grupos estratégicos, ciclo de vida y estrategia genérica en la educación superior",
+      dificultad: "dificil",
+      enunciado: "Instituto Horizonte: encontrar su lugar\n\nEn el mercado de la educación superior técnica conviven modelos distintos: grandes institutos masivos de bajo arancel, alta cobertura nacional, carreras estandarizadas y fuerte inversión en marketing; institutos boutique especializados en áreas específicas (gastronomía, diseño, tecnología) con aranceles altos, cercanía con la industria y prestigio en su nicho; y centros de formación pequeños de bajo arancel y alcance local. Instituto Horizonte es un actor mediano que quedó en el medio: ni el más barato y masivo, ni el más especializado y prestigioso, con matrículas estancadas.\n\nLa industria cambió con el tiempo: en sus inicios había pocos actores y demanda creciente; luego se masificó, entraron muchos competidores, y hoy el mercado está maduro, con demanda estancada, alta sensibilidad al arancel y presión regulatoria sobre la calidad.\n\nA partir del caso, responda:\n\na) Construya un mapa de grupos estratégicos proponiendo dos (2) variables pertinentes, describa los grupos y ubique a Instituto Horizonte, relacionando su posición con el concepto de 'atrapado en el medio'.\n\nb) Identifique dos (2) barreras de movilidad que dificultan que un instituto cambie de grupo, con referencia al caso.\n\nc) Usando el ciclo de vida de la industria, explique cómo cambió la estructura competitiva desde la etapa inicial a la madurez (identificando dos fuerzas de Porter que se intensificaron) y recomiende a Instituto Horizonte una estrategia genérica clara, justificando su coherencia y señalando un riesgo.",
+      respuestaModelo: "a) Los grupos estratégicos son conjuntos de empresas de una industria que siguen estrategias similares. Dos variables pertinentes: nivel de arancel/precio (bajo a alto) y grado de especialización/diferenciación (carreras estandarizadas masivas frente a especialización de nicho con vínculo con la industria). También válido el alcance geográfico. Grupos: (1) grandes institutos masivos: arancel bajo, cobertura nacional, carreras estandarizadas, marketing intensivo; (2) institutos boutique especializados: arancel alto, especialización, prestigio y cercanía con la industria; (3) centros pequeños locales: arancel bajo, alcance local. Instituto Horizonte queda ubicado entre los grupos: 'ni el más barato y masivo, ni el más especializado y prestigioso', con matrículas estancadas. Refleja el problema de estar 'atrapado en el medio': no tiene la estructura de costos y escala para competir con los masivos por arancel, ni la especialización y prestigio para justificar aranceles altos como los boutique, por lo que no destaca en nada y su desempeño se resiente.\n\nb) Barreras de movilidad (dos): (i) escala e inversión: convertirse en un instituto masivo exige cobertura nacional, infraestructura y gran inversión en marketing que toman años; (ii) prestigio, cuerpo docente y vínculos con la industria: pasar al grupo boutique especializado requiere reputación, docentes expertos y relaciones con el sector, activos difíciles de construir rápido. Estas barreras explican la estabilidad de los grupos y por qué Horizonte no puede 'saltar' sin una transformación profunda.\n\nc) Ciclo de vida: en la etapa inicial había pocos actores y demanda creciente (baja rivalidad, alta rentabilidad); en la madurez, tras la masificación, la estructura se endureció: demanda estancada, alta sensibilidad al arancel y presión regulatoria. Dos fuerzas que se intensificaron: (1) rivalidad entre competidores (muchos institutos disputando una demanda que no crece); (2) poder de negociación de los clientes (estudiantes sensibles al arancel, con información y alternativas). (También válida la amenaza de nuevos entrantes en la fase de masificación.) Recomendación: Horizonte debe elegir una estrategia genérica clara y abandonar la ambigüedad. Una opción coherente es un enfoque/diferenciación en áreas específicas donde pueda construir prestigio y vínculo con la industria (por ejemplo, especializarse en un sector con empleabilidad y demanda), o bien comprometerse con el liderazgo en costos volviéndose masivo y eficiente. Lo esencial es salir del medio con un sistema de actividades coherente. Riesgo: la transición es costosa y arriesgada (reconvertir oferta, construir prestigio o lograr escala) y enfrenta competidores ya consolidados en cada grupo; debe cuidar no quedar otra vez a mitad de camino.",
+      criterios: [
+        { texto: "a) Propone dos variables pertinentes, describe los grupos y ubica a Instituto Horizonte explicando el 'atrapado en el medio'", peso: 3 },
+        { texto: "b) Identifica dos barreras de movilidad concretas con referencia al caso", peso: 2 },
+        { texto: "c) Explica el cambio del ciclo de vida (inicial a madurez) e identifica dos fuerzas que se intensificaron", peso: 2 },
+        { texto: "c) Recomienda una estrategia genérica clara para salir de la posición intermedia, justificada, y señala un riesgo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir grupos estratégicos con segmentos de estudiantes",
+        "Recomendar 'mejorar un poco todo' o mantener la posición intermedia, sin comprometerse con una estrategia genérica",
+        "Omitir las barreras de movilidad o el análisis del ciclo de vida"
+      ]
+    },
+
+    {
+      id: "est-090",
+      tema: "U2. Diversificación, Triángulo Corporativo y mecanismo de crecimiento (F&A vs alianza)",
+      dificultad: "dificil",
+      enunciado: "Grupo Aconcagua: crecer sin destruir valor\n\nGrupo Aconcagua es un holding cuyo negocio principal es la producción y exportación de fruta fresca, con huertos propios, plantas de proceso y una reconocida capacidad logística de cadena de frío y exportación. El directorio busca diversificar para reducir la dependencia del ciclo frutícola y evalúa dos alternativas:\n\nAlternativa A: adquirir JugoSur, un productor mediano de jugos y pulpas de fruta premium, industria que crece a buen ritmo y con márgenes atractivos. JugoSur usa como insumo fruta de descarte y de segunda calidad —que Aconcagua hoy vende muy barata a terceros— y su planta está cerca de una de las plantas de proceso del grupo.\n\nAlternativa B: adquirir una cadena de gimnasios, industria de moda con precios de compra 'convenientes', pese a que el grupo no tiene experiencia alguna en el rubro fitness. Un director argumenta que 'el grupo tiene buen management y eso basta'.\n\nA partir del caso, responda:\n\na) Evalúe ambas alternativas aplicando los tres componentes del Triángulo Corporativo (atractivo de la industria, ventaja competitiva y sinergias), con evidencia del caso.\n\nb) Clasifique cada alternativa según el tipo de diversificación y, usando la regla Vab > Va + Vb, explique en cuál es más probable crear valor, identificando dos (2) sinergias concretas de la alternativa que recomiende y el principal riesgo de la que descarte.\n\nc) Para la alternativa recomendada, analice si la adquisición es el mecanismo más adecuado o si una alianza estratégica sería preferible, comparando ambos y fundamentando su recomendación.",
+      respuestaModelo: "a) El Triángulo Corporativo evalúa si la estrategia corporativa crea valor mediante tres componentes que deben reforzarse; si uno falla, se destruye valor.\nAlternativa A (JugoSur): (1) Atractivo: alto (industria que crece a buen ritmo, márgenes atractivos). (2) Ventaja competitiva: Aconcagua aporta ventaja real: fruta de descarte propia como insumo, capacidad logística y de frío y escala. (3) Sinergias: evidentes: la fruta de descarte que hoy se vende barata se transforma en insumo de mayor valor, y la cercanía de plantas permite sinergias operativas y logísticas. Los tres vértices se refuerzan.\nAlternativa B (gimnasios): (1) Atractivo: dudoso; industria 'de moda' y un precio 'conveniente' no equivalen a atractivo estructural. (2) Ventaja competitiva: nula; el grupo no tiene capacidades en fitness; 'buen management basta' es una falacia (motivación de agencia). (3) Sinergias: inexistentes; no comparte insumos, clientes ni capacidades con el negocio frutícola. Fallan al menos dos vértices: destruye valor.\n\nb) La alternativa A es diversificación relacionada (comparte insumos, logística y proximidad operativa); la B es no relacionada (conglomeración). La regla exige que el valor conjunto supere la suma individual (Vab > Va + Vb), lo que requiere sinergias reales; en A es más probable crear valor. Dos sinergias concretas de A: (i) sinergia de insumos: aprovechar la fruta de descarte y de segunda como insumo de jugos y pulpas, capturando el margen que hoy se cede a terceros; (ii) sinergias logísticas y de escala: cadena de frío, transporte y cercanía de plantas que reducen costos conjuntos. El principal riesgo de B: destrucción de valor por ausencia de sinergias y capacidades, además de costos de coordinación, asimetrías de información y motivación de agencia (comprar por 'moda' y precio conveniente, no por creación de valor).\n\nc) Comparación de mecanismos: la adquisición da control total, integración plena de las sinergias operativas y captura completa del margen, pero exige alta inversión, riesgo de sobreprecio y desafíos de integración cultural. La alianza requiere menor compromiso y comparte riesgos, pero el control compartido dificultaría precisamente las sinergias que justifican la operación (integrar insumos, plantas y logística exige coordinación profunda de activos específicos). Recomendación: en este caso la adquisición es más adecuada, porque las sinergias son operativas y de integración de cadena de valor (requieren control y coordinación total), la cercanía de plantas hace eficiente la integración y la lógica de costos de transacción favorece internalizar. Condiciones: due diligence rigurosa para no sobrepagar ni sobreestimar sinergias, y un plan de integración que cuide la marca y el conocimiento comercial de JugoSur. Una alianza sería preferible solo si el grupo quisiera validar antes el negocio con menor riesgo.",
+      criterios: [
+        { texto: "a) Aplica los tres componentes del Triángulo a la alternativa A con evidencia", peso: 2 },
+        { texto: "a) Aplica los tres componentes a la alternativa B, detectando la falla en ventaja y sinergias (y la motivación de agencia)", peso: 2 },
+        { texto: "b) Clasifica A como relacionada y B como no relacionada, y explica la regla Vab > Va + Vb", peso: 2 },
+        { texto: "b) Identifica dos sinergias concretas de A y el riesgo principal de B", peso: 2 },
+        { texto: "c) Compara adquisición vs alianza y recomienda fundadamente el mecanismo, vinculándolo a la naturaleza de las sinergias, con condiciones (due diligence, integración)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Justificar la diversificación no relacionada solo porque el precio es 'conveniente'",
+        "Confundir el Triángulo Corporativo con las 5 fuerzas o el FODA",
+        "Afirmar que la adquisición siempre garantiza valor, ignorando la sobreestimación de sinergias y la integración"
+      ]
+    },
+
+    {
+      id: "est-091",
+      tema: "U2/U4. Internacionalización, modos de entrada y cadena de valor global",
+      dificultad: "dificil",
+      enunciado: "NeuroLab: software médico que cruza fronteras\n\nNeuroLab es una empresa chilena que desarrolla software de apoyo al diagnóstico por imágenes con inteligencia artificial, validado clínicamente y con una interfaz muy valorada por los médicos. Su ventaja está en sus algoritmos y en un equipo clínico-técnico de alto nivel. Tras liderar el mercado chileno, evalúa internacionalizarse. Analiza tres mercados: Colombia (regulación accesible, idioma común, sistema de salud con creciente digitalización); Estados Unidos (mercado enorme y rentable, pero con regulación sanitaria estricta —certificaciones exigentes— y competidores globales); y España (mercado atractivo, regulación europea exigente, necesidad de soporte local). NeuroLab tiene recursos financieros moderados y poca experiencia internacional.\n\nA partir del caso, responda:\n\na) Explique tres (3) criterios que determinan la elección del modo de entrada a un mercado internacional.\n\nb) Recomiende un modo de entrada para dos (2) de los tres mercados, justificando con las características del mercado y los recursos de NeuroLab.\n\nc) A partir del modelo de la cadena de valor, identifique dos (2) actividades (una primaria y una de apoyo) que NeuroLab debería fortalecer o adaptar para competir en el extranjero, justificando con el caso.",
+      respuestaModelo: "a) La elección del modo de entrada (exportación/licenciamiento del software, alianzas estratégicas, joint ventures, F&A o inversión directa) depende de: (i) el nivel de riesgo aceptable (regulación sanitaria, país, competencia); (ii) los recursos disponibles (financieros, humanos, de gestión), pues los modos con mayor compromiso exigen más inversión; (iii) el grado de control deseado sobre el producto, la marca y la calidad; y (iv) el conocimiento del mercado local (regulación, canales, prácticas clínicas), que puede suplirse con un socio local. A mayor control deseado, mayor inversión y riesgo; a menor conocimiento local, más valioso un socio.\n\nb) Recomendaciones (dos mercados):\n- Colombia: exportación/comercialización directa del software (modelo SaaS) apoyada, si acaso, en un representante local. Es el modo de menor riesgo e inversión, coherente con los recursos moderados y la poca experiencia internacional; la regulación accesible, el idioma común y la digitalización creciente reducen la necesidad de un socio con fuerte control local.\n- Estados Unidos: alianza estratégica con un actor local (o joint venture) que aporte el conocimiento regulatorio (certificaciones exigentes), acceso a canales y respaldo frente a competidores globales; una entrada en solitario o inversión directa sería demasiado riesgosa y costosa para sus recursos. (Para España, análogamente, una alianza con un socio local que aporte cumplimiento regulatorio europeo y soporte local.)\n\nc) Cadena de valor a fortalecer/adaptar: (1) Actividad primaria — Servicios (soporte y postventa): en salud, el soporte local, la implementación y la capacitación de los médicos son críticos; NeuroLab debe adaptar el servicio a cada país (idioma, husos horarios, prácticas clínicas). (2) Actividad de apoyo — Infraestructura/cumplimiento regulatorio (o desarrollo tecnológico): debe fortalecer la gestión de certificaciones y cumplimiento sanitario y adaptar el software a las regulaciones y estándares de cada mercado. (También válido desarrollo tecnológico para localizar el producto.) Estas actividades sostienen la diferenciación (algoritmos validados e interfaz valorada) en el nuevo contexto y son condición para operar.",
+      criterios: [
+        { texto: "a) Explica tres criterios de elección del modo de entrada (riesgo, recursos, control, conocimiento local)", peso: 3 },
+        { texto: "b) Recomienda un modo de bajo compromiso para Colombia y una alianza/JV para EE.UU. o España, justificado con el caso y los recursos", peso: 3 },
+        { texto: "c) Identifica una actividad primaria y una de apoyo a fortalecer/adaptar (servicio/soporte local, cumplimiento regulatorio/desarrollo tecnológico) con justificación", peso: 2 },
+        { texto: "c) Vincula las actividades a sostener la ventaja competitiva en el mercado extranjero", peso: 1 }
+      ],
+      erroresComunes: [
+        "Recomendar el mismo modo de entrada para todos los mercados sin considerar la regulación y los recursos",
+        "Proponer inversión directa ignorando los recursos moderados y la falta de experiencia internacional",
+        "Confundir la internacionalización (corporativa) con la estrategia genérica competitiva"
+      ]
+    },
+
+    {
+      id: "est-092",
+      tema: "U5/U3. Océano Azul, VRIO y sustentabilidad de la ventaja",
+      dificultad: "dificil",
+      enunciado: "Aula Viva: reinventar la capacitación docente\n\nAula Viva detectó que la capacitación de profesores en Chile se debatía entre cursos presenciales caros y poco prácticos, y plataformas de e-learning baratas pero genéricas y sin acompañamiento. En vez de competir con unos u otros, creó una propuesta inédita: simulaciones interactivas de aula combinadas con mentoría de docentes expertos y una certificación co-diseñada con sostenedores y ministerios. Eliminó costos de la capacitación tradicional (traslados, relatores presenciales) y creó atributos nuevos (práctica situada sin riesgo, datos de progreso individual, certificación reconocida), logrando a la vez menores costos y mayor valor. En cinco años firmó contratos con gran parte de las redes educativas y acumuló una base de datos única sobre trayectorias de aprendizaje docente que mejora sus simulaciones. Su red de mentores expertos supera los 250 y está ligada por un modelo difícil de replicar. Sin embargo, dos startups ofrecen simulaciones parecidas más baratas y una gran empresa global de edtech anunció su llegada.\n\nA partir del caso, responda:\n\na) Explique por qué la estrategia inicial de Aula Viva corresponde a un Océano Azul y no a una estrategia de océano rojo, fundamentando con tres (3) evidencias el concepto de innovación en valor.\n\nb) Evalúe mediante VRIO dos (2) recursos o capacidades de Aula Viva, concluyendo sobre la sostenibilidad de su ventaja.\n\nc) Considerando la entrada de imitadores y la noción de ventaja transitoria, proponga y justifique dos (2) fuentes de sustentabilidad que Aula Viva debería reforzar.",
+      respuestaModelo: "a) La estrategia de Océano Azul busca crear un espacio de mercado no disputado en vez de competir en mercados saturados (océano rojo), mediante la innovación en valor: perseguir diferenciación y bajo costo simultáneamente. Aula Viva no compitió contra la capacitación presencial ni contra el e-learning genérico: creó una categoría nueva. Evidencias de innovación en valor: (1) eliminó y redujo costos de la industria tradicional (traslados, relatores presenciales), logrando menores costos; (2) creó atributos que nadie ofrecía (práctica situada sin riesgo, datos de progreso individual, certificación co-diseñada y reconocida), elevando el valor; (3) capturó gran parte de las redes educativas en un espacio sin competencia directa durante años. Diferenciación y menor costo simultáneos es lo que distingue al océano azul de las estrategias genéricas tradicionales.\n\nb) VRIO: \n- Recurso 1: base de datos única de trayectorias de aprendizaje docente. Valiosa (mejora las simulaciones y la propuesta), Rara (ningún competidor la posee), Inimitable (años de operación real y escala; ambigüedad causal), explotada por la Organización (retroalimenta el producto). Cumple los cuatro criterios: ventaja sostenible.\n- Capacidad 2: red de más de 250 mentores expertos ligados por un modelo difícil de replicar. Valiosa (atributo diferenciador central), Rara (expertos escasos ya vinculados), Inimitable en el corto plazo (relaciones, confianza, incentivos), organizada para explotarse. También sostiene ventaja. Los imitadores pueden copiar la simulación, pero no el sistema completo (datos + mentores + certificación reconocida).\n\nc) Ventaja transitoria: en entornos dinámicos la imitación y los nuevos entrantes obligan a renovar ventajas continuamente. Fuentes de sustentabilidad a reforzar: (1) Encaje del sistema y costos de cambio: integrar más la certificación y los datos en los procesos de las redes educativas (por ejemplo, ligando la certificación a la carrera docente), de modo que copiar una funcionalidad no reproduzca la ventaja y cambiar de proveedor sea costoso. (2) Capacidades dinámicas e innovación continua: usar la base de datos para lanzar nuevas aplicaciones (nuevas asignaturas, analítica predictiva, otros niveles) y expandir el océano azul a nuevos mercados antes de que la ventaja se erosione. (También válido consolidar la certificación como estándar de la industria mediante complementadores.)",
+      criterios: [
+        { texto: "a) Explica océano azul vs rojo e innovación en valor (diferenciación y bajo costo simultáneos)", peso: 2 },
+        { texto: "a) Fundamenta con tres evidencias del caso (eliminación de costos, creación de atributos, espacio sin competencia)", peso: 2 },
+        { texto: "b) Evalúa dos recursos/capacidades con VRIO anclados al caso (base de datos, red de mentores, certificación)", peso: 3 },
+        { texto: "b) Concluye sobre la sostenibilidad (se copia una funcionalidad, no el sistema completo)", peso: 1 },
+        { texto: "c) Propone dos fuentes de sustentabilidad pertinentes y justificadas (encaje/costos de cambio, capacidades dinámicas/innovación)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Clasificar la estrategia como simple diferenciación de Porter, omitiendo el bajo costo simultáneo",
+        "Evaluar VRIO sobre recursos genéricos sin las evidencias del caso",
+        "Proponer 'seguir innovando' sin mecanismos concretos de sustentabilidad"
+      ]
+    },
+
+    {
+      id: "est-093",
+      tema: "U3. Cinco Fuerzas, complementadores (6ª fuerza) y posicionamiento en un negocio de plataforma",
+      dificultad: "dificil",
+      enunciado: "MercadoBarrio: la plataforma de los almacenes\n\nMercadoBarrio es una plataforma digital que conecta a almacenes de barrio con proveedores mayoristas y ofrece a los almaceneros un sistema de gestión, pedidos y financiamiento. Su valor crece mientras más almacenes y más proveedores participan. En la industria compiten otras dos plataformas similares con fuerte respaldo financiero, que ofrecen promociones agresivas. Los almacenes pueden usar varias plataformas a la vez, y los proveedores mayoristas grandes tienen poder para imponer condiciones. Existen, además, aplicaciones de contabilidad, medios de pago y servicios de reparto que se integran a MercadoBarrio y aumentan su utilidad para el almacenero. Muchos almaceneros, sin embargo, siguen comprando por los canales tradicionales.\n\nA partir del caso, responda:\n\na) Evalúe tres (3) de las cinco fuerzas de Porter más relevantes para la industria de plataformas de abastecimiento a almacenes, clasificando su intensidad con evidencia del caso.\n\nb) Explique el concepto de complementadores (6ª fuerza) e identifique dos (2) complementadores del caso, justificando cómo afectan el valor de MercadoBarrio.\n\nc) Proponga un posicionamiento estratégico para MercadoBarrio que le permita defenderse de la rivalidad, explicando qué renuncias (trade-offs) implica y cómo crearía costos de cambio.",
+      respuestaModelo: "a) Fuerzas más relevantes:\n- Rivalidad entre competidores: ALTA. Evidencia: dos plataformas similares con fuerte respaldo financiero compiten con promociones agresivas; los servicios son parecidos, lo que presiona márgenes.\n- Poder de negociación de los proveedores: ALTO en el caso de los mayoristas grandes, que pueden imponer condiciones; esto limita el margen que la plataforma puede capturar.\n- Poder de negociación de los clientes (almacenes) / amenaza de sustitutos: relevante. Los almacenes usan varias plataformas a la vez (multi-homing, bajos costos de cambio) y muchos siguen comprando por canales tradicionales (sustituto), lo que reduce la exclusividad y el poder de la plataforma. (La amenaza de nuevos entrantes es moderada por la necesidad de masa crítica.)\n\nb) Los complementadores son la sexta fuerza: actores cuyos productos o servicios aumentan el valor del producto principal cuando se consumen conjuntamente, sin competir directamente. Complementadores del caso: (i) las aplicaciones de contabilidad y los medios de pago integrados: hacen a MercadoBarrio más útil para el almacenero (gestión integral), aumentando el valor percibido y la retención; (ii) los servicios de reparto integrados: mejoran la experiencia de compra y la propuesta de valor. Ambos elevan el atractivo de la plataforma y pueden aumentar la demanda, sin ser rivales.\n\nc) Posicionamiento propuesto: MercadoBarrio debería posicionarse como la plataforma integral de gestión y financiamiento para el almacenero (no como el 'más barato' en una guerra de promociones). Esto se basa en necesidades: atender integralmente al segmento de almaceneros con un ecosistema de servicios (pedidos, gestión, financiamiento, complementadores). Renuncias (trade-offs): renunciar a competir solo por precio/promociones y a atender a cualquier tipo de cliente, concentrando recursos en profundizar el ecosistema para el almacén de barrio. Crearía costos de cambio integrando la operación del almacén en la plataforma (su contabilidad, su financiamiento, su historial y su reposición automática), de modo que cambiarse a otra plataforma implique perder esas integraciones y datos, reduciendo el multi-homing. Así reduce la comparación por precio y sostiene la ventaja mediante el encaje del sistema y los complementadores.",
+      criterios: [
+        { texto: "a) Evalúa tres fuerzas pertinentes con intensidad y evidencia (rivalidad alta, poder de mayoristas, multi-homing/sustituto tradicional)", peso: 3 },
+        { texto: "b) Define los complementadores (6ª fuerza) e identifica dos del caso justificando su efecto sobre el valor", peso: 3 },
+        { texto: "c) Propone un posicionamiento coherente que explica sus renuncias (trade-offs) y cómo crea costos de cambio para defenderse de la rivalidad", peso: 3 }
+      ],
+      erroresComunes: [
+        "Analizar a MercadoBarrio como empresa en vez de la industria al aplicar las fuerzas",
+        "Clasificar a los complementadores como proveedores o sustitutos",
+        "Proponer un posicionamiento sin renuncias claras ni mecanismos de costos de cambio (competir solo por precio)"
+      ]
+    },
+
+    {
+      id: "est-094",
+      tema: "U2/U3. Integración vertical, Triángulo Corporativo y coopetencia",
+      dificultad: "dificil",
+      enunciado: "EnerGia Verde: del panel al usuario\n\nEnerGia Verde comercializa e instala sistemas de energía solar para empresas. Hoy compra los paneles a fabricantes asiáticos (cuyos precios y plazos varían mucho) y depende de instaladores externos subcontratados, cuya calidad es dispar y afecta su reputación. La gerencia evalúa: (1) integrar hacia atrás, montando una línea de ensamblaje local de paneles; y (2) integrar hacia adelante, creando su propia cuadrilla de instalación y servicio. Además, evalúa sumarse a una asociación gremial con competidores para impulsar, en conjunto, cambios regulatorios que favorezcan la generación solar empresarial y estándares comunes de calidad de instalación.\n\nA partir del caso, responda:\n\na) Identifique el tipo y dirección de integración de cada iniciativa (1 y 2) y analice, para una de ellas, dos (2) beneficios y dos (2) riesgos anclados al caso.\n\nb) Explique qué determinantes debería evaluar EnerGia Verde para decidir integrar estas actividades o seguir transando en el mercado.\n\nc) Analice la conveniencia de sumarse a la asociación con competidores a la luz del concepto de coopetencia (ambientes de colaboración), indicando un beneficio y un riesgo.",
+      respuestaModelo: "a) La iniciativa (1), ensamblaje local de paneles, es integración vertical hacia atrás: la empresa internaliza el control de su insumo (paneles), reduciendo la dependencia de proveedores. La iniciativa (2), cuadrilla propia de instalación y servicio, es integración vertical hacia adelante: internaliza la etapa de instalación y servicio al cliente final.\n\nAnálisis (por ejemplo, de la iniciativa 2, integración hacia adelante): Beneficios: (i) control de calidad y de la experiencia del cliente: hoy la calidad dispar de los instaladores externos afecta la reputación; con cuadrilla propia asegura estándares y protege su marca; (ii) captura de margen y mejor coordinación: internaliza el margen del subcontratista y coordina mejor instalación y servicio. Riesgos: (i) mayor inversión y costos fijos: contratar y equipar cuadrillas propias eleva la estructura de costos y la rigidez; (ii) pérdida de flexibilidad: ante demanda variable, mantener personal propio puede generar capacidad ociosa o cuellos de botella. (Para la iniciativa 1, valen beneficios de seguridad de abastecimiento y control de calidad del panel, y riesgos de alta inversión y exposición a cambios tecnológicos.)\n\nb) Determinantes: comparar los costos de transacción del mercado (variabilidad de precios y plazos de los fabricantes, calidad dispar y riesgo de oportunismo de instaladores, daño reputacional) con los costos de coordinación interna. Conviene integrar cuando hay activos específicos, alta incertidumbre (como la variabilidad descrita), pocos proveedores confiables y alto riesgo de oportunismo, y cuando la integración fortalece la ventaja (calidad, marca) y captura sinergias reales. Si hubiera muchos proveedores/instaladores confiables y bajo riesgo, convendría externalizar. No siempre conviene integrar.\n\nc) Sumarse a la asociación con competidores es un caso de coopetencia (ambientes de colaboración): las empresas compiten y cooperan simultáneamente. Beneficio: impulsar en conjunto cambios regulatorios favorables y estándares comunes de calidad expande y ordena la categoría (crea valor conjunto que ninguna empresa logra sola), aumentando la demanda de energía solar empresarial para todos y elevando la confianza del cliente. Riesgo: la colaboración puede diluir una ventaja propia (si la calidad de instalación era un diferenciador) o transferir información a competidores que la aprovechen luego. Debe definirse qué se comparte (estándares, gestión regulatoria) y qué se protege (clientes, precios, tecnología y prácticas propias).",
+      criterios: [
+        { texto: "a) Identifica la iniciativa 1 como integración hacia atrás y la 2 como hacia adelante, y analiza dos beneficios y dos riesgos de una de ellas anclados al caso", peso: 3 },
+        { texto: "b) Explica los determinantes de integrar vs externalizar (costos de transacción vs coordinación, activos específicos, oportunismo, incertidumbre)", peso: 3 },
+        { texto: "c) Explica la coopetencia aplicada a la asociación gremial y señala un beneficio y un riesgo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Invertir las direcciones de integración (llamar 'hacia adelante' al ensamblaje de paneles)",
+        "Recomendar integrar sin evaluar los determinantes (costos de transacción vs internos)",
+        "Tratar la colaboración con competidores como colusión, sin analizar la creación conjunta de valor"
+      ]
+    },
+
+    {
+      id: "est-095",
+      tema: "U3/U4. Posicionamiento, estrategias genéricas y 'atrapado en el medio'",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Almacenes Central: salir del medio\n\nAlmacenes Central es una cadena de tiendas por departamento de tamaño medio. Durante años intentó 'tener de todo para todos': ni logró los precios de las grandes cadenas de descuento (que operan con enormes volúmenes y eficiencia), ni el prestigio y la experiencia de las tiendas premium de diseño. Sus márgenes se deterioran, su marca es difusa y los clientes no saben por qué elegirla. Un nuevo gerente sostiene que 'hay que mejorar un poco todo'; una asesora advierte que ese es justamente el problema.\n\nLa industria del retail, además, se transformó: la irrupción del e-commerce y de plataformas globales intensificó la competencia y dio a los clientes más información y alternativas, presionando los precios.\n\nA partir del caso, responda:\n\na) Explique el concepto de posicionamiento estratégico y por qué implica renuncias (trade-offs), relacionándolo con el diagnóstico de la asesora sobre Almacenes Central.\n\nb) Explique por qué Almacenes Central está 'atrapada en el medio' y qué consecuencias tiene, usando las estrategias genéricas de Porter.\n\nc) Recomiende una estrategia genérica clara para Almacenes Central, justificando su coherencia con un sistema de actividades, y señale dos (2) riesgos de la transición.",
+      respuestaModelo: "a) El posicionamiento estratégico define cómo la empresa decide competir y qué lugar ocupa en la mente del cliente frente a sus competidores; se basa en elecciones conscientes, implica renuncias, debe ser difícil de imitar y consistente. Implica trade-offs porque no se puede ser mejor en todo a la vez: elegir una propuesta de valor obliga a renunciar a otras ('la estrategia es elegir qué no hacer'). La asesora tiene razón: 'mejorar un poco todo' no es una estrategia, sino la ausencia de ella; sin renuncias, la propuesta de valor se diluye y el cliente no percibe una razón clara para elegir Almacenes Central. Su marca difusa es consecuencia de no haber elegido.\n\nb) Almacenes Central está 'atrapada en el medio' porque no logra ser líder en costos (no tiene los volúmenes ni la eficiencia de las cadenas de descuento) ni diferenciarse claramente (no tiene el prestigio ni la experiencia de las tiendas premium). Según Porter, cada estrategia genérica exige un sistema de actividades distinto con trade-offs; intentar ambas sin comprometerse deja a la empresa sin ninguna ventaja. Consecuencias: bajo desempeño, pérdida de identidad estratégica, marca difusa y márgenes deteriorados, porque no puede competir por precio contra el líder en costos ni justificar un precio superior frente a los diferenciados.\n\nc) Recomendación: elegir una estrategia genérica clara y renunciar a la ambigüedad. Dada la presión de precios del e-commerce y de las grandes cadenas, una opción coherente es la diferenciación en un ámbito donde pueda construir valor real (por ejemplo, especializarse en categorías o experiencias donde el servicio, la curaduría de productos y la experiencia omnicanal justifiquen un precio superior), o bien un enfoque en un segmento específico bien atendido. Debe alinear todo su sistema de actividades con esa elección (surtido, servicio, ambientación, canal, marca), de modo que las actividades se refuercen. Riesgos de la transición: (1) es costosa y lenta (reconvertir tiendas, marca y procesos) y enfrenta competidores ya consolidados en cada posición; (2) durante la transición podría quedar nuevamente 'a mitad de camino', perdiendo clientes actuales antes de conquistar a los nuevos, si no comunica y ejecuta con coherencia.",
+      criterios: [
+        { texto: "a) Explica el posicionamiento estratégico y por qué implica renuncias, aplicándolo al diagnóstico de la asesora", peso: 3 },
+        { texto: "b) Explica por qué la empresa está 'atrapada en el medio' y sus consecuencias, usando las estrategias genéricas", peso: 3 },
+        { texto: "c) Recomienda una estrategia genérica clara coherente con un sistema de actividades y señala dos riesgos de la transición", peso: 3 }
+      ],
+      erroresComunes: [
+        "Recomendar 'mejorar un poco todo' o mantener la posición intermedia, sin comprometerse con una estrategia",
+        "Definir posicionamiento sin mencionar las renuncias (trade-offs)",
+        "No alinear la estrategia recomendada con un sistema de actividades coherente"
+      ]
+    },
+
+    {
+      id: "est-096",
+      tema: "U4. Cadena de valor, estrategia genérica y sustentabilidad de la ventaja",
+      dificultad: "dificil",
+      enunciado: "Pan del Día: eficiencia con sabor\n\nPan del Día es una cadena de panaderías que ofrece pan fresco de calidad a precios accesibles. Su modelo se basa en: producción centralizada de masa en una planta que abastece a todos los locales, horneo final en cada tienda para asegurar frescura, un surtido acotado de alta rotación, compras de harina en gran volumen, logística optimizada de reparto nocturno y locales estandarizados y de bajo costo operativo. La empresa lleva una década creciendo y sus competidores no han logrado igualar su combinación de frescura y precio bajo.\n\nA partir del caso, responda:\n\na) A partir del modelo de la cadena de valor, identifique tres (3) actividades (primarias o de apoyo) que expliquen la ventaja de Pan del Día y señale si aportan principalmente a costos o a diferenciación.\n\nb) Determine qué estrategia genérica implementa Pan del Día y justifique con evidencias del caso.\n\nc) Explique por qué su ventaja competitiva es sostenible pese a ser un modelo conocido, identificando dos (2) barreras a la imitación relacionadas con el encaje del sistema de actividades.",
+      respuestaModelo: "a) Actividades de la cadena de valor que explican la ventaja:\n- Operaciones (primaria): la producción centralizada de masa más el horneo final en cada tienda. Aporta a la vez a costos (centralización y escala) y a diferenciación (frescura del pan recién horneado). Es el núcleo del modelo.\n- Logística interna/externa y abastecimiento (primaria/apoyo): compras de harina en gran volumen y reparto nocturno optimizado. Aportan a costos, vía economías de escala y eficiencia logística.\n- Infraestructura (apoyo): locales estandarizados y de bajo costo operativo. Aporta a costos, mediante la estandarización y el control de gastos.\n\nb) Estrategia genérica: liderazgo en costos con un componente de valor (frescura). Predomina el liderazgo en costos: surtido acotado de alta rotación, compras de gran volumen, producción centralizada, logística optimizada y locales de bajo costo permiten precios accesibles. La frescura (horneo final en tienda) agrega valor sin sacrificar la estructura de costos. Evidencias: precios accesibles, alta rotación, escala en compras y eficiencia operativa.\n\nc) Su ventaja es sostenible pese a ser un modelo conocido porque no proviene de una sola actividad, sino del encaje del sistema de actividades: la centralización de la masa, el horneo final, la logística nocturna, el surtido acotado y los locales de bajo costo se refuerzan y optimizan mutuamente. Dos barreras a la imitación: (1) copiar una sola pieza (por ejemplo, hornear en tienda) no reproduce la ventaja; un competidor debería replicar todo el sistema y su coordinación, lo que es costoso y complejo (complejidad organizacional y encaje). (2) Las economías de escala en compras y la logística optimizada, junto con el aprendizaje acumulado en una década, generan costos hundidos y ventajas difíciles de alcanzar rápidamente. Por eso 'imitar no es copiar una actividad, sino todo el sistema'.",
+      criterios: [
+        { texto: "a) Identifica tres actividades de la cadena de valor que explican la ventaja y señala su aporte a costos o diferenciación", peso: 3 },
+        { texto: "b) Determina la estrategia genérica (liderazgo en costos, con valor de frescura) y la justifica con evidencias", peso: 3 },
+        { texto: "c) Explica la sostenibilidad por el encaje del sistema e identifica dos barreras a la imitación", peso: 3 }
+      ],
+      erroresComunes: [
+        "Clasificar mal las actividades de la cadena de valor",
+        "Atribuir la ventaja a una sola actividad y no al encaje del sistema",
+        "Afirmar que un modelo conocido siempre es fácil de imitar"
+      ]
+    },
+
+    {
+      id: "est-097",
+      tema: "U3/U4. Análisis externo (PESTEL), FODA y reformulación estratégica",
+      dificultad: "dificil",
+      enunciado: "Fotón: una marca que quiere resurgir\n\nFotón fue líder en revelado y venta de cámaras fotográficas con una red de locales en todo Chile y una marca muy reconocida por generaciones. La irrupción de los smartphones destruyó su negocio de revelado y de cámaras compactas. Hoy conserva su marca reconocida, locales bien ubicados y una base de clientes mayores fieles, pero arrastra costos fijos altos, poca competencia digital y un catálogo obsoleto. El entorno, sin embargo, muestra señales: auge de la fotografía profesional y de aficionados 'premium', creciente interés por la impresión de fotos y recuerdos físicos, y nuevas tecnologías de personalización. La competencia digital (marketplaces) es intensa y los márgenes del hardware son bajos.\n\nA partir del caso, responda:\n\na) Identifique dos (2) factores del macroentorno (PESTEL) relevantes para Fotón, clasificándolos e indicando si son oportunidad o amenaza.\n\nb) Identifique dos (2) fortalezas y dos (2) debilidades internas de Fotón, con evidencia del caso e impacto.\n\nc) Proponga una reformulación estratégica para Fotón que aproveche una fortaleza y una oportunidad, y señale una debilidad que deba resolver y un riesgo de su propuesta.",
+      respuestaModelo: "a) Factores PESTEL (dos, entre los siguientes):\n- Social: auge de la fotografía profesional/aficionada premium y el creciente interés por la impresión de fotos y recuerdos físicos. OPORTUNIDAD, porque abre nuevos segmentos y usos que Fotón podría atender.\n- Tecnológico: nuevas tecnologías de personalización (y, en contra, la disrupción de los smartphones). La personalización es OPORTUNIDAD; la disrupción de los smartphones es AMENAZA estructural que ya erosionó su negocio original. (También válido el marketplace digital como factor competitivo.)\n\nb) FODA interno:\n- Fortalezas: (1) marca muy reconocida por generaciones: activo latente valioso para relanzar productos y servicios; impacto positivo en confianza y tráfico. (2) Red de locales bien ubicados y base de clientes fieles: canal físico y clientela para nuevos servicios (impresión, personalización, asesoría).\n- Debilidades: (1) costos fijos altos y catálogo obsoleto: presionan la rentabilidad y no responden a la demanda actual; impacto negativo en márgenes. (2) poca competencia/capacidad digital: la deja rezagada frente a los marketplaces y limita su alcance.\n\nc) Reformulación estratégica: Fotón debería reposicionarse desde la venta de cámaras y revelado hacia servicios de valor en torno a la imagen y el recuerdo físico: impresión premium, fotolibros, personalización y asesoría/experiencia para aficionados y profesionales, apalancando su marca reconocida (fortaleza) y el auge de la impresión/personalización (oportunidad). Aprovecharía sus locales como puntos de experiencia y servicio, e integraría un canal digital (omnicanalidad). Debilidad que debe resolver: su rezago y falta de capacidad digital (y racionalizar los costos fijos y el catálogo obsoleto), desarrollando capacidades dinámicas para reconvertir el modelo. Riesgo: que la transformación sea solo estética ('nostalgia de marca') sin sustancia operativa —una marca fuerte no basta si no se reinventa el modelo—, o que los altos costos fijos hagan inviable la transición si no se ajusta la estructura. Debe ejecutar una transformación real, no solo cambiar la vitrina.",
+      criterios: [
+        { texto: "a) Identifica dos factores PESTEL correctamente clasificados y como oportunidad/amenaza con evidencia", peso: 2 },
+        { texto: "b) Identifica dos fortalezas y dos debilidades internas con evidencia e impacto (sin confundirlas con oportunidades/amenazas)", peso: 3 },
+        { texto: "c) Propone una reformulación que cruza una fortaleza con una oportunidad y señala una debilidad a resolver", peso: 3 },
+        { texto: "c) Señala un riesgo pertinente de la propuesta (transformación solo estética, costos fijos)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Presentar oportunidades/amenazas del entorno como fortalezas/debilidades internas",
+        "Proponer 'volver a vender cámaras como antes', ignorando la disrupción estructural",
+        "Confundir el análisis PESTEL (macroentorno) con el FODA interno"
+      ]
+    },
+
+    {
+      id: "est-098",
+      tema: "U2. Recursos y capacidades (RBV), competencias esenciales y diversificación relacionada",
+      dificultad: "dificil",
+      enunciado: "Andes Logística: crecer desde lo que sabe hacer\n\nAndes Logística es una empresa de transporte y distribución refrigerada que, en 20 años, construyó una capacidad distintiva: una red de cadena de frío, sistemas de trazabilidad en tiempo real y un know-how de coordinación logística que sus clientes (salmoneras, frutícolas, laboratorios) valoran enormemente y que la competencia no iguala. Con excedentes de caja, el directorio evalúa crecer y considera tres opciones: (A) ofrecer almacenamiento y distribución refrigerada de productos farmacéuticos; (B) entrar al negocio inmobiliario de bodegas y galpones; (C) comprar una cadena de restaurantes de comida rápida por su rentabilidad.\n\nA partir del caso, responda:\n\na) Distinga recursos de capacidades y aplique el modelo VRIO a la capacidad logística de Andes para explicar por qué es una competencia esencial.\n\nb) Evalúe las tres opciones de crecimiento (A, B, C) según su grado de relación con la competencia esencial de la empresa, clasificándolas.\n\nc) Recomiende fundadamente hacia dónde debería crecer Andes Logística, explicando por qué la diversificación apoyada en su competencia esencial es más probable que cree valor.",
+      respuestaModelo: "a) Los recursos son los activos que la empresa controla (flota refrigerada, sistemas de trazabilidad, infraestructura); las capacidades son la habilidad de coordinar y combinar esos recursos de manera eficiente (el know-how de coordinación logística de la cadena de frío). Aplicando VRIO a la capacidad logística de Andes: es Valiosa (los clientes la valoran enormemente y resuelve una necesidad crítica), Rara (la competencia no la iguala), Inimitable (20 años de aprendizaje acumulado, conocimiento tácito, ambigüedad causal; no se compra en el mercado) y explotada por la Organización (sistemas y procesos institucionalizados). Como cumple los cuatro criterios, es fuente de ventaja competitiva sostenible; además, es una competencia esencial porque permite acceder a diversos mercados, contribuye de forma central a la propuesta de valor y es difícil de imitar.\n\nb) Evaluación de las opciones según su relación con la competencia esencial:\n- Opción A (almacenamiento y distribución refrigerada de farmacéuticos): diversificación relacionada. Apalanca directamente la cadena de frío, la trazabilidad y el know-how logístico; los farmacéuticos exigen frío y trazabilidad, exactamente la competencia esencial de Andes.\n- Opción B (inmobiliario de bodegas): parcialmente relacionada, pero débil: comparte cierta lógica de infraestructura, pero el negocio inmobiliario requiere competencias distintas (gestión de activos, financiamiento) y no aprovecha el know-how logístico ni la cadena de frío.\n- Opción C (restaurantes de comida rápida): diversificación no relacionada (conglomeración): no comparte la competencia esencial; la atrae solo la rentabilidad; competir en gastronomía exige capacidades ajenas a Andes.\n\nc) Recomendación: crecer por la opción A (distribución refrigerada de farmacéuticos), diversificación relacionada que apalanca su competencia esencial. Es más probable que cree valor porque transfiere una capacidad valiosa, rara e inimitable a un nuevo mercado que la requiere, generando sinergias (economías de ámbito, uso de la red de frío y la trazabilidad, transferencia de conocimiento), de modo que el valor conjunto supere la suma individual (Vab > Va + Vb). La opción C, en cambio, no aprovecha la competencia esencial, agrega costos de coordinación y riesgo de agencia (crecer solo por rentabilidad), y probablemente destruiría valor. 'La diversificación es más efectiva cuando se apoya en competencias esenciales'.",
+      criterios: [
+        { texto: "a) Distingue recursos de capacidades y aplica VRIO a la capacidad logística, explicando por qué es competencia esencial", peso: 3 },
+        { texto: "b) Clasifica las tres opciones según su relación con la competencia esencial (A relacionada, B débil, C no relacionada)", peso: 3 },
+        { texto: "c) Recomienda la opción relacionada (A) y explica por qué la diversificación apoyada en la competencia esencial crea más valor (sinergias, Vab > Va + Vb)", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir recursos con capacidades",
+        "Recomendar la opción más rentable (C) sin considerar la competencia esencial ni las sinergias",
+        "Afirmar que cualquier diversificación crea valor por igual"
+      ]
+    },
+
+    {
+      id: "est-099",
+      tema: "U2. Estrategia corporativa: crecimiento horizontal, vertical y creación de valor",
+      dificultad: "dificil",
+      enunciado: "Lácteos Puelo: definir el rumbo del crecimiento\n\nLácteos Puelo es una empresa mediana que produce leche, yogurt y quesos, con marca reconocida en el sur de Chile. El directorio quiere crecer y tiene sobre la mesa tres movimientos: (1) adquirir a un competidor lácteo de una región vecina que atiende un mercado similar; (2) comprar predios y ganado propio para producir su propia leche, hoy adquirida a terceros cuyos precios varían; y (3) abrir tiendas propias de venta directa al consumidor, además de sus actuales ventas a supermercados que le imponen condiciones.\n\nA partir del caso, responda:\n\na) Clasifique cada movimiento (1, 2 y 3) según el tipo de estrategia corporativa (integración horizontal, vertical hacia atrás o vertical hacia adelante), justificando.\n\nb) Para el movimiento (1), explique dos (2) fuentes de creación de valor y dos (2) riesgos; para el movimiento (2), explique el determinante clave que decide si conviene integrar o seguir comprando en el mercado.\n\nc) Explique bajo qué condición general el crecimiento de Lácteos Puelo creará valor y por qué no basta con 'ser más grande'.",
+      respuestaModelo: "a) Clasificación:\n- Movimiento (1), adquirir un competidor lácteo que atiende un mercado similar: integración horizontal (expansión en la misma etapa de la cadena de valor, incorporando un competidor del mismo nivel productivo).\n- Movimiento (2), comprar predios y ganado para producir su propia leche: integración vertical hacia atrás (internaliza el control del insumo, la leche, reduciendo la dependencia de proveedores).\n- Movimiento (3), abrir tiendas propias de venta directa: integración vertical hacia adelante (internaliza la etapa de distribución y venta al cliente final, dejando de depender solo de los supermercados).\n\nb) Movimiento (1) — integración horizontal. Fuentes de creación de valor: (i) economías de escala y de ámbito y mayor poder de negociación con proveedores y canales; (ii) mayor participación de mercado y menor rivalidad (al integrar a un competidor). Riesgos: (i) choque cultural y problemas de coordinación en la fusión; (ii) sobreestimación de sinergias y deseconomías/burocracia. Movimiento (2) — integración vertical hacia atrás. Determinante clave: comparar los costos de transacción del mercado (variabilidad de precios de la leche, riesgo de abastecimiento y oportunismo de proveedores) con los costos de coordinación interna de producir leche propia. Conviene integrar si hay activos específicos, alta incertidumbre (precios variables), pocos proveedores confiables y la integración asegura calidad y abastecimiento; conviene seguir comprando si hay muchos proveedores confiables y bajo riesgo.\n\nc) El crecimiento de Lácteos Puelo creará valor solo si el valor conjunto de los negocios/actividades supera la suma de sus valores individuales (Vab > Va + Vb), es decir, si genera sinergias reales (escala, poder de negociación, seguridad de abastecimiento, captura de margen, control de calidad) y es coherente con su misión y capacidades. No basta con 'ser más grande' porque el crecimiento incoherente o sin sinergias agrega costos de coordinación, burocracia y problemas de agencia que destruyen valor: 'más grande no siempre es mejor; más coherente sí'. Cada movimiento debe evaluarse por su aporte a la creación de valor, no por el tamaño.",
+      criterios: [
+        { texto: "a) Clasifica correctamente los tres movimientos (horizontal, vertical hacia atrás, vertical hacia adelante) con justificación", peso: 3 },
+        { texto: "b) Explica dos fuentes de valor y dos riesgos de la integración horizontal (mov. 1)", peso: 2 },
+        { texto: "b) Explica el determinante clave de la integración vertical hacia atrás (costos de transacción vs coordinación) para el mov. 2", peso: 2 },
+        { texto: "c) Explica la condición de creación de valor (Vab > Va + Vb, sinergias, coherencia) y por qué no basta con ser más grande", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir integración horizontal con vertical, o invertir las direcciones de la vertical",
+        "Afirmar que integrar siempre conviene, sin evaluar los costos de transacción",
+        "Justificar el crecimiento solo por el aumento de tamaño y no por la creación de valor"
+      ]
+    },
+
+    {
+      id: "est-100",
+      tema: "U5/U3. Sustentabilidad estratégica: análisis externo, valor compartido (CSV) y TBL/ESG",
+      dificultad: "dificil",
+      enunciado: "Pesca Austral: competir en un entorno social y natural exigente\n\nPesca Austral es una empresa pesquera mediana que compra gran parte de su materia prima a pescadores artesanales de caletas del sur, muchos con baja tecnificación y crecientes dificultades para cumplir normas sanitarias y de sostenibilidad. El escenario se ha endurecido: la autoridad estrechó las cuotas de captura y la fiscalización ambiental; las comunidades costeras reclaman por el impacto en el ecosistema; y las dos grandes cadenas de retail que concentran el 65% de sus ventas exigirán certificaciones de pesca sostenible como condición para permanecer en góndola. A la vez, crece un segmento de consumidores que paga más por productos del mar con certificación de origen sostenible.\n\nEl gerente comercial propone 'cumplir lo mínimo y hacer una donación anual a las caletas para la imagen'. La gerenta de sostenibilidad propone un programa de apoyo técnico y financiamiento a los pescadores para certificarse, prácticas de pesca sostenible con trazabilidad, y una línea premium certificada.\n\nA partir del caso, responda:\n\na) Analice el entorno de Pesca Austral identificando un (1) factor del macroentorno (PESTEL) y dos (2) fuerzas competitivas que la presionan, clasificando su intensidad con evidencia.\n\nb) Contraste ambas propuestas a la luz de la distinción entre RSC tradicional y Creación de Valor Compartido (CSV), explicando con dos (2) ejemplos del caso cómo la propuesta de la gerenta crea valor económico y social a la vez.\n\nc) Explique cómo la integración de las dimensiones económica, social y ambiental (Triple Bottom Line / ESG) puede fortalecer la sustentabilidad de la ventaja competitiva de Pesca Austral, con tres (3) beneficios estratégicos concretos.",
+      respuestaModelo: "a) Macroentorno (PESTEL): factor Legal/Ambiental: el estrechamiento de las cuotas de captura y de la fiscalización ambiental. Intensidad alta y creciente: es una amenaza que eleva costos de cumplimiento y riesgo sancionatorio, sumada a la presión social de las comunidades (factor social). Microentorno: (1) Poder de negociación de los clientes: ALTO. Dos cadenas de retail concentran el 65% de las ventas y pueden imponer condiciones (certificaciones de pesca sostenible como condición de permanencia). (2) Poder/situación de los proveedores: la base de pescadores artesanales con baja tecnificación y dificultades sanitarias es frágil; aunque atomizados, su debilidad amenaza la continuidad, calidad y cumplimiento del insumo crítico. (También aceptable la amenaza de sustitutos o la rivalidad por marcas certificadas.)\n\nb) La propuesta del gerente comercial es RSC tradicional: filantropía (donación a las caletas) para mejorar imagen, desconectada de la estrategia y que no resuelve los problemas de fondo (cuotas, exigencias del canal, fragilidad de proveedores). La propuesta de la gerenta es Creación de Valor Compartido: integra beneficios económicos y sociales en la estrategia y la operación. Ejemplos del caso: (1) el apoyo técnico y financiamiento a los pescadores para certificarse mejora sus ingresos y capacidades y, a la vez, asegura a Pesca Austral materia prima certificada, de mejor calidad y con cumplimiento normativo (redefine la cadena de valor); (2) las prácticas de pesca sostenible con trazabilidad reducen el conflicto con las comunidades y el riesgo regulatorio, y la línea premium certificada convierte la sostenibilidad en diferenciación, capturando la disposición a pagar del segmento creciente.\n\nc) Integrar las dimensiones económica, social y ambiental (Triple Bottom Line: personas, planeta, utilidad; marco ESG) fortalece la sustentabilidad de la ventaja porque hoy 'no hay ventaja competitiva sin legitimidad social'. Beneficios estratégicos concretos: (1) reducción de riesgos regulatorios y aseguramiento de la licencia social: anticiparse a cuotas y fiscalización evita sanciones y conflictos con las comunidades. (2) Aseguramiento del canal y la demanda: cumplir las exigencias ESG del retail protege el 65% de las ventas y se vuelve barrera frente a competidores rezagados; mejora reputación y lealtad. (3) Diferenciación y resiliencia: la línea premium certificada capta mayor valor percibido y una cadena de abastecimiento sostenible y trazable, difícil de replicar, hace más resiliente y diferenciada a la empresa (además de mejor acceso a financiamiento y talento asociados a altos estándares ESG). Así, la sostenibilidad deja de ser filantropía y pasa a ser estrategia de largo plazo.",
+      criterios: [
+        { texto: "a) Identifica un factor PESTEL pertinente (regulación ambiental/legal o presión social) con evidencia e intensidad", peso: 1 },
+        { texto: "a) Analiza el alto poder de los clientes (concentración del retail, exigencias ESG) y la situación de los proveedores (fragilidad de la base artesanal) con evidencia", peso: 3 },
+        { texto: "b) Distingue RSC tradicional de CSV y lo aplica a ambas propuestas, con dos ejemplos del doble beneficio", peso: 3 },
+        { texto: "c) Identifica tres beneficios estratégicos de integrar TBL/ESG (menor riesgo regulatorio/licencia social, aseguramiento del canal/reputación, diferenciación/resiliencia)", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir CSV con RSC tradicional o con filantropía",
+        "Presentar la sostenibilidad solo como un costo o una obligación regulatoria",
+        "No mostrar el doble beneficio (económico y social) de la propuesta de valor compartido"
+      ]
+    },
+
+    {
+      id: "est-101",
+      tema: "U3. Grupos estratégicos, cinco fuerzas y recomendación de reposicionamiento",
+      dificultad: "dificil",
+      enunciado: "Farmacias del Barrio: competir entre gigantes\n\nEn el mercado farmacéutico chileno conviven tres grandes cadenas nacionales (amplia cobertura, escala de compra, marcas propias, precios competitivos y programas de fidelización), farmacias independientes de barrio (cercanía, atención personalizada, pero sin escala ni poder de compra) y farmacias online que despachan a domicilio. Farmacias del Barrio es una pequeña red independiente que compite con dificultad: los laboratorios (proveedores) fijan condiciones, los clientes comparan precios fácilmente y las grandes cadenas dominan.\n\nA partir del caso, responda:\n\na) Construya un mapa de grupos estratégicos de esta industria con dos (2) variables pertinentes, describa los grupos y ubique a Farmacias del Barrio, señalando una barrera de movilidad que le impide pasar al grupo de las grandes cadenas.\n\nb) Evalúe dos (2) fuerzas competitivas de Porter que expliquen la difícil posición de Farmacias del Barrio, con evidencia del caso.\n\nc) Recomiende un reposicionamiento estratégico para Farmacias del Barrio (por ejemplo, mediante enfoque o diferenciación) coherente con sus recursos, explicando qué renuncias implica y un riesgo.",
+      respuestaModelo: "a) Los grupos estratégicos son conjuntos de empresas de una industria que siguen estrategias similares. Dos variables pertinentes: escala/cobertura (nacional con gran poder de compra frente a local pequeña) y grado de personalización/canal (atención personalizada presencial frente a autoservicio masivo o despacho online). Grupos: (1) grandes cadenas nacionales: cobertura amplia, escala de compra, marcas propias, precios competitivos y fidelización; (2) farmacias independientes de barrio: cercanía y atención personalizada, sin escala; (3) farmacias online: despacho a domicilio, foco en conveniencia digital. Farmacias del Barrio se ubica en el grupo de las independientes de barrio. Una barrera de movilidad que le impide pasar al grupo de las grandes cadenas: la escala y el poder de compra (economías de escala en la negociación con laboratorios) y la red nacional de locales, que exigen enormes inversiones y volumen que una pequeña red no puede alcanzar rápidamente.\n\nb) Fuerzas que explican su difícil posición: (1) Poder de negociación de los proveedores (laboratorios): ALTO; fijan condiciones, y una farmacia pequeña sin volumen no puede negociar mejores precios, a diferencia de las grandes cadenas: esto le da una desventaja de costos. (2) Poder de negociación de los clientes: ALTO; los clientes comparan precios fácilmente (costos de cambio bajos, producto poco diferenciado), presionando los márgenes. (También válida la rivalidad intensa con las grandes cadenas que dominan por escala.)\n\nc) Reposicionamiento recomendado: dado que no puede ganar por precio/escala, Farmacias del Barrio debería optar por un enfoque/diferenciación basado en su cercanía y atención personalizada: especializarse en un servicio de valor que las grandes cadenas no dan bien (por ejemplo, atención farmacéutica personalizada, seguimiento a pacientes crónicos y adultos mayores del barrio, preparación de recetas magistrales, entrega local rápida y relación de confianza). Renuncias (trade-offs): renunciar a competir por precio en productos masivos y a la cobertura amplia, concentrando recursos en el servicio y el segmento local. Riesgo: que las grandes cadenas o las farmacias online imiten parte del servicio con su escala, o que el segmento de barrio sea demasiado pequeño para sostener el negocio; por eso debe construir lealtad y costos de cambio (relación, historial del paciente) difíciles de replicar. Lo esencial es dejar de competir en el terreno donde los gigantes son imbatibles y elegir un posicionamiento coherente con sus recursos.",
+      criterios: [
+        { texto: "a) Construye el mapa con dos variables pertinentes, describe los grupos, ubica a Farmacias del Barrio y señala una barrera de movilidad", peso: 3 },
+        { texto: "b) Evalúa dos fuerzas que explican su difícil posición con evidencia (poder de proveedores/laboratorios, poder de clientes o rivalidad)", peso: 3 },
+        { texto: "c) Recomienda un reposicionamiento (enfoque/diferenciación) coherente con sus recursos, con sus renuncias y un riesgo", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir grupos estratégicos con segmentos de clientes",
+        "Recomendar competir por precio contra las grandes cadenas, ignorando su desventaja de escala",
+        "Proponer un reposicionamiento sin renuncias ni mecanismos de lealtad/costos de cambio"
+      ]
+    },
+
+    {
+      id: "est-102",
+      tema: "U5. Ventaja competitiva transitoria, capacidades dinámicas e innovación disruptiva",
+      dificultad: "dificil",
+      enunciado: "VideoClub Max: entre la disrupción y la reinvención\n\nVideoClub Max dominó durante años el arriendo de películas con una gran red de locales, un catálogo enorme y una marca fuerte. La llegada del streaming digital —más barato, cómodo e inmediato— cambió las reglas del juego. Algunos competidores desaparecieron. La empresa duda entre defender su modelo de locales (donde aún tiene clientes fieles) o transformarse. Su gerente afirma: 'tenemos la mejor red de locales del país, esa es nuestra ventaja y debemos protegerla'.\n\nA partir del caso, responda:\n\na) Explique el concepto de innovación disruptiva y cómo el streaming actuó como disrupción sobre el negocio de VideoClub Max.\n\nb) Explique por qué la afirmación del gerente refleja una comprensión equivocada de la ventaja competitiva en entornos dinámicos, usando la noción de ventaja competitiva transitoria.\n\nc) Proponga cómo VideoClub Max podría usar capacidades dinámicas para reinventarse, señalando dos (2) acciones concretas y un riesgo de no transformarse.",
+      respuestaModelo: "a) La innovación disruptiva es un nuevo modelo de negocio o tecnología que cambia las reglas competitivas de una industria, a menudo ofreciendo una propuesta más simple, cómoda o accesible que termina desplazando a los actores establecidos. El streaming digital actuó como disrupción sobre VideoClub Max: ofreció acceso a contenidos más barato, cómodo e inmediato (sin ir al local ni devolver), atacando el núcleo del negocio de arriendo físico. Los incumbentes, enfocados en su modelo de locales y catálogo, subestimaron la amenaza hasta que el streaming capturó el mercado, volviendo obsoleta su ventaja basada en la red física.\n\nb) La afirmación del gerente ('nuestra red de locales es nuestra ventaja y debemos protegerla') refleja una comprensión equivocada porque asume que la ventaja es permanente y estática. En entornos dinámicos rige la ventaja competitiva transitoria: la imitación, los cambios tecnológicos y los nuevos entrantes erosionan cualquier ventaja, que es la excepción y no la regla sostenerla. Precisamente, la red de locales —antes una fortaleza— se está convirtiendo en un lastre (costos fijos altos) frente al streaming. Defender un activo que la disrupción vuelve obsoleto es rigidez estratégica y miopía: mientras 'protege' los locales, el negocio se sigue erosionando.\n\nc) VideoClub Max debería usar capacidades dinámicas (integrar, construir y reconfigurar recursos) para reinventarse. Dos acciones concretas: (1) reconfigurar su modelo hacia lo digital: desarrollar o aliarse para una plataforma de streaming o de contenidos, o especializarse en nichos de valor (cine de colección, contenidos que el streaming masivo no cubre), aprovechando su marca y su conocimiento del cliente; (2) reconvertir sus locales y su relación con clientes hacia nuevos usos (experiencias, ventas de coleccionismo, puntos omnicanal) y ajustar su estructura de costos fijos. El riesgo de no transformarse es desaparecer como los competidores que sucumbieron: aferrarse a un modelo disruptado conduce a la obsolescencia; en entornos de ventaja transitoria hay que crear, explotar y abandonar ventajas continuamente, no defender indefinidamente la actual.",
+      criterios: [
+        { texto: "a) Explica la innovación disruptiva y cómo el streaming disrumpió el negocio de VideoClub Max", peso: 3 },
+        { texto: "b) Explica por qué la afirmación del gerente es equivocada usando la ventaja competitiva transitoria (rigidez/miopía, activo que se vuelve obsoleto)", peso: 3 },
+        { texto: "c) Propone dos acciones concretas basadas en capacidades dinámicas y un riesgo de no transformarse", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir la innovación disruptiva con una simple mejora incremental",
+        "Asumir que una ventaja (la red de locales) es permanente si se defiende bien",
+        "Proponer solo 'defender el negocio actual' sin capacidades dinámicas ni reinvención"
+      ]
+    },
+
+    {
+      id: "est-103",
+      tema: "U1/U2. Coherencia de niveles estratégicos, misión-visión y decisiones de crecimiento",
+      dificultad: "dificil",
+      enunciado: "Grupo Raíces: alinear la estrategia\n\nGrupo Raíces es una empresa de alimentos naturales cuya visión es 'ser referente latinoamericano en alimentación saludable y sostenible' y cuya misión enfatiza productos naturales, cercanía con proveedores locales y bienestar del consumidor. El directorio discute varias decisiones simultáneas: a nivel corporativo, adquirir una marca de comida ultraprocesada de bajo costo porque es muy rentable; a nivel competitivo, en su línea de jugos naturales, no sabe si competir por precio o por diferenciación; y a nivel funcional, su área de operaciones propone cambiar a insumos importados más baratos pero de menor calidad y sin trazabilidad.\n\nA partir del caso, responda:\n\na) Explique los tres niveles de la estrategia (corporativo, competitivo y funcional) indicando la pregunta clave que responde cada uno, y ubique en qué nivel se sitúa cada decisión del directorio.\n\nb) Analice la coherencia de cada una de las tres decisiones con la misión y la visión declaradas del grupo.\n\nc) Explique por qué la falta de coherencia entre los niveles estratégicos destruye valor y recomiende cómo debería el grupo alinear las tres decisiones.",
+      respuestaModelo: "a) Los tres niveles de la estrategia:\n- Corporativo: responde a 'dónde competir' (en qué negocios, industrias y mercados participa la empresa; crecimiento, diversificación, integración, F&A). La decisión de adquirir la marca de comida ultraprocesada es de nivel corporativo.\n- Competitivo o de negocio: responde a 'cómo competir' en una industria específica (posicionamiento, ventaja competitiva, estrategias genéricas). La duda sobre competir por precio o diferenciación en la línea de jugos es de nivel competitivo.\n- Funcional: responde a 'con qué medios competir' (cómo cada área contribuye a la ventaja: operaciones, marketing, etc.). La propuesta de operaciones de cambiar a insumos importados más baratos es de nivel funcional.\n\nb) Coherencia con misión y visión:\n- Corporativa (adquirir marca ultraprocesada): incoherente. Contradice la visión de referente en alimentación saludable y sostenible y la misión de productos naturales; se decide solo por rentabilidad, sin coherencia estratégica (posible motivación de agencia) y con riesgo reputacional para la marca.\n- Competitiva (jugos): la diferenciación es más coherente con la misión (productos naturales, bienestar del consumidor, cercanía con proveedores locales) que competir por precio, que empujaría a sacrificar calidad y erosionaría el posicionamiento.\n- Funcional (insumos importados de menor calidad y sin trazabilidad): incoherente con la misión (cercanía con proveedores locales, productos naturales) y con una estrategia de diferenciación; socavaría la propuesta de valor y la trazabilidad que sustentan la marca.\n\nc) La falta de coherencia entre niveles destruye valor porque la estrategia corporativa define el marco, la competitiva el posicionamiento y la funcional la ejecución: si no se alinean, la empresa envía señales contradictorias, confunde a los clientes, desperdicia recursos y erosiona su ventaja ('la falta de coherencia entre estos niveles destruye valor'; 'no existe estrategia sin ejecución'). Recomendación: el grupo debería rechazar la adquisición de comida ultraprocesada (incoherente con su visión) o buscar una relacionada con lo saludable; comprometerse con la diferenciación en jugos (coherente con la misión); y mantener insumos locales de calidad y trazabilidad en operaciones para sostener esa diferenciación. Así los tres niveles se refuerzan en torno a una misma propuesta de valor: alimentación saludable, natural y sostenible.",
+      criterios: [
+        { texto: "a) Explica los tres niveles (corporativo, competitivo, funcional) con su pregunta clave y ubica cada decisión en su nivel", peso: 3 },
+        { texto: "b) Analiza la coherencia de cada una de las tres decisiones con la misión y visión declaradas", peso: 3 },
+        { texto: "c) Explica por qué la incoherencia entre niveles destruye valor y recomienda cómo alinear las tres decisiones", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir el nivel corporativo (en qué negocios) con el competitivo (cómo competir en una industria)",
+        "Analizar la coherencia sin referirse a la misión y visión declaradas",
+        "Justificar la adquisición incoherente solo por su rentabilidad"
+      ]
+    },
+
+    {
+      id: "est-104",
+      tema: "U2. Alianzas estratégicas versus F&A e internacionalización",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "TecnoPagos: crecer afuera con el socio correcto\n\nTecnoPagos, fintech chilena de pagos digitales, quiere expandirse a México, un mercado grande pero con regulación financiera compleja, competidores locales establecidos y hábitos de consumo distintos. Evalúa tres caminos: (1) entrar sola mediante inversión directa, abriendo una filial; (2) adquirir a un competidor mexicano mediano ya establecido; o (3) formar una alianza estratégica (o joint venture) con un banco local que aporte licencia, red y conocimiento del mercado. TecnoPagos tiene buena tecnología pero recursos financieros acotados y ninguna experiencia en México. El directorio teme tanto pagar de más por una adquisición como que, en una alianza, el socio termine apropiándose de su tecnología.\n\nA partir del caso, responda:\n\na) Explique tres (3) criterios que determinan la elección del modo de entrada a un mercado internacional y por qué la inversión directa en solitario (opción 1) es la más riesgosa en este caso.\n\nb) Compare la adquisición (opción 2) con la alianza estratégica/joint venture (opción 3) en al menos tres (3) dimensiones relevantes (control, riesgo/inversión, flexibilidad, integración).\n\nc) Recomiende fundadamente uno de los tres caminos, justificando con las características del caso, e identifique el principal riesgo del camino elegido y una forma de mitigarlo.",
+      respuestaModelo: "a) La elección del modo de entrada depende de: (i) el nivel de riesgo aceptable (regulación financiera compleja, competidores locales, diferencias culturales); (ii) los recursos disponibles (financieros, humanos, de gestión), pues los modos de mayor compromiso exigen más inversión; y (iii) el conocimiento del mercado local (regulación, licencias, hábitos), que puede suplirse con un socio; también influye el control deseado sobre la tecnología y la marca. La inversión directa en solitario (opción 1) es la más riesgosa en este caso porque combina el máximo compromiso de recursos y riesgo con el mínimo conocimiento del mercado: TecnoPagos tiene recursos acotados y ninguna experiencia en México, debería enfrentar sola una regulación compleja y competidores establecidos, y asumir todos los costos y riesgos de aprendizaje. Es incoherente con sus recursos.\n\nb) Comparación adquisición (2) vs alianza/JV (3):\n- Control: la adquisición da control total de la operación y la tecnología; la alianza implica control compartido y decisiones negociadas.\n- Riesgo e inversión: la adquisición exige alta inversión y concentra el riesgo (incluido el temor a pagar de más por sobreestimar sinergias); la alianza requiere menor compromiso de recursos y comparte riesgos y costos.\n- Flexibilidad: la adquisición es poco flexible y difícil de revertir; la alianza es flexible y permite aprender del mercado antes de comprometerse más.\n- Integración: la adquisición enfrenta el desafío de integración (cultural, operativa y regulatoria); la alianza solo requiere integración parcial, aunque con riesgo de oportunismo del socio (que se apropie de la tecnología, como teme el directorio).\n\nc) Recomendación (una respuesta bien fundamentada en cualquier sentido es válida; se evalúa la coherencia). Recomendación sugerida: la alianza estratégica o joint venture con el banco local (opción 3). Justificación: TecnoPagos tiene recursos acotados y ninguna experiencia en México, y el mercado tiene regulación compleja, competidores establecidos y hábitos distintos; el socio local aporta licencia, red y conocimiento del mercado, permitiendo una entrada más rápida y de menor riesgo, compartiendo costos y aprendiendo antes de comprometer más. Además, mitiga el temor a pagar de más propio de una adquisición. Principal riesgo del camino elegido: el comportamiento oportunista del socio, es decir, que el banco se apropie de la tecnología o el know-how de TecnoPagos. Mitigación: acuerdos claros de gobernanza y propiedad intelectual (proteger la tecnología con contratos, licencias acotadas y cláusulas de confidencialidad y exclusividad), objetivos y metas compartidas, y una gobernanza de la alianza que equilibre el aporte de cada parte; eventualmente, una opción preferente de compra futura. (Si se recomienda la adquisición, debe justificarse por el control total y el bloqueo a competidores, reconociendo como riesgo la integración y la sobreestimación de sinergias, con due diligence y un plan de integración.)",
+      criterios: [
+        { texto: "a) Explica tres criterios del modo de entrada y por qué la inversión directa en solitario es la más riesgosa en este caso (recursos acotados, sin experiencia, regulación compleja)", peso: 3 },
+        { texto: "b) Compara adquisición y alianza/JV en al menos tres dimensiones relevantes (control, riesgo/inversión, flexibilidad, integración)", peso: 3 },
+        { texto: "c) Recomienda fundadamente un camino con evidencias del caso e identifica el principal riesgo del camino elegido", peso: 2 },
+        { texto: "c) Propone una mitigación concreta y pertinente (protección de la tecnología/PI, gobernanza, due diligence)", peso: 1 }
+      ],
+      erroresComunes: [
+        "Recomendar la inversión directa en solitario pese a los recursos acotados y la falta de experiencia",
+        "Afirmar que la adquisición siempre es superior por dar más control, ignorando el riesgo de sobreprecio e integración",
+        "Confundir alianza estratégica con fusión (en la alianza las empresas mantienen su independencia legal)"
+      ]
+    },
 
   ]
 });

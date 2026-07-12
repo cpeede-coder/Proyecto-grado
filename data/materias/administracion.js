@@ -793,6 +793,1030 @@ window.BANCO.materias.push({
         "Proponer descentralizar todo, sin distinguir qué decisiones deben permanecer centralizadas (precios generales, compras, marca).",
         "Proponer KPI que no permiten tomar decisiones ('mejorar las ventas') o describir el control en abstracto sin aplicarlo a los locales."
       ]
+    },
+    {
+      id: "adm-045",
+      tema: "Planificación: beneficios y críticas de la planificación formal",
+      dificultad: "facil",
+      enunciado: "Explique tres (3) beneficios de la planificación formal en una organización y señale dos (2) críticas o limitaciones que se le atribuyen. Concluya indicando por qué, pese a las críticas, la planificación sigue siendo una función administrativa esencial.",
+      respuestaModelo: "Beneficios de la planificación formal:\n\n1) Proporciona dirección: coordina el esfuerzo de gerentes y empleados hacia objetivos comunes; cuando todos saben hacia dónde va la organización, pueden cooperar en esa dirección.\n\n2) Reduce la incertidumbre: obliga a los gerentes a mirar hacia el futuro, anticipar el cambio, considerar su impacto y preparar respuestas adecuadas.\n\n3) Reduce la superposición y el desperdicio de actividades: al coordinar los medios y fines, las ineficiencias se vuelven evidentes y pueden corregirse o eliminarse.\n\n4) Establece los objetivos o estándares que se utilizan para controlar: sin planificación no hay parámetros contra los cuales comparar el desempeño real.\n\nCríticas o limitaciones (dos entre las siguientes): 1) La planificación puede generar rigidez, encerrando a la organización en objetivos y plazos fijos que pierden sentido si el entorno cambia. 2) No se puede trazar un plan para un entorno dinámico e incierto; la flexibilidad se ve reducida. 3) La planificación formal puede reemplazar a la intuición y la creatividad. 4) La planificación centra la atención de los gerentes en la competencia de hoy y no en la supervivencia de mañana. 5) La planificación formal refuerza el éxito, lo que puede llevar al fracaso por exceso de confianza.\n\nPese a las críticas, la planificación sigue siendo esencial porque otorga dirección, obliga a anticipar el cambio y entrega los estándares que hacen posible el control. Las limitaciones se atenúan usando planes direccionales (flexibles) en entornos inciertos y revisando los planes de forma continua, no eliminando la planificación.",
+      criterios: [
+        { texto: "Explica correctamente tres beneficios de la planificación formal.", peso: 3 },
+        { texto: "Señala dos críticas o limitaciones válidas de la planificación.", peso: 2 },
+        { texto: "Concluye por qué la planificación sigue siendo esencial pese a sus críticas.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir beneficios con las etapas del proceso de planificación.",
+        "Presentar las críticas como razones para no planificar, en vez de limitaciones a gestionar."
+      ]
+    },
+    {
+      id: "adm-046",
+      tema: "Organización: cadena de mando, autoridad, responsabilidad y unidad de mando",
+      dificultad: "facil",
+      enunciado: "Defina los conceptos de cadena de mando, autoridad, responsabilidad y unidad de mando. Explique la relación entre autoridad y responsabilidad, y por qué el principio de unidad de mando busca evitar la existencia de dos jefes para un mismo subordinado.",
+      respuestaModelo: "Cadena de mando: línea continua de autoridad que se extiende desde los niveles más altos de la organización hasta los más bajos y que define quién le reporta a quién. Responde a la pregunta de a quién acudir si se tiene un problema.\n\nAutoridad: derecho inherente a un puesto gerencial para decir a las personas qué hacer y esperar que lo hagan; se asocia al cargo, no a la persona, y fluye hacia abajo por la cadena de mando.\n\nResponsabilidad: obligación o expectativa de desempeño que asume quien recibe autoridad para cumplir una tarea asignada.\n\nUnidad de mando: principio según el cual cada persona debe reportar a un solo jefe, para evitar instrucciones contradictorias y conflictos de prioridad.\n\nRelación autoridad-responsabilidad: cuando los gerentes asignan trabajo, delegan la autoridad necesaria y quien la recibe asume la responsabilidad de cumplir; ambas deben ir emparejadas: dar responsabilidad sin autoridad frustra al empleado, y dar autoridad sin responsabilidad genera abuso.\n\nLa unidad de mando busca evitar dos jefes porque, cuando la cadena de mando se rompe y un subordinado responde a varios superiores, puede recibir órdenes contradictorias, no saber a quién obedecer y diluirse la responsabilidad. (En estructuras como la matricial este principio se rompe deliberadamente, lo que exige mecanismos de coordinación adicionales.)",
+      criterios: [
+        { texto: "Define correctamente cadena de mando, autoridad, responsabilidad y unidad de mando.", peso: 4 },
+        { texto: "Explica la relación de emparejamiento entre autoridad y responsabilidad.", peso: 1 },
+        { texto: "Explica por qué la unidad de mando evita los jefes múltiples.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir autoridad (derecho del cargo) con poder (capacidad de influir, que no depende del cargo).",
+        "Definir responsabilidad como sinónimo de autoridad."
+      ]
+    },
+    {
+      id: "adm-047",
+      tema: "Organización: especialización del trabajo y división del trabajo",
+      dificultad: "facil",
+      enunciado: "Explique en qué consiste la especialización del trabajo (o división del trabajo) como elemento del diseño organizacional. Señale dos (2) ventajas y dos (2) desventajas de un alto grado de especialización, e indique qué se entiende por deseconomías humanas de la especialización.",
+      respuestaModelo: "La especialización del trabajo (o división del trabajo) consiste en dividir las actividades laborales en tareas separadas, de modo que cada empleado se concentre en una parte de la actividad en lugar de realizarla completa. Cada persona se especializa en hacer parte del trabajo.\n\nVentajas (dos entre las siguientes): 1) Uso eficiente de la diversidad de habilidades de los trabajadores. 2) Mayor productividad al repetir una tarea acotada y ganar destreza. 3) Facilita la capacitación (es más fácil y barato entrenar en una tarea específica). 4) Reduce los tiempos muertos por cambios de actividad.\n\nDesventajas (dos entre las siguientes): 1) Aburrimiento, fatiga y estrés por la monotonía. 2) Baja calidad, mayor ausentismo y rotación. 3) Pérdida de la visión del conjunto del trabajo. 4) Insatisfacción laboral.\n\nLas deseconomías humanas de la especialización se producen cuando el exceso de división del trabajo genera costos humanos (aburrimiento, fatiga, mala calidad, ausentismo y rotación) que superan las ventajas económicas de la especialización; llegado ese punto, ampliar o enriquecer los puestos rinde más que seguir dividiéndolos.",
+      criterios: [
+        { texto: "Explica correctamente qué es la especialización o división del trabajo.", peso: 2 },
+        { texto: "Señala dos ventajas válidas de un alto grado de especialización.", peso: 2 },
+        { texto: "Señala dos desventajas válidas.", peso: 1 },
+        { texto: "Explica el concepto de deseconomías humanas de la especialización.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Presentar la especialización como siempre beneficiosa, ignorando sus costos humanos.",
+        "Confundir especialización del trabajo con departamentalización."
+      ]
+    },
+    {
+      id: "adm-048",
+      tema: "Dirección: teorías X e Y de McGregor",
+      dificultad: "facil",
+      enunciado: "Explique las teorías X e Y de Douglas McGregor sobre la naturaleza humana en el trabajo. Para cada una, indique los supuestos que hace el gerente sobre sus empleados y el estilo de dirección y motivación que tiende a adoptar en consecuencia.",
+      respuestaModelo: "Douglas McGregor propuso dos conjuntos de supuestos sobre la naturaleza humana que determinan cómo dirige un gerente.\n\nTeoría X (visión negativa): supone que a los empleados les disgusta el trabajo, son perezosos, evitan la responsabilidad y deben ser coaccionados para desempeñarse. En consecuencia, el gerente adopta un estilo autocrático y controlador: supervisión estrecha, órdenes, uso de amenazas y castigos, centralización de las decisiones y motivación basada en factores externos (dinero, sanciones).\n\nTeoría Y (visión positiva): supone que los empleados son creativos, pueden considerar el trabajo algo tan natural como el descanso, buscan y aceptan responsabilidades, y pueden autodirigirse. En consecuencia, el gerente adopta un estilo participativo: delega, otorga autonomía y facultades de decisión, fomenta la participación y motiva a través de factores intrínsecos (logro, reconocimiento, desarrollo).\n\nMcGregor sostenía que los supuestos de la Teoría Y eran más válidos y que prácticas como la participación en las decisiones, los puestos con responsabilidad y desafío, y las buenas relaciones grupales maximizan la motivación. En la práctica, el estilo adecuado depende de la situación: no existe un supuesto universalmente correcto.",
+      criterios: [
+        { texto: "Explica correctamente los supuestos de la Teoría X.", peso: 2 },
+        { texto: "Explica correctamente los supuestos de la Teoría Y.", peso: 2 },
+        { texto: "Asocia a cada teoría el estilo de dirección y motivación que genera.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Invertir los supuestos (atribuir a X los de Y y viceversa).",
+        "Afirmar que la Teoría Y es siempre la correcta sin reconocer el rol de la situación."
+      ]
+    },
+    {
+      id: "adm-049",
+      tema: "Dirección: jerarquía de necesidades de Maslow",
+      dificultad: "facil",
+      enunciado: "Describa los cinco niveles de la jerarquía de necesidades de Abraham Maslow y explique la lógica con que, según el autor, las personas ascienden por ellos. Entregue un ejemplo laboral de cómo una organización puede ayudar a satisfacer una necesidad de orden inferior y una de orden superior.",
+      respuestaModelo: "Maslow ordenó las necesidades humanas en cinco niveles, de la base a la cima:\n\n1) Fisiológicas: alimento, bebida, refugio, descanso y otras necesidades corporales.\n2) De seguridad: protección frente al daño físico y emocional, y seguridad de que las necesidades fisiológicas seguirán cubiertas.\n3) Sociales (de pertenencia): afecto, sentido de pertenencia, aceptación y amistad.\n4) De estima: factores internos (respeto a uno mismo, autonomía, logro) y externos (estatus, reconocimiento, atención).\n5) De autorrealización: crecimiento, desarrollo del propio potencial y autosatisfacción; llegar a ser todo lo que uno es capaz de ser.\n\nLógica del ascenso: las necesidades se satisfacen de forma escalonada, de abajo hacia arriba; una necesidad sustancialmente satisfecha deja de motivar y la persona pasa a buscar la del nivel siguiente. Las dos inferiores se consideran de orden inferior (se satisfacen externamente) y las tres superiores, de orden superior (se satisfacen internamente).\n\nEjemplos laborales: una necesidad de orden inferior (seguridad) se atiende con un contrato estable, un sueldo justo y condiciones laborales seguras; una de orden superior (autorrealización) se atiende ofreciendo trabajo desafiante, oportunidades de crecimiento, capacitación y autonomía para desarrollar el potencial del trabajador.",
+      criterios: [
+        { texto: "Describe correctamente los cinco niveles de la jerarquía.", peso: 3 },
+        { texto: "Explica la lógica del ascenso escalonado (una necesidad satisfecha deja de motivar).", peso: 2 },
+        { texto: "Entrega un ejemplo laboral válido de necesidad inferior y otro de necesidad superior.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Alterar el orden de los niveles de la pirámide.",
+        "Omitir que una necesidad satisfecha deja de ser un motivador."
+      ]
+    },
+    {
+      id: "adm-050",
+      tema: "Dirección: liderazgo transformacional y transaccional",
+      dificultad: "facil",
+      enunciado: "Distinga el liderazgo transaccional del liderazgo transformacional. Para cada uno, explique cómo influye el líder en sus seguidores y en qué contexto resulta más apropiado. Señale por qué se afirma que ambos enfoques son complementarios y no excluyentes.",
+      respuestaModelo: "Liderazgo transaccional: el líder guía y motiva a sus seguidores mediante intercambios; aclara los roles y las tareas, y entrega recompensas (o aplica correcciones) a cambio del cumplimiento de metas. Se basa en el premio y el castigo por el desempeño; es apropiado para asegurar la operación cotidiana, cumplir estándares y mantener el orden en entornos estables.\n\nLiderazgo transformacional: el líder estimula e inspira a los seguidores a trascender sus intereses personales por el bien de la organización; genera una visión atractiva, entrega significado y desafío, estimula intelectualmente y presta atención individual al desarrollo de cada persona. Logra un compromiso y un esfuerzo que van más allá de lo esperado; es especialmente apropiado en contextos de cambio, innovación o crisis, cuando se requiere movilizar y renovar a la organización.\n\nSon complementarios porque el liderazgo transformacional se construye sobre el transaccional: un líder debe primero asegurar el cumplimiento y las recompensas básicas (transaccional) y, sobre esa base, inspirar niveles de desempeño y compromiso superiores (transformacional). Los mejores líderes combinan ambos según la situación.",
+      criterios: [
+        { texto: "Distingue correctamente liderazgo transaccional de transformacional.", peso: 2 },
+        { texto: "Explica cómo influye cada líder en sus seguidores.", peso: 2 },
+        { texto: "Indica el contexto apropiado para cada uno.", peso: 1 },
+        { texto: "Explica por qué ambos enfoques son complementarios.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir liderazgo transformacional con carisma únicamente, omitiendo la estimulación intelectual y la atención individual.",
+        "Presentar ambos estilos como opuestos irreconciliables en vez de complementarios."
+      ]
+    },
+    {
+      id: "adm-051",
+      tema: "Áreas funcionales: área de finanzas y sus decisiones",
+      dificultad: "facil",
+      enunciado: "Describa el propósito del área de finanzas en una empresa y explique los tres (3) tipos de decisiones financieras fundamentales: inversión, financiamiento y dividendos (o reparto de utilidades). Señale para qué sirven los estados financieros en el control de esta área.",
+      respuestaModelo: "El propósito del área de finanzas es administrar los recursos monetarios de la empresa para maximizar su valor, asegurando que disponga de los fondos necesarios, al menor costo posible, y que estos se asignen a los usos más rentables. Planifica, obtiene y controla el dinero.\n\nTres decisiones financieras fundamentales:\n\n1) Decisión de inversión: en qué activos o proyectos colocar los recursos (compra de maquinaria, apertura de locales, nuevos productos). Busca destinar el capital a las alternativas que generen mayor valor, evaluándolas con criterios como el VAN o la TIR.\n\n2) Decisión de financiamiento: de dónde obtener los recursos, definiendo la estructura de capital entre fuentes propias (aportes de dueños, utilidades retenidas) y fuentes de terceros (deuda, créditos), ponderando su costo y riesgo.\n\n3) Decisión de dividendos o reparto de utilidades: qué proporción de las utilidades se reparte a los dueños y qué proporción se reinvierte en la empresa para financiar su crecimiento.\n\nLos estados financieros (balance, estado de resultados, estado de flujo de efectivo) sirven al control porque permiten medir el desempeño financiero real, compararlo con lo planificado y con indicadores de referencia, detectar desviaciones (baja liquidez, sobreendeudamiento, caída de márgenes) y tomar acciones correctivas. Son la base de los indicadores financieros de gestión.",
+      criterios: [
+        { texto: "Describe correctamente el propósito del área de finanzas.", peso: 2 },
+        { texto: "Explica las tres decisiones financieras fundamentales.", peso: 3 },
+        { texto: "Señala para qué sirven los estados financieros en el control.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir el área de finanzas a la contabilidad o al registro de operaciones.",
+        "Omitir alguna de las tres decisiones financieras o confundirlas entre sí."
+      ]
+    },
+    {
+      id: "adm-052",
+      tema: "Control: características de un sistema de control eficaz",
+      dificultad: "facil",
+      enunciado: "Explique cuatro (4) características que debe reunir un sistema de control para ser eficaz. Fundamente por qué un control que no cumple estas condiciones puede terminar siendo más costoso o dañino que útil para la organización.",
+      respuestaModelo: "Características de un sistema de control eficaz (cuatro entre las siguientes):\n\n1) Exactitud: debe generar información confiable; un control que produce datos erróneos lleva a decisiones equivocadas.\n\n2) Oportunidad: debe entregar la información a tiempo para corregir las desviaciones antes de que provoquen daños mayores; un control tardío solo constata el problema cuando ya no hay solución.\n\n3) Economía (relación costo-beneficio): sus beneficios deben superar sus costos; controlar todo en exceso consume recursos que no se justifican.\n\n4) Flexibilidad: debe adaptarse a los cambios del entorno y de la organización.\n\n5) Criterios razonables: los estándares deben ser alcanzables y realistas; estándares imposibles desmotivan.\n\n6) Ubicación estratégica: debe concentrarse en las áreas donde las desviaciones causan mayor daño.\n\n7) Énfasis en la excepción: debe llamar la atención sobre las desviaciones significativas, no sobre todo.\n\n8) Acción correctiva: no basta detectar el problema; el control debe indicar qué hacer para corregirlo.\n\nUn control que no cumple estas condiciones puede ser más costoso o dañino que útil: si es inexacto induce a decisiones equivocadas; si es tardío no permite corregir a tiempo; si es antieconómico gasta más de lo que ahorra; si usa estándares irrazonables desmotiva y puede inducir conductas disfuncionales (por ejemplo, falsear cifras para cumplir la meta). En esos casos el control resta valor en vez de agregarlo.",
+      criterios: [
+        { texto: "Identifica cuatro características válidas de un sistema de control eficaz.", peso: 2 },
+        { texto: "Explica correctamente el sentido de cada una de las cuatro características señaladas.", peso: 2 },
+        { texto: "Fundamenta por qué un control deficiente puede ser más costoso o dañino que útil.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Enumerar las características sin explicarlas.",
+        "Confundir las características del sistema de control con las etapas del proceso de control."
+      ]
+    },
+    {
+      id: "adm-053",
+      tema: "La organización: niveles gerenciales y sus responsabilidades",
+      dificultad: "facil",
+      enunciado: "Describa los tres (3) niveles gerenciales de una organización (alta dirección, gerentes de nivel medio y gerentes de primera línea) e indique, para cada uno, sus principales responsabilidades y el tipo de decisiones que toma. Distinga además entre empleados no gerenciales y gerentes.",
+      respuestaModelo: "Alta dirección (gerentes de nivel alto): se ubican en la cúspide de la organización (director ejecutivo, gerente general, vicepresidentes). Son responsables de tomar las decisiones estratégicas que abarcan a toda la organización, establecer los planes y objetivos generales, definir el rumbo y representar a la empresa ante el entorno. Sus decisiones son de largo plazo, no estructuradas y de alto impacto.\n\nGerentes de nivel medio: se ubican entre la primera línea y la alta dirección (gerentes de área, de sucursal, de división). Traducen los objetivos generales en planes y metas concretas para sus unidades, coordinan el trabajo de los gerentes de primera línea y sirven de enlace entre la estrategia y la operación. Sus decisiones son tácticas, de mediano plazo.\n\nGerentes de primera línea (o de supervisión): dirigen el trabajo de los empleados no gerenciales que realizan la producción de bienes o la atención de clientes (supervisores, jefes de turno). Se encargan de la operación diaria, asignan tareas y resuelven problemas inmediatos. Sus decisiones son operativas, de corto plazo.\n\nDistinción: los empleados no gerenciales realizan directamente el trabajo y no supervisan a otros; los gerentes coordinan y supervisan el trabajo de otras personas para que se cumplan los objetivos, es decir, logran resultados a través de su equipo.",
+      criterios: [
+        { texto: "Describe correctamente los tres niveles gerenciales y sus responsabilidades.", peso: 3 },
+        { texto: "Indica el tipo de decisiones (estratégicas, tácticas, operativas) de cada nivel.", peso: 2 },
+        { texto: "Distingue entre empleados no gerenciales y gerentes.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir los niveles con las áreas funcionales.",
+        "Definir al gerente por el trabajo que hace personalmente y no por coordinar el trabajo de otros."
+      ]
+    },
+    {
+      id: "adm-054",
+      tema: "Nuevas tendencias: responsabilidad social empresarial (RSE)",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "Defina la responsabilidad social empresarial (RSE) y distíngala de la obligación social y de la sensibilidad social. Explique la diferencia entre la visión clásica y la visión socioeconómica sobre la responsabilidad social de la empresa, y entregue un ejemplo de acción de RSE.",
+      respuestaModelo: "La responsabilidad social empresarial (RSE) es la intención de una empresa, más allá de lo que exigen la ley y la economía, de hacer lo correcto y actuar de modo que beneficie a la sociedad. Va más allá de generar utilidades: implica perseguir metas de largo plazo que son buenas para la sociedad y el medio ambiente.\n\nDistinciones:\n- Obligación social: es el nivel mínimo; la empresa solo cumple con sus responsabilidades económicas y legales, hace lo que la ley le exige y nada más.\n- Sensibilidad social: la empresa se involucra en acciones sociales en respuesta a necesidades populares o presiones del momento; reacciona a lo que la sociedad demanda.\n- Responsabilidad social: la empresa va más allá de las obligaciones legales y económicas por convicción ética, buscando el bien de la sociedad en el largo plazo.\n\nVisiones sobre la responsabilidad social:\n- Visión clásica (Friedman): la única responsabilidad social de la empresa es maximizar las utilidades para sus dueños o accionistas, respetando la ley; gastar recursos en fines sociales sería usar dinero ajeno indebidamente.\n- Visión socioeconómica: la responsabilidad de la empresa va más allá de generar utilidades e incluye proteger y mejorar el bienestar de la sociedad; la empresa es parte de un entorno del que depende y al que debe responder.\n\nEjemplo de RSE: una empresa que implementa un programa de reciclaje y reducción de emisiones, contrata personas de grupos vulnerables o apoya la educación de su comunidad, sin estar legalmente obligada a hacerlo.",
+      criterios: [
+        { texto: "Define correctamente la RSE.", peso: 2 },
+        { texto: "Distingue RSE de obligación social y de sensibilidad social.", peso: 2 },
+        { texto: "Explica la diferencia entre la visión clásica y la socioeconómica.", peso: 1 },
+        { texto: "Entrega un ejemplo válido de acción de RSE.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir la RSE a hacer donaciones o marketing con causa.",
+        "Confundir obligación social (cumplir la ley) con responsabilidad social (ir más allá de la ley)."
+      ]
+    },
+    {
+      id: "adm-055",
+      tema: "Planificación: análisis del entorno con el modelo PESTEL",
+      dificultad: "facil",
+      salioEnExamen: true,
+      enunciado: "Explique en qué consiste el análisis del macroentorno mediante el modelo PESTEL e indique qué evalúa cada una de sus dimensiones (política, económica, social, tecnológica, ecológica y legal). Señale para qué le sirve a una empresa realizar este análisis en su proceso de planificación.",
+      respuestaModelo: "El análisis PESTEL es una herramienta para examinar el macroentorno o entorno general de la empresa, es decir, las fuerzas externas amplias que la afectan pero que ella no controla. Identifica factores que pueden constituir oportunidades o amenazas.\n\nDimensiones:\n- Política: estabilidad del gobierno, políticas públicas, tratados, nivel de intervención estatal.\n- Económica: crecimiento del PIB, inflación, tasas de interés, tipo de cambio, desempleo, ingreso de la población.\n- Social (sociocultural): demografía, estilos de vida, valores, hábitos de consumo, nivel educativo, tendencias culturales.\n- Tecnológica: innovación, automatización, digitalización, investigación y desarrollo, obsolescencia.\n- Ecológica (ambiental): factores climáticos, disponibilidad de recursos naturales, presiones de sostenibilidad y de cuidado del medio ambiente.\n- Legal: normativa laboral, tributaria, sanitaria, de protección al consumidor y regulaciones del sector.\n\nUtilidad en la planificación: el análisis PESTEL permite a la empresa anticipar cambios del entorno, detectar oportunidades y amenazas, reducir la incertidumbre y ajustar su estrategia y sus planes en consecuencia. Alimenta el componente externo del análisis FODA (oportunidades y amenazas) y sustenta decisiones informadas en vez de reactivas.",
+      criterios: [
+        { texto: "Explica correctamente en qué consiste el análisis PESTEL (macroentorno, factores no controlables).", peso: 2 },
+        { texto: "Indica qué evalúa cada una de las seis dimensiones.", peso: 3 },
+        { texto: "Señala la utilidad del análisis en el proceso de planificación.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Incluir factores internos de la empresa (que corresponden a fortalezas y debilidades) dentro del PESTEL.",
+        "Confundir el macroentorno (PESTEL) con el microentorno o entorno específico (clientes, proveedores, competidores)."
+      ]
+    },
+    {
+      id: "adm-056",
+      tema: "Nuevas tendencias: la organización que aprende y la gestión del conocimiento",
+      dificultad: "facil",
+      enunciado: "Explique qué es una organización que aprende (learning organization) y por qué la gestión del conocimiento se ha vuelto una fuente de ventaja competitiva. Señale dos (2) prácticas concretas que una empresa puede implementar para convertirse en una organización que aprende.",
+      respuestaModelo: "Una organización que aprende es aquella que ha desarrollado la capacidad de aprender, adaptarse y cambiar de manera continua, porque sus miembros asumen un papel activo en la identificación y resolución de problemas relacionados con el trabajo. Todos aprenden y comparten lo aprendido, lo que permite a la organización responder con rapidez a los cambios del entorno.\n\nLa gestión del conocimiento consiste en cultivar una cultura de aprendizaje en la que los miembros reúnen sistemáticamente el conocimiento y lo comparten con los demás, de modo que se transforme en un activo de la organización y no quede solo en las personas. Se ha vuelto fuente de ventaja competitiva porque, en la economía actual, el conocimiento (saber hacer, información sobre clientes, procesos, innovación) es un recurso difícil de imitar; una empresa que aprende más rápido que sus competidores se adapta antes y sostiene su ventaja.\n\nPrácticas concretas (dos entre las siguientes): 1) Crear bases de datos, manuales, comunidades de práctica o plataformas donde se documente y comparta el conocimiento (para que no se pierda cuando una persona se va). 2) Fomentar el trabajo en equipos interfuncionales y la comunicación abierta para difundir el aprendizaje. 3) Establecer un liderazgo que promueva una visión compartida y tolere el error como fuente de aprendizaje. 4) Diseñar programas de capacitación y mentoría continuos.",
+      criterios: [
+        { texto: "Explica correctamente qué es una organización que aprende.", peso: 2 },
+        { texto: "Explica qué es la gestión del conocimiento y por qué da ventaja competitiva.", peso: 2 },
+        { texto: "Señala dos prácticas concretas para convertirse en organización que aprende.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir organización que aprende con simplemente capacitar al personal de forma aislada.",
+        "Reducir la gestión del conocimiento a instalar un software, sin la cultura de compartir."
+      ]
+    },
+    {
+      id: "adm-057",
+      tema: "Motivación: teoría de las expectativas de Vroom",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Rodrigo es gerente de una sucursal bancaria y no logra que su equipo de ejecutivos se esfuerce por alcanzar las metas de colocación de créditos. Al conversar con ellos detecta tres situaciones: algunos creen que, por más que se esfuercen, no lograrán la meta porque el sistema de aprobación es muy lento; otros piensan que aunque cumplan la meta el bono prometido \"nunca llega\" o se reparte con favoritismo; y a un tercer grupo el bono en dinero simplemente no le resulta atractivo.\n\nUtilizando la teoría de las expectativas de Victor Vroom, explique sus tres componentes (expectativa, instrumentalidad y valencia) y asocie cada una de las tres situaciones detectadas a un componente que está fallando. Proponga una acción concreta para corregir cada falla.",
+      respuestaModelo: "La teoría de las expectativas de Vroom sostiene que la motivación de una persona a esforzarse depende de tres percepciones que se multiplican; si cualquiera es cercana a cero, la motivación se anula:\n\n1) Expectativa (esfuerzo-desempeño): probabilidad percibida de que el esfuerzo conduzca a un buen desempeño. \"Si me esfuerzo, ¿lograré la meta?\".\n\n2) Instrumentalidad (desempeño-recompensa): probabilidad percibida de que el buen desempeño conduzca a la recompensa. \"Si logro la meta, ¿recibiré efectivamente el premio?\".\n\n3) Valencia (valor de la recompensa): valor o atractivo que la persona asigna a la recompensa. \"¿Me interesa lo que me ofrecen?\".\n\nAsociación con el caso:\n- El primer grupo (cree que por más que se esfuerce no logrará la meta por el sistema lento) tiene un problema de expectativa: no percibe que su esfuerzo se traduzca en desempeño. Acción: eliminar los obstáculos del proceso de aprobación, dar herramientas y capacitación, y fijar metas alcanzables, de modo que el esfuerzo sí produzca resultados.\n- El segundo grupo (piensa que el bono no llega o se reparte con favoritismo) tiene un problema de instrumentalidad: no confía en que el desempeño lleve a la recompensa. Acción: transparentar y garantizar el pago del bono con reglas claras y objetivas, cumpliendo lo prometido para restablecer la confianza.\n- El tercer grupo (no valora el bono en dinero) tiene un problema de valencia: la recompensa no le resulta atractiva. Acción: ofrecer recompensas alternativas valoradas por esas personas (días libres, desarrollo, reconocimiento), personalizando el incentivo.",
+      criterios: [
+        { texto: "Explica correctamente los tres componentes de la teoría de las expectativas.", peso: 3 },
+        { texto: "Asocia cada una de las tres situaciones del caso al componente que falla.", peso: 3 },
+        { texto: "Propone una acción concreta y pertinente para corregir cada falla.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir instrumentalidad (desempeño lleva a recompensa) con expectativa (esfuerzo lleva a desempeño).",
+        "Proponer siempre subir el bono, ignorando que en un grupo el problema es la valencia y no el monto.",
+        "Explicar la teoría en abstracto sin anclarla a las tres situaciones del caso."
+      ]
+    },
+    {
+      id: "adm-058",
+      tema: "Dirección: diseño de puestos y modelo de las características del trabajo",
+      dificultad: "media",
+      enunciado: "Una empresa de call center observa altos niveles de aburrimiento y rotación entre sus operadores, cuyo trabajo es repetitivo y muy acotado. La gerencia evalúa rediseñar los puestos. Explique en qué consisten el agrandamiento (ampliación) y el enriquecimiento del puesto, y describa las cinco dimensiones del modelo de características del trabajo (variedad de habilidades, identidad de la tarea, importancia de la tarea, autonomía y retroalimentación). Proponga cómo rediseñar el puesto del operador usando este modelo.",
+      respuestaModelo: "El diseño del puesto es la forma en que se combinan las tareas para conformar un trabajo completo. Dos formas de rediseñarlo:\n\n- Agrandamiento o ampliación del puesto (ampliación horizontal): aumentar el alcance del puesto agregando más tareas del mismo nivel. Reduce la monotonía, pero por sí solo puede no elevar la motivación si solo agrega tareas igual de simples.\n\n- Enriquecimiento del puesto (ampliación vertical): agregar responsabilidades de planificación y evaluación (mayor autonomía y control sobre el propio trabajo), no solo más tareas. Aumenta la profundidad del puesto y suele motivar más.\n\nModelo de las características del trabajo (Hackman y Oldham): cinco dimensiones centrales:\n1) Variedad de habilidades: grado en que el puesto requiere distintas actividades y talentos.\n2) Identidad de la tarea: grado en que el puesto implica realizar una porción completa e identificable del trabajo, de principio a fin.\n3) Importancia de la tarea: grado en que el puesto impacta en la vida o el trabajo de otras personas.\n4) Autonomía: grado de libertad e independencia para programar el trabajo y decidir cómo hacerlo.\n5) Retroalimentación: grado en que la ejecución del trabajo entrega información directa y clara sobre el desempeño.\n\nRediseño del puesto del operador: aumentar la variedad de habilidades permitiéndole atender distintos tipos de consultas o rotar funciones; dar identidad de la tarea haciéndolo responsable de resolver un caso completo (y no solo un paso); reforzar la importancia mostrándole el impacto de su ayuda en el cliente; ampliar la autonomía dándole facultades para resolver reclamos hasta cierto monto sin escalar; y mejorar la retroalimentación con indicadores de satisfacción del cliente que reciba directamente. Esto combina agrandamiento y enriquecimiento para reducir el aburrimiento y la rotación.",
+      criterios: [
+        { texto: "Explica correctamente el agrandamiento (ampliación) y el enriquecimiento del puesto.", peso: 2 },
+        { texto: "Describe las cinco dimensiones del modelo de características del trabajo.", peso: 3 },
+        { texto: "Propone un rediseño del puesto del operador aplicando el modelo al caso.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir agrandamiento (horizontal, más tareas) con enriquecimiento (vertical, más responsabilidad).",
+        "Enumerar las dimensiones sin aplicarlas al puesto del operador."
+      ]
+    },
+    {
+      id: "adm-059",
+      tema: "Dirección: manejo de conflictos y sus estilos",
+      dificultad: "media",
+      enunciado: "En un equipo de proyecto, dos áreas (ventas y operaciones) mantienen un conflicto constante: ventas promete plazos que operaciones considera imposibles. Explique la diferencia entre conflictos funcionales y disfuncionales, y describa los cinco estilos de manejo de conflictos (evasión, complacencia/acomodación, imposición/competencia, compromiso/negociación y colaboración). Recomiende, con justificación, qué estilo debería privilegiar el jefe de proyecto en este caso.",
+      respuestaModelo: "Un conflicto es una diferencia percibida e incompatibilidad entre partes que genera oposición. No todo conflicto es negativo:\n\n- Conflicto funcional (constructivo): apoya las metas del grupo y mejora su desempeño; estimula la discusión de ideas, la creatividad y mejores decisiones. Un nivel moderado es deseable.\n- Conflicto disfuncional (destructivo): impide que el grupo alcance sus metas; genera desgaste, deteriora las relaciones y baja el desempeño.\n\nCinco estilos de manejo de conflictos (según asertividad y cooperación):\n1) Evasión: ignorar o evitar el conflicto (baja asertividad y baja cooperación). Útil cuando el tema es trivial o se necesita calmar los ánimos.\n2) Complacencia o acomodación: ceder ante la otra parte para preservar la relación (baja asertividad, alta cooperación). Útil cuando el tema importa más al otro.\n3) Imposición o competencia: satisfacer las propias necesidades a costa de la otra parte (alta asertividad, baja cooperación). Útil en emergencias o decisiones impopulares necesarias.\n4) Compromiso o negociación: cada parte cede algo para llegar a un punto medio. Útil cuando ambas partes tienen poder similar y se necesita una solución rápida.\n5) Colaboración: buscar una solución que satisfaga plenamente a ambas partes (alta asertividad y alta cooperación); requiere tiempo y confianza, pero produce el mejor resultado integrador.\n\nRecomendación para el caso: el jefe de proyecto debería privilegiar la colaboración, porque el conflicto entre ventas y operaciones es recurrente y estructural (plazos versus capacidad), y ambas áreas son necesarias para el éxito. La colaboración permite diseñar una solución conjunta (por ejemplo, un protocolo donde ventas consulte la capacidad real antes de comprometer plazos) que atienda los intereses de ambas. Como salida rápida y transitoria puede usarse el compromiso, pero la colaboración ataca la causa de fondo.",
+      criterios: [
+        { texto: "Explica la diferencia entre conflicto funcional y disfuncional.", peso: 2 },
+        { texto: "Describe correctamente los cinco estilos de manejo de conflictos.", peso: 3 },
+        { texto: "Recomienda un estilo justificado y pertinente al caso (colaboración bien fundada).", peso: 2 }
+      ],
+      erroresComunes: [
+        "Sostener que todo conflicto es negativo y debe eliminarse.",
+        "Recomendar un estilo sin justificarlo con las características del caso."
+      ]
+    },
+    {
+      id: "adm-060",
+      tema: "Organización: estructura matricial",
+      dificultad: "media",
+      enunciado: "Una empresa de ingeniería que ejecuta varios proyectos simultáneos evalúa adoptar una estructura matricial. Explique en qué consiste esta estructura y cómo combina la departamentalización funcional con la de proyectos. Señale dos (2) ventajas y dos (2) desventajas, prestando especial atención al problema de la doble autoridad y la unidad de mando.",
+      respuestaModelo: "La estructura matricial asigna a especialistas de distintos departamentos funcionales para trabajar en uno o más proyectos, combinando dos formas de departamentalización: la funcional (por especialidad: estructuras, eléctrica, costos) y la de proyectos (por cada proyecto o producto). El resultado es una malla en la que cada especialista pertenece a la vez a su área funcional y a un proyecto.\n\nSu rasgo distintivo es que rompe el principio de unidad de mando: el empleado tiene dos jefes, el gerente funcional (que administra su especialidad, su desarrollo técnico y su carrera) y el gerente de proyecto (que dirige su trabajo en el proyecto y sus plazos). Ambos comparten la autoridad.\n\nVentajas (dos entre las siguientes): 1) Uso flexible y eficiente de especialistas escasos, que se reparten entre proyectos según se necesiten. 2) Facilita la coordinación y la respuesta rápida ante proyectos complejos y cambiantes, integrando disciplinas. 3) Favorece el desarrollo de habilidades y la comunicación entre áreas.\n\nDesventajas (dos entre las siguientes): 1) La doble autoridad viola la unidad de mando y puede generar confusión, órdenes contradictorias y conflictos de prioridad. 2) Genera luchas de poder entre gerentes funcionales y de proyecto por los recursos y el tiempo de las personas. 3) Puede provocar estrés y ambigüedad de rol en los empleados que responden a dos jefes. 4) Exige mucha comunicación y negociación, lo que consume tiempo.\n\nPara que funcione, se requieren reglas claras sobre qué decide cada jefe y mecanismos de coordinación que resuelvan los conflictos de prioridad.",
+      criterios: [
+        { texto: "Explica correctamente la estructura matricial y la combinación funcional-proyectos.", peso: 3 },
+        { texto: "Señala dos ventajas válidas.", peso: 2 },
+        { texto: "Señala dos desventajas válidas, incluyendo el problema de la doble autoridad y la unidad de mando.", peso: 2 }
+      ],
+      erroresComunes: [
+        "No reconocer que la matriz rompe deliberadamente la unidad de mando (dos jefes).",
+        "Confundir la estructura matricial con una simple departamentalización por producto o por proyecto."
+      ]
+    },
+    {
+      id: "adm-061",
+      tema: "Organización: organización en red y externalización (outsourcing)",
+      dificultad: "media",
+      enunciado: "Una marca de ropa deportiva diseña y comercializa sus productos, pero no posee fábricas: encarga la producción a terceros. Explique qué es una organización en red (o estructura modular) y en qué consiste la externalización (outsourcing). Señale dos (2) ventajas y dos (2) riesgos de este modelo, e indique qué actividades conviene mantener internamente.",
+      respuestaModelo: "Una organización en red (o estructura modular / de red) es aquella que conserva internamente sus actividades centrales y externaliza el resto, coordinando una red de proveedores y socios externos que realizan funciones específicas. La empresa actúa como un núcleo que articula a terceros en lugar de hacerlo todo por sí misma.\n\nLa externalización (outsourcing) es la práctica de encargar a proveedores externos actividades que antes se realizaban dentro de la empresa (producción, logística, contabilidad, servicio al cliente), para concentrarse en lo que hace mejor.\n\nVentajas (dos entre las siguientes): 1) Permite concentrarse en las competencias centrales (diseño, marca, marketing) donde se crea más valor. 2) Reduce costos e inversión en activos fijos y otorga flexibilidad para escalar sin infraestructura propia. 3) Da acceso a especialistas y tecnología de los socios sin desarrollarlos internamente.\n\nRiesgos (dos entre las siguientes): 1) Pérdida de control sobre la calidad, los plazos y las condiciones (por ejemplo, laborales o ambientales) de los proveedores, con riesgo reputacional. 2) Dependencia de terceros y menor poder de negociación si el proveedor es clave. 3) Fuga de conocimiento o creación de futuros competidores. 4) Mayor complejidad de coordinación.\n\nConviene mantener internamente las actividades centrales o estratégicas que constituyen la ventaja competitiva y la identidad de la empresa (en el caso, el diseño, la gestión de marca y el marketing), externalizando las actividades de apoyo o estandarizables (la manufactura).",
+      criterios: [
+        { texto: "Explica correctamente qué es una organización en red y la externalización.", peso: 3 },
+        { texto: "Señala dos ventajas válidas del modelo.", peso: 2 },
+        { texto: "Señala dos riesgos válidos.", peso: 1 },
+        { texto: "Indica qué actividades conviene mantener internamente (competencias centrales).", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir externalizar con simplemente comprar insumos.",
+        "Recomendar externalizar las competencias centrales que dan la ventaja competitiva."
+      ]
+    },
+    {
+      id: "adm-062",
+      tema: "Control: cuadro de mando integral (Balanced Scorecard)",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Explique en qué consiste el cuadro de mando integral (Balanced Scorecard) como herramienta de control de gestión y describa sus cuatro perspectivas (financiera, del cliente, de procesos internos y de aprendizaje y crecimiento). Proponga un indicador (KPI) para cada perspectiva en una cadena de restaurantes y explique por qué es mejor controlar con múltiples perspectivas que solo con indicadores financieros.",
+      respuestaModelo: "El cuadro de mando integral (Balanced Scorecard) es una herramienta de control de gestión que traduce la estrategia de la organización en un conjunto equilibrado de objetivos e indicadores, agrupados en cuatro perspectivas relacionadas entre sí. Evita mirar solo el resultado financiero y da una visión integral del desempeño.\n\nCuatro perspectivas:\n1) Financiera: cómo ven los dueños o accionistas a la empresa; mide rentabilidad, ingresos, márgenes.\n2) Del cliente: cómo ven los clientes a la empresa; mide satisfacción, fidelidad, participación de mercado.\n3) De procesos internos: en qué procesos debe destacar la empresa; mide eficiencia operativa, calidad, tiempos.\n4) De aprendizaje y crecimiento: capacidad de mejorar e innovar; mide capacitación, clima, innovación, competencias del personal.\n\nEjemplo en una cadena de restaurantes:\n- Financiera: margen operacional por local o crecimiento de ventas.\n- Del cliente: nota de satisfacción del comensal o tasa de clientes que regresan.\n- Procesos internos: tiempo promedio de atención o porcentaje de pedidos sin errores.\n- Aprendizaje y crecimiento: horas de capacitación por empleado o rotación del personal.\n\nEs mejor controlar con múltiples perspectivas porque los indicadores financieros son de resultado y miran el pasado: dicen qué pasó pero no por qué. Las otras perspectivas actúan como indicadores guía (causas) que anticipan el resultado financiero futuro: clientes satisfechos y procesos eficientes, sostenidos por personal capacitado, producen buenos resultados financieros. Controlar solo lo financiero puede llevar a decisiones que mejoran el corto plazo sacrificando la salud de largo plazo (por ejemplo, recortar calidad para subir el margen del mes).",
+      criterios: [
+        { texto: "Explica correctamente qué es el cuadro de mando integral.", peso: 2 },
+        { texto: "Describe las cuatro perspectivas.", peso: 3 },
+        { texto: "Propone un KPI válido por perspectiva para la cadena de restaurantes.", peso: 2 },
+        { texto: "Explica por qué conviene controlar con múltiples perspectivas y no solo con indicadores financieros.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Proponer indicadores que no corresponden a la perspectiva señalada.",
+        "Sostener que basta con controlar los resultados financieros."
+      ]
+    },
+    {
+      id: "adm-063",
+      tema: "Áreas funcionales: gestión de operaciones, inventarios y cadena de suministro",
+      dificultad: "media",
+      enunciado: "Una empresa manufacturera sufre a la vez quiebres de stock que detienen la producción y exceso de inventario que inmoviliza capital. Explique el rol de la gestión de la cadena de suministro y el propósito de la administración de inventarios. Describa la lógica del sistema justo a tiempo (JIT) y señale un beneficio y un riesgo de operar con inventarios mínimos.",
+      respuestaModelo: "La gestión de la cadena de suministro coordina el flujo de materiales, información y dinero desde los proveedores hasta el cliente final, buscando entregar el producto correcto, en la cantidad, lugar y momento adecuados, al menor costo. Integra abastecimiento, producción, almacenamiento y distribución.\n\nLa administración de inventarios busca equilibrar dos costos opuestos: el costo de mantener inventario (capital inmovilizado, bodegaje, obsolescencia, mermas) y el costo de quedarse sin él (quiebres de stock, paradas de producción, ventas perdidas, clientes insatisfechos). El caso muestra ambos males a la vez: quiebres que detienen la producción y exceso que inmoviliza capital, señal de una mala planificación de inventarios.\n\nSistema justo a tiempo (JIT): consiste en recibir los insumos justo cuando se necesitan para producir, manteniendo inventarios mínimos, en lugar de acumular grandes existencias por si acaso. Requiere proveedores confiables, coordinación estrecha y demanda relativamente estable.\n\nBeneficio de operar con inventarios mínimos: libera capital de trabajo, reduce costos de bodegaje y merma, y expone problemas de proceso que antes quedaban ocultos por el stock. Riesgo: cualquier falla del proveedor, retraso logístico o alza súbita de demanda provoca de inmediato un quiebre de stock y detiene la producción, porque no hay colchón de seguridad. Por eso el JIT exige una cadena de suministro muy confiable.",
+      criterios: [
+        { texto: "Explica el rol de la gestión de la cadena de suministro.", peso: 2 },
+        { texto: "Explica el propósito de la administración de inventarios (equilibrio de costos opuestos).", peso: 2 },
+        { texto: "Describe la lógica del sistema justo a tiempo (JIT).", peso: 2 },
+        { texto: "Señala un beneficio y un riesgo de operar con inventarios mínimos.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Suponer que más inventario siempre es mejor, ignorando el costo de mantenerlo.",
+        "Describir el JIT sin mencionar que exige proveedores confiables y coordinación."
+      ]
+    },
+    {
+      id: "adm-064",
+      tema: "Áreas funcionales: reclutamiento y selección de personal",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa en crecimiento debe cubrir varios cargos y quiere ordenar su proceso de incorporación de personal. Distinga reclutamiento de selección. Explique la diferencia entre fuentes de reclutamiento internas y externas (con una ventaja de cada una) y describa tres (3) herramientas o etapas del proceso de selección. Señale qué es un error de selección y por qué es costoso.",
+      respuestaModelo: "El reclutamiento es el proceso de localizar, identificar y atraer a candidatos capaces para un cargo; su resultado es un conjunto de postulantes. La selección es el proceso posterior de evaluar a esos candidatos y elegir al más idóneo para el puesto. Reclutar es atraer; seleccionar es elegir.\n\nFuentes de reclutamiento:\n- Internas: se recluta entre los propios trabajadores (promociones, traslados). Ventaja: se conoce al candidato, motiva y retiene al personal, y la persona ya conoce la empresa y su cultura, con menor costo y riesgo.\n- Externas: se recluta fuera de la empresa (avisos, portales de empleo, universidades, referidos, agencias). Ventaja: incorpora talento nuevo, ideas frescas y competencias que no existen internamente, ampliando el pool de candidatos.\n\nHerramientas o etapas del proceso de selección (tres entre las siguientes): 1) Revisión de antecedentes y currículum (filtro inicial). 2) Pruebas o test de selección (de conocimientos, psicológicos, de habilidades). 3) Entrevistas (individuales o por competencias). 4) Verificación de referencias y antecedentes. 5) Examen o evaluación final antes de la contratación.\n\nUn error de selección ocurre cuando se rechaza a un candidato que habría tenido buen desempeño (error de rechazo) o cuando se contrata a alguien que luego tiene mal desempeño (error de aceptación). Es costoso porque implica gastos de reclutamiento y capacitación perdidos, baja productividad, eventual necesidad de despedir y volver a contratar, y daño al equipo y a los clientes. Por eso vale la pena invertir en un proceso de selección riguroso.",
+      criterios: [
+        { texto: "Distingue correctamente reclutamiento de selección.", peso: 2 },
+        { texto: "Explica la diferencia entre fuentes internas y externas con una ventaja de cada una.", peso: 2 },
+        { texto: "Describe tres herramientas o etapas del proceso de selección.", peso: 2 },
+        { texto: "Explica qué es un error de selección y por qué es costoso.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Usar reclutamiento y selección como sinónimos.",
+        "Confundir fuentes internas/externas con selección interna de una herramienta."
+      ]
+    },
+    {
+      id: "adm-065",
+      tema: "Áreas funcionales: capacitación, desarrollo y evaluación del desempeño",
+      dificultad: "media",
+      enunciado: "Explique la diferencia entre capacitación y desarrollo del personal y señale para qué sirve cada uno. Describa el propósito de la evaluación del desempeño y dos (2) usos que la empresa puede dar a sus resultados. Explique además qué es la retroalimentación de 360 grados.",
+      respuestaModelo: "Capacitación: proceso orientado a mejorar el desempeño actual del trabajador en su puesto, entregándole conocimientos y habilidades específicas para las tareas que realiza hoy (por ejemplo, aprender a usar un nuevo sistema). Tiene foco de corto plazo y en el cargo presente.\n\nDesarrollo: proceso orientado al crecimiento del trabajador de cara al futuro, preparándolo para asumir responsabilidades mayores o nuevos roles (por ejemplo, formación de liderazgo para un futuro jefe). Tiene foco de más largo plazo y en la carrera de la persona.\n\nEvaluación del desempeño: proceso sistemático mediante el cual se mide y valora el rendimiento del trabajador respecto de estándares y objetivos previamente definidos. Su propósito es dar retroalimentación, reconocer el buen desempeño y detectar brechas para mejorar.\n\nUsos de sus resultados (dos entre los siguientes): 1) Decisiones de compensación y promoción (bonos, aumentos, ascensos). 2) Identificación de necesidades de capacitación y desarrollo. 3) Retroalimentación para orientar la mejora. 4) Decisiones de desvinculación o reubicación. 5) Validación de los procesos de selección.\n\nRetroalimentación de 360 grados: método de evaluación en que el trabajador recibe retroalimentación desde múltiples fuentes que interactúan con él: su jefe, sus pares, sus subordinados, e incluso clientes internos o externos, además de una autoevaluación. Ofrece una visión más completa y equilibrada del desempeño que la sola evaluación del jefe.",
+      criterios: [
+        { texto: "Explica la diferencia entre capacitación (presente) y desarrollo (futuro).", peso: 2 },
+        { texto: "Describe el propósito de la evaluación del desempeño.", peso: 2 },
+        { texto: "Señala dos usos válidos de los resultados de la evaluación.", peso: 1 },
+        { texto: "Explica correctamente la retroalimentación de 360 grados.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Usar capacitación y desarrollo como sinónimos.",
+        "Reducir la evaluación de desempeño a un trámite de castigo, ignorando su fin de mejora."
+      ]
+    },
+    {
+      id: "adm-066",
+      tema: "Áreas funcionales: administración de la calidad total (TQM) y mejora continua",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa recibe reclamos frecuentes por defectos en sus productos y decide implementar un enfoque de calidad. Explique en qué consiste la administración de la calidad total (TQM) y el concepto de mejora continua (kaizen). Describa el ciclo PHVA (planificar-hacer-verificar-actuar) y señale por qué la calidad se considera una responsabilidad de toda la organización y no solo del área de control de calidad.",
+      respuestaModelo: "La administración de la calidad total (TQM) es una filosofía de gestión enfocada en la mejora continua de todos los procesos de la organización para satisfacer y superar las expectativas del cliente. Pone la calidad al centro, orientada al cliente, con participación de todos los trabajadores y decisiones basadas en datos.\n\nLa mejora continua (kaizen) es el compromiso de mejorar constantemente, en incrementos pequeños y sostenidos, todos los procesos; parte del supuesto de que siempre se puede hacer mejor y de que las mejoras acumuladas generan grandes resultados en el tiempo.\n\nCiclo PHVA (o PDCA), motor de la mejora continua:\n1) Planificar: identificar el problema, analizar sus causas y diseñar una mejora con objetivos y método.\n2) Hacer: implementar la mejora, idealmente a modo de prueba o a pequeña escala.\n3) Verificar: medir los resultados y compararlos con lo esperado, comprobando si la mejora funcionó.\n4) Actuar: si funcionó, estandarizar y extender la solución; si no, ajustar y reiniciar el ciclo.\n\nLa calidad es responsabilidad de toda la organización porque se construye en cada etapa del proceso, no se \"inspecciona\" al final: los defectos se originan en el diseño, las compras, la producción y el servicio, de modo que cada área y cada trabajador influyen en el resultado. Delegar la calidad solo en un área de control significa detectar defectos tarde y de forma costosa, en vez de prevenirlos en el origen. La cultura de calidad requiere el compromiso de todos.",
+      criterios: [
+        { texto: "Explica correctamente qué es la administración de la calidad total (TQM).", peso: 2 },
+        { texto: "Explica el concepto de mejora continua (kaizen).", peso: 2 },
+        { texto: "Describe las cuatro fases del ciclo PHVA.", peso: 2 },
+        { texto: "Fundamenta por qué la calidad es responsabilidad de toda la organización.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Reducir la calidad a la inspección final del producto.",
+        "Describir el ciclo PHVA omitiendo la fase de verificar o la de actuar/estandarizar."
+      ]
+    },
+    {
+      id: "adm-067",
+      tema: "Dirección: grupos, equipos y etapas de desarrollo de equipos",
+      dificultad: "media",
+      enunciado: "Distinga un grupo de trabajo de un equipo de trabajo. Describa las cinco etapas del desarrollo de un equipo (formación, tormenta/conflicto, normalización, desempeño y disolución) y explique qué caracteriza a un equipo de alto desempeño. Señale un riesgo del trabajo en equipo que el líder debe evitar.",
+      respuestaModelo: "Grupo de trabajo: conjunto de personas que interactúan principalmente para compartir información y tomar decisiones que ayuden a cada miembro a desempeñarse en su propia área de responsabilidad. No hay un producto colectivo; el resultado es la suma de los aportes individuales.\n\nEquipo de trabajo: conjunto de personas cuyos esfuerzos individuales se combinan para generar un desempeño mayor que la suma de las partes (sinergia positiva). Comparten una meta común, responsabilidad mutua y habilidades complementarias.\n\nCinco etapas del desarrollo de un equipo:\n1) Formación: los miembros se integran, se conocen y definen el propósito y las reglas; hay incertidumbre.\n2) Tormenta o conflicto: surgen desacuerdos sobre roles, liderazgo y forma de trabajar; hay tensión.\n3) Normalización: se desarrollan relaciones más estrechas, cohesión y normas compartidas; se acuerdan formas de trabajar.\n4) Desempeño: el equipo funciona plenamente y se concentra en cumplir la tarea; es la etapa productiva.\n5) Disolución (en equipos temporales): concluida la tarea, el equipo se desintegra.\n\nUn equipo de alto desempeño se caracteriza por objetivos claros y compartidos, habilidades complementarias, confianza mutua, comunicación abierta, compromiso y responsabilidad conjunta, y un liderazgo adecuado.\n\nRiesgo que el líder debe evitar: el pensamiento de grupo (groupthink), es decir, que la presión por el consenso lleve al equipo a no cuestionar las ideas y tomar malas decisiones; también la holgazanería social (que algún miembro se esconda en el grupo y aporte menos). El líder debe fomentar el debate y la responsabilidad individual dentro del equipo.",
+      criterios: [
+        { texto: "Distingue correctamente grupo de trabajo de equipo de trabajo (sinergia).", peso: 2 },
+        { texto: "Describe las cinco etapas del desarrollo de un equipo.", peso: 3 },
+        { texto: "Explica qué caracteriza a un equipo de alto desempeño.", peso: 1 },
+        { texto: "Señala un riesgo válido del trabajo en equipo (pensamiento de grupo u holgazanería social).", peso: 1 }
+      ],
+      erroresComunes: [
+        "Usar grupo y equipo como sinónimos, omitiendo la sinergia y la responsabilidad mutua.",
+        "Alterar el orden de las etapas o saltarse la etapa de conflicto."
+      ]
+    },
+    {
+      id: "adm-068",
+      tema: "Gestión del cambio: modelo de las tres etapas de Lewin",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa debe implementar un nuevo sistema de trabajo y anticipa resistencia. Explique el modelo de cambio planeado de tres etapas de Kurt Lewin (descongelar, cambiar y recongelar) y describa qué debe hacer la gerencia en cada etapa. Distinga entre las fuerzas impulsoras y las fuerzas restrictivas del cambio.",
+      respuestaModelo: "Kurt Lewin planteó que todo cambio planeado debe atravesar tres etapas:\n\n1) Descongelar: preparar a la organización para el cambio, reduciendo la resistencia y creando conciencia de que el estado actual ya no sirve. La gerencia comunica la necesidad del cambio, muestra la brecha entre la situación actual y la deseada, y genera disposición. Se logra aumentando las fuerzas impulsoras, disminuyendo las restrictivas, o ambas.\n\n2) Cambiar (mover): implementar efectivamente el cambio; la gerencia introduce el nuevo sistema, capacita, acompaña, comunica y ajusta. Es la etapa de transición, en la que las personas aprenden nuevas formas de trabajar.\n\n3) Recongelar: estabilizar y consolidar el cambio para que se vuelva la nueva forma habitual de operar y no se revierta. La gerencia refuerza los nuevos comportamientos, los integra a la cultura, los procedimientos y los sistemas de recompensa, y evita el retorno a lo anterior.\n\nFuerzas impulsoras: las que empujan hacia el cambio (nueva tecnología, presión competitiva, exigencias de clientes, liderazgo que lo promueve). Fuerzas restrictivas: las que se oponen al cambio y buscan mantener el statu quo (miedo a lo desconocido, hábitos, temor a perder poder o empleo, falta de confianza). El cambio ocurre cuando las impulsoras superan a las restrictivas; por eso conviene reducir las restrictivas y no solo aumentar la presión.",
+      criterios: [
+        { texto: "Explica correctamente las tres etapas del modelo de Lewin.", peso: 3 },
+        { texto: "Describe qué debe hacer la gerencia en cada etapa.", peso: 2 },
+        { texto: "Distingue entre fuerzas impulsoras y restrictivas del cambio.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Omitir la etapa de recongelar, dejando el cambio sin consolidar.",
+        "Confundir las fuerzas impulsoras con las restrictivas."
+      ]
+    },
+    {
+      id: "adm-069",
+      tema: "Gestión del cambio: resistencia al cambio y cómo gestionarla",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Al anunciar una reestructuración, la gerencia enfrenta rechazo de los trabajadores. Explique tres (3) causas por las que las personas se resisten al cambio organizacional y describa tres (3) técnicas para reducir esa resistencia. Fundamente por qué ignorar la resistencia suele hacer fracasar el cambio.",
+      respuestaModelo: "Causas de la resistencia al cambio (tres entre las siguientes):\n1) Incertidumbre y miedo a lo desconocido: el cambio reemplaza lo conocido por la ambigüedad, lo que genera ansiedad.\n2) Temor a la pérdida: miedo a perder el empleo, el estatus, el poder, la rutina o beneficios adquiridos.\n3) Hábito: las personas responden por costumbre y el cambio exige salir de la zona de confort.\n4) Percepción de que el cambio no conviene o creencia de que es un error para la organización.\n5) Falta de confianza en quienes impulsan el cambio.\n\nTécnicas para reducir la resistencia (tres entre las siguientes):\n1) Educación y comunicación: explicar de forma transparente las razones y los beneficios del cambio, para disipar rumores y malentendidos.\n2) Participación: involucrar a los afectados en el diseño e implementación, para que se comprometan y aporten.\n3) Facilitación y apoyo: entregar capacitación, acompañamiento y contención emocional durante la transición.\n4) Negociación: ofrecer incentivos o acuerdos a quienes tienen poder para bloquear el cambio.\n5) Selección de personas que aceptan el cambio y manejo de los tiempos; como último recurso, coerción.\n\nIgnorar la resistencia suele hacer fracasar el cambio porque las personas son quienes deben ejecutarlo en la práctica: si no comprenden, no confían o temen, sabotean, cumplen a medias o vuelven a las viejas prácticas apenas baja la supervisión (falla el recongelamiento). Gestionar la resistencia con comunicación y participación transforma a los opositores en aliados y hace sostenible el cambio.",
+      criterios: [
+        { texto: "Explica tres causas válidas de la resistencia al cambio.", peso: 3 },
+        { texto: "Describe tres técnicas válidas para reducir la resistencia.", peso: 3 },
+        { texto: "Fundamenta por qué ignorar la resistencia hace fracasar el cambio.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Plantear que la resistencia se vence solo imponiendo el cambio por autoridad.",
+        "Confundir las causas de la resistencia con las técnicas para reducirla."
+      ]
+    },
+    {
+      id: "adm-070",
+      tema: "Toma de decisiones: condiciones de certeza, riesgo e incertidumbre",
+      dificultad: "media",
+      enunciado: "Explique las tres condiciones bajo las cuales un gerente toma decisiones: certeza, riesgo e incertidumbre. Para cada una, indique con qué información cuenta el gerente y entregue un ejemplo. Señale cómo influye la actitud del gerente frente al riesgo en la decisión bajo incertidumbre.",
+      respuestaModelo: "Los gerentes toman decisiones en tres condiciones según la información disponible sobre los resultados:\n\n1) Certeza: situación ideal en que el gerente conoce con exactitud el resultado de cada alternativa, porque dispone de información completa y confiable. Ejemplo: decidir en qué banco depositar un excedente cuando se conocen con certeza las tasas de interés ofrecidas; se elige la mayor. En la práctica, pocas decisiones se toman en certeza plena.\n\n2) Riesgo: el gerente no conoce con certeza los resultados, pero puede estimar la probabilidad de cada uno a partir de datos históricos o experiencia. Ejemplo: una estación de esquí que, con datos de años anteriores, estima la probabilidad de distintos niveles de nieve y sus efectos en las ventas para decidir cuánto personal contratar.\n\n3) Incertidumbre: el gerente no conoce los resultados ni puede estimar razonablemente sus probabilidades, por falta de información o por lo novedoso de la situación. Ejemplo: lanzar un producto totalmente nuevo en un mercado sin antecedentes.\n\nBajo incertidumbre, la elección depende de la orientación psicológica del gerente frente al riesgo: un gerente optimista tenderá a elegir la alternativa que maximiza la mejor ganancia posible (criterio maximax); uno pesimista o averso al riesgo elegirá la que maximiza el peor resultado posible (criterio maximin) o la que minimiza el arrepentimiento. Así, ante la misma información incompleta, distintos gerentes pueden decidir distinto según su tolerancia al riesgo.",
+      criterios: [
+        { texto: "Explica correctamente las condiciones de certeza, riesgo e incertidumbre y la información disponible en cada una.", peso: 4 },
+        { texto: "Entrega un ejemplo válido para cada condición.", peso: 2 },
+        { texto: "Explica cómo la actitud frente al riesgo influye en la decisión bajo incertidumbre.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir riesgo (se conocen probabilidades) con incertidumbre (no se conocen).",
+        "Afirmar que la mayoría de las decisiones gerenciales se toman en condiciones de certeza."
+      ]
+    },
+    {
+      id: "adm-071",
+      tema: "Toma de decisiones: racionalidad limitada y sesgos",
+      dificultad: "media",
+      enunciado: "Explique la diferencia entre el modelo de toma de decisiones racional y el concepto de racionalidad limitada de Herbert Simon, incluyendo la idea de \"satisfacer\" (satisficing). Describa dos (2) sesgos o errores comunes en la toma de decisiones gerenciales y señale cómo pueden mitigarse.",
+      respuestaModelo: "El modelo racional de toma de decisiones supone que el gerente es totalmente objetivo y lógico: define claramente el problema, identifica todos los criterios y todas las alternativas, evalúa cada una con información completa y elige la que maximiza el resultado. Es un ideal que exige información y capacidad de procesamiento perfectas.\n\nLa racionalidad limitada (Herbert Simon) reconoce que, en la realidad, los gerentes deciden de manera racional pero dentro de los límites de su capacidad de procesar información y del tiempo y los datos disponibles. No pueden analizarlo todo. En consecuencia, en vez de maximizar, tienden a \"satisfacer\" (satisficing): eligen la primera alternativa que resulta suficientemente buena o aceptable, no necesariamente la óptima.\n\nSesgos o errores comunes (dos entre los siguientes):\n1) Sesgo de confirmación: buscar y valorar solo la información que confirma las creencias previas, descartando la que las contradice.\n2) Exceso de confianza: sobreestimar el propio conocimiento y la precisión de los pronósticos.\n3) Anclaje: fijarse en la primera información recibida y no ajustar lo suficiente.\n4) Compromiso creciente (escalada): insistir en una decisión equivocada por lo ya invertido.\n5) Disponibilidad: sobrevalorar la información más reciente o vívida.\n\nMitigación: fomentar el debate y la opinión divergente (por ejemplo, designar un \"abogado del diablo\"), basar las decisiones en datos y no solo en intuición, buscar activamente información que contradiga la hipótesis, tomar distancia del proyecto para evaluar objetivamente los costos hundidos, y decidir en equipo con perspectivas diversas.",
+      criterios: [
+        { texto: "Explica la diferencia entre el modelo racional y la racionalidad limitada, incluyendo el satisficing.", peso: 3 },
+        { texto: "Describe dos sesgos o errores comunes en la toma de decisiones.", peso: 3 },
+        { texto: "Señala cómo pueden mitigarse esos sesgos.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Presentar el modelo racional como una descripción fiel de cómo deciden los gerentes en la práctica.",
+        "Nombrar los sesgos sin explicarlos ni indicar cómo mitigarlos."
+      ]
+    },
+    {
+      id: "adm-072",
+      tema: "Organización: empowerment y delegación efectiva",
+      dificultad: "media",
+      enunciado: "Un gerente está sobrecargado porque concentra todas las decisiones y su equipo no toma iniciativa. Explique en qué consisten la delegación y el empowerment (facultamiento) de los empleados. Describa las condiciones para delegar de forma efectiva y distinga delegar de \"abdicar\" responsabilidades. Señale un beneficio del empowerment para la organización.",
+      respuestaModelo: "La delegación es la asignación de autoridad a un subordinado para que realice tareas o tome decisiones que corresponderían al gerente. El empowerment o facultamiento va más allá: consiste en aumentar la libertad, la autonomía y el poder de decisión de los empleados sobre su trabajo, otorgándoles los recursos, la información y la confianza para actuar. Empoderar es dar poder de decisión de forma más amplia y permanente.\n\nCondiciones para delegar de forma efectiva:\n1) Definir claramente qué se delega: la tarea, el resultado esperado y los límites de la autoridad concedida.\n2) Delegar en la persona adecuada, con las competencias y la disposición para asumirla.\n3) Entregar la autoridad y los recursos necesarios, emparejados con la responsabilidad.\n4) Establecer controles por resultados y puntos de seguimiento, sin caer en la microgestión.\n5) Comunicar la delegación a los demás y permitir el aprendizaje (tolerar errores razonables).\n\nDelegar no es abdicar: al delegar, el gerente transfiere autoridad para ejecutar, pero conserva la responsabilidad final ante sus superiores por los resultados; sigue debiendo supervisar y apoyar. Abdicar, en cambio, es desentenderse por completo, sin dar dirección ni seguimiento, lo que deja al empleado sin respaldo y suele terminar en errores.\n\nBeneficio del empowerment: al liberar al gerente de decisiones operativas, éste se concentra en lo estratégico; las decisiones se toman más rápido y más cerca de la acción (mejor información local); y los empleados se sienten más motivados, comprometidos y desarrollan sus capacidades. Todo ello mejora la agilidad y el desempeño de la organización.",
+      criterios: [
+        { texto: "Explica correctamente la delegación y el empowerment.", peso: 2 },
+        { texto: "Describe las condiciones para delegar de forma efectiva.", peso: 3 },
+        { texto: "Distingue delegar de abdicar responsabilidades (el gerente conserva la responsabilidad final).", peso: 2 },
+        { texto: "Señala un beneficio del empowerment para la organización.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Creer que al delegar el gerente se desliga de la responsabilidad por los resultados.",
+        "Confundir empowerment con dejar hacer sin dirección ni recursos."
+      ]
+    },
+    {
+      id: "adm-073",
+      tema: "Áreas funcionales: coordinación e interdependencia entre áreas",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa lanza una promoción exitosa diseñada por Marketing, pero Operaciones no alcanza a producir el volumen prometido y Finanzas no tenía presupuestado el gasto en publicidad, generando quiebres de stock y tensión de caja. Explique por qué las áreas funcionales son interdependientes y cómo la falta de coordinación entre ellas destruye valor. Proponga dos (2) mecanismos de coordinación interfuncional para evitar que esto se repita.",
+      respuestaModelo: "Las áreas funcionales (marketing y ventas, operaciones, finanzas, gestión de personas) son interdependientes porque cada una realiza una parte del proceso de creación de valor y ninguna logra el resultado por sí sola: marketing detecta y estimula la demanda, operaciones la produce, finanzas provee y controla los recursos, y gestión de personas asegura el capital humano. Las decisiones de un área condicionan a las demás; forman un sistema.\n\nEn el caso, la descoordinación destruye valor: marketing generó una demanda (promoción exitosa) que operaciones no podía satisfacer, provocando quiebres de stock, clientes insatisfechos y ventas perdidas; y finanzas no había presupuestado el gasto, generando tensión de caja. Un éxito en un área se transformó en pérdida global porque las áreas no se alinearon. La cadena de valor se rompe cuando las funciones se optimizan por separado en lugar de coordinarse hacia el objetivo común.\n\nMecanismos de coordinación interfuncional (dos entre los siguientes):\n1) Planificación conjunta e integrada: que las promociones y los planes comerciales se aprueben en un comité con marketing, operaciones y finanzas, validando capacidad productiva y presupuesto antes de comprometerse (por ejemplo, un proceso de planeación de ventas y operaciones, S&OP).\n2) Equipos o comités interfuncionales y reuniones de coordinación periódicas, con información compartida y objetivos comunes.\n3) Sistemas de información integrados que den visibilidad en tiempo real de inventarios, demanda y presupuesto a todas las áreas.\n4) Indicadores y metas compartidas entre áreas, para alinear incentivos y evitar que cada una optimice solo lo suyo.",
+      criterios: [
+        { texto: "Explica por qué las áreas funcionales son interdependientes en la creación de valor.", peso: 2 },
+        { texto: "Explica cómo la falta de coordinación destruye valor, anclándolo al caso.", peso: 3 },
+        { texto: "Propone dos mecanismos válidos de coordinación interfuncional.", peso: 3 }
+      ],
+      erroresComunes: [
+        "Culpar a una sola área en vez de reconocer la falla de coordinación entre todas.",
+        "Proponer mecanismos genéricos ('comunicarse mejor') sin especificar cómo se coordinarían las áreas."
+      ]
+    },
+    {
+      id: "adm-074",
+      tema: "Ética empresarial y toma de decisiones éticas",
+      dificultad: "media",
+      enunciado: "Un jefe de compras descubre que puede conseguir un insumo más barato con un proveedor que incumple normas ambientales, lo que mejoraría el margen pero contradice los valores declarados de la empresa. Explique qué es la ética en los negocios y describa tres (3) factores que influyen en que un gerente tome decisiones éticas o no éticas. Señale una acción concreta que la empresa puede implementar para promover el comportamiento ético.",
+      respuestaModelo: "La ética en los negocios se refiere a los principios, valores y normas que definen la conducta correcta e incorrecta en el actuar de las personas y las organizaciones. Una decisión ética no solo considera si algo es legal o rentable, sino si es correcto respecto de los valores y del impacto en los distintos grupos de interés.\n\nFactores que influyen en que un gerente decida ética o no éticamente (tres entre los siguientes):\n1) Etapa de desarrollo moral de la persona: su nivel de madurez ética (si actúa por temor al castigo, por cumplir normas del grupo, o por principios propios) influye en cómo resuelve el dilema.\n2) Características individuales: los valores personales, la fortaleza del ego y el locus de control (grado en que la persona se siente responsable de sus actos).\n3) Variables estructurales y cultura organizacional: si la estructura, las metas y las presiones favorecen o no el comportamiento ético; una cultura que tolera o premia resultados a cualquier costo empuja a conductas no éticas.\n4) Intensidad del problema ético: cuán grande y cercano es el daño.\n5) El ejemplo de los líderes y los sistemas de recompensa (qué conductas se premian o castigan).\n\nEn el caso, elegir el proveedor más barato que incumple normas ambientales contradice los valores declarados y traslada un daño a la sociedad; el gerente enfrenta la tensión entre margen y valores.\n\nAcción para promover el comportamiento ético (una entre las siguientes): establecer un código de ética claro y hacerlo cumplir; que los líderes den el ejemplo; capacitar en ética y en manejo de dilemas; alinear los sistemas de evaluación y recompensa para no premiar solo el resultado a cualquier costo; y crear canales de denuncia protegidos. En el caso, aplicar una política de compras responsables que evalúe a los proveedores también por su cumplimiento ambiental.",
+      criterios: [
+        { texto: "Explica correctamente qué es la ética en los negocios.", peso: 2 },
+        { texto: "Describe tres factores que influyen en la toma de decisiones éticas o no éticas.", peso: 3 },
+        { texto: "Señala una acción concreta y válida para promover el comportamiento ético.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir lo ético con lo meramente legal (algo puede ser legal y a la vez no ético).",
+        "Reducir la ética a la voluntad individual, ignorando el rol de la cultura y los incentivos de la organización."
+      ]
+    },
+    {
+      id: "adm-075",
+      tema: "Motivación: teoría de las necesidades de McClelland",
+      dificultad: "media",
+      enunciado: "Explique la teoría de las necesidades adquiridas de David McClelland y sus tres necesidades (logro, poder y afiliación). Indique qué caracteriza a las personas con alta necesidad de logro y por qué una alta necesidad de logro no garantiza ser un buen gerente. Entregue un ejemplo de cómo asignar tareas según la necesidad dominante de un trabajador.",
+      respuestaModelo: "La teoría de McClelland sostiene que las personas adquieren, a lo largo de su vida, tres necesidades que las motivan en distinto grado:\n\n1) Necesidad de logro (nLog): impulso por sobresalir, alcanzar metas desafiantes y hacer las cosas cada vez mejor.\n2) Necesidad de poder (nPod): deseo de influir en otros, controlar y tener impacto.\n3) Necesidad de afiliación (nAfi): deseo de relaciones interpersonales cercanas, de agradar y ser aceptado.\n\nLas personas con alta necesidad de logro buscan situaciones donde puedan asumir responsabilidad personal, prefieren metas de dificultad moderada (ni triviales ni imposibles), quieren retroalimentación clara y rápida sobre su desempeño y les motiva el desafío más que la recompensa material en sí.\n\nUna alta necesidad de logro no garantiza ser buen gerente porque el logro se orienta al desempeño personal: quien lo tiene tiende a querer hacer las cosas por sí mismo y a no delegar. En cambio, dirigir a otros requiere principalmente necesidad de poder (para influir y movilizar) combinada con baja afiliación (para tomar decisiones impopulares); los mejores gerentes suelen tener alta necesidad de poder socializado, no de logro individual.\n\nEjemplo de asignación según necesidad dominante: a un trabajador con alta necesidad de logro conviene darle metas desafiantes y responsabilidad individual con retroalimentación; a uno con alta necesidad de afiliación, tareas de coordinación, atención de clientes o trabajo en equipo; a uno con alta necesidad de poder, roles de liderazgo, representación o gestión de proyectos.",
+      criterios: [
+        { texto: "Explica la teoría de McClelland y sus tres necesidades.", peso: 3 },
+        { texto: "Caracteriza a las personas con alta necesidad de logro.", peso: 2 },
+        { texto: "Explica por qué una alta necesidad de logro no garantiza ser buen gerente.", peso: 2 },
+        { texto: "Entrega un ejemplo válido de asignación de tareas según la necesidad dominante.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Suponer que la necesidad de logro es siempre la mejor para un cargo directivo.",
+        "Confundir la necesidad de poder (influir en otros) con un rasgo negativo o autoritario por definición."
+      ]
+    },
+    {
+      id: "adm-076",
+      tema: "Stakeholders: gestión de grupos de interés y matriz poder-interés",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa que planea instalar una planta en una comunidad debe gestionar a sus grupos de interés. Defina qué es un stakeholder y distinga los stakeholders internos de los externos con ejemplos. Explique cómo la matriz de poder-interés ayuda a priorizar la relación con cada grupo y por qué gestionar bien a los stakeholders es clave para la sostenibilidad de la empresa.",
+      respuestaModelo: "Un stakeholder o grupo de interés es cualquier individuo o grupo que puede afectar o ser afectado por las decisiones y actividades de la organización, y que por lo tanto tiene un interés (una \"apuesta\") en ella.\n\nStakeholders internos: forman parte de la organización, como los dueños o accionistas, los trabajadores y los directivos. Stakeholders externos: están fuera, pero se relacionan con ella o son afectados por ella, como clientes, proveedores, competidores, la comunidad local, el gobierno, los grupos de presión y los medios. En el caso, la comunidad donde se instalará la planta, el gobierno y los vecinos son stakeholders externos clave.\n\nLa matriz de poder-interés clasifica a los grupos según dos ejes: cuánto poder tienen para influir en la empresa y cuánto interés tienen en sus decisiones. De ahí surgen cuatro estrategias de relación:\n- Alto poder y alto interés: gestionar de cerca, involucrarlos y satisfacerlos (actores clave).\n- Alto poder y bajo interés: mantenerlos satisfechos.\n- Bajo poder y alto interés: mantenerlos informados.\n- Bajo poder y bajo interés: monitoreo con mínimo esfuerzo.\nEsto permite priorizar recursos y no tratar a todos por igual.\n\nGestionar bien a los stakeholders es clave para la sostenibilidad porque la empresa depende de ellos: necesita la licencia social de la comunidad, la lealtad de clientes y trabajadores, la confianza de proveedores e inversionistas y el cumplimiento regulatorio. Ignorar a un grupo con poder e interés (por ejemplo, una comunidad que se opone) puede frenar el proyecto, dañar la reputación y destruir valor; atenderlos bien construye legitimidad y relaciones de largo plazo.",
+      criterios: [
+        { texto: "Define correctamente qué es un stakeholder.", peso: 2 },
+        { texto: "Distingue stakeholders internos de externos con ejemplos.", peso: 2 },
+        { texto: "Explica cómo la matriz poder-interés ayuda a priorizar la relación con cada grupo.", peso: 2 },
+        { texto: "Fundamenta por qué gestionar bien a los stakeholders es clave para la sostenibilidad.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Limitar los stakeholders solo a los dueños o accionistas.",
+        "Tratar a todos los grupos de interés por igual, sin priorizar según poder e interés."
+      ]
+    },
+    {
+      id: "adm-077",
+      tema: "Planificación: jerarquía de objetivos y objetivos financieros versus estratégicos",
+      dificultad: "media",
+      enunciado: "Explique qué es la jerarquía de objetivos (o cadena de medios-fines) en una organización y cómo los objetivos de los niveles inferiores sirven de medio para alcanzar los de los niveles superiores. Distinga los objetivos financieros de los objetivos estratégicos, entregando un ejemplo de cada uno, y explique el riesgo de privilegiar solo los objetivos financieros de corto plazo.",
+      respuestaModelo: "La jerarquía de objetivos (o cadena de medios-fines) es el ordenamiento de los objetivos de la organización en distintos niveles, de modo que el logro de los objetivos de un nivel inferior es el medio para alcanzar los del nivel superior. En la cima están los objetivos generales o estratégicos (fijados por la alta dirección), que se descomponen en objetivos de área o tácticos, y éstos en objetivos operativos concretos de cada unidad y persona. Así, la meta de un vendedor se conecta con la meta de la sucursal, y ésta con el objetivo global de la empresa. La coherencia vertical asegura que todos remen hacia lo mismo.\n\nDistinción de objetivos:\n- Objetivos financieros: se relacionan con el desempeño económico de la empresa. Ejemplo: aumentar la utilidad en un 10%, mejorar el margen o el flujo de caja.\n- Objetivos estratégicos: se relacionan con la posición competitiva y de largo plazo. Ejemplo: ganar participación de mercado, mejorar la calidad respecto de la competencia, aumentar la satisfacción del cliente o entrar a un nuevo mercado.\n\nRiesgo de privilegiar solo los objetivos financieros de corto plazo: se pueden mejorar los resultados inmediatos a costa de la salud futura de la empresa; por ejemplo, recortar inversión en calidad, innovación, capacitación o servicio al cliente sube la utilidad del trimestre, pero debilita la posición competitiva y compromete los resultados de largo plazo. Los objetivos financieros y estratégicos deben equilibrarse: los estratégicos sostienen los financieros futuros.",
+      criterios: [
+        { texto: "Explica correctamente la jerarquía de objetivos (cadena de medios-fines).", peso: 3 },
+        { texto: "Distingue objetivos financieros de estratégicos con un ejemplo de cada uno.", peso: 3 },
+        { texto: "Explica el riesgo de privilegiar solo los objetivos financieros de corto plazo.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir la jerarquía de objetivos con el organigrama o la cadena de mando.",
+        "Presentar los objetivos financieros y estratégicos como incompatibles en vez de complementarios."
+      ]
+    },
+    {
+      id: "adm-078",
+      tema: "Cultura organizacional: dimensiones y proceso de socialización",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Explique qué es la cultura organizacional y describa tres (3) dimensiones que permiten caracterizarla (por ejemplo: orientación a resultados, atención al detalle, orientación a las personas, orientación al equipo, innovación y toma de riesgos, o estabilidad). Explique qué es la socialización organizacional y por qué es importante al incorporar nuevos trabajadores.",
+      respuestaModelo: "La cultura organizacional es el conjunto de valores, principios, tradiciones y formas de hacer las cosas que comparten los miembros de una organización y que influyen en cómo se comportan. Es \"la forma en que se hacen las cosas aquí\"; se percibe, se aprende y se comparte.\n\nDimensiones que permiten caracterizarla (tres entre las siguientes):\n1) Innovación y toma de riesgos: grado en que se estimula a los empleados a innovar y asumir riesgos.\n2) Atención al detalle: grado en que se espera precisión, análisis y cuidado.\n3) Orientación a los resultados: grado en que la gerencia se centra en los resultados más que en los procesos para lograrlos.\n4) Orientación a las personas: grado en que las decisiones consideran el efecto sobre las personas.\n5) Orientación al equipo: grado en que el trabajo se organiza en torno a equipos y no a individuos.\n6) Agresividad: grado en que las personas son competitivas más que colaboradoras.\n7) Estabilidad: grado en que se privilegia mantener el statu quo frente al crecimiento.\n\nLa socialización organizacional es el proceso mediante el cual los nuevos empleados aprenden y se adaptan a la cultura de la organización: sus valores, normas, comportamientos esperados y forma de trabajar. Ocurre en la inducción, el acompañamiento de un mentor y la interacción con el equipo.\n\nEs importante porque ayuda a que el nuevo trabajador entienda \"cómo se hacen las cosas aquí\", reduce su incertidumbre y su rotación temprana, acelera su productividad y, sobre todo, preserva y transmite la cultura: sin una buena socialización, los recién llegados no internalizan los valores compartidos y la cultura se diluye, especialmente en empresas de rápido crecimiento.",
+      criterios: [
+        { texto: "Explica correctamente qué es la cultura organizacional.", peso: 2 },
+        { texto: "Describe tres dimensiones válidas para caracterizar la cultura.", peso: 3 },
+        { texto: "Explica qué es la socialización organizacional y su importancia al incorporar nuevos trabajadores.", peso: 3 }
+      ],
+      erroresComunes: [
+        "Confundir cultura organizacional con clima laboral.",
+        "Reducir la socialización a la firma del contrato, omitiendo la transmisión de valores y normas."
+      ]
+    },
+    {
+      id: "adm-079",
+      tema: "Dirección: inteligencia emocional y liderazgo",
+      dificultad: "media",
+      enunciado: "Explique qué es la inteligencia emocional y describa sus componentes principales (autoconciencia, autorregulación, motivación, empatía y habilidades sociales). Fundamente por qué la inteligencia emocional se considera relevante para el ejercicio del liderazgo, más allá de las capacidades técnicas e intelectuales.",
+      respuestaModelo: "La inteligencia emocional es la capacidad de reconocer, comprender y manejar las propias emociones y las de los demás, y de usar esa información para guiar el pensamiento y la conducta. No reemplaza a la inteligencia cognitiva ni a las competencias técnicas, sino que las complementa.\n\nComponentes principales (según Goleman):\n1) Autoconciencia: capacidad de reconocer y entender los propios estados de ánimo, emociones e impulsos, y su efecto en los demás.\n2) Autorregulación (autocontrol): capacidad de controlar o redirigir los impulsos y estados de ánimo disruptivos; pensar antes de actuar.\n3) Motivación (automotivación): pasión por trabajar por razones que van más allá del dinero o el estatus; energía y persistencia para lograr objetivos.\n4) Empatía: capacidad de comprender la composición emocional de otras personas y tratarlas según sus reacciones.\n5) Habilidades sociales: capacidad de manejar relaciones, construir redes, comunicar, influir y encontrar puntos en común.\n\nLa inteligencia emocional es relevante para el liderazgo porque el líder logra resultados a través de personas: debe motivar, comunicar, generar confianza, manejar conflictos y conducir el cambio, todo lo cual depende de comprender y gestionar emociones, las propias y las del equipo. Un líder técnicamente brillante pero incapaz de manejar sus impulsos, empatizar o relacionarse fracasa en movilizar a su gente. Los estudios muestran que, en cargos de liderazgo, la inteligencia emocional distingue a los líderes sobresalientes más que el solo coeficiente intelectual o los conocimientos técnicos, que son requisitos de entrada pero no bastan para dirigir.",
+      criterios: [
+        { texto: "Explica correctamente qué es la inteligencia emocional.", peso: 2 },
+        { texto: "Describe sus cinco componentes principales.", peso: 3 },
+        { texto: "Fundamenta por qué es relevante para el liderazgo más allá de lo técnico e intelectual.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir inteligencia emocional con ser simpático o evitar conflictos.",
+        "Sostener que las capacidades técnicas o intelectuales bastan para liderar."
+      ]
+    },
+    {
+      id: "adm-080",
+      tema: "Nuevas tendencias: transformación digital y su impacto en la gestión",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Una empresa tradicional enfrenta competidores que operan con plataformas digitales y decide iniciar su transformación digital. Explique qué es la transformación digital y por qué es más que \"comprar tecnología\". Señale dos (2) oportunidades y dos (2) desafíos que implica para la gestión, y explique el rol de la cultura y las personas en su éxito.",
+      respuestaModelo: "La transformación digital es el proceso de integrar tecnologías digitales en todas las áreas de una organización, cambiando de manera profunda la forma en que opera, se organiza y entrega valor a sus clientes. Va mucho más allá de \"comprar tecnología\" o digitalizar un trámite: implica repensar los modelos de negocio, los procesos, la relación con el cliente y la cultura. Instalar software sin cambiar la forma de trabajar no es transformación.\n\nOportunidades para la gestión (dos entre las siguientes): 1) Decisiones basadas en datos (analítica) que mejoran la eficiencia y la personalización. 2) Nuevos canales y modelos de negocio (comercio electrónico, plataformas, servicios digitales) que amplían el mercado. 3) Automatización de procesos que reduce costos y errores. 4) Mejor experiencia y relación con el cliente en tiempo real.\n\nDesafíos (dos entre los siguientes): 1) Resistencia al cambio y necesidad de nuevas competencias (brecha digital del personal). 2) Inversión y riesgo tecnológico, con retornos inciertos. 3) Ciberseguridad y protección de datos. 4) Rediseño de procesos y estructuras, que puede chocar con la cultura existente.\n\nRol de la cultura y las personas: la tecnología es condición necesaria pero no suficiente; el éxito depende de que las personas adopten nuevas formas de trabajar. Se requiere una cultura abierta al cambio, al aprendizaje continuo y a la experimentación, liderazgo que impulse la transformación, capacitación y gestión del cambio para reducir la resistencia. Muchas transformaciones digitales fracasan no por la tecnología, sino por no llevar a las personas y la cultura en el proceso.",
+      criterios: [
+        { texto: "Explica correctamente qué es la transformación digital y por qué es más que comprar tecnología.", peso: 2 },
+        { texto: "Señala dos oportunidades válidas para la gestión.", peso: 2 },
+        { texto: "Señala dos desafíos válidos.", peso: 2 },
+        { texto: "Explica el rol de la cultura y las personas en el éxito de la transformación.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Reducir la transformación digital a instalar software o tener presencia en redes sociales.",
+        "Ignorar el rol de las personas y la cultura, centrándose solo en la tecnología."
+      ]
+    },
+    {
+      id: "adm-081",
+      tema: "Nuevas tendencias: diversidad e inclusión en la fuerza laboral",
+      dificultad: "media",
+      enunciado: "Explique qué se entiende por diversidad de la fuerza laboral y distíngala de la inclusión. Señale dos (2) beneficios que una gestión eficaz de la diversidad puede aportar a una organización y dos (2) desafíos que debe manejar. Indique una práctica concreta de gestión que fomente una cultura inclusiva.",
+      respuestaModelo: "La diversidad de la fuerza laboral se refiere a las diferencias y semejanzas entre las personas de una organización en cuanto a género, edad, origen étnico, cultura, capacidades, formación, orientación, experiencias y formas de pensar. Es un hecho: la fuerza laboral es diversa.\n\nLa inclusión es distinta: es crear un ambiente en el que todas esas personas se sientan respetadas, valoradas y con iguales oportunidades de participar, aportar y desarrollarse. Se suele decir que la diversidad es ser invitado a la fiesta y la inclusión es ser invitado a bailar: tener diversidad sin inclusión no aprovecha su potencial.\n\nBeneficios de una gestión eficaz de la diversidad (dos entre los siguientes): 1) Mayor variedad de perspectivas que mejora la creatividad, la innovación y la toma de decisiones. 2) Mejor comprensión de clientes y mercados diversos. 3) Atracción y retención de talento y mejor reputación. 4) Mejor desempeño y clima cuando las personas se sienten valoradas.\n\nDesafíos (dos entre los siguientes): 1) Prejuicios, estereotipos y sesgos (incluidos los inconscientes) en selección, evaluación y promoción. 2) Conflictos o barreras de comunicación entre grupos distintos. 3) Riesgo de discriminación y de exclusión de grupos minoritarios. 4) Necesidad de adaptar prácticas y liderazgo a una fuerza laboral heterogénea.\n\nPráctica concreta que fomenta la inclusión (una entre las siguientes): capacitación en sesgos inconscientes; procesos de selección y promoción con criterios objetivos y paneles diversos; políticas de conciliación y flexibilidad; grupos de afinidad o mentoría; y un liderazgo que modele el respeto y sancione la discriminación.",
+      criterios: [
+        { texto: "Explica qué es la diversidad de la fuerza laboral y la distingue de la inclusión.", peso: 3 },
+        { texto: "Señala dos beneficios válidos de gestionar bien la diversidad.", peso: 2 },
+        { texto: "Señala dos desafíos válidos.", peso: 2 },
+        { texto: "Indica una práctica concreta que fomente una cultura inclusiva.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Usar diversidad e inclusión como sinónimos.",
+        "Presentar la diversidad solo como un tema legal o de imagen, sin sus beneficios de gestión."
+      ]
+    },
+    {
+      id: "adm-082",
+      tema: "Emprendimiento e intraemprendimiento",
+      dificultad: "media",
+      enunciado: "Distinga el emprendimiento del intraemprendimiento (emprendimiento corporativo). Explique qué caracteriza el espíritu emprendedor (identificar oportunidades, innovar y asumir riesgos) y por qué las empresas grandes buscan fomentar el intraemprendimiento. Señale dos (2) condiciones organizacionales que favorecen que surjan iniciativas innovadoras dentro de una empresa.",
+      respuestaModelo: "El emprendimiento es el proceso de identificar oportunidades en el entorno, reunir los recursos necesarios y crear una organización o iniciativa para aprovecharlas, asumiendo riesgos a cambio de una recompensa. El emprendedor típico crea su propio negocio desde fuera de una organización existente.\n\nEl intraemprendimiento o emprendimiento corporativo es el desarrollo de iniciativas emprendedoras e innovadoras dentro de una empresa ya establecida: empleados que, con el respaldo de la organización, proponen y desarrollan nuevos productos, servicios o procesos como si fueran emprendedores, pero usando los recursos de la empresa.\n\nEl espíritu emprendedor se caracteriza por: identificar oportunidades que otros no ven (detectar necesidades no satisfechas o cambios del entorno), innovar (crear valor con nuevas soluciones, productos o modelos) y asumir riesgos calculados (invertir tiempo y recursos ante resultados inciertos), además de proactividad, perseverancia y tolerancia a la ambigüedad.\n\nLas empresas grandes buscan fomentar el intraemprendimiento porque, al crecer, tienden a volverse burocráticas y rígidas, perdiendo capacidad de innovar y de responder al entorno; el intraemprendimiento les permite renovarse, generar nuevos negocios, retener talento creativo y competir con empresas más ágiles, sin depender solo de la innovación externa.\n\nCondiciones organizacionales que favorecen la innovación interna (dos entre las siguientes): 1) Una cultura que tolera el error y valora la experimentación. 2) Estructuras flexibles y descentralizadas que dan autonomía. 3) Recursos y tiempo asignados a explorar ideas. 4) Sistemas de reconocimiento y recompensa a la innovación. 5) Apoyo visible de la alta dirección y canales para presentar y financiar propuestas.",
+      criterios: [
+        { texto: "Distingue correctamente emprendimiento de intraemprendimiento.", peso: 2 },
+        { texto: "Explica qué caracteriza el espíritu emprendedor (oportunidad, innovación, riesgo).", peso: 2 },
+        { texto: "Explica por qué las empresas grandes buscan fomentar el intraemprendimiento.", peso: 2 },
+        { texto: "Señala dos condiciones organizacionales que favorecen la innovación interna.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Reducir el emprendimiento a 'tener un negocio propio' sin la dimensión de oportunidad, innovación y riesgo.",
+        "Confundir intraemprendimiento con simplemente hacer sugerencias, sin desarrollo ni respaldo de recursos."
+      ]
+    },
+    {
+      id: "adm-083",
+      tema: "Planificación: herramientas de programación (carta Gantt y presupuestos)",
+      dificultad: "media",
+      enunciado: "Explique la utilidad de dos herramientas de planificación operativa: la carta Gantt y el presupuesto. Para cada una, describa en qué consiste y qué permite controlar. Explique además la diferencia entre un presupuesto como herramienta de planificación y como herramienta de control.",
+      respuestaModelo: "La carta Gantt es una herramienta gráfica de programación que muestra en un eje las actividades o tareas de un proyecto y en el otro el tiempo, representando con barras la duración planificada de cada tarea y sus fechas de inicio y término. Permite planificar la secuencia y los plazos de un proyecto, visualizar qué tareas se traslapan y controlar el avance comparando lo realizado con lo programado, detectando atrasos. Es especialmente útil para coordinar proyectos con múltiples actividades.\n\nEl presupuesto es un plan numérico que asigna recursos (generalmente dinero, pero también horas, unidades o personas) a actividades específicas durante un período. Puede ser de ingresos, de gastos, de caja, de inversión, etc. Permite planificar cuánto se destinará a cada área o actividad y controlar el uso de los recursos comparando lo real con lo presupuestado.\n\nDiferencia entre presupuesto como planificación y como control:\n- Como herramienta de planificación: se elabora antes del período; traduce los objetivos en cifras, asigna recursos y anticipa ingresos y gastos, obligando a pensar y priorizar.\n- Como herramienta de control: durante y después del período, el presupuesto se convierte en el estándar contra el cual se compara el desempeño real; las diferencias (variaciones o desviaciones presupuestarias) señalan dónde se gastó de más o de menos, permitiendo tomar acciones correctivas. Así, un mismo instrumento sirve primero para planificar y luego para controlar.",
+      criterios: [
+        { texto: "Explica en qué consiste la carta Gantt y qué permite planificar y controlar.", peso: 3 },
+        { texto: "Explica en qué consiste el presupuesto y qué permite planificar y controlar.", peso: 3 },
+        { texto: "Explica la diferencia entre el presupuesto como herramienta de planificación y como herramienta de control.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Describir la carta Gantt sin mencionar su uso para controlar el avance.",
+        "Ver el presupuesto solo como planificación, ignorando su rol como estándar de control."
+      ]
+    },
+    {
+      id: "adm-084",
+      tema: "Organización: factores de contingencia del diseño organizacional",
+      dificultad: "media",
+      enunciado: "Explique por qué no existe una estructura organizacional única que sea mejor para todas las empresas (enfoque de contingencia). Describa cómo tres (3) factores de contingencia (la estrategia, el tamaño, la tecnología o el grado de incertidumbre del entorno) influyen en el diseño de la estructura, orientándola hacia lo mecanicista o lo orgánico.",
+      respuestaModelo: "El enfoque de contingencia sostiene que no existe una estructura organizacional universalmente mejor: la estructura más adecuada depende de la situación de cada empresa. Lo apropiado es el ajuste (fit) entre la estructura y sus factores de contingencia; una estructura que funciona en una empresa puede fracasar en otra con condiciones distintas.\n\nInfluencia de los factores (tres entre los siguientes):\n\n1) Estrategia: la estructura sigue a la estrategia. Estrategias de innovación y flexibilidad requieren estructuras orgánicas (flexibles, descentralizadas); estrategias de eficiencia en costos y control requieren estructuras más mecanicistas (formalizadas, centralizadas).\n\n2) Tamaño: a medida que la organización crece, tiende a volverse más mecanicista: más especialización, más departamentos, más reglas y formalización, y mayor dificultad de coordinación. Las empresas pequeñas suelen operar de forma más orgánica e informal.\n\n3) Tecnología: cuanto más rutinaria y estandarizada es la tecnología o el proceso productivo, más mecanicista puede ser la estructura; cuanto más personalizada o compleja (producción por unidad o por proyecto), más orgánica debe ser para adaptarse.\n\n4) Incertidumbre del entorno: entornos estables y predecibles permiten estructuras mecanicistas eficientes; entornos dinámicos e inciertos exigen estructuras orgánicas, flexibles y descentralizadas, capaces de adaptarse rápido.\n\nEn síntesis, cada factor empuja la estructura hacia lo mecanicista (estabilidad, eficiencia, control) o hacia lo orgánico (cambio, flexibilidad, adaptación), y el buen diseño busca la coherencia entre todos ellos.",
+      criterios: [
+        { texto: "Explica correctamente el enfoque de contingencia (no hay una estructura única mejor; importa el ajuste).", peso: 2 },
+        { texto: "Describe cómo influyen tres factores de contingencia en el diseño de la estructura.", peso: 4 },
+        { texto: "Relaciona cada factor con la orientación mecanicista u orgánica.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Sostener que existe una estructura óptima válida para todas las empresas.",
+        "Describir los factores sin conectarlos con la orientación mecanicista u orgánica."
+      ]
+    },
+    {
+      id: "adm-085",
+      tema: "Dirección: fuentes de poder y su relación con el liderazgo",
+      dificultad: "media",
+      enunciado: "Distinga los conceptos de autoridad y poder. Describa las cinco fuentes de poder (legítimo, coercitivo, de recompensa, experto y referente) y explique por qué un líder eficaz suele apoyarse más en el poder experto y referente que en el coercitivo. Entregue un ejemplo de poder experto y uno de poder referente.",
+      respuestaModelo: "Autoridad es el derecho formal, inherente a un cargo, para dar órdenes y esperar que se cumplan; proviene de la posición. Poder es la capacidad de una persona de influir en las decisiones y conductas de otros; es más amplio que la autoridad, porque no depende solo del cargo y puede tenerlo alguien sin autoridad formal.\n\nCinco fuentes de poder (French y Raven):\n1) Poder legítimo: deriva del cargo o posición formal en la jerarquía; coincide con la autoridad.\n2) Poder coercitivo: se basa en la capacidad de castigar o generar consecuencias negativas (sanciones, despido, reprimendas).\n3) Poder de recompensa: se basa en la capacidad de otorgar beneficios valorados (bonos, ascensos, reconocimiento).\n4) Poder experto: deriva del conocimiento, la experiencia o las habilidades especiales que otros valoran y necesitan.\n5) Poder referente: deriva de la admiración, el carisma o la identificación que otros sienten hacia la persona; se sigue al líder porque se le respeta y se le quiere imitar.\n\nUn líder eficaz suele apoyarse más en el poder experto y referente porque generan influencia genuina y duradera: las personas siguen al líder por convicción, confianza y admiración, no por miedo. El poder coercitivo produce obediencia superficial mientras existe la amenaza, pero genera temor, resentimiento y merma el compromiso; su abuso deteriora el clima y la relación. Los poderes experto y referente, en cambio, sostienen el liderazgo aun sin autoridad formal.\n\nEjemplo de poder experto: un ingeniero al que todos consultan por su dominio técnico, cuya opinión pesa aunque no sea jefe. Ejemplo de poder referente: un líder carismático a quien el equipo admira y sigue por identificación con sus valores y su ejemplo.",
+      criterios: [
+        { texto: "Distingue correctamente autoridad de poder.", peso: 2 },
+        { texto: "Describe las cinco fuentes de poder.", peso: 3 },
+        { texto: "Explica por qué el líder eficaz privilegia el poder experto y referente sobre el coercitivo.", peso: 2 },
+        { texto: "Entrega un ejemplo válido de poder experto y uno de poder referente.", peso: 1 }
+      ],
+      erroresComunes: [
+        "Confundir poder con autoridad (creer que solo tiene poder quien tiene un cargo formal).",
+        "Confundir poder experto (conocimiento) con poder legítimo (cargo)."
+      ]
+    },
+    {
+      id: "adm-086",
+      tema: "Control: control preventivo, concurrente y de retroalimentación en un proceso",
+      dificultad: "media",
+      salioEnExamen: true,
+      enunciado: "Un restaurante quiere asegurar la calidad e inocuidad de sus platos y reducir los reclamos. Diseñe un sistema de control aplicando los tres tipos de control según el momento (preventivo, concurrente y de retroalimentación). Para cada tipo, proponga una acción concreta de control en el restaurante y explique qué problema ayuda a evitar o corregir. Concluya explicando por qué conviene combinar los tres.",
+      respuestaModelo: "Los controles se clasifican según el momento en que se aplican respecto del proceso:\n\n1) Control preventivo (antes del proceso): busca anticipar y evitar los problemas antes de que ocurran, asegurando que las condiciones estén dadas. Acción en el restaurante: verificar la calidad y la temperatura de los insumos al recibirlos de los proveedores y controlar la vigencia y almacenamiento de los alimentos antes de cocinar. Ayuda a evitar que ingresen insumos en mal estado que provocarían platos defectuosos o problemas de inocuidad.\n\n2) Control concurrente (durante el proceso): se aplica mientras la actividad se realiza, para corregir de inmediato. Acción en el restaurante: supervisión del chef en la línea de cocina y control de tiempos y temperaturas de cocción en tiempo real, más chequeo del plato antes de salir a la mesa. Ayuda a corregir errores de preparación en el momento, antes de que el plato llegue al cliente.\n\n3) Control de retroalimentación (después del proceso): mide el resultado final y alimenta la mejora futura. Acción en el restaurante: revisar las encuestas de satisfacción, los reclamos y las devoluciones de platos del día, y analizar sus causas. Ayuda a detectar problemas recurrentes y a corregir procesos, recetas o capacitación para el futuro.\n\nConviene combinar los tres porque cada uno cubre un momento distinto y ninguno basta por sí solo: el preventivo reduce la probabilidad de fallas, el concurrente atrapa las que igual ocurren durante la operación, y el de retroalimentación permite aprender y mejorar de manera continua. Juntos forman un sistema de control completo que minimiza los reclamos y sostiene la calidad.",
+      criterios: [
+        { texto: "Propone una acción de control preventivo válida y explica qué problema evita.", peso: 2 },
+        { texto: "Propone una acción de control concurrente válida y explica qué corrige.", peso: 2 },
+        { texto: "Propone una acción de control de retroalimentación válida y explica su aporte.", peso: 2 },
+        { texto: "Concluye por qué conviene combinar los tres tipos de control.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir el momento del control (proponer como preventivo algo que ocurre después del proceso).",
+        "Proponer acciones genéricas de control sin anclarlas al restaurante."
+      ]
+    },
+    {
+      id: "adm-087",
+      tema: "Caso integrador: profesionalización de empresa familiar, estructura y control",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Panadería San Roque nació hace 30 años como un negocio familiar en Chillán. Hoy tiene 6 locales, 90 trabajadores y provee a supermercados de la región, pero sigue siendo dirigida como al inicio: el fundador toma todas las decisiones (compras, precios, contrataciones), no hay organigrama ni descripciones de cargo, los hijos ocupan las jefaturas sin criterios claros y no existen indicadores: se sabe cómo va el negocio \"por la caja\" a fin de mes. La empresa perdió a un cliente mayorista por incumplimientos de entrega.\n\na) Diagnostique tres (3) problemas de diseño organizacional que enfrenta la panadería al haber crecido sin profesionalizar su gestión.\n\nb) Proponga una estructura organizacional adecuada, indicando el tipo de departamentalización y el grado de (des)centralización que recomienda, y justifique cómo resuelve los problemas detectados.\n\nc) Diseñe un sistema de control con las tres etapas del proceso de control y proponga tres (3) indicadores (KPI) pertinentes al negocio, explicando qué decisión permite tomar cada uno.",
+      respuestaModelo: "a) Problemas de diseño organizacional (tres entre los siguientes): 1) Centralización excesiva: el fundador concentra todas las decisiones, lo que lo convierte en cuello de botella, hace lenta la operación y no escala para 6 locales y 90 personas. 2) Falta de estructura formal: no hay organigrama ni descripciones de cargo, por lo que las responsabilidades, la cadena de mando y la autoridad no están definidas; nadie sabe con claridad quién responde por qué (lo que explica el incumplimiento con el cliente mayorista). 3) Asignación de jefaturas sin criterios: los hijos ocupan cargos sin perfiles ni competencias definidas, lo que puede generar falta de idoneidad y conflictos. 4) Ausencia de control por indicadores: se gestiona \"por la caja\", sin estándares ni seguimiento, de modo que los problemas (como los incumplimientos de entrega) se detectan tarde.\n\nb) Estructura recomendada: formalizar un organigrama con departamentalización funcional (producción, ventas/distribución, compras y abastecimiento, administración y finanzas, personas), adecuada a una empresa de una sola línea de negocio que busca eficiencia; complementada, si se requiere, con una mirada geográfica por local para la operación. Recomendar una descentralización parcial: el fundador debe delegar las decisiones operativas (gestión diaria de cada local, resolución de incidencias) en jefes con autoridad y responsabilidad definidas, reservando para la dirección las decisiones estratégicas (inversión, apertura de locales, política de precios, contratos mayoristas). Esto resuelve los problemas: elimina el cuello de botella, define responsabilidades (evitando incumplimientos por falta de responsable), y ordena las jefaturas con perfiles de cargo, incorporando criterios de competencia además del vínculo familiar.\n\nc) Sistema de control (tres etapas): 1) Establecer estándares derivados de la planificación (meta de venta y margen por local, plazo y cumplimiento de entregas a supermercados, nivel de mermas). 2) Medir el desempeño real y compararlo con el estándar mediante reportes por local, sistema de ventas e inventario, con periodicidad definida. 3) Tomar acciones correctivas ante las desviaciones (reprogramar producción, reforzar distribución, ajustar compras) o revisar el estándar. KPI (tres): 1) Cumplimiento de entregas a tiempo (pedidos entregados a tiempo / total): permite decidir refuerzos en producción y logística y evitar perder clientes mayoristas. 2) Margen y venta por local respecto de la meta: permite decidir dónde corregir la gestión comercial o de costos. 3) Porcentaje de mermas o productos no vendidos: permite decidir ajustes de producción y compras. Con estos indicadores, la dirección puede delegar y a la vez controlar por resultados.",
+      criterios: [
+        { texto: "a) Diagnostica tres problemas de diseño organizacional pertinentes al caso.", peso: 3 },
+        { texto: "b) Propone una estructura (tipo de departamentalización y grado de centralización) y justifica cómo resuelve los problemas.", peso: 3 },
+        { texto: "c) Diseña el proceso de control con sus tres etapas aplicado a la panadería.", peso: 2 },
+        { texto: "c) Propone tres KPI pertinentes y explica la decisión que cada uno permite tomar.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer descentralizarlo todo o centralizarlo todo, sin distinguir decisiones estratégicas de operativas.",
+        "Diagnosticar problemas genéricos sin usar los datos del caso (sin organigrama, decisiones en el fundador, sin indicadores).",
+        "Proponer KPI que no permiten tomar decisiones o describir el control en abstracto."
+      ]
+    },
+    {
+      id: "adm-088",
+      tema: "Caso integrador: gestión del cambio, cultura y liderazgo en una fusión",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Dos empresas de software se fusionan: TecnoSur, jerárquica, formal y orientada al control, y Nube Ágil, horizontal, informal y orientada a la innovación. Seis meses después de la fusión hay fuga de talento, choques entre equipos que \"hacen las cosas de forma distinta\", rumores y baja productividad. La nueva gerencia general quiere integrar ambas culturas sin destruir lo mejor de cada una.\n\na) Explique el problema en términos de cultura organizacional (culturas fuertes/débiles y choque cultural) y por qué la fusión de estructuras no basta si no se integran las culturas.\n\nb) Aplique el modelo de cambio de Lewin (descongelar, cambiar, recongelar) para diseñar un plan de integración cultural, indicando acciones concretas en cada etapa.\n\nc) Recomiende el estilo de liderazgo más adecuado para conducir esta integración y fundamente su elección considerando la resistencia al cambio.",
+      respuestaModelo: "a) El problema es un choque cultural: cada empresa traía una cultura organizacional fuerte y distinta (valores, normas y formas de hacer las cosas propias). TecnoSur valora jerarquía, formalización y control; Nube Ágil valora horizontalidad, informalidad e innovación. Al unirlas sin gestionar la cultura, los equipos siguen operando con supuestos incompatibles, lo que genera choques, rumores, desmotivación y fuga de talento. La fusión de estructuras (juntar organigramas y sistemas) no basta porque la cultura es \"la forma en que se hacen las cosas\": si no se construye una cultura común, las estructuras nuevas conviven con comportamientos y valores contradictorios, y la integración solo es formal, no real. Se necesita definir qué valores y prácticas de cada cultura se conservan para crear una tercera cultura compartida.\n\nb) Plan con el modelo de Lewin:\n- Descongelar: comunicar de forma transparente la necesidad y el sentido de la fusión; reconocer y validar lo valioso de ambas culturas; escuchar los temores; mostrar la brecha entre la situación actual (choques, fuga) y la deseada; involucrar a referentes de ambas empresas. Se busca reducir la resistencia y crear disposición al cambio.\n- Cambiar (mover): definir participativamente los valores y las prácticas de la nueva cultura integrada (tomando lo mejor de cada una: el rigor y control de TecnoSur y la agilidad e innovación de Nube Ágil); formar equipos mixtos, establecer nuevas normas de trabajo, capacitar, y usar historias, rituales y símbolos que encarnen la nueva identidad; acompañar la transición.\n- Recongelar: consolidar la nueva cultura integrándola a los procesos, la inducción, la evaluación y los sistemas de reconocimiento, de modo que los nuevos comportamientos se vuelvan el estándar y no se revierta a las culturas previas; celebrar logros de la integración.\n\nc) Estilo de liderazgo recomendado: un liderazgo transformacional, capaz de articular una visión compartida atractiva de la empresa fusionada, inspirar y dar sentido, estimular y atender a las personas durante la transición; complementado con un estilo participativo. Se justifica porque la fusión implica alta resistencia al cambio (temor a la pérdida, incertidumbre, apego a la cultura propia): un liderazgo que solo imponga por autoridad (transaccional o coercitivo) aumentaría la fuga y el rechazo, mientras que un líder transformacional y participativo genera compromiso, involucra a ambas partes en la construcción de la nueva cultura y transforma la resistencia en adhesión.",
+      criterios: [
+        { texto: "a) Explica el problema en términos de cultura (fuerte/débil, choque cultural) y por qué no basta fusionar estructuras.", peso: 3 },
+        { texto: "b) Aplica las tres etapas de Lewin con acciones concretas de integración cultural en cada una.", peso: 3 },
+        { texto: "c) Recomienda un estilo de liderazgo fundamentado en la resistencia al cambio.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir cultura con clima o con estructura organizacional.",
+        "Omitir la etapa de recongelar, dejando la nueva cultura sin consolidar.",
+        "Recomendar imponer una de las dos culturas por autoridad, ignorando la resistencia y la fuga de talento."
+      ]
+    },
+    {
+      id: "adm-089",
+      tema: "Caso integrador: proceso administrativo completo en un emprendimiento en expansión",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "VerdeCasa es un emprendimiento de productos de aseo ecológicos que en tres años pasó de vender por internet a tener tienda propia, 25 trabajadores y presencia en tres regiones. La fundadora reconoce que \"apagan incendios\" todo el día, sin objetivos claros, sin estructura definida, con un equipo desmotivado por falta de reconocimiento y sin forma de saber si van bien o mal.\n\nAplicando las cuatro funciones del proceso administrativo (planificar, organizar, dirigir y controlar), proponga una acción concreta para cada función que ayude a ordenar la gestión de VerdeCasa:\na) Planificar: formule la acción y un objetivo SMART de ejemplo.\nb) Organizar: proponga una decisión de estructura.\nc) Dirigir: proponga una medida de motivación con respaldo teórico.\nd) Controlar: proponga un mecanismo de control con al menos un indicador.\nExplique además por qué las cuatro funciones deben operar como un ciclo integrado y no de forma aislada.",
+      respuestaModelo: "a) Planificar: establecer objetivos y planes claros para dejar de \"apagar incendios\". Acción: definir la misión, las prioridades del año y objetivos SMART. Ejemplo de objetivo SMART: \"Aumentar las ventas totales en un 20% durante el próximo año respecto del anterior, alcanzando presencia en dos nuevas regiones\". Es específico, medible (20%), alcanzable, realista y con plazo. La planificación da dirección y entrega los estándares para el control.\n\nb) Organizar: definir una estructura formal. Acción: crear un organigrama con departamentalización funcional (ventas y e-commerce, operaciones/logística, administración y finanzas, personas), con descripciones de cargo, cadena de mando clara y delegación de decisiones operativas en responsables definidos. Esto ordena responsabilidades y evita que todo dependa de la fundadora.\n\nc) Dirigir: atacar la desmotivación por falta de reconocimiento. Acción: implementar un programa de reconocimiento al buen desempeño (con respaldo en la teoría bifactorial de Herzberg: el reconocimiento y el logro son factores motivadores; su ausencia, detectada en el caso, desmotiva) y fijar metas participativas (teoría de fijación de metas de Locke). Esto mejora el compromiso y el clima.\n\nd) Controlar: crear un mecanismo para saber si van bien o mal. Acción: implementar un tablero de indicadores con seguimiento periódico. Indicador de ejemplo: variación mensual de ventas por región respecto de la meta; complementariamente, nivel de cumplimiento de despachos a tiempo y rotación del personal. Permite comparar el desempeño real con lo planificado y corregir a tiempo.\n\nLas cuatro funciones deben operar como un ciclo integrado porque se retroalimentan: la planificación fija los objetivos que orientan cómo organizar y qué dirigir; la organización dispone la estructura y los recursos para ejecutar el plan; la dirección moviliza a las personas hacia esos objetivos; y el control mide los resultados y retroalimenta la planificación, corrigiendo objetivos, estructura o conducción. Si operan aisladas, se planifica sin controlar (no se sabe si se cumple), se organiza sin objetivos (estructura sin rumbo) o se dirige sin metas (esfuerzo sin foco). El caso muestra justamente los síntomas de un proceso administrativo roto: sin planificación, sin organización, con dirección deficiente y sin control.",
+      criterios: [
+        { texto: "a) Propone una acción de planificación con un objetivo SMART válido.", peso: 2 },
+        { texto: "b) Propone una decisión de estructura (organizar) pertinente al caso.", peso: 2 },
+        { texto: "c) Propone una medida de motivación (dirigir) con respaldo teórico explícito.", peso: 2 },
+        { texto: "d) Propone un mecanismo de control con al menos un indicador válido.", peso: 2 },
+        { texto: "Explica por qué las cuatro funciones deben operar como un ciclo integrado.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir las funciones entre sí (por ejemplo, proponer un control como si fuera planificación).",
+        "Formular objetivos sin cifra ni plazo, o proponer motivación sin respaldo teórico.",
+        "Describir las funciones por separado sin explicar su retroalimentación como ciclo."
+      ]
+    },
+    {
+      id: "adm-090",
+      tema: "Caso integrador: áreas funcionales clave y sostenibilidad del crecimiento",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "AndesTrek es una empresa chilena que fabrica y comercializa equipamiento de montaña. Comenzó como un taller y hoy exporta a Argentina y Perú, con marca reconocida por su calidad e innovación. Su crecimiento ha tensionado la operación: hay atrasos de producción en temporada alta, quejas por inconsistencia de calidad entre lotes y dificultades para financiar el capital de trabajo que exige exportar. A la vez, su equipo de diseño e innovación sigue siendo su mayor fortaleza y el marketing ha posicionado bien la marca.\n\na) Identifique las dos (2) áreas funcionales más críticas de fortalecer para sostener el crecimiento y justifique cada una con dos (2) argumentos concretos del caso.\n\nb) Identifique un área funcional que hoy actúa como fortaleza y explique cómo se articula con las demás en la cadena de creación de valor.\n\nc) Explique por qué el éxito de la empresa depende de la coordinación entre áreas y no del desempeño aislado de una sola.",
+      respuestaModelo: "a) Área de Producción y Operaciones. Argumento 1: los atrasos de producción en temporada alta muestran problemas de planificación de capacidad frente a una demanda creciente y estacional; sin resolverlos, la empresa incumple entregas y arriesga sus mercados de exportación. Argumento 2: las quejas por inconsistencia de calidad entre lotes revelan falta de estandarización y control de procesos, crítico para una marca cuyo posicionamiento se basa justamente en la calidad; operaciones debe asegurar calidad uniforme (control de procesos, normas).\n\nÁrea de Finanzas. Argumento 1: la dificultad para financiar el capital de trabajo que exige exportar evidencia falta de planificación financiera y gestión del flujo de caja; exportar alarga los plazos de cobro y exige liquidez que debe anticiparse y financiarse al menor costo. Argumento 2: la expansión internacional implica decisiones de inversión y de financiamiento (fuentes, costo, riesgo cambiario) que, mal gestionadas, pueden hacer que el crecimiento destruya valor en lugar de crearlo.\n\nb) Área que actúa como fortaleza: Diseño e Innovación (o, alternativamente, Marketing). El diseño e innovación es la mayor fortaleza y sostiene la propuesta de valor (productos diferenciados y de calidad); se articula con las demás en la cadena de valor porque marketing traduce esa innovación en posicionamiento de marca y demanda, operaciones debe materializarla con calidad y a tiempo, y finanzas debe financiar tanto la innovación como el capital de trabajo. La innovación crea el valor, pero solo se concreta si las otras áreas lo producen, financian y comercializan bien.\n\nc) El éxito depende de la coordinación porque las áreas son interdependientes: de nada sirve un diseño excelente y una marca bien posicionada (fortalezas) si operaciones no produce a tiempo y con calidad uniforme, o si finanzas no financia el capital de trabajo para cumplir los pedidos de exportación. Un eslabón débil rompe la cadena de valor: la demanda generada por marketing y la innovación se pierde en atrasos, fallas de calidad o falta de liquidez. La ventaja competitiva se sostiene solo si todas las áreas operan alineadas hacia el objetivo común; optimizar una función de forma aislada no basta.",
+      criterios: [
+        { texto: "a) Identifica dos áreas críticas pertinentes y justifica cada una con dos argumentos del caso.", peso: 4 },
+        { texto: "b) Identifica un área que actúa como fortaleza y explica su articulación en la cadena de valor.", peso: 2 },
+        { texto: "c) Explica por qué el éxito depende de la coordinación entre áreas y no del desempeño aislado de una.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Justificar las áreas con teoría genérica sin usar los datos del caso (atrasos, inconsistencia de calidad, capital de trabajo).",
+        "Nombrar las áreas sin los dos argumentos exigidos por cada una.",
+        "Describir las áreas por separado sin explicar su interdependencia."
+      ]
+    },
+    {
+      id: "adm-091",
+      tema: "Caso integrador: departamentalización geográfica e internacionalización",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "MundoSnack, empresa chilena de alimentos, se expandió a Perú, Colombia y México. Hasta ahora opera con una estructura funcional centralizada en Santiago: todas las decisiones de producto, precio y promoción se toman en la casa matriz. Los gerentes de cada país reclaman que los productos y campañas no se ajustan a los gustos ni a la regulación local, y que la lentitud de respuesta les hace perder oportunidades frente a competidores locales.\n\na) Recomiende y justifique un cambio de departamentalización adecuado a la expansión internacional, explicando por qué la estructura debe seguir a la estrategia.\n\nb) Analice dos (2) ventajas y dos (2) desventajas de la estructura que propone, fundamentadas en el caso.\n\nc) Explique qué decisiones conviene descentralizar hacia cada país y cuáles mantener centralizadas, justificando el equilibrio.",
+      respuestaModelo: "a) Se recomienda migrar hacia una departamentalización geográfica (o por país/región): agrupar los puestos y crear gerencias por territorio (Perú, Colombia, México), cada una responsable de su mercado. Es coherente con el principio de que la estructura sigue a la estrategia: MundoSnack adoptó una estrategia de expansión internacional a mercados con gustos, competidores y regulaciones distintos; la estructura funcional centralizada en Santiago era adecuada para operar en un solo país, pero no para responder a la diversidad local. Una estructura geográfica alinea el diseño organizacional con la estrategia multinacional.\n\nb) Ventajas (dos): 1) Mayor eficacia para atender las necesidades específicas de cada mercado (adaptar producto, precio y promoción a los gustos y la regulación local), resolviendo el reclamo de los gerentes. 2) Rapidez de respuesta: las decisiones se toman cerca del mercado, permitiendo aprovechar oportunidades frente a competidores locales. Desventajas (dos): 1) Duplicación de funciones y recursos en cada país (marketing, operaciones, administración replicados), lo que eleva costos. 2) Riesgo de aislamiento y de pérdida de una visión y coherencia global de la marca; cada país puede tirar para su lado, dificultando la coordinación y las economías de escala.\n\nc) Conviene descentralizar hacia cada país las decisiones que dependen del contexto local: adaptación de productos a los gustos locales, campañas y promociones, precios según el mercado, y gestión comercial y de distribución; los gerentes locales tienen mejor información y necesitan rapidez. Conviene mantener centralizadas las decisiones estratégicas y las que requieren coherencia global y escala: identidad y estándares de la marca, políticas generales, grandes inversiones, compras corporativas y negociación con proveedores globales, investigación y desarrollo, y control financiero consolidado. El equilibrio busca combinar adaptación local (para competir en cada mercado) con coherencia y eficiencia global (para no perder marca ni economías de escala): una lógica de \"pensar global, actuar local\".",
+      criterios: [
+        { texto: "a) Recomienda la departamentalización geográfica y justifica que la estructura sigue a la estrategia.", peso: 3 },
+        { texto: "b) Analiza dos ventajas y dos desventajas fundamentadas en el caso.", peso: 3 },
+        { texto: "c) Distingue qué decisiones descentralizar y cuáles centralizar, justificando el equilibrio.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer un tipo de departamentalización incorrecto para una expansión internacional.",
+        "Recomendar descentralizarlo o centralizarlo todo, sin distinguir decisiones locales de estratégicas.",
+        "Enumerar ventajas y desventajas teóricas sin anclarlas al caso."
+      ]
+    },
+    {
+      id: "adm-092",
+      tema: "Caso integrador: motivación, liderazgo situacional y retención de talento",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "En una consultora tecnológica, el área de desarrollo tiene dos grupos: un núcleo de programadores senior, expertos y comprometidos, que empiezan a irse a la competencia; y un grupo de recién egresados, entusiastas pero sin experiencia. La rotación de los senior alarma a la gerencia. Un diagnóstico revela: sueldos de los senior por debajo del mercado, ausencia de plan de desarrollo, microgestión de un jefe que controla cada detalle, y metas poco claras para los nuevos.\n\na) Analice el problema de motivación de los senior usando dos (2) teorías motivacionales y proponga dos (2) medidas concretas de retención con respaldo teórico.\n\nb) Aplique el liderazgo situacional para recomendar el estilo de dirección adecuado para cada grupo (senior y nuevos), justificando según su nivel de madurez.\n\nc) Explique por qué la microgestión es especialmente dañina con los senior y cómo se relaciona con la delegación y el empowerment.",
+      respuestaModelo: "a) Análisis con teorías motivacionales:\n- Teoría bifactorial de Herzberg: los sueldos bajo el mercado son un factor de higiene deficiente que genera insatisfacción; a la vez, faltan factores motivadores (desarrollo, reconocimiento, logro), por la ausencia de plan de desarrollo. Ambas cosas empujan a los senior a irse.\n- Teoría de las necesidades de McClelland (o de la autorrealización de Maslow): los senior, expertos y comprometidos, tienen alta necesidad de logro y desarrollo; sin desafíos ni crecimiento, su motivación cae. La microgestión, además, frustra su necesidad de autonomía.\nMedidas concretas de retención: 1) Nivelar las remuneraciones con el mercado y transparentarlas (Herzberg: cubrir la higiene para frenar la fuga). 2) Crear un plan de desarrollo y carrera con proyectos desafiantes, capacitación y reconocimiento (Herzberg/McClelland: activar motivadores y necesidad de logro), y dar autonomía técnica.\n\nb) Liderazgo situacional (Hersey y Blanchard): el estilo se adapta a la madurez del seguidor.\n- Programadores senior: seguidores capaces y dispuestos (madurez alta, R4). Estilo adecuado: Delegar (baja tarea, baja relación): entregarles autonomía, objetivos y control por resultados, sin supervisión estrecha. Es justo lo contrario de la microgestión actual.\n- Recién egresados: entusiastas pero sin experiencia, seguidores incapaces pero dispuestos (R2). Estilo adecuado: Persuadir/Vender (alta tarea y alta relación): definir claramente metas, roles y procedimientos (hoy poco claros) y, a la vez, dar apoyo, guía y reconocimiento para sostener el entusiasmo mientras aprenden.\n\nc) La microgestión es especialmente dañina con los senior porque son expertos que necesitan autonomía: controlar cada detalle les transmite desconfianza, frustra su necesidad de logro y autodeterminación, y los empuja a buscar en la competencia el reconocimiento y la libertad que no encuentran. Se relaciona con la delegación y el empowerment: el jefe no está delegando ni facultando; concentra las decisiones en lugar de otorgar autoridad y confianza. Delegar en los senior (con control por resultados, no por detalle) y empoderarlos aumentaría su compromiso y ayudaría a retenerlos, además de liberar al jefe para tareas de mayor valor.",
+      criterios: [
+        { texto: "a) Analiza la motivación de los senior con dos teorías y propone dos medidas de retención con respaldo teórico.", peso: 3 },
+        { texto: "b) Aplica el liderazgo situacional recomendando el estilo adecuado para cada grupo según su madurez.", peso: 3 },
+        { texto: "c) Explica por qué la microgestión daña a los senior y su relación con la delegación y el empowerment.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer solo subir sueldos, sin activar factores motivadores ni autonomía.",
+        "Asignar estilos de liderazgo sin diagnosticar la madurez de cada grupo.",
+        "Confundir microgestión con control por resultados (delegar no es dejar de controlar, sino controlar por resultados)."
+      ]
+    },
+    {
+      id: "adm-093",
+      tema: "Caso integrador: planificación estratégica, FODA y objetivos",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "Librería Aurora es una cadena de seis locales que enfrenta la caída de la venta física de libros y la competencia del comercio electrónico y los libros digitales. Tiene locales bien ubicados, personal experto que asesora a los lectores y una clientela fiel, pero no vende online, su sistema de inventario es antiguo y sus márgenes se estrechan. En el entorno, crece el interés por experiencias culturales presenciales (talleres, clubes de lectura) y por productos de nicho.\n\na) Realice un análisis FODA identificando dos (2) fortalezas, dos (2) debilidades, una (1) oportunidad y una (1) amenaza, fundamentando el impacto de cada factor.\n\nb) A partir del FODA, formule dos (2) objetivos estratégicos SMART para Aurora, uno orientado a aprovechar una oportunidad y otro a corregir una debilidad.\n\nc) Proponga un indicador (KPI) para controlar cada objetivo y explique la relación entre la planificación y el control.",
+      respuestaModelo: "a) Análisis FODA:\nFortalezas (internas): 1) Locales bien ubicados: activo de valor que atrae tráfico y permite ofrecer experiencias presenciales, difícil de replicar por competidores online. 2) Personal experto que asesora a los lectores y clientela fiel: diferenciación en servicio y vínculo emocional que el comercio electrónico no entrega, base para fidelizar y sostener el margen.\nDebilidades (internas): 1) Ausencia de canal online: impide capturar la demanda que migra a lo digital y competir donde crece el mercado. 2) Sistema de inventario antiguo: genera ineficiencias, quiebres o sobrestock y encarece la operación, presionando aún más los márgenes.\nOportunidad (externa): el creciente interés por experiencias culturales presenciales (talleres, clubes de lectura) y productos de nicho calza con las fortalezas de Aurora (locales y asesoría experta), permitiendo diferenciarse y generar nuevas fuentes de ingreso.\nAmenaza (externa): la competencia del comercio electrónico y de los libros digitales, junto con la caída de la venta física, reduce ingresos y presiona márgenes de una cadena con estructura de costos fija por sus locales.\n\nb) Objetivos estratégicos SMART:\n- Aprovechar la oportunidad: \"Generar el 15% de los ingresos anuales a través de experiencias culturales presenciales (talleres y clubes de lectura) en los seis locales dentro de los próximos 12 meses\". Específico, medible (15%), alcanzable, realista y con plazo.\n- Corregir una debilidad: \"Implementar un canal de venta online operativo en los seis locales y alcanzar un 20% de las ventas por ese canal en un plazo de 18 meses\".\n\nc) KPI de control:\n- Para el primer objetivo: porcentaje de ingresos provenientes de experiencias presenciales sobre el total, medido mensualmente; complementariamente, número de asistentes a talleres y clubes.\n- Para el segundo objetivo: porcentaje de ventas realizadas por el canal online sobre el total, medido mensualmente, y tasa de crecimiento de ese canal.\nRelación planificación-control: la planificación fija los objetivos con cifra y plazo, que se convierten en los estándares contra los cuales el control compara el desempeño real; sin objetivos medibles no hay parámetro de control, y sin control no se sabe si el plan se cumple ni cuándo corregir. El control retroalimenta la planificación, cerrando el ciclo.",
+      criterios: [
+        { texto: "a) Identifica dos fortalezas, dos debilidades, una oportunidad y una amenaza válidas, fundamentando su impacto.", peso: 3 },
+        { texto: "b) Formula dos objetivos SMART coherentes con el FODA (aprovechar oportunidad y corregir debilidad).", peso: 3 },
+        { texto: "c) Propone un KPI válido por objetivo y explica la relación entre planificación y control.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir factores internos (fortalezas/debilidades) con externos (oportunidades/amenazas).",
+        "Formular objetivos sin cifra ni plazo o desconectados del FODA.",
+        "Proponer indicadores que no permiten controlar el objetivo formulado."
+      ]
+    },
+    {
+      id: "adm-094",
+      tema: "Caso integrador: toma de decisiones, ética y stakeholders",
+      dificultad: "dificil",
+      enunciado: "TextilNorte, fábrica de ropa, enfrenta una caída de márgenes. La gerencia evalúa trasladar la producción a un taller externo que ofrece costos mucho menores, pero del que se sospecha que subcontrata talleres con malas condiciones laborales. La decisión mejoraría la utilidad del año, pero contradice el valor declarado de \"trabajo digno\" y podría afectar a los trabajadores actuales, a la comunidad y a la reputación de la marca ante sus clientes.\n\na) Analice la decisión aplicando las etapas del proceso racional de toma de decisiones (identificar el problema, criterios, alternativas, evaluación y elección).\n\nb) Identifique los principales stakeholders afectados y el impacto de la decisión sobre cada uno.\n\nc) Evalúe la dimensión ética de la decisión y explique por qué una opción legal y rentable puede no ser ética; recomiende un curso de acción fundamentado.",
+      respuestaModelo: "a) Proceso racional de decisión:\n1) Identificar el problema: la caída de márgenes amenaza la rentabilidad; el problema real es cómo recuperar competitividad de costos sin destruir valor de largo plazo ni contradecir los valores de la empresa.\n2) Identificar los criterios de decisión: costo, utilidad, cumplimiento de los valores (\"trabajo digno\"), riesgo reputacional y legal, impacto en los trabajadores actuales y sostenibilidad.\n3) Ponderar los criterios: no solo el costo debe pesar; la reputación y la coherencia con los valores son criterios estratégicos.\n4) Desarrollar alternativas: (i) externalizar al taller sospechoso; (ii) mejorar la eficiencia interna (procesos, mermas, productividad) para bajar costos sin perder control; (iii) buscar un proveedor externo certificado en condiciones laborales, aunque algo más caro; (iv) rediseñar producto o precio.\n5) Analizar y evaluar las alternativas según los criterios ponderados: la opción (i) maximiza el margen del año pero incumple los valores y expone a la empresa a riesgo reputacional y ético; las opciones (ii) y (iii) equilibran costo y valores.\n6) Seleccionar e implementar la alternativa que mejor satisface el conjunto de criterios, no solo el costo.\n\nb) Stakeholders afectados: trabajadores actuales (riesgo de perder el empleo), trabajadores del taller subcontratado (condiciones indignas), clientes y consumidores (que valoran la marca y el trabajo digno), la comunidad, los dueños o accionistas (utilidad y valor de largo plazo de la marca) y la propia reputación de la empresa. Cada grupo se ve impactado de forma distinta: el margen de corto plazo beneficia a los dueños, pero el daño reputacional y ético los perjudica en el largo plazo, además de dañar a trabajadores y comunidad.\n\nc) Dimensión ética: una opción puede ser legal (no infringir la ley) y rentable, y aun así no ser ética, porque la ética evalúa si la acción es correcta respecto de valores y del impacto en las personas, más allá de lo permitido por la ley y de la utilidad. Externalizar a un taller con malas condiciones laborales traslada un daño a personas vulnerables y contradice el valor declarado de \"trabajo digno\", erosionando la confianza de clientes y comunidad. Recomendación fundamentada: no optar por la alternativa (i); priorizar mejorar la eficiencia interna y/o contratar un proveedor certificado en condiciones laborales, asumiendo un costo algo mayor a cambio de coherencia con los valores, protección de la reputación y sostenibilidad de la marca. La decisión ética también es la más inteligente estratégicamente, porque preserva el activo reputacional y la relación con los stakeholders.",
+      criterios: [
+        { texto: "a) Analiza la decisión aplicando las etapas del proceso racional de toma de decisiones.", peso: 3 },
+        { texto: "b) Identifica los principales stakeholders y el impacto de la decisión sobre cada uno.", peso: 3 },
+        { texto: "c) Evalúa la dimensión ética, explica por qué lo legal y rentable puede no ser ético y recomienda un curso de acción fundamentado.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Decidir solo por el criterio de costo/utilidad, ignorando valores, reputación y stakeholders.",
+        "Equiparar lo legal con lo ético.",
+        "Omitir el desarrollo de alternativas distintas a la externalización cuestionada."
+      ]
+    },
+    {
+      id: "adm-095",
+      tema: "Caso integrador: estructura contemporánea, equipos y coordinación",
+      dificultad: "dificil",
+      enunciado: "Innova Labs, agencia de innovación de 60 personas, tiene una estructura funcional rígida (diseño, tecnología, negocios) con muchos niveles de aprobación. Sus clientes piden soluciones integradas y rápidas que combinan las tres especialidades, pero los proyectos avanzan lento porque cada área trabaja en silos y todo debe subir y bajar por la jerarquía. La dirección quiere una organización más ágil sin perder el desarrollo técnico de cada especialidad.\n\na) Caracterice la estructura actual con el par mecanicista/orgánica y explique por qué no se ajusta a los requerimientos de los clientes.\n\nb) Proponga un diseño organizacional contemporáneo adecuado (por ejemplo, estructura por equipos o matricial), describa su funcionamiento y señale una (1) ventaja y una (1) desventaja.\n\nc) Explique cómo el nuevo diseño mejora la coordinación y qué mecanismos usaría para evitar los problemas de doble jefatura o pérdida de especialización.",
+      respuestaModelo: "a) La estructura actual de Innova Labs es marcadamente mecanicista: alta especialización funcional en silos (diseño, tecnología, negocios), muchos niveles jerárquicos, alta formalización y centralización (todo sube y baja por la jerarquía con múltiples aprobaciones). Este diseño privilegia el control y la eficiencia en entornos estables, pero no se ajusta a los requerimientos de los clientes, que piden soluciones integradas (que combinan las tres especialidades) y rápidas: los silos impiden la colaboración interfuncional y la jerarquía lenta retrasa la respuesta. Hay un desajuste entre la estructura (mecanicista) y la estrategia/entorno (innovación, rapidez), que exigen flexibilidad.\n\nb) Diseño contemporáneo propuesto: una estructura por equipos (o matricial). En una estructura por equipos, se conforman equipos interfuncionales de proyecto que reúnen a un diseñador, un tecnólogo y un especialista de negocios, con autonomía para llevar el proyecto de principio a fin, reduciendo los niveles de aprobación. Funcionamiento: cada proyecto o cliente es atendido por un equipo dedicado y multidisciplinario, cercano a la operación y facultado para decidir; las áreas funcionales se mantienen como \"hogares\" de especialidad que nutren a los equipos. Ventaja: integra especialidades y acelera la respuesta, ajustándose a lo que piden los clientes; aumenta el compromiso y la creatividad. Desventaja: puede generar tensión entre el equipo de proyecto y el área funcional (doble pertenencia), duplicar esfuerzos o dificultar la estandarización, y exige más coordinación y madurez de los equipos.\n\nc) El nuevo diseño mejora la coordinación porque pone a las tres especialidades a trabajar juntas en el mismo equipo, con comunicación directa y decisiones cercanas, en lugar de coordinarse a través de la jerarquía. Para evitar los problemas de doble jefatura (propios de la matriz) y la pérdida de especialización, usaría: reglas claras sobre qué decide el líder de proyecto (plazos, alcance, prioridades) y qué decide el jefe funcional (estándares técnicos, desarrollo y carrera del especialista); mantener a cada profesional adscrito a su área funcional para que siga desarrollando su especialidad y compartiendo conocimiento; y mecanismos de coordinación como reuniones periódicas, objetivos compartidos entre proyecto y función, y un liderazgo que gestione los conflictos de prioridad. Así se combina la agilidad de los equipos con la profundidad técnica de las funciones.",
+      criterios: [
+        { texto: "a) Caracteriza la estructura actual como mecanicista y explica por qué no se ajusta a los clientes.", peso: 3 },
+        { texto: "b) Propone un diseño contemporáneo, describe su funcionamiento y señala una ventaja y una desventaja.", peso: 3 },
+        { texto: "c) Explica cómo mejora la coordinación y qué mecanismos evitan la doble jefatura o la pérdida de especialización.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Caracterizar mal la estructura actual (llamarla orgánica pese a su rigidez y jerarquía).",
+        "Proponer un diseño contemporáneo sin describir su funcionamiento.",
+        "Ignorar el riesgo de doble jefatura y no proponer mecanismos de coordinación."
+      ]
+    },
+    {
+      id: "adm-096",
+      tema: "Caso integrador: planificación por escenarios y control en entorno incierto",
+      dificultad: "dificil",
+      enunciado: "AgroValle exporta fruta y enfrenta un entorno muy incierto: variaciones climáticas que afectan la cosecha, tipo de cambio volátil y cambios regulatorios en los países de destino. Su gerencia planifica \"como siempre\", con un único plan anual rígido, y cuando algo cambia queda expuesta y reacciona tarde.\n\na) Explique por qué en un entorno incierto conviene usar planes direccionales y planificación de escenarios (o de contingencia) en lugar de un único plan rígido.\n\nb) Proponga cómo AgroValle podría planificar por escenarios, describiendo al menos dos escenarios posibles y una respuesta preparada para cada uno.\n\nc) Explique el rol del control preventivo y de los indicadores de alerta temprana para reaccionar a tiempo, y cómo se cierra el ciclo con la planificación.",
+      respuestaModelo: "a) En un entorno incierto conviene usar planes direccionales (flexibles, que fijan pautas generales y dejan margen de discrecionalidad) en lugar de planes específicos y rígidos, porque estos últimos pierden validez apenas cambian las condiciones y encierran a la empresa en supuestos que dejan de cumplirse. La planificación de escenarios (o de contingencia) complementa lo anterior: en vez de apostar a un único futuro, la empresa anticipa varios futuros posibles y prepara respuestas para cada uno, de modo que, ocurra lo que ocurra, no la tome por sorpresa. Esto reduce la incertidumbre y mejora la capacidad de respuesta, justamente lo que le falta a AgroValle, que reacciona tarde por tener un solo plan rígido.\n\nb) Planificación por escenarios para AgroValle (al menos dos escenarios con respuesta preparada):\n- Escenario 1 (clima adverso / menor cosecha): sequía o heladas reducen el volumen y la calidad de la fruta. Respuesta preparada: diversificar zonas y variedades de cultivo, contratar seguros agrícolas, asegurar contratos con cláusulas de flexibilidad de volumen y priorizar los mercados de mayor precio.\n- Escenario 2 (tipo de cambio desfavorable o barreras regulatorias en destino): caída del dólar o nuevas exigencias fitosanitarias/arancelarias. Respuesta preparada: coberturas cambiarias (forwards), diversificación de mercados de destino para no depender de uno, y anticipación regulatoria con certificaciones al día.\n- (Escenario 3 favorable: alta demanda y precios altos; respuesta: capacidad de ampliar producción y logística rápidamente.)\nCada escenario tiene definidos gatillantes y un plan de acción listo para activarse.\n\nc) El control preventivo actúa antes de que el problema ocurra, verificando condiciones (estado de la cosecha, cumplimiento de certificaciones, coberturas tomadas) para anticiparse. Los indicadores de alerta temprana (pronósticos climáticos, evolución del tipo de cambio, señales regulatorias, avance de la cosecha frente a lo esperado) permiten detectar a tiempo que un escenario se está materializando y activar la respuesta preparada, en lugar de reaccionar tarde. El ciclo se cierra con la planificación porque la información del control retroalimenta los planes: al monitorear los indicadores y comparar con lo previsto, la empresa ajusta sus planes y escenarios, actualizando sus respuestas. Así, planificación flexible y control preventivo se combinan para operar con agilidad en la incertidumbre.",
+      criterios: [
+        { texto: "a) Explica por qué convienen planes direccionales y planificación de escenarios en entornos inciertos.", peso: 3 },
+        { texto: "b) Propone una planificación por escenarios con al menos dos escenarios y una respuesta preparada para cada uno.", peso: 3 },
+        { texto: "c) Explica el rol del control preventivo y de los indicadores de alerta temprana y cómo se cierra el ciclo con la planificación.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Defender un único plan rígido como suficiente en un entorno incierto.",
+        "Describir escenarios sin asociarles una respuesta o plan de contingencia.",
+        "Omitir el control preventivo y las alertas tempranas como mecanismo para reaccionar a tiempo."
+      ]
+    },
+    {
+      id: "adm-097",
+      tema: "Caso integrador: comunicación organizacional, barreras y clima",
+      dificultad: "dificil",
+      enunciado: "En una empresa de servicios de 200 personas distribuidas en varias sedes, las instrucciones de la gerencia llegan distorsionadas o incompletas, circulan rumores, los trabajadores dicen que \"nadie los escucha\" y los mandos medios filtran la información que sube. Esto ha generado errores operativos y desconfianza.\n\na) Explique el proceso de comunicación (emisor, mensaje, codificación, canal, decodificación, receptor y retroalimentación) e identifique en qué puntos está fallando en este caso.\n\nb) Analice tres (3) barreras de la comunicación presentes en la empresa y su efecto.\n\nc) Proponga tres (3) medidas concretas para mejorar la comunicación organizacional, incluyendo canales de comunicación ascendente, y explique cómo impactarían en el clima y el desempeño.",
+      respuestaModelo: "a) El proceso de comunicación consta de: un emisor que tiene una idea; la codificación (traducir la idea en un mensaje con símbolos/palabras); el mensaje; el canal (medio por el que viaja: correo, reunión, memo); la decodificación (el receptor interpreta el mensaje); el receptor; y la retroalimentación (la respuesta del receptor que confirma si el mensaje se entendió). El \"ruido\" puede interferir en cualquier etapa. En el caso falla: la codificación y el canal (instrucciones que llegan incompletas o distorsionadas por canales inadecuados y por intermediarios que las filtran), la retroalimentación (no hay confirmación ni escucha: \"nadie los escucha\", falta comunicación ascendente) y aparece ruido en forma de rumores por vacíos de información.\n\nb) Barreras de la comunicación presentes (tres entre las siguientes):\n1) Filtrado: los mandos medios manipulan u ocultan la información que sube, por lo que la gerencia no recibe una imagen real y se toman decisiones erradas.\n2) Sobrecarga o pérdida por la cadena (número de niveles/sedes): al pasar por muchos intermediarios y sedes, el mensaje se distorsiona y llega incompleto, generando errores operativos.\n3) Percepción selectiva y rumores: ante vacíos de información, las personas llenan el espacio con interpretaciones y rumores, aumentando la desconfianza.\n4) Falta de retroalimentación / comunicación en un solo sentido: al no escuchar a los trabajadores, se pierde información valiosa y se deteriora la moral.\n\nc) Medidas concretas (tres):\n1) Establecer canales de comunicación ascendente formales: encuestas de clima, reuniones periódicas de escucha, buzones o instancias donde los trabajadores planteen problemas directamente, reduciendo el filtrado de los mandos medios y haciendo que la gente se sienta escuchada.\n2) Estandarizar y simplificar los mensajes clave por canales directos y confiables (por ejemplo, comunicados oficiales a todas las sedes simultáneamente), reduciendo la distorsión por intermediarios y cerrando el paso a los rumores con información oportuna y transparente.\n3) Fomentar la retroalimentación: confirmar la recepción y comprensión de las instrucciones críticas, capacitar a los jefes en comunicación y escucha activa, y dar respuesta a lo que los trabajadores plantean.\nImpacto en clima y desempeño: una comunicación clara, bidireccional y transparente reduce los errores operativos (las instrucciones llegan completas), disminuye los rumores y la desconfianza, y mejora el clima y el compromiso al sentirse las personas informadas y escuchadas, lo que se traduce en mejor desempeño.",
+      criterios: [
+        { texto: "a) Explica el proceso de comunicación e identifica los puntos que fallan en el caso.", peso: 3 },
+        { texto: "b) Analiza tres barreras de la comunicación presentes y su efecto.", peso: 3 },
+        { texto: "c) Propone tres medidas concretas (incluida comunicación ascendente) y explica su impacto en clima y desempeño.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Describir el proceso de comunicación sin identificar dónde falla en el caso.",
+        "Confundir barreras de comunicación con problemas de otra naturaleza (por ejemplo, de estructura).",
+        "Proponer medidas genéricas sin incluir la comunicación ascendente ni explicar su impacto."
+      ]
+    },
+    {
+      id: "adm-098",
+      tema: "Caso integrador: RSE, sostenibilidad y creación de valor compartido",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "MineraLuz, empresa extractiva mediana, opera cerca de una comunidad que reclama por el uso del agua, el polvo y la falta de empleo local. Un grupo de inversionistas exige a la empresa un enfoque de sostenibilidad, mientras algunos directivos sostienen que \"la única responsabilidad de la empresa es generar utilidades\".\n\na) Contraste la visión clásica y la visión socioeconómica de la responsabilidad social, y tome posición fundamentada sobre cuál conviene a MineraLuz en el largo plazo.\n\nb) Identifique los stakeholders clave del caso y explique cómo una gestión de RSE puede transformar un conflicto con la comunidad en creación de valor compartido.\n\nc) Proponga tres (3) acciones concretas de RSE/sostenibilidad para MineraLuz, alineadas con las dimensiones económica, social y ambiental.",
+      respuestaModelo: "a) La visión clásica (Friedman) sostiene que la única responsabilidad social de la empresa es maximizar las utilidades para sus dueños dentro de la ley, y que destinar recursos a fines sociales sería usar indebidamente el dinero de los accionistas: es la posición de algunos directivos del caso. La visión socioeconómica sostiene que la responsabilidad de la empresa va más allá de generar utilidades e incluye proteger y mejorar el bienestar de la sociedad y el medio ambiente, porque la empresa es parte de un entorno del que depende y al que afecta. Posición fundamentada: a MineraLuz le conviene la visión socioeconómica en el largo plazo, porque su operación depende de la licencia social de la comunidad y de recursos compartidos (agua); ignorar los reclamos puede derivar en conflictos, paralizaciones, daño reputacional y pérdida de acceso a capital (los inversionistas ya exigen sostenibilidad). La RSE bien entendida no se opone a la utilidad: la protege y la hace sostenible en el tiempo.\n\nb) Stakeholders clave: la comunidad local (afectada por agua, polvo y falta de empleo), los trabajadores, los inversionistas (que exigen sostenibilidad), el Estado y los reguladores, y los dueños. Una gestión de RSE puede transformar el conflicto en valor compartido si atiende las causas del reclamo de modo que beneficie a la vez a la comunidad y a la empresa: por ejemplo, invertir en gestión eficiente y responsable del agua reduce el conflicto y también asegura el recurso para la operación; contratar y capacitar mano de obra local reduce la oposición y provee fuerza laboral comprometida; controlar el polvo mejora la salud comunitaria y la relación con el entorno. Así, atender a los stakeholders deja de ser un costo y pasa a crear valor para ambas partes (valor compartido), fortaleciendo la licencia social y la continuidad del negocio.\n\nc) Acciones concretas de RSE/sostenibilidad en las tres dimensiones:\n- Económica: programa de empleo y proveedores locales (contratar y capacitar personas de la comunidad, comprar servicios locales), generando desarrollo económico en el territorio.\n- Social: mesa de diálogo permanente con la comunidad, inversión en salud, educación o infraestructura local, y transparencia en información de impactos.\n- Ambiental: plan de gestión eficiente y monitoreo del agua, control y mitigación del polvo y las emisiones, y restauración o cuidado del entorno.\nEstas acciones responden a los reclamos concretos del caso y alinean el desempeño económico con el social y el ambiental (triple resultado).",
+      criterios: [
+        { texto: "a) Contrasta la visión clásica y la socioeconómica y toma posición fundamentada para el largo plazo.", peso: 3 },
+        { texto: "b) Identifica los stakeholders clave y explica cómo la RSE transforma el conflicto en valor compartido.", peso: 3 },
+        { texto: "c) Propone tres acciones concretas de RSE alineadas con las dimensiones económica, social y ambiental.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Presentar la RSE como opuesta a la rentabilidad, sin ver la creación de valor compartido.",
+        "Reducir la RSE a donaciones o filantropía desconectada del negocio y de los reclamos.",
+        "Omitir alguna de las tres dimensiones (económica, social o ambiental) en las acciones propuestas."
+      ]
+    },
+    {
+      id: "adm-099",
+      tema: "Caso integrador: tramo de control, niveles jerárquicos y rediseño de estructura",
+      dificultad: "dificil",
+      enunciado: "ServiPro, empresa de servicios generales, creció por adición de niveles: hoy tiene siete niveles jerárquicos entre el gerente general y el operario, tramos de control muy angostos (cada jefe supervisa a 3 o 4 personas) y decisiones que demoran semanas en aprobarse. Los costos de administración crecen y los clientes se quejan de lentitud.\n\na) Diagnostique el problema usando los conceptos de tramo de control y estructuras altas versus planas, explicando la relación entre ambos.\n\nb) Explique tres (3) consecuencias negativas de una estructura demasiado alta como la de ServiPro.\n\nc) Proponga un rediseño (aplanamiento) indicando cómo afectaría el tramo de control, la delegación y la velocidad de decisión, y señale un riesgo del cambio que habría que gestionar.",
+      respuestaModelo: "a) El tramo de control es el número de subordinados que un gerente puede supervisar de manera eficaz. Existe una relación inversa entre el tramo de control y el número de niveles jerárquicos: a igual cantidad de personas, tramos de control angostos (pocos subordinados por jefe) generan estructuras altas (muchos niveles), y tramos amplios generan estructuras planas (pocos niveles). ServiPro tiene tramos muy angostos (3-4 personas por jefe), lo que explica sus siete niveles jerárquicos: es una estructura alta. El diagnóstico es que la empresa está sobre-estructurada, con exceso de niveles y jefaturas.\n\nb) Consecuencias negativas de una estructura demasiado alta (tres entre las siguientes):\n1) Lentitud en la toma de decisiones y en la comunicación: la información y las aprobaciones deben recorrer muchos niveles (arriba y abajo), lo que demora semanas y explica las quejas de los clientes por lentitud.\n2) Altos costos de administración: muchos niveles implican muchos jefes, con sus remuneraciones y gastos, elevando el costo administrativo.\n3) Distorsión de la comunicación: cada nivel adicional filtra y deforma el mensaje.\n4) Menor empowerment y desmotivación: la supervisión estrecha y la centralización reducen la autonomía y la iniciativa.\n\nc) Rediseño (aplanamiento): reducir niveles jerárquicos ampliando el tramo de control, de modo que cada jefe supervise a más personas y se eliminen capas intermedias. Efectos: al ampliar el tramo de control disminuyen los niveles (estructura más plana); esto exige delegar y empoderar a los empleados (dado que un jefe con más subordinados no puede microgestionar, debe dar autonomía y controlar por resultados); y la velocidad de decisión aumenta, porque hay menos aprobaciones y las decisiones se toman más cerca de la acción, mejorando la respuesta al cliente y reduciendo costos administrativos.\nRiesgo a gestionar: con tramos más amplios existe el riesgo de que los jefes queden sobrecargados y no puedan supervisar bien si el personal no está capacitado o los procesos no están estandarizados; también puede generar resistencia de las jefaturas cuyos cargos se eliminan. Se gestiona capacitando y empoderando al personal, estandarizando procesos, invirtiendo en sistemas de información para el control por resultados, y acompañando el cambio (recolocación, comunicación) para reducir la resistencia.",
+      criterios: [
+        { texto: "a) Diagnostica usando tramo de control y estructuras altas/planas, explicando su relación inversa.", peso: 3 },
+        { texto: "b) Explica tres consecuencias negativas de una estructura demasiado alta, ancladas al caso.", peso: 3 },
+        { texto: "c) Propone un aplanamiento y explica su efecto en tramo de control, delegación y velocidad, señalando un riesgo a gestionar.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir la relación entre tramo de control y niveles (creer que es directa en vez de inversa).",
+        "Proponer aplanar sin reconocer que exige delegación, empowerment y capacitación.",
+        "Omitir los riesgos del cambio (sobrecarga de jefes, resistencia)."
+      ]
+    },
+    {
+      id: "adm-100",
+      tema: "Caso integrador: análisis del entorno, mercado maduro y decisiones para mantener el liderazgo",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "ClaraAgua es líder histórico del mercado de agua embotellada en su país, pero el mercado está maduro: el consumo se estancó, entraron marcas propias de supermercados a menor precio y crece la preocupación ambiental por el plástico. Su participación de mercado empieza a erosionarse.\n\na) Caracterice la situación de un mercado maduro y explique dos (2) desafíos que enfrenta el líder en esta etapa.\n\nb) Proponga tres (3) decisiones o estrategias, con respaldo en conceptos de administración (áreas funcionales, innovación, sostenibilidad, diferenciación), para que ClaraAgua mantenga su liderazgo, justificando cada una según el caso.\n\nc) Explique cómo el análisis del entorno (oportunidades y amenazas) sustenta estas decisiones y por qué el liderazgo no se mantiene solo, sino que exige adaptación continua.",
+      respuestaModelo: "a) Un mercado maduro es aquel cuya demanda total se ha estabilizado o crece muy poco: la mayoría de los consumidores ya usa el producto, hay muchos competidores, la diferenciación se hace difícil y la competencia se traslada al precio y a pequeñas mejoras. En esta etapa, el líder enfrenta desafíos como (dos entre los siguientes): 1) La presión de precios de competidores más baratos, como las marcas propias de supermercados, que erosionan su participación y sus márgenes. 2) La dificultad de crecer en un mercado estancado, lo que obliga a quitar participación a otros o a abrir nuevos usos/segmentos. 3) Amenazas del entorno que cambian las reglas (como la preocupación ambiental por el plástico), que pueden volver obsoleta la propuesta actual.\n\nb) Decisiones o estrategias (tres, con respaldo):\n1) Diferenciación e innovación de producto: desarrollar nuevas variantes o propuestas de mayor valor (agua saborizada, funcional, formatos nuevos) para escapar de la guerra de precios; se apoya en el área de marketing e I+D y en la estrategia de diferenciación. Justificación: al competir por valor y no solo por precio, ClaraAgua protege su margen frente a las marcas propias baratas.\n2) Sostenibilidad ambiental: rediseñar el envase (plástico reciclado, retornable o reducción de plástico) y comunicarlo, convirtiendo la amenaza ambiental en oportunidad de diferenciación y de conexión con consumidores conscientes; se apoya en RSE/sostenibilidad y operaciones. Justificación: responde directamente a la preocupación ambiental del entorno y refuerza la marca.\n3) Eficiencia operativa y fidelización: mejorar la eficiencia (operaciones) para poder competir en costos donde sea necesario, y fortalecer la relación y fidelidad con los clientes (programas, calidad, distribución) para defender la participación. Justificación: ataca la presión de precios sin destruir la marca y retiene a los clientes actuales.\n\nc) El análisis del entorno (oportunidades y amenazas) sustenta estas decisiones porque permite leer las señales externas —estancamiento del consumo, entrada de marcas propias, tendencia ambiental— y traducirlas en estrategia: las amenazas (precio, plástico) orientan las decisiones defensivas y de sostenibilidad, y las oportunidades (consumidor consciente, nuevos usos) orientan la innovación. El liderazgo no se mantiene solo porque el entorno cambia de forma continua: la posición conquistada se erosiona si la empresa no se adapta. Sostener el liderazgo exige monitorear el entorno permanentemente e innovar antes que los competidores; quedarse quieto en un mercado maduro equivale a retroceder.",
+      criterios: [
+        { texto: "a) Caracteriza el mercado maduro y explica dos desafíos del líder en esa etapa.", peso: 2 },
+        { texto: "b) Propone tres decisiones/estrategias con respaldo conceptual, justificadas según el caso.", peso: 4 },
+        { texto: "c) Explica cómo el análisis del entorno sustenta las decisiones y por qué el liderazgo exige adaptación continua.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Proponer solo bajar precios para competir con las marcas propias, erosionando la marca y el margen.",
+        "Ignorar la amenaza ambiental como oportunidad de diferenciación.",
+        "No conectar las decisiones con el análisis de oportunidades y amenazas del entorno."
+      ]
+    },
+    {
+      id: "adm-101",
+      tema: "Caso integrador: sistema de control, indicadores y descentralización con control por resultados",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "RedSalud es una red de 12 centros médicos ambulatorios. La dirección quiere descentralizar decisiones hacia los directores de cada centro (agenda, dotación, convenios locales), pero teme perder el control de la calidad y de las finanzas. Hoy no cuenta con indicadores sistemáticos y solo revisa los resultados financieros a fin de año, cuando los problemas ya ocurrieron.\n\na) Explique por qué descentralizar sin un buen sistema de control es riesgoso, y por qué controlar por resultados permite delegar sin perder el control.\n\nb) Diseñe un sistema de control con las tres etapas del proceso de control aplicado a RedSalud.\n\nc) Proponga cuatro (4) indicadores (KPI) que cubran distintas dimensiones (financiera, calidad/clientes, procesos y personas), explicando qué decisión permite tomar cada uno.",
+      respuestaModelo: "a) Descentralizar sin un buen sistema de control es riesgoso porque, al delegar decisiones en los directores de cada centro, la dirección pierde visibilidad directa de lo que ocurre: si no hay estándares ni seguimiento, cada centro puede desviarse en calidad, costos o convenios, y los problemas se detectan tarde (como hoy, que solo se revisan resultados a fin de año). Controlar por resultados resuelve la tensión: en lugar de controlar cada decisión (control por acciones, incompatible con delegar), la dirección fija estándares y metas claras, entrega autonomía a los directores para alcanzarlas, y monitorea indicadores con periodicidad. Así puede delegar la forma de operar y mantener el control sobre los resultados, interviniendo solo cuando los indicadores muestran desviaciones (administración por excepción).\n\nb) Sistema de control (tres etapas) para RedSalud:\n1) Establecer estándares derivados de la planificación: metas por centro de rentabilidad/costo, tiempos de espera máximos, satisfacción del paciente, tasas de calidad clínica, dotación adecuada.\n2) Medir el desempeño real y compararlo con el estándar: implementar un tablero de indicadores alimentado por los sistemas de agenda, facturación y encuestas, con revisión mensual por centro y consolidada en la dirección.\n3) Tomar acciones correctivas ante desviaciones (reforzar dotación, ajustar convenios, corregir procesos) o revisar el estándar si estaba mal calibrado.\n\nc) Cuatro KPI que cubren distintas dimensiones:\n1) Financiera: margen o resultado operacional por centro respecto de la meta. Permite decidir dónde corregir la gestión de costos e ingresos, o reasignar recursos.\n2) Calidad/clientes: nota de satisfacción del paciente y/o tasa de reclamos. Permite decidir mejoras en atención y detectar centros con problemas de servicio.\n3) Procesos: tiempo de espera promedio para una hora médica o tasa de ocupación de agenda. Permite decidir ajustes en la agenda, la dotación o los horarios.\n4) Personas: rotación del personal clínico y/o tasa de ausentismo. Permite decidir acciones de retención, clima y dotación.\nCon estos indicadores multidimensionales, la dirección puede descentralizar decisiones a los directores de centro y a la vez asegurar el control de la calidad, las finanzas, los procesos y las personas, evitando que los problemas se descubran demasiado tarde.",
+      criterios: [
+        { texto: "a) Explica el riesgo de descentralizar sin control y por qué el control por resultados permite delegar sin perder el control.", peso: 3 },
+        { texto: "b) Diseña el proceso de control con sus tres etapas aplicado a RedSalud.", peso: 2 },
+        { texto: "c) Propone cuatro KPI de distintas dimensiones y explica la decisión que cada uno permite tomar.", peso: 3 }
+      ],
+      erroresComunes: [
+        "Plantear que descentralizar significa perder el control, en vez de controlar por resultados.",
+        "Proponer solo indicadores financieros, sin cubrir calidad, procesos y personas.",
+        "Describir el control en abstracto sin aplicarlo a los centros médicos."
+      ]
+    },
+    {
+      id: "adm-102",
+      tema: "Caso integrador: tipos de organización, finalidad y stakeholders",
+      dificultad: "dificil",
+      enunciado: "En una misma ciudad conviven tres organizaciones: una empresa privada de retail que busca rentabilidad, una fundación sin fines de lucro que atiende a adultos mayores, y un servicio público de salud municipal. Las tres deben administrar recursos escasos y \"crear valor\", pero con finalidades distintas.\n\na) Clasifique los tres tipos de organización y explique en qué se diferencian su finalidad y la forma en que miden su desempeño (o \"crean valor\").\n\nb) Explique el concepto de creación de valor y por qué también aplica a organizaciones sin fines de lucro y públicas, no solo a las empresas privadas.\n\nc) Identifique los stakeholders principales de cada organización y explique por qué la administración (planificar, organizar, dirigir, controlar) es necesaria en las tres, pese a sus distintas finalidades.",
+      respuestaModelo: "a) Clasificación y finalidad:\n- Empresa privada de retail: organización con fines de lucro; su finalidad es generar rentabilidad para sus dueños creando valor para los clientes. Mide su desempeño principalmente por indicadores económicos: utilidad, rentabilidad, ventas, participación de mercado.\n- Fundación sin fines de lucro: organización cuya finalidad no es el lucro sino cumplir una misión social (atender a adultos mayores). Mide su desempeño por el impacto social logrado y el uso eficiente de los recursos donados (personas atendidas, calidad del servicio, cumplimiento de la misión), no por utilidades.\n- Servicio público de salud municipal: organización pública, cuya finalidad es entregar un bien o servicio de interés general (salud) a la comunidad. Mide su desempeño por cobertura, calidad y satisfacción de los usuarios y por el uso eficiente del presupuesto público, no por rentabilidad.\n\nb) La creación de valor es la capacidad de una organización de transformar recursos (insumos) en bienes o servicios que satisfacen necesidades y valen más que los recursos empleados. Aplica a las tres porque todas toman recursos escasos y deben convertirlos en algo valioso para alguien: la empresa crea valor económico y para el cliente; la fundación crea valor social para los adultos mayores y la comunidad; el servicio público crea valor para los ciudadanos. En los tres casos hay que usar bien los recursos y generar más beneficio que el costo, aunque el \"valor\" se mida en dinero, impacto social o bienestar público según la finalidad.\n\nc) Stakeholders principales:\n- Retail: dueños/accionistas, clientes, trabajadores, proveedores, competidores, comunidad.\n- Fundación: beneficiarios (adultos mayores), donantes, voluntarios y trabajadores, el Estado, la comunidad.\n- Servicio público: usuarios/pacientes, funcionarios, autoridades y el municipio, la comunidad, los contribuyentes.\nLa administración es necesaria en las tres porque todas deben lograr objetivos con recursos escasos a través de personas: deben planificar (definir objetivos y cómo alcanzarlos), organizar (estructurar el trabajo y los recursos), dirigir (liderar y motivar a su gente) y controlar (verificar el cumplimiento y corregir). Cambia la finalidad y la forma de medir el valor, pero el proceso administrativo y la necesidad de eficiencia y eficacia son comunes: una fundación o un servicio público mal administrados desperdician recursos y no cumplen su misión, igual que una empresa mal gestionada no es rentable.",
+      criterios: [
+        { texto: "a) Clasifica los tres tipos de organización y diferencia su finalidad y forma de medir el desempeño.", peso: 3 },
+        { texto: "b) Explica la creación de valor y por qué aplica también a organizaciones sin fines de lucro y públicas.", peso: 2 },
+        { texto: "c) Identifica los stakeholders de cada una y explica por qué la administración es necesaria en las tres.", peso: 3 }
+      ],
+      erroresComunes: [
+        "Sostener que solo las empresas privadas crean valor o requieren administración.",
+        "Medir a las tres organizaciones con el mismo criterio (utilidad), ignorando sus finalidades distintas.",
+        "Confundir finalidad (lucro, social, pública) con las funciones administrativas, que son comunes."
+      ]
+    },
+    {
+      id: "adm-103",
+      tema: "Caso integrador: cadena de valor de Porter y ventaja competitiva",
+      dificultad: "dificil",
+      salioEnExamen: true,
+      enunciado: "CafeOrigen tuesta y vende café de especialidad. Compra grano directo a productores, controla el tueste, tiene tiendas propias con baristas capacitados y un servicio postventa que educa al cliente. Un competidor la iguala en precio, pero CafeOrigen mantiene clientes fieles que pagan más. La gerencia quiere entender de dónde viene su ventaja para protegerla.\n\na) Explique el concepto de cadena de valor y distinga entre actividades primarias y actividades de apoyo.\n\nb) Analice la cadena de valor de CafeOrigen identificando dos (2) actividades (primarias o de apoyo) donde genera valor diferenciador, fundamentando con el caso.\n\nc) Explique cómo la articulación entre actividades (no una sola actividad aislada) sostiene una ventaja competitiva difícil de imitar, y relacione esto con la coordinación entre áreas funcionales.",
+      respuestaModelo: "a) La cadena de valor (Porter) es el conjunto de actividades que una empresa realiza para diseñar, producir, comercializar, entregar y dar soporte a su producto, cada una de las cuales puede agregar valor y costo. Se dividen en:\n- Actividades primarias: las directamente involucradas en la creación y entrega del producto: logística de entrada (abastecimiento de insumos), operaciones (transformación), logística de salida (distribución), marketing y ventas, y servicio postventa.\n- Actividades de apoyo: las que sustentan a las primarias: infraestructura de la empresa, gestión de recursos humanos, desarrollo tecnológico y abastecimiento (compras).\nEl valor que la empresa crea, menos el costo de las actividades, determina su margen.\n\nb) Cadena de valor de CafeOrigen: actividades donde genera valor diferenciador (dos):\n1) Logística de entrada / abastecimiento: compra el grano directo a productores, controlando el origen y la calidad. Esto asegura una materia prima superior y trazabilidad, fundamento de un café de especialidad diferenciado.\n2) Operaciones (control del tueste) y/o Marketing y ventas y servicio (tiendas propias con baristas capacitados y postventa que educa al cliente): el dominio del tueste garantiza calidad consistente, y las tiendas con baristas expertos y la educación al cliente crean una experiencia y un vínculo que justifican pagar más. (También es válido señalar gestión de personas —capacitación de baristas— como actividad de apoyo diferenciadora.)\n\nc) La ventaja competitiva de CafeOrigen no proviene de una sola actividad aislada, sino de la articulación del conjunto: el grano directo de calidad, más el tueste controlado, más los baristas capacitados, más la postventa que educa, se refuerzan mutuamente para entregar una experiencia superior y consistente. Por eso un competidor que solo iguala el precio no captura a los clientes fieles: replicar el precio es fácil, pero copiar el sistema completo de actividades entrelazadas (relaciones con productores, know-how del tueste, formación del personal, cultura de servicio) es difícil y costoso. Esto se relaciona con la coordinación entre áreas funcionales: abastecimiento, operaciones, gestión de personas y marketing deben trabajar alineados; la ventaja es sistémica. Una ventaja sostenible surge de un conjunto coordinado de actividades y capacidades difíciles de imitar, no de un atributo puntual.",
+      criterios: [
+        { texto: "a) Explica el concepto de cadena de valor y distingue actividades primarias de las de apoyo.", peso: 3 },
+        { texto: "b) Identifica dos actividades donde CafeOrigen genera valor diferenciador, fundamentadas en el caso.", peso: 3 },
+        { texto: "c) Explica cómo la articulación entre actividades sostiene una ventaja difícil de imitar y la relaciona con la coordinación entre áreas.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Confundir actividades primarias con de apoyo.",
+        "Atribuir la ventaja a una sola actividad aislada en vez de a la articulación del sistema.",
+        "No fundamentar las actividades diferenciadoras con los datos del caso."
+      ]
+    },
+    {
+      id: "adm-104",
+      tema: "Caso integrador: nuevas tendencias, trabajo flexible y gestión por resultados",
+      dificultad: "dificil",
+      enunciado: "TalentiaTech, empresa de servicios digitales, adoptó teletrabajo y modalidades híbridas tras la pandemia. Algunos jefes, acostumbrados a controlar la presencia, desconfían y quieren exigir el regreso total a la oficina; los trabajadores valoran la flexibilidad y amenazan con irse. La productividad es dispar: algunos equipos rinden más y otros se desorganizaron.\n\na) Explique la tendencia del trabajo flexible (teletrabajo/híbrido) y dos (2) beneficios y dos (2) desafíos que implica para la gestión.\n\nb) Explique por qué el control basado en la presencia (control por acciones) es inadecuado para el teletrabajo y cómo la gestión por objetivos y el control por resultados lo resuelven.\n\nc) Proponga un modelo de dirección para TalentiaTech que combine liderazgo, motivación y control adecuados al trabajo flexible, con medidas concretas.",
+      respuestaModelo: "a) El trabajo flexible (teletrabajo y modalidades híbridas) es una tendencia que desliga el trabajo de un lugar y horario fijos, permitiendo trabajar a distancia total o parcialmente, apoyado en tecnologías digitales. Beneficios para la gestión (dos): 1) Acceso a talento sin límite geográfico y mejor retención, al ofrecer flexibilidad valorada (los trabajadores del caso la valoran y amenazan con irse sin ella). 2) Ahorro de costos de infraestructura y, bien gestionado, mayor productividad y conciliación. Desafíos (dos): 1) Coordinación, comunicación y cohesión del equipo a distancia (algunos equipos se desorganizaron). 2) Dificultad para supervisar y mantener la cultura; riesgo de aislamiento y de desdibujar los límites trabajo-vida.\n\nb) El control basado en la presencia (control por acciones: vigilar que la persona esté en la oficina y \"ocupada\") es inadecuado para el teletrabajo porque el jefe no puede observar directamente el trabajo y, sobre todo, porque la presencia no equivale a desempeño: estar sentado no garantiza resultados. Insistir en ello genera desconfianza y expulsa talento. La gestión por objetivos (APO) y el control por resultados lo resuelven: en lugar de controlar la presencia, se acuerdan objetivos claros y medibles con cada persona o equipo, se les da autonomía sobre cómo y dónde trabajar, y se evalúa por el cumplimiento de resultados. Así se puede dirigir a distancia sin microgestionar: se controla lo que importa (los resultados) y se otorga la flexibilidad que los trabajadores valoran.\n\nc) Modelo de dirección para TalentiaTech (combinando liderazgo, motivación y control):\n- Liderazgo: adoptar un liderazgo transformacional y de confianza, que comunique una visión clara, delegue y empodere; capacitar a los jefes desconfiados para dirigir por resultados en vez de por presencia (gestión del cambio con ellos).\n- Motivación: mantener la flexibilidad como factor valorado (retención), reconocer logros, dar autonomía (que motiva a trabajadores del conocimiento, alta necesidad de logro), y cuidar la conexión y el sentido de pertenencia con instancias presenciales periódicas y comunicación frecuente.\n- Control: implementar gestión por objetivos con metas SMART por equipo, indicadores de resultado y entregables, reuniones de seguimiento regulares y herramientas digitales de gestión de proyectos que den visibilidad del avance. Para los equipos que se desorganizaron, reforzar objetivos claros, coordinación y apoyo.\nEste modelo resuelve la tensión del caso: da flexibilidad (retiene talento) sin perder control (por resultados), y transforma la desconfianza de los jefes en una nueva forma de dirigir basada en objetivos y confianza.",
+      criterios: [
+        { texto: "a) Explica la tendencia del trabajo flexible con dos beneficios y dos desafíos para la gestión.", peso: 3 },
+        { texto: "b) Explica por qué el control por presencia es inadecuado y cómo la gestión por objetivos y el control por resultados lo resuelven.", peso: 3 },
+        { texto: "c) Propone un modelo de dirección que combine liderazgo, motivación y control con medidas concretas.", peso: 2 }
+      ],
+      erroresComunes: [
+        "Equiparar presencia con productividad y defender el control por presencia.",
+        "Proponer flexibilidad sin ningún mecanismo de control por resultados.",
+        "Omitir la gestión del cambio con los jefes que desconfían del teletrabajo."
+      ]
     }
   ]
 });
