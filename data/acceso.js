@@ -17,8 +17,8 @@ window.ACCESO = {
   // 1) Conexión a Supabase. Reemplaza los dos valores de ejemplo.
   //    supabaseUrl:  https://TUPROYECTO.supabase.co   (sin barra final)
   //    supabaseAnonKey:  la clave "anon public" (empieza con "eyJ...")
-  supabaseUrl: "https://TUPROYECTO.supabase.co",
-  supabaseAnonKey: "PEGA_AQUI_TU_CLAVE_ANON_PUBLIC",
+  supabaseUrl: "https://xluxhcvddeuigccycebv.supabase.co",
+  supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhsdXhoY3ZkZGV1aWdjY3ljZWJ2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ1NTUwNTQsImV4cCI6MjA5MDEzMTA1NH0.yJzesPK2WjBRweH6CTkWXbmfolxveGzW0dRoMuJyvHQ",
 
   // Schema aislado donde viven las tablas de esta app (no toca tu otro proyecto,
   // que está en el schema "public"). Debe estar en Supabase -> Settings -> API
