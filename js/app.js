@@ -6,6 +6,8 @@ const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_ACCESO = "examen-grado-acceso";
 const CLAVE_DEMO_USADA = "examen-grado-demo-usada";
+const CLAVE_NOMBRE = "examen-grado-nombre";
+const CLAVE_APELLIDO = "examen-grado-apellido";
 
 // ---------------------------------------------------------------------
 // Acceso freemium: demo hasta canjear un código (validado en Supabase).
@@ -92,8 +94,11 @@ function abrirModalAcceso(mensaje) {
   }
   $("#modal-estado").textContent = "";
   $("#modal-codigo").value = "";
+  // Prellenar el nombre/apellido si el usuario ya los había puesto antes
+  $("#modal-nombre").value = obtenerNombre();
+  $("#modal-apellido").value = obtenerApellido();
   $("#modal-acceso").classList.remove("hidden");
-  $("#modal-codigo").focus();
+  (obtenerNombre() ? $("#modal-codigo") : $("#modal-nombre")).focus();
 }
 
 function cerrarModalAcceso() {
@@ -115,6 +120,30 @@ function marcarDemoUsada() {
   reflejarAcceso();
 }
 
+// ---- Perfil ("cuenta" local: nombre + apellido, guardado en el navegador) ----
+function obtenerNombre() { return (localStorage.getItem(CLAVE_NOMBRE) || "").trim(); }
+function obtenerApellido() { return (localStorage.getItem(CLAVE_APELLIDO) || "").trim(); }
+function guardarPerfil(nombre, apellido) {
+  localStorage.setItem(CLAVE_NOMBRE, (nombre || "").trim());
+  localStorage.setItem(CLAVE_APELLIDO, (apellido || "").trim());
+}
+
+// Mensaje de bienvenida personalizado y motivador (elige uno al azar).
+function saludoPersonal(nombre) {
+  const n = nombre || "crack";
+  const mensajes = [
+    `¡Hola de nuevo, ${n}! 🎓 Hoy sumamos puntos para ese título.`,
+    `¡Qué bueno verte, ${n}! 💪 El 7,0 no se estudia solo… ¡vamos!`,
+    `¡Arriba, ${n}! ✨ Cada pregunta que practicas te acerca al grado.`,
+    `¡A darle, ${n}! 🧠 Tu yo del futuro te lo va a agradecer.`,
+    `¡${n}, qué gusto tenerte de vuelta! ☕ Respira, enfócate y a practicar.`,
+    `¡${n}, crack! 🔥 Un examen más y estás más cerca de aprobar.`,
+    `¡Vamos que se puede, ${n}! 🚀 El grado es tuyo, solo falta prepararlo.`,
+    `¡Hola, ${n}! 📚 No es suerte, es práctica — y aquí te sobra.`
+  ];
+  return mensajes[Math.floor(Math.random() * mensajes.length)];
+}
+
 // Actualiza la interfaz según el estado de acceso (demo vs completo)
 function reflejarAcceso() {
   const libre = estaDesbloqueado();
@@ -132,6 +161,17 @@ function reflejarAcceso() {
   if (chipOficial) {
     chipOficial.classList.toggle("chip-bloqueado", !libre);
     chipOficial.textContent = libre ? "🏛️ Examen oficial (formato real)" : "🔒 Examen oficial (acceso completo)";
+  }
+
+  // Saludo personalizado en el inicio (si tiene cuenta y acceso completo)
+  const saludoEl = $("#saludo-inicio");
+  if (saludoEl) {
+    if (libre && obtenerNombre()) {
+      saludoEl.textContent = saludoPersonal(obtenerNombre());
+      saludoEl.classList.remove("hidden");
+    } else {
+      saludoEl.classList.add("hidden");
+    }
   }
 
   // Pantalla de inicio: botones según estado (pagado / demo usada / demo disponible)
@@ -204,10 +244,19 @@ function iniciarAcceso() {
 async function canjearYReflejar() {
   const boton = $("#modal-validar");
   const estado = $("#modal-estado");
+  const nombre = $("#modal-nombre").value.trim();
+  const apellido = $("#modal-apellido").value.trim();
   const codigo = $("#modal-codigo").value;
-  if (!codigo.trim()) {
-    estado.textContent = "Escribe tu código primero.";
+  if (!nombre) {
+    estado.textContent = "Escribe tu nombre para crear tu acceso.";
     estado.style.color = "var(--peligro)";
+    $("#modal-nombre").focus();
+    return;
+  }
+  if (!codigo.trim()) {
+    estado.textContent = "Escribe tu código de acceso.";
+    estado.style.color = "var(--peligro)";
+    $("#modal-codigo").focus();
     return;
   }
   boton.disabled = true;
@@ -216,12 +265,13 @@ async function canjearYReflejar() {
   const r = await canjearCodigo(codigo);
   boton.disabled = false;
   if (r.ok) {
+    guardarPerfil(nombre, apellido);
     desbloquear();
     estado.textContent = r.tipo === "cortesia"
-      ? "🎁 ¡Acceso cortesía activado! Ya tienes las más de 500 preguntas."
-      : "✅ ¡Acceso desbloqueado! Ya tienes las más de 500 preguntas.";
+      ? `🎁 ¡Listo, ${nombre}! Acceso cortesía activado — ya tienes las más de 500 preguntas.`
+      : `🎉 ¡Listo, ${nombre}! Tu acceso quedó activo — ya tienes las más de 500 preguntas.`;
     estado.style.color = "var(--exito)";
-    setTimeout(cerrarModalAcceso, 1500);
+    setTimeout(cerrarModalAcceso, 1800);
   } else {
     const mensajes = {
       invalido: "❌ Código no válido. Revisa que esté bien escrito.",
