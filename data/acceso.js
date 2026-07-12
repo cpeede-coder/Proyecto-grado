@@ -25,9 +25,13 @@ window.ACCESO = {
   // -> Exposed schemas. Déjalo tal cual si corriste el SQL sin cambiar el nombre.
   supabaseSchema: "examen_grado",
 
-  // 2) Mensaje que se muestra al usuario cuando quiere obtener acceso completo.
-  //    Edita esto con tu forma de contacto/pago (Instagram, WhatsApp, precio).
-  contactoCompra: "Para desbloquear las 228 preguntas, el modo Examen Oficial y la corrección con IA, escríbeme por Instagram @tu_cuenta o WhatsApp +569 XXXX XXXX. Acceso único: $XXXX.",
+  // 2) Mensaje de venta (se muestra cuando el usuario quiere acceso completo).
+  contactoCompra: "Acceso completo por $5.000 (pago único): las 228 preguntas, el modo Examen Oficial y la corrección con IA. Escríbeme por WhatsApp y te envío tu código de acceso.",
+
+  // Número de WhatsApp (solo dígitos, con código de país). Se muestra como botón.
+  whatsapp: "56998957273",
+  // Texto que viene escrito al abrir el chat de WhatsApp.
+  whatsappTexto: "Hola, quiero el acceso completo al Simulador Examen de Grado ($5.000).",
 
   // 3) Cuántas preguntas por materia se ven en la versión demo (gratis).
   demoPorMateria: 4

@@ -74,7 +74,21 @@ function limitarDemo(preguntas) {
 
 function abrirModalAcceso(mensaje) {
   $("#modal-mensaje").textContent = mensaje || "Con el acceso completo desbloqueas las 228 preguntas, el modo Examen Oficial y la corrección con IA.";
-  $("#modal-contacto").textContent = window.ACCESO.contactoCompra;
+  // Mensaje de venta + botón de WhatsApp (si hay número configurado).
+  const cont = $("#modal-contacto");
+  cont.textContent = window.ACCESO.contactoCompra || "";
+  const numero = (window.ACCESO.whatsapp || "").replace(/\D/g, "");
+  if (numero) {
+    const texto = encodeURIComponent(window.ACCESO.whatsappTexto || "Hola, quiero el acceso completo.");
+    const a = document.createElement("a");
+    a.href = `https://wa.me/${numero}?text=${texto}`;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.textContent = "📱 Escríbeme por WhatsApp";
+    a.style.cssText = "display:inline-block;margin-top:12px;padding:10px 18px;background:#25D366;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;";
+    cont.appendChild(document.createElement("br"));
+    cont.appendChild(a);
+  }
   $("#modal-estado").textContent = "";
   $("#modal-codigo").value = "";
   $("#modal-acceso").classList.remove("hidden");
