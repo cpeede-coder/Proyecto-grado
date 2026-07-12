@@ -177,7 +177,8 @@ const MINUTOS_OFICIAL = 220; // ~2,2 min por punto, como el examen real
 const EXIGENCIA = 0.6; // 60% para nota 4.0 (escala chilena 1.0 - 7.0)
 
 const estado = {
-  materiaId: null,
+  materias: [],        // ids de materias elegidas (modo normal, una o varias)
+  modoOficial: false,  // true cuando está elegido el Examen oficial
   dificultad: "media",
   numPreguntas: 5,
   usarTimer: true,
@@ -240,20 +241,37 @@ function iniciarConfig() {
     ...BANCO.materias.map(m => ({ id: m.id, nombre: m.nombre })),
     { id: "todas", nombre: "🎯 Mix libre (todas)" }
   ];
-  opciones.forEach((m, i) => {
+  const todosLosIds = BANCO.materias.map(m => m.id);
+  opciones.forEach((m) => {
     const btn = document.createElement("button");
-    btn.className = "chip" + (i === 0 ? " seleccionado" : "");
+    btn.className = "chip";
     btn.textContent = m.nombre;
     btn.dataset.materia = m.id;
     btn.addEventListener("click", () => {
-      contenedor.querySelectorAll(".chip").forEach(c => c.classList.remove("seleccionado"));
-      btn.classList.add("seleccionado");
-      estado.materiaId = m.id;
+      if (m.id === "oficial") {
+        // Modo especial y exclusivo: deselecciona todas las materias.
+        estado.modoOficial = true;
+        estado.materias = [];
+      } else if (m.id === "todas") {
+        // Atajo: selecciona todas las materias.
+        estado.modoOficial = false;
+        estado.materias = todosLosIds.slice();
+      } else {
+        // Materia individual: se agrega o se quita (selección múltiple).
+        estado.modoOficial = false;
+        estado.materias = estado.materias.includes(m.id)
+          ? estado.materias.filter(id => id !== m.id)
+          : [...estado.materias, m.id];
+      }
+      pintarChipsMateria();
       actualizarModoConfig();
     });
     contenedor.appendChild(btn);
   });
-  estado.materiaId = opciones[0]?.id ?? null;
+  // Por defecto: Examen oficial seleccionado (como antes).
+  estado.modoOficial = true;
+  estado.materias = [];
+  pintarChipsMateria();
   actualizarModoConfig();
 
   $("#lista-dificultad").querySelectorAll(".chip").forEach(btn => {
@@ -286,9 +304,27 @@ function iniciarConfig() {
 // ---------------------------------------------------------------------
 // Pantalla: examen
 // ---------------------------------------------------------------------
+// Refleja en los chips qué está seleccionado (oficial, materias y "todas")
+function pintarChipsMateria() {
+  const contenedor = $("#lista-materias");
+  const total = BANCO.materias.length;
+  contenedor.querySelectorAll(".chip").forEach(chip => {
+    const id = chip.dataset.materia;
+    let activo;
+    if (id === "oficial") {
+      activo = estado.modoOficial;
+    } else if (id === "todas") {
+      activo = !estado.modoOficial && estado.materias.length === total && total > 0;
+    } else {
+      activo = !estado.modoOficial && estado.materias.includes(id);
+    }
+    chip.classList.toggle("seleccionado", activo);
+  });
+}
+
 // Muestra/oculta los controles que no aplican al modo examen oficial
 function actualizarModoConfig() {
-  const oficial = estado.materiaId === "oficial";
+  const oficial = estado.modoOficial;
   $("#nota-oficial").classList.toggle("hidden", !oficial);
   $("#campo-dificultad").classList.toggle("hidden", oficial);
   $("#campo-num").classList.toggle("hidden", oficial);
@@ -310,18 +346,21 @@ function construirExamenOficial() {
   return preguntas;
 }
 
+// Une las preguntas de todas las materias elegidas. Si hay más de una,
+// antepone el nombre de la materia al tema para poder distinguirlas.
 function obtenerPoolPreguntas() {
-  if (estado.materiaId === "todas") {
-    return BANCO.materias.flatMap(m =>
-      limitarDemo(m.preguntas).map(p => ({ ...p, tema: `${m.nombre} · ${p.tema}` })));
-  }
-  const materia = BANCO.materias.find(m => m.id === estado.materiaId);
-  return materia ? limitarDemo(materia.preguntas) : [];
+  const materias = BANCO.materias.filter(m => estado.materias.includes(m.id));
+  const multi = materias.length > 1;
+  return materias.flatMap(m =>
+    limitarDemo(m.preguntas).map(p => ({
+      ...p,
+      materiaId: m.id,
+      materiaNombre: m.nombre,
+      tema: multi ? `${m.nombre} · ${p.tema}` : p.tema
+    })));
 }
 
 function comenzarExamen() {
-  estado.modoOficial = estado.materiaId === "oficial";
-
   if (estado.modoOficial && !estaDesbloqueado()) {
     abrirModalAcceso("El modo Examen Oficial es parte del acceso completo.");
     return;
@@ -331,13 +370,17 @@ function comenzarExamen() {
     estado.preguntas = construirExamenOficial();
     if (estado.preguntas.length === 0) return;
   } else {
+    if (estado.materias.length === 0) {
+      alert("Elige al menos una materia (o el Examen oficial / Mix libre).");
+      return;
+    }
     let disponibles = obtenerPoolPreguntas();
     if (disponibles.length === 0) return;
     if (estado.dificultad !== "mixta") {
       disponibles = disponibles.filter(p => p.dificultad === estado.dificultad);
     }
     if (disponibles.length === 0) {
-      alert("No hay preguntas con esa dificultad en esta materia. Prueba con dificultad 'Mixta'.");
+      alert("No hay preguntas con esa dificultad en las materias elegidas. Prueba con dificultad 'Mixta'.");
       return;
     }
     estado.preguntas = barajar(disponibles).slice(0, estado.numPreguntas);
@@ -582,14 +625,20 @@ function leerHistorial() {
 
 function guardarEnHistorial(r) {
   const historial = leerHistorial();
-  const materia = estado.materiaId === "todas"
-    ? { nombre: "Mix libre" }
-    : estado.materiaId === "oficial"
-      ? { nombre: "🏛️ Examen oficial" }
-      : BANCO.materias.find(m => m.id === estado.materiaId);
+  const total = BANCO.materias.length;
+  let etiquetaMateria;
+  if (estado.modoOficial) {
+    etiquetaMateria = "🏛️ Examen oficial";
+  } else if (estado.materias.length === total) {
+    etiquetaMateria = "Mix libre";
+  } else if (estado.materias.length === 1) {
+    etiquetaMateria = BANCO.materias.find(m => m.id === estado.materias[0])?.nombre ?? "—";
+  } else {
+    etiquetaMateria = `${estado.materias.length} materias`;
+  }
   historial.unshift({
     fecha: new Date().toISOString(),
-    materia: materia?.nombre ?? "—",
+    materia: etiquetaMateria,
     dificultad: estado.dificultad,
     numPreguntas: estado.preguntas.length,
     porcentaje: Math.round(r.porcentaje * 100),

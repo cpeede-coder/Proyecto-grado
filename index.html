@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="topbar">
-    <h1>🎓 Simulador Examen de Grado <span class="version-app">v13</span></h1>
+    <h1>🎓 Simulador Examen de Grado <span class="version-app">v14</span></h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
       <button id="btn-tema" class="btn-tema" title="Cambiar tema claro/oscuro">☀️</button>
@@ -36,8 +36,9 @@
         <h2 id="titulo-config">Configura tu examen</h2>
 
         <div class="campo">
-          <label>Materia</label>
+          <label>Materias</label>
           <div id="lista-materias" class="chips"></div>
+          <p class="ayuda">Puedes elegir <strong>una o varias</strong> materias (toca para agregar o quitar). O usa <strong>🎯 Mix libre</strong> para todas, o <strong>🏛️ Examen oficial</strong> para el formato real.</p>
           <p id="nota-oficial" class="ayuda hidden">🏛️ <strong>Formato del examen real:</strong> 14 preguntas — Economía 4, Gestión de Personas 3, Marketing 3, Administración 2 y Estrategia 2 — cada área vale 20 puntos (total 100). Solo preguntas de dificultad media y difícil, agrupadas por área. Con tiempo límite activado: 220 minutos en total (~2,2 min por punto, como el examen oficial).</p>
         </div>
 
@@ -209,6 +210,6 @@
   <script src="data/materias/estrategia.js?v=2"></script>
   <script src="data/materias/gestion-personas.js?v=2"></script>
   <script src="data/materias/marketing.js?v=2"></script>
-  <script src="js/app.js?v=13"></script>
+  <script src="js/app.js?v=14"></script>
 </body>
 </html>
