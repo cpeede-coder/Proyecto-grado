@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=16">
+  <link rel="stylesheet" href="css/styles.css?v=18">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v17</span>
+      <span class="version-app">v18</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -24,8 +24,29 @@
 
   <main id="app">
 
+    <!-- ============ PANTALLA: INICIO / BIENVENIDA ============ -->
+    <section id="pantalla-inicio" class="pantalla">
+      <div class="hero card">
+        <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="hero-logo">
+        <h2 class="hero-titulo">Prepárate para el Examen de Grado de Ingeniería Comercial</h2>
+        <p class="hero-sub">APROBA2 es tu simulador de práctica: rinde exámenes de desarrollo como los reales, autoevalúate con pautas oficiales y mejora hasta aprobar. Todo en español, sin registro.</p>
+        <ul class="hero-features">
+          <li><span>📚</span> <div><strong>+500 preguntas</strong> de las 5 materias: Economía, Administración, Gestión de Personas, Estrategia y Marketing.</div></li>
+          <li><span>🏛️</span> <div><strong>Examen Oficial</strong> que replica el formato real: 14 preguntas, 20 puntos por área.</div></li>
+          <li><span>✍️</span> <div><strong>Corrección guiada</strong> con pauta y nota (escala 1.0–7.0), más <strong>corrección con IA</strong> opcional.</div></li>
+          <li><span>⭐</span> <div>Preguntas marcadas como <strong>vistas en exámenes reales</strong>, el material de máxima prioridad.</div></li>
+        </ul>
+        <div class="hero-cta">
+          <button id="btn-inicio-demo" class="btn-primario">🎁 Probar demo gratis</button>
+          <button id="btn-inicio-pagar" class="btn-secundario">🔓 Acceso completo — $5.000</button>
+        </div>
+        <p id="inicio-nota" class="ayuda"></p>
+        <p class="hero-pie ayuda">¿Ya tienes un código? <button id="btn-inicio-codigo" class="enlace-inline">Ingrésalo aquí</button>.</p>
+      </div>
+    </section>
+
     <!-- ============ PANTALLA: CONFIGURACIÓN ============ -->
-    <section id="pantalla-config" class="pantalla">
+    <section id="pantalla-config" class="pantalla hidden">
       <div id="banner-demo" class="banner-demo hidden">
         <div id="banner-demo-texto">
           <strong>🎁 Prueba gratis</strong> — tienes <strong>1 examen de práctica gratis</strong>. Después, desbloquea las <strong>+500 preguntas</strong>, el <strong>Examen Oficial</strong> y la <strong>corrección con IA</strong>.
@@ -72,6 +93,7 @@
         <button id="btn-comenzar" class="btn-primario">Comenzar examen</button>
         <button id="btn-ver-banco" class="btn-secundario">📚 Explorar banco</button>
         <button id="btn-ver-historial" class="btn-secundario">Ver historial</button>
+        <button id="btn-inicio-volver" class="btn-secundario">← Inicio</button>
       </div>
 
       <div class="card">
@@ -214,6 +236,6 @@
   <script src="data/materias/estrategia.js?v=3"></script>
   <script src="data/materias/gestion-personas.js?v=3"></script>
   <script src="data/materias/marketing.js?v=3"></script>
-  <script src="js/app.js?v=17"></script>
+  <script src="js/app.js?v=18"></script>
 </body>
 </html>

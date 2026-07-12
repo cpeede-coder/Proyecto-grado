@@ -133,6 +133,57 @@ function reflejarAcceso() {
     chipOficial.classList.toggle("chip-bloqueado", !libre);
     chipOficial.textContent = libre ? "🏛️ Examen oficial (formato real)" : "🔒 Examen oficial (acceso completo)";
   }
+
+  // Pantalla de inicio: botones según estado (pagado / demo usada / demo disponible)
+  const btnDemo = $("#btn-inicio-demo");
+  const btnPagar = $("#btn-inicio-pagar");
+  const notaInicio = $("#inicio-nota");
+  if (btnDemo && btnPagar && notaInicio) {
+    if (libre) {
+      btnDemo.textContent = "Entrar a practicar";
+      btnDemo.disabled = false;
+      btnPagar.classList.add("hidden");
+      notaInicio.textContent = "✅ Acceso completo activo. ¡A estudiar!";
+    } else if (demoUsada()) {
+      btnDemo.textContent = "🔒 Ya usaste tu prueba gratis";
+      btnDemo.disabled = true;
+      btnPagar.classList.remove("hidden");
+      btnPagar.textContent = "🔓 Desbloquear acceso completo — $5.000";
+      btnPagar.classList.remove("btn-secundario");
+      btnPagar.classList.add("btn-primario");
+      notaInicio.textContent = "Desbloquea las +500 preguntas, el Examen Oficial y la corrección con IA por $5.000 (pago único).";
+    } else {
+      btnDemo.textContent = "🎁 Probar demo gratis";
+      btnDemo.disabled = false;
+      btnPagar.classList.remove("hidden");
+      btnPagar.textContent = "🔓 Acceso completo — $5.000";
+      btnPagar.classList.remove("btn-primario");
+      btnPagar.classList.add("btn-secundario");
+      notaInicio.textContent = "La demo incluye 1 examen de práctica gratis, sin registro.";
+    }
+  }
+}
+
+// Pantalla de inicio: navegación y llamadas a la acción
+function iniciarInicio() {
+  $("#btn-inicio-demo").addEventListener("click", () => {
+    if (!estaDesbloqueado() && demoUsada()) {
+      abrirModalAcceso("🔒 Ya usaste tu prueba gratis. Desbloquea el acceso completo por $5.000 (pago único): más de 500 preguntas, el Examen Oficial y la corrección con IA.");
+      return;
+    }
+    mostrarPantalla("pantalla-config");
+  });
+  $("#btn-inicio-pagar").addEventListener("click", () => abrirModalAcceso());
+  $("#btn-inicio-codigo").addEventListener("click", () => abrirModalAcceso());
+  $("#btn-inicio-volver").addEventListener("click", () => mostrarPantalla("pantalla-inicio"));
+  // El logo de la barra lleva al inicio
+  const marca = document.querySelector(".marca");
+  if (marca) {
+    marca.style.cursor = "pointer";
+    marca.title = "Ir al inicio";
+    marca.addEventListener("click", () => mostrarPantalla("pantalla-inicio"));
+  }
+  reflejarAcceso();
 }
 
 function iniciarAcceso() {
@@ -1101,4 +1152,5 @@ iniciarConfig();
 iniciarBanco();
 iniciarIA();
 iniciarAcceso();
+iniciarInicio();
 iniciarEventos();

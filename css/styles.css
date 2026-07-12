@@ -81,6 +81,37 @@ body {
   gap: 10px;
 }
 
+/* ===== Pantalla de inicio (landing) ===== */
+.hero { text-align: center; max-width: 720px; margin: 0 auto; }
+.hero-logo {
+  width: 300px; max-width: 82%; height: auto;
+  border-radius: 12px; display: block; margin: 4px auto 20px;
+}
+.hero-titulo { font-family: var(--serif); font-size: 1.55rem; line-height: 1.25; margin: 0 0 12px; }
+.hero-sub {
+  color: var(--texto-suave); font-size: 1.02rem; line-height: 1.55;
+  margin: 0 auto 24px; max-width: 620px;
+}
+.hero-features {
+  list-style: none; padding: 0; margin: 0 auto 26px; max-width: 560px;
+  text-align: left; display: grid; gap: 13px;
+}
+.hero-features li { display: flex; gap: 12px; align-items: flex-start; }
+.hero-features li span { font-size: 1.3rem; line-height: 1.35; flex-shrink: 0; }
+.hero-features li div { line-height: 1.45; }
+.hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.hero-cta .btn-primario, .hero-cta .btn-secundario { font-size: 1.05rem; padding: 13px 26px; }
+.hero-pie { margin-top: 16px; }
+.enlace-inline {
+  background: none; border: none; color: var(--primario);
+  cursor: pointer; text-decoration: underline; font: inherit; padding: 0;
+}
+@media (max-width: 600px) {
+  .hero-titulo { font-size: 1.28rem; }
+  .hero-cta { flex-direction: column; }
+  .hero-cta button { width: 100%; }
+}
+
 .logo-app {
   height: 46px;
   width: auto;
