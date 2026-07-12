@@ -493,9 +493,10 @@ body.vista-amplia main {
   background: rgba(6, 12, 14, 0.6);
   backdrop-filter: blur(3px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 20px;
+  overflow-y: auto;
   z-index: 100;
 }
 .modal-caja {
@@ -505,8 +506,13 @@ body.vista-amplia main {
   padding: 28px;
   max-width: 460px;
   width: 100%;
+  margin: auto;
   position: relative;
   box-shadow: var(--sombra);
+}
+@media (max-width: 600px) {
+  .modal-fondo { padding: 12px; }
+  .modal-caja { padding: 22px 18px; }
 }
 .modal-cerrar {
   position: absolute;
