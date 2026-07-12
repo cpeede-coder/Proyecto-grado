@@ -4,6 +4,98 @@
 
 const CLAVE_HISTORIAL = "examen-grado-historial";
 const CLAVE_TEMA = "examen-grado-tema";
+const CLAVE_ACCESO = "examen-grado-acceso";
+
+// ---------------------------------------------------------------------
+// Acceso freemium: demo hasta ingresar un código válido
+// ---------------------------------------------------------------------
+function cyrb53(str, seed = 0) {
+  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+  for (let i = 0, ch; i < str.length; i++) {
+    ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507);
+  h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507);
+  h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+}
+
+function estaDesbloqueado() {
+  return localStorage.getItem(CLAVE_ACCESO) === "1";
+}
+
+// Valida un código: normaliza, hashea y compara contra las huellas
+function validarCodigo(codigo) {
+  const limpio = (codigo || "").trim().toUpperCase().replace(/\s+/g, "");
+  if (!limpio) return false;
+  const hash = cyrb53(limpio + window.ACCESO.salt);
+  return window.ACCESO.hashes.includes(hash);
+}
+
+// Limita una lista de preguntas al cupo demo cuando está bloqueado
+function limitarDemo(preguntas) {
+  return estaDesbloqueado() ? preguntas : preguntas.slice(0, window.ACCESO.demoPorMateria);
+}
+
+function abrirModalAcceso(mensaje) {
+  $("#modal-mensaje").textContent = mensaje || "Con el acceso completo desbloqueas las 228 preguntas, el modo Examen Oficial y la corrección con IA.";
+  $("#modal-contacto").textContent = window.ACCESO.contactoCompra;
+  $("#modal-estado").textContent = "";
+  $("#modal-codigo").value = "";
+  $("#modal-acceso").classList.remove("hidden");
+  $("#modal-codigo").focus();
+}
+
+function cerrarModalAcceso() {
+  $("#modal-acceso").classList.add("hidden");
+}
+
+function desbloquear() {
+  localStorage.setItem(CLAVE_ACCESO, "1");
+  reflejarAcceso();
+}
+
+// Actualiza la interfaz según el estado de acceso (demo vs completo)
+function reflejarAcceso() {
+  const libre = estaDesbloqueado();
+  $("#banner-demo").classList.toggle("hidden", libre);
+  $("#titulo-config").textContent = libre ? "Configura tu examen" : "Configura tu examen (versión demo)";
+  // Marca el chip de examen oficial como bloqueado cuando está en demo
+  const chipOficial = document.querySelector('#lista-materias .chip[data-materia="oficial"]');
+  if (chipOficial) {
+    chipOficial.classList.toggle("chip-bloqueado", !libre);
+    chipOficial.textContent = libre ? "🏛️ Examen oficial (formato real)" : "🔒 Examen oficial (acceso completo)";
+  }
+}
+
+function iniciarAcceso() {
+  $("#btn-ingresar-codigo").addEventListener("click", () => abrirModalAcceso());
+  $("#btn-como-obtener").addEventListener("click", () => abrirModalAcceso());
+  $("#modal-cerrar").addEventListener("click", cerrarModalAcceso);
+  $("#modal-acceso").addEventListener("click", (e) => {
+    if (e.target === $("#modal-acceso")) cerrarModalAcceso();
+  });
+  $("#modal-validar").addEventListener("click", () => {
+    const codigo = $("#modal-codigo").value;
+    if (validarCodigo(codigo)) {
+      desbloquear();
+      $("#modal-estado").textContent = "✅ ¡Acceso desbloqueado! Ya tienes las 228 preguntas.";
+      $("#modal-estado").style.color = "var(--exito)";
+      setTimeout(cerrarModalAcceso, 1400);
+    } else {
+      $("#modal-estado").textContent = "❌ Código no válido. Revisa que esté bien escrito.";
+      $("#modal-estado").style.color = "var(--peligro)";
+    }
+  });
+  $("#modal-codigo").addEventListener("keydown", (e) => {
+    if (e.key === "Enter") $("#modal-validar").click();
+  });
+  reflejarAcceso();
+}
+
 const CLAVE_GEMINI = "examen-grado-gemini-key";
 const CLAVE_MODELO_GEMINI = "examen-grado-gemini-modelo";
 // Se prueban en orden hasta encontrar uno disponible para la cuenta;
@@ -165,14 +257,19 @@ function construirExamenOficial() {
 function obtenerPoolPreguntas() {
   if (estado.materiaId === "todas") {
     return BANCO.materias.flatMap(m =>
-      m.preguntas.map(p => ({ ...p, tema: `${m.nombre} · ${p.tema}` })));
+      limitarDemo(m.preguntas).map(p => ({ ...p, tema: `${m.nombre} · ${p.tema}` })));
   }
   const materia = BANCO.materias.find(m => m.id === estado.materiaId);
-  return materia ? materia.preguntas : [];
+  return materia ? limitarDemo(materia.preguntas) : [];
 }
 
 function comenzarExamen() {
   estado.modoOficial = estado.materiaId === "oficial";
+
+  if (estado.modoOficial && !estaDesbloqueado()) {
+    abrirModalAcceso("El modo Examen Oficial es parte del acceso completo.");
+    return;
+  }
 
   if (estado.modoOficial) {
     estado.preguntas = construirExamenOficial();
@@ -258,7 +355,7 @@ function irACorreccion() {
   clearInterval(estado.timerId);
   $("#timer").classList.add("hidden");
   renderCorreccion();
-  $("#btn-corregir-ia").classList.toggle("hidden", !obtenerGeminiKey());
+  $("#btn-corregir-ia").classList.toggle("hidden", !obtenerGeminiKey() || !estaDesbloqueado());
   $("#btn-corregir-ia").disabled = false;
   $("#ia-progreso").classList.add("hidden");
   mostrarPantalla("pantalla-correccion");
@@ -542,7 +639,7 @@ function iniciarBanco() {
 function renderBanco() {
   const lista = $("#banco-lista");
   let preguntas = BANCO.materias.flatMap(m =>
-    m.preguntas.map(p => ({ ...p, materiaId: m.id, materiaNombre: m.nombre })));
+    limitarDemo(m.preguntas).map(p => ({ ...p, materiaId: m.id, materiaNombre: m.nombre })));
 
   if (bancoFiltro.materia !== "todas") {
     preguntas = preguntas.filter(p => p.materiaId === bancoFiltro.materia);
@@ -564,7 +661,12 @@ function renderBanco() {
   }
 
   const total = BANCO.materias.reduce((s, m) => s + m.preguntas.length, 0);
-  $("#banco-contador").textContent = `Mostrando ${preguntas.length} de ${total} preguntas.`;
+  const disponibles = estaDesbloqueado()
+    ? total
+    : BANCO.materias.reduce((s, m) => s + limitarDemo(m.preguntas).length, 0);
+  $("#banco-contador").textContent = estaDesbloqueado()
+    ? `Mostrando ${preguntas.length} de ${total} preguntas.`
+    : `Versión demo: mostrando ${preguntas.length} de ${disponibles} preguntas disponibles (${total - disponibles} más con el acceso completo).`;
 
   lista.innerHTML = preguntas.map(p => {
     const criteriosHtml = p.criterios.map(c =>
@@ -852,4 +954,5 @@ iniciarTema();
 iniciarConfig();
 iniciarBanco();
 iniciarIA();
+iniciarAcceso();
 iniciarEventos();
