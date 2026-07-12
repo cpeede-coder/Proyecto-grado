@@ -43,13 +43,20 @@ async function canjearCodigo(codigo) {
   if (!supabaseConfigurado()) return { ok: false, motivo: "config" };
   try {
     const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/redeem_code";
+    const headers = {
+      "apikey": window.ACCESO.supabaseAnonKey,
+      "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+      "Content-Type": "application/json"
+    };
+    // Si la app usa un schema aislado, hay que decirle a Supabase cuál (PostgREST).
+    const schema = (window.ACCESO.supabaseSchema || "").trim();
+    if (schema) {
+      headers["Content-Profile"] = schema;
+      headers["Accept-Profile"] = schema;
+    }
     const res = await fetch(url, {
       method: "POST",
-      headers: {
-        "apikey": window.ACCESO.supabaseAnonKey,
-        "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
-        "Content-Type": "application/json"
-      },
+      headers,
       body: JSON.stringify({ p_codigo: limpio, p_device: obtenerDeviceId() })
     });
     if (!res.ok) return { ok: false, motivo: "red" };

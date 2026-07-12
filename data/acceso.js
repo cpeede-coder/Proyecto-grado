@@ -20,6 +20,11 @@ window.ACCESO = {
   supabaseUrl: "https://TUPROYECTO.supabase.co",
   supabaseAnonKey: "PEGA_AQUI_TU_CLAVE_ANON_PUBLIC",
 
+  // Schema aislado donde viven las tablas de esta app (no toca tu otro proyecto,
+  // que está en el schema "public"). Debe estar en Supabase -> Settings -> API
+  // -> Exposed schemas. Déjalo tal cual si corriste el SQL sin cambiar el nombre.
+  supabaseSchema: "examen_grado",
+
   // 2) Mensaje que se muestra al usuario cuando quiere obtener acceso completo.
   //    Edita esto con tu forma de contacto/pago (Instagram, WhatsApp, precio).
   contactoCompra: "Para desbloquear las 228 preguntas, el modo Examen Oficial y la corrección con IA, escríbeme por Instagram @tu_cuenta o WhatsApp +569 XXXX XXXX. Acceso único: $XXXX.",
