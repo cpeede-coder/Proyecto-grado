@@ -17,6 +17,10 @@ SUPABASE-*.sql
 # Material de venta personal — no es parte de la app
 PROMO-APROBA2.txt
 
+# Preguntas premium exportadas para Supabase — NO deben volver al repo público
+preguntas-premium.csv
+scratch-demo.json
+
 # Archivos temporales de Office y sistema
 ~$*
 Thumbs.db
