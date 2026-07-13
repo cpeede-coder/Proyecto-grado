@@ -11,8 +11,8 @@ Temarios y Plantillas examen grado/
 
 # Códigos de acceso en texto — PRIVADOS, nunca se publican
 MIS-CODIGOS-PRIVADOS.txt
-# Script SQL con los códigos en texto para cargar en Supabase — PRIVADO
-SUPABASE-SETUP-PRIVADO.sql
+# Scripts SQL con los códigos en texto para cargar en Supabase — PRIVADOS
+SUPABASE-*.sql
 
 # Archivos temporales de Office y sistema
 ~$*
