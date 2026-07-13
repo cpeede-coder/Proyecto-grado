@@ -409,15 +409,31 @@ body.vista-amplia main {
 .criterio {
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 9px 12px;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.15s ease;
 }
-.criterio:hover { background: var(--primario-tinte); }
-.criterio input { margin-top: 5px; accent-color: var(--exito); transform: scale(1.15); }
+.criterio-texto { flex: 1 1 260px; min-width: 200px; }
 .criterio em { color: var(--texto-suave); font-style: normal; font-size: 0.85rem; }
+.criterio-niveles { display: inline-flex; gap: 4px; flex-shrink: 0; }
+.nivel {
+  border: 1px solid var(--borde);
+  background: var(--fondo);
+  color: var(--texto-suave);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+.nivel:hover { border-color: var(--primario); }
+.nivel-no.seleccionado      { background: var(--peligro);     border-color: var(--peligro);     color: #fff; }
+.nivel-parcial.seleccionado { background: var(--advertencia); border-color: var(--advertencia); color: #1a1200; }
+.nivel-si.seleccionado      { background: var(--exito);       border-color: var(--exito);       color: #04140b; }
+.ia-parcial { color: var(--advertencia); font-weight: 700; }
 
 .errores-comunes {
   border-left: 3px solid var(--advertencia);

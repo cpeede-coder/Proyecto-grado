@@ -601,7 +601,7 @@ async function comenzarExamen() {
   }
 
   estado.respuestas = estado.preguntas.map(() => "");
-  estado.criteriosMarcados = estado.preguntas.map(() => new Set());
+  estado.criteriosMarcados = estado.preguntas.map(() => new Map()); // índice criterio -> nivel (0 | 0.5 | 1)
   estado.indice = 0;
 
   if (estado.usarTimer) {
@@ -690,10 +690,14 @@ function renderCorreccion() {
 
     const respuesta = estado.respuestas[i].trim();
     const criteriosHtml = p.criterios.map((c, j) => `
-      <label class="criterio">
-        <input type="checkbox" data-pregunta="${i}" data-criterio="${j}">
-        <span>${escaparHtml(c.texto)} <em>(${c.peso} pts)</em></span>
-      </label>
+      <div class="criterio">
+        <div class="criterio-texto">${escaparHtml(c.texto)} <em>(${c.peso} pts)</em></div>
+        <div class="criterio-niveles" data-pregunta="${i}" data-criterio="${j}">
+          <button type="button" class="nivel nivel-no seleccionado" data-nivel="0">✘ No</button>
+          <button type="button" class="nivel nivel-parcial" data-nivel="0.5">◐ Parcial</button>
+          <button type="button" class="nivel nivel-si" data-nivel="1">✔ Sí</button>
+        </div>
+      </div>
     `).join("");
 
     const erroresHtml = (p.erroresComunes ?? []).map(e =>
@@ -720,7 +724,7 @@ function renderCorreccion() {
         </div>
       </div>
 
-      <div class="subtitulo">Pauta — marca lo que tu respuesta sí cubrió</div>
+      <div class="subtitulo">Pauta — marca cuánto cubrió tu respuesta en cada criterio</div>
       ${criteriosHtml}
 
       <div class="subtitulo">Errores comunes</div>
@@ -729,12 +733,14 @@ function renderCorreccion() {
     contenedor.appendChild(card);
   });
 
-  contenedor.querySelectorAll("input[type=checkbox]").forEach(chk => {
-    chk.addEventListener("change", () => {
-      const i = Number(chk.dataset.pregunta);
-      const j = Number(chk.dataset.criterio);
-      if (chk.checked) estado.criteriosMarcados[i].add(j);
-      else estado.criteriosMarcados[i].delete(j);
+  contenedor.querySelectorAll(".criterio-niveles").forEach(grupo => {
+    const i = Number(grupo.dataset.pregunta);
+    const j = Number(grupo.dataset.criterio);
+    grupo.querySelectorAll(".nivel").forEach(btn => {
+      btn.addEventListener("click", () => {
+        estado.criteriosMarcados[i].set(j, Number(btn.dataset.nivel));
+        grupo.querySelectorAll(".nivel").forEach(b => b.classList.toggle("seleccionado", b === btn));
+      });
     });
   });
 }
@@ -746,7 +752,7 @@ function calcularResultados() {
   const porPregunta = estado.preguntas.map((p, i) => {
     const total = p.criterios.reduce((s, c) => s + c.peso, 0);
     const obtenido = p.criterios.reduce((s, c, j) =>
-      s + (estado.criteriosMarcados[i].has(j) ? c.peso : 0), 0);
+      s + c.peso * (estado.criteriosMarcados[i].get(j) || 0), 0);
     return { pregunta: p, indice: i, obtenido, total, fraccion: total ? obtenido / total : 0 };
   });
   const total = porPregunta.reduce((s, r) => s + r.total, 0);
@@ -785,7 +791,7 @@ function mostrarResultados() {
   notaEl.className = "nota-grande " + (r.nota >= 4 ? "aprobado" : "reprobado");
   $("#resultado-porcentaje").textContent = estado.modoOficial
     ? `${Math.round(r.porcentaje * 100)} de 100 puntos — ${r.nota >= 4 ? "Aprobado ✅" : "Reprobado ❌"}`
-    : `${r.obtenido} de ${r.total} puntos (${Math.round(r.porcentaje * 100)}%) — ${r.nota >= 4 ? "Aprobado ✅" : "Reprobado ❌"}`;
+    : `${Math.round(r.obtenido * 10) / 10} de ${r.total} puntos (${Math.round(r.porcentaje * 100)}%) — ${r.nota >= 4 ? "Aprobado ✅" : "Reprobado ❌"}`;
 
   // Desglose por área (solo modo oficial)
   const areasHtml = !r.areas ? "" : r.areas.map(a => {
@@ -817,8 +823,9 @@ function mostrarResultados() {
     ? `<div class="card"><h3>🎉 ¡Examen perfecto!</h3><p>Cubriste todos los criterios de la pauta.</p></div>`
     : `<div class="card"><h3>Feedback — qué reforzar</h3>` + feedback.map(rp => {
         const faltantes = rp.pregunta.criterios
-          .filter((c, j) => !estado.criteriosMarcados[rp.indice].has(j))
-          .map(c => `<li>${escaparHtml(c.texto)}</li>`).join("");
+          .map((c, j) => ({ c, nivel: estado.criteriosMarcados[rp.indice].get(j) || 0 }))
+          .filter(x => x.nivel < 1)
+          .map(x => `<li>${x.nivel === 0.5 ? "<em>parcial:</em> " : ""}${escaparHtml(x.c.texto)}</li>`).join("");
         const clase = rp.fraccion >= 0.4 ? "parcial" : "";
         return `
           <div class="feedback-item ${clase}">
@@ -1062,6 +1069,9 @@ function iniciarIA() {
   $("#btn-corregir-ia").addEventListener("click", corregirConIA);
 }
 
+// Niveles de cumplimiento por criterio (puntaje parcial)
+const NIVELES = { no: 0, parcial: 0.5, completo: 1 };
+
 const ESQUEMA_EVALUACION = {
   type: "OBJECT",
   properties: {
@@ -1071,10 +1081,10 @@ const ESQUEMA_EVALUACION = {
         type: "OBJECT",
         properties: {
           indice: { type: "INTEGER" },
-          cumplido: { type: "BOOLEAN" },
+          nivel: { type: "STRING", enum: ["no", "parcial", "completo"] },
           justificacion: { type: "STRING" }
         },
-        required: ["indice", "cumplido", "justificacion"]
+        required: ["indice", "nivel", "justificacion"]
       }
     },
     comentario: { type: "STRING" }
@@ -1101,12 +1111,15 @@ RESPUESTA DEL ALUMNO:
 ${respuestaAlumno}
 
 INSTRUCCIONES DE CORRECCIÓN:
-- Para cada criterio decide si la respuesta del alumno lo cumple (cumplido: true/false).
-- NO exijas redacción textual: acepta paráfrasis, sinónimos y otro orden si el concepto está correcto y explícito en la respuesta.
-- Lo que no está escrito no existe: no des por cumplido algo que "se podría inferir" pero no se dice.
-- Si el criterio pide una cantidad (ej. "dos ventajas") y el alumno entrega menos, NO se cumple.
-- Si el criterio exige graficar, márcalo como NO cumplido salvo que el alumno describa correctamente el gráfico en texto; en la justificación recuérdale autoevaluar su dibujo en papel.
-- Justificación breve por criterio (1 o 2 frases, en español).
+- Evalúa cada criterio con un NIVEL de cumplimiento (como en el examen real, que da puntaje parcial):
+  · "completo": la respuesta cubre el criterio de forma correcta y suficiente.
+  · "parcial": la respuesta ABORDA el criterio pero de forma incompleta, genérica, con imprecisiones o cubriendo solo una parte. Va en la dirección correcta pero le falta desarrollo. (Ej.: identifica las ideas pero no las vincula con sus consecuencias; menciona el concepto pero sin explicarlo del todo.)
+  · "no": la respuesta no aborda el criterio, está equivocada o el tema está ausente.
+- SÉ JUSTO Y GENEROSO CON LO PARCIAL: si el alumno demuestra entender parte del punto, es "parcial", NUNCA "no". Reserva "no" solo para lo realmente ausente o incorrecto.
+- NO exijas redacción textual: acepta paráfrasis, sinónimos y otro orden si el concepto está correcto.
+- Si el criterio pide una cantidad (ej. "dos ventajas") y entrega solo una correcta, es "parcial".
+- Si el criterio exige graficar y el alumno describe el gráfico en texto: "completo" si la descripción es correcta y detallada, "parcial" si es incompleta; recuérdale autoevaluar su dibujo en papel.
+- Justificación breve por criterio (1 o 2 frases, en español), diciendo por qué ese nivel.
 - comentario: feedback global constructivo de 2 a 4 frases (qué estuvo bien, qué le faltó, qué repasar).`;
 }
 
@@ -1188,22 +1201,28 @@ function aplicarEvaluacionIA(indicePregunta, card, evaluacion) {
   (evaluacion.criterios ?? []).forEach(ev => {
     const j = Number(ev.indice);
     if (!(j >= 0 && j < pregunta.criterios.length)) return;
-    if (ev.cumplido) estado.criteriosMarcados[indicePregunta].add(j);
-    else estado.criteriosMarcados[indicePregunta].delete(j);
-    const chk = card.querySelector(`input[data-pregunta="${indicePregunta}"][data-criterio="${j}"]`);
-    if (chk) chk.checked = !!ev.cumplido;
+    const nivel = NIVELES[ev.nivel] ?? 0;
+    estado.criteriosMarcados[indicePregunta].set(j, nivel);
+    const grupo = card.querySelector(`.criterio-niveles[data-pregunta="${indicePregunta}"][data-criterio="${j}"]`);
+    if (grupo) grupo.querySelectorAll(".nivel").forEach(b => b.classList.toggle("seleccionado", Number(b.dataset.nivel) === nivel));
   });
 
+  const etiqueta = {
+    "0": '<span class="ia-no">✘ No</span>',
+    "0.5": '<span class="ia-parcial">◐ Parcial</span>',
+    "1": '<span class="ia-ok">✔ Completo</span>'
+  };
   const detalleHtml = (evaluacion.criterios ?? []).map(ev => {
     const j = Number(ev.indice);
+    const nivel = NIVELES[ev.nivel] ?? 0;
     const texto = pregunta.criterios[j]?.texto ?? `Criterio ${j}`;
-    return `<li><span class="${ev.cumplido ? "ia-ok" : "ia-no"}">${ev.cumplido ? "✔ Cumplido" : "✘ No cumplido"}</span> — ${escaparHtml(texto)}<br><em>${escaparHtml(ev.justificacion ?? "")}</em></li>`;
+    return `<li>${etiqueta[String(nivel)]} — ${escaparHtml(texto)}<br><em>${escaparHtml(ev.justificacion ?? "")}</em></li>`;
   }).join("");
 
   insertarBloqueIA(card, `
     <ul class="ia-lista">${detalleHtml}</ul>
     <p>${escaparHtml(evaluacion.comentario ?? "")}</p>
-    <p class="ayuda">La pauta se marcó automáticamente según esta evaluación — ajusta cualquier casilla si no estás de acuerdo.</p>
+    <p class="ayuda">La pauta se marcó automáticamente (No / Parcial / Sí) según esta evaluación — ajústala si no estás de acuerdo.</p>
   `);
 }
 
