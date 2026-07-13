@@ -1266,6 +1266,28 @@ function iniciarTema() {
 }
 
 // ---------------------------------------------------------------------
+// Analítica: registra una visita por sesión (para medir interés). Nunca bloquea la app.
+function registrarVisita() {
+  try {
+    if (!supabaseConfigurado()) return;
+    if (sessionStorage.getItem("examen-grado-visita")) return;
+    sessionStorage.setItem("examen-grado-visita", "1");
+    const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/registrar_visita";
+    const headers = {
+      "apikey": window.ACCESO.supabaseAnonKey,
+      "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+      "Content-Type": "application/json"
+    };
+    const schema = (window.ACCESO.supabaseSchema || "").trim();
+    if (schema) { headers["Content-Profile"] = schema; headers["Accept-Profile"] = schema; }
+    fetch(url, { method: "POST", headers, body: JSON.stringify({
+      p_device: obtenerDeviceId(),
+      p_referrer: document.referrer || null,
+      p_path: location.pathname
+    }) }).catch(() => {});
+  } catch (e) { /* la analítica nunca debe romper la app */ }
+}
+
 iniciarTema();
 iniciarConfig();
 iniciarBanco();
@@ -1276,3 +1298,6 @@ iniciarEventos();
 
 // Si ya tiene acceso, empieza a descargar las preguntas premium de inmediato.
 if (estaDesbloqueado()) cargarPreguntasPremium();
+
+// Registra la visita (para tu analítica de interés).
+registrarVisita();
