@@ -76,6 +76,7 @@ async function canjearCodigo(codigo, nombre, apellido) {
 
 // ---- Preguntas premium (viven en Supabase; se descargan al desbloquear) ----
 let PREMIUM_CARGADO = false;
+let PREMIUM_MOTIVO = null; // "noauth" (dispositivo no canjeó) | "red" (falla de conexión)
 let _premiumPromesa = null;
 
 // Descarga las 500 preguntas premium desde Supabase y las mezcla en el banco.
@@ -85,31 +86,38 @@ async function cargarPreguntasPremium() {
   if (PREMIUM_CARGADO) return true;
   if (!estaDesbloqueado() || !supabaseConfigurado()) return false;
   if (_premiumPromesa) return _premiumPromesa;
+  PREMIUM_MOTIVO = null;
   _premiumPromesa = (async () => {
-    try {
-      const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/get_preguntas";
-      const headers = {
-        "apikey": window.ACCESO.supabaseAnonKey,
-        "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
-        "Content-Type": "application/json"
-      };
-      const schema = (window.ACCESO.supabaseSchema || "").trim();
-      if (schema) { headers["Content-Profile"] = schema; headers["Accept-Profile"] = schema; }
-      const res = await fetch(url, { method: "POST", headers, body: JSON.stringify({ p_device: obtenerDeviceId() }) });
-      if (!res.ok) return false;
-      const data = await res.json();
-      if (!data || !data.ok || !Array.isArray(data.preguntas)) return false;
-      const porMateria = {};
-      for (const q of data.preguntas) (porMateria[q.materiaId] = porMateria[q.materiaId] || []).push(q);
-      for (const m of BANCO.materias) {
-        const existentes = new Set(m.preguntas.map(p => p.id));
-        for (const q of (porMateria[m.id] || [])) if (!existentes.has(q.id)) m.preguntas.push(q);
+    const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/get_preguntas";
+    const headers = {
+      "apikey": window.ACCESO.supabaseAnonKey,
+      "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+      "Content-Type": "application/json"
+    };
+    const schema = (window.ACCESO.supabaseSchema || "").trim();
+    if (schema) { headers["Content-Profile"] = schema; headers["Accept-Profile"] = schema; }
+    // La descarga es ~1.8 MB: si falla la red, reintenta una vez.
+    for (let intento = 0; intento < 2; intento++) {
+      try {
+        const res = await fetch(url, { method: "POST", headers, body: JSON.stringify({ p_device: obtenerDeviceId() }) });
+        if (!res.ok) { PREMIUM_MOTIVO = "red"; continue; }
+        const data = await res.json();
+        // Dispositivo no autorizado (no canjeó un código en este equipo).
+        if (data && data.ok === false) { PREMIUM_MOTIVO = "noauth"; return false; }
+        if (!data || !Array.isArray(data.preguntas)) { PREMIUM_MOTIVO = "red"; continue; }
+        const porMateria = {};
+        for (const q of data.preguntas) (porMateria[q.materiaId] = porMateria[q.materiaId] || []).push(q);
+        for (const m of BANCO.materias) {
+          const existentes = new Set(m.preguntas.map(p => p.id));
+          for (const q of (porMateria[m.id] || [])) if (!existentes.has(q.id)) m.preguntas.push(q);
+        }
+        PREMIUM_CARGADO = true; PREMIUM_MOTIVO = null;
+        return true;
+      } catch (e) {
+        PREMIUM_MOTIVO = "red";
       }
-      PREMIUM_CARGADO = true;
-      return true;
-    } catch (e) {
-      return false;
     }
+    return false;
   })();
   const ok = await _premiumPromesa;
   if (!ok) _premiumPromesa = null; // permite reintentar en el próximo intento
@@ -563,7 +571,11 @@ async function comenzarExamen() {
     const ok = await cargarPreguntasPremium();
     btn.disabled = false; btn.textContent = txt;
     if (!ok) {
-      alert("No se pudieron cargar las preguntas. Revisa tu conexión a internet e inténtalo de nuevo.");
+      if (PREMIUM_MOTIVO === "noauth") {
+        abrirModalAcceso("Tu acceso aún no está activo en ESTE dispositivo. Ingresa tu código aquí para activarlo (tu código sirve para 2 dispositivos: celular y notebook).");
+      } else {
+        alert("No se pudieron cargar las preguntas. Revisa tu conexión a internet e inténtalo de nuevo.");
+      }
       return;
     }
   }
