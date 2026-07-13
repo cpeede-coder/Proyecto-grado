@@ -40,7 +40,8 @@ function supabaseConfigurado() {
 }
 
 // Canjea un código contra Supabase. Devuelve { ok, motivo?, tipo? }.
-async function canjearCodigo(codigo) {
+// nombre/apellido se envían para registrar quién canjeó (anti-compartir).
+async function canjearCodigo(codigo, nombre, apellido) {
   const limpio = (codigo || "").trim().toUpperCase().replace(/\s+/g, "");
   if (!limpio) return { ok: false, motivo: "invalido" };
   if (!supabaseConfigurado()) return { ok: false, motivo: "config" };
@@ -57,11 +58,14 @@ async function canjearCodigo(codigo) {
       headers["Content-Profile"] = schema;
       headers["Accept-Profile"] = schema;
     }
-    const res = await fetch(url, {
-      method: "POST",
-      headers,
-      body: JSON.stringify({ p_codigo: limpio, p_device: obtenerDeviceId() })
-    });
+    const base = { p_codigo: limpio, p_device: obtenerDeviceId() };
+    const conNombre = { ...base, p_nombre: (nombre || "").trim() || null, p_apellido: (apellido || "").trim() || null };
+    let res = await fetch(url, { method: "POST", headers, body: JSON.stringify(conNombre) });
+    // Si el backend aún no tiene la versión que guarda el nombre (función de 2 args),
+    // PostgREST responde 404: reintenta sin esos campos para no romper el canje.
+    if (res.status === 404) {
+      res = await fetch(url, { method: "POST", headers, body: JSON.stringify(base) });
+    }
     if (!res.ok) return { ok: false, motivo: "red" };
     const data = await res.json();
     return (data && typeof data === "object") ? data : { ok: false, motivo: "red" };
@@ -264,7 +268,7 @@ async function canjearYReflejar() {
   boton.disabled = true;
   estado.style.color = "";
   estado.textContent = "⏳ Validando código…";
-  const r = await canjearCodigo(codigo);
+  const r = await canjearCodigo(codigo, nombre, apellido);
   boton.disabled = false;
   if (r.ok) {
     guardarPerfil(nombre, apellido);
