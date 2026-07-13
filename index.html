@@ -14,7 +14,7 @@
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.27</span>
+      <span class="version-app">v1.0.28</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -66,6 +66,14 @@
           <div id="lista-materias" class="chips"></div>
           <p class="ayuda">Puedes elegir <strong>una o varias</strong> materias (toca para agregar o quitar). O usa <strong>🎯 Mix libre</strong> para todas, o <strong>🏛️ Examen oficial</strong> para el formato real.</p>
           <p id="nota-oficial" class="ayuda hidden">🏛️ <strong>Formato del examen real:</strong> 14 preguntas — Economía 4, Gestión de Personas 3, Marketing 3, Administración 2 y Estrategia 2 — cada área vale 20 puntos (total 100). Solo preguntas de dificultad media y difícil, agrupadas por área. Con tiempo límite activado: 220 minutos en total (~2,2 min por punto, como el examen oficial).</p>
+        </div>
+
+        <div class="campo" id="campo-solo-examen">
+          <label class="filtro-examen">
+            <input type="checkbox" id="config-solo-examen">
+            ⭐ Solo preguntas vistas en exámenes reales
+          </label>
+          <p class="ayuda">Practica únicamente los temas de máxima prioridad (los que ya han salido en exámenes). Con esto activado, la dificultad la definen esas preguntas.</p>
         </div>
 
         <div class="campo" id="campo-dificultad">
@@ -246,6 +254,6 @@
   <script src="data/materias/estrategia.js?v=4"></script>
   <script src="data/materias/gestion-personas.js?v=4"></script>
   <script src="data/materias/marketing.js?v=4"></script>
-  <script src="js/app.js?v=27"></script>
+  <script src="js/app.js?v=28"></script>
 </body>
 </html>

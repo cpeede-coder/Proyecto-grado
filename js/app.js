@@ -370,6 +370,7 @@ const EXIGENCIA = 0.6; // 60% para nota 4.0 (escala chilena 1.0 - 7.0)
 const estado = {
   materias: [],        // ids de materias elegidas (modo normal, una o varias)
   modoOficial: false,  // true cuando está elegido el Examen oficial
+  soloExamen: false,   // true = solo preguntas vistas en exámenes reales (ignora dificultad)
   dificultad: "media",
   numPreguntas: 5,
   usarTimer: true,
@@ -473,6 +474,11 @@ function iniciarConfig() {
     });
   });
 
+  $("#config-solo-examen").addEventListener("change", (e) => {
+    estado.soloExamen = e.target.checked;
+    actualizarModoConfig();
+  });
+
   $("#num-preguntas").addEventListener("input", (e) => {
     estado.numPreguntas = Number(e.target.value);
     $("#num-preguntas-valor").textContent = e.target.value;
@@ -517,7 +523,9 @@ function pintarChipsMateria() {
 function actualizarModoConfig() {
   const oficial = estado.modoOficial;
   $("#nota-oficial").classList.toggle("hidden", !oficial);
-  $("#campo-dificultad").classList.toggle("hidden", oficial);
+  $("#campo-solo-examen").classList.toggle("hidden", oficial);
+  // La dificultad no aplica en Examen oficial ni cuando se filtra por "solo vistas en examen".
+  $("#campo-dificultad").classList.toggle("hidden", oficial || estado.soloExamen);
   $("#campo-num").classList.toggle("hidden", oficial);
 }
 
@@ -590,12 +598,19 @@ async function comenzarExamen() {
     }
     let disponibles = obtenerPoolPreguntas();
     if (disponibles.length === 0) return;
-    if (estado.dificultad !== "mixta") {
+    if (estado.soloExamen) {
+      // Solo temas vistos en exámenes reales; la dificultad no aplica.
+      disponibles = disponibles.filter(p => p.salioEnExamen === true);
+      if (disponibles.length === 0) {
+        alert("No hay preguntas vistas en exámenes reales en las materias elegidas. Elige otras materias o desactiva ese filtro.");
+        return;
+      }
+    } else if (estado.dificultad !== "mixta") {
       disponibles = disponibles.filter(p => p.dificultad === estado.dificultad);
-    }
-    if (disponibles.length === 0) {
-      alert("No hay preguntas con esa dificultad en las materias elegidas. Prueba con dificultad 'Mixta'.");
-      return;
+      if (disponibles.length === 0) {
+        alert("No hay preguntas con esa dificultad en las materias elegidas. Prueba con dificultad 'Mixta'.");
+        return;
+      }
     }
     estado.preguntas = barajar(disponibles).slice(0, estado.numPreguntas);
   }
