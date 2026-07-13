@@ -14,6 +14,9 @@ MIS-CODIGOS-PRIVADOS.txt
 # Scripts SQL con los códigos en texto para cargar en Supabase — PRIVADOS
 SUPABASE-*.sql
 
+# Material de venta personal — no es parte de la app
+PROMO-APROBA2.txt
+
 # Archivos temporales de Office y sistema
 ~$*
 Thumbs.db
