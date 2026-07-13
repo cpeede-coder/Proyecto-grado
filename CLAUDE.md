@@ -48,9 +48,9 @@ universidad). Son la fuente con que se generó el banco.
 
 El navegador cachea `css/styles.css` y `js/app.js`. **Cada vez que edites CSS o
 JS debes subir el número de versión en TRES lugares de `index.html`**:
-1. `<link ... href="css/styles.css?v=N">`
-2. `<script src="js/app.js?v=N">`
-3. `<span class="version-app">vN</span>` (la insignia visible en la barra superior)
+1. `<link ... href="css/styles.css?v=N">` (N entero, cache-buster interno)
+2. `<script src="js/app.js?v=N">` (N entero, cache-buster interno)
+3. `<span class="version-app">v1.0.N</span>` (insignia visible; formato **v1.0.N**, solo crece el último número — N coincide con el entero de los `?v=`)
 
 La insignia existe justo para diagnosticar caché: si el usuario reporta que un
 cambio "no aparece", casi siempre es caché — que confirme el número de versión y
@@ -59,7 +59,7 @@ súbelos si cambian.
 
 Luego: `git add -A && git commit && git push`. GitHub Pages tarda **1–3 minutos**
 en publicar. Verificar con `Invoke-WebRequest` a la URL pública buscando el
-marcador nuevo (ej. `>vN<`).
+marcador nuevo (ej. `>v1.0.N<`).
 
 **Commits**: terminar el mensaje con `Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>`.
 En PowerShell, para mensajes multilínea usar here-string `@'...'@` o `git commit -F archivo.txt` (los `-m` con comillas dan problemas).
