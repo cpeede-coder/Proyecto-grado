@@ -74,6 +74,48 @@ async function canjearCodigo(codigo, nombre, apellido) {
   }
 }
 
+// ---- Preguntas premium (viven en Supabase; se descargan al desbloquear) ----
+let PREMIUM_CARGADO = false;
+let _premiumPromesa = null;
+
+// Descarga las 500 preguntas premium desde Supabase y las mezcla en el banco.
+// get_preguntas solo responde si este dispositivo ya canjeó un código.
+// Devuelve true si quedaron cargadas. Es idempotente y reintentable.
+async function cargarPreguntasPremium() {
+  if (PREMIUM_CARGADO) return true;
+  if (!estaDesbloqueado() || !supabaseConfigurado()) return false;
+  if (_premiumPromesa) return _premiumPromesa;
+  _premiumPromesa = (async () => {
+    try {
+      const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/get_preguntas";
+      const headers = {
+        "apikey": window.ACCESO.supabaseAnonKey,
+        "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+        "Content-Type": "application/json"
+      };
+      const schema = (window.ACCESO.supabaseSchema || "").trim();
+      if (schema) { headers["Content-Profile"] = schema; headers["Accept-Profile"] = schema; }
+      const res = await fetch(url, { method: "POST", headers, body: JSON.stringify({ p_device: obtenerDeviceId() }) });
+      if (!res.ok) return false;
+      const data = await res.json();
+      if (!data || !data.ok || !Array.isArray(data.preguntas)) return false;
+      const porMateria = {};
+      for (const q of data.preguntas) (porMateria[q.materiaId] = porMateria[q.materiaId] || []).push(q);
+      for (const m of BANCO.materias) {
+        const existentes = new Set(m.preguntas.map(p => p.id));
+        for (const q of (porMateria[m.id] || [])) if (!existentes.has(q.id)) m.preguntas.push(q);
+      }
+      PREMIUM_CARGADO = true;
+      return true;
+    } catch (e) {
+      return false;
+    }
+  })();
+  const ok = await _premiumPromesa;
+  if (!ok) _premiumPromesa = null; // permite reintentar en el próximo intento
+  return ok;
+}
+
 // Limita una lista de preguntas al cupo demo cuando está bloqueado
 function limitarDemo(preguntas) {
   return estaDesbloqueado() ? preguntas : preguntas.slice(0, window.ACCESO.demoPorMateria);
@@ -273,6 +315,7 @@ async function canjearYReflejar() {
   if (r.ok) {
     guardarPerfil(nombre, apellido);
     desbloquear();
+    cargarPreguntasPremium(); // empieza a bajar las 500 en segundo plano
     estado.textContent = r.tipo === "cortesia"
       ? `🎁 ¡Listo, ${nombre}! Acceso cortesía activado — ya tienes las más de 500 preguntas.`
       : `🎉 ¡Listo, ${nombre}! Tu acceso quedó activo — ya tienes las más de 500 preguntas.`;
@@ -500,7 +543,7 @@ function obtenerPoolPreguntas() {
     })));
 }
 
-function comenzarExamen() {
+async function comenzarExamen() {
   if (estado.modoOficial && !estaDesbloqueado()) {
     abrirModalAcceso("El modo Examen Oficial es parte del acceso completo.");
     return;
@@ -510,6 +553,19 @@ function comenzarExamen() {
   if (!estaDesbloqueado() && demoUsada()) {
     abrirModalAcceso("🔒 Ya usaste tu prueba gratis. Desbloquea el acceso completo por $5.000 (pago único): más de 500 preguntas, el Examen Oficial y la corrección con IA.");
     return;
+  }
+
+  // Acceso completo: asegurar que las preguntas premium estén descargadas.
+  if (estaDesbloqueado() && !PREMIUM_CARGADO) {
+    const btn = $("#btn-comenzar");
+    const txt = btn.textContent;
+    btn.disabled = true; btn.textContent = "Cargando preguntas…";
+    const ok = await cargarPreguntasPremium();
+    btn.disabled = false; btn.textContent = txt;
+    if (!ok) {
+      alert("No se pudieron cargar las preguntas. Revisa tu conexión a internet e inténtalo de nuevo.");
+      return;
+    }
   }
 
   if (estado.modoOficial) {
@@ -883,7 +939,13 @@ function iniciarBanco() {
     renderBanco();
   });
 
-  $("#btn-ver-banco").addEventListener("click", () => {
+  $("#btn-ver-banco").addEventListener("click", async () => {
+    if (estaDesbloqueado() && !PREMIUM_CARGADO) {
+      const b = $("#btn-ver-banco"); const t = b.textContent;
+      b.disabled = true; b.textContent = "Cargando…";
+      await cargarPreguntasPremium();
+      b.disabled = false; b.textContent = t;
+    }
     renderBanco();
     mostrarPantalla("pantalla-banco");
   });
@@ -1211,3 +1273,6 @@ iniciarIA();
 iniciarAcceso();
 iniciarInicio();
 iniciarEventos();
+
+// Si ya tiene acceso, empieza a descargar las preguntas premium de inmediato.
+if (estaDesbloqueado()) cargarPreguntasPremium();

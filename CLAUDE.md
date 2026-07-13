@@ -27,7 +27,7 @@ img/                    Marca oficial: aproba2-logo.png (barra superior) + favic
 js/app.js               Toda la lógica (vanilla JS, sin frameworks ni build)
 data/acceso.js          Config freemium: URL+clave anon de Supabase + mensaje de venta (validación en backend)
 data/banco.js           Inicializa window.BANCO = { materias: [] }
-data/materias/*.js       Un archivo por materia; cada uno hace window.BANCO.materias.push({...})
+data/materias/*.js       Un archivo por materia; SOLO las 4 preguntas DEMO (las 500 premium viven en Supabase, no en el repo)
 .claude/launch.json     Config del server local (python http.server, puerto 8734, nombre "examen-grado")
 MIS-CODIGOS-PRIVADOS.txt Códigos de acceso en texto — GITIGNORED, nunca en el repo
 SUPABASE-SETUP-PRIVADO.sql SQL de carga de códigos a Supabase — GITIGNORED (tiene códigos en texto)
@@ -67,6 +67,8 @@ En PowerShell, para mensajes multilínea usar here-string `@'...'@` o `git commi
 ## Banco de preguntas (520 preguntas)
 
 104 por materia: Economía · Administración · Gestión de Personas · Estrategia · Marketing (ids `<prefijo>-001` a `-104`). Se amplió de 228 a 520 (2026-07-12) con una flota de subagentes (uno por materia) para que el eslogan "+500 preguntas" fuera verídico.
+
+**Protección del banco (opción 3, 2026-07-12):** el repo/sitio ya **solo contiene las 20 preguntas demo** (las 4 primeras de cada materia, `<prefijo>-001..004`). Las **500 premium viven en Supabase** (tabla `examen_grado.preguntas`, columna `data` = objeto pregunta en texto JSON con `materiaId`). La función `get_preguntas(p_device)` (security definer) solo las entrega si el dispositivo está en `dispositivos` (canjeó un código). En el cliente, `cargarPreguntasPremium()` (en `js/app.js`) las descarga al desbloquear/al cargar y las mezcla en `BANCO` sin duplicar; `comenzarExamen()` y "Explorar banco" son async y esperan esa descarga (con estado "Cargando…"). **Consecuencia:** un usuario premium necesita internet **una vez por sesión** para bajar las 500; ya cargadas, el examen corre normal. Editar/recargar el banco premium: regenerar `preguntas-premium.csv` (script `scratchpad/exportar-premium.js`, GITIGNORED) e importarlo en Table Editor → `preguntas`; el SQL de tabla+función está en `SUPABASE-6-preguntas.sql` (GITIGNORED). Nota: las 520 previas siguen en el historial de Git (se decidió NO purgarlo: basta bloquear al no-técnico).
 
 Cada pregunta es un objeto con este formato **estricto** (respetarlo al agregar):
 
