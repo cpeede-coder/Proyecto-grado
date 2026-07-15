@@ -130,6 +130,15 @@ Criterios prefijados `a)`/`b)`/`c)` si el enunciado tiene partes. En preguntas d
 - **Explorador del banco**: filtros por materia/dificultad, filtro "⭐ solo vistas en examen", y buscador que rastrea también `respuestaModelo` y criterios (por eso buscar "Kotter"/"Lewin" encuentra casos donde el modelo aparece en la pauta).
 - El usuario a veces trabaja con **otra IA en paralelo** sobre el mismo repo: si un cambio parece revertido o inconsistente, revisar `git fetch`/`git log origin/main` antes de asumir. Hacer `git pull` si el remoto divergió.
 
+## Módulo de estudio — flashcards (v1.0.29, premium)
+
+Nuevo módulo **"📖 Estudiar (flashcards)"** (entra desde el botón en `pantalla-config`, es **premium**: sin acceso abre el modal de pago). Enseña conceptos con **recuerdo activo + repaso espaciado** (Leitner de 5 cajas): muestra el frente, el usuario intenta recordar, revela el reverso y se autoevalúa **❌ No la sabía / 🤔 Más o menos / ✅ La sabía**. "No" → caja 1; "Más o menos" → se mantiene; "Sí" → sube de caja (dominada en caja 5). La cola reinyecta más seguido lo que se falla. Progreso por materia en `localStorage` (`examen-grado-estudio-<materia>` = `{cardId: caja}`); "Reiniciar progreso" lo borra (no toca el historial de exámenes).
+
+- **Contenido**: `data/estudio/<materia>.js` define `window.ESTUDIO.<materia> = { nombre, unidades:[{id,titulo}], tarjetas:[{id, unidad, tema, frente, reverso, tip?}] }`. Strings con comillas dobles y `\n` (nunca backticks), igual que el banco. `tip` opcional = frase de examen o gancho para memorizar (se muestra con 💡). Validar con `node --check` y stub `global.window={}`.
+- **Piloto Estrategia**: 63 tarjetas en 5 unidades (U1 Concepto, U2 Corporativa, U3 Competitiva, U4 Funcional, U5 Tópicos modernos), generadas desde `RESUMEN GRADO ESTRATEGIA.pdf` y **validadas** contra fuentes estándar. Corrección aplicada sobre los apuntes: "competencia" (ambientes de colaboración) → **coopetición**.
+- **A diferencia del banco premium**, las flashcards viajan en el repo (`data/estudio/*.js`) con gating de UI (como Examen Oficial / IA). Si se quiere blindar como las 500 preguntas, mover a Supabase igual que en la opción 3.
+- **JS**: módulo al final de `js/app.js` (`iniciarEstudio()` + helpers `estudio*`), pantalla `#pantalla-estudio` en `index.html`, estilos "Módulo de estudio" al final de `css/styles.css`. Para sumar materias: crear `data/estudio/<materia>.js`, agregar su `<script>` en `index.html` (con `?v=`) y aparece sola como chip de materia.
+
 ## Notas de trabajo con el usuario
 
 - No es técnico: explicar en simple, entregar pasos concretos (crear repo, activar Pages, pegar API key son cosas que hace él en su navegador).
