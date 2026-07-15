@@ -647,3 +647,119 @@ body.vista-amplia main {
   .examen-nav { flex-direction: column; }
   .examen-nav button { width: 100%; margin-right: 0; }
 }
+
+/* =====================================================================
+   Módulo de estudio — flashcards con repaso espaciado
+   ===================================================================== */
+.estudio-progreso-mini {
+  margin: 4px 0 18px;
+  padding: 12px 16px;
+  background: var(--primario-tinte);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+.estudio-progreso-mini strong { color: var(--texto); }
+
+/* Barra de progreso de la sesión */
+.estudio-barra-card { padding: 18px 22px; }
+.estudio-barra {
+  height: 12px;
+  background: var(--primario-tinte);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.estudio-barra-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--primario), var(--exito));
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+.estudio-stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+  flex-wrap: wrap;
+}
+.estudio-stats span:first-child { font-weight: 600; color: var(--texto); }
+
+/* Tarjeta */
+.flashcard { cursor: pointer; }
+.flashcard-meta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.flashcard-cuerpo { min-height: 180px; }
+.flashcard-cara { padding: 4px 0; }
+.flashcard-reverso {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--borde);
+}
+.flashcard-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primario);
+  margin: 0 0 8px;
+}
+.flashcard-reverso .flashcard-label { color: var(--exito); }
+.flashcard-texto {
+  font-family: var(--serif);
+  font-size: 1.22rem;
+  line-height: 1.5;
+  margin: 0;
+  color: var(--texto);
+}
+.flashcard-frente .flashcard-texto { font-weight: 600; }
+.flashcard-tip {
+  margin: 14px 0 0;
+  padding: 12px 16px;
+  background: color-mix(in srgb, var(--advertencia) 14%, transparent);
+  border-left: 3px solid var(--advertencia);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--texto);
+}
+
+/* Autoevaluación */
+.estudio-autoeval { margin-top: 20px; }
+.estudio-autoeval-pregunta { margin: 0 0 10px; }
+.estudio-autoeval-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn-autoeval {
+  flex: 1 1 140px;
+  padding: 14px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--borde);
+  background: var(--tarjeta);
+  color: var(--texto);
+  font-family: var(--sans);
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.08s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.btn-autoeval:hover { transform: translateY(-2px); }
+.btn-autoeval-no:hover { border-color: var(--peligro); background: color-mix(in srgb, var(--peligro) 12%, var(--tarjeta)); }
+.btn-autoeval-mas:hover { border-color: var(--advertencia); background: color-mix(in srgb, var(--advertencia) 12%, var(--tarjeta)); }
+.btn-autoeval-si:hover { border-color: var(--exito); background: color-mix(in srgb, var(--exito) 12%, var(--tarjeta)); }
+
+/* Fin de sesión */
+.estudio-fin-emoji { font-size: 3rem; line-height: 1; margin-bottom: 6px; }
+
+@media (max-width: 600px) {
+  .flashcard-texto { font-size: 1.1rem; }
+  .btn-autoeval { flex-basis: 100%; }
+}

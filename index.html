@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=27">
+  <link rel="stylesheet" href="css/styles.css?v=29">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.28</span>
+      <span class="version-app">v1.0.29</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -100,6 +100,7 @@
         </div>
 
         <button id="btn-comenzar" class="btn-primario">Comenzar examen</button>
+        <button id="btn-ver-estudio" class="btn-secundario">📖 Estudiar (flashcards)</button>
         <button id="btn-ver-banco" class="btn-secundario">📚 Explorar banco</button>
         <button id="btn-ver-historial" class="btn-secundario">Ver historial</button>
         <button id="btn-inicio-volver" class="btn-secundario">← Inicio</button>
@@ -159,6 +160,86 @@
         <button id="btn-banco-volver" class="btn-secundario">← Volver</button>
       </div>
       <div id="banco-lista"></div>
+    </section>
+
+    <!-- ============ PANTALLA: ESTUDIO (FLASHCARDS) ============ -->
+    <section id="pantalla-estudio" class="pantalla hidden">
+      <!-- Configuración del repaso -->
+      <div id="estudio-config" class="card">
+        <h2 id="estudio-titulo">📖 Estudiar con flashcards</h2>
+        <p class="ayuda">Repaso con <strong>recuerdo activo</strong>: mira el concepto, intenta responderlo de memoria y recién ahí revela la respuesta. La app te repite <strong>más seguido lo que fallas</strong> (repaso espaciado) hasta que lo dominas. Es la forma más eficiente de fijar conceptos en poco tiempo.</p>
+
+        <div class="campo">
+          <label>Materia</label>
+          <div id="estudio-materias" class="chips"></div>
+        </div>
+
+        <div class="campo">
+          <label>Unidades</label>
+          <div id="estudio-unidades" class="chips"></div>
+          <p class="ayuda">Elige <strong>una o varias</strong> unidades (toca para agregar o quitar), o deja <strong>Todas</strong>.</p>
+        </div>
+
+        <div id="estudio-resumen-progreso" class="estudio-progreso-mini"></div>
+
+        <button id="btn-estudio-empezar" class="btn-primario">Empezar repaso</button>
+        <button id="btn-estudio-reiniciar" class="btn-secundario">Reiniciar progreso</button>
+        <button id="btn-estudio-volver" class="btn-secundario">← Inicio</button>
+      </div>
+
+      <!-- Sesión de flashcards -->
+      <div id="estudio-sesion" class="hidden">
+        <div class="card estudio-barra-card">
+          <div class="estudio-barra"><div class="estudio-barra-fill" id="estudio-barra-fill"></div></div>
+          <div class="estudio-stats">
+            <span id="estudio-dominadas"></span>
+            <span id="estudio-restantes"></span>
+          </div>
+        </div>
+
+        <div id="estudio-tarjeta" class="card flashcard">
+          <div class="flashcard-meta">
+            <span id="estudio-fc-unidad" class="etiqueta-tema"></span>
+            <span id="estudio-fc-tema" class="etiqueta-dif"></span>
+          </div>
+
+          <div class="flashcard-cuerpo">
+            <div class="flashcard-cara flashcard-frente">
+              <p class="flashcard-label">Concepto</p>
+              <p id="estudio-fc-frente" class="flashcard-texto"></p>
+            </div>
+            <div id="estudio-fc-reverso-cont" class="flashcard-cara flashcard-reverso hidden">
+              <p class="flashcard-label">Respuesta</p>
+              <p id="estudio-fc-reverso" class="flashcard-texto"></p>
+              <p id="estudio-fc-tip" class="flashcard-tip hidden"></p>
+            </div>
+          </div>
+
+          <button id="btn-estudio-revelar" class="btn-primario">Mostrar respuesta</button>
+
+          <div id="estudio-autoeval" class="estudio-autoeval hidden">
+            <p class="ayuda estudio-autoeval-pregunta">¿Cómo te fue con esta?</p>
+            <div class="estudio-autoeval-botones">
+              <button class="btn-autoeval btn-autoeval-no" data-nivel="no">❌ No la sabía</button>
+              <button class="btn-autoeval btn-autoeval-mas" data-nivel="mas">🤔 Más o menos</button>
+              <button class="btn-autoeval btn-autoeval-si" data-nivel="si">✅ La sabía</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <button id="btn-estudio-terminar" class="btn-secundario">Terminar repaso</button>
+        </div>
+      </div>
+
+      <!-- Fin de sesión -->
+      <div id="estudio-fin" class="card centrado hidden">
+        <div class="estudio-fin-emoji">🎉</div>
+        <h2 id="estudio-fin-titulo">¡Repaso completado!</h2>
+        <p id="estudio-fin-texto" class="ayuda"></p>
+        <button id="btn-estudio-otra" class="btn-primario">Repasar de nuevo</button>
+        <button id="btn-estudio-fin-volver" class="btn-secundario">← Volver</button>
+      </div>
     </section>
 
     <!-- ============ PANTALLA: EXAMEN ============ -->
@@ -254,6 +335,7 @@
   <script src="data/materias/estrategia.js?v=4"></script>
   <script src="data/materias/gestion-personas.js?v=4"></script>
   <script src="data/materias/marketing.js?v=4"></script>
-  <script src="js/app.js?v=28"></script>
+  <script src="data/estudio/estrategia.js?v=1"></script>
+  <script src="js/app.js?v=29"></script>
 </body>
 </html>

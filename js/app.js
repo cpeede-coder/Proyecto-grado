@@ -1334,12 +1334,241 @@ function registrarVisita() {
   } catch (e) { /* la analítica nunca debe romper la app */ }
 }
 
+// ---------------------------------------------------------------------
+// Módulo de estudio: flashcards con repaso espaciado (Leitner de 5 cajas)
+// Premium. El contenido vive en window.ESTUDIO[<materia>] (data/estudio/*.js).
+// Progreso por materia en localStorage: { cardId: caja 1..5 }. Dominada = caja 5.
+// ---------------------------------------------------------------------
+let ESTUDIO_MATERIA = "estrategia";      // materia seleccionada (clave en window.ESTUDIO)
+let ESTUDIO_UNIDADES = new Set();        // unidades elegidas (vacío = todas)
+let estudioCola = [];                    // cola viva de la sesión (objetos tarjeta)
+let estudioActual = null;                // tarjeta en pantalla
+let estudioRepasoLibre = false;          // true cuando ya estaban todas dominadas
+
+function estudioDisponible() {
+  return window.ESTUDIO && Object.keys(window.ESTUDIO).length > 0;
+}
+
+function claveProgresoEstudio(materia) {
+  return "examen-grado-estudio-" + materia;
+}
+function cargarProgresoEstudio(materia) {
+  try { return JSON.parse(localStorage.getItem(claveProgresoEstudio(materia))) || {}; }
+  catch (e) { return {}; }
+}
+function guardarProgresoEstudio(materia, prog) {
+  try { localStorage.setItem(claveProgresoEstudio(materia), JSON.stringify(prog)); } catch (e) {}
+}
+
+// Tarjetas de la materia actual filtradas por las unidades elegidas (vacío = todas)
+function estudioTarjetasSeleccionadas() {
+  const data = window.ESTUDIO && window.ESTUDIO[ESTUDIO_MATERIA];
+  if (!data) return [];
+  let cards = data.tarjetas || [];
+  if (ESTUDIO_UNIDADES.size) cards = cards.filter(c => ESTUDIO_UNIDADES.has(c.unidad));
+  return cards;
+}
+
+function estudioContarDominadas() {
+  const prog = cargarProgresoEstudio(ESTUDIO_MATERIA);
+  const cards = estudioTarjetasSeleccionadas();
+  const dom = cards.filter(c => (prog[c.id] || 1) >= 5).length;
+  return { dom, total: cards.length };
+}
+
+// Pinta los chips de materia y unidades del panel de configuración del repaso
+function renderEstudioConfig() {
+  const data = window.ESTUDIO && window.ESTUDIO[ESTUDIO_MATERIA];
+  // Chips de materia (por ahora Estrategia; preparado para sumar más)
+  const contMat = $("#estudio-materias");
+  contMat.innerHTML = "";
+  Object.keys(window.ESTUDIO || {}).forEach(clave => {
+    const btn = document.createElement("button");
+    btn.className = "chip" + (clave === ESTUDIO_MATERIA ? " seleccionado" : "");
+    btn.textContent = window.ESTUDIO[clave].nombre || clave;
+    btn.addEventListener("click", () => {
+      ESTUDIO_MATERIA = clave;
+      ESTUDIO_UNIDADES = new Set();
+      renderEstudioConfig();
+    });
+    contMat.appendChild(btn);
+  });
+
+  // Chips de unidades + "Todas"
+  const contUni = $("#estudio-unidades");
+  contUni.innerHTML = "";
+  const btnTodas = document.createElement("button");
+  btnTodas.className = "chip" + (ESTUDIO_UNIDADES.size === 0 ? " seleccionado" : "");
+  btnTodas.textContent = "Todas";
+  btnTodas.addEventListener("click", () => { ESTUDIO_UNIDADES = new Set(); renderEstudioConfig(); });
+  contUni.appendChild(btnTodas);
+  (data && data.unidades || []).forEach(u => {
+    const btn = document.createElement("button");
+    btn.className = "chip" + (ESTUDIO_UNIDADES.has(u.id) ? " seleccionado" : "");
+    btn.textContent = u.id + " · " + u.titulo;
+    btn.addEventListener("click", () => {
+      if (ESTUDIO_UNIDADES.has(u.id)) ESTUDIO_UNIDADES.delete(u.id);
+      else ESTUDIO_UNIDADES.add(u.id);
+      renderEstudioConfig();
+    });
+    contUni.appendChild(btn);
+  });
+
+  // Resumen de progreso de la selección
+  const { dom, total } = estudioContarDominadas();
+  const resumen = $("#estudio-resumen-progreso");
+  const pct = total ? Math.round((dom / total) * 100) : 0;
+  resumen.innerHTML = total
+    ? `Tarjetas en esta selección: <strong>${total}</strong> · dominadas: <strong>${dom}</strong> (${pct}%).`
+    : "No hay tarjetas para esta selección todavía.";
+}
+
+function actualizarBarraEstudio() {
+  const { dom, total } = estudioContarDominadas();
+  const pct = total ? Math.round((dom / total) * 100) : 0;
+  const fill = $("#estudio-barra-fill");
+  if (fill) fill.style.width = pct + "%";
+  $("#estudio-dominadas").textContent = `✅ Dominadas: ${dom}/${total}`;
+  $("#estudio-restantes").textContent = estudioCola.length
+    ? `Quedan en esta ronda: ${estudioCola.length}`
+    : "";
+}
+
+function empezarSesionEstudio() {
+  const cards = estudioTarjetasSeleccionadas();
+  if (!cards.length) return;
+  const prog = cargarProgresoEstudio(ESTUDIO_MATERIA);
+  // La ronda prioriza las NO dominadas (caja < 5). Si ya están todas, repaso libre.
+  let pendientes = cards.filter(c => (prog[c.id] || 1) < 5);
+  estudioRepasoLibre = pendientes.length === 0;
+  if (estudioRepasoLibre) pendientes = cards.slice();
+  // Baraja y luego ordena por caja ascendente (lo menos sabido primero, orden estable)
+  estudioCola = barajar(pendientes).sort((a, b) => (prog[a.id] || 1) - (prog[b.id] || 1));
+
+  $("#estudio-config").classList.add("hidden");
+  $("#estudio-fin").classList.add("hidden");
+  $("#estudio-sesion").classList.remove("hidden");
+  mostrarTarjetaEstudio();
+}
+
+function mostrarTarjetaEstudio() {
+  if (!estudioCola.length) { finSesionEstudio(); return; }
+  estudioActual = estudioCola[0];
+  $("#estudio-fc-unidad").textContent = estudioActual.unidad || "";
+  $("#estudio-fc-tema").textContent = estudioActual.tema || "";
+  $("#estudio-fc-frente").textContent = estudioActual.frente || "";
+  $("#estudio-fc-reverso").textContent = estudioActual.reverso || "";
+  const tip = $("#estudio-fc-tip");
+  if (estudioActual.tip) { tip.textContent = "💡 " + estudioActual.tip; tip.classList.remove("hidden"); }
+  else { tip.textContent = ""; tip.classList.add("hidden"); }
+  // Estado inicial: reverso oculto, botón revelar visible, autoeval oculta
+  $("#estudio-fc-reverso-cont").classList.add("hidden");
+  $("#btn-estudio-revelar").classList.remove("hidden");
+  $("#estudio-autoeval").classList.add("hidden");
+  $("#estudio-tarjeta").classList.remove("revelada");
+  actualizarBarraEstudio();
+  window.scrollTo(0, 0);
+}
+
+function revelarTarjetaEstudio() {
+  $("#estudio-fc-reverso-cont").classList.remove("hidden");
+  $("#btn-estudio-revelar").classList.add("hidden");
+  $("#estudio-autoeval").classList.remove("hidden");
+  $("#estudio-tarjeta").classList.add("revelada");
+}
+
+// Autoevaluación → mueve la tarjeta de caja y la reencola según el resultado
+function evaluarTarjetaEstudio(nivel) {
+  if (!estudioActual) return;
+  const prog = cargarProgresoEstudio(ESTUDIO_MATERIA);
+  let caja = prog[estudioActual.id] || 1;
+  if (nivel === "no") caja = 1;                 // falló → vuelve a la caja 1
+  else if (nivel === "mas") caja = Math.max(1, caja); // dudó → se mantiene
+  else if (nivel === "si") caja = Math.min(5, caja + 1); // la sabía → sube de caja
+  prog[estudioActual.id] = caja;
+  guardarProgresoEstudio(ESTUDIO_MATERIA, prog);
+
+  const tarjeta = estudioCola.shift();
+  const dominada = (nivel === "si" && caja >= 5);
+  if (!dominada) {
+    // La reinyecta más adelante en la cola: más cerca si la falló, más lejos si le fue bien
+    let pos;
+    if (nivel === "no") pos = Math.min(3, estudioCola.length);
+    else if (nivel === "mas") pos = Math.min(7, estudioCola.length);
+    else pos = estudioCola.length;
+    estudioCola.splice(pos, 0, tarjeta);
+  }
+  mostrarTarjetaEstudio();
+}
+
+function finSesionEstudio() {
+  $("#estudio-sesion").classList.add("hidden");
+  $("#estudio-fin").classList.remove("hidden");
+  const { dom, total } = estudioContarDominadas();
+  const titulo = $("#estudio-fin-titulo");
+  const texto = $("#estudio-fin-texto");
+  if (dom >= total && total > 0) {
+    titulo.textContent = "🏆 ¡Dominaste toda la selección!";
+    texto.textContent = `Marcaste como sabidas las ${total} tarjetas. Vuelve en unos días para repasar y que no se te olviden.`;
+  } else {
+    titulo.textContent = "🎉 ¡Buena ronda!";
+    texto.textContent = `Llevas ${dom} de ${total} tarjetas dominadas. Sigue repasando: las que fallaste volverán a aparecer más seguido.`;
+  }
+}
+
+function iniciarEstudio() {
+  const btnEntrar = $("#btn-ver-estudio");
+  if (btnEntrar) {
+    btnEntrar.addEventListener("click", () => {
+      if (!estaDesbloqueado()) {
+        abrirModalAcceso("📖 El módulo de estudio con flashcards es parte del acceso completo ($5.000, pago único): repaso espaciado para memorizar los conceptos clave del examen.");
+        return;
+      }
+      if (!estudioDisponible()) return;
+      $("#estudio-sesion").classList.add("hidden");
+      $("#estudio-fin").classList.add("hidden");
+      $("#estudio-config").classList.remove("hidden");
+      renderEstudioConfig();
+      mostrarPantalla("pantalla-estudio");
+    });
+  }
+  $("#btn-estudio-empezar").addEventListener("click", empezarSesionEstudio);
+  $("#btn-estudio-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
+  $("#btn-estudio-terminar").addEventListener("click", () => {
+    $("#estudio-sesion").classList.add("hidden");
+    $("#estudio-config").classList.remove("hidden");
+    renderEstudioConfig();
+  });
+  $("#btn-estudio-fin-volver").addEventListener("click", () => {
+    $("#estudio-fin").classList.add("hidden");
+    $("#estudio-config").classList.remove("hidden");
+    renderEstudioConfig();
+  });
+  $("#btn-estudio-otra").addEventListener("click", empezarSesionEstudio);
+  $("#btn-estudio-revelar").addEventListener("click", revelarTarjetaEstudio);
+  // Tocar la tarjeta (frente) también revela la respuesta
+  $("#estudio-tarjeta").addEventListener("click", (e) => {
+    if (e.target.closest("button")) return; // no interferir con los botones internos
+    if ($("#estudio-fc-reverso-cont").classList.contains("hidden")) revelarTarjetaEstudio();
+  });
+  $("#estudio-autoeval").addEventListener("click", (e) => {
+    const btn = e.target.closest(".btn-autoeval");
+    if (btn) evaluarTarjetaEstudio(btn.dataset.nivel);
+  });
+  $("#btn-estudio-reiniciar").addEventListener("click", () => {
+    if (!confirm("¿Reiniciar tu progreso de estudio de esta materia? Se borran las tarjetas marcadas como dominadas (no afecta tu historial de exámenes).")) return;
+    localStorage.removeItem(claveProgresoEstudio(ESTUDIO_MATERIA));
+    renderEstudioConfig();
+  });
+}
+
 iniciarTema();
 iniciarConfig();
 iniciarBanco();
 iniciarIA();
 iniciarAcceso();
 iniciarInicio();
+iniciarEstudio();
 iniciarEventos();
 
 // Si ya tiene acceso, empieza a descargar las preguntas premium de inmediato.
