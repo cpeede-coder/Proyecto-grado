@@ -1421,6 +1421,13 @@ function renderEstudioConfig() {
   resumen.innerHTML = total
     ? `Tarjetas en esta selección: <strong>${total}</strong> · dominadas: <strong>${dom}</strong> (${pct}%).`
     : "No hay tarjetas para esta selección todavía.";
+
+  // El botón de la guía solo aparece si la materia actual tiene guía
+  const btnGuia = $("#btn-estudio-guia");
+  if (btnGuia) {
+    const hayGuia = window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA];
+    btnGuia.classList.toggle("hidden", !hayGuia);
+  }
 }
 
 function actualizarBarraEstudio() {
@@ -1516,22 +1523,73 @@ function finSesionEstudio() {
   }
 }
 
+// Renderiza la guía de estudio (material para leer) de la materia actual
+function mostrarGuiaEstudio() {
+  const g = window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA];
+  if (!g) return;
+  $("#estudio-guia-titulo").textContent = "📚 Guía de estudio — " + (g.nombre || "");
+  $("#estudio-guia-intro").textContent = g.intro || "";
+  const nav = $("#estudio-guia-nav");
+  const cont = $("#estudio-guia-contenido");
+  nav.innerHTML = "";
+  cont.innerHTML = "";
+  (g.secciones || []).forEach(sec => {
+    const chip = document.createElement("button");
+    chip.className = "chip";
+    chip.textContent = sec.unidad;
+    chip.title = sec.titulo;
+    chip.addEventListener("click", () => {
+      const dest = document.getElementById("guia-" + sec.unidad);
+      if (dest) dest.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    nav.appendChild(chip);
+
+    const card = document.createElement("div");
+    card.className = "card guia";
+    card.id = "guia-" + sec.unidad;
+    card.innerHTML = '<h3 class="guia-titulo"><span class="guia-badge">' + sec.unidad + '</span> ' + sec.titulo + '</h3>' + sec.html;
+    cont.appendChild(card);
+  });
+  $("#estudio-config").classList.add("hidden");
+  $("#estudio-sesion").classList.add("hidden");
+  $("#estudio-fin").classList.add("hidden");
+  $("#estudio-guia").classList.remove("hidden");
+  window.scrollTo(0, 0);
+}
+
 function iniciarEstudio() {
   const btnEntrar = $("#btn-ver-estudio");
   if (btnEntrar) {
     btnEntrar.addEventListener("click", () => {
       if (!estaDesbloqueado()) {
-        abrirModalAcceso("📖 El módulo de estudio con flashcards es parte del acceso completo ($5.000, pago único): repaso espaciado para memorizar los conceptos clave del examen.");
+        abrirModalAcceso("📖 El módulo de estudio (guía + flashcards) es parte del acceso completo ($5.000, pago único): primero aprendes con la guía ordenada y después memorizas con repaso espaciado.");
         return;
       }
       if (!estudioDisponible()) return;
       $("#estudio-sesion").classList.add("hidden");
       $("#estudio-fin").classList.add("hidden");
+      $("#estudio-guia").classList.add("hidden");
       $("#estudio-config").classList.remove("hidden");
       renderEstudioConfig();
       mostrarPantalla("pantalla-estudio");
     });
   }
+  // Guía de estudio
+  const btnGuia = $("#btn-estudio-guia");
+  if (btnGuia) {
+    const hayGuia = window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA];
+    if (!hayGuia) btnGuia.classList.add("hidden");
+    btnGuia.addEventListener("click", mostrarGuiaEstudio);
+  }
+  $("#btn-estudio-guia-volver").addEventListener("click", () => {
+    $("#estudio-guia").classList.add("hidden");
+    $("#estudio-config").classList.remove("hidden");
+    renderEstudioConfig();
+  });
+  $("#btn-estudio-guia-repasar").addEventListener("click", () => {
+    $("#estudio-guia").classList.add("hidden");
+    empezarSesionEstudio();
+  });
   $("#btn-estudio-empezar").addEventListener("click", empezarSesionEstudio);
   $("#btn-estudio-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
   $("#btn-estudio-terminar").addEventListener("click", () => {

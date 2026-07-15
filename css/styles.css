@@ -759,6 +759,99 @@ body.vista-amplia main {
 /* Fin de sesión */
 .estudio-fin-emoji { font-size: 3rem; line-height: 1; margin-bottom: 6px; }
 
+/* Flujo recomendado: leer → repasar */
+.estudio-flujo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 4px 0 16px;
+  padding: 12px 16px;
+  border: 1px dashed var(--borde);
+  border-radius: 12px;
+  font-size: 0.92rem;
+  color: var(--texto-suave);
+}
+.estudio-flujo-paso strong { color: var(--primario); }
+.estudio-flujo-flecha { color: var(--texto-suave); }
+
+/* =====================================================================
+   Guía de estudio (material para leer)
+   ===================================================================== */
+.guia { line-height: 1.7; }
+.guia-titulo {
+  font-family: var(--serif);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--borde);
+}
+.guia-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  padding: 3px 8px;
+  background: var(--primario-tinte);
+  color: var(--primario-oscuro);
+  border-radius: 8px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.guia h4 {
+  font-family: var(--sans);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--primario-oscuro);
+  margin: 22px 0 8px;
+}
+.guia p { margin: 0 0 12px; }
+.guia ul, .guia ol { margin: 0 0 12px; padding-left: 22px; }
+.guia li { margin-bottom: 6px; }
+
+/* Definición para memorizar (azul) */
+.guia-def {
+  margin: 14px 0;
+  padding: 14px 18px;
+  background: var(--primario-tinte);
+  border-left: 4px solid var(--primario);
+  border-radius: 8px;
+  font-size: 0.98rem;
+}
+/* Frases de examen (dorado) */
+.guia-frase {
+  margin: 18px 0 2px;
+  padding: 14px 18px;
+  background: color-mix(in srgb, var(--advertencia) 12%, transparent);
+  border-left: 4px solid var(--advertencia);
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Tablas de la guía */
+.tabla-scroll { overflow-x: auto; margin: 4px 0 14px; }
+.guia-tabla {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 460px;
+  font-size: 0.93rem;
+}
+.guia-tabla th, .guia-tabla td {
+  text-align: left;
+  padding: 9px 12px;
+  border-bottom: 1px solid var(--borde);
+  vertical-align: top;
+}
+.guia-tabla thead th {
+  background: var(--primario-tinte);
+  color: var(--texto);
+  font-weight: 700;
+}
+.guia-tabla tbody tr:last-child td { border-bottom: none; }
+
 @media (max-width: 600px) {
   .flashcard-texto { font-size: 1.1rem; }
   .btn-autoeval { flex-basis: 100%; }
