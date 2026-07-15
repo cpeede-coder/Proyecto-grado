@@ -1,0 +1,262 @@
+// Guía de estudio ordenada — GESTIÓN DE PERSONAS (material para LEER antes de las flashcards)
+// Contenido reorganizado y VALIDADO desde el resumen del ramo (F. Maldonado + PPT +
+// pauta julio 2025), contrastado con fuentes estándar de RR.HH. (Chiavenato, Dessler,
+// Werther), los autores citados y el Código del Trabajo chileno.
+// Se sirve como HTML por unidad y se inyecta en #estudio-guia-contenido (contenido
+// estático propio, sin entrada de usuario). Usa las clases .guia-* de css/styles.css.
+// Correcciones respecto de los apuntes: gratificación legal (el tope de 4,75 IMM es de la
+// alternativa del Art. 50, no del 30% del Art. 47) y descriptor de cargo (el documento con
+// fuerza legal es el contrato; el descriptor le sirve de base). Se evitan cifras variables.
+// Nota: aquí SÍ se usan template literals (backticks) por ser un bloque HTML largo;
+// la regla de "no backticks" aplica al banco de preguntas (data/materias/*.js).
+window.ESTUDIO_GUIA = window.ESTUDIO_GUIA || {};
+window.ESTUDIO_GUIA["gestion-personas"] = {
+  nombre: "Gestión de Personas",
+  intro: "Léela unidad por unidad. Cuando entiendas una unidad, pasa a las flashcards de esa unidad para fijarla. Los recuadros azules son definiciones para memorizar; los dorados, frases y pautas que suman en el examen. Idea transversal que la pauta premia: todo subsistema de RR.HH. existe para ejecutar la estrategia del negocio.",
+  secciones: [
+    {
+      unidad: "U1", titulo: "Rol Estratégico y Planificación de la Dotación",
+      html: `
+        <p>Antes de contratar a nadie, se decide <strong>cómo se organiza el trabajo</strong> y <strong>qué personas, con qué capacidades y en qué cantidad</strong> necesita la empresa para cumplir su estrategia.</p>
+
+        <div class="guia-def">Idea transversal del examen: cada subsistema de RR.HH. existe para que las personas correctas, con las capacidades correctas y motivadas de la forma correcta, ejecuten la estrategia del negocio.</div>
+
+        <h4>El ciclo de subsistemas</h4>
+        <p>Planificar la dotación &rarr; reclutar &rarr; seleccionar &rarr; mantener (compensar) &rarr; desarrollar/capacitar &rarr; evaluar el desempeño. Es un <strong>ciclo</strong>: la evaluación realimenta capacitación, compensación y carrera.</p>
+
+        <h4>Diseño de la estructura organizacional</h4>
+        <p>La estructura define cómo la empresa <strong>divide, agrupa y coordina</strong> las actividades para alcanzar sus objetivos. Puede ser formal (jerarquías definidas) o informal (relaciones espontáneas). Regla clave: <strong>"la estructura sigue a la estrategia"</strong>.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Criterio de diseño</th><th>Qué mide</th><th>Alta / Ejemplo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Formalización</strong></td><td>Cuán escritas están las reglas</td><td>Alta: banco/AFP · Baja: startup</td></tr>
+            <tr><td><strong>Centralización</strong></td><td>Cuánto se concentran las decisiones arriba</td><td>Centralizada: el gerente decide · Descentralizada: se delega</td></tr>
+            <tr><td><strong>Departamentalización</strong></td><td>Cómo se agrupan las actividades</td><td>Funcional / Divisional / Matricial</td></tr>
+            <tr><td><strong>Especialización</strong></td><td>Grado de división del trabajo</td><td>Alta: tareas acotadas · Baja: cargos polifuncionales</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Pertinencia según estrategia:</strong> entornos dinámicos / innovación &rarr; estructuras flexibles, descentralizadas, matriciales. Entornos estables / eficiencia o costos &rarr; formales y centralizadas. Diferenciación / cercanía al cliente &rarr; divisionales por producto o mercado. Ej.: Falabella es divisional (Retail, Banco, Sodimac, Mall Plaza); una PYME familiar suele ser funcional y centralizada.</p>
+
+        <h4>Descripción de puestos</h4>
+        <p>Dos documentos que no hay que confundir:</p>
+        <ul>
+          <li><strong>Descripción del cargo</strong>: QUÉ hace el puesto (tareas, responsabilidades, cómo y por qué).</li>
+          <li><strong>Especificación o perfil</strong>: QUÉ necesita la persona (estudios, experiencia, conocimientos, competencias).</li>
+        </ul>
+        <p>El instrumento con fuerza legal es el <strong>contrato de trabajo</strong>; el descriptor le sirve de base y ordena la estructura, valoriza los puestos y ayuda a planificar. El <strong>enfoque por competencias</strong> se alinea mejor con la estrategia: no basta con hacer las tareas, importa <em>cómo</em> se hacen.</p>
+
+        <h4>Tipos de cargos y su impacto</h4>
+        <p>Directivos (deciden la estrategia), Gerenciales (implementan y supervisan), Operativos (producen y entregan), Administrativos (información y soporte), Especializados (expertise técnico crítico) y Temporales (flexibilidad y bajo costo). Alineamiento: si la ventaja es innovación se cuidan los especializados y directivos; si es costo, la eficiencia de los operativos.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "La estructura sigue a la estrategia." · "Descripción = qué hace el puesto; especificación = qué necesita la persona." · "El enfoque por competencias mira el cómo, no solo el qué."</div>
+      `
+    },
+    {
+      unidad: "U2", titulo: "Provisión: Reclutamiento y Selección",
+      html: `
+        <p>Dos procesos distintos: <strong>reclutar</strong> es atraer candidatos (genera el pool a partir del perfil del cargo y del modelo de personas); <strong>seleccionar</strong> es elegir al que mejor calza con el puesto y con la estrategia.</p>
+
+        <h4>Reclutamiento interno vs. externo</h4>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Aspecto</th><th>Interno</th><th>Externo</th></tr></thead>
+          <tbody>
+            <tr><td>Qué es</td><td>Cubrir con gente de la empresa (ascensos, movilidad)</td><td>Atraer talento de fuera (portales, ferias, referidos)</td></tr>
+            <tr><td>Ventajas</td><td>Menor costo, facilita movilidad, sube moral y lealtad</td><td>Talento nuevo, mayor diversidad, ideas frescas</td></tr>
+            <tr><td>Utilidad</td><td>Menos capacitación inicial</td><td>Llena vacíos de habilidades, introduce enfoques nuevos</td></tr>
+          </tbody>
+        </table></div>
+        <p>Alineamiento: cultura fuerte / continuidad tiende a <strong>interno</strong>; necesidad de reinventarse pide más <strong>externo</strong>.</p>
+
+        <h4>El "modelo de personas"</h4>
+        <div class="guia-def">El modelo de personas es el perfil ideal del empleado según competencias, valores y cultura: no es solo "qué sabe hacer", sino "qué tipo de persona encaja aquí".</div>
+        <p>Ej.: una fintech atrae perfiles creativos y tolerantes a la ambigüedad; un banco tradicional, perfiles rigurosos y orientados al detalle. El <strong>reclutamiento por redes</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
+
+        <h4>Etapas de la selección</h4>
+        <p>1) Definir el perfil &rarr; 2) Atraer candidatos &rarr; 3) Evaluación (pruebas, entrevistas, assessment) &rarr; 4) Selección final &rarr; 5) Integración (inducción y socialización). Además del calce técnico importa el <strong>ajuste cultural</strong>: un candidato brillante que no comparte los valores suele fracasar igual.</p>
+        <p>Alineamiento de la selección con la estrategia: innovación &rarr; creatividad y adaptabilidad, pruebas abiertas; eficiencia/costos &rarr; confiabilidad y ajuste a procedimientos; cargos estratégicos &rarr; procesos largos y rigurosos; cargos operativos/temporales &rarr; procesos ágiles.</p>
+
+        <h4>Entrevistas y técnica STAR</h4>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Aspecto</th><th>Preliminar</th><th>De selección</th></tr></thead>
+          <tbody>
+            <tr><td>Propósito</td><td>Filtrar requisitos básicos</td><td>Evaluar en profundidad competencias y ajuste cultural</td></tr>
+            <tr><td>Formato</td><td>Estructurada, breve, ambiente relajado</td><td>Preguntas situacionales/conductuales, a veces panel</td></tr>
+            <tr><td>Ejemplo</td><td>Entrevista telefónica o por video</td><td>Entrevista por competencias (liderazgo, resolución)</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Técnica STAR</strong> (Situación &ndash; Tarea &ndash; Acción &ndash; Resultado): en vez de "&iquest;eres bueno en equipo?", se pide "cuéntame una situación real de conflicto en tu equipo y qué hiciste". El comportamiento pasado predice mejor el potencial.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "Reclutar es atraer; seleccionar es elegir." · "Se contrata por competencias y se retiene por ajuste cultural." · "STAR pide un caso real, no una autopercepción."</div>
+      `
+    },
+    {
+      unidad: "U3", titulo: "Mantenimiento: Compensaciones y Rotación",
+      html: `
+        <p>"Mantenimiento" es todo lo que hace la empresa para <strong>retener y motivar</strong>. Su corazón son las remuneraciones y compensaciones. Es la unidad <strong>más preguntada</strong> del examen (Pregunta 5 de la pauta 2025).</p>
+
+        <h4>Criterios y características de la remuneración</h4>
+        <ul>
+          <li><strong>Equidad interna</strong>: consistencia entre roles similares (se logra valorizando puestos).</li>
+          <li><strong>Equidad externa (competitividad)</strong>: competir con el mercado (se logra con benchmark salarial).</li>
+          <li><strong>Rendimiento</strong>: parte ligada al desempeño individual y organizacional.</li>
+        </ul>
+        <p>Características deseables: <strong>transparencia</strong> (claridad en cómo se fijan los sueldos) y <strong>flexibilidad</strong> (capacidad de ajuste).</p>
+
+        <h4>Compensación total (el modelo estrella del examen)</h4>
+        <div class="guia-def">La compensación total tiene tres capas. La respuesta del examen SIEMPRE debe incluir la monetaria directa, porque es la base del sistema.</div>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Capa</th><th>Qué incluye</th><th>Por qué retiene</th></tr></thead>
+          <tbody>
+            <tr><td><strong>A) Monetaria directa</strong> (la base)</td><td>Sueldo base competitivo, bonos por metas, participación en utilidades / stock options</td><td>Justicia externa evita fuga; justicia interna evita trato injusto; bonos fomentan meritocracia</td></tr>
+            <tr><td><strong>B) Monetaria indirecta</strong> (beneficios)</td><td>Seguros de salud/dental/mental, licencias extendidas, bonos de transporte, apoyo a la formación</td><td>Reduce el estrés financiero y muestra preocupación por la persona</td></tr>
+            <tr><td><strong>C) No monetaria</strong> (salario emocional)</td><td>Trabajo híbrido, flexibilidad horaria, reconocimiento, propósito, bienestar emocional</td><td>La generación joven trabaja por sentido y balance vida-trabajo</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Ancla legal chilena:</strong> el sueldo base no puede ser inferior al ingreso mínimo mensual. Existe la <strong>gratificación legal</strong>: el empleador elige entre repartir el 30% de las utilidades líquidas (Art. 47) o pagar el 25% de lo devengado con tope de 4,75 ingresos mínimos mensuales (Art. 50). El tope de 4,75 IMM corresponde a esta segunda alternativa, no a la del 30%.</p>
+        <div class="guia-frase"><strong>PAUTA 5.a (6 pts):</strong> "Proponga un esquema de al menos 2 tipos de compensación, con impacto y ejemplos." 6 pts = 2 tipos + impacto + ejemplos de cada uno; 4 pts = 2 tipos pero ejemplos de solo 1; 2 pts = solo mencionar. Trampa: incluir SIEMPRE la monetaria directa.</div>
+
+        <h4>La otra cara: rotación no deseada</h4>
+        <p>Si el mantenimiento falla, la gente se va. La pauta pide <strong>analizar</strong> las consecuencias (el porqué), no solo nombrarlas:</p>
+        <ul>
+          <li>Costos de reemplazo, contratación e inducción (pueden superar el 100% del sueldo anual del cargo).</li>
+          <li>Baja de productividad durante la curva de aprendizaje del reemplazo.</li>
+          <li>Sobrecarga de los que se quedan &rarr; estrés &rarr; más renuncias (efecto dominó).</li>
+          <li>Pérdida de conocimiento crítico / capital intelectual (experiencia no documentada).</li>
+          <li>Deterioro del clima y daño al employer branding; riesgo de perder clientes o relaciones clave.</li>
+        </ul>
+        <div class="guia-frase"><strong>PAUTA 5.b (6 pts):</strong> "Analice 3 consecuencias concretas de la rotación no deseada." 6 pts = 3 consecuencias analizadas; 2 pts = 1, o las 3 solo mencionadas. El verbo es analizar/describir, no nombrar.</div>
+      `
+    },
+    {
+      unidad: "U4", titulo: "Capacitación y Desarrollo de Carrera",
+      html: `
+        <p>Busca cerrar la brecha entre lo que las personas <strong>saben hoy</strong> y lo que la estrategia <strong>necesitará mañana</strong>.</p>
+
+        <h4>Inducción y socialización</h4>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th></th><th>Inducción</th><th>Socialización</th></tr></thead>
+          <tbody>
+            <tr><td>Qué es</td><td>Proceso formal que introduce a políticas, cultura y expectativas</td><td>Proceso continuo de integración ("hacerse parte")</td></tr>
+            <tr><td>Naturaleza</td><td>Evento formal y acotado</td><td>Proceso informal y prolongado</td></tr>
+            <tr><td>Ejemplo</td><td>Programa de bienvenida + mentoría</td><td>Team building</td></tr>
+          </tbody>
+        </table></div>
+        <p>La socialización tiene tres fases: <strong>Anticipatoria</strong> (expectativas antes de entrar), <strong>Encuentro</strong> (choque expectativa/realidad) y <strong>Metamorfosis</strong> (ajuste pleno).</p>
+
+        <h4>Ciclo de capacitación</h4>
+        <p><strong>DNC &rarr; Diseño &rarr; Implementación &rarr; Evaluación.</strong> La <strong>DNC</strong> (Detección de Necesidades) es la etapa clave: identifica las brechas reales con evaluaciones de desempeño, encuestas e indicadores. Si se detecta mal, se capacita en lo que no sirve.</p>
+        <ul>
+          <li><strong>Diseño</strong>: objetivos de aprendizaje claros, métodos (presencial, e-learning, taller) y materiales.</li>
+          <li><strong>Implementación</strong>: ejecutar cursos, e-learning, talleres, on-the-job.</li>
+          <li><strong>Evaluación</strong>: medir efectividad e impacto (post-test, observación, indicadores antes/después).</li>
+        </ul>
+        <p><strong>Ancla chilena:</strong> las empresas financian capacitación con la franquicia tributaria <strong>SENCE</strong> (hasta 1% de la planilla anual), ejecutada por organismos técnicos (OTEC).</p>
+
+        <h4>Medición de impacto: ROI y Kirkpatrick</h4>
+        <div class="guia-def">ROI (%) = (Beneficios &minus; Costos) / Costos &times; 100. Ej.: invertir $10.000 y que las ventas suban $30.000 &rarr; ROI = (30.000 &minus; 10.000) / 10.000 &times; 100 = 200%.</div>
+        <p>El <strong>modelo de Kirkpatrick</strong> mide la efectividad en 4 niveles: 1) Reacción, 2) Aprendizaje, 3) Comportamiento y 4) Resultados. El ROI (Phillips) es un 5&ordm; nivel que traduce los resultados a dinero.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "Capacitar sin DNC es dispararle a ciegas al presupuesto." · "El ROI traduce la capacitación al lenguaje de la gerencia: el dinero."</div>
+      `
+    },
+    {
+      unidad: "U5", titulo: "Gestión del Desempeño",
+      html: `
+        <p>Medir cómo lo está haciendo cada persona para <strong>decidir</strong> (desarrollo, promoción, compensación) y <strong>alinear</strong> su aporte con la estrategia. Se evalúa el <strong>qué</strong> (metas/resultados) y el <strong>cómo</strong> (conductas y competencias).</p>
+
+        <h4>Modelos de evaluación</h4>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Modelo</th><th>En qué se basa</th><th>Ventaja / Desventaja</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Por objetivos (MBO/APO)</strong></td><td>Logro de objetivos medibles</td><td>Claro y con foco en resultados / Rígido</td></tr>
+            <tr><td><strong>360&deg;</strong></td><td>Feedback de jefe, pares, subordinados y autoevaluación</td><td>Visión integral / Complejo, riesgo de sesgo</td></tr>
+            <tr><td><strong>Por competencias</strong></td><td>Competencias y conductas clave</td><td>Foco en desarrollo y estrategia / Subjetivo si no están bien definidas</td></tr>
+          </tbody>
+        </table></div>
+        <p>El modelo debe reflejar los <strong>valores</strong> y estar alineado con la <strong>estrategia</strong>: si valoras la colaboración pero solo evalúas metas individuales, generas competencia interna tóxica.</p>
+
+        <h4>Desempeño efectivo y metas SMART</h4>
+        <p>Desempeño efectivo es el que logra los resultados Y lo hace coherente con los valores. Las metas deben ser <strong>SMART</strong>: eSpecíficas, Medibles, Alcanzables, Relevantes y Temporales. Ej.: "aumentar las ventas 10% en 6 meses".</p>
+
+        <h4>Errores frecuentes de evaluación</h4>
+        <ul>
+          <li><strong>Efecto halo</strong>: una cualidad contamina toda la evaluación.</li>
+          <li><strong>Tendencia central</strong>: poner a todos "en el medio".</li>
+          <li><strong>Indulgencia / severidad</strong>: evaluar a todos muy alto o muy bajo.</li>
+          <li><strong>Recencia</strong>: pesa solo lo último del período.</li>
+          <li><strong>Similitud ("similar a mí")</strong>: sesgo por afinidad personal.</li>
+        </ul>
+
+        <h4>Retroalimentación y cierre del ciclo</h4>
+        <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). El ciclo se cierra con planes de desarrollo individualizados, gestión de resultados (promoción, compensación, desarrollo) y acciones correctivas para el bajo desempeño. La evaluación vuelve a alimentar capacitación, compensación y carrera.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "Se evalúa el qué (metas) y el cómo (conductas)." · "El feedback convierte la evaluación en desarrollo." · "Se evalúa lo que se quiere que ocurra: la métrica moldea la conducta."</div>
+      `
+    },
+    {
+      unidad: "U6", titulo: "Cambio y Desarrollo Organizacional",
+      html: `
+        <p>La organización se mira como un todo que cambia: su <strong>identidad</strong> (visión, misión, valores), su <strong>comportamiento</strong> y cómo <strong>gestionar el cambio</strong>.</p>
+
+        <h4>Identidad y comportamiento organizacional</h4>
+        <ul>
+          <li><strong>Visión</strong>: lo que la organización aspira a ser en el futuro (da dirección).</li>
+          <li><strong>Misión</strong>: su razón de ser hoy (qué hace, para quién y cómo).</li>
+          <li><strong>Valores</strong>: principios que guían el comportamiento y las decisiones.</li>
+        </ul>
+        <p>El <strong>Comportamiento Organizacional (CO)</strong> estudia la conducta humana en el trabajo en tres niveles: individuo (motivación, personalidad, percepción), grupos (equipos, liderazgo, comunicación) y sistema organizacional (estructura, cultura, políticas). En los equipos hay <strong>conflicto de tarea</strong> (más fácil de mitigar) y <strong>conflicto de relación</strong> (emocional, el más dañino). Sacar a un equipo de la crisis exige liberar la tensión emocional e intervenir la etapa de tormenta &mdash; las etapas de <strong>Tuckman</strong>: forming, storming, norming, performing.</p>
+
+        <h4>Gestión del cambio</h4>
+        <div class="guia-def">Cambio organizacional = proceso planificado que lleva a la organización de un estado actual (A) a uno deseado (B), ejecutado a través de las personas. Es un proceso, no un evento, y siempre hay resistencia.</div>
+        <p>Puede ser <strong>incremental</strong> (mejoras continuas) o <strong>transformacional</strong> (radical, redefine el rumbo). Causas de <strong>resistencia</strong>: miedo a lo desconocido, pérdida de control, hábitos y amenaza a la seguridad laboral. Estrategias para superarla: comunicación clara, participación, apoyo y negociación.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Modelo</th><th>Idea central</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Lewin</strong></td><td>Descongelar (romper el statu quo) &rarr; Cambiar (implementar) &rarr; Recongelar (consolidar)</td></tr>
+            <tr><td><strong>Kotter (8 pasos)</strong></td><td>Urgencia &rarr; coalición &rarr; visión &rarr; comunicar &rarr; eliminar obstáculos &rarr; triunfos cortos &rarr; consolidar &rarr; anclar en la cultura</td></tr>
+            <tr><td><strong>Rousseau &amp; Ten Have</strong></td><td>Cambio basado en evidencia (datos, no modas), vía las personas y sus contratos psicológicos</td></tr>
+            <tr><td><strong>McKinsey (influencia)</strong></td><td>4 condiciones simultáneas: role modeling, comprensión y convicción, mecanismos de refuerzo, desarrollo de habilidades</td></tr>
+          </tbody>
+        </table></div>
+        <p>El <strong>rol de los líderes</strong> es decisivo: modelan las conductas deseadas, dan sentido, sostienen la energía y remueven barreras. Sin líderes comprometidos, el cambio se apaga.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "El cambio es un proceso, no un evento." · "Sin recongelar, la organización vuelve al hábito viejo." · "Kotter parte en la urgencia y termina anclando el cambio en la cultura."</div>
+      `
+    },
+    {
+      unidad: "U7", titulo: "Cultura y Clima Organizacional",
+      html: `
+        <p>La cultura es el <strong>núcleo profundo</strong> de la organización; el clima, su <strong>temperatura del momento</strong>. No hay que confundirlos.</p>
+
+        <h4>Cultura organizacional</h4>
+        <div class="guia-def">Cultura = conjunto de valores, creencias, normas y prácticas compartidas que influyen en el comportamiento de los miembros. Es efectiva cuando se alinea con la estrategia, es flexible y genera compromiso.</div>
+        <p>El <strong>modelo de Schein</strong> distingue 3 niveles:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Nivel</th><th>Qué es</th><th>Ejemplo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Artefactos</strong></td><td>Lo visible (fácil de observar, difícil de interpretar)</td><td>Oficinas, ritos, lenguaje, vestimenta</td></tr>
+            <tr><td><strong>Valores adoptados</strong></td><td>Lo que la empresa dice que valora</td><td>Misión, código de ética</td></tr>
+            <tr><td><strong>Supuestos básicos</strong></td><td>Creencias inconscientes que se dan por sentadas (el verdadero núcleo)</td><td>"Aquí el jefe siempre tiene la razón"</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Modelos que miden o clasifican la cultura:</strong> Cameron &amp; Quinn (Competing Values: Clan, Adhocrática, Jerárquica, de Mercado), Denison &amp; Neale (4 dimensiones: misión, consistencia, involucramiento, adaptabilidad), Spencer Stuart &amp; Harvard (8 tipos), Richard Barrett (evolutivo, 7 niveles) y Maslow (base motivacional). La <strong>fuerza</strong> de la cultura (Sathe &amp; Wiener) mide el grado de acuerdo con los valores: una cultura fuerte alinea, pero también puede resistir el cambio. En organizaciones grandes conviven <strong>subculturas</strong> que conviene integrar hacia objetivos comunes.</p>
+        <div class="guia-frase"><strong>PAUTA 5.c (8 pts):</strong> analizar 2 elementos de una cultura que falla (4 pts) + acciones concretas para esos 2 (4 pts). Analizar, no nombrar; y traducir "cambiar el liderazgo" en acciones medibles (ej.: coaching + 360&deg; ligada a bonos; canales de denuncia y comités bajo la Ley Karin para un ambiente tóxico).</div>
+
+        <h4>Clima laboral</h4>
+        <p>El clima es la <strong>percepción compartida</strong> del ambiente de trabajo. Componentes: físico (condiciones, seguridad), psicológico (relaciones, apoyo, equidad) y organizacional (políticas y procedimientos). Se mide con encuestas y se corrige con planes según resultados. El <strong>modelo de Likert</strong> define 4 sistemas de clima:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Sistema</th><th>Estilo</th><th>Participación</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1 · Autoritario coercitivo</strong></td><td>Decisiones arriba, miedo</td><td>Nula</td></tr>
+            <tr><td><strong>2 · Autoritario benevolente</strong></td><td>Paternalista</td><td>Delegación controlada</td></tr>
+            <tr><td><strong>3 · Consultivo</strong></td><td>Se consulta antes de decidir</td><td>Media</td></tr>
+            <tr><td><strong>4 · Participativo</strong></td><td>Confianza plena, decisiones compartidas</td><td>Alta (mejor clima)</td></tr>
+          </tbody>
+        </table></div>
+        <p><strong>Litwin &amp; Stringer</strong> describen el clima por dimensiones perceptuales (estructura, responsabilidad, recompensa, calidez, apoyo, conflicto, identidad); Stringer (2002) muestra que el clima es en gran medida <strong>gestionable por las jefaturas</strong>.</p>
+
+        <div class="guia-frase"><strong>Cultura vs. clima:</strong> la cultura es profunda, estable y compartida (valores y supuestos), y cambiarla toma años; el clima es la percepción del ambiente en un momento dado, más cambiante y medible con encuestas. Mejorar el clima es más rápido que cambiar la cultura.</div>
+      `
+    }
+  ]
+};
