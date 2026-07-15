@@ -1,12 +1,20 @@
 // Guía de estudio ordenada — ADMINISTRACIÓN (material para LEER antes de las flashcards)
-// Contenido reorganizado y VALIDADO desde el resumen del ramo (temario oficial:
-// Unidad I La Organización, Unidad II Áreas Funcionales, Unidad III Proceso de Gestión).
+// ALINEADA AL TEMARIO OFICIAL: Unidad I La Organización, Unidad II Áreas Funcionales,
+// Unidad III Proceso de Gestión (Planificación, Organización, Dirección, Control).
 // Se sirve como HTML por unidad y se inyecta en #estudio-guia-contenido (contenido
 // estático propio, sin entrada de usuario). Usa las clases .guia-* de css/styles.css.
 // Nota: aquí SÍ se usan template literals (backticks) por ser un bloque HTML largo;
 // la regla de "no backticks" aplica al banco de preguntas (data/materias/*.js).
-// Corrección de contenido: el apunte atribuía el punto ideal "9,9" a los estudios de
-// Michigan; en realidad es del GRID GERENCIAL de Blake & Mouton. Corregido en la Unidad V.
+//
+// Alineación al temario (2026-07-15):
+//   - NO se incluyen las escuelas/historia de la administración (Taylor, Fayol, Weber,
+//     Hawthorne-Mayo): no están en el temario. Los autores solo se citan cuando
+//     sostienen un punto del temario (Chandler en estructura, Blake & Mouton /
+//     Lewin / Hersey-Blanchard en liderazgo, Maslow/McGregor/Herzberg/McClelland
+//     en motivación, Mintzberg en roles).
+//   - Se reforzó el Área de Finanzas con estructura y fuentes de financiamiento.
+//   - Corrección: el punto ideal "9,9" es del GRID GERENCIAL de Blake & Mouton,
+//     no de los estudios de Michigan. Corregido en la Unidad V.
 window.ESTUDIO_GUIA = window.ESTUDIO_GUIA || {};
 window.ESTUDIO_GUIA.administracion = {
   nombre: "Administración",
@@ -19,7 +27,7 @@ window.ESTUDIO_GUIA.administracion = {
 
         <h4>Administración, eficiencia y eficacia</h4>
         <div class="guia-def">Administrar es <strong>coordinar y supervisar</strong> las actividades de otros para que se realicen de forma <strong>eficiente</strong> (menor uso de recursos) y <strong>eficaz</strong> (logro de objetivos). Eficiencia + eficacia = alto desempeño.</div>
-        <p>La <strong>productividad</strong> es el cociente producción / insumos: sube si produces más con lo mismo, lo mismo con menos, o más con menos.</p>
+        <p>La <strong>productividad</strong> es el cociente producción / insumos: sube si produces más con lo mismo, lo mismo con menos, o más con menos. Es la medida concreta de la eficiencia.</p>
 
         <h4>Qué es una organización y qué es una empresa</h4>
         <p>Una <strong>organización social</strong> es un acuerdo deliberado de personas para lograr un propósito que solas no alcanzarían. Sus tres características: propósito común, personas y estructura deliberada. Una <strong>empresa</strong> es la herramienta que crean las personas para coordinar acciones y <strong>crear valor</strong>, transformando insumos en productos y servicios. Para ello necesita recursos materiales, humanos y financieros.</p>
@@ -37,7 +45,7 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
-        <h4>Gerentes: niveles, funciones y habilidades</h4>
+        <h4>Gerentes: niveles, roles y habilidades</h4>
         <p>Hay tres <strong>niveles</strong>: primera línea (operativo), medio (intermedio) y alto (institucional, que ve la empresa como un todo). Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar. Los <strong>roles de Mintzberg</strong> se agrupan en interpersonales, informativos y decisorios.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Habilidad</th><th>Qué es</th><th>Dónde pesa más</th></tr></thead>
@@ -48,13 +56,16 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
+        <h4>Tipos de organizaciones</h4>
+        <p>Sirven para "etiquetar" cualquier empresa de un caso: por <strong>estructura jerárquica</strong> (horizontal/plana vs. vertical/piramidal), por <strong>fines de lucro</strong> (con o sin), por <strong>toma de decisiones</strong> (centralizada vs. descentralizada), por <strong>configuración</strong> (Mintzberg) y por <strong>sector</strong> (pública, privada, mixta).</p>
+
         <div class="guia-frase"><strong>Frases de examen:</strong> "La empresa existe para crear valor." · "Eficiencia es hacer bien las cosas; eficacia es hacer las cosas correctas." · "Primero nombra el tipo de organización, luego justifica con el caso."</div>
       `
     },
     {
       unidad: "U2", titulo: "Áreas Funcionales",
       html: `
-        <p>Un <strong>área funcional</strong> agrupa a quienes cumplen una misma función. Las cuatro clásicas —Comercial, Operaciones, Gestión de Personas y Finanzas— no operan aisladas: se coordinan para crear valor.</p>
+        <p>Un <strong>área funcional</strong> agrupa a quienes cumplen una misma función. Las cuatro clásicas —Comercial, Operaciones, Gestión de Personas y Finanzas— no operan aisladas: se coordinan para crear valor. Al final se suman las Nuevas Tendencias.</p>
 
         <h4>Área Comercial (Marketing y Ventas)</h4>
         <p>Detecta necesidades insatisfechas, crea el producto, lo pone a precio competitivo y lo comunica. Distingue <strong>necesidad</strong> (carencia básica), <strong>deseo</strong> (bien específico que la cubre) y <strong>demanda</strong> (deseo con capacidad de compra). Su herramienta es el <strong>Marketing Mix (4 P)</strong>.</p>
@@ -67,10 +78,10 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td><strong>Promoción</strong></td><td>Publicidad; estrategias Push (empujar) y Pull (atraer)</td></tr>
           </tbody>
         </table></div>
-        <p>El producto recorre un <strong>ciclo de vida</strong>: introducción → crecimiento → madurez → declive. La estrategia se apoya en <strong>segmentar</strong> (grupos homogéneos), elegir un <strong>mercado objetivo</strong> y <strong>posicionar</strong> (lugar en la mente del consumidor).</p>
+        <p>El producto recorre un <strong>ciclo de vida</strong>: introducción → crecimiento → madurez → declive. La estrategia se apoya en <strong>segmentar</strong> (grupos homogéneos), elegir un <strong>mercado objetivo</strong> (indiferenciado, multisegmento o de nicho) y <strong>posicionar</strong> (lugar en la mente del consumidor).</p>
 
         <h4>Área de Producción y Operaciones</h4>
-        <p>Transforma insumos en bienes y servicios. Planifica con cuatro decisiones: <strong>qué</strong> producir (lo define Comercial), <strong>cómo</strong> (artesanal, masivo o por proceso), <strong>cuánto</strong> (capacidad) y <strong>dónde</strong> (localización). Los servicios tienen cuatro rasgos: <strong>intangibilidad, inseparabilidad, heterogeneidad y carácter perecedero</strong>. La calidad se apoya en normas ISO y Six Sigma (definir, medir, analizar, mejorar, controlar).</p>
+        <p>Transforma insumos en bienes y servicios. Planifica con cuatro decisiones: <strong>qué</strong> producir (lo define Comercial), <strong>cómo</strong> (artesanal, masivo o por proceso), <strong>cuánto</strong> (capacidad) y <strong>dónde</strong> (localización). Los servicios tienen cuatro rasgos: <strong>intangibilidad, inseparabilidad, heterogeneidad y carácter perecedero</strong>. La calidad se apoya en las <strong>normas ISO</strong> (estandarizan y certifican procesos) y en <strong>Six Sigma</strong> (ciclo DMAIC: definir, medir, analizar, mejorar, controlar).</p>
 
         <h4>La Cadena de Valor de Porter (integra las áreas)</h4>
         <p>Ve la empresa como una serie de actividades que agregan valor, buscando el <strong>margen</strong>.</p>
@@ -89,11 +100,11 @@ window.ESTUDIO_GUIA.administracion = {
         <p>Gestiona al capital humano —fuente de <strong>ventaja competitiva</strong> difícil de imitar— a lo largo de un proceso: planeación de RH → reclutamiento (o recorte) → selección → inducción → capacitación → manejo del desempeño → compensación → desarrollo de carrera. El <strong>reclutamiento interno</strong> es más barato y rápido; el <strong>externo</strong> trae ideas nuevas pero es caro y lento. En la selección se evitan el error de rechazo (descartar a uno bueno) y el de aceptación (contratar a uno malo).</p>
 
         <h4>Área de Finanzas (y Contable)</h4>
-        <p>Obtiene y usa eficientemente los recursos financieros. Estados básicos: <strong>Balance</strong> (foto: activos, pasivos, patrimonio), <strong>Estado de resultado</strong> (utilidad o pérdida del período), <strong>Flujo de caja</strong> (liquidez) y <strong>cambios en el patrimonio</strong>. Ratios: liquidez, endeudamiento y rentabilidad (ROA, ROE). Inversiones de largo plazo: <strong>VAN, TIR y Payback</strong>.</p>
+        <p>Obtiene y usa eficientemente los recursos financieros. La <strong>estructura de financiamiento</strong> combina capital propio y deuda, con fuentes <strong>internas</strong> (reinversión de utilidades, emisión de acciones/bonos, nuevos socios) y <strong>externas</strong> (bancos, créditos, fondos de inversión). Estados básicos: <strong>Balance</strong> (foto: activos, pasivos, patrimonio), <strong>Estado de resultado</strong> (utilidad o pérdida del período), <strong>Flujo de caja</strong> (liquidez) y <strong>cambios en el patrimonio</strong>. Ratios: liquidez, endeudamiento y rentabilidad (ROA, ROE). Inversiones de largo plazo: <strong>VAN, TIR y Payback</strong>.</p>
 
         <h4>Nuevas tendencias e interrelación</h4>
         <p>Tres motores del siglo XXI: <strong>tecnología, globalización y espíritu emprendedor</strong> (más RSE y gestión del conocimiento). Y una regla para responder casos:</p>
-        <div class="guia-def">Comercial dice QUÉ producir &amp;rarr; Operaciones dice CÓMO/CUÁNTO/DÓNDE &amp;rarr; Finanzas dice CON QUÉ recursos &amp;rarr; RRHH pone a QUIÉN lo ejecuta. Todo cruzado por la Cadena de Valor.</div>
+        <div class="guia-def">Comercial dice QUÉ producir → Operaciones dice CÓMO/CUÁNTO/DÓNDE → Finanzas dice CON QUÉ recursos → RRHH pone a QUIÉN lo ejecuta. Todo cruzado por la Cadena de Valor.</div>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El capital humano bien gestionado es ventaja competitiva." · "Un desajuste en un área rompe la cadena de valor." · "Nombra el área Y explica su función concreta (no solo el nombre)."</div>
       `
@@ -101,11 +112,11 @@ window.ESTUDIO_GUIA.administracion = {
     {
       unidad: "U3", titulo: "Proceso de Gestión: Planificación",
       html: `
-        <p>El proceso de gestión son las cuatro funciones en acción: <strong>Planificar &amp;rarr; Organizar &amp;rarr; Dirigir &amp;rarr; Controlar</strong>. Es un ciclo: lo que se controla vuelve a alimentar la planificación. Empezamos por planificar.</p>
+        <p>El proceso de gestión son las cuatro funciones en acción: <strong>Planificar → Organizar → Dirigir → Controlar</strong>. Es un ciclo: lo que se controla vuelve a alimentar la planificación. Empezamos por planificar.</p>
 
         <h4>Qué es y para qué sirve planificar</h4>
         <p>Es definir <strong>objetivos</strong>, establecer <strong>estrategias</strong> y desarrollar <strong>planes</strong>. Su propósito es <strong>dar dirección</strong>; reduce la incertidumbre, aporta eficiencia y minimiza el desperdicio. La planeación <strong>formal</strong> (escrita, comunicada, con plazos) aumenta la probabilidad de éxito.</p>
-        <div class="guia-def">Secuencia mental de la planificación: <strong>Objetivos &amp;rarr; Estrategias &amp;rarr; Planes</strong>.</div>
+        <div class="guia-def">Secuencia mental de la planificación: <strong>Objetivos → Estrategias → Planes</strong>.</div>
 
         <h4>Pasos del proceso (Koontz)</h4>
         <ol>
@@ -134,7 +145,7 @@ window.ESTUDIO_GUIA.administracion = {
           <thead><tr><th>Criterio</th><th>Opciones</th></tr></thead>
           <tbody>
             <tr><td><strong>Alcance</strong></td><td>Estratégicos (toda la organización) vs. Operacionales (áreas)</td></tr>
-            <tr><td><strong>Marco de tiempo</strong></td><td>Largo plazo (&amp;gt;3 años) vs. Corto plazo (&amp;le;1 año)</td></tr>
+            <tr><td><strong>Marco de tiempo</strong></td><td>Largo plazo (más de 3 años) vs. Corto plazo (un año o menos)</td></tr>
             <tr><td><strong>Especificidad</strong></td><td>Específicos (detallados) vs. Direccionales (flexibles)</td></tr>
             <tr><td><strong>Frecuencia de uso</strong></td><td>Uso único vs. Permanentes</td></tr>
           </tbody>
@@ -148,7 +159,7 @@ window.ESTUDIO_GUIA.administracion = {
       unidad: "U4", titulo: "Proceso de Gestión: Organización",
       html: `
         <p><strong>Organizar</strong> es distribuir y estructurar el trabajo: definir qué hacer, cómo y quién lo hará. Regla de oro:</p>
-        <div class="guia-def">La <strong>estrategia antecede a la estructura</strong> (Estrategia &amp;rarr; Estructura). Primero se decide adónde ir; luego se diseña la organización que lo permite (Chandler).</div>
+        <div class="guia-def">La <strong>estrategia antecede a la estructura</strong> (Estrategia → Estructura). Primero se decide adónde ir; luego se diseña la organización que lo permite (Chandler).</div>
 
         <h4>Los seis elementos del diseño</h4>
         <p>La <strong>estructura organizacional</strong> es la distribución formal de los puestos y se diseña con seis elementos: especialización del trabajo, departamentalización, cadena de mando, tramo de control, centralización/descentralización y formalización.</p>
@@ -215,7 +226,7 @@ window.ESTUDIO_GUIA.administracion = {
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Teoría</th><th>Qué plantea</th></tr></thead>
           <tbody>
-            <tr><td><strong>Maslow</strong></td><td>Pirámide: fisiológicas &amp;rarr; seguridad &amp;rarr; sociales &amp;rarr; estima &amp;rarr; autorrealización</td></tr>
+            <tr><td><strong>Maslow</strong></td><td>Pirámide: fisiológicas → seguridad → sociales → estima → autorrealización</td></tr>
             <tr><td><strong>X e Y (McGregor)</strong></td><td>X: persona perezosa (hay que dirigir); Y: disfruta y busca responsabilidad</td></tr>
             <tr><td><strong>Bifactorial (Herzberg)</strong></td><td>Motivación (logro, reconocimiento) satisface; higiene (sueldo, condiciones) evita insatisfacción</td></tr>
             <tr><td><strong>Tres necesidades (McClelland)</strong></td><td>Logro, poder y afiliación</td></tr>
@@ -255,7 +266,7 @@ window.ESTUDIO_GUIA.administracion = {
 
         <h4>Indicadores y KPI</h4>
         <p>Un <strong>KPI</strong> (Key Performance Indicator) mide cuánto varió el objetivo SMART y si se cumplió. Tipos: <strong>financieros</strong> (ROI, ROS, costos), <strong>de proceso</strong> (eficiencia, tiempos de ciclo) y <strong>de satisfacción</strong> (cliente, empleado).</p>
-        <div class="guia-def">Cómo se arma un KPI: <strong>Objetivo &amp;rarr; Meta (con cifra y plazo) &amp;rarr; Indicador (fórmula)</strong>. Ej.: "aumentar exportaciones" &amp;rarr; "+15% en 2024 vs. 2023" &amp;rarr; ventas extranjero (2024/2023) &amp;ge; 1,15.</div>
+        <div class="guia-def">Cómo se arma un KPI: <strong>Objetivo → Meta (con cifra y plazo) → Indicador (fórmula)</strong>. Ej.: "aumentar exportaciones" → "+15% en 2024 vs. 2023" → ventas extranjero (2024/2023) ≥ 1,15.</div>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El control cierra el ciclo y realimenta la planificación." · "Un buen indicador permite tomar decisiones y hacer seguimiento." · "Nombra el indicador Y explícalo; solo listarlo da puntaje parcial."</div>
       `

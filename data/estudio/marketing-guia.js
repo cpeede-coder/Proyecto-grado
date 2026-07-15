@@ -1,7 +1,20 @@
 // Guía de estudio ordenada — MARKETING (material para LEER antes de las flashcards)
-// Contenido reorganizado y VALIDADO desde "RESUMEN MARKETING SEGÚN TEMARIO"
-// contra fuentes estándar (Kotler & Armstrong, Kotler & Keller, Aaker, Rogers,
-// Porter, Ansoff, BCG). Correcciones documentadas en data/estudio/marketing.js.
+// ALINEADA AL TEMARIO OFICIAL de Marketing (Marketing I, II y III) y VALIDADA contra
+// fuentes estándar (Kotler & Armstrong, Kotler & Keller, Aaker, Rogers, Porter,
+// Ansoff, BCG, Booms & Bitner).
+//
+// ALINEACIÓN CON EL TEMARIO (revisión 2026-07-15):
+//   - NADA se eliminó por estar fuera del temario (todo el contenido mapeaba).
+//   - REESTRUCTURA de 6 a 7 unidades; se separó el Marketing Mix en dos unidades
+//     (Producto/Precio/Plaza y Promoción/Proceso/Personas) para dar espacio a la
+//     PROMOCIÓN, antes subrepresentada.
+//   - AGREGADO: promoción completa (principios de la comunicación, funciones de la
+//     publicidad, recursos y estrategias publicitarias, roles y estereotipos, público
+//     objetivo, medios y estrategia creativa, planificación de medios, marketing
+//     cooperativo/afiliación); las 7P completas con PROCESO y PERSONAS/marketing
+//     interno como secciones propias; sensibilidad de precios; gestión de categorías
+//     ampliada (roles y pasos del proceso).
+//   Unidades (ids/títulos) IDÉNTICAS a data/estudio/marketing.js.
 // Se sirve como HTML por unidad y se inyecta en #estudio-guia-contenido (contenido
 // estático propio, sin entrada de usuario). Usa las clases .guia-* de css/styles.css.
 // Nota: aquí SÍ se usan template literals (backticks) por ser un bloque HTML largo;
@@ -22,10 +35,11 @@ window.ESTUDIO_GUIA.marketing = {
           <li><strong>Comportamiento</strong>: las acciones observables (qué compra y cómo usa).</li>
           <li><strong>Mentalidad</strong>: pensamientos, creencias y percepciones sobre marcas (qué piensa y siente).</li>
         </ul>
+        <p>De ahí nacen las <strong>preferencias</strong> de <strong>producto</strong> (por qué elige uno sobre otro), <strong>canal</strong> (dónde prefiere comprar: tienda, online, app) y <strong>marca</strong> (a qué marcas es leal y por qué).</p>
 
         <h4>Necesidad, deseo y demanda</h4>
         <div class="guia-def">Necesidad = carencia básica. Deseo = la forma que toma esa necesidad según la cultura y la persona. Demanda = deseo respaldado por poder de compra. El marketing NO crea necesidades: detecta y orienta el deseo.</div>
-        <p>Sobre esa base actúan factores psicológicos: <strong>persuasión</strong> (cómo la empresa influye), <strong>emociones</strong> (sentimientos momentáneos que evoca el producto) y <strong>sentimientos</strong> (estados más duraderos, como la confianza y la lealtad).</p>
+        <p>Sobre esa base actúan los factores de la <strong>psicología del consumidor</strong>: <strong>necesidades</strong>, <strong>persuasión</strong> (cómo la empresa influye), <strong>emociones</strong> (sentimientos momentáneos que evoca el producto), <strong>sentimientos</strong> (estados más duraderos, como confianza y lealtad), <strong>adopción</strong> (empezar a usar algo nuevo) y <strong>acciones</strong> (comprar, recomendar o abandonar).</p>
 
         <h4>Adopción de innovaciones (Everett Rogers)</h4>
         <p>No todos adoptan un producto nuevo al mismo ritmo. Rogers clasifica a los consumidores en <strong>cinco categorías de adoptantes</strong> que forman una curva normal (campana):</p>
@@ -87,7 +101,7 @@ window.ESTUDIO_GUIA.marketing = {
     {
       unidad: "U3", titulo: "Planificación Estratégica de Marketing",
       html: `
-        <p>Elegido el mercado, hay que decidir <strong>cómo competir</strong> y <strong>hacia dónde crecer</strong>. Esta unidad reúne las grandes herramientas estratégicas.</p>
+        <p>Elegido el mercado, hay que decidir <strong>cómo competir</strong> y <strong>hacia dónde crecer</strong>. La <strong>planificación estratégica de marketing</strong> define la estrategia de largo plazo: analiza el entorno, fija objetivos y crea planes de acción sobre las 4P. Esta unidad reúne sus grandes herramientas.</p>
 
         <h4>Estrategias genéricas de Porter</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -99,7 +113,7 @@ window.ESTUDIO_GUIA.marketing = {
           </tbody>
         </table></div>
 
-        <h4>Posiciones competitivas de mercado (Kotler)</h4>
+        <h4>Estrategias competitivas de mercado (Kotler)</h4>
         <p>Según la cuota que ocupa, la empresa juega un rol distinto:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Rol</th><th>Estrategia</th><th>Ejemplo</th></tr></thead>
@@ -140,52 +154,7 @@ window.ESTUDIO_GUIA.marketing = {
       `
     },
     {
-      unidad: "U4", titulo: "Mezcla de Marketing (4P y 7P)",
-      html: `
-        <p>El <strong>marketing mix</strong> es la caja de herramientas TÁCTICA que ejecuta la estrategia. Son las <strong>4P</strong>: Producto, Precio, Plaza y Promoción (ampliadas a 7P en servicios).</p>
-
-        <h4>Producto</h4>
-        <p>Un <strong>producto</strong> es un bien tangible; un <strong>servicio</strong>, un beneficio intangible. Todo producto tiene tres niveles:</p>
-        <div class="guia-def">Producto básico o central (la necesidad de fondo, ej. transporte) → Producto real (características tangibles: diseño, marca, calidad) → Producto aumentado (extras: garantía, postventa, financiamiento).</div>
-        <p>El <strong>desarrollo de nuevos productos</strong> sigue: generación de ideas → filtrado → desarrollo/prueba de concepto → estrategia de marketing → análisis de negocio → desarrollo → prueba de mercado → comercialización. Una <strong>línea</strong> es un grupo de productos relacionados; la <strong>mezcla</strong> es el conjunto de todas las líneas.</p>
-        <p><strong>Ciclo de vida del producto (CVP):</strong> Introducción → Crecimiento → Madurez → Declive. Cada etapa exige distinta estrategia de las 4P (en introducción, crear conciencia; en madurez, diferenciar y fidelizar; en declive, cosechar o retirar).</p>
-
-        <h4>Precio</h4>
-        <p>Es la única P que genera <strong>ingresos</strong>. Depende de costos, demanda (elasticidad), competencia, objetivos de marketing y factores externos. Métodos y estrategias:</p>
-        <div class="tabla-scroll"><table class="guia-tabla">
-          <thead><tr><th>Enfoque</th><th>Lógica</th><th>Ejemplo</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Basado en costos</strong></td><td>Costo más un margen</td><td>Mueble: costo + 20%</td></tr>
-            <tr><td><strong>Basado en el valor</strong></td><td>Según la percepción del cliente</td><td>Perfume premium</td></tr>
-            <tr><td><strong>Basado en competencia</strong></td><td>Alinearse a los rivales</td><td>Nuevo proveedor de internet</td></tr>
-            <tr><td><strong>Penetración</strong></td><td>Precio bajo para ganar cuota rápido</td><td>Cereal nuevo barato</td></tr>
-            <tr><td><strong>Descremado</strong></td><td>Precio alto inicial que baja por etapas</td><td>Lanzamiento de smartphone</td></tr>
-          </tbody>
-        </table></div>
-
-        <h4>Plaza (distribución)</h4>
-        <p>Rutas del fabricante al consumidor. <strong>Directo</strong> (sin intermediarios) o <strong>indirecto</strong> (mayoristas, minoristas, agentes/brokers, que facilitan pero no toman posesión). Estrategias de intensidad: <strong>intensiva</strong> (máximos puntos, ej. snacks), <strong>selectiva</strong> (limitada, ej. electrónica de gama) y <strong>exclusiva</strong> (uno o pocos, ej. lujo). El enfoque <strong>omnicanal</strong> integra físico, online y app en una experiencia coherente.</p>
-
-        <h4>Promoción (comunicación)</h4>
-        <p>Su rol es <strong>informar, persuadir y recordar</strong>. La mezcla incluye: publicidad, promoción de ventas (descuentos, cupones), <strong>venta personal</strong>, relaciones públicas y marketing directo/digital.</p>
-
-        <h4>De 4P a 7P (servicios)</h4>
-        <p>Como los servicios son intangibles y se producen frente al cliente, se añaden tres P:</p>
-        <div class="tabla-scroll"><table class="guia-tabla">
-          <thead><tr><th>P adicional</th><th>Qué abarca</th></tr></thead>
-          <tbody>
-            <tr><td><strong>Personas</strong></td><td>Quienes prestan el servicio; marketing interno</td></tr>
-            <tr><td><strong>Procesos</strong></td><td>Los pasos del servicio y su eficiencia</td></tr>
-            <tr><td><strong>Evidencia física</strong></td><td>Instalaciones, uniformes, empaque, documentación</td></tr>
-          </tbody>
-        </table></div>
-        <p>La <strong>evidencia física</strong> da confianza, diferencia la marca y sube la percepción de valor: como el servicio no se ve, lo tangible "prueba" su calidad.</p>
-
-        <div class="guia-frase"><strong>Frases de examen:</strong> "El precio es la única P que genera ingresos." · "Cada etapa del ciclo de vida exige distinta mezcla de marketing." · "En servicios, lo tangible prueba lo intangible."</div>
-      `
-    },
-    {
-      unidad: "U5", titulo: "Marca, Posicionamiento y Propuesta de Valor",
+      unidad: "U4", titulo: "Marca, Posicionamiento y Propuesta de Valor",
       html: `
         <p>La <strong>marca</strong> es el activo intangible más valioso del marketing: vive en la mente del consumidor y puede justificar precios más altos y lealtad.</p>
 
@@ -206,16 +175,97 @@ window.ESTUDIO_GUIA.marketing = {
             <tr><td><strong>Estrategia de comunicación</strong></td><td>¿Cómo lo reforzamos en cada contacto?</td></tr>
           </tbody>
         </table></div>
-        <p>Se resume en una <strong>declaración de posicionamiento</strong>: "Para [público] que [necesidad], [marca] ofrece [beneficio] a diferencia de [competencia]" (ej. Volvo = seguridad).</p>
+        <p>Se resume en una <strong>declaración de posicionamiento</strong>: "Para [público] que [necesidad], [marca] ofrece [beneficio] a diferencia de [competencia]" (ej. Volvo = seguridad). Los <strong>beneficios funcionales</strong> son tangibles (qué hace el producto); los <strong>emocionales</strong>, intangibles (Dove promueve la autoestima, no solo jabón).</p>
 
         <h4>Propuesta de valor</h4>
-        <p>Declaración clara de los <strong>beneficios únicos</strong> que el producto ofrece y cómo resuelve el problema del cliente mejor que las alternativas. Componentes: beneficio principal, resolución del problema y diferenciación. Es una PROMESA que la empresa cumple y el cliente percibe como valiosa. Un buen posicionamiento diferencia, conecta emocionalmente, da consistencia y crea valor perceptual.</p>
+        <p>Declaración clara de los <strong>beneficios únicos</strong> que el producto ofrece y cómo resuelve el problema del cliente mejor que las alternativas. Componentes: beneficio principal, resolución del problema y diferenciación. Es una PROMESA que la empresa cumple y el cliente percibe como valiosa. Un buen posicionamiento diferencia, conecta emocionalmente, da consistencia y crea valor perceptual que justifica precios más altos.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La marca vive en la mente del consumidor." · "Identidad es lo que la marca emite; imagen, lo que el cliente percibe." · "Posicionar es ser distinto, no solo mejor."</div>
       `
     },
     {
-      unidad: "U6", titulo: "Experiencia del Cliente, Fidelización y Métricas",
+      unidad: "U5", titulo: "Marketing Mix: Producto, Precio y Plaza",
+      html: `
+        <p>El <strong>marketing mix</strong> es la caja de herramientas TÁCTICA que ejecuta la estrategia. Son las <strong>4P</strong>: Producto, Precio, Plaza y Promoción (ampliadas a <strong>7P</strong> en servicios). Esta unidad cubre las tres primeras; la Promoción y las P de servicios van en la unidad siguiente.</p>
+
+        <h4>Producto</h4>
+        <p>Un <strong>producto</strong> es un bien tangible; un <strong>servicio</strong>, un beneficio intangible. Todo producto tiene tres niveles:</p>
+        <div class="guia-def">Producto básico o central (la necesidad de fondo, ej. transporte) → Producto real (características tangibles: diseño, marca, calidad) → Producto aumentado (extras: garantía, postventa, financiamiento).</div>
+        <p>La <strong>planificación y desarrollo de nuevos productos</strong> sigue: generación de ideas → filtrado → desarrollo/prueba de concepto → estrategia de marketing → análisis de negocio → desarrollo → prueba de mercado → comercialización, más la gestión posterior del ciclo de vida. Una <strong>línea</strong> es un grupo de productos relacionados; la <strong>mezcla</strong> (cartera) es el conjunto de todas las líneas. La <strong>marca</strong> influye en la percepción del producto (relación producto-marca).</p>
+        <p><strong>Ciclo de vida del producto (CVP):</strong> Introducción → Crecimiento → Madurez → Declive. Cada etapa exige distinta estrategia (la "estrategia de adopción del mercado"):</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Etapa</th><th>Estrategia clave</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Introducción</strong></td><td>Crear conciencia; penetración o descremado</td></tr>
+            <tr><td><strong>Crecimiento</strong></td><td>Ampliar distribución y mejorar el producto</td></tr>
+            <tr><td><strong>Madurez</strong></td><td>Diferenciar, fidelizar y segmentar</td></tr>
+            <tr><td><strong>Declive</strong></td><td>Reducir costos, cosechar (harvesting), nichos o eliminar</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Precio</h4>
+        <p>Es la única P que genera <strong>ingresos</strong>. Depende de costos, demanda (elasticidad), competencia, objetivos de marketing y factores externos. La <strong>sensibilidad de precios</strong> mide cuánto reacciona la demanda ante cambios de precio: los productos de lujo suelen tener baja sensibilidad (se paga por el prestigio). Métodos y estrategias:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Enfoque</th><th>Lógica</th><th>Ejemplo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Basado en costos</strong></td><td>Costo más un margen</td><td>Mueble: costo + 20%</td></tr>
+            <tr><td><strong>Basado en el valor</strong></td><td>Según la percepción del cliente</td><td>Perfume premium</td></tr>
+            <tr><td><strong>Basado en competencia</strong></td><td>Alinearse a los rivales</td><td>Nuevo proveedor de internet</td></tr>
+            <tr><td><strong>Penetración</strong></td><td>Precio bajo para ganar cuota rápido</td><td>Cereal nuevo barato</td></tr>
+            <tr><td><strong>Descremado</strong></td><td>Precio alto inicial que baja por etapas</td><td>Lanzamiento de smartphone</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Plaza (distribución)</h4>
+        <p>Rutas del fabricante al consumidor. <strong>Directo</strong> (sin intermediarios) o <strong>indirecto</strong> (mayoristas, minoristas, agentes/brokers, que facilitan pero no toman posesión). El enfoque <strong>omnicanal</strong> integra físico, online y app en una experiencia coherente; el <strong>e-commerce</strong> vende por plataformas digitales. Estrategias de intensidad: <strong>intensiva</strong> (máximos puntos, ej. snacks), <strong>selectiva</strong> (limitada, ej. electrónica de gama) y <strong>exclusiva</strong> (uno o pocos, ej. lujo).</p>
+        <p>En el canal actúan dos disciplinas: el <strong>trade marketing</strong> (estrategias dirigidas a los intermediarios para impulsar compra y distribución) y el <strong>merchandising</strong> (técnicas en el punto de venta: exhibiciones, ubicación, promociones). La <strong>gestión de categorías</strong> es un proceso colaborativo fabricante-minorista que trata cada categoría como una unidad de negocio: define <strong>roles de categoría</strong> (generador de tráfico, de ingresos o de imagen) y sigue pasos (definir → asignar rol → analizar → estrategia → implementar surtido/precio/promoción/ubicación → revisar) para maximizar ventas y rentabilidad.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "El precio es la única P que genera ingresos." · "Cada etapa del ciclo de vida exige distinta mezcla de marketing." · "Trade marketing mira al canal; merchandising, a la góndola."</div>
+      `
+    },
+    {
+      unidad: "U6", titulo: "Promoción, Proceso y Personas (7P)",
+      html: `
+        <p>La <strong>promoción</strong> es la P de la comunicación, y en servicios se suman las P de <strong>Proceso</strong>, <strong>Personas</strong> y <strong>Evidencia física</strong>. Aquí van los temas que más suelen preguntarse y que conviene dominar completos.</p>
+
+        <h4>Promoción: rol y mezcla de comunicación</h4>
+        <p>La promoción reúne las actividades que <strong>informan, persuaden y recuerdan</strong> al consumidor. La <strong>mezcla de comunicación</strong> combina varias herramientas:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Herramienta</th><th>Qué es</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Publicidad</strong></td><td>Comunicación pagada en medios masivos y digitales</td></tr>
+            <tr><td><strong>Promoción de ventas</strong></td><td>Incentivos de corto plazo: descuentos, cupones, concursos</td></tr>
+            <tr><td><strong>Venta personal</strong></td><td>Contacto directo vendedor-cliente</td></tr>
+            <tr><td><strong>Relaciones públicas</strong></td><td>Gestión de imagen: prensa, eventos</td></tr>
+            <tr><td><strong>Marketing directo</strong></td><td>Contacto directo para respuesta inmediata (email, telemarketing)</td></tr>
+            <tr><td><strong>Marketing cooperativo / de afiliación</strong></td><td>Promoción conjunta entre empresas; afiliados que cobran comisión por venta</td></tr>
+          </tbody>
+        </table></div>
+        <p>Para <strong>determinar la mezcla promocional</strong> se fijan primero los <strong>objetivos</strong> (más ventas, mejor imagen) y luego se eligen las herramientas más efectivas. Toda comunicación se apoya en tres <strong>principios</strong>: <strong>claridad</strong>, <strong>consistencia</strong> (mismo mensaje en todos los canales) y <strong>relevancia</strong> para el público.</p>
+
+        <h4>Publicidad, medios y estrategia creativa (planificación de medios)</h4>
+        <p>Las <strong>funciones de la publicidad</strong> son <strong>informar</strong>, <strong>persuadir</strong> y <strong>recordar</strong>. Para lograrlas se usan:</p>
+        <ul>
+          <li><strong>Recursos publicitarios</strong>: imágenes, texto, música, celebridades.</li>
+          <li><strong>Estrategias publicitarias</strong>: enfoque emocional, racional, de miedo, humorístico, testimonial.</li>
+          <li><strong>Roles y estereotipos</strong>: representaciones de personas (roles) y generalizaciones simplificadas de grupos (estereotipos, ej. de género) que a veces se usan en los anuncios.</li>
+        </ul>
+        <p>El <strong>público objetivo</strong> es el segmento específico al que se dirige la campaña (ej. jóvenes de 18-25 para una bebida energética). La <strong>planificación de medios</strong> elige los canales (TV, radio, prensa, internet, redes) según público y presupuesto, y la <strong>estrategia creativa</strong> define cómo se cuenta el mensaje (ej. storytelling para conectar emocionalmente).</p>
+
+        <h4>Proceso (7P)</h4>
+        <p>El <strong>proceso</strong> es el conjunto de actividades para entregar el servicio: el flujo desde la primera interacción hasta la postventa. Procesos eficientes mejoran la satisfacción, la calidad y la <strong>conexión entre empresa y cliente</strong> (ej. un check-in de hotel rápido y sin fricción).</p>
+
+        <h4>Personas y marketing interno (7P)</h4>
+        <p>Las <strong>personas</strong> que prestan el servicio son parte del producto. Importa su <strong>perfil</strong>, la <strong>cultura organizacional</strong> y el <strong>ambiente de trabajo</strong>. El <strong>marketing interno</strong> trata a los empleados como clientes internos: los motiva y capacita (reconocimiento, recompensas, formación) para que entreguen un mejor servicio.</p>
+
+        <h4>Evidencia física (7P)</h4>
+        <p>Los <strong>elementos tangibles</strong> que el cliente ve, toca y experimenta (ambiente físico, apariencia del personal, materiales, empaque, documentación) dan confianza y credibilidad, diferencian la marca y suben la percepción de valor. Como el servicio no se ve, lo tangible "prueba" su calidad.</p>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "La promoción informa, persuade y recuerda." · "Primero el objetivo, después el mix promocional." · "El marketing interno precede al externo: empleado motivado, mejor servicio."</div>
+      `
+    },
+    {
+      unidad: "U7", titulo: "Experiencia del Cliente, Fidelización y Métricas",
       html: `
         <p>El marketing no termina en la venta. Esta unidad cubre cómo cuidar la <strong>experiencia</strong>, retener y fidelizar clientes, y <strong>medir</strong> los resultados.</p>
 
@@ -242,11 +292,8 @@ window.ESTUDIO_GUIA.marketing = {
         </ul>
         <p>Retener cuesta mucho menos que captar un cliente nuevo, y una buena recuperación puede dejar al cliente incluso más leal que antes de la falla.</p>
 
-        <h4>Gestión de categorías y trade marketing</h4>
-        <p>La <strong>gestión de categorías</strong> es un proceso colaborativo entre fabricante y minorista que trata cada categoría como una unidad de negocio, optimizando surtido, precios, promociones y ubicación en el estante. Es parte del <strong>trade marketing</strong> (marketing dirigido al canal), mientras el <strong>merchandising</strong> son las técnicas en el punto de venta.</p>
-
-        <h4>Métricas de marketing</h4>
-        <p>"Lo que no se mide, no se puede mejorar." La <strong>medición de productividad</strong> evalúa la eficacia respecto a lo invertido (ROI). Indicadores clave:</p>
+        <h4>Medición: productividad y métricas de marketing</h4>
+        <p>"Lo que no se mide, no se puede mejorar." La <strong>medición de productividad</strong> evalúa la eficacia respecto a lo invertido (ROI) y permite optimizar recursos y decidir con datos. Indicadores clave:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Métrica</th><th>Qué mide</th></tr></thead>
           <tbody>
@@ -254,10 +301,10 @@ window.ESTUDIO_GUIA.marketing = {
             <tr><td><strong>CPA</strong></td><td>Costo de adquirir un cliente nuevo</td></tr>
             <tr><td><strong>CLV</strong></td><td>Valor total del cliente en toda su relación</td></tr>
             <tr><td><strong>Tasa de conversión</strong></td><td>% de leads que realizan la acción deseada</td></tr>
-            <tr><td><strong>Tasa de retención / NPS</strong></td><td>Cuántos siguen comprando; disposición a recomendar</td></tr>
+            <tr><td><strong>Retención / NPS</strong></td><td>Cuántos siguen comprando; disposición a recomendar</td></tr>
           </tbody>
         </table></div>
-        <p>Un negocio es sano cuando el <strong>CLV supera con holgura al CPA</strong>.</p>
+        <p>Las métricas se agrupan en tipos: de <strong>alcance</strong> y visibilidad, de <strong>compromiso</strong>, de generación de <strong>leads</strong>, de <strong>ventas/conversión</strong>, de <strong>satisfacción</strong> (NPS) y <strong>financieras</strong>. Un negocio es sano cuando el <strong>CLV supera con holgura al CPA</strong>.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El viaje del cliente no termina en la compra." · "Retener cuesta menos que captar." · "Lo que no se mide, no se puede mejorar."</div>
       `

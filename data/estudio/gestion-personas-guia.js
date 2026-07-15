@@ -1,12 +1,17 @@
 // Guía de estudio ordenada — GESTIÓN DE PERSONAS (material para LEER antes de las flashcards)
-// Contenido reorganizado y VALIDADO desde el resumen del ramo (F. Maldonado + PPT +
-// pauta julio 2025), contrastado con fuentes estándar de RR.HH. (Chiavenato, Dessler,
-// Werther), los autores citados y el Código del Trabajo chileno.
+// Contenido ALINEADO al TEMARIO OFICIAL del Examen de Grado y VALIDADO contra fuentes
+// estándar de RR.HH. (Chiavenato, Dessler, Werther) y los autores del curso.
 // Se sirve como HTML por unidad y se inyecta en #estudio-guia-contenido (contenido
 // estático propio, sin entrada de usuario). Usa las clases .guia-* de css/styles.css.
-// Correcciones respecto de los apuntes: gratificación legal (el tope de 4,75 IMM es de la
-// alternativa del Art. 50, no del 30% del Art. 47) y descriptor de cargo (el documento con
-// fuerza legal es el contrato; el descriptor le sirve de base). Se evitan cifras variables.
+//
+// SE ELIMINÓ (fuera del temario): DERECHO LABORAL CHILENO / Código del Trabajo — gratificación
+//   legal (Art. 47 / Art. 50, tope 4,75 IMM), ingreso mínimo mensual como "ancla legal";
+//   franquicia SENCE / OTEC; referencia a la Ley Karin (reformulada a "canales de denuncia y
+//   comités de convivencia"); nota sobre el "valor legal" del descriptor de cargo. "Rotación"
+//   se conserva solo como concepto de retención dentro de Mantenimiento.
+// SE AGREGÓ (del temario): utilidad de la descripción de puestos; diseño de reclutamiento
+//   alineado al modelo de personas; alineamiento estratégico de la compensación; rol de los
+//   líderes en la gestión del cambio.
 // Nota: aquí SÍ se usan template literals (backticks) por ser un bloque HTML largo;
 // la regla de "no backticks" aplica al banco de preguntas (data/materias/*.js).
 window.ESTUDIO_GUIA = window.ESTUDIO_GUIA || {};
@@ -15,7 +20,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
   intro: "Léela unidad por unidad. Cuando entiendas una unidad, pasa a las flashcards de esa unidad para fijarla. Los recuadros azules son definiciones para memorizar; los dorados, frases y pautas que suman en el examen. Idea transversal que la pauta premia: todo subsistema de RR.HH. existe para ejecutar la estrategia del negocio.",
   secciones: [
     {
-      unidad: "U1", titulo: "Rol Estratégico y Planificación de la Dotación",
+      unidad: "U1", titulo: "Planificación de la Dotación",
       html: `
         <p>Antes de contratar a nadie, se decide <strong>cómo se organiza el trabajo</strong> y <strong>qué personas, con qué capacidades y en qué cantidad</strong> necesita la empresa para cumplir su estrategia.</p>
 
@@ -35,15 +40,15 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
             <tr><td><strong>Especialización</strong></td><td>Grado de división del trabajo</td><td>Alta: tareas acotadas · Baja: cargos polifuncionales</td></tr>
           </tbody>
         </table></div>
-        <p><strong>Pertinencia según estrategia:</strong> entornos dinámicos / innovación &rarr; estructuras flexibles, descentralizadas, matriciales. Entornos estables / eficiencia o costos &rarr; formales y centralizadas. Diferenciación / cercanía al cliente &rarr; divisionales por producto o mercado. Ej.: Falabella es divisional (Retail, Banco, Sodimac, Mall Plaza); una PYME familiar suele ser funcional y centralizada.</p>
+        <p><strong>Pertinencia según el modelo de negocio y la estrategia:</strong> entornos dinámicos / innovación &rarr; estructuras flexibles, descentralizadas, matriciales. Entornos estables / eficiencia o costos &rarr; formales y centralizadas. Diferenciación / cercanía al cliente &rarr; divisionales por producto o mercado. Ej.: Falabella es divisional (Retail, Banco, Sodimac, Mall Plaza); una PYME familiar suele ser funcional y centralizada.</p>
 
-        <h4>Descripción de puestos</h4>
-        <p>Dos documentos que no hay que confundir:</p>
+        <h4>Descripción de puestos y su utilidad</h4>
+        <p>Describir los puestos permite saber <strong>qué tareas</strong> hace un cargo y <strong>qué se requiere</strong> de quien lo desempeña. Su utilidad: ordena la estructura, valoriza los puestos, ayuda a planificar la dotación y da la base para reclutar, seleccionar, evaluar y compensar. Dos documentos que no hay que confundir:</p>
         <ul>
           <li><strong>Descripción del cargo</strong>: QUÉ hace el puesto (tareas, responsabilidades, cómo y por qué).</li>
           <li><strong>Especificación o perfil</strong>: QUÉ necesita la persona (estudios, experiencia, conocimientos, competencias).</li>
         </ul>
-        <p>El instrumento con fuerza legal es el <strong>contrato de trabajo</strong>; el descriptor le sirve de base y ordena la estructura, valoriza los puestos y ayuda a planificar. El <strong>enfoque por competencias</strong> se alinea mejor con la estrategia: no basta con hacer las tareas, importa <em>cómo</em> se hacen.</p>
+        <p>El <strong>enfoque tradicional</strong> se centra en las tareas (el qué); el <strong>enfoque por competencias</strong> mira las habilidades, actitudes y conductas observables (el cómo) y se alinea mejor con la estrategia: no basta con hacer las tareas, importa <em>cómo</em> se hacen y si esas conductas construyen la ventaja competitiva.</p>
 
         <h4>Tipos de cargos y su impacto</h4>
         <p>Directivos (deciden la estrategia), Gerenciales (implementan y supervisan), Operativos (producen y entregan), Administrativos (información y soporte), Especializados (expertise técnico crítico) y Temporales (flexibilidad y bajo costo). Alineamiento: si la ventaja es innovación se cuidan los especializados y directivos; si es costo, la eficiencia de los operativos.</p>
@@ -52,7 +57,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       `
     },
     {
-      unidad: "U2", titulo: "Provisión: Reclutamiento y Selección",
+      unidad: "U2", titulo: "Reclutamiento y Selección",
       html: `
         <p>Dos procesos distintos: <strong>reclutar</strong> es atraer candidatos (genera el pool a partir del perfil del cargo y del modelo de personas); <strong>seleccionar</strong> es elegir al que mejor calza con el puesto y con la estrategia.</p>
 
@@ -67,15 +72,16 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p>Alineamiento: cultura fuerte / continuidad tiende a <strong>interno</strong>; necesidad de reinventarse pide más <strong>externo</strong>.</p>
 
-        <h4>El "modelo de personas"</h4>
+        <h4>Diseño del reclutamiento alineado al "modelo de personas"</h4>
         <div class="guia-def">El modelo de personas es el perfil ideal del empleado según competencias, valores y cultura: no es solo "qué sabe hacer", sino "qué tipo de persona encaja aquí".</div>
-        <p>Ej.: una fintech atrae perfiles creativos y tolerantes a la ambigüedad; un banco tradicional, perfiles rigurosos y orientados al detalle. El <strong>reclutamiento por redes</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
+        <p>El reclutamiento se diseña <strong>desde ese perfil</strong>: define qué talento buscar, dónde buscarlo y con qué mensaje, para que quienes lleguen ya calcen con el tipo de persona que la estrategia necesita. Ej.: una fintech atrae perfiles creativos y tolerantes a la ambigüedad; un banco tradicional, perfiles rigurosos y orientados al detalle. El <strong>reclutamiento por redes sociales</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
 
         <h4>Etapas de la selección</h4>
         <p>1) Definir el perfil &rarr; 2) Atraer candidatos &rarr; 3) Evaluación (pruebas, entrevistas, assessment) &rarr; 4) Selección final &rarr; 5) Integración (inducción y socialización). Además del calce técnico importa el <strong>ajuste cultural</strong>: un candidato brillante que no comparte los valores suele fracasar igual.</p>
         <p>Alineamiento de la selección con la estrategia: innovación &rarr; creatividad y adaptabilidad, pruebas abiertas; eficiencia/costos &rarr; confiabilidad y ajuste a procedimientos; cargos estratégicos &rarr; procesos largos y rigurosos; cargos operativos/temporales &rarr; procesos ágiles.</p>
 
         <h4>Entrevistas y técnica STAR</h4>
+        <p>La entrevista busca crear las <strong>condiciones para evaluar de verdad el potencial</strong> del candidato:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>Preliminar</th><th>De selección</th></tr></thead>
           <tbody>
@@ -90,20 +96,20 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       `
     },
     {
-      unidad: "U3", titulo: "Mantenimiento: Compensaciones y Rotación",
+      unidad: "U3", titulo: "Mantenimiento: Remuneraciones y Compensaciones",
       html: `
-        <p>"Mantenimiento" es todo lo que hace la empresa para <strong>retener y motivar</strong>. Su corazón son las remuneraciones y compensaciones. Es la unidad <strong>más preguntada</strong> del examen (Pregunta 5 de la pauta 2025).</p>
+        <p>"Mantenimiento" es todo lo que hace la empresa para <strong>retener y motivar</strong>. Su corazón son las remuneraciones y compensaciones. Es una de las unidades <strong>más preguntadas</strong> del examen.</p>
 
-        <h4>Criterios y características de la remuneración</h4>
+        <h4>Políticas de remuneración: criterios y características</h4>
         <ul>
           <li><strong>Equidad interna</strong>: consistencia entre roles similares (se logra valorizando puestos).</li>
           <li><strong>Equidad externa (competitividad)</strong>: competir con el mercado (se logra con benchmark salarial).</li>
           <li><strong>Rendimiento</strong>: parte ligada al desempeño individual y organizacional.</li>
         </ul>
-        <p>Características deseables: <strong>transparencia</strong> (claridad en cómo se fijan los sueldos) y <strong>flexibilidad</strong> (capacidad de ajuste).</p>
+        <p>Características deseables: <strong>transparencia</strong> (claridad en cómo se fijan los sueldos) y <strong>flexibilidad</strong> (capacidad de ajuste al negocio y al mercado).</p>
 
         <h4>Compensación total (el modelo estrella del examen)</h4>
-        <div class="guia-def">La compensación total tiene tres capas. La respuesta del examen SIEMPRE debe incluir la monetaria directa, porque es la base del sistema.</div>
+        <div class="guia-def">La compensación total tiene tres capas (monetaria directa, monetaria indirecta y no monetaria). La respuesta del examen SIEMPRE debe incluir la monetaria directa, porque es la base del sistema.</div>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Capa</th><th>Qué incluye</th><th>Por qué retiene</th></tr></thead>
           <tbody>
@@ -112,11 +118,11 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
             <tr><td><strong>C) No monetaria</strong> (salario emocional)</td><td>Trabajo híbrido, flexibilidad horaria, reconocimiento, propósito, bienestar emocional</td><td>La generación joven trabaja por sentido y balance vida-trabajo</td></tr>
           </tbody>
         </table></div>
-        <p><strong>Ancla legal chilena:</strong> el sueldo base no puede ser inferior al ingreso mínimo mensual. Existe la <strong>gratificación legal</strong>: el empleador elige entre repartir el 30% de las utilidades líquidas (Art. 47) o pagar el 25% de lo devengado con tope de 4,75 ingresos mínimos mensuales (Art. 50). El tope de 4,75 IMM corresponde a esta segunda alternativa, no a la del 30%.</p>
-        <div class="guia-frase"><strong>PAUTA 5.a (6 pts):</strong> "Proponga un esquema de al menos 2 tipos de compensación, con impacto y ejemplos." 6 pts = 2 tipos + impacto + ejemplos de cada uno; 4 pts = 2 tipos pero ejemplos de solo 1; 2 pts = solo mencionar. Trampa: incluir SIEMPRE la monetaria directa.</div>
+        <p><strong>Alineamiento estratégico:</strong> el mix de compensación se diseña hacia atrás desde la estrategia: debe incentivar los comportamientos que el negocio necesita y retener al talento clave. Si la ventaja es innovación pesan la participación en utilidades y la autonomía; si es costo/eficiencia, sueldos competitivos y bonos por productividad.</p>
+        <div class="guia-frase"><strong>Pauta &mdash; esquema de compensación:</strong> proponer al menos 2 tipos de compensación con impacto y ejemplos concretos de cada uno. Trampa: incluir SIEMPRE la monetaria directa; no respondas solo "flexibilidad y reconocimiento".</div>
 
-        <h4>La otra cara: rotación no deseada</h4>
-        <p>Si el mantenimiento falla, la gente se va. La pauta pide <strong>analizar</strong> las consecuencias (el porqué), no solo nombrarlas:</p>
+        <h4>La otra cara: retención y rotación no deseada</h4>
+        <p>Si el mantenimiento falla, la gente se va. La rotación no deseada se trata como la cara B de la retención; la pauta pide <strong>analizar</strong> sus consecuencias (el porqué), no solo nombrarlas:</p>
         <ul>
           <li>Costos de reemplazo, contratación e inducción (pueden superar el 100% del sueldo anual del cargo).</li>
           <li>Baja de productividad durante la curva de aprendizaje del reemplazo.</li>
@@ -124,7 +130,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li>Pérdida de conocimiento crítico / capital intelectual (experiencia no documentada).</li>
           <li>Deterioro del clima y daño al employer branding; riesgo de perder clientes o relaciones clave.</li>
         </ul>
-        <div class="guia-frase"><strong>PAUTA 5.b (6 pts):</strong> "Analice 3 consecuencias concretas de la rotación no deseada." 6 pts = 3 consecuencias analizadas; 2 pts = 1, o las 3 solo mencionadas. El verbo es analizar/describir, no nombrar.</div>
+        <div class="guia-frase"><strong>Frases de examen:</strong> "La compensación total SIEMPRE parte por la monetaria directa." · "Se paga por lo que se quiere que ocurra." · "La rotación se analiza, no se lista."</div>
       `
     },
     {
@@ -150,7 +156,6 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Implementación</strong>: ejecutar cursos, e-learning, talleres, on-the-job.</li>
           <li><strong>Evaluación</strong>: medir efectividad e impacto (post-test, observación, indicadores antes/después).</li>
         </ul>
-        <p><strong>Ancla chilena:</strong> las empresas financian capacitación con la franquicia tributaria <strong>SENCE</strong> (hasta 1% de la planilla anual), ejecutada por organismos técnicos (OTEC).</p>
 
         <h4>Medición de impacto: ROI y Kirkpatrick</h4>
         <div class="guia-def">ROI (%) = (Beneficios &minus; Costos) / Costos &times; 100. Ej.: invertir $10.000 y que las ventas suban $30.000 &rarr; ROI = (30.000 &minus; 10.000) / 10.000 &times; 100 = 200%.</div>
@@ -164,7 +169,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>Medir cómo lo está haciendo cada persona para <strong>decidir</strong> (desarrollo, promoción, compensación) y <strong>alinear</strong> su aporte con la estrategia. Se evalúa el <strong>qué</strong> (metas/resultados) y el <strong>cómo</strong> (conductas y competencias).</p>
 
-        <h4>Modelos de evaluación</h4>
+        <h4>Modelos de evaluación (según cultura y estrategia)</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Modelo</th><th>En qué se basa</th><th>Ventaja / Desventaja</th></tr></thead>
           <tbody>
@@ -188,7 +193,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </ul>
 
         <h4>Retroalimentación y cierre del ciclo</h4>
-        <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). El ciclo se cierra con planes de desarrollo individualizados, gestión de resultados (promoción, compensación, desarrollo) y acciones correctivas para el bajo desempeño. La evaluación vuelve a alimentar capacitación, compensación y carrera.</p>
+        <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). Rol del <strong>evaluador</strong>: feedback honesto y apoyo; rol del <strong>evaluado</strong>: aceptar, reflexionar, trabajar las brechas y comunicar necesidades. El ciclo se cierra con planes de desarrollo individualizados, gestión de resultados (promoción, compensación, desarrollo) y acciones correctivas para el bajo desempeño. La evaluación vuelve a alimentar capacitación, compensación y carrera.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "Se evalúa el qué (metas) y el cómo (conductas)." · "El feedback convierte la evaluación en desarrollo." · "Se evalúa lo que se quiere que ocurra: la métrica moldea la conducta."</div>
       `
@@ -228,7 +233,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>La cultura es el <strong>núcleo profundo</strong> de la organización; el clima, su <strong>temperatura del momento</strong>. No hay que confundirlos.</p>
 
-        <h4>Cultura organizacional</h4>
+        <h4>Cultura organizacional efectiva</h4>
         <div class="guia-def">Cultura = conjunto de valores, creencias, normas y prácticas compartidas que influyen en el comportamiento de los miembros. Es efectiva cuando se alinea con la estrategia, es flexible y genera compromiso.</div>
         <p>El <strong>modelo de Schein</strong> distingue 3 niveles:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -240,9 +245,12 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           </tbody>
         </table></div>
         <p><strong>Modelos que miden o clasifican la cultura:</strong> Cameron &amp; Quinn (Competing Values: Clan, Adhocrática, Jerárquica, de Mercado), Denison &amp; Neale (4 dimensiones: misión, consistencia, involucramiento, adaptabilidad), Spencer Stuart &amp; Harvard (8 tipos), Richard Barrett (evolutivo, 7 niveles) y Maslow (base motivacional). La <strong>fuerza</strong> de la cultura (Sathe &amp; Wiener) mide el grado de acuerdo con los valores: una cultura fuerte alinea, pero también puede resistir el cambio. En organizaciones grandes conviven <strong>subculturas</strong> que conviene integrar hacia objetivos comunes.</p>
-        <div class="guia-frase"><strong>PAUTA 5.c (8 pts):</strong> analizar 2 elementos de una cultura que falla (4 pts) + acciones concretas para esos 2 (4 pts). Analizar, no nombrar; y traducir "cambiar el liderazgo" en acciones medibles (ej.: coaching + 360&deg; ligada a bonos; canales de denuncia y comités bajo la Ley Karin para un ambiente tóxico).</div>
 
-        <h4>Clima laboral</h4>
+        <h4>Estrategias para el cambio cultural</h4>
+        <p>Transformar la cultura requiere proceso estructurado, liderazgo activo y participación de toda la organización; el Desarrollo Organizacional (DO) actúa como facilitador. Estrategias: liderazgo que modele los valores, comunicación constante, entrenamiento en los nuevos comportamientos y recompensas alineadas con esos valores.</p>
+        <div class="guia-frase"><strong>Pauta &mdash; cultura que falla:</strong> analizar (no nombrar) los elementos que fallan y proponer acciones concretas y medibles. Ej.: liderazgo autoritario &rarr; coaching + 360&deg; ligada a bonos; ambiente tóxico &rarr; canales de denuncia confidenciales, comités de convivencia y encuestas de clima con planes de mejora; falta de propósito &rarr; involucrar a las personas en el rediseño de misión/visión.</div>
+
+        <h4>Gestión del clima laboral</h4>
         <p>El clima es la <strong>percepción compartida</strong> del ambiente de trabajo. Componentes: físico (condiciones, seguridad), psicológico (relaciones, apoyo, equidad) y organizacional (políticas y procedimientos). Se mide con encuestas y se corrige con planes según resultados. El <strong>modelo de Likert</strong> define 4 sistemas de clima:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Sistema</th><th>Estilo</th><th>Participación</th></tr></thead>
@@ -253,7 +261,6 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
             <tr><td><strong>4 · Participativo</strong></td><td>Confianza plena, decisiones compartidas</td><td>Alta (mejor clima)</td></tr>
           </tbody>
         </table></div>
-        <p><strong>Litwin &amp; Stringer</strong> describen el clima por dimensiones perceptuales (estructura, responsabilidad, recompensa, calidez, apoyo, conflicto, identidad); Stringer (2002) muestra que el clima es en gran medida <strong>gestionable por las jefaturas</strong>.</p>
 
         <div class="guia-frase"><strong>Cultura vs. clima:</strong> la cultura es profunda, estable y compartida (valores y supuestos), y cambiarla toma años; el clima es la percepción del ambiente en un momento dado, más cambiante y medible con encuestas. Mejorar el clima es más rápido que cambiar la cultura.</div>
       `
