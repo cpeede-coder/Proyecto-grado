@@ -1340,6 +1340,7 @@ function registrarVisita() {
 // Progreso por materia en localStorage: { cardId: caja 1..5 }. Dominada = caja 5.
 // ---------------------------------------------------------------------
 let ESTUDIO_MATERIA = "estrategia";      // materia seleccionada (clave en window.ESTUDIO)
+let ESTUDIO_MODO = "flashcards";         // "guia" (leer la materia) | "flashcards" (repasar)
 let ESTUDIO_UNIDADES = new Set();        // unidades elegidas (vacío = todas)
 let estudioCola = [];                    // cola viva de la sesión (objetos tarjeta)
 let estudioActual = null;                // tarjeta en pantalla
@@ -1422,11 +1423,23 @@ function renderEstudioConfig() {
     ? `Tarjetas en esta selección: <strong>${total}</strong> · dominadas: <strong>${dom}</strong> (${pct}%).`
     : "No hay tarjetas para esta selección todavía.";
 
-  // El botón de la guía solo aparece si la materia actual tiene guía
-  const btnGuia = $("#btn-estudio-guia");
-  if (btnGuia) {
-    const hayGuia = window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA];
-    btnGuia.classList.toggle("hidden", !hayGuia);
+  // Adapta el panel según el modo: "guia" (leer) o "flashcards" (repasar)
+  const modoGuia = ESTUDIO_MODO === "guia";
+  const hayGuia = !!(window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA]);
+  $("#estudio-titulo").textContent = modoGuia ? "📖 Estudiar la materia" : "🃏 Repasar con flashcards";
+  $("#estudio-desc").textContent = modoGuia
+    ? "Lee la guía ordenada de la materia: definiciones clave, tablas comparativas y frases de examen. Elige la materia y ábrela."
+    : "Repaso con recuerdo activo: mira el concepto, intenta recordarlo y recién ahí revela la respuesta. La app te repite más seguido lo que fallas.";
+  $("#campo-estudio-unidades").classList.toggle("hidden", modoGuia);
+  $("#estudio-resumen-progreso").classList.toggle("hidden", modoGuia);
+  $("#btn-estudio-reiniciar").classList.toggle("hidden", modoGuia);
+  const btnPrim = $("#btn-estudio-empezar");
+  if (modoGuia) {
+    btnPrim.disabled = !hayGuia;
+    btnPrim.textContent = hayGuia ? "📖 Leer la guía" : "Guía no disponible para esta materia";
+  } else {
+    btnPrim.disabled = false;
+    btnPrim.textContent = "🃏 Empezar repaso";
   }
 }
 
@@ -1557,40 +1570,42 @@ function mostrarGuiaEstudio() {
   window.scrollTo(0, 0);
 }
 
+// Entra al módulo de estudio en un modo dado: "guia" (leer) o "flashcards" (repasar)
+function entrarEstudio(modo) {
+  if (!estaDesbloqueado()) {
+    abrirModalAcceso("📚 El módulo de estudio (guías + flashcards) es parte del acceso completo ($5.000, pago único): primero aprendes con la guía ordenada y después memorizas con repaso espaciado.");
+    return;
+  }
+  if (!estudioDisponible()) return;
+  ESTUDIO_MODO = (modo === "guia") ? "guia" : "flashcards";
+  $("#estudio-sesion").classList.add("hidden");
+  $("#estudio-fin").classList.add("hidden");
+  $("#estudio-guia").classList.add("hidden");
+  $("#estudio-config").classList.remove("hidden");
+  renderEstudioConfig();
+  mostrarPantalla("pantalla-estudio");
+}
+
 function iniciarEstudio() {
-  const btnEntrar = $("#btn-ver-estudio");
-  if (btnEntrar) {
-    btnEntrar.addEventListener("click", () => {
-      if (!estaDesbloqueado()) {
-        abrirModalAcceso("📖 El módulo de estudio (guía + flashcards) es parte del acceso completo ($5.000, pago único): primero aprendes con la guía ordenada y después memorizas con repaso espaciado.");
-        return;
-      }
-      if (!estudioDisponible()) return;
-      $("#estudio-sesion").classList.add("hidden");
-      $("#estudio-fin").classList.add("hidden");
-      $("#estudio-guia").classList.add("hidden");
-      $("#estudio-config").classList.remove("hidden");
-      renderEstudioConfig();
-      mostrarPantalla("pantalla-estudio");
-    });
-  }
-  // Guía de estudio
-  const btnGuia = $("#btn-estudio-guia");
-  if (btnGuia) {
-    const hayGuia = window.ESTUDIO_GUIA && window.ESTUDIO_GUIA[ESTUDIO_MATERIA];
-    if (!hayGuia) btnGuia.classList.add("hidden");
-    btnGuia.addEventListener("click", mostrarGuiaEstudio);
-  }
+  const btnMateria = $("#btn-estudiar-materia");
+  const btnFlash = $("#btn-estudiar-flashcards");
+  if (btnMateria) btnMateria.addEventListener("click", () => entrarEstudio("guia"));
+  if (btnFlash) btnFlash.addEventListener("click", () => entrarEstudio("flashcards"));
   $("#btn-estudio-guia-volver").addEventListener("click", () => {
     $("#estudio-guia").classList.add("hidden");
     $("#estudio-config").classList.remove("hidden");
     renderEstudioConfig();
   });
   $("#btn-estudio-guia-repasar").addEventListener("click", () => {
+    ESTUDIO_MODO = "flashcards";
     $("#estudio-guia").classList.add("hidden");
     empezarSesionEstudio();
   });
-  $("#btn-estudio-empezar").addEventListener("click", empezarSesionEstudio);
+  // Botón primario del panel: según el modo abre la guía o empieza el repaso
+  $("#btn-estudio-empezar").addEventListener("click", () => {
+    if (ESTUDIO_MODO === "guia") mostrarGuiaEstudio();
+    else empezarSesionEstudio();
+  });
   $("#btn-estudio-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
   $("#btn-estudio-terminar").addEventListener("click", () => {
     $("#estudio-sesion").classList.add("hidden");

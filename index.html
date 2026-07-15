@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=31">
+  <link rel="stylesheet" href="css/styles.css?v=32">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.31</span>
+      <span class="version-app">v1.0.32</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -58,7 +58,16 @@
         </div>
       </div>
 
-      <div class="card">
+      <div class="config-layout">
+        <aside class="card config-estudio">
+          <h3 class="config-estudio-titulo">📚 Estudiar</h3>
+          <p class="ayuda">Aprende y memoriza <strong>antes</strong> de rendir.</p>
+          <button id="btn-estudiar-materia" class="btn-secundario btn-estudio-lat">📖 Estudiar (Materia)</button>
+          <button id="btn-estudiar-flashcards" class="btn-secundario btn-estudio-lat">🃏 Estudiar (Flashcards)</button>
+          <p class="ayuda config-estudio-pie">1. Lee la materia · 2. Repasa con flashcards · 3. Rinde tu examen.</p>
+        </aside>
+
+        <div class="card config-main">
         <h2 id="titulo-config">Configura tu examen</h2>
 
         <div class="campo">
@@ -100,10 +109,10 @@
         </div>
 
         <button id="btn-comenzar" class="btn-primario">Comenzar examen</button>
-        <button id="btn-ver-estudio" class="btn-secundario">📖 Estudiar (flashcards)</button>
         <button id="btn-ver-banco" class="btn-secundario">📚 Explorar banco</button>
         <button id="btn-ver-historial" class="btn-secundario">Ver historial</button>
         <button id="btn-inicio-volver" class="btn-secundario">← Inicio</button>
+        </div>
       </div>
 
       <div class="card">
@@ -166,32 +175,25 @@
     <section id="pantalla-estudio" class="pantalla hidden">
       <!-- Configuración del repaso -->
       <div id="estudio-config" class="card">
-        <h2 id="estudio-titulo">📖 Estudiar con flashcards</h2>
-        <p class="ayuda">Repaso con <strong>recuerdo activo</strong>: mira el concepto, intenta responderlo de memoria y recién ahí revela la respuesta. La app te repite <strong>más seguido lo que fallas</strong> (repaso espaciado) hasta que lo dominas. Es la forma más eficiente de fijar conceptos en poco tiempo.</p>
+        <h2 id="estudio-titulo"></h2>
+        <p id="estudio-desc" class="ayuda"></p>
 
         <div class="campo">
           <label>Materia</label>
           <div id="estudio-materias" class="chips"></div>
         </div>
 
-        <div class="campo">
+        <div class="campo" id="campo-estudio-unidades">
           <label>Unidades</label>
           <div id="estudio-unidades" class="chips"></div>
           <p class="ayuda">Elige <strong>una o varias</strong> unidades (toca para agregar o quitar), o deja <strong>Todas</strong>.</p>
         </div>
 
-        <div class="estudio-flujo">
-          <span class="estudio-flujo-paso"><strong>1.</strong> Lee la guía</span>
-          <span class="estudio-flujo-flecha">→</span>
-          <span class="estudio-flujo-paso"><strong>2.</strong> Repasa con flashcards</span>
-        </div>
-
         <div id="estudio-resumen-progreso" class="estudio-progreso-mini"></div>
 
-        <button id="btn-estudio-guia" class="btn-secundario">📚 Leer la guía de estudio</button>
-        <button id="btn-estudio-empezar" class="btn-primario">Empezar repaso</button>
+        <button id="btn-estudio-empezar" class="btn-primario">Empezar</button>
         <button id="btn-estudio-reiniciar" class="btn-secundario">Reiniciar progreso</button>
-        <button id="btn-estudio-volver" class="btn-secundario">← Inicio</button>
+        <button id="btn-estudio-volver" class="btn-secundario">← Volver</button>
       </div>
 
       <!-- Guía de estudio (material para leer) -->
@@ -366,6 +368,6 @@
   <script src="data/estudio/estrategia-guia.js?v=1"></script>
   <script src="data/estudio/marketing.js?v=1"></script>
   <script src="data/estudio/marketing-guia.js?v=1"></script>
-  <script src="js/app.js?v=31"></script>
+  <script src="js/app.js?v=32"></script>
 </body>
 </html>
