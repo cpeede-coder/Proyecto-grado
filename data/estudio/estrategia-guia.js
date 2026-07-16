@@ -193,6 +193,20 @@ window.ESTUDIO_GUIA.estrategia = {
           </tbody>
         </table></div>
 
+        <h4>Síntesis del análisis: la matriz FODA (SWOT)</h4>
+        <p>El <strong>FODA</strong> no es un análisis nuevo ni "el análisis interno": es la <strong>síntesis</strong> que junta lo que arrojaron el análisis externo y el interno para formular la estrategia. Cada cuadrante viene de una herramienta distinta:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Cuadrante FODA</th><th>Interno / Externo</th><th>Con qué herramienta se obtiene</th></tr></thead>
+          <tbody>
+            <tr><td><strong>F</strong>ortalezas (+)</td><td>Análisis INTERNO</td><td>Cadena de valor + RBV/VRIO</td></tr>
+            <tr><td><strong>D</strong>ebilidades (−)</td><td>Análisis INTERNO</td><td>Cadena de valor + RBV/VRIO</td></tr>
+            <tr><td><strong>O</strong>portunidades (+)</td><td>Análisis EXTERNO</td><td>PESTEL (macro) + 5 Fuerzas (industria)</td></tr>
+            <tr><td><strong>A</strong>menazas (−)</td><td>Análisis EXTERNO</td><td>PESTEL (macro) + 5 Fuerzas (industria)</td></tr>
+          </tbody>
+        </table></div>
+        <div class="guia-def">El análisis <strong>interno</strong> se hace con la <strong>cadena de valor</strong> y <strong>VRIO</strong> → de ahí salen las Fortalezas y Debilidades. El FODA las cruza con las Oportunidades y Amenazas (del análisis externo) para decidir la estrategia.</div>
+        <p><strong>Ojo de examen:</strong> las fortalezas y debilidades son <strong>elementos internos</strong> de la empresa (no acciones pasadas ni "aspectos positivos" sueltos). En los casos reales piden identificarlas y justificarlas con evidencia (ej.: LEGO, Domino's).</p>
+
         <h4>Sistema de actividades y encaje estratégico</h4>
         <p>Una estrategia genérica no basta declararla: debe materializarse en un <strong>sistema coherente de actividades</strong> que se refuercen entre sí. Cuanto mayor el <strong>encaje</strong>, más sostenible la ventaja, porque imitar una actividad aislada no reproduce el sistema.</p>
 

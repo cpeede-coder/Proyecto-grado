@@ -322,6 +322,12 @@ window.ESTUDIO.estrategia = {
       tip: "La empresa no crea valor como un todo, sino a través de actividades interrelacionadas."
     },
     {
+      id: "est-fc-070", unidad: "U4", tema: "Análisis FODA (síntesis)", salioEnExamen: true,
+      frente: "¿Qué es el FODA y de dónde sale cada cuadrante? (¿es el análisis interno?)",
+      reverso: "El FODA NO es el análisis interno: es la SÍNTESIS que integra ambos análisis. Fortalezas y Debilidades vienen del análisis INTERNO (Cadena de Valor + VRIO/RBV). Oportunidades y Amenazas vienen del análisis EXTERNO (PESTEL en el macroentorno + 5 Fuerzas en la industria). Se cruzan para formular la estrategia.",
+      tip: "Fortalezas y debilidades son elementos INTERNOS de la empresa (no acciones pasadas ni aspectos positivos sueltos). En exámenes piden identificarlas y justificarlas con el caso (LEGO, Domino's)."
+    },
+    {
       id: "est-fc-049", unidad: "U4", tema: "Actividades primarias", salioEnExamen: true,
       frente: "¿Cuáles son las 5 actividades PRIMARIAS de la cadena de valor?",
       reverso: "Logística interna, Operaciones, Logística externa, Marketing y ventas, y Servicio (postventa). Son las directamente relacionadas con crear, vender y entregar el producto.",
