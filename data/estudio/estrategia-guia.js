@@ -236,6 +236,19 @@ window.ESTUDIO_GUIA.estrategia = {
           <li><strong>Plataformas y ecosistemas</strong>: la ventaja surge de la red de valor, no de la empresa aislada.</li>
         </ul>
 
+        <h4>Océano rojo vs. Océano azul</h4>
+        <p>Son las dos caras del modelo de <strong>Océanos Azules</strong> (Kim &amp; Mauborgne): el rojo es el contraste que ayuda a entender el azul.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Aspecto</th><th>Océano rojo 🔴</th><th>Océano azul 🔵</th></tr></thead>
+          <tbody>
+            <tr><td>Mercado</td><td>Existente, con límites conocidos</td><td>Nuevo, aún no creado</td></tr>
+            <tr><td>Competencia</td><td>Feroz ("sangrienta"): muchos rivales por la misma demanda</td><td>Irrelevante: no hay competidores todavía</td></tr>
+            <tr><td>Demanda</td><td>Se pelea la demanda existente</td><td>Se crea y captura demanda nueva</td></tr>
+            <tr><td>Valor–costo</td><td>Trade-off: o diferenciación o costos bajos</td><td>Se rompe el trade-off: diferenciación Y costos bajos (innovación en valor)</td></tr>
+          </tbody>
+        </table></div>
+        <div class="guia-def">Océano <strong>rojo</strong> = competir en un mercado saturado. Océano <strong>azul</strong> = crear un mercado nuevo donde la competencia se vuelve irrelevante.</div>
+
         <h4>Sustentabilidad estratégica (triple dimensión)</h4>
         <p>La empresa opera en un entorno económico, <strong>social</strong> y <strong>natural</strong>. La estrategia moderna integra las tres dimensiones:</p>
         <div class="tabla-scroll"><table class="guia-tabla">

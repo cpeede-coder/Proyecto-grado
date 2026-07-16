@@ -372,10 +372,10 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-056", unidad: "U5", tema: "Océanos azules", salioEnExamen: true,
-      frente: "¿Qué busca la Estrategia de Océanos Azules?",
-      reverso: "Crear espacios de mercado NO disputados (nueva demanda) en vez de competir en mercados saturados. Innova en valor: se diferencia y reduce costos SIMULTÁNEAMENTE.",
-      tip: "\"Competir ya no basta: hay que reinventar el mercado.\""
+      id: "est-fc-056", unidad: "U5", tema: "Océanos rojos vs azules", salioEnExamen: true,
+      frente: "¿Qué diferencia un océano rojo de un océano azul (Kim & Mauborgne)?",
+      reverso: "Océano ROJO: mercado existente y saturado, con competencia feroz por la demanda actual (se gana quitando cuota a rivales). Océano AZUL: crear un espacio de mercado NUEVO sin competencia (nueva demanda), rompiendo el trade-off al diferenciarse y bajar costos a la vez (innovación en valor).",
+      tip: "\"Competir ya no basta: hay que reinventar el mercado.\" El rojo es el contraste del azul: mismo modelo."
     },
     {
       id: "est-fc-057", unidad: "U5", tema: "Capacidades dinámicas",
