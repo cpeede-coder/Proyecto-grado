@@ -48,7 +48,15 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
 
         <h4>Roles y habilidades gerenciales</h4>
-        <p>Hay tres <strong>niveles</strong>: primera línea (operativo), medio (intermedio) y alto (institucional, que ve la empresa como un todo). Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar.</p>
+        <p>Hay tres <strong>niveles gerenciales</strong>, según qué tan cerca están de la estrategia o de la operación. Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Nivel</th><th>Quiénes</th><th>Qué hace</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Alto</strong> (institucional / estratégico)</td><td>Gerente general, directorio, alta gerencia</td><td>Ve la empresa como un todo. Fija la <strong>estrategia</strong>, la misión y los objetivos de largo plazo; se relaciona con el entorno (mercado, gobierno, competencia).</td></tr>
+            <tr><td><strong>Medio</strong> (intermedio / táctico)</td><td>Gerentes de área o de departamento (Marketing, Operaciones, Finanzas…)</td><td>Es el <strong>puente</strong> entre el nivel alto y la primera línea. <strong>Traduce</strong> la estrategia general en planes y metas concretas para su área, <strong>coordina</strong> equipos y recursos, y <strong>transmite información</strong> en ambos sentidos (baja las directrices de la cúpula y sube los resultados y problemas de la operación).</td></tr>
+            <tr><td><strong>Primera línea</strong> (operativo)</td><td>Supervisores, jefes de turno, jefes de equipo</td><td>Dirige directamente a los trabajadores que ejecutan el trabajo. Se enfoca en el <strong>día a día</strong>: cumplir metas, resolver problemas operativos y controlar la producción/servicio.</td></tr>
+          </tbody>
+        </table></div>
 
         <h4>Los 10 roles de Mintzberg</h4>
         <p>Mintzberg observó lo que hacen los gerentes de verdad y lo resumió en <strong>diez roles</strong> agrupados en tres categorías. Sirven para diagnosticar el trabajo directivo de un caso.</p>
