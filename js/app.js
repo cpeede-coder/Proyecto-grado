@@ -1667,7 +1667,31 @@ function iniciarEstudio() {
   });
 }
 
+// Scroll suave al tope. Stepper con setTimeout + scrollTo(0,n): funciona en
+// todos los navegadores y no depende de behavior:"smooth" (que algunos motores
+// ignoran) ni de requestAnimationFrame (que se pausa en pestañas ocultas).
+function scrollAlTope() {
+  const paso = () => {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    if (y <= 0) return;
+    window.scrollTo(0, Math.max(0, y - Math.max(50, Math.round(y * 0.22))));
+    setTimeout(paso, 16);
+  };
+  paso();
+}
+
+// Botón flotante "volver arriba": aparece al bajar y hace scroll al tope.
+function iniciarScrollTop() {
+  const btn = $("#btn-scroll-top");
+  if (!btn) return;
+  btn.addEventListener("click", scrollAlTope);
+  const actualizar = () => btn.classList.toggle("hidden", window.scrollY < 400);
+  window.addEventListener("scroll", actualizar, { passive: true });
+  actualizar();
+}
+
 iniciarTema();
+iniciarScrollTop();
 iniciarConfig();
 iniciarBanco();
 iniciarIA();

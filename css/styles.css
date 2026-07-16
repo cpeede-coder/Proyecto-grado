@@ -269,6 +269,32 @@ button:focus-visible, .chip:focus-visible, textarea:focus-visible {
 }
 button:disabled { opacity: 0.45; cursor: default; transform: none; }
 
+/* Botón flotante "volver arriba" (aparece al bajar; no le quita ancho al texto) */
+.btn-scroll-top {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid var(--borde);
+  background: var(--tarjeta);
+  color: var(--texto);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px -6px rgba(0, 0, 0, 0.45);
+  transition: border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.btn-scroll-top:hover { border-color: var(--primario); color: var(--primario); transform: translateY(-2px); }
+@media (max-width: 600px) {
+  .btn-scroll-top { right: 16px; bottom: 16px; width: 44px; height: 44px; }
+}
+
 /* ===== Examen ===== */
 .examen-cabecera {
   display: flex;
