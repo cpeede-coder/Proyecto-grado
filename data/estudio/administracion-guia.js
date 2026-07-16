@@ -59,24 +59,28 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
 
         <h4>Los 10 roles de Mintzberg</h4>
-        <p>Mintzberg observó lo que hacen los gerentes de verdad y lo resumió en <strong>diez roles</strong> agrupados en tres categorías. Sirven para diagnosticar el trabajo directivo de un caso.</p>
+        <p>Mintzberg observó lo que hacen los gerentes de verdad y lo resumió en <strong>diez roles</strong>. <strong>Ojo:</strong> NO son diez tipos de gerente ni tres grupos de gerentes. Son <strong>diez "sombreros" que usa un mismo gerente</strong> a lo largo de su día; según qué esté haciendo, se pone uno u otro. Se ordenan en <strong>tres categorías</strong> solo para agruparlos por el tipo de actividad. Sirven para diagnosticar el trabajo directivo de un caso.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
-          <thead><tr><th>Grupo</th><th>Roles</th></tr></thead>
+          <thead><tr><th>Categoría de rol</th><th>Los roles (sombreros)</th></tr></thead>
           <tbody>
-            <tr><td><strong>Interpersonales</strong> (relación con personas)</td><td>Representante (figura decorativa), Líder, Enlace</td></tr>
+            <tr><td><strong>Interpersonales</strong> (relación con personas)</td><td>Representante (figura visible), Líder, Enlace</td></tr>
             <tr><td><strong>Informativos</strong> (manejo de información)</td><td>Monitor, Difusor, Portavoz</td></tr>
             <tr><td><strong>Decisorios</strong> (toma de decisiones)</td><td>Emprendedor, Gestor de conflictos (imprevistos), Asignador de recursos, Negociador</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>En una frase:</strong> los roles responden a "¿qué <em>hace</em> un gerente?" (sus conductas), no a "¿qué tipos de gerente hay?".</div>
 
+        <h4>Las 3 habilidades gerenciales (Katz)</h4>
+        <p>Esto es un modelo <strong>distinto</strong> al de Mintzberg (no los confundas): los roles son lo que el gerente <strong>hace</strong>; las habilidades son aquello en lo que necesita ser <strong>bueno</strong> para hacerlo. Katz define tres, y lo clave es que su <strong>peso cambia según el nivel gerencial</strong> (los mismos tres niveles de la tabla anterior).</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Habilidad</th><th>Qué es</th><th>Dónde pesa más</th></tr></thead>
           <tbody>
-            <tr><td><strong>Técnicas</strong></td><td>Conocimiento de un campo específico</td><td>Nivel inferior (cerca de la producción)</td></tr>
-            <tr><td><strong>Humanas</strong></td><td>Trabajar bien con personas</td><td>Todos los niveles por igual</td></tr>
-            <tr><td><strong>Conceptuales</strong></td><td>Ver la empresa como un todo, resolver lo complejo</td><td>Nivel alto</td></tr>
+            <tr><td><strong>Técnicas</strong></td><td>Conocimiento de un campo específico (usar herramientas, métodos, procedimientos)</td><td>Primera línea (cerca de la producción)</td></tr>
+            <tr><td><strong>Humanas</strong></td><td>Trabajar bien con y a través de las personas (comunicar, motivar, liderar)</td><td>Todos los niveles por igual</td></tr>
+            <tr><td><strong>Conceptuales</strong></td><td>Ver la empresa como un todo, entender lo complejo y decidir estratégicamente</td><td>Nivel alto</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>La idea de fondo:</strong> mientras más subes en la jerarquía, menos necesitas las habilidades <strong>técnicas</strong> y más las <strong>conceptuales</strong>; las <strong>humanas</strong> importan igual en todos los niveles (siempre trabajas con personas).</div>
 
         <h4>Tipos de organizaciones</h4>
         <p>Sirven para "etiquetar" cualquier empresa de un caso: por <strong>estructura jerárquica</strong> (horizontal/plana vs. vertical/piramidal), por <strong>fines de lucro</strong> (con o sin), por <strong>toma de decisiones</strong> (centralizada vs. descentralizada), por <strong>configuración</strong> (Mintzberg) y por <strong>sector</strong> (pública, privada, mixta).</p>
