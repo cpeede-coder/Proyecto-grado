@@ -100,6 +100,18 @@ window.ESTUDIO_GUIA.estrategia = {
         </table></div>
         <p>Solo los recursos que cumplen <strong>los cuatro</strong> criterios dan ventaja sostenible. Riesgos del RBV: rigidez y miopía interna → complementar con análisis del entorno.</p>
 
+        <h4>Modelo del Triángulo Corporativo</h4>
+        <p>Herramienta para evaluar si una estrategia corporativa <strong>realmente crea valor</strong>. Se apoya en tres vértices que deben reforzarse mutuamente:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Vértice</th><th>Qué evalúa</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. Atractivo de la industria</strong></td><td>Rentabilidad estructural del sector: competencia, barreras de entrada, crecimiento, regulación (se analiza con las 5 Fuerzas)</td></tr>
+            <tr><td><strong>2. Ventaja competitiva</strong></td><td>Recursos, capacidades, marca y know-how que permiten diferenciarse o liderar en costos (se analiza con RBV/VRIO)</td></tr>
+            <tr><td><strong>3. Sinergias corporativas</strong></td><td>Valor adicional por pertenecer al grupo: economías de escala y de ámbito, transferencia de conocimiento y reputación</td></tr>
+          </tbody>
+        </table></div>
+        <div class="guia-def">Una estrategia corporativa crea valor solo si los <strong>tres vértices se refuerzan mutuamente</strong>. Si uno falla, se destruye valor.</div>
+
         <h4>Crecimiento externo: F&amp;A vs. Alianzas</h4>
         <p><strong>Fusión</strong>: dos empresas se combinan en una nueva (las originales desaparecen). <strong>Adquisición</strong>: una compra el control de otra. Las F&amp;A fallan sobre todo en la <strong>integración</strong> (sobreestimar sinergias, choques culturales). <strong>Joint venture</strong>: alianza donde se crea una empresa nueva y las matrices siguen existiendo.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
