@@ -48,7 +48,19 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
 
         <h4>Roles y habilidades gerenciales</h4>
-        <p>Hay tres <strong>niveles</strong>: primera línea (operativo), medio (intermedio) y alto (institucional, que ve la empresa como un todo). Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar. Los <strong>roles de Mintzberg</strong> se agrupan en interpersonales, informativos y decisorios.</p>
+        <p>Hay tres <strong>niveles</strong>: primera línea (operativo), medio (intermedio) y alto (institucional, que ve la empresa como un todo). Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar.</p>
+
+        <h4>Los 10 roles de Mintzberg</h4>
+        <p>Mintzberg observó lo que hacen los gerentes de verdad y lo resumió en <strong>diez roles</strong> agrupados en tres categorías. Sirven para diagnosticar el trabajo directivo de un caso.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Grupo</th><th>Roles</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Interpersonales</strong> (relación con personas)</td><td>Representante (figura decorativa), Líder, Enlace</td></tr>
+            <tr><td><strong>Informativos</strong> (manejo de información)</td><td>Monitor, Difusor, Portavoz</td></tr>
+            <tr><td><strong>Decisorios</strong> (toma de decisiones)</td><td>Emprendedor, Gestor de conflictos (imprevistos), Asignador de recursos, Negociador</td></tr>
+          </tbody>
+        </table></div>
+
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Habilidad</th><th>Qué es</th><th>Dónde pesa más</th></tr></thead>
           <tbody>
@@ -83,7 +95,11 @@ window.ESTUDIO_GUIA.administracion = {
         <p>El producto recorre un <strong>ciclo de vida</strong>: introducción → crecimiento → madurez → declive. La estrategia se apoya en <strong>segmentar</strong> (grupos homogéneos), elegir un <strong>mercado objetivo</strong> (indiferenciado, multisegmento o de nicho) y <strong>posicionar</strong> (lugar en la mente del consumidor).</p>
 
         <h4>Área de Producción y Operaciones</h4>
-        <p>Transforma insumos en bienes y servicios. Planifica con cuatro decisiones: <strong>qué</strong> producir (lo define Comercial), <strong>cómo</strong> (artesanal, masivo o por proceso), <strong>cuánto</strong> (capacidad) y <strong>dónde</strong> (localización). Los servicios tienen cuatro rasgos: <strong>intangibilidad, inseparabilidad, heterogeneidad y carácter perecedero</strong>. La calidad se apoya en las <strong>normas ISO</strong> (estandarizan y certifican procesos) y en <strong>Six Sigma</strong> (ciclo DMAIC: definir, medir, analizar, mejorar, controlar).</p>
+        <p>Transforma insumos en bienes y servicios. Planifica con cuatro decisiones: <strong>qué</strong> producir (lo define Comercial), <strong>cómo</strong> (artesanal, masivo o por proceso), <strong>cuánto</strong> (capacidad) y <strong>dónde</strong> (localización). Los servicios tienen cuatro rasgos: <strong>intangibilidad, inseparabilidad, heterogeneidad y carácter perecedero</strong>.</p>
+
+        <h4>Calidad: ISO y Six Sigma</h4>
+        <div class="guia-def"><strong>ISO 9001:</strong> norma internacional de gestión de la calidad; certifica que la empresa tiene <strong>procesos estandarizados y documentados</strong> (un cliente confía en el "sello ISO" sin auditar la fábrica).</div>
+        <div class="guia-def"><strong>Six Sigma:</strong> metodología de <strong>reducción de defectos</strong> y variabilidad mediante el ciclo <strong>DMAIC</strong>: <strong>D</strong>efinir el problema, <strong>M</strong>edir el proceso, <strong>A</strong>nalizar las causas, mejorar (<strong>I</strong>mprove) e implementar, <strong>C</strong>ontrolar para sostener la mejora.</div>
 
         <h4>La Cadena de Valor de Porter (integra las áreas)</h4>
         <p>Ve la empresa como una serie de actividades que agregan valor, buscando el <strong>margen</strong>.</p>
@@ -225,6 +241,7 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td><strong>Carismático</strong></td><td>Visión clara, apasionado, toma riesgos por ella</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>Liderazgo situacional (Hersey &amp; Blanchard):</strong> no existe un estilo único mejor; el líder <strong>ajusta su estilo según la madurez/preparación del seguidor</strong> (su capacidad y disposición para la tarea). Cruza dos ejes —<strong>conducta directiva</strong> (cuánto instruye) y <strong>conducta de apoyo</strong> (cuánto respalda emocionalmente)— y obtiene 4 estilos: <strong>Dirigir</strong> (madurez baja: mucha instrucción, poco apoyo), <strong>Persuadir/Entrenar</strong> (mucha instrucción y mucho apoyo), <strong>Participar/Apoyar</strong> (poca instrucción, mucho apoyo) y <strong>Delegar</strong> (madurez alta: poca instrucción y poco apoyo).</div>
         <div class="guia-def"><strong>Corrección importante:</strong> el punto ideal "9,9" es del <strong>Grid Gerencial de Blake &amp; Mouton</strong>, no de los estudios de Michigan. Michigan solo distingue líder orientado a las personas vs. orientado a la producción, sin coordenadas de rejilla.</div>
 
         <h4>Motivación</h4>

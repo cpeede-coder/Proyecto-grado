@@ -308,7 +308,24 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>La <strong>tasa natural</strong> de desempleo = friccional + estructural (existe aun con la economía sana). El <strong>salario mínimo</strong> y los <strong>sindicatos</strong> pueden elevar el desempleo si fijan salarios por sobre el de equilibrio. En el largo plazo, el <strong>mercado de fondos prestables</strong> (ahorro = inversión) determina la tasa de interés real: más ahorro baja la tasa y estimula la inversión.</p>
 
-        <div class="guia-frase"><strong>Frases de examen:</strong> "El PIB real mide crecimiento; el nominal, no." · "Inflación = variación del IPC (en Chile lo mide el INE)." · "Quien no busca trabajo es inactivo, no desempleado."</div>
+        <h4>⭐ El mercado de fondos prestables</h4>
+        <p>Es el modelo gráfico que muestra cómo se determina la <strong>tasa de interés real</strong> en el largo plazo. En el plano tasa-cantidad de fondos hay dos curvas:</p>
+        <ul>
+          <li><strong>Oferta de fondos = ahorro</strong> (familias y gobierno que prestan): tiene pendiente <strong>positiva</strong>, porque a mayor tasa la gente ahorra más.</li>
+          <li><strong>Demanda de fondos = inversión</strong> (empresas que piden prestado para proyectos): tiene pendiente <strong>negativa</strong>, porque a mayor tasa hay menos proyectos rentables.</li>
+        </ul>
+        <p>La <strong>tasa de interés real</strong> es el precio que equilibra el mercado: donde el ahorro que se ofrece iguala a la inversión que se demanda. Qué desplaza cada curva:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Cambio</th><th>Qué curva mueve</th><th>Efecto en la tasa</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Incentivos al ahorro</strong> (rebaja de impuestos al ahorro)</td><td>Oferta a la derecha (más ahorro)</td><td>Baja la tasa; sube la inversión</td></tr>
+            <tr><td><strong>Déficit fiscal</strong> o <strong>retiros de fondos (AFP)</strong></td><td>Oferta a la izquierda (menos ahorro)</td><td>Sube la tasa; cae la inversión</td></tr>
+            <tr><td><strong>Incentivos a invertir</strong> (crédito tributario a la inversión)</td><td>Demanda a la derecha</td><td>Sube la tasa y la cantidad de fondos</td></tr>
+          </tbody>
+        </table></div>
+        <div class="guia-def"><strong>Crowding out (efecto expulsión):</strong> cuando el Estado incurre en <strong>déficit fiscal</strong> y se endeuda, absorbe parte del ahorro disponible → la oferta de fondos se contrae, <strong>sube la tasa de interés</strong> y esa tasa más alta <strong>expulsa (desplaza) a la inversión privada</strong>. Así, el gasto público financiado con deuda puede terminar reemplazando inversión de las empresas en lugar de sumarse a ella.</div>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "El PIB real mide crecimiento; el nominal, no." · "Inflación = variación del IPC (en Chile lo mide el INE)." · "Quien no busca trabajo es inactivo, no desempleado." · "El déficit fiscal sube la tasa y expulsa la inversión privada (crowding out)."</div>
       `
     },
     {
@@ -340,7 +357,20 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>El <strong>efecto multiplicador</strong> amplifica el impulso inicial del gasto: ese gasto es ingreso de otros que a su vez consumen, encadenando nuevas rondas. La <strong>curva de Phillips</strong> muestra en el <strong>corto plazo</strong> una relación inversa entre inflación y desempleo; en el <strong>largo plazo</strong> es vertical en la tasa natural: no hay disyuntiva permanente, porque las expectativas se ajustan.</p>
 
-        <div class="guia-frase"><strong>Frases de examen:</strong> "En el largo plazo, la inflación es un fenómeno monetario." · "La oferta agregada de largo plazo es vertical en el PIB potencial." · "A largo plazo no hay disyuntiva entre inflación y desempleo."</div>
+        <h4>⭐ Shocks de oferta y estanflación</h4>
+        <p>Los shocks son perturbaciones que desplazan las curvas agregadas. Es clave distinguir de qué lado vienen, porque mueven precio y producto en direcciones distintas:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Shock</th><th>Qué lo causa</th><th>Nivel de precios</th><th>Producto (PIB)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>De demanda (negativo)</strong></td><td>Cae el gasto (menos consumo, inversión o gasto público)</td><td>Baja</td><td>Baja</td></tr>
+            <tr><td><strong>De oferta (negativo)</strong></td><td>Alza de costos: petróleo, insumos importados, salarios</td><td><strong>Sube</strong></td><td><strong>Baja</strong></td></tr>
+          </tbody>
+        </table></div>
+        <p>Un <strong>shock negativo de oferta</strong> encarece producir, así que la <strong>oferta agregada se desplaza a la IZQUIERDA</strong>: sube el nivel de precios <strong>y</strong> cae el producto al mismo tiempo. Ese resultado —inflación con recesión y más desempleo— se llama <strong>estanflación</strong> y es el peor escenario, porque combina lo malo de ambos mundos. Se diferencia del shock de demanda, donde precios y producto se mueven <strong>en la misma dirección</strong> (los dos bajan en una caída de demanda, los dos suben en un auge), lo que facilita la respuesta de la autoridad.</p>
+        <p>El problema de fondo es que las políticas de demanda (monetaria y fiscal) solo mueven la DA, no la OA. Si ante un shock de oferta la autoridad aplica una política <strong>expansiva</strong> para sostener el producto, empuja aún más la demanda y <strong>agrava la inflación</strong> ya alta.</p>
+        <div class="guia-frase">En un shock de oferta, la autoridad enfrenta un dilema: estabilizar precios (subir la tasa) profundiza la recesión; reactivar (bajar la tasa) agrava la inflación.</div>
+
+        <div class="guia-frase"><strong>Frases de examen:</strong> "En el largo plazo, la inflación es un fenómeno monetario." · "La oferta agregada de largo plazo es vertical en el PIB potencial." · "A largo plazo no hay disyuntiva entre inflación y desempleo." · "Estanflación = shock de oferta: suben los precios y cae el producto a la vez."</div>
       `
     },
     {
@@ -359,6 +389,11 @@ window.ESTUDIO_GUIA.economia = {
           </tbody>
         </table></div>
         <p>El tipo de cambio se determina en el mercado de <strong>divisas</strong>. En equilibrio se ajustan a la vez los mercados de bienes, fondos prestables y divisas. Una <strong>depreciación</strong> del peso abarata las exportaciones y sube XN.</p>
+
+        <h4>⭐ Cuenta corriente y déficits gemelos</h4>
+        <p>La identidad de la economía abierta se puede reordenar para conectar el ahorro con el saldo externo. Partiendo de que ahorro nacional menos inversión equivale a las exportaciones netas:</p>
+        <div class="guia-def"><strong>(S − I) = (X − M)</strong> &nbsp;y, separando el ahorro nacional en sus componentes, &nbsp;<strong>(Sp + Sg − I) = (X − M)</strong>, donde <strong>Sp</strong> es el ahorro privado y <strong>Sg</strong> el ahorro público (fiscal). El lado izquierdo es el ahorro nacional neto de inversión; el derecho, el saldo de la cuenta corriente.</div>
+        <p>La lectura clave: si el <strong>ahorro público cae</strong> —es decir, el gobierno pasa a <strong>déficit fiscal</strong> (Sg negativo)— y el ahorro privado y la inversión no cambian, el ahorro nacional total baja, y para que la identidad se cumpla también debe bajar (X − M): la <strong>cuenta corriente se vuelve más deficitaria</strong>. Por eso se habla de <strong>déficits gemelos</strong>: el déficit fiscal y el déficit de cuenta corriente tienden a <strong>ir juntos</strong>, porque el país que ahorra poco a nivel interno debe financiarse con ahorro externo (importa más de lo que exporta y se endeuda con el resto del mundo).</p>
 
         <h4>Crecimiento de largo plazo: el modelo de Solow</h4>
         <p>Explica el crecimiento por la <strong>acumulación de capital</strong> y el crecimiento de la población. Como el capital tiene <strong>rendimientos decrecientes</strong>, la economía llega a un <strong>estado estacionario</strong>: el capital donde la inversión solo repone la depreciación (inversión neta cero) y el producto por trabajador deja de crecer. El único motor del crecimiento <strong>sostenido</strong> es el <strong>progreso tecnológico</strong>. Medidas para fomentarlo: ahorro e inversión, capital humano (educación), I+D y apertura comercial.</p>

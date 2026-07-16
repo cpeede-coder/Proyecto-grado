@@ -29,6 +29,11 @@ window.ESTUDIO_GUIA.estrategia = {
         </ul>
         <p>Consecuencia: la ventaja competitiva es cada vez más <strong>transitoria</strong>; hay que crear, explotar y abandonar ventajas rápido.</p>
 
+        <h4>Ventaja competitiva transitoria</h4>
+        <p>Enfoque de <strong>Rita McGrath</strong>: en los entornos actuales de cambio rápido (VUCA/BANI), la ventaja competitiva <strong>sostenible es la excepción</strong>, no la regla. Lo normal es una <strong>sucesión de ventajas transitorias</strong>: cada una dura poco porque los rivales la imitan pronto.</p>
+        <div class="guia-def"><strong>Ventaja transitoria:</strong> ventaja de corta duración que la empresa debe <strong>crear, explotar y abandonar</strong> con rapidez —antes de que se erosione— para saltar a la siguiente. Competir bien ya no es defender una posición, sino <strong>encadenar ventajas</strong>.</div>
+        <p>Implica gestionar en <strong>oleadas</strong>: lanzar, escalar, cosechar y desinvertir a tiempo, reasignando recursos hacia la próxima oportunidad sin aferrarse a negocios que ya perdieron su ventaja.</p>
+
         <h4>Evolución del pensamiento estratégico</h4>
         <ol>
           <li><strong>Planificación</strong> (60-70): planes rígidos de largo plazo, entorno estable.</li>
@@ -211,7 +216,22 @@ window.ESTUDIO_GUIA.estrategia = {
         <p>Una estrategia genérica no basta declararla: debe materializarse en un <strong>sistema coherente de actividades</strong> que se refuercen entre sí. Cuanto mayor el <strong>encaje</strong>, más sostenible la ventaja, porque imitar una actividad aislada no reproduce el sistema.</p>
 
         <h4>Fuentes para la sustentabilidad de la ventaja competitiva</h4>
-        <p><em>Sustentabilidad</em> y <em>sostenibilidad</em> son sinónimos aquí (ambas = que la ventaja se mantenga en el tiempo). Una ventaja es <strong>sostenible/sustentable</strong> (no temporal) cuando resiste la imitación. Sus <strong>fuentes</strong> son:</p>
+        <p><em>Sustentabilidad</em> y <em>sostenibilidad</em> son sinónimos aquí (ambas = que la ventaja se mantenga en el tiempo). Una ventaja es <strong>sostenible/sustentable</strong> (no temporal) cuando resiste la imitación.</p>
+
+        <h4>⭐ Ventaja temporal vs. sostenible</h4>
+        <p>Distinción clásica de examen: no toda ventaja dura. La clave es si existen <strong>barreras a la imitación</strong> que la protejan.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Aspecto</th><th>Ventaja TEMPORAL</th><th>Ventaja SOSTENIBLE</th></tr></thead>
+          <tbody>
+            <tr><td>Duración</td><td>Corta: se erosiona pronto</td><td>Se mantiene en el tiempo</td></tr>
+            <tr><td>Imitabilidad</td><td>Fácil de copiar o replicar</td><td>Protegida por barreras a la imitación</td></tr>
+            <tr><td>Origen típico</td><td>Un precio bajo puntual, una promoción, una ventaja de ser el primero</td><td>Recursos <strong>VRIO</strong>, <strong>encaje del sistema de actividades</strong>, costos de cambio del cliente, marca, ambigüedad causal</td></tr>
+            <tr><td>Ejemplo de riesgo</td><td>El rival la neutraliza en la próxima temporada</td><td>El rival no logra reproducir todo el sistema que la sostiene</td></tr>
+          </tbody>
+        </table></div>
+        <div class="guia-def">Una ventaja <strong>temporal</strong> surge rápido pero es fácilmente imitable/erosionable; una ventaja <strong>sostenible</strong> perdura porque está blindada por barreras (VRIO, encaje de actividades, costos de cambio). En entornos muy dinámicos, incluso las "sostenibles" tienden a volverse transitorias (ver U1).</div>
+
+        <p>Las <strong>fuentes</strong> que convierten una ventaja en sostenible son:</p>
         <ul>
           <li>Sistema de actividades coherente y <strong>trade-offs</strong> (renuncias) claros.</li>
           <li>Recursos y capacidades difíciles de imitar (know-how, marca, cultura, aprendizaje).</li>
@@ -260,6 +280,19 @@ window.ESTUDIO_GUIA.estrategia = {
           </tbody>
         </table></div>
         <p><strong>Valor compartido</strong>: generar a la vez beneficios económicos para la empresa y sociales/ambientales para la sociedad; no son opuestos, sino interdependientes. El éxito se mide también por la <strong>legitimidad social</strong>.</p>
+
+        <h4>Enfoque en stakeholders (grupos de interés)</h4>
+        <div class="guia-def"><strong>Stakeholder:</strong> todo grupo que <strong>afecta o es afectado por</strong> la empresa. La estrategia moderna no responde solo al accionista (<em>shareholder</em>), sino a todos los grupos de interés.</div>
+        <p>Además de los <strong>accionistas</strong>, los principales grupos son:</p>
+        <ul>
+          <li><strong>Clientes</strong>: quienes reciben la propuesta de valor.</li>
+          <li><strong>Trabajadores</strong>: capital humano y cultura de la empresa.</li>
+          <li><strong>Proveedores</strong>: la cadena de suministro y su continuidad.</li>
+          <li><strong>Comunidad</strong>: el entorno local donde opera.</li>
+          <li><strong>Estado</strong>: regulación, tributación y bien público.</li>
+          <li><strong>Medio ambiente</strong>: los recursos naturales y su sostenibilidad.</li>
+        </ul>
+        <p>Idea clave (<strong>ESG</strong> y <strong>valor compartido</strong>): el éxito estratégico se mide también por la <strong>legitimidad social</strong> —la aceptación de la sociedad—, no solo por las utilidades para el accionista. Atender a los stakeholders <strong>es</strong> la vía práctica para crear valor compartido: alinear beneficio económico con beneficio social y ambiental.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "Competir ya no basta: hay que reinventar el mercado." · "No hay ventaja competitiva sin legitimidad social." · "Crear valor compartido es fuente de sustentabilidad."</div>
       `

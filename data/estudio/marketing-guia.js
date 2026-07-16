@@ -70,9 +70,12 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>Ninguna empresa satisface a todos por igual. La estrategia de marketing arranca con el modelo <strong>STP</strong>: <strong>S</strong>egmentar, seleccionar el mercado objetivo (<strong>T</strong>argeting) y <strong>P</strong>osicionar.</p>
 
+        <h4>El modelo STP (Segmentación &ndash; Targeting &ndash; Posicionamiento)</h4>
+        <p>El <strong>STP</strong> es el esqueleto de toda la estrategia de marketing. Marca el orden en que se decide a quién y cómo servir: <strong>S</strong>egmentar (dividir el mercado en grupos, en esta unidad) &rarr; <strong>T</strong>argeting (elegir a qué segmento apuntar, también en esta unidad) &rarr; <strong>P</strong>osicionar (ocupar un lugar distintivo y valorado en la mente del cliente, que se trabaja en U4). Las tres grandes secciones del curso NO son temas sueltos: son los tres pasos del STP, en ese orden.</p>
+        <div class="guia-def">STP = primero se DIVIDE el mercado (Segmentación), luego se ELIGE a quién servir (Targeting), y por último se POSICIONA la oferta en su mente (Posicionamiento).</div>
+
         <h4>Propósito de la segmentación</h4>
         <p>La <strong>segmentación</strong> divide el mercado en grupos más pequeños y homogéneos con necesidades o comportamientos similares. Propósito: entender mejor al cliente, optimizar recursos, subir la satisfacción y ganar ventaja competitiva.</p>
-        <div class="guia-def">STP = primero se DIVIDE el mercado, luego se ELIGE a quién servir, y por último se POSICIONA la oferta en su mente.</div>
 
         <h4>Bases de segmentación</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -97,7 +100,17 @@ window.ESTUDIO_GUIA.marketing = {
           <li>Seleccionar el mercado objetivo (<strong>targeting</strong>).</li>
           <li>Diseñar la mezcla de marketing para cada segmento elegido.</li>
         </ol>
-        <p>Al elegir cobertura hay tres opciones: <strong>indiferenciado</strong> (mismo marketing para todos), <strong>diferenciado</strong> (oferta distinta por segmento) y <strong>concentrado o de nicho</strong> (foco en uno o pocos segmentos, típico de empresas pequeñas o de lujo).</p>
+
+        <h4>Targeting: estrategias de cobertura de mercado</h4>
+        <p>Elegidos los segmentos atractivos, hay que decidir <strong>a cuántos y cómo apuntar</strong>. Existen tres estrategias de cobertura:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Estrategia</th><th>En qué consiste</th><th>Ejemplo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Indiferenciado (masivo)</strong></td><td>Un mismo mix de marketing para todo el mercado; ignora las diferencias. Máximo alcance y bajo costo, pero poco ajustado.</td><td>Sal de mesa; azúcar</td></tr>
+            <tr><td><strong>Diferenciado</strong></td><td>Un mix distinto para cada segmento elegido. Más ventas y satisfacción, pero mayor costo y complejidad.</td><td>Coca-Cola (regular, zero, light)</td></tr>
+            <tr><td><strong>Concentrado / de nicho</strong></td><td>Todo el esfuerzo en un solo segmento. Ideal para empresas pequeñas o marcas de lujo; alto foco, pero depende de un solo mercado.</td><td>Ferrari; una marca vegana</td></tr>
+          </tbody>
+        </table></div>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "No se puede satisfacer a todos por igual." · "Primero segmentar, luego elegir, después posicionar." · "Un segmento debe ser medible, accesible y rentable."</div>
       `
@@ -251,6 +264,11 @@ window.ESTUDIO_GUIA.marketing = {
         </table></div>
         <p>Para <strong>determinar la mezcla promocional</strong> se fijan primero los <strong>objetivos</strong> (más ventas, mejor imagen) y luego se eligen las herramientas más efectivas. Toda comunicación se apoya en tres <strong>principios</strong>: <strong>claridad</strong>, <strong>consistencia</strong> (mismo mensaje en todos los canales) y <strong>relevancia</strong> para el público.</p>
 
+        <h4>Comunicaciones Integradas de Marketing (IMC)</h4>
+        <p>Las <strong>Comunicaciones Integradas de Marketing (IMC)</strong> son la coordinación de TODAS las herramientas de la mezcla promocional &mdash;publicidad, promoción de ventas, relaciones públicas, venta personal y marketing directo/digital&mdash; bajo un <strong>mensaje único y coherente</strong> en todos los puntos de contacto. Justamente los tres principios de claridad, consistencia y relevancia son los que hacen que la marca "hable con una sola voz": el cliente recibe la misma promesa vea un anuncio, entre a la web o hable con un vendedor.</p>
+        <div class="guia-def">IMC = integrar todas las herramientas de comunicación bajo un mismo mensaje, para que la marca se perciba coherente en cada contacto (no mensajes sueltos y contradictorios por canal).</div>
+        <div class="guia-frase"><strong>Fórmula de examen (piden "tres estrategias de IMC"):</strong> responde cada una con <strong>herramienta + objetivo + ejemplo concreto</strong>. Ej.: (1) <em>Publicidad</em> en redes &rarr; dar a conocer el lanzamiento &rarr; video en Instagram con el eslogan; (2) <em>Promoción de ventas</em> &rarr; acelerar la primera compra &rarr; cupón de 20% por lanzamiento; (3) <em>Venta personal / marketing directo</em> &rarr; fidelizar &rarr; email personalizado post-compra al cliente. Las tres deben repetir el MISMO mensaje central.</div>
+
         <h4>Publicidad, medios y estrategia creativa (planificación de medios)</h4>
         <p>Las <strong>funciones de la publicidad</strong> son <strong>informar</strong>, <strong>persuadir</strong> y <strong>recordar</strong>. Para lograrlas se usan:</p>
         <ul>
@@ -290,6 +308,18 @@ window.ESTUDIO_GUIA.marketing = {
           </tbody>
         </table></div>
         <p>El <strong>mapeo</strong> del viaje visualiza estas interacciones para detectar oportunidades de mejora y puntos de dolor.</p>
+
+        <h4>Puntos de contacto: precompra, compra y postcompra</h4>
+        <p>Un <strong>punto de contacto (touchpoint)</strong> es cada momento en que el cliente interactúa con la marca. Las cinco etapas del viaje se agrupan en <strong>tres fases</strong>, y el examen suele pedir justamente los touchpoints ordenados en ellas:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Fase</th><th>Etapas del viaje</th><th>Puntos de contacto (ejemplos)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Precompra</strong></td><td>Conocimiento y consideración</td><td>Anuncio, sitio web, redes sociales, reseñas y recomendaciones</td></tr>
+            <tr><td><strong>Compra</strong></td><td>Compra</td><td>Tienda física, checkout del e-commerce, atención del vendedor</td></tr>
+            <tr><td><strong>Postcompra</strong></td><td>Servicio/postventa y fidelización</td><td>Soporte, email de seguimiento, programa de fidelización</td></tr>
+          </tbody>
+        </table></div>
+        <p>La empresa debe cuidar la coherencia en las tres fases: un buen anuncio (precompra) no sirve si el checkout falla (compra) o si nadie responde el reclamo (postcompra).</p>
 
         <h4>Retención, recuperación y fidelización</h4>
         <div class="guia-def">Retención = mantener al cliente actual. Recuperación = reconquistar al insatisfecho o perdido. Fidelización = convertirlo en defensor leal que compra y recomienda.</div>

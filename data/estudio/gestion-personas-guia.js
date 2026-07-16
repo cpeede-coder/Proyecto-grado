@@ -162,9 +162,22 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Evaluación</strong>: medir efectividad e impacto (post-test, observación, indicadores antes/después).</li>
         </ul>
 
+        <h4>Modelo de Kirkpatrick: 4 niveles de efectividad</h4>
+        <p>⭐ Modelo estrella del examen para <strong>medir si la capacitación sirvió</strong>. Son 4 niveles en escalera: cada uno mide más profundo que el anterior.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Nivel</th><th>Qué mide</th><th>Cómo se mide</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. Reacción</strong></td><td>&iquest;Les gustó? Satisfacción de los participantes</td><td>Encuesta de salida ("&iquest;qué te pareció?")</td></tr>
+            <tr><td><strong>2. Aprendizaje</strong></td><td>&iquest;Aprendieron? Conocimientos/habilidades adquiridos</td><td>Test antes/después</td></tr>
+            <tr><td><strong>3. Comportamiento</strong></td><td>&iquest;Lo aplican en el puesto? Transferencia al trabajo</td><td>Observación del desempeño en el cargo</td></tr>
+            <tr><td><strong>4. Resultados</strong></td><td>&iquest;Impacto en el negocio? Productividad, ventas, calidad</td><td>Indicadores del negocio antes/después</td></tr>
+          </tbody>
+        </table></div>
+        <p>El <strong>ROI de la capacitación (Phillips)</strong> se suma como un 5&ordm; nivel que <strong>monetiza</strong> el impacto: traduce los resultados a dinero para justificar la inversión ante la gerencia.</p>
+        <div class="guia-frase">El examen pide subir de nivel: la mayoría de las empresas mide solo Reacción; el valor real está en Comportamiento y Resultados.</div>
+
         <h4>Medición del impacto de la capacitación: evaluación ROI</h4>
         <div class="guia-def">ROI (%) = (Beneficios &minus; Costos) / Costos &times; 100. Ej.: invertir $10.000 y que las ventas suban $30.000 &rarr; ROI = (30.000 &minus; 10.000) / 10.000 &times; 100 = 200%.</div>
-        <p>El <strong>modelo de Kirkpatrick</strong> mide la efectividad en 4 niveles: 1) Reacción, 2) Aprendizaje, 3) Comportamiento y 4) Resultados. El ROI (Phillips) es un 5&ordm; nivel que traduce los resultados a dinero.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "Capacitar sin DNC es dispararle a ciegas al presupuesto." · "El ROI traduce la capacitación al lenguaje de la gerencia: el dinero."</div>
       `
@@ -219,7 +232,24 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </ul>
 
         <h4>Comportamiento Organizacional</h4>
-        <p>El <strong>Comportamiento Organizacional (CO)</strong> estudia la conducta humana en el trabajo en tres niveles: individuo (motivación, personalidad, percepción), grupos (equipos, liderazgo, comunicación) y sistema organizacional (estructura, cultura, políticas). En los equipos hay <strong>conflicto de tarea</strong> (más fácil de mitigar) y <strong>conflicto de relación</strong> (emocional, el más dañino). Sacar a un equipo de la crisis exige liberar la tensión emocional e intervenir la etapa de tormenta &mdash; las etapas de <strong>Tuckman</strong>: forming, storming, norming, performing.</p>
+        <p>El <strong>Comportamiento Organizacional (CO)</strong> estudia la conducta humana en el trabajo en tres niveles: individuo (motivación, personalidad, percepción), grupos (equipos, liderazgo, comunicación) y sistema organizacional (estructura, cultura, políticas).</p>
+
+        <h4>Etapas de un equipo (Tuckman)</h4>
+        <p>Todo equipo atraviesa 4 fases antes de rendir; no se puede saltar la del conflicto:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Fase</th><th>Qué pasa</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1. Forming</strong> (formación)</td><td>Se conocen, cortesía y dependencia del líder; aún no hay confianza</td></tr>
+            <tr><td><strong>2. Storming</strong> (conflicto)</td><td>Choques, tensión y crisis por roles y poder &mdash; la etapa clave</td></tr>
+            <tr><td><strong>3. Norming</strong> (normas)</td><td>Se acuerdan reglas, crece la cohesión y la confianza</td></tr>
+            <tr><td><strong>4. Performing</strong> (desempeño)</td><td>El equipo rinde, colabora y se enfoca en resultados</td></tr>
+          </tbody>
+        </table></div>
+        <p>La "crisis" de un equipo suele ser el <strong>storming</strong>; superarlo no se logra evitándolo, sino con <strong>normas claras y liderazgo</strong> que canalicen la tensión hacia el norming.</p>
+
+        <h4>Conflicto de tarea vs. de relación</h4>
+        <div class="guia-def"><strong>Conflicto de tarea:</strong> es sobre el trabajo, las ideas y el cómo hacer las cosas. En dosis moderadas es <em>útil</em>: obliga a debatir y mejora las decisiones. <strong>Conflicto de relación:</strong> son choques personales y emocionales (antipatías, egos). Es <em>siempre dañino</em>: destruye la confianza y quiebra los equipos.</div>
+        <p>La <strong>cohesión</strong> y las <strong>normas</strong> del equipo son lo que regula el conflicto: mantienen el de tarea en niveles productivos y contienen el de relación antes de que escale.</p>
 
         <h4>Cambio organizacional</h4>
         <div class="guia-def">Cambio organizacional = proceso planificado que lleva a la organización de un estado actual (A) a uno deseado (B), ejecutado a través de las personas. Es un proceso, no un evento, y siempre hay resistencia.</div>
@@ -259,7 +289,21 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
             <tr><td><strong>Supuestos básicos</strong></td><td>Creencias inconscientes que se dan por sentadas (el verdadero núcleo)</td><td>"Aquí el jefe siempre tiene la razón"</td></tr>
           </tbody>
         </table></div>
-        <p><strong>Modelos que miden o clasifican la cultura:</strong> Cameron &amp; Quinn (Competing Values: Clan, Adhocrática, Jerárquica, de Mercado), Denison &amp; Neale (4 dimensiones: misión, consistencia, involucramiento, adaptabilidad), Spencer Stuart &amp; Harvard (8 tipos), Richard Barrett (evolutivo, 7 niveles) y Maslow (base motivacional). La <strong>fuerza</strong> de la cultura (Sathe &amp; Wiener) mide el grado de acuerdo con los valores: una cultura fuerte alinea, pero también puede resistir el cambio. En organizaciones grandes conviven <strong>subculturas</strong> que conviene integrar hacia objetivos comunes.</p>
+        <p><strong>Modelos que miden o clasifican la cultura:</strong> Cameron &amp; Quinn (Valores en Competencia, ver abajo), Denison &amp; Neale (4 dimensiones: misión, consistencia, involucramiento, adaptabilidad), Spencer Stuart &amp; Harvard (8 tipos), Richard Barrett (evolutivo, 7 niveles) y Maslow (base motivacional).</p>
+
+        <h4>Culturas de Cameron &amp; Quinn (Valores en Competencia)</h4>
+        <p>Clasifica la cultura cruzando <strong>dos ejes</strong>: el vertical <strong>Flexibilidad &harr; Control (estabilidad)</strong> y el horizontal <strong>Foco interno &harr; Foco externo</strong>. De ese 2x2 salen 4 tipos:</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th></th><th>Foco interno</th><th>Foco externo</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Flexibilidad</strong></td><td><strong>Clan:</strong> familia, colaboración, personas, mentoría</td><td><strong>Adhocrática:</strong> innovación, riesgo, creatividad, cambio</td></tr>
+            <tr><td><strong>Control (estabilidad)</strong></td><td><strong>Jerárquica:</strong> procesos, reglas, orden, eficiencia interna</td><td><strong>Mercado:</strong> resultados, competir, metas, ganar al rival</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Fuerza de la cultura y subculturas</h4>
+        <p>No es lo mismo el <strong>tipo</strong> de cultura (qué valores tiene: clan, mercado, etc.) que su <strong>fuerza o intensidad</strong> (cuánto se comparten esos valores entre los miembros, medida por Sathe &amp; Wiener).</p>
+        <p>Una <strong>cultura fuerte</strong> alinea a las personas y da identidad y sentido de pertenencia, pero es un <strong>arma de doble filo</strong>: cuando el entorno cambia, esos mismos valores tan arraigados <strong>resisten el cambio</strong> y se vuelven rigidez. Además, dentro de la cultura dominante conviven <strong>subculturas</strong> (áreas, filiales o grupos con valores propios) que conviene reconocer e integrar hacia los objetivos comunes.</p>
 
         <h4>Estrategias para el cambio cultural</h4>
         <p>Transformar la cultura requiere proceso estructurado, liderazgo activo y participación de toda la organización; el Desarrollo Organizacional (DO) actúa como facilitador. Estrategias: liderazgo que modele los valores, comunicación constante, entrenamiento en los nuevos comportamientos y recompensas alineadas con esos valores.</p>
