@@ -196,8 +196,8 @@ window.ESTUDIO_GUIA.estrategia = {
         <h4>Sistema de actividades y encaje estratégico</h4>
         <p>Una estrategia genérica no basta declararla: debe materializarse en un <strong>sistema coherente de actividades</strong> que se refuercen entre sí. Cuanto mayor el <strong>encaje</strong>, más sostenible la ventaja, porque imitar una actividad aislada no reproduce el sistema.</p>
 
-        <h4>Sostenibilidad de la ventaja competitiva</h4>
-        <p>Una ventaja es <strong>sostenible</strong> (no temporal) cuando resiste la imitación. Fuentes:</p>
+        <h4>Fuentes para la sustentabilidad de la ventaja competitiva</h4>
+        <p><em>Sustentabilidad</em> y <em>sostenibilidad</em> son sinónimos aquí (ambas = que la ventaja se mantenga en el tiempo). Una ventaja es <strong>sostenible/sustentable</strong> (no temporal) cuando resiste la imitación. Sus <strong>fuentes</strong> son:</p>
         <ul>
           <li>Sistema de actividades coherente y <strong>trade-offs</strong> (renuncias) claros.</li>
           <li>Recursos y capacidades difíciles de imitar (know-how, marca, cultura, aprendizaje).</li>
