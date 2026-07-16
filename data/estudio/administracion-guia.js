@@ -31,10 +31,10 @@ window.ESTUDIO_GUIA.administracion = {
         <div class="guia-def">Administrar es <strong>coordinar y supervisar</strong> las actividades de otros para que se realicen de forma <strong>eficiente</strong> (menor uso de recursos) y <strong>eficaz</strong> (logro de objetivos). Eficiencia + eficacia = alto desempeño.</div>
         <p>La <strong>productividad</strong> es el cociente producción / insumos: sube si produces más con lo mismo, lo mismo con menos, o más con menos. Es la medida concreta de la eficiencia.</p>
 
-        <h4>Qué es una organización y qué es una empresa</h4>
+        <h4>Organización social: qué es una organización y una empresa</h4>
         <p>Una <strong>organización social</strong> es un acuerdo deliberado de personas para lograr un propósito que solas no alcanzarían. Sus tres características: propósito común, personas y estructura deliberada. Una <strong>empresa</strong> es la herramienta que crean las personas para coordinar acciones y <strong>crear valor</strong>, transformando insumos en productos y servicios. Para ello necesita recursos materiales, humanos y financieros.</p>
 
-        <h4>Finalidad y stakeholders</h4>
+        <h4>Finalidad y satisfacción de los stakeholders</h4>
         <p>La finalidad es lograr metas coordinando recursos, con objetivos <strong>económicos, sociales y ecológicos</strong>. Los <strong>stakeholders</strong> son todos los grupos con interés en la organización; satisfacerlos es vital para el éxito de largo plazo.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Stakeholder</th><th>Qué busca</th></tr></thead>
@@ -47,7 +47,7 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
-        <h4>Gerentes: niveles, roles y habilidades</h4>
+        <h4>Roles y habilidades gerenciales</h4>
         <p>Hay tres <strong>niveles</strong>: primera línea (operativo), medio (intermedio) y alto (institucional, que ve la empresa como un todo). Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar. Los <strong>roles de Mintzberg</strong> se agrupan en interpersonales, informativos y decisorios.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Habilidad</th><th>Qué es</th><th>Dónde pesa más</th></tr></thead>
@@ -116,7 +116,7 @@ window.ESTUDIO_GUIA.administracion = {
       html: `
         <p>El proceso de gestión son las cuatro funciones en acción: <strong>Planificar → Organizar → Dirigir → Controlar</strong>. Es un ciclo: lo que se controla vuelve a alimentar la planificación. Empezamos por planificar.</p>
 
-        <h4>Qué es y para qué sirve planificar</h4>
+        <h4>El proceso de planificación</h4>
         <p>Es definir <strong>objetivos</strong>, establecer <strong>estrategias</strong> y desarrollar <strong>planes</strong>. Su propósito es <strong>dar dirección</strong>; reduce la incertidumbre, aporta eficiencia y minimiza el desperdicio. La planeación <strong>formal</strong> (escrita, comunicada, con plazos) aumenta la probabilidad de éxito.</p>
         <div class="guia-def">Secuencia mental de la planificación: <strong>Objetivos → Estrategias → Planes</strong>.</div>
 
@@ -142,7 +142,7 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
-        <h4>Tipos de planes y su cascada</h4>
+        <h4>Los tipos de planes</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Criterio</th><th>Opciones</th></tr></thead>
           <tbody>
@@ -152,7 +152,8 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td><strong>Frecuencia de uso</strong></td><td>Uso único vs. Permanentes</td></tr>
           </tbody>
         </table></div>
-        <p>Forman una <strong>cascada</strong>: los planes estratégicos guían a los tácticos (mediano plazo) y estos a los operativos (día a día). Todo alineado con los objetivos generales.</p>
+        <h4>Relación entre los diferentes tipos de planes</h4>
+        <p>Forman una <strong>cascada</strong>: los planes estratégicos guían a los tácticos (mediano plazo) y estos a los operativos (día a día). Todo alineado con los objetivos generales. Cada nivel <strong>deriva del superior y lo hace operable</strong>: si un plan operativo se desalinea del estratégico, se rompe la cascada y se desperdician recursos.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La planeación formal aumenta la probabilidad de éxito." · "Un plan operativo mal alineado con el estratégico rompe la cascada." · "Un objetivo sin cifra ni plazo no es SMART."</div>
       `
@@ -163,7 +164,7 @@ window.ESTUDIO_GUIA.administracion = {
         <p><strong>Organizar</strong> es distribuir y estructurar el trabajo: definir qué hacer, cómo y quién lo hará. Regla de oro:</p>
         <div class="guia-def">La <strong>estrategia antecede a la estructura</strong> (Estrategia → Estructura). Primero se decide adónde ir; luego se diseña la organización que lo permite (Chandler).</div>
 
-        <h4>Los seis elementos del diseño</h4>
+        <h4>Estructura de actividad y autoridad</h4>
         <p>La <strong>estructura organizacional</strong> es la distribución formal de los puestos y se diseña con seis elementos: especialización del trabajo, departamentalización, cadena de mando, tramo de control, centralización/descentralización y formalización.</p>
         <ul>
           <li><strong>Especialización:</strong> dividir tareas; la sobre-especialización genera fatiga, estrés y rotación.</li>
@@ -187,7 +188,7 @@ window.ESTUDIO_GUIA.administracion = {
         <h4>Diseños organizacionales</h4>
         <p><strong>Tradicionales:</strong> Simple (centralizada, emprendimientos), Funcional (por función) y Divisional (unidades semiautónomas bajo una matriz). <strong>Contemporáneos:</strong> De equipos, Matricial/de proyectos (dos jefes) y De red (externaliza y se concentra en lo que hace mejor).</p>
 
-        <h4>Departamentalización (cómo se agrupan los puestos)</h4>
+        <h4>Tipos de departamentalización</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Tipo</th><th>Ventaja</th><th>Desventaja</th></tr></thead>
           <tbody>
@@ -198,7 +199,10 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td><strong>Por procesos</strong></td><td>Eficiencia en el flujo productivo</td><td>Solo sirve para ciertos productos</td></tr>
           </tbody>
         </table></div>
-        <p>No confundas <strong>estructura</strong> (diseño general) con <strong>departamentalización</strong> (agrupación de puestos dentro de ella). <strong>Centralización</strong>: deciden arriba (mecanicista); <strong>descentralización</strong>: decide quien está cerca de la acción (orgánica, mejor adaptación local).</p>
+        <p>No confundas <strong>estructura</strong> (diseño general) con <strong>departamentalización</strong> (agrupación de puestos dentro de ella).</p>
+
+        <h4>Centralización y descentralización</h4>
+        <p><strong>Centralización</strong>: las decisiones se concentran en la cúpula (propio de la estructura mecanicista; da control y uniformidad). <strong>Descentralización</strong>: decide quien está más cerca de la acción (orgánica; permite mejor adaptación local y decisiones más rápidas, pero exige gente capacitada). La mayoría de las empresas se ubica en un punto intermedio según su tamaño, entorno y estrategia.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La estructura sigue a la estrategia." · "Identifica primero el tipo (Divisional, Funcional…), después justifica." · "Departamentalización no es lo mismo que estructura."</div>
       `
@@ -245,7 +249,7 @@ window.ESTUDIO_GUIA.administracion = {
       html: `
         <p><strong>Controlar</strong> es dar seguimiento a las actividades para garantizar que se logren conforme a lo planeado y corregir desviaciones. Cierra el ciclo administrativo y <strong>alimenta de vuelta la planificación</strong>: por eso el proceso de gestión es un ciclo.</p>
 
-        <h4>El proceso de control (tres etapas)</h4>
+        <h4>Procesos y sistemas de control</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Etapa</th><th>En qué consiste</th></tr></thead>
           <tbody>
@@ -266,7 +270,7 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
         <p>Herramientas transversales: el <strong>benchmarking</strong> (comparar con las mejores prácticas de la industria) y el control por áreas (producción, comercial, financiera, RRHH).</p>
 
-        <h4>Indicadores y KPI</h4>
+        <h4>Determinación de indicadores (KPI)</h4>
         <p>Un <strong>KPI</strong> (Key Performance Indicator) mide cuánto varió el objetivo SMART y si se cumplió. Tipos: <strong>financieros</strong> (ROI, ROS, costos), <strong>de proceso</strong> (eficiencia, tiempos de ciclo) y <strong>de satisfacción</strong> (cliente, empleado).</p>
         <div class="guia-def">Cómo se arma un KPI: <strong>Objetivo → Meta (con cifra y plazo) → Indicador (fórmula)</strong>. Ej.: "aumentar exportaciones" → "+15% en 2024 vs. 2023" → ventas extranjero (2024/2023) ≥ 1,15.</div>
 

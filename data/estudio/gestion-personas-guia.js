@@ -31,7 +31,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <h4>El ciclo de subsistemas</h4>
         <p>Planificar la dotación &rarr; reclutar &rarr; seleccionar &rarr; mantener (compensar) &rarr; desarrollar/capacitar &rarr; evaluar el desempeño. Es un <strong>ciclo</strong>: la evaluación realimenta capacitación, compensación y carrera.</p>
 
-        <h4>Diseño de la estructura organizacional</h4>
+        <h4>Diseño de estructura organizacional: criterios y pertinencia según el modelo de negocio y la estrategia</h4>
         <p>La estructura define cómo la empresa <strong>divide, agrupa y coordina</strong> las actividades para alcanzar sus objetivos. Puede ser formal (jerarquías definidas) o informal (relaciones espontáneas). Regla clave: <strong>"la estructura sigue a la estrategia"</strong>.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Criterio de diseño</th><th>Qué mide</th><th>Alta / Ejemplo</th></tr></thead>
@@ -44,7 +44,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p><strong>Pertinencia según el modelo de negocio y la estrategia:</strong> entornos dinámicos / innovación &rarr; estructuras flexibles, descentralizadas, matriciales. Entornos estables / eficiencia o costos &rarr; formales y centralizadas. Diferenciación / cercanía al cliente &rarr; divisionales por producto o mercado. Ej.: Falabella es divisional (Retail, Banco, Sodimac, Mall Plaza); una PYME familiar suele ser funcional y centralizada.</p>
 
-        <h4>Descripción de puestos y su utilidad</h4>
+        <h4>Descripción de puestos y su utilidad: enfoque tradicional y por competencias</h4>
         <p>Describir los puestos permite saber <strong>qué tareas</strong> hace un cargo y <strong>qué se requiere</strong> de quien lo desempeña. Su utilidad: ordena la estructura, valoriza los puestos, ayuda a planificar la dotación y da la base para reclutar, seleccionar, evaluar y compensar. Dos documentos que no hay que confundir:</p>
         <ul>
           <li><strong>Descripción del cargo</strong>: QUÉ hace el puesto (tareas, responsabilidades, cómo y por qué).</li>
@@ -52,7 +52,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </ul>
         <p>El <strong>enfoque tradicional</strong> se centra en las tareas (el qué); el <strong>enfoque por competencias</strong> mira las habilidades, actitudes y conductas observables (el cómo) y se alinea mejor con la estrategia: no basta con hacer las tareas, importa <em>cómo</em> se hacen y si esas conductas construyen la ventaja competitiva.</p>
 
-        <h4>Tipos de cargos y su impacto</h4>
+        <h4>Tipos de cargos y su impacto en el logro de resultados organizacionales</h4>
         <p>Directivos (deciden la estrategia), Gerenciales (implementan y supervisan), Operativos (producen y entregan), Administrativos (información y soporte), Especializados (expertise técnico crítico) y Temporales (flexibilidad y bajo costo). Alineamiento: si la ventaja es innovación se cuidan los especializados y directivos; si es costo, la eficiencia de los operativos.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La estructura sigue a la estrategia." · "Descripción = qué hace el puesto; especificación = qué necesita la persona." · "El enfoque por competencias mira el cómo, no solo el qué."</div>
@@ -63,7 +63,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>Dos procesos distintos: <strong>reclutar</strong> es atraer candidatos (genera el pool a partir del perfil del cargo y del modelo de personas); <strong>seleccionar</strong> es elegir al que mejor calza con el puesto y con la estrategia.</p>
 
-        <h4>Reclutamiento interno vs. externo</h4>
+        <h4>Reclutamiento interno y externo: características y utilidad</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>Interno</th><th>Externo</th></tr></thead>
           <tbody>
@@ -74,15 +74,18 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p>Alineamiento: cultura fuerte / continuidad tiende a <strong>interno</strong>; necesidad de reinventarse pide más <strong>externo</strong>.</p>
 
-        <h4>Diseño del reclutamiento alineado al "modelo de personas"</h4>
+        <h4>Diseño de reclutamiento en alineamiento con el modelo de personas</h4>
         <div class="guia-def">El modelo de personas es el perfil ideal del empleado según competencias, valores y cultura: no es solo "qué sabe hacer", sino "qué tipo de persona encaja aquí".</div>
-        <p>El reclutamiento se diseña <strong>desde ese perfil</strong>: define qué talento buscar, dónde buscarlo y con qué mensaje, para que quienes lleguen ya calcen con el tipo de persona que la estrategia necesita. Ej.: una fintech atrae perfiles creativos y tolerantes a la ambigüedad; un banco tradicional, perfiles rigurosos y orientados al detalle. El <strong>reclutamiento por redes sociales</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
+        <p>El reclutamiento se diseña <strong>desde ese perfil</strong>: define qué talento buscar, dónde buscarlo y con qué mensaje, para que quienes lleguen ya calcen con el tipo de persona que la estrategia necesita. Ej.: una fintech atrae perfiles creativos y tolerantes a la ambigüedad; un banco tradicional, perfiles rigurosos y orientados al detalle.</p>
 
-        <h4>Etapas de la selección</h4>
+        <h4>Reclutamiento por medio de las redes sociales</h4>
+        <p>El <strong>reclutamiento por redes sociales</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
+
+        <h4>Proceso de selección: etapas y enfoques en alineamiento con la estrategia organizacional</h4>
         <p>1) Definir el perfil &rarr; 2) Atraer candidatos &rarr; 3) Evaluación (pruebas, entrevistas, assessment) &rarr; 4) Selección final &rarr; 5) Integración (inducción y socialización). Además del calce técnico importa el <strong>ajuste cultural</strong>: un candidato brillante que no comparte los valores suele fracasar igual.</p>
         <p>Alineamiento de la selección con la estrategia: innovación &rarr; creatividad y adaptabilidad, pruebas abiertas; eficiencia/costos &rarr; confiabilidad y ajuste a procedimientos; cargos estratégicos &rarr; procesos largos y rigurosos; cargos operativos/temporales &rarr; procesos ágiles.</p>
 
-        <h4>Entrevistas y técnica STAR</h4>
+        <h4>Entrevistas preliminar y de selección: condiciones para la efectiva evaluación de potencial</h4>
         <p>La entrevista busca crear las <strong>condiciones para evaluar de verdad el potencial</strong> del candidato:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>Preliminar</th><th>De selección</th></tr></thead>
@@ -102,7 +105,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>"Mantenimiento" es todo lo que hace la empresa para <strong>retener y motivar</strong>. Su corazón son las remuneraciones y compensaciones. Es una de las unidades <strong>más preguntadas</strong> del examen.</p>
 
-        <h4>Políticas de remuneración: criterios y características</h4>
+        <h4>Políticas y sistemas de remuneraciones: criterios y características</h4>
         <ul>
           <li><strong>Equidad interna</strong>: consistencia entre roles similares (se logra valorizando puestos).</li>
           <li><strong>Equidad externa (competitividad)</strong>: competir con el mercado (se logra con benchmark salarial).</li>
@@ -110,7 +113,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </ul>
         <p>Características deseables: <strong>transparencia</strong> (claridad en cómo se fijan los sueldos) y <strong>flexibilidad</strong> (capacidad de ajuste al negocio y al mercado).</p>
 
-        <h4>Compensación total (el modelo estrella del examen)</h4>
+        <h4>Políticas y planes de compensaciones y reconocimiento monetarios y no monetarios: características y alineamiento con la estrategia</h4>
         <div class="guia-def">La compensación total tiene tres capas (monetaria directa, monetaria indirecta y no monetaria). La respuesta del examen SIEMPRE debe incluir la monetaria directa, porque es la base del sistema.</div>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Capa</th><th>Qué incluye</th><th>Por qué retiene</th></tr></thead>
@@ -140,7 +143,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>Busca cerrar la brecha entre lo que las personas <strong>saben hoy</strong> y lo que la estrategia <strong>necesitará mañana</strong>.</p>
 
-        <h4>Inducción y socialización</h4>
+        <h4>Proceso de inducción y socialización</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th></th><th>Inducción</th><th>Socialización</th></tr></thead>
           <tbody>
@@ -151,7 +154,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p>La socialización tiene tres fases: <strong>Anticipatoria</strong> (expectativas antes de entrar), <strong>Encuentro</strong> (choque expectativa/realidad) y <strong>Metamorfosis</strong> (ajuste pleno).</p>
 
-        <h4>Ciclo de capacitación</h4>
+        <h4>Etapas de un proceso de capacitación: DNC, diseño, implementación, evaluación</h4>
         <p><strong>DNC &rarr; Diseño &rarr; Implementación &rarr; Evaluación.</strong> La <strong>DNC</strong> (Detección de Necesidades) es la etapa clave: identifica las brechas reales con evaluaciones de desempeño, encuestas e indicadores. Si se detecta mal, se capacita en lo que no sirve.</p>
         <ul>
           <li><strong>Diseño</strong>: objetivos de aprendizaje claros, métodos (presencial, e-learning, taller) y materiales.</li>
@@ -159,7 +162,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Evaluación</strong>: medir efectividad e impacto (post-test, observación, indicadores antes/después).</li>
         </ul>
 
-        <h4>Medición de impacto: ROI y Kirkpatrick</h4>
+        <h4>Medición del impacto de la capacitación: evaluación ROI</h4>
         <div class="guia-def">ROI (%) = (Beneficios &minus; Costos) / Costos &times; 100. Ej.: invertir $10.000 y que las ventas suban $30.000 &rarr; ROI = (30.000 &minus; 10.000) / 10.000 &times; 100 = 200%.</div>
         <p>El <strong>modelo de Kirkpatrick</strong> mide la efectividad en 4 niveles: 1) Reacción, 2) Aprendizaje, 3) Comportamiento y 4) Resultados. El ROI (Phillips) es un 5&ordm; nivel que traduce los resultados a dinero.</p>
 
@@ -171,7 +174,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>Medir cómo lo está haciendo cada persona para <strong>decidir</strong> (desarrollo, promoción, compensación) y <strong>alinear</strong> su aporte con la estrategia. Se evalúa el <strong>qué</strong> (metas/resultados) y el <strong>cómo</strong> (conductas y competencias).</p>
 
-        <h4>Modelos de evaluación (según cultura y estrategia)</h4>
+        <h4>Modelos de evaluación de desempeño y la cultura y estrategia organizacional</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Modelo</th><th>En qué se basa</th><th>Ventaja / Desventaja</th></tr></thead>
           <tbody>
@@ -182,7 +185,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p>El modelo debe reflejar los <strong>valores</strong> y estar alineado con la <strong>estrategia</strong>: si valoras la colaboración pero solo evalúas metas individuales, generas competencia interna tóxica.</p>
 
-        <h4>Desempeño efectivo y metas SMART</h4>
+        <h4>Desempeño efectivo: focos en metas y desempeño</h4>
         <p>Desempeño efectivo es el que logra los resultados Y lo hace coherente con los valores. Las metas deben ser <strong>SMART</strong>: eSpecíficas, Medibles, Alcanzables, Relevantes y Temporales. Ej.: "aumentar las ventas 10% en 6 meses".</p>
 
         <h4>Errores frecuentes de evaluación</h4>
@@ -194,8 +197,11 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Similitud ("similar a mí")</strong>: sesgo por afinidad personal.</li>
         </ul>
 
-        <h4>Retroalimentación y cierre del ciclo</h4>
-        <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). Rol del <strong>evaluador</strong>: feedback honesto y apoyo; rol del <strong>evaluado</strong>: aceptar, reflexionar, trabajar las brechas y comunicar necesidades. El ciclo se cierra con planes de desarrollo individualizados, gestión de resultados (promoción, compensación, desarrollo) y acciones correctivas para el bajo desempeño. La evaluación vuelve a alimentar capacitación, compensación y carrera.</p>
+        <h4>Hito de la retroalimentación: rol de evaluador y evaluado</h4>
+        <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). Rol del <strong>evaluador</strong>: feedback honesto y apoyo; rol del <strong>evaluado</strong>: aceptar, reflexionar, trabajar las brechas y comunicar necesidades.</p>
+
+        <h4>Planes de desarrollo y gestión de resultados de la evaluación</h4>
+        <p>El ciclo se cierra con <strong>planes de desarrollo</strong> individualizados, <strong>gestión de resultados</strong> (promoción, compensación, desarrollo) y acciones correctivas para el bajo desempeño. La evaluación vuelve a alimentar capacitación, compensación y carrera.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "Se evalúa el qué (metas) y el cómo (conductas)." · "El feedback convierte la evaluación en desarrollo." · "Se evalúa lo que se quiere que ocurra: la métrica moldea la conducta."</div>
       `
@@ -205,17 +211,24 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>La organización se mira como un todo que cambia: su <strong>identidad</strong> (visión, misión, valores), su <strong>comportamiento</strong> y cómo <strong>gestionar el cambio</strong>.</p>
 
-        <h4>Identidad y comportamiento organizacional</h4>
+        <h4>Visión, misión y valores</h4>
         <ul>
           <li><strong>Visión</strong>: lo que la organización aspira a ser en el futuro (da dirección).</li>
           <li><strong>Misión</strong>: su razón de ser hoy (qué hace, para quién y cómo).</li>
           <li><strong>Valores</strong>: principios que guían el comportamiento y las decisiones.</li>
         </ul>
+
+        <h4>Comportamiento Organizacional</h4>
         <p>El <strong>Comportamiento Organizacional (CO)</strong> estudia la conducta humana en el trabajo en tres niveles: individuo (motivación, personalidad, percepción), grupos (equipos, liderazgo, comunicación) y sistema organizacional (estructura, cultura, políticas). En los equipos hay <strong>conflicto de tarea</strong> (más fácil de mitigar) y <strong>conflicto de relación</strong> (emocional, el más dañino). Sacar a un equipo de la crisis exige liberar la tensión emocional e intervenir la etapa de tormenta &mdash; las etapas de <strong>Tuckman</strong>: forming, storming, norming, performing.</p>
 
-        <h4>Gestión del cambio</h4>
+        <h4>Cambio organizacional</h4>
         <div class="guia-def">Cambio organizacional = proceso planificado que lleva a la organización de un estado actual (A) a uno deseado (B), ejecutado a través de las personas. Es un proceso, no un evento, y siempre hay resistencia.</div>
-        <p>Puede ser <strong>incremental</strong> (mejoras continuas) o <strong>transformacional</strong> (radical, redefine el rumbo). Causas de <strong>resistencia</strong>: miedo a lo desconocido, pérdida de control, hábitos y amenaza a la seguridad laboral. Estrategias para superarla: comunicación clara, participación, apoyo y negociación.</p>
+        <p>Puede ser <strong>incremental</strong> (mejoras continuas) o <strong>transformacional</strong> (radical, redefine el rumbo).</p>
+
+        <h4>Resistencias al cambio</h4>
+        <p>Causas de <strong>resistencia</strong>: miedo a lo desconocido, pérdida de control, hábitos y amenaza a la seguridad laboral. Estrategias para superarla: comunicación clara, participación, apoyo y negociación.</p>
+
+        <h4>Modelos de gestión del cambio</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Modelo</th><th>Idea central</th></tr></thead>
           <tbody>

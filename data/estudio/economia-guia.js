@@ -20,7 +20,7 @@ window.ESTUDIO_GUIA.economia = {
 
         <p>La economía parte de un hecho: los recursos son <strong>escasos</strong> y las necesidades <strong>ilimitadas</strong>. De ahí nace todo lo demás: elegir, renunciar y asignar.</p>
 
-        <h4>¿Qué estudia la economía?</h4>
+        <h4>El concepto y método de la Economía. Los modelos económicos</h4>
         <div class="guia-def">La economía estudia cómo la sociedad administra sus <strong>recursos escasos</strong> para satisfacer necesidades ilimitadas. La escasez obliga a <strong>elegir</strong>.</div>
         <p>La economía es una <strong>ciencia social</strong>: observa, formula supuestos y usa <strong>modelos</strong> (representaciones simplificadas de la realidad) para analizar decisiones. Sus principios se agrupan en tres bloques:</p>
         <ul>
@@ -32,7 +32,7 @@ window.ESTUDIO_GUIA.economia = {
         <h4>Costo de oportunidad y pensamiento marginal</h4>
         <p>El <strong>costo de oportunidad</strong> es el valor de la mejor alternativa a la que se renuncia. Pensar <strong>en el margen</strong> es comparar el beneficio de una unidad adicional con su costo: conviene actuar mientras el <strong>beneficio marginal supere al costo marginal</strong>.</p>
 
-        <h4>La Frontera de Posibilidades de Producción (FPP)</h4>
+        <h4>La escasez, el problema económico y la Frontera de Posibilidades de Producción (FPP)</h4>
         <p>Muestra las combinaciones <strong>máximas</strong> de dos bienes que se pueden producir con los recursos y la tecnología disponibles.</p>
         <ul>
           <li>Puntos <strong>sobre</strong> la curva: eficientes (se usan todos los recursos).</li>
@@ -41,7 +41,7 @@ window.ESTUDIO_GUIA.economia = {
         </ul>
         <p>Su pendiente es el costo de oportunidad; suele ser <strong>cóncava</strong> (costo de oportunidad creciente). Se desplaza <strong>hacia afuera</strong> con más recursos o mejor tecnología: eso es <strong>crecimiento económico</strong>.</p>
 
-        <h4>Ventaja comparativa, especialización y comercio</h4>
+        <h4>El intercambio, la ventaja comparativa y la especialización</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Concepto</th><th>Definición</th><th>Base del comercio</th></tr></thead>
           <tbody>
@@ -51,7 +51,7 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>Cada parte se especializa donde tiene <strong>ventaja comparativa</strong> y comercia por el resto. Así se produce más con los mismos recursos y ambas partes ganan.</p>
 
-        <h4>El mercado y sus tipos</h4>
+        <h4>El mecanismo de mercado: compradores, vendedores, el precio y los tipos de mercado</h4>
         <p>El <strong>mercado</strong> coordina a compradores y vendedores a través de los <strong>precios</strong>, que transmiten información e incentivos y responden qué, cómo y para quién producir. Según cuántos participantes haya y cuán diferenciado sea el producto, se distinguen cuatro tipos:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Tipo de mercado</th><th>N.º de empresas</th><th>Producto</th></tr></thead>
@@ -80,7 +80,7 @@ window.ESTUDIO_GUIA.economia = {
         <p><strong>Ley de la oferta:</strong> ceteris paribus, al subir el precio sube la cantidad ofrecida (relación <strong>directa</strong>; pendiente positiva). La <strong>desplazan</strong>: precios de los insumos, tecnología, expectativas y número de vendedores. Mejor tecnología o insumos más baratos → la oferta se corre a la derecha.</p>
         <p><strong>Representación lineal (sin cálculo):</strong> en el plano precio-cantidad, la demanda es una recta que baja y la oferta una recta que sube. Basta describir la <em>pendiente</em> y qué la mueve; el examen no pide resolver ecuaciones.</p>
 
-        <h4>Elasticidad</h4>
+        <h4>Elasticidad precio, cruzada e ingreso (y elasticidad de oferta)</h4>
         <p>La <strong>elasticidad</strong> mide la sensibilidad de una variable ante el cambio de otra.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Tipo de elasticidad</th><th>Qué mide</th><th>Cómo se lee</th></tr></thead>
@@ -101,7 +101,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>Cuando oferta y demanda se cruzan aparece el <strong>equilibrio</strong>. Desde ahí se mide el bienestar mediante los excedentes.</p>
 
-        <h4>Equilibrio de mercado</h4>
+        <h4>Equilibrio de mercado competitivo</h4>
         <div class="guia-def">El <strong>equilibrio</strong> es el punto donde la cantidad demandada iguala a la ofrecida. El precio de equilibrio "vacía" el mercado: no hay ni escasez ni excedente.</div>
         <p>Reglas de estática comparativa (muy preguntadas):</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -115,7 +115,7 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>Si se desplazan <strong>ambas curvas a la vez</strong>, se puede determinar con certeza la dirección de una variable (precio o cantidad), pero la otra queda <strong>ambigua</strong>: depende de qué desplazamiento sea mayor.</p>
 
-        <h4>Análisis de bienestar</h4>
+        <h4>Análisis de bienestar: excedente del consumidor y del productor</h4>
         <p><strong>Excedente del consumidor:</strong> diferencia entre lo que estaba dispuesto a pagar (disponibilidad a pagar) y lo que pagó (área bajo la demanda y sobre el precio); un precio más bajo lo aumenta. <strong>Excedente del productor:</strong> diferencia entre el precio recibido y el costo/disponibilidad a vender (área sobre la oferta y bajo el precio); un precio más alto lo aumenta. Un mercado competitivo es <strong>eficiente</strong>: maximiza el excedente total.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El mercado competitivo maximiza el excedente total." · "La demanda mide la disponibilidad a pagar; la oferta, el costo." · "Con dos desplazamientos, una variable siempre queda ambigua."</div>
@@ -126,7 +126,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>El gobierno interviene en los mercados con controles de precio, impuestos y comercio exterior, y también para corregir <strong>fallas de mercado</strong>.</p>
 
-        <h4>Políticas del gobierno</h4>
+        <h4>Oferta y demanda y políticas del gobierno</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Política</th><th>Efecto en el mercado</th></tr></thead>
           <tbody>
@@ -195,7 +195,7 @@ window.ESTUDIO_GUIA.economia = {
           <li><strong>Rendimientos a escala</strong> (largo plazo): qué pasa al aumentar <em>todos</em> los factores en igual proporción → crecientes, constantes o decrecientes.</li>
         </ul>
 
-        <h4>Los costos</h4>
+        <h4>El costo de producción</h4>
         <p>El <strong>costo contable</strong> solo cuenta desembolsos; el <strong>costo económico</strong> añade el costo de oportunidad (implícito). Los <strong>costos hundidos</strong> (irrecuperables) no deben influir en las decisiones.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Costo</th><th>Definición</th></tr></thead>
@@ -227,7 +227,7 @@ window.ESTUDIO_GUIA.economia = {
           </tbody>
         </table></div>
 
-        <h4>La empresa competitiva</h4>
+        <h4>Maximización de beneficios y oferta competitiva</h4>
         <p>Se maximiza el beneficio donde <strong>ingreso marginal = costo marginal</strong>. En competencia perfecta el ingreso marginal es igual al precio (<strong>P = CMg</strong>), y la curva de oferta de la empresa es su costo marginal (por sobre el mínimo del costo variable medio). La <strong>oferta de mercado</strong> es la suma horizontal de las ofertas individuales.</p>
         <p><strong>Punto de cierre</strong> (corto plazo): si el precio no cubre el costo variable medio, conviene dejar de producir. En el <strong>largo plazo</strong>, si el precio no cubre el costo total medio, la empresa sale de la industria.</p>
 

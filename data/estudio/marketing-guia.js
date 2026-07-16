@@ -31,7 +31,7 @@ window.ESTUDIO_GUIA.marketing = {
 
         <p>El marketing parte de una idea simple: <strong>entender al consumidor</strong> para satisfacer sus necesidades de forma rentable. Esta unidad cubre por qué compra la gente y cómo se adoptan los productos nuevos.</p>
 
-        <h4>¿Por qué estudiar la conducta del consumidor?</h4>
+        <h4>El propósito de entender la conducta del consumidor</h4>
         <p>La <strong>conducta del consumidor</strong> es cómo y por qué las personas deciden comprar y usar productos. Entenderla permite satisfacer mejor sus necesidades, diseñar campañas más efectivas y aumentar la lealtad.</p>
         <ul>
           <li><strong>Comportamiento</strong>: las acciones observables (qué compra y cómo usa).</li>
@@ -41,6 +41,8 @@ window.ESTUDIO_GUIA.marketing = {
 
         <h4>Necesidad, deseo y demanda</h4>
         <div class="guia-def">Necesidad = carencia básica. Deseo = la forma que toma esa necesidad según la cultura y la persona. Demanda = deseo respaldado por poder de compra. El marketing NO crea necesidades: detecta y orienta el deseo.</div>
+
+        <h4>Psicología del consumidor</h4>
         <p>Sobre esa base actúan los factores de la <strong>psicología del consumidor</strong>: <strong>necesidades</strong>, <strong>persuasión</strong> (cómo la empresa influye), <strong>emociones</strong> (sentimientos momentáneos que evoca el producto), <strong>sentimientos</strong> (estados más duraderos, como confianza y lealtad), <strong>adopción</strong> (empezar a usar algo nuevo) y <strong>acciones</strong> (comprar, recomendar o abandonar).</p>
 
         <h4>Adopción de innovaciones (Everett Rogers)</h4>
@@ -68,7 +70,7 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>Ninguna empresa satisface a todos por igual. La estrategia de marketing arranca con el modelo <strong>STP</strong>: <strong>S</strong>egmentar, seleccionar el mercado objetivo (<strong>T</strong>argeting) y <strong>P</strong>osicionar.</p>
 
-        <h4>Qué es segmentar y para qué</h4>
+        <h4>Propósito de la segmentación</h4>
         <p>La <strong>segmentación</strong> divide el mercado en grupos más pequeños y homogéneos con necesidades o comportamientos similares. Propósito: entender mejor al cliente, optimizar recursos, subir la satisfacción y ganar ventaja competitiva.</p>
         <div class="guia-def">STP = primero se DIVIDE el mercado, luego se ELIGE a quién servir, y por último se POSICIONA la oferta en su mente.</div>
 
@@ -87,7 +89,7 @@ window.ESTUDIO_GUIA.marketing = {
         <h4>Requisitos de un buen segmento (Kotler)</h4>
         <p>Un segmento sirve si es <strong>Medible</strong>, <strong>Sustancial</strong> (grande y rentable), <strong>Accesible</strong> (se le puede alcanzar), <strong>Diferenciable</strong> (responde distinto) y <strong>Accionable</strong> (se pueden diseñar estrategias para él).</p>
 
-        <h4>Proceso de segmentación y targeting</h4>
+        <h4>Proceso de segmentación</h4>
         <ol>
           <li>Identificar las bases de segmentación.</li>
           <li>Desarrollar perfiles de cada segmento.</li>
@@ -188,6 +190,7 @@ window.ESTUDIO_GUIA.marketing = {
     {
       unidad: "U5", titulo: "Marketing Mix: Producto, Precio y Plaza",
       html: `
+        <h4>Concepto de marketing mix</h4>
         <p>El <strong>marketing mix</strong> es la caja de herramientas TÁCTICA que ejecuta la estrategia. Son las <strong>4P</strong>: Producto, Precio, Plaza y Promoción (ampliadas a <strong>7P</strong> en servicios). Esta unidad cubre las tres primeras; la Promoción y las P de servicios van en la unidad siguiente.</p>
 
         <h4>Producto</h4>
@@ -220,7 +223,10 @@ window.ESTUDIO_GUIA.marketing = {
 
         <h4>Plaza (distribución)</h4>
         <p>Rutas del fabricante al consumidor. <strong>Directo</strong> (sin intermediarios) o <strong>indirecto</strong> (mayoristas, minoristas, agentes/brokers, que facilitan pero no toman posesión). El enfoque <strong>omnicanal</strong> integra físico, online y app en una experiencia coherente; el <strong>e-commerce</strong> vende por plataformas digitales. Estrategias de intensidad: <strong>intensiva</strong> (máximos puntos, ej. snacks), <strong>selectiva</strong> (limitada, ej. electrónica de gama) y <strong>exclusiva</strong> (uno o pocos, ej. lujo).</p>
-        <p>En el canal actúan dos disciplinas: el <strong>trade marketing</strong> (estrategias dirigidas a los intermediarios para impulsar compra y distribución) y el <strong>merchandising</strong> (técnicas en el punto de venta: exhibiciones, ubicación, promociones). La <strong>gestión de categorías</strong> es un proceso colaborativo fabricante-minorista que trata cada categoría como una unidad de negocio: define <strong>roles de categoría</strong> (generador de tráfico, de ingresos o de imagen) y sigue pasos (definir → asignar rol → analizar → estrategia → implementar surtido/precio/promoción/ubicación → revisar) para maximizar ventas y rentabilidad.</p>
+        <p>En el canal actúan dos disciplinas: el <strong>trade marketing</strong> (estrategias dirigidas a los intermediarios para impulsar compra y distribución) y el <strong>merchandising</strong> (técnicas en el punto de venta: exhibiciones, ubicación, promociones).</p>
+
+        <h4>Gestión de categorías</h4>
+        <p>La <strong>gestión de categorías</strong> es un proceso colaborativo fabricante-minorista que trata cada categoría como una unidad de negocio. <strong>Principios, componentes y beneficios:</strong> se maximiza el valor de toda la categoría (no de una sola marca), integrando surtido, precio, promoción y espacio para subir ventas y rentabilidad y mejorar la experiencia de compra. Define <strong>roles de categoría</strong> (generadora de tráfico, de ingresos, de imagen o de conveniencia) y sigue los <strong>pasos del proceso</strong>: definir la categoría → asignar su rol → evaluar (análisis) → fijar objetivos y <strong>estrategias</strong> → definir las <strong>ejecuciones tácticas</strong> (surtido, precio, promoción, ubicación) → implementar y revisar.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El precio es la única P que genera ingresos." · "Cada etapa del ciclo de vida exige distinta mezcla de marketing." · "Trade marketing mira al canal; merchandising, a la góndola."</div>
       `
