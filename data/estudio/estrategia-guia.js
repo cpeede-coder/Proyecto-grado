@@ -12,6 +12,8 @@ window.ESTUDIO_GUIA.estrategia = {
     {
       unidad: "U1", titulo: "Concepto de Estrategia",
       html: `
+        <div class="guia-def">⭐ <strong>Qué más se pregunta en Estrategia:</strong> los exámenes reales suelen entregar un caso de empresa y pedir aplicar <strong>las 5 Fuerzas de Porter</strong> y evaluar el atractivo de la industria; identificar y justificar la <strong>estrategia genérica</strong> (liderazgo en costos, diferenciación o enfoque) y detectar cuándo una empresa quedó <strong>"atrapada en el medio"</strong>; reconocer decisiones de <strong>estrategia corporativa</strong> (diversificación relacionada/no relacionada, integración vertical hacia adelante/atrás, alianzas, F&amp;A) y evaluar si crean valor; hacer <strong>análisis interno</strong> (fortalezas y debilidades, recursos y capacidades, VRIO); y usar la <strong>cadena de valor</strong> para hallar la ventaja competitiva. Casi siempre se trabaja sobre un caso concreto: no basta definir, hay que <strong>aplicar y justificar con evidencia del caso</strong>.</div>
+
         <p>Esta unidad responde tres preguntas: <strong>qué es la estrategia</strong>, <strong>por qué hoy es dinámica</strong> y <strong>en qué niveles opera</strong>.</p>
 
         <h4>¿Qué es la estrategia?</h4>

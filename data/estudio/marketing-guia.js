@@ -27,6 +27,8 @@ window.ESTUDIO_GUIA.marketing = {
     {
       unidad: "U1", titulo: "Conducta del Consumidor y Adopción de Innovaciones",
       html: `
+        <div class="guia-def">⭐ <strong>Qué más se pregunta en Marketing:</strong> los exámenes reales usan casos de empresas (Cleveland Clinic, Concha y Toro, Vita Coco, Toys R Us) y piden aplicar, no definir. Los temas que más caen: <strong>segmentación</strong> con sus cuatro variables (geográfica, demográfica, psicográfica y conductual, dos atributos c/u); <strong>propuesta de valor</strong> y atributos diferenciadores; <strong>desarrollo de nuevos productos</strong> (etapas + acciones); <strong>comunicaciones integradas de marketing</strong> (herramienta + objetivo + ejemplo); <strong>customer journey</strong> y puntos de contacto (precompra/compra/postcompra); <strong>fidelización</strong> (objetivo concreto + indicador + mensaje + canales dirigidos, nunca medios masivos para un público acotado); <strong>ciclo de vida</strong> y estrategias de precio (valor vs. competencia); y la <strong>marca</strong> como activo y su posicionamiento.</div>
+
         <p>El marketing parte de una idea simple: <strong>entender al consumidor</strong> para satisfacer sus necesidades de forma rentable. Esta unidad cubre por qué compra la gente y cómo se adoptan los productos nuevos.</p>
 
         <h4>¿Por qué estudiar la conducta del consumidor?</h4>

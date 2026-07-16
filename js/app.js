@@ -1342,6 +1342,7 @@ function registrarVisita() {
 let ESTUDIO_MATERIA = "estrategia";      // materia seleccionada (clave en window.ESTUDIO)
 let ESTUDIO_MODO = "flashcards";         // "guia" (leer la materia) | "flashcards" (repasar)
 let ESTUDIO_UNIDADES = new Set();        // unidades elegidas (vacío = todas)
+let ESTUDIO_SOLO_EXAMEN = false;         // true = solo tarjetas con salioEnExamen (temas ya preguntados)
 let estudioCola = [];                    // cola viva de la sesión (objetos tarjeta)
 let estudioActual = null;                // tarjeta en pantalla
 let estudioRepasoLibre = false;          // true cuando ya estaban todas dominadas
@@ -1367,7 +1368,17 @@ function estudioTarjetasSeleccionadas() {
   if (!data) return [];
   let cards = data.tarjetas || [];
   if (ESTUDIO_UNIDADES.size) cards = cards.filter(c => ESTUDIO_UNIDADES.has(c.unidad));
+  if (ESTUDIO_SOLO_EXAMEN) cards = cards.filter(c => c.salioEnExamen);
   return cards;
+}
+
+// Cuántas tarjetas de la materia actual (según unidades) han salido en exámenes reales
+function estudioContarExamen() {
+  const data = window.ESTUDIO && window.ESTUDIO[ESTUDIO_MATERIA];
+  if (!data) return 0;
+  let cards = data.tarjetas || [];
+  if (ESTUDIO_UNIDADES.size) cards = cards.filter(c => ESTUDIO_UNIDADES.has(c.unidad));
+  return cards.filter(c => c.salioEnExamen).length;
 }
 
 function estudioContarDominadas() {
@@ -1417,11 +1428,17 @@ function renderEstudioConfig() {
 
   // Resumen de progreso de la selección
   const { dom, total } = estudioContarDominadas();
+  const examen = estudioContarExamen();
   const resumen = $("#estudio-resumen-progreso");
   const pct = total ? Math.round((dom / total) * 100) : 0;
+  const notaExamen = examen ? ` · <strong>⭐ ${examen}</strong> vistas en exámenes reales` : "";
   resumen.innerHTML = total
-    ? `Tarjetas en esta selección: <strong>${total}</strong> · dominadas: <strong>${dom}</strong> (${pct}%).`
+    ? `Tarjetas en esta selección: <strong>${total}</strong> · dominadas: <strong>${dom}</strong> (${pct}%)${notaExamen}.`
     : "No hay tarjetas para esta selección todavía.";
+
+  // Sincroniza el filtro "solo vistas en examen"
+  const chkExamen = $("#estudio-solo-examen");
+  if (chkExamen) chkExamen.checked = ESTUDIO_SOLO_EXAMEN;
 
   // Adapta el panel según el modo: "guia" (leer) o "flashcards" (repasar)
   const modoGuia = ESTUDIO_MODO === "guia";
@@ -1431,6 +1448,7 @@ function renderEstudioConfig() {
     ? "Lee la guía ordenada de la materia: definiciones clave, tablas comparativas y frases de examen. Elige la materia y ábrela."
     : "Repaso con recuerdo activo: mira el concepto, intenta recordarlo y recién ahí revela la respuesta. La app te repite más seguido lo que fallas.";
   $("#campo-estudio-unidades").classList.toggle("hidden", modoGuia);
+  $("#campo-estudio-solo-examen").classList.toggle("hidden", modoGuia);
   $("#estudio-resumen-progreso").classList.toggle("hidden", modoGuia);
   $("#btn-estudio-reiniciar").classList.toggle("hidden", modoGuia);
   const btnPrim = $("#btn-estudio-empezar");
@@ -1476,6 +1494,7 @@ function mostrarTarjetaEstudio() {
   estudioActual = estudioCola[0];
   $("#estudio-fc-unidad").textContent = estudioActual.unidad || "";
   $("#estudio-fc-tema").textContent = estudioActual.tema || "";
+  $("#estudio-fc-examen").classList.toggle("hidden", !estudioActual.salioEnExamen);
   $("#estudio-fc-frente").textContent = estudioActual.frente || "";
   $("#estudio-fc-reverso").textContent = estudioActual.reverso || "";
   const tip = $("#estudio-fc-tip");
@@ -1631,6 +1650,11 @@ function iniciarEstudio() {
   $("#btn-estudio-reiniciar").addEventListener("click", () => {
     if (!confirm("¿Reiniciar tu progreso de estudio de esta materia? Se borran las tarjetas marcadas como dominadas (no afecta tu historial de exámenes).")) return;
     localStorage.removeItem(claveProgresoEstudio(ESTUDIO_MATERIA));
+    renderEstudioConfig();
+  });
+  const chkExamen = $("#estudio-solo-examen");
+  if (chkExamen) chkExamen.addEventListener("change", (e) => {
+    ESTUDIO_SOLO_EXAMEN = e.target.checked;
     renderEstudioConfig();
   });
 }

@@ -78,13 +78,13 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Innovar exige flexibilidad; competir en costos exige control."
     },
     {
-      id: "gdp-fc-007", unidad: "U1", tema: "Utilidad de la descripción de puestos",
+      id: "gdp-fc-007", unidad: "U1", tema: "Utilidad de la descripción de puestos", salioEnExamen: true,
       frente: "¿Para qué sirve describir los puestos (su utilidad)?",
       reverso: "Permite saber qué tareas hace un cargo y qué se requiere de quien lo desempeña. Ordena la estructura, sirve para valorizar los puestos, planificar la dotación y da la base para reclutar, seleccionar, evaluar y compensar.",
       tip: "Sin descripción de puestos, todos los demás subsistemas trabajan a ciegas."
     },
     {
-      id: "gdp-fc-008", unidad: "U1", tema: "Descripción vs. especificación",
+      id: "gdp-fc-008", unidad: "U1", tema: "Descripción vs. especificación", salioEnExamen: true,
       frente: "Diferencia entre descripción y especificación (perfil) del cargo.",
       reverso: "Descripción del cargo = QUÉ hace el puesto (tareas, responsabilidades, cómo y por qué). Especificación o perfil = QUÉ necesita la persona (estudios, experiencia, conocimientos, competencias).",
       tip: "Descripción = el puesto; especificación = la persona."
@@ -110,7 +110,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Reclutamiento llena el embudo; selección decide quién pasa."
     },
     {
-      id: "gdp-fc-012", unidad: "U2", tema: "Interno vs. externo",
+      id: "gdp-fc-012", unidad: "U2", tema: "Interno vs. externo", salioEnExamen: true,
       frente: "Compara el reclutamiento interno y el externo.",
       reverso: "Interno: cubrir con gente de la empresa (ascensos, movilidad). Menor costo, sube moral y lealtad, menos capacitación. Externo: atraer talento de fuera (portales, ferias, referidos). Ideas frescas, mayor diversidad, llena vacíos de habilidades.",
       tip: "Cultura fuerte / continuidad → interno. Necesidad de reinventarse → externo."
@@ -134,7 +134,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Ejemplos chilenos: LinkedIn (profesionales), GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos)."
     },
     {
-      id: "gdp-fc-016", unidad: "U2", tema: "Etapas de la selección",
+      id: "gdp-fc-016", unidad: "U2", tema: "Etapas de la selección", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del proceso de selección?",
       reverso: "1) Definir el perfil. 2) Atraer candidatos. 3) Evaluación (pruebas, entrevistas, assessment). 4) Selección final (decisión). 5) Integración (inducción y socialización).",
       tip: "El proceso no termina al firmar: la integración también es selección bien hecha."
@@ -146,7 +146,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "En cargos estratégicos el error cuesta caro: se justifica invertir más en el proceso."
     },
     {
-      id: "gdp-fc-018", unidad: "U2", tema: "Ajuste cultural",
+      id: "gdp-fc-018", unidad: "U2", tema: "Ajuste cultural", salioEnExamen: true,
       frente: "Además del calce técnico, ¿qué determina el éxito de una contratación?",
       reverso: "El ajuste cultural: que el candidato comparta los valores y encaje en la cultura. Un candidato brillante que no comparte los valores suele fracasar igual.",
       tip: "\"Se contrata por competencias y se retiene por valores.\""
@@ -184,13 +184,13 @@ window.ESTUDIO["gestion-personas"] = {
       tip: ""
     },
     {
-      id: "gdp-fc-024", unidad: "U3", tema: "Compensación total",
+      id: "gdp-fc-024", unidad: "U3", tema: "Compensación total", salioEnExamen: true,
       frente: "¿Cuáles son las tres capas de la compensación total (monetaria vs. no monetaria)?",
       reverso: "A) Monetaria DIRECTA (sueldo base, bonos, participación en utilidades). B) Monetaria INDIRECTA (beneficios: seguros, licencias, apoyo a la formación). C) NO monetaria o salario emocional (flexibilidad, reconocimiento, propósito).",
       tip: "TRAMPA del examen: la respuesta SIEMPRE debe incluir la monetaria directa, es la base del sistema."
     },
     {
-      id: "gdp-fc-025", unidad: "U3", tema: "Monetaria directa",
+      id: "gdp-fc-025", unidad: "U3", tema: "Monetaria directa", salioEnExamen: true,
       frente: "¿Qué incluye la compensación monetaria directa y por qué es la base?",
       reverso: "Sueldo base competitivo (justo vs. mercado y equitativo internamente), bonos por metas individuales/colectivas y participación en utilidades / stock options. Es la base porque sostiene todo el sistema: sin ella, los demás beneficios no retienen.",
       tip: "Justicia externa evita fuga; justicia interna evita percepción de trato injusto; bonos fomentan meritocracia."
@@ -202,19 +202,19 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Reduce el estrés financiero y muestra que la empresa se preocupa por la persona."
     },
     {
-      id: "gdp-fc-027", unidad: "U3", tema: "Salario emocional",
+      id: "gdp-fc-027", unidad: "U3", tema: "Salario emocional", salioEnExamen: true,
       frente: "¿Qué es la compensación no monetaria o \"salario emocional\"?",
       reverso: "Beneficios de bienestar y sentido: trabajo remoto/híbrido, flexibilidad horaria, espacios para innovar y aprender, bienestar emocional, reconocimiento y feedback frecuente, propósito organizacional claro.",
       tip: "La generación joven no trabaja solo por dinero, sino por sentido y balance vida-trabajo."
     },
     {
-      id: "gdp-fc-028", unidad: "U3", tema: "Alineamiento estratégico de la compensación",
+      id: "gdp-fc-028", unidad: "U3", tema: "Alineamiento estratégico de la compensación", salioEnExamen: true,
       frente: "¿Cómo se alinea el esquema de compensación con la estrategia?",
       reverso: "El mix de compensación debe incentivar los comportamientos que la estrategia necesita y retener al talento clave. Ej.: si la ventaja es innovación, pesan la participación en utilidades y la autonomía; si es costo/eficiencia, sueldos competitivos y bonos por productividad.",
       tip: "La política de compensación se diseña hacia atrás desde la estrategia: se paga por lo que se quiere que ocurra."
     },
     {
-      id: "gdp-fc-029", unidad: "U3", tema: "Retención y rotación no deseada",
+      id: "gdp-fc-029", unidad: "U3", tema: "Retención y rotación no deseada", salioEnExamen: true,
       frente: "Si el mantenimiento falla y hay rotación no deseada, ¿qué consecuencias tiene?",
       reverso: "Costos de reemplazo, contratación e inducción (pueden superar el 100% del sueldo anual del cargo); baja de productividad en la curva de aprendizaje; sobrecarga de los que quedan (efecto dominó); pérdida de conocimiento crítico; deterioro del clima y del employer branding; riesgo de perder clientes clave.",
       tip: "La rotación es la cara B de la retención: se ANALIZAN las consecuencias (el porqué), no solo se listan."
@@ -240,13 +240,13 @@ window.ESTUDIO["gestion-personas"] = {
       tip: ""
     },
     {
-      id: "gdp-fc-033", unidad: "U4", tema: "Ciclo de capacitación",
+      id: "gdp-fc-033", unidad: "U4", tema: "Ciclo de capacitación", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del ciclo de capacitación?",
       reverso: "DNC (Detección de Necesidades) → Diseño (objetivos y métodos) → Implementación (ejecutar: cursos, e-learning, talleres, on-the-job) → Evaluación (medir efectividad e impacto).",
       tip: "Es un ciclo: la evaluación realimenta la próxima DNC."
     },
     {
-      id: "gdp-fc-034", unidad: "U4", tema: "DNC",
+      id: "gdp-fc-034", unidad: "U4", tema: "DNC", salioEnExamen: true,
       frente: "¿Por qué la DNC es la etapa clave del ciclo de capacitación?",
       reverso: "La Detección de Necesidades identifica las brechas reales (con evaluaciones de desempeño, encuestas, indicadores). Si se detecta mal, se capacita en lo que no sirve: se gasta tiempo y dinero sin cerrar la brecha estratégica.",
       tip: "Capacitar sin DNC es dispararle a ciegas al presupuesto."
@@ -258,7 +258,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "El ROI traduce la capacitación a dinero: es el lenguaje que convence a la gerencia."
     },
     {
-      id: "gdp-fc-036", unidad: "U4", tema: "Kirkpatrick",
+      id: "gdp-fc-036", unidad: "U4", tema: "Kirkpatrick", salioEnExamen: true,
       frente: "¿Qué mide el modelo de Kirkpatrick (4 niveles)?",
       reverso: "La efectividad de una capacitación en 4 niveles: 1) Reacción (¿les gustó?), 2) Aprendizaje (¿aprendieron?), 3) Comportamiento (¿lo aplican en el trabajo?), 4) Resultados (¿impactó el negocio?). El ROI (Phillips) es un 5º nivel que traduce el 4 a dinero.",
       tip: "Sube de \"les gustó\" a \"cambió los resultados\": lo importante está arriba."
@@ -266,13 +266,13 @@ window.ESTUDIO["gestion-personas"] = {
 
     // ===================== U5 · GESTIÓN DEL DESEMPEÑO =====================
     {
-      id: "gdp-fc-037", unidad: "U5", tema: "Objetivo del desempeño",
+      id: "gdp-fc-037", unidad: "U5", tema: "Objetivo del desempeño", salioEnExamen: true,
       frente: "¿Para qué sirve la gestión del desempeño?",
       reverso: "Medir cómo lo está haciendo cada persona para tomar decisiones (desarrollo, promoción, compensación) y alinear su aporte con la estrategia. Evalúa el qué (metas/resultados) y el cómo (conductas y competencias).",
       tip: ""
     },
     {
-      id: "gdp-fc-038", unidad: "U5", tema: "Modelos de evaluación",
+      id: "gdp-fc-038", unidad: "U5", tema: "Modelos de evaluación", salioEnExamen: true,
       frente: "Compara los modelos MBO, 360° y por competencias.",
       reverso: "MBO (por objetivos): según el logro de metas medibles; claro y con foco en resultados, pero rígido. 360°: feedback de jefe, pares, subordinados y autoevaluación; visión integral pero complejo y con riesgo de sesgo. Por competencias: evalúa conductas clave; foco en desarrollo, pero subjetivo si no están bien definidas.",
       tip: "MBO mira resultados; 360° mira múltiples miradas; competencias mira conductas."
@@ -284,7 +284,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Se evalúa lo que se quiere que ocurra: la métrica moldea la conducta."
     },
     {
-      id: "gdp-fc-040", unidad: "U5", tema: "Desempeño efectivo y metas SMART",
+      id: "gdp-fc-040", unidad: "U5", tema: "Desempeño efectivo y metas SMART", salioEnExamen: true,
       frente: "¿Qué es el desempeño efectivo y qué son las metas SMART?",
       reverso: "Desempeño efectivo es el que logra los resultados (el qué) Y lo hace coherente con los valores y competencias (el cómo). Las metas deben ser SMART: eSpecíficas, Medibles, Alcanzables, Relevantes y Temporales. Ej.: \"aumentar las ventas 10% en 6 meses\".",
       tip: "Una meta sin plazo ni medida no es SMART, es un deseo."
@@ -334,31 +334,31 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Todo equipo pasa por la tormenta; el liderazgo decide si la supera o se estanca."
     },
     {
-      id: "gdp-fc-048", unidad: "U6", tema: "Cambio organizacional",
+      id: "gdp-fc-048", unidad: "U6", tema: "Cambio organizacional", salioEnExamen: true,
       frente: "¿Qué es el cambio organizacional y sus dos tipos?",
       reverso: "Proceso planificado que lleva a la organización de un estado actual (A) a uno deseado (B), ejecutado a través de las personas. Incremental: pequeñas mejoras continuas. Transformacional: cambios radicales que redefinen la dirección estratégica.",
       tip: "Es un proceso, no un evento; siempre hay resistencia."
     },
     {
-      id: "gdp-fc-049", unidad: "U6", tema: "Resistencia al cambio",
+      id: "gdp-fc-049", unidad: "U6", tema: "Resistencia al cambio", salioEnExamen: true,
       frente: "¿Cuáles son las causas de la resistencia al cambio?",
       reverso: "Miedo a lo desconocido (incertidumbre sobre los resultados), pérdida de control sobre el entorno de trabajo, hábitos (preferencia por las rutinas) y amenaza a la seguridad (temor por la estabilidad laboral).",
       tip: "La resistencia es normal: se gestiona, no se ignora."
     },
     {
-      id: "gdp-fc-050", unidad: "U6", tema: "Superar la resistencia",
+      id: "gdp-fc-050", unidad: "U6", tema: "Superar la resistencia", salioEnExamen: true,
       frente: "¿Qué estrategias ayudan a superar la resistencia al cambio?",
       reverso: "Comunicación clara (informar y educar), participación (involucrar a las personas), apoyo (emocional y de recursos) y negociación (acuerdos con quienes pierden algo con el cambio).",
       tip: "Se participa a la gente en el cambio; no se le impone."
     },
     {
-      id: "gdp-fc-051", unidad: "U6", tema: "Modelo de Lewin",
+      id: "gdp-fc-051", unidad: "U6", tema: "Modelo de Lewin", salioEnExamen: true,
       frente: "Explica el modelo de cambio de Kurt Lewin.",
       reverso: "Tres fases: Descongelar (preparar a la organización, romper el statu quo), Cambiar (implementar el nuevo estado) y Recongelar (estabilizar y consolidar el cambio para que no se retroceda).",
       tip: "Descongelar → Cambiar → Recongelar. Sin recongelar, la organización vuelve al hábito viejo."
     },
     {
-      id: "gdp-fc-052", unidad: "U6", tema: "8 pasos de Kotter",
+      id: "gdp-fc-052", unidad: "U6", tema: "8 pasos de Kotter", salioEnExamen: true,
       frente: "¿Cuáles son los 8 pasos del cambio de John Kotter?",
       reverso: "1) Crear urgencia. 2) Formar una coalición poderosa. 3) Desarrollar visión y estrategia. 4) Comunicar la visión. 5) Eliminar obstáculos. 6) Generar triunfos de corto plazo. 7) Consolidar logros y producir más cambio. 8) Anclar los nuevos enfoques en la cultura.",
       tip: "Empieza en la urgencia y termina anclando el cambio en la cultura."
@@ -376,7 +376,7 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Faltando una sola condición, el cambio de conducta no se sostiene."
     },
     {
-      id: "gdp-fc-055", unidad: "U6", tema: "Rol de los líderes en el cambio",
+      id: "gdp-fc-055", unidad: "U6", tema: "Rol de los líderes en el cambio", salioEnExamen: true,
       frente: "¿Cuál es el rol de los líderes en la gestión del cambio?",
       reverso: "Modelan las conductas deseadas (role modeling), dan sentido y comunican el porqué, sostienen la energía del proceso y remueven barreras. Sin líderes comprometidos, el cambio se apaga.",
       tip: "El líder no anuncia el cambio: lo encarna. Es el primer eslabón del modelo de McKinsey."
@@ -384,7 +384,7 @@ window.ESTUDIO["gestion-personas"] = {
 
     // ===================== U7 · CULTURA Y CLIMA =====================
     {
-      id: "gdp-fc-056", unidad: "U7", tema: "Cultura organizacional",
+      id: "gdp-fc-056", unidad: "U7", tema: "Cultura organizacional", salioEnExamen: true,
       frente: "¿Qué es la cultura organizacional y cuándo es efectiva?",
       reverso: "Conjunto de valores, creencias, normas y prácticas compartidas que influyen en el comportamiento de los miembros. Es efectiva cuando se alinea con la estrategia, es flexible/adaptable y genera compromiso.",
       tip: "\"La cultura se come a la estrategia en el desayuno\" (Drucker): sin cultura acorde, la estrategia no se ejecuta."
@@ -420,13 +420,13 @@ window.ESTUDIO["gestion-personas"] = {
       tip: "Se cambia la cultura modelando, comunicando, entrenando y recompensando: no basta declararla."
     },
     {
-      id: "gdp-fc-062", unidad: "U7", tema: "Cultura que falla: analizar y actuar",
+      id: "gdp-fc-062", unidad: "U7", tema: "Cultura que falla: analizar y actuar", salioEnExamen: true,
       frente: "Si una cultura está fallando, ¿cómo se analiza y qué acciones concretas se proponen?",
       reverso: "Se ANALIZAN los elementos que fallan (no solo se nombran) y se proponen acciones medibles. Ej.: liderazgo autoritario → programas de coaching + evaluación 360° ligada a bonos; ambiente tóxico → canales de denuncia confidenciales, comités de convivencia y encuestas de clima con planes de mejora; falta de propósito → involucrar a las personas en el rediseño de misión/visión.",
       tip: "Analizar, no nombrar; y traducir \"cambiar el liderazgo\" en acciones concretas y medibles."
     },
     {
-      id: "gdp-fc-063", unidad: "U7", tema: "Clima laboral",
+      id: "gdp-fc-063", unidad: "U7", tema: "Clima laboral", salioEnExamen: true,
       frente: "¿Qué es el clima laboral y cuáles son sus componentes?",
       reverso: "La percepción compartida de los empleados sobre el ambiente de trabajo (más \"temperatura del momento\" que cultura profunda). Componentes: físico (condiciones, seguridad), psicológico (relaciones, apoyo, equidad) y organizacional (políticas y procedimientos).",
       tip: "Se mide con encuestas de clima y se corrige con planes según resultados."
@@ -442,6 +442,50 @@ window.ESTUDIO["gestion-personas"] = {
       frente: "No confundir: ¿en qué se diferencian cultura y clima?",
       reverso: "Cultura: profunda, estable y compartida (valores y supuestos); cambiarla toma años. Clima: percepción del ambiente en un momento dado, más cambiante y medible con encuestas; mejorarlo es más rápido.",
       tip: "Cultura = el clima de fondo; clima = el pronóstico de hoy."
+    },
+
+    // ===================== CASOS DE EXAMEN (vistos en exámenes reales) =====================
+    {
+      id: "gdp-fc-066", unidad: "U2", tema: "Caso de examen: diseñar la selección alineada a la estrategia", salioEnExamen: true,
+      frente: "Una empresa financiera con una cultura de cercanía automatizó su selección: IA para filtrar CV, videos de presentación en vez de entrevistas y preselección por datos. Ganó eficiencia, pero subió la rotación temprana (renuncias antes de 3 meses) y hubo quejas de candidatos.\na) Señale 2 debilidades del proceso así diseñado.\nb) Proponga 2 ajustes que lo alineen con la estrategia y la cultura.",
+      reverso: "a) Debilidades: (1) se pierde el ajuste cultural y el trato humano —la experiencia de selección es la primera señal de la cultura y aleja talento—; (2) sin entrevista por competencias no se evalúa bien el potencial ni el calce con el modelo de personas, lo que explica la rotación temprana.\nb) Ajustes: reincorporar una entrevista por competencias (técnica STAR) en la etapa final; definir el perfil desde el modelo de personas y sumar una etapa de integración/inducción; usar la IA como apoyo de filtrado, no como decisión final.",
+      tip: "La pauta premia conectar cada debilidad con un ajuste concreto y con la estrategia/cultura, no solo listar las etapas."
+    },
+    {
+      id: "gdp-fc-067", unidad: "U6", tema: "Caso de examen: diagnosticar y gestionar la resistencia al cambio", salioEnExamen: true,
+      frente: "Una organización inicia una transformación (nuevo modelo operativo y cultural). El equipo afectado, que no participó en el diseño, muestra confusión, desmotivación y desconfianza.\na) Identifique 2 focos de resistencia y proponga 1 intervención por cada uno.\nb) Con un modelo de gestión del cambio, señale 3 pasos que usted habría seguido para implementarlo.",
+      reverso: "a) Focos: miedo a lo desconocido / a perder el puesto (intervención: comunicar el propósito y el rol futuro, capacitar en las nuevas competencias); falta de participación y de sentido (intervención: involucrar al equipo en el rediseño y dar apoyo).\nb) Con Kotter: crear urgencia, formar una coalición y comunicar la visión, generar triunfos de corto plazo y anclar el cambio en la cultura. Con Lewin: descongelar, cambiar y recongelar.",
+      tip: "La pauta premia nombrar el modelo (Lewin/Kotter) y aplicarlo AL CASO, con una intervención por cada foco de resistencia."
+    },
+    {
+      id: "gdp-fc-068", unidad: "U5", tema: "Caso de examen: diseñar la gestión del desempeño y la retroalimentación", salioEnExamen: true,
+      frente: "Una empresa no da incentivos por resultados y solo hace una evaluación anual para ajustar sueldos. Quiere alinear a su personal con una nueva prioridad estratégica (ej.: calidad de servicio a bajo costo).\nDesarrolle las 3 etapas principales de un modelo de gestión del desempeño que logre ese alineamiento.",
+      reverso: "Etapa 1 — Planificación: fijar metas SMART y competencias ligadas a la prioridad estratégica (ej.: satisfacción del cliente, orientación al servicio), definir el modelo (90°/180°/360°) y comunicarlas.\nEtapa 2 — Seguimiento: medir avances, dar retroalimentación continua, entregar apoyo y recursos.\nEtapa 3 — Evaluación y cierre: evaluar cumplimiento y competencias, retroalimentar resultados, reconocer logros y fijar planes de acción para las brechas.",
+      tip: "La pauta premia distinguir GESTIÓN (ciclo completo) de EVALUACIÓN (una etapa) y amarrar las metas a la estrategia."
+    },
+    {
+      id: "gdp-fc-069", unidad: "U3", tema: "Caso de examen: alinear la compensación a la estrategia y retener", salioEnExamen: true,
+      frente: "Un estudio revela que un tercio de los trabajadores jóvenes piensa renunciar: valoran la salud mental, el equilibrio vida-trabajo y el propósito.\na) Proponga un esquema de compensación total (con ejemplos de cada tipo) que responda a esas prioridades y explique cómo cada elemento ayuda a retener.\nb) Analice 3 consecuencias concretas de la rotación no deseada.",
+      reverso: "a) Esquema: monetaria DIRECTA (sueldo competitivo y equitativo, bono por desempeño) —base del sistema, evita la fuga—; monetaria INDIRECTA (seguro de salud mental, apoyo a la formación) —reduce el estrés y muestra cuidado—; NO monetaria / salario emocional (trabajo híbrido, flexibilidad, reconocimiento, propósito) —responde al balance vida-trabajo que buscan las nuevas generaciones—.\nb) Consecuencias: costos de reemplazo e inducción (hasta más del 100% del sueldo anual del cargo); pérdida de conocimiento crítico; sobrecarga y desmotivación de los que quedan (efecto dominó) y daño al clima y al employer branding.",
+      tip: "Trampa de la pauta: el esquema SIEMPRE debe incluir la compensación monetaria directa; y la rotación se ANALIZA (el porqué), no se lista."
+    },
+    {
+      id: "gdp-fc-070", unidad: "U7", tema: "Caso de examen: intervenir una cultura o clima que falla", salioEnExamen: true,
+      frente: "Las renuncias en una empresa se asocian al agotamiento, la falta de reconocimiento, la desconexión con la cultura y ambientes tóxicos.\nHaga un análisis crítico de qué elementos de la cultura podrían estar fallando frente a las expectativas de las nuevas generaciones y, para los 2 más relevantes, proponga 1 acción concreta de alineamiento por cada uno.",
+      reverso: "Elementos que fallan (analizar, no solo nombrar): (1) liderazgo distante y falta de reconocimiento → acción: formar a las jefaturas en liderazgo cercano y feedback, con reconocimiento ligado a la evaluación; (2) falta de propósito y de equilibrio vida-trabajo → acción: involucrar a las personas en el rediseño de misión/valores e implementar flexibilidad y bienestar. Ambiente tóxico → canales de denuncia confidenciales, comités de convivencia y encuestas de clima con planes de mejora.",
+      tip: "La pauta premia ANALIZAR el elemento que falla y traducirlo en una acción concreta y medible, no en un enunciado genérico."
+    },
+    {
+      id: "gdp-fc-071", unidad: "U2", tema: "Caso de examen: reclutamiento interno vs. externo y su impacto en cultura y clima", salioEnExamen: true,
+      frente: "Una empresa de servicios se adjudica un proyecto grande y debe cubrir varios cargos (jefe de proyecto, técnicos y administrativos). Puede promover a empleados actuales o buscar candidatos externos.\na) Mencione y explique una ventaja y una desventaja de cada tipo de reclutamiento.\nb) Analice cómo cada uno impactaría en la cultura y el clima organizacional.",
+      reverso: "a) Interno — ventaja: se conoce al candidato y su calce cultural, adaptación rápida y motiva el desarrollo de carrera; desventaja: no ingresan ideas nuevas y, si el proceso no es transparente, genera roces por favoritismo. Externo — ventaja: aporta talento, diversidad y competencias que no existen dentro; desventaja: más caro y lento, y puede desmotivar a quien esperaba ascender.\nb) Cultura: el interno tiende a mantenerla y refuerza la meritocracia; el externo puede renovarla, pero exige un buen onboarding para el fit cultural. Clima: el interno mejora la percepción de crecimiento (o genera roces si se percibe injusto); el externo puede tensionar al equipo si no se valora el talento interno.",
+      tip: "La pauta premia explicar (no solo mencionar) una ventaja y una desventaja de AMBOS tipos, y analizar el impacto en cultura Y clima de cada uno."
+    },
+    {
+      id: "gdp-fc-072", unidad: "U4", tema: "Caso de examen: capacitación estratégica, DNC y evaluación de la efectividad", salioEnExamen: true,
+      frente: "Una empresa entiende que capacitar a todo su personal (no solo al técnico) es clave para su estrategia de servicio.\na) Explique una forma de detectar las necesidades de capacitación (DNC).\nb) Explique 2 formas de evaluar la efectividad de la capacitación.\nc) Fundamente por qué la capacitación es estratégica.",
+      reverso: "a) DNC: cruzar los resultados de la evaluación de desempeño y de las encuestas de satisfacción/clima con el estándar esperado para detectar las brechas reales.\nb) Efectividad: medir la TRANSFERENCIA al puesto —comparar indicadores antes/después (ej.: satisfacción del cliente, reingresos, errores) y usar los niveles de Kirkpatrick (reacción, aprendizaje, comportamiento, resultados)—.\nc) Es estratégica porque cierra la brecha entre lo que las personas saben hoy y lo que la estrategia necesitará mañana, transmite cultura y valores, y atrae, retiene y motiva al talento.",
+      tip: "La pauta premia responder la efectividad como TRANSFERENCIA a la práctica (con datos del caso), no como si gustó la actividad."
     }
   ]
 };

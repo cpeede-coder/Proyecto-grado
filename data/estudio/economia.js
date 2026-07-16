@@ -175,13 +175,13 @@ window.ESTUDIO.economia = {
       tip: "Misma lógica que en demanda: el precio mueve a lo largo; lo demás desplaza."
     },
     {
-      id: "eco-fc-018", unidad: "U2", tema: "Elasticidad precio de la demanda",
+      id: "eco-fc-018", unidad: "U2", tema: "Elasticidad precio de la demanda", salioEnExamen: true,
       frente: "¿Qué mide la elasticidad precio de la demanda?",
       reverso: "La SENSIBILIDAD de la cantidad demandada ante cambios en el precio. Demanda ELÁSTICA: la cantidad reacciona mucho (bienes de lujo, con sustitutos). INELÁSTICA: reacciona poco (necesidades, sin sustitutos).",
       tip: "Si la demanda es inelástica, subir el precio AUMENTA el ingreso total; si es elástica, lo REDUCE."
     },
     {
-      id: "eco-fc-019", unidad: "U2", tema: "Elasticidad cruzada",
+      id: "eco-fc-019", unidad: "U2", tema: "Elasticidad cruzada", salioEnExamen: true,
       frente: "¿Qué mide la elasticidad cruzada y qué signo indica sustitutos o complementarios?",
       reverso: "Mide cómo cambia la demanda de un bien ante el cambio de precio de OTRO bien. Signo POSITIVO = bienes sustitutos (sube el precio del té, sube la demanda de café). Signo NEGATIVO = complementarios (sube el precio de la impresora, baja la demanda de tinta).",
       tip: "Positiva → sustitutos; negativa → complementarios."
@@ -199,7 +199,7 @@ window.ESTUDIO.economia = {
       tip: "Mientras más fácil sea reemplazar el bien, más elástica es su demanda."
     },
     {
-      id: "eco-fc-022", unidad: "U2", tema: "Elasticidad de la oferta",
+      id: "eco-fc-022", unidad: "U2", tema: "Elasticidad de la oferta", salioEnExamen: true,
       frente: "¿Qué mide la elasticidad de la oferta y de qué depende?",
       reverso: "La sensibilidad de la cantidad OFRECIDA ante cambios en el precio. Depende sobre todo del horizonte temporal y de la flexibilidad para ajustar la producción: la oferta es más elástica en el largo plazo, cuando todos los factores pueden variar.",
       tip: "En el corto plazo (con factores fijos) la oferta es más rígida (inelástica)."
@@ -207,37 +207,37 @@ window.ESTUDIO.economia = {
 
     // ===================== U3 · EQUILIBRIO DE MERCADO Y BIENESTAR =====================
     {
-      id: "eco-fc-023", unidad: "U3", tema: "Equilibrio de mercado",
+      id: "eco-fc-023", unidad: "U3", tema: "Equilibrio de mercado", salioEnExamen: true,
       frente: "¿Qué es el equilibrio de mercado?",
       reverso: "El punto donde la cantidad demandada iguala a la cantidad ofrecida (se cruzan oferta y demanda). Determina el precio y la cantidad de equilibrio. A ese precio no hay escasez ni excedente.",
       tip: "Precio de equilibrio = precio que \"vacía\" el mercado."
     },
     {
-      id: "eco-fc-024", unidad: "U3", tema: "Cambio en el equilibrio por la demanda",
+      id: "eco-fc-024", unidad: "U3", tema: "Cambio en el equilibrio por la demanda", salioEnExamen: true,
       frente: "¿Qué le pasa al equilibrio si AUMENTA la demanda (la oferta no cambia)?",
       reverso: "La curva de demanda se desplaza a la derecha: SUBEN tanto el precio como la cantidad de equilibrio. Si la demanda cae, ambos bajan.",
       tip: "Con oferta fija, precio y cantidad se mueven en la MISMA dirección que la demanda."
     },
     {
-      id: "eco-fc-025", unidad: "U3", tema: "Cambio en el equilibrio por la oferta",
+      id: "eco-fc-025", unidad: "U3", tema: "Cambio en el equilibrio por la oferta", salioEnExamen: true,
       frente: "¿Qué le pasa al equilibrio si AUMENTA la oferta (la demanda no cambia)?",
       reverso: "La curva de oferta se desplaza a la derecha: BAJA el precio y SUBE la cantidad de equilibrio. Si la oferta cae, el precio sube y la cantidad baja.",
       tip: "Con demanda fija, precio y cantidad se mueven en direcciones OPUESTAS al desplazarse la oferta."
     },
     {
-      id: "eco-fc-026", unidad: "U3", tema: "Cambios simultáneos de oferta y demanda",
+      id: "eco-fc-026", unidad: "U3", tema: "Cambios simultáneos de oferta y demanda", salioEnExamen: true,
       frente: "Si se desplazan a la vez la oferta y la demanda, ¿qué queda determinado y qué queda ambiguo?",
       reverso: "Cuando ambas curvas se mueven, se puede determinar con certeza la dirección de UNA variable (precio o cantidad) pero la otra queda AMBIGUA: depende de cuál desplazamiento sea mayor. Hay que analizar caso a caso la magnitud relativa de cada cambio.",
       tip: "Con dos desplazamientos a la vez, siempre uno de los dos resultados (precio o cantidad) es indeterminado sin saber magnitudes."
     },
     {
-      id: "eco-fc-027", unidad: "U3", tema: "Excedente del consumidor",
+      id: "eco-fc-027", unidad: "U3", tema: "Excedente del consumidor", salioEnExamen: true,
       frente: "¿Qué es el excedente del consumidor?",
       reverso: "La diferencia entre lo que los consumidores estaban DISPUESTOS a pagar (disponibilidad a pagar) y lo que efectivamente pagaron. Gráficamente, el área bajo la curva de demanda y sobre el precio de mercado. Un precio más bajo lo AUMENTA.",
       tip: "Mide el beneficio neto que el comprador obtiene del intercambio."
     },
     {
-      id: "eco-fc-028", unidad: "U3", tema: "Excedente del productor y eficiencia",
+      id: "eco-fc-028", unidad: "U3", tema: "Excedente del productor y eficiencia", salioEnExamen: true,
       frente: "¿Qué es el excedente del productor y cuándo un mercado es eficiente?",
       reverso: "Excedente del productor: diferencia entre el precio recibido y el costo de producir / disponibilidad a vender (área sobre la oferta y bajo el precio). Un precio más alto lo AUMENTA. Un mercado competitivo es EFICIENTE porque maximiza el excedente total (consumidor + productor).",
       tip: "En competencia, la \"mano invisible\" asigna los recursos maximizando el bienestar total."
@@ -245,25 +245,25 @@ window.ESTUDIO.economia = {
 
     // ============ U4 · POLÍTICAS DEL GOBIERNO Y FALLAS DE MERCADO ============
     {
-      id: "eco-fc-029", unidad: "U4", tema: "Precio máximo (techo)",
+      id: "eco-fc-029", unidad: "U4", tema: "Precio máximo (techo)", salioEnExamen: true,
       frente: "¿Qué efecto tiene un precio máximo fijado bajo el equilibrio?",
       reverso: "Genera ESCASEZ: a ese precio la cantidad demandada supera la ofrecida. Aparecen listas de espera, racionamiento o mercados informales. Ejemplo típico: controles de arriendo.",
       tip: "Precio máximo efectivo (bajo el equilibrio) → falta el producto."
     },
     {
-      id: "eco-fc-030", unidad: "U4", tema: "Precio mínimo y salario mínimo",
+      id: "eco-fc-030", unidad: "U4", tema: "Precio mínimo y salario mínimo", salioEnExamen: true,
       frente: "¿Qué efecto tiene un precio mínimo fijado sobre el equilibrio (ej. salario mínimo)?",
       reverso: "Genera EXCEDENTE (sobreoferta): la cantidad ofrecida supera la demandada. En el mercado laboral, un salario mínimo por encima del de equilibrio puede producir desempleo (más trabajadores dispuestos que puestos disponibles).",
       tip: "Precio mínimo efectivo (sobre el equilibrio) → sobra producto / desempleo."
     },
     {
-      id: "eco-fc-031", unidad: "U4", tema: "Impuestos, subsidios y carga muerta",
+      id: "eco-fc-031", unidad: "U4", tema: "Impuestos, subsidios y carga muerta", salioEnExamen: true,
       frente: "¿Cómo afectan los impuestos al mercado y qué es la pérdida de eficiencia?",
       reverso: "Un impuesto abre una brecha entre el precio que paga el comprador y el que recibe el vendedor, reduce la cantidad transada y genera una PÉRDIDA IRRECUPERABLE DE EFICIENCIA (carga muerta): transacciones beneficiosas que ya no ocurren. Un subsidio hace lo inverso (aumenta la cantidad).",
       tip: "La carga del impuesto recae más sobre el lado MÁS INELÁSTICO del mercado."
     },
     {
-      id: "eco-fc-032", unidad: "U4", tema: "Comercio exterior y aranceles",
+      id: "eco-fc-032", unidad: "U4", tema: "Comercio exterior y aranceles", salioEnExamen: true,
       frente: "¿Cómo afectan el comercio exterior y los aranceles al mercado doméstico?",
       reverso: "Abrir el mercado al comercio acerca el precio local al precio mundial: si el país importa, el precio baja (gana el consumidor); si exporta, sube (gana el productor). El comercio aumenta el excedente TOTAL. Un ARANCEL (impuesto a la importación) sube el precio interno, reduce las importaciones y crea pérdida de eficiencia.",
       tip: "El libre comercio agranda la torta total, aunque redistribuye entre consumidores y productores."
@@ -275,13 +275,13 @@ window.ESTUDIO.economia = {
       tip: "Las fallas de mercado son el principal argumento económico para que intervenga el Estado."
     },
     {
-      id: "eco-fc-034", unidad: "U4", tema: "Externalidades y su corrección",
+      id: "eco-fc-034", unidad: "U4", tema: "Externalidades y su corrección", salioEnExamen: true,
       frente: "¿Qué son las externalidades y cómo se corrigen?",
       reverso: "Efecto de una actividad sobre terceros sin compensación. NEGATIVA: impone costos externos (contaminación). POSITIVA: genera beneficios externos (educación). Se corrige con negociación privada (teorema de COASE), impuestos PIGOVIANOS o permisos transables (para las negativas) y subsidios (para las positivas), o con regulación directa.",
       tip: "Externalidad negativa → impuesto pigoviano; externalidad positiva → subsidio."
     },
     {
-      id: "eco-fc-035", unidad: "U4", tema: "Bienes públicos",
+      id: "eco-fc-035", unidad: "U4", tema: "Bienes públicos", salioEnExamen: true,
       frente: "¿Qué es un bien público y por qué lo provee el Estado?",
       reverso: "Un bien NO excluible (no se puede impedir su uso) y NO rival (que uno lo use no reduce lo disponible para otros): defensa nacional, faros, alumbrado. El mercado lo SUBPROVEE por el problema del \"free rider\" (polizón), así que suele proveerlo el Estado o subsidiarse.",
       tip: "No excluible + no rival = el mercado no lo provee bien; entra el Estado."
@@ -371,13 +371,13 @@ window.ESTUDIO.economia = {
 
     // ============ U7 · ESTRUCTURAS DE MERCADO Y PODER DE MERCADO ============
     {
-      id: "eco-fc-049", unidad: "U7", tema: "Competencia perfecta",
+      id: "eco-fc-049", unidad: "U7", tema: "Competencia perfecta", salioEnExamen: true,
       frente: "¿Qué caracteriza a un mercado de competencia perfecta?",
       reverso: "Muchos compradores y vendedores, producto HOMOGÉNEO, libre entrada y salida y transparencia de información. Las empresas son TOMADORAS de precios: ninguna puede influir en el precio de mercado.",
       tip: "En competencia perfecta la empresa acepta el precio; no lo fija."
     },
     {
-      id: "eco-fc-050", unidad: "U7", tema: "Maximización de beneficios y oferta competitiva",
+      id: "eco-fc-050", unidad: "U7", tema: "Maximización de beneficios y oferta competitiva", salioEnExamen: true,
       frente: "¿Dónde produce la empresa competitiva y cómo se forma la curva de oferta de mercado?",
       reverso: "Produce donde el INGRESO MARGINAL = COSTO MARGINAL (IMg = CMg). En competencia perfecta el ingreso marginal es igual al precio (P = CMg). La curva de oferta de la empresa es su CMg (sobre el mínimo del costo variable medio) y la de MERCADO es la suma horizontal de las curvas de oferta individuales.",
       tip: "Regla de oro: se maximiza el beneficio donde IMg = CMg."
@@ -389,31 +389,31 @@ window.ESTUDIO.economia = {
       tip: "Corto plazo: cierra si P < costo variable medio. Largo plazo: sale si P < costo total medio."
     },
     {
-      id: "eco-fc-052", unidad: "U7", tema: "Monopolio",
+      id: "eco-fc-052", unidad: "U7", tema: "Monopolio", salioEnExamen: true,
       frente: "¿Qué es un monopolio y por qué su ingreso marginal es menor que el precio?",
       reverso: "Un ÚNICO vendedor de un bien SIN sustitutos cercanos. Enfrenta toda la curva de demanda del mercado, así que para vender más debe BAJAR el precio a todas las unidades: por eso su ingreso marginal es MENOR que el precio (IMg < P). Es fijador de precios.",
       tip: "El monopolista produce donde IMg = CMg, pero cobra el precio de la demanda (más alto)."
     },
     {
-      id: "eco-fc-053", unidad: "U7", tema: "Fuentes de poder de monopolio",
+      id: "eco-fc-053", unidad: "U7", tema: "Fuentes de poder de monopolio", salioEnExamen: true,
       frente: "¿De dónde surge el poder de monopolio y qué es un monopolio natural?",
       reverso: "De barreras de entrada: control exclusivo de un recurso, patentes y concesiones, economías de escala y regulación. MONOPOLIO NATURAL: una sola empresa abastece el mercado a menor costo que varias (altos costos fijos, ej. distribución de agua o electricidad).",
       tip: "Barreras de entrada altas → protegen las rentas del monopolista."
     },
     {
-      id: "eco-fc-054", unidad: "U7", tema: "Costos sociales del monopolio",
+      id: "eco-fc-054", unidad: "U7", tema: "Costos sociales del monopolio", salioEnExamen: true,
       frente: "¿Cuál es el costo social del poder de monopolio?",
       reverso: "El monopolista produce MENOS y cobra MÁS que un mercado competitivo. Eso genera una PÉRDIDA IRRECUPERABLE DE EFICIENCIA (carga muerta): hay consumidores dispuestos a pagar por encima del costo que se quedan sin el bien. Además transfiere excedente del consumidor al monopolista.",
       tip: "Menos cantidad + precio más alto = pérdida de bienestar social respecto de la competencia."
     },
     {
-      id: "eco-fc-055", unidad: "U7", tema: "Discriminación de precios",
+      id: "eco-fc-055", unidad: "U7", tema: "Discriminación de precios", salioEnExamen: true,
       frente: "¿Qué es la discriminación de precios y sus tres grados?",
       reverso: "Cobrar precios distintos por el mismo bien para capturar excedente del consumidor. 1er GRADO: precio distinto por cada unidad (el máximo que cada cliente pagaría). 2° GRADO: el precio varía según la CANTIDAD o versión (descuentos por volumen, tarifas en dos partes). 3er GRADO: precios distintos por SEGMENTO (estudiantes, jubilados).",
       tip: "Requiere poder de mercado y poder separar a los clientes evitando la reventa."
     },
     {
-      id: "eco-fc-056", unidad: "U7", tema: "Competencia monopolística",
+      id: "eco-fc-056", unidad: "U7", tema: "Competencia monopolística", salioEnExamen: true,
       frente: "¿Qué caracteriza a la competencia monopolística?",
       reverso: "MUCHAS empresas que venden productos DIFERENCIADOS (similares pero no idénticos), con libre entrada y salida. Cada una tiene algo de poder de mercado por la diferenciación, pero en el largo plazo la entrada de competidores erosiona las ganancias económicas.",
       tip: "Ejemplos: restaurantes, ropa, librerías. Diferenciación + libre entrada."
@@ -537,13 +537,13 @@ window.ESTUDIO.economia = {
       tip: "El desempleo cíclico es el que las políticas de corto plazo buscan reducir; el friccional y estructural persisten."
     },
     {
-      id: "eco-fc-076", unidad: "U9", tema: "Ahorro, inversión y fondos prestables",
+      id: "eco-fc-076", unidad: "U9", tema: "Ahorro, inversión y fondos prestables", salioEnExamen: true,
       frente: "¿Cómo se relacionan el ahorro y la inversión en el sistema financiero?",
       reverso: "Las instituciones financieras conectan a quienes AHORRAN con quienes INVIERTEN. En una economía cerrada, el ahorro nacional iguala a la inversión (S = I). En el mercado de FONDOS PRESTABLES, la oferta viene del ahorro y la demanda de la inversión; la TASA DE INTERÉS es su precio de equilibrio.",
       tip: "Más ahorro → baja la tasa de interés → más inversión."
     },
     {
-      id: "eco-fc-077", unidad: "U9", tema: "Salario mínimo y sindicatos",
+      id: "eco-fc-077", unidad: "U9", tema: "Salario mínimo y sindicatos", salioEnExamen: true,
       frente: "¿Cómo afectan el salario mínimo y los sindicatos al mercado laboral?",
       reverso: "Ambos pueden fijar salarios por ENCIMA del de equilibrio. El SALARIO MÍNIMO garantiza un ingreso piso, pero si es muy alto reduce la demanda de trabajo y genera desempleo (sobre todo en jóvenes y baja calificación). Los SINDICATOS negocian colectivamente mejores salarios y condiciones, con un efecto similar sobre el empleo si los salarios superan el de equilibrio.",
       tip: "Salario sobre el de equilibrio → más oferta que demanda de trabajo → desempleo."
@@ -557,13 +557,13 @@ window.ESTUDIO.economia = {
       tip: "Medio de cambio, unidad de cuenta y depósito de valor: las tres funciones clásicas."
     },
     {
-      id: "eco-fc-079", unidad: "U10", tema: "Banco Central y política monetaria",
+      id: "eco-fc-079", unidad: "U10", tema: "Banco Central y política monetaria", salioEnExamen: true,
       frente: "¿Qué hace el Banco Central y con qué herramientas controla el dinero?",
       reverso: "El Banco Central de Chile (creado en 1925, autónomo desde 1989) busca la ESTABILIDAD de precios y el normal funcionamiento de los pagos; su meta de inflación es 3% anual (rango 2%-4%). Herramientas: OPERACIONES DE MERCADO ABIERTO (compra/venta de bonos), ENCAJE (reservas exigidas a los bancos) y la TASA de política / descuento.",
       tip: "Para controlar la inflación, el Banco Central sube la tasa de interés (política contractiva)."
     },
     {
-      id: "eco-fc-080", unidad: "U10", tema: "Creación de dinero y multiplicador",
+      id: "eco-fc-080", unidad: "U10", tema: "Creación de dinero y multiplicador", salioEnExamen: true,
       frente: "¿Cómo crean dinero los bancos y qué es el multiplicador del dinero?",
       reverso: "Los bancos comerciales reciben depósitos, guardan una parte como reserva y prestan el resto, que vuelve a depositarse: así EXPANDEN la cantidad de dinero. El MULTIPLICADOR del dinero es mayor mientras MENOR sea el coeficiente de reservas (aprox. 1 / coeficiente de reservas).",
       tip: "Más encaje (reservas) → menor multiplicador → menos dinero creado."
@@ -587,13 +587,13 @@ window.ESTUDIO.economia = {
       tip: "El impuesto inflacionario es la pérdida de poder de compra de quien mantiene efectivo."
     },
     {
-      id: "eco-fc-084", unidad: "U10", tema: "Demanda y oferta agregadas",
+      id: "eco-fc-084", unidad: "U10", tema: "Demanda y oferta agregadas", salioEnExamen: true,
       frente: "¿Qué son la demanda agregada (DA) y la oferta agregada (OA)?",
       reverso: "DA: gasto total en la economía a distintos niveles de precios (C + I + G + XN); pendiente NEGATIVA. OA de corto plazo: ASCENDENTE (los precios y salarios son rígidos). OA de largo plazo: VERTICAL en el PIB potencial (pleno empleo de los recursos).",
       tip: "En el largo plazo la producción la fijan los recursos y la tecnología, no el nivel de precios."
     },
     {
-      id: "eco-fc-085", unidad: "U10", tema: "Política monetaria y fiscal",
+      id: "eco-fc-085", unidad: "U10", tema: "Política monetaria y fiscal", salioEnExamen: true,
       frente: "¿Cómo actúan la política monetaria y la fiscal sobre la demanda agregada?",
       reverso: "MONETARIA EXPANSIVA: más dinero → baja la tasa de interés → sube consumo e inversión → DA a la derecha (contractiva: lo inverso, para frenar la inflación). FISCAL EXPANSIVA: más gasto público o menos impuestos → DA a la derecha, amplificada por el EFECTO MULTIPLICADOR.",
       tip: "Expansiva = estimular la actividad y el empleo; contractiva = enfriar la economía y la inflación."
@@ -613,7 +613,7 @@ window.ESTUDIO.economia = {
 
     // ============ U11 · ECONOMÍA ABIERTA Y MODELOS MACRO ============
     {
-      id: "eco-fc-088", unidad: "U11", tema: "Economía abierta: XN y FSNC",
+      id: "eco-fc-088", unidad: "U11", tema: "Economía abierta: XN y FSNC", salioEnExamen: true,
       frente: "En economía abierta, ¿qué son las exportaciones netas, el flujo de salida neta de capital y su identidad con el ahorro?",
       reverso: "EXPORTACIONES NETAS (XN = X - M) miden el saldo comercial. FLUJO DE SALIDA NETA DE CAPITAL (FSNC): compra de activos extranjeros por residentes menos compra de activos locales por extranjeros. Identidad: S = I + FSNC (el ahorro financia la inversión doméstica y la salida neta de capital), y en equilibrio XN = FSNC.",
       tip: "El ahorro nacional se reparte entre inversión interna y compra neta de activos externos (FSNC)."
@@ -631,13 +631,13 @@ window.ESTUDIO.economia = {
       tip: "Si un bien es más barato en un país, la demanda y el arbitraje ajustan el tipo de cambio hasta igualar precios."
     },
     {
-      id: "eco-fc-091", unidad: "U11", tema: "Mercado de divisas y equilibrio abierto",
+      id: "eco-fc-091", unidad: "U11", tema: "Mercado de divisas y equilibrio abierto", salioEnExamen: true,
       frente: "¿Cómo se determina el tipo de cambio y cuál es el equilibrio de la economía abierta?",
       reverso: "El TIPO DE CAMBIO se determina en el mercado de DIVISAS por la oferta y demanda de moneda extranjera. En equilibrio se ajustan a la vez tres mercados: bienes (Y = C + I + G + XN), fondos prestables (S = I + FSNC) y divisas (XN = FSNC). Una depreciación del peso abarata las exportaciones y sube XN.",
       tip: "Depreciación del peso → exportaciones más baratas afuera → suben las exportaciones netas."
     },
     {
-      id: "eco-fc-092", unidad: "U11", tema: "Modelo de Solow",
+      id: "eco-fc-092", unidad: "U11", tema: "Modelo de Solow", salioEnExamen: true,
       frente: "¿Qué explica el modelo de Solow y qué es el estado estacionario?",
       reverso: "Explica el crecimiento de largo plazo por la ACUMULACIÓN DE CAPITAL y el crecimiento de la población. Como el capital tiene rendimientos decrecientes, la economía llega a un ESTADO ESTACIONARIO: nivel de capital donde la inversión solo alcanza a reponer la depreciación (inversión neta cero) y el producto por trabajador deja de crecer.",
       tip: "Sin progreso tecnológico, más ahorro sube el nivel de ingreso, pero no el crecimiento permanente (rendimientos decrecientes)."
@@ -649,22 +649,72 @@ window.ESTUDIO.economia = {
       tip: "Capital acumulado tiene techo; la tecnología corre ese techo hacia arriba de forma permanente."
     },
     {
-      id: "eco-fc-094", unidad: "U11", tema: "Modelo IS-LM",
+      id: "eco-fc-094", unidad: "U11", tema: "Modelo IS-LM", salioEnExamen: true,
       frente: "¿Qué representan las curvas IS y LM y su equilibrio?",
       reverso: "El modelo IS-LM explica el corto plazo con precios rígidos. La curva IS (mercado de BIENES): combinaciones de producto y tasa de interés que equilibran ahorro e inversión; tiene pendiente NEGATIVA. La curva LM (mercado de DINERO): combinaciones que equilibran oferta y demanda de dinero; pendiente POSITIVA. Su intersección fija la producción y la tasa de interés de corto plazo.",
       tip: "IS = mercado de bienes (baja); LM = mercado de dinero (sube); se cruzan en el equilibrio de corto plazo."
     },
     {
-      id: "eco-fc-095", unidad: "U11", tema: "Estabilización con IS-LM",
+      id: "eco-fc-095", unidad: "U11", tema: "Estabilización con IS-LM", salioEnExamen: true,
       frente: "¿Cómo estabilizan la economía la política fiscal y la monetaria en el modelo IS-LM?",
       reverso: "La política FISCAL (más gasto o menos impuestos) desplaza la curva IS a la derecha (sube producto y tasa de interés). La política MONETARIA (más dinero) desplaza la curva LM a la derecha (sube producto y baja la tasa de interés). Combinando ambas se estabiliza la demanda; el IS-LM es la base teórica de la demanda agregada.",
       tip: "Fiscal mueve la IS; monetaria mueve la LM. El IS-LM sustenta la curva de demanda agregada."
     },
     {
-      id: "eco-fc-096", unidad: "U11", tema: "Modelo Mundell-Fleming",
+      id: "eco-fc-096", unidad: "U11", tema: "Modelo Mundell-Fleming", salioEnExamen: true,
       frente: "¿Qué agrega el modelo Mundell-Fleming y cómo cambia la eficacia de las políticas según el tipo de cambio?",
       reverso: "Es el IS-LM de una economía PEQUEÑA y ABIERTA con movilidad PERFECTA de capital. Con tipo de cambio FLEXIBLE, la política MONETARIA es eficaz (afecta el producto vía tipo de cambio) y la fiscal pierde eficacia. Con tipo de cambio FIJO, ocurre lo inverso: la política FISCAL es eficaz y la monetaria queda atada a defender la paridad.",
       tip: "Cambio flexible → manda la política monetaria; cambio fijo → manda la política fiscal."
+    },
+
+    // ============ CASOS DE EXAMEN (replican casos reales de exámenes de grado) ============
+    {
+      id: "eco-fc-097", unidad: "U4", tema: "Caso de examen: cierre de pabellones (Van Buren / FONASA)", salioEnExamen: true,
+      frente: "El Hospital Van Buren cerró 9 de sus 16 pabellones por falta de presupuesto. Suponga que el 100% de los pacientes son FONASA y se atienden GRATIS, y que ya existía lista de espera. Con el modelo de oferta y demanda: a) grafique la situación inicial; b) explique y grafique el efecto del cierre de pabellones.",
+      reverso: "a) Al ser gratis, el precio efectivo es CERO, muy por debajo del equilibrio: funciona como un PRECIO MÁXIMO. A P=0 la cantidad demandada (Qd) supera a la ofrecida (Qs); esa brecha horizontal es la LISTA DE ESPERA (racionamiento por cola). b) El cierre de pabellones reduce la capacidad de atención → la curva de OFERTA se desplaza a la IZQUIERDA. Como el precio sigue en 0, la cantidad atendida (Qs) CAE y la lista de espera (Qd − Qs) se AGRANDA. El precio no sube (está fijado en cero): todo el ajuste ocurre como más racionamiento y espera.",
+      tip: "Precio cero = techo bajo el equilibrio; el ajuste no es por precio sino por lista de espera. Menos oferta con precio fijo → cola más larga."
+    },
+    {
+      id: "eco-fc-098", unidad: "U4", tema: "Caso de examen: aranceles de Trump a Chile (comercio exterior)", salioEnExamen: true,
+      frente: "EE.UU. impone un arancel de 10% a los productos que antes entraban libres (incluido Chile). Explique y grafique los efectos de este arancel en el mercado estadounidense del bien importado.",
+      reverso: "En EE.UU. (importador) el arancel SUBE el precio interno desde el precio mundial (Pm) hasta Pm+arancel. Con el precio más alto: la producción interna AUMENTA, las importaciones DISMINUYEN y el consumo total CAE. El EXCEDENTE DEL CONSUMIDOR se reduce: una parte pasa a los productores locales (más excedente del productor), otra al Estado (recaudación = arancel × importaciones) y el resto son dos triángulos de PÉRDIDA IRRECUPERABLE DE EFICIENCIA (producción ineficiente + consumo que ya no ocurre). El arancel protege al productor local a costa del consumidor y del bienestar total.",
+      tip: "Arancel = el precio interno sube al precio mundial + arancel: menos importaciones, ganan productor y fisco, pierde el consumidor, aparece carga muerta."
+    },
+    {
+      id: "eco-fc-099", unidad: "U4", tema: "Caso de examen: alza del salario mínimo (trabajo no calificado)", salioEnExamen: true,
+      frente: "En Chile se aprobó subir el salario mínimo (de $510.636 a $529.000). Explique y grafique los efectos de esta alza en el mercado del trabajo NO calificado.",
+      reverso: "El salario mínimo es un PRECIO MÍNIMO. Si queda por ENCIMA del salario de equilibrio del trabajo no calificado, genera un EXCEDENTE de trabajo: la cantidad de trabajo ofrecida (personas dispuestas a trabajar a ese salario) supera la demandada por las empresas → DESEMPLEO. Gráfico: eje vertical salario (W), horizontal cantidad de trabajo (L); con W_min > W_eq se cumple Ls > Ld y la brecha horizontal es el desempleo. El efecto golpea más fuerte a los trabajadores jóvenes y de baja calificación (cuyo salario de equilibrio es más bajo). Beneficia a quienes conservan el empleo y perjudica a quienes quedan fuera.",
+      tip: "Salario mínimo sobre el de equilibrio → sobra oferta de trabajo = desempleo, sobre todo en los menos calificados."
+    },
+    {
+      id: "eco-fc-100", unidad: "U9", tema: "Caso de examen: retiros del 10% de las AFP (fondos prestables)", salioEnExamen: true,
+      frente: "Los retiros del 10% sacaron unos US$50.000 millones de los fondos de pensiones. Sitúese en el mercado de fondos prestables: analice y grafique los efectos sobre el ahorro nacional, la tasa de interés y la inversión (y su consecuencia de largo plazo).",
+      reverso: "Los retiros REDUCEN el ahorro nacional → la OFERTA de fondos prestables se desplaza a la IZQUIERDA. Con menos ahorro disponible, la TASA DE INTERÉS de equilibrio SUBE. La tasa más alta baja el valor presente neto de los proyectos y CONTRAE la inversión (efecto tipo crowding out / expulsión). Gráfico: la oferta de fondos (ahorro) se corre a la izquierda sobre una demanda (inversión) de pendiente negativa; el nuevo equilibrio tiene tasa más alta y menor cantidad de fondos e inversión. En el LARGO PLAZO (modelo de Solow), menos inversión → menor capital por trabajador → menor ingreso per cápita y menor crecimiento.",
+      tip: "Menos ahorro → oferta de fondos a la izquierda → sube la tasa y cae la inversión. A largo plazo, menos crecimiento (Solow)."
+    },
+    {
+      id: "eco-fc-101", unidad: "U11", tema: "Caso de examen: diferencial de tasas FED vs. Banco Central (Mundell-Fleming)", salioEnExamen: true,
+      frente: "La FED sube su tasa de interés y el Banco Central de Chile la mantiene. Con el modelo Mundell-Fleming y el mercado cambiario, explique el efecto sobre el tipo de cambio, el PIB y el empleo en Chile (economía pequeña y abierta, capital móvil, tipo de cambio flexible).",
+      reverso: "Al subir la tasa externa (r*) por encima de la local (r), se abre un DIFERENCIAL de tasas → SALIDA de capitales especulativos buscando mayor rendimiento afuera. En el mercado cambiario cae la oferta de dólares → el peso se DEPRECIA (sube el tipo de cambio). La depreciación abarata las exportaciones y encarece las importaciones → mejora la balanza comercial (XN) y la curva IS se desplaza a la DERECHA, subiendo el PIB y el empleo, hasta que la tasa local vuelve a igualar a r*. Con tipo de cambio FLEXIBLE el ajuste opera por el tipo de cambio; la política monetaria externa termina moviendo el producto local vía comercio.",
+      tip: "Sube la tasa afuera y no acá → fuga de capitales → peso se deprecia → suben exportaciones netas → IS a la derecha → más PIB. Cambio flexible: ajusta el tipo de cambio."
+    },
+    {
+      id: "eco-fc-102", unidad: "U7", tema: "Caso de examen: tripack de bebidas (discriminación de 2° grado)", salioEnExamen: true,
+      frente: "Un supermercado vende un 'Tripack' de bebidas (3 litros) a un precio por litro MENOR que la botella individual. Explique en qué consiste esta estrategia y cuál es su objetivo.",
+      reverso: "Es DISCRIMINACIÓN DE PRECIOS DE SEGUNDO GRADO: el precio varía según la CANTIDAD/versión y los consumidores se AUTOSELECCIONAN. El descuento por volumen (menor precio por litro en el pack) hace que los clientes con mayor disposición o capacidad de consumo elijan el pack y los demás compren la botella individual. El OBJETIVO es capturar una porción mayor del EXCEDENTE DEL CONSUMIDOR y aumentar los ingresos, aprovechando cierto poder de mercado. Requiere poder separar a los segmentos y evitar la reventa entre ellos.",
+      tip: "Descuento por volumen o versiones = discriminación de 2° grado: el cliente se autoselecciona y la empresa se apropia de más excedente del consumidor."
+    },
+    {
+      id: "eco-fc-103", unidad: "U10", tema: "Caso de examen: pandemia y estanflación (OA-DA)", salioEnExamen: true,
+      frente: "Durante la pandemia se combinaron shocks de costos (alza de insumos importados, como el petróleo) y de demanda (estímulos fiscales, IFE y retiros de las AFP). Con el modelo de oferta y demanda agregada, explique y grafique el efecto sobre la inflación y el crecimiento (estanflación).",
+      reverso: "El alza de costos de los insumos importados es un shock NEGATIVO de OFERTA AGREGADA → la OA se desplaza a la IZQUIERDA: SUBE el nivel de precios y CAE el PIB (menos crecimiento, más desempleo). A la vez, los estímulos fiscales y los retiros expanden la DEMANDA AGREGADA (DA a la derecha), lo que sostiene o eleva aún más los precios. Si domina la caída de la OA, se produce ESTANFLACIÓN: inflación con estancamiento o recesión (precios al alza y producto a la baja al mismo tiempo). Gráfico: OA a la izquierda (P sube, Y baja) y DA a la derecha (refuerza el alza de P).",
+      tip: "Shock de oferta (costos) mueve la OA a la izquierda: sube P y baja Y = estanflación. La DA expansiva agrava la inflación."
+    },
+    {
+      id: "eco-fc-104", unidad: "U11", tema: "Caso de examen: déficit fiscal y cuenta corriente (déficit gemelos)", salioEnExamen: true,
+      frente: "Chile registra un creciente déficit fiscal por mayor gasto público. Explique qué relación tiene con el déficit de cuenta corriente ('déficit gemelos') usando las identidades macroeconómicas.",
+      reverso: "Se parte de la identidad (S − I) = (X − M), o incluyendo al gobierno (Sp + Sg − I) = (X − M). Un mayor déficit fiscal significa MENOR ahorro público (Sg cae porque T < G), lo que reduce el AHORRO NACIONAL. Con la inversión dada, un menor ahorro hace más negativa la brecha (S − I) y, por identidad, AUMENTA el déficit de CUENTA CORRIENTE ((X − M) más negativo): son los DÉFICITS GEMELOS. En el mercado de fondos prestables el menor ahorro sube la tasa de interés (crowding out); con capital móvil, el exceso de gasto se financia con ahorro externo (más importaciones y deuda).",
+      tip: "Menos ahorro público = menos ahorro nacional → por (S−I)=(X−M), más déficit de cuenta corriente. El déficit fiscal y el externo van juntos: 'gemelos'."
     }
   ]
 };

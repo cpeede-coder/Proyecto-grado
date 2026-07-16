@@ -22,6 +22,8 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
     {
       unidad: "U1", titulo: "Planificación de la Dotación",
       html: `
+        <div class="guia-def">⭐ <strong>Qué más se pregunta en Gestión de Personas:</strong> los exámenes reales giran una y otra vez sobre el reclutamiento interno vs. externo y su impacto en cultura y clima; el diseño del proceso de selección alineado a la estrategia; la compensación total y la retención (rotación no deseada); la capacitación (DNC y evaluación de su efectividad); la gestión y evaluación del desempeño con retroalimentación; la gestión del cambio y la resistencia (Lewin y Kotter); y la cultura y el clima organizacional cuando fallan. Casi siempre en formato de caso: no basta con definir, hay que analizar y proponer acciones concretas conectadas con la estrategia.</div>
+
         <p>Antes de contratar a nadie, se decide <strong>cómo se organiza el trabajo</strong> y <strong>qué personas, con qué capacidades y en qué cantidad</strong> necesita la empresa para cumplir su estrategia.</p>
 
         <div class="guia-def">Idea transversal del examen: cada subsistema de RR.HH. existe para que las personas correctas, con las capacidades correctas y motivadas de la forma correcta, ejecuten la estrategia del negocio.</div>

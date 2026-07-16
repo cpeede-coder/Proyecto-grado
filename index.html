@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=33">
+  <link rel="stylesheet" href="css/styles.css?v=34">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.33</span>
+      <span class="version-app">v1.0.34</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -189,6 +189,14 @@
           <p class="ayuda">Elige <strong>una o varias</strong> unidades (toca para agregar o quitar), o deja <strong>Todas</strong>.</p>
         </div>
 
+        <div class="campo" id="campo-estudio-solo-examen">
+          <label class="filtro-examen">
+            <input type="checkbox" id="estudio-solo-examen">
+            ⭐ Solo temas vistos en exámenes reales
+          </label>
+          <p class="ayuda">Repasa únicamente los temas que <strong>ya han caído</strong> en exámenes de grado pasados (los de máxima prioridad).</p>
+        </div>
+
         <div id="estudio-resumen-progreso" class="estudio-progreso-mini"></div>
 
         <button id="btn-estudio-empezar" class="btn-primario">Empezar</button>
@@ -224,6 +232,7 @@
           <div class="flashcard-meta">
             <span id="estudio-fc-unidad" class="etiqueta-tema"></span>
             <span id="estudio-fc-tema" class="etiqueta-dif"></span>
+            <span id="estudio-fc-examen" class="etiqueta-salio hidden">⭐ Visto en examen real</span>
           </div>
 
           <div class="flashcard-cuerpo">
@@ -358,16 +367,16 @@
   <script src="data/materias/estrategia.js?v=4"></script>
   <script src="data/materias/gestion-personas.js?v=4"></script>
   <script src="data/materias/marketing.js?v=4"></script>
-  <script src="data/estudio/economia.js?v=2"></script>
-  <script src="data/estudio/economia-guia.js?v=2"></script>
-  <script src="data/estudio/administracion.js?v=2"></script>
-  <script src="data/estudio/administracion-guia.js?v=2"></script>
-  <script src="data/estudio/gestion-personas.js?v=2"></script>
-  <script src="data/estudio/gestion-personas-guia.js?v=2"></script>
-  <script src="data/estudio/estrategia.js?v=1"></script>
-  <script src="data/estudio/estrategia-guia.js?v=1"></script>
-  <script src="data/estudio/marketing.js?v=2"></script>
-  <script src="data/estudio/marketing-guia.js?v=2"></script>
-  <script src="js/app.js?v=33"></script>
+  <script src="data/estudio/economia.js?v=3"></script>
+  <script src="data/estudio/economia-guia.js?v=3"></script>
+  <script src="data/estudio/administracion.js?v=3"></script>
+  <script src="data/estudio/administracion-guia.js?v=3"></script>
+  <script src="data/estudio/gestion-personas.js?v=3"></script>
+  <script src="data/estudio/gestion-personas-guia.js?v=3"></script>
+  <script src="data/estudio/estrategia.js?v=2"></script>
+  <script src="data/estudio/estrategia-guia.js?v=2"></script>
+  <script src="data/estudio/marketing.js?v=3"></script>
+  <script src="data/estudio/marketing-guia.js?v=3"></script>
+  <script src="js/app.js?v=34"></script>
 </body>
 </html>

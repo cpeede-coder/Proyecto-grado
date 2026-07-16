@@ -108,25 +108,25 @@ window.ESTUDIO.marketing = {
 
     // ============ U2 · SEGMENTACIÓN Y MERCADO OBJETIVO ============
     {
-      id: "mkt-fc-011", unidad: "U2", tema: "Segmentación de mercado",
+      id: "mkt-fc-011", unidad: "U2", tema: "Segmentación de mercado", salioEnExamen: true,
       frente: "¿Qué es la segmentación de mercado y cuál es su propósito?",
       reverso: "Dividir un mercado en grupos más pequeños y homogéneos de consumidores con necesidades, características o comportamientos similares. Permite entender mejor al cliente, optimizar recursos, aumentar la satisfacción y ganar ventaja competitiva.",
       tip: "\"No se puede satisfacer a todos por igual\": segmentar es elegir a quién servir mejor."
     },
     {
-      id: "mkt-fc-012", unidad: "U2", tema: "Modelo STP",
+      id: "mkt-fc-012", unidad: "U2", tema: "Modelo STP", salioEnExamen: true,
       frente: "¿Qué significa el modelo STP?",
       reverso: "Segmentation, Targeting, Positioning: 1) Segmentar (dividir el mercado), 2) Seleccionar el mercado objetivo (targeting) y 3) Posicionar la oferta en la mente del cliente elegido. Es la secuencia central de la estrategia de marketing.",
       tip: "Primero se DIVIDE, luego se ELIGE, y por último se POSICIONA."
     },
     {
-      id: "mkt-fc-013", unidad: "U2", tema: "Bases de segmentación",
+      id: "mkt-fc-013", unidad: "U2", tema: "Bases de segmentación", salioEnExamen: true,
       frente: "¿Cuáles son las 4 bases clásicas de segmentación?",
       reverso: "Geográfica (ubicación, clima, región), Demográfica (edad, género, ingresos, educación), Psicográfica (estilo de vida, personalidad, valores) y Conductual (uso, beneficios buscados, lealtad).",
       tip: "Gancho: Geo-Demo-Psico-Conductual."
     },
     {
-      id: "mkt-fc-014", unidad: "U2", tema: "Psicográfica vs conductual",
+      id: "mkt-fc-014", unidad: "U2", tema: "Psicográfica vs conductual", salioEnExamen: true,
       frente: "Diferencia entre segmentación psicográfica y conductual.",
       reverso: "Psicográfica: agrupa por CÓMO ES la persona (estilo de vida, valores, personalidad, intereses). Conductual: agrupa por CÓMO ACTÚA frente al producto (frecuencia de uso, beneficios buscados, lealtad a la marca, ocasión de compra).",
       tip: "La conductual suele ser la más útil porque se liga directo a la decisión de compra."
@@ -208,7 +208,7 @@ window.ESTUDIO.marketing = {
 
     // ============ U4 · MARCA, POSICIONAMIENTO Y PROPUESTA DE VALOR ============
     {
-      id: "mkt-fc-027", unidad: "U4", tema: "Concepto de marca",
+      id: "mkt-fc-027", unidad: "U4", tema: "Concepto de marca", salioEnExamen: true,
       frente: "¿Qué es una marca?",
       reverso: "Es más que un nombre o un logo: es la percepción general y el conjunto de asociaciones que los consumidores tienen de una empresa, producto o servicio; crea una imagen distintiva en su mente.",
       tip: "\"La marca vive en la mente del consumidor, no en el producto.\""
@@ -220,7 +220,7 @@ window.ESTUDIO.marketing = {
       tip: "Identidad = lo que la marca emite; imagen = lo que el consumidor percibe."
     },
     {
-      id: "mkt-fc-029", unidad: "U4", tema: "Equidad de marca (brand equity)",
+      id: "mkt-fc-029", unidad: "U4", tema: "Equidad de marca (brand equity)", salioEnExamen: true,
       frente: "¿Qué es la equidad de marca y sus componentes (modelo de Aaker)?",
       reverso: "El valor adicional que una marca aporta a un producto. Aaker la compone de: reconocimiento de marca, asociaciones de marca, lealtad a la marca, calidad percibida y otros activos (patentes, marcas registradas).",
       tip: "Alta equidad = el cliente paga más y es más leal solo por la marca (ej. Coca-Cola)."
@@ -232,7 +232,7 @@ window.ESTUDIO.marketing = {
       tip: ""
     },
     {
-      id: "mkt-fc-031", unidad: "U4", tema: "Posicionamiento de marca",
+      id: "mkt-fc-031", unidad: "U4", tema: "Posicionamiento de marca", salioEnExamen: true,
       frente: "¿Qué es el posicionamiento de marca?",
       reverso: "El proceso de diseñar la oferta y la imagen de la empresa para ocupar un lugar distintivo y valorado en la mente del público objetivo, frente a los competidores. Define cómo quiere ser percibida.",
       tip: "Posicionar no es ser mejor en todo, sino ocupar un lugar CLARO y DIFERENTE."
@@ -256,7 +256,7 @@ window.ESTUDIO.marketing = {
       tip: "Las marcas fuertes combinan ambos: el beneficio emocional fideliza."
     },
     {
-      id: "mkt-fc-035", unidad: "U4", tema: "Propuesta de valor",
+      id: "mkt-fc-035", unidad: "U4", tema: "Propuesta de valor", salioEnExamen: true,
       frente: "¿Qué es la propuesta de valor y sus componentes?",
       reverso: "Declaración clara de los beneficios únicos que un producto ofrece y cómo resuelve el problema del cliente mejor que las alternativas. Componentes: beneficio principal, resolución del problema y diferenciación.",
       tip: "Es una PROMESA de valor: lo que la empresa se compromete a entregar y el cliente percibe como valioso."
@@ -282,7 +282,7 @@ window.ESTUDIO.marketing = {
       tip: "La marca influye en la percepción del producto (relación producto-marca). Kotler amplía a 5 niveles; se enseña el de 3."
     },
     {
-      id: "mkt-fc-039", unidad: "U5", tema: "Planificación y desarrollo de productos",
+      id: "mkt-fc-039", unidad: "U5", tema: "Planificación y desarrollo de productos", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del desarrollo de un nuevo producto?",
       reverso: "Generación de ideas → filtrado de ideas → desarrollo y prueba de concepto → estrategia de marketing → análisis de negocio (viabilidad) → desarrollo del producto → prueba de mercado → comercialización (lanzamiento), más la gestión del ciclo de vida posterior.",
       tip: "El filtrado temprano evita gastar en ideas inviables (\"matar rápido lo que no sirve\")."
@@ -294,13 +294,13 @@ window.ESTUDIO.marketing = {
       tip: "Las decisiones de características (diseño, calidad, estilo) también son parte de la P de Producto."
     },
     {
-      id: "mkt-fc-041", unidad: "U5", tema: "Ciclo de vida del producto",
+      id: "mkt-fc-041", unidad: "U5", tema: "Ciclo de vida del producto", salioEnExamen: true,
       frente: "¿Cuáles son las 4 etapas del ciclo de vida del producto (CVP)?",
       reverso: "Introducción (ventas bajas, alta inversión, crear conciencia), Crecimiento (ventas suben rápido, mejora la rentabilidad), Madurez (ventas se estabilizan, competencia intensa) y Declive (caen las ventas por obsolescencia o sustitutos).",
       tip: "Cada etapa exige distinta estrategia de las 4P."
     },
     {
-      id: "mkt-fc-042", unidad: "U5", tema: "Estrategias por etapa del CVP",
+      id: "mkt-fc-042", unidad: "U5", tema: "Estrategias por etapa del CVP", salioEnExamen: true,
       frente: "¿Qué estrategia conviene en cada etapa del ciclo de vida?",
       reverso: "Introducción: crear conciencia (penetración o descremado). Crecimiento: ampliar distribución y mejorar el producto. Madurez: diferenciar, fidelizar y segmentar. Declive: reducir costos, cosechar (harvesting), enfocar en nichos o eliminar el producto.",
       tip: "Es la \"estrategia de adopción del mercado\": adaptar el marketing a la etapa del CVP."
@@ -318,13 +318,13 @@ window.ESTUDIO.marketing = {
       tip: "A menor sensibilidad, más margen de maniobra para subir precios."
     },
     {
-      id: "mkt-fc-045", unidad: "U5", tema: "Métodos de fijación de precios",
+      id: "mkt-fc-045", unidad: "U5", tema: "Métodos de fijación de precios", salioEnExamen: true,
       frente: "¿Cuáles son los tres enfoques base para fijar precios?",
       reverso: "Basado en costos (costo más margen), basado en el valor (según la percepción de valor del cliente, ej. perfume premium) y basado en la competencia (alinear precios a los rivales).",
       tip: "La fijación por valor suele capturar más margen que la de costo más margen."
     },
     {
-      id: "mkt-fc-046", unidad: "U5", tema: "Penetración vs descremado",
+      id: "mkt-fc-046", unidad: "U5", tema: "Penetración vs descremado", salioEnExamen: true,
       frente: "Diferencia entre estrategia de penetración y de descremado.",
       reverso: "Penetración: precio inicial BAJO para ganar cuota de mercado rápido. Descremado (skimming): precio inicial ALTO para captar a quienes pagan más y luego bajarlo por etapas (ej. lanzamiento de smartphones).",
       tip: "Penetración = volumen; descremado = margen por segmentos sucesivos."
@@ -356,19 +356,19 @@ window.ESTUDIO.marketing = {
 
     // ============ U6 · PROMOCIÓN, PROCESO Y PERSONAS (7P) ============
     {
-      id: "mkt-fc-051", unidad: "U6", tema: "Promoción: concepto y rol",
+      id: "mkt-fc-051", unidad: "U6", tema: "Promoción: concepto y rol", salioEnExamen: true,
       frente: "¿Qué es la promoción y cuál es el rol de las comunicaciones en marketing?",
       reverso: "Conjunto de actividades de comunicación que informan, persuaden y recuerdan a los consumidores sobre los productos o servicios. Su rol: generar conciencia, crear interés, incitar a la compra y fomentar la lealtad.",
       tip: "Los tres verbos de la promoción: informar, persuadir y recordar."
     },
     {
-      id: "mkt-fc-052", unidad: "U6", tema: "Mezcla de comunicación",
+      id: "mkt-fc-052", unidad: "U6", tema: "Mezcla de comunicación", salioEnExamen: true,
       frente: "¿Cuáles son los elementos de la mezcla de comunicación (promoción)?",
       reverso: "Publicidad, medios digitales, promoción/incentivos de ventas (descuentos, cupones, concursos), venta personal, relaciones públicas, marketing directo, marketing cooperativo (promoción conjunta entre empresas) y marketing de afiliación (afiliados que cobran comisión por venta).",
       tip: "El apunte omite la VENTA PERSONAL: es un elemento clásico del promotion mix de Kotler."
     },
     {
-      id: "mkt-fc-053", unidad: "U6", tema: "Determinación de la mezcla promocional",
+      id: "mkt-fc-053", unidad: "U6", tema: "Determinación de la mezcla promocional", salioEnExamen: true,
       frente: "¿Cómo se determina la mezcla promocional?",
       reverso: "Se definen primero los OBJETIVOS de la promoción (aumentar ventas, mejorar imagen, lanzar un producto) y luego se seleccionan las herramientas y tácticas más efectivas para alcanzarlos, según el público, el presupuesto y la etapa del producto.",
       tip: "Primero el objetivo, después el mix: la herramienta se elige para cumplir la meta."
@@ -398,7 +398,7 @@ window.ESTUDIO.marketing = {
       tip: "Los estereotipos comunican rápido, pero pueden reforzar sesgos: úsense con criterio."
     },
     {
-      id: "mkt-fc-058", unidad: "U6", tema: "Público objetivo",
+      id: "mkt-fc-058", unidad: "U6", tema: "Público objetivo", salioEnExamen: true,
       frente: "¿Qué es el público objetivo en publicidad?",
       reverso: "El segmento específico de la población al que se dirige una campaña publicitaria (ej. jóvenes de 18 a 25 años para una bebida energética). Definirlo bien orienta el mensaje, el tono y la elección de medios.",
       tip: "Sin público objetivo claro, el mensaje se diluye y se malgasta el presupuesto."
@@ -430,49 +430,49 @@ window.ESTUDIO.marketing = {
 
     // ============ U7 · EXPERIENCIA, FIDELIZACIÓN Y MÉTRICAS ============
     {
-      id: "mkt-fc-063", unidad: "U7", tema: "Experiencia del cliente",
+      id: "mkt-fc-063", unidad: "U7", tema: "Experiencia del cliente", salioEnExamen: true,
       frente: "¿Qué es la gestión de la experiencia del cliente (CX)?",
       reverso: "Planificar y controlar cada interacción que el cliente tiene con la marca para asegurar una experiencia positiva y coherente en todos los puntos de contacto, desde el primer conocimiento hasta la postventa.",
       tip: ""
     },
     {
-      id: "mkt-fc-064", unidad: "U7", tema: "Viaje del cliente",
+      id: "mkt-fc-064", unidad: "U7", tema: "Viaje del cliente", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del viaje del cliente (customer journey)?",
       reverso: "1) Conocimiento (se entera de la marca), 2) Consideración (investiga y compara), 3) Compra (decide), 4) Servicio / postventa (usa el producto y recibe soporte) y 5) Fidelización (repite y recomienda).",
       tip: "El viaje NO termina en la compra: la postventa y la fidelización cierran el ciclo."
     },
     {
-      id: "mkt-fc-065", unidad: "U7", tema: "Mapeo del viaje del cliente",
+      id: "mkt-fc-065", unidad: "U7", tema: "Mapeo del viaje del cliente", salioEnExamen: true,
       frente: "¿Qué es el mapeo del viaje del cliente y para qué sirve?",
       reverso: "Crear un mapa visual de todas las interacciones y puntos de contacto entre cliente y empresa. Sirve para identificar oportunidades de mejora y puntos de dolor en cada etapa del viaje.",
       tip: ""
     },
     {
-      id: "mkt-fc-066", unidad: "U7", tema: "Retención, recuperación y fidelización",
+      id: "mkt-fc-066", unidad: "U7", tema: "Retención, recuperación y fidelización", salioEnExamen: true,
       frente: "Diferencia entre retención, recuperación y fidelización.",
       reverso: "Retención: mantener a los clientes actuales para que no se vayan. Recuperación: reconquistar a clientes insatisfechos o que se fueron. Fidelización: convertirlos en defensores leales que compran y recomiendan.",
       tip: "Retener cuesta mucho menos que captar un cliente nuevo."
     },
     {
-      id: "mkt-fc-067", unidad: "U7", tema: "Técnicas de retención",
+      id: "mkt-fc-067", unidad: "U7", tema: "Técnicas de retención", salioEnExamen: true,
       frente: "Nombra técnicas de retención de clientes.",
       reverso: "Programas de fidelidad (puntos, recompensas), comunicación personalizada (según el comportamiento de compra) y mejora continua del producto basada en el feedback del cliente.",
       tip: ""
     },
     {
-      id: "mkt-fc-068", unidad: "U7", tema: "Recuperación y fidelización",
+      id: "mkt-fc-068", unidad: "U7", tema: "Recuperación y fidelización", salioEnExamen: true,
       frente: "¿Qué técnicas se usan para recuperar y para fidelizar clientes?",
       reverso: "Recuperación: atención proactiva (contactar al insatisfecho), compensaciones (descuentos, reembolsos) y encuestas de satisfacción. Fidelización: recompensas por referidos, contenido exclusivo y eventos especiales para clientes leales.",
       tip: "Una buena recuperación puede dejar al cliente MÁS leal que antes de la falla (paradoja de la recuperación)."
     },
     {
-      id: "mkt-fc-069", unidad: "U7", tema: "Productividad de marketing y ROI",
+      id: "mkt-fc-069", unidad: "U7", tema: "Productividad de marketing y ROI", salioEnExamen: true,
       frente: "¿Qué es la medición de la productividad de marketing?",
       reverso: "Evaluar la eficacia y eficiencia de las actividades de marketing en relación con los recursos invertidos, es decir, si generan un retorno adecuado (ROI). Permite optimizar recursos, tomar decisiones informadas y mejorar de forma continua.",
       tip: "\"Lo que no se mide, no se puede mejorar.\" El marketing moderno se justifica con métricas."
     },
     {
-      id: "mkt-fc-070", unidad: "U7", tema: "Métricas de marketing",
+      id: "mkt-fc-070", unidad: "U7", tema: "Métricas de marketing", salioEnExamen: true,
       frente: "¿Qué miden el ROI, CPA, CLV y la tasa de conversión, y qué tipos de métricas existen?",
       reverso: "ROI: retorno sobre la inversión. CPA: costo de captar un cliente nuevo. CLV: valor total del cliente durante toda su relación. Conversión: % de leads que realizan la acción deseada. Tipos: de alcance/visibilidad, de compromiso, de generación de leads, de ventas/conversión, de satisfacción (NPS) y financieras.",
       tip: "Un negocio es sano cuando el CLV supera con holgura al CPA."
@@ -482,6 +482,50 @@ window.ESTUDIO.marketing = {
       frente: "Frases clave de marketing para el examen.",
       reverso: "\"El marketing detecta y satisface necesidades de forma rentable.\" · \"Primero segmentar, luego elegir, después posicionar (STP).\" · \"El precio es la única P que genera ingresos.\" · \"Retener un cliente cuesta menos que captar uno nuevo.\" · \"La marca vive en la mente del consumidor.\"",
       tip: ""
+    },
+
+    // ============ CASOS DE EXAMEN (formato real del Examen de Grado) ============
+    {
+      id: "mkt-fc-072", unidad: "U2", tema: "Caso de examen: segmentar el ingreso de una tienda al mercado chileno", salioEnExamen: true,
+      frente: "Una cadena internacional de retail de juguetes reingresa a Chile mediante una alianza local. Desarrolle las cuatro (4) variables de segmentación (geográfica, demográfica, psicográfica y conductual) describiendo dos (2) atributos concretos para cada una.",
+      reverso: "Geográfica: zonas urbanas de alto flujo (malls de Santiago y regiones); estacionalidad de la demanda (campaña de Navidad y Día del Niño).\nDemográfica: familias con hijos de 0 a 12 años; padres/madres de 28-45 años de ingreso medio y medio-alto.\nPsicográfica: familias que valoran el juego educativo y la experiencia en tienda; consumidores nostálgicos ligados a la marca.\nConductual: ocasión de compra (cumpleaños, Navidad, regalos); nivel de lealtad a la marca y beneficio buscado (entretención, aprendizaje).",
+      tip: "La pauta premia DOS atributos específicos y verosímiles por variable (sin repetir la misma idea) y coherentes con el caso."
+    },
+    {
+      id: "mkt-fc-073", unidad: "U4", tema: "Caso de examen: propuesta de valor de una línea innovadora", salioEnExamen: true,
+      frente: "Una viña lanza una línea de vinos sin alcohol y bajos en calorías, dirigida a consumidores que buscan moderar su ingesta. Indique la propuesta de valor de la línea y fundaméntela con dos (2) atributos diferenciadores frente al vino tradicional.",
+      reverso: "Propuesta de valor: disfrutar del sabor y el ritual del vino sin los efectos del alcohol, habilitando nuevas ocasiones de consumo cotidianas para un estilo de vida saludable.\nAtributos diferenciadores: (1) sin/bajo alcohol y menos calorías (beneficio de salud) manteniendo el sabor; (2) flexibilidad de ocasiones (almuerzo de oficina, cócteles, brindis sin alcohol) que amplía el momento de consumo respecto del vino tradicional.\nCierre: resuelve mejor que las alternativas el problema de querer disfrutar/brindar sin alcohol = promesa clara y diferenciada.",
+      tip: "La pauta exige propuesta de valor = beneficio + a quién + por qué es superior; los atributos deben ser DIFERENCIADORES, no características genéricas."
+    },
+    {
+      id: "mkt-fc-074", unidad: "U5", tema: "Caso de examen: etapas del desarrollo de un nuevo producto", salioEnExamen: true,
+      frente: "De un caso se infiere que la empresa llevó a cabo un proceso de desarrollo de nuevos productos. Identifique cuatro (4) etapas del proceso y, para cada una, describa dos (2) decisiones o acciones concretas que habría tomado para avanzar a la siguiente etapa.",
+      reverso: "Generación y filtrado de ideas: detectar la tendencia (ej. moderación del alcohol) y descartar ideas inviables.\nDesarrollo y prueba de concepto: definir la fórmula (mantener el sabor con bajo alcohol) y testearla con consumidores.\nAnálisis de negocio: estimar demanda, costos y rentabilidad; validar las nuevas ocasiones de consumo.\nPrueba de mercado y comercialización: lanzar en un mercado o variedad piloto, ajustar y luego escalar con distribución y comunicación.\n(Cada etapa con dos acciones concretas y encadenadas.)",
+      tip: "La pauta valora que las acciones sean CONCRETAS, propias de esa etapa y que expliquen el paso a la siguiente (no definiciones de manual)."
+    },
+    {
+      id: "mkt-fc-075", unidad: "U6", tema: "Caso de examen: comunicaciones integradas de marketing (IMC)", salioEnExamen: true,
+      frente: "Proponga tres (3) estrategias de Comunicaciones Integradas de Marketing para posicionar una nueva línea de producto. Para cada una indique la herramienta de comunicación, el objetivo que busca y un ejemplo concreto de aplicación.",
+      reverso: "1) Publicidad digital y redes sociales: objetivo, generar conocimiento del lanzamiento; ej. campaña en Instagram con creadores de contenido de vida saludable.\n2) Promoción de ventas y degustaciones: objetivo, inducir la prueba; ej. muestras y descuento de introducción en supermercados y eventos.\n3) Relaciones públicas y marketing de contenidos: objetivo, construir posicionamiento y credibilidad; ej. notas de prensa y recetas de cócteles sin alcohol.\nTodo con mensaje consistente (claridad, consistencia y relevancia) en cada canal.",
+      tip: "La pauta exige las TRES partes por estrategia: herramienta + objetivo + ejemplo; y coherencia con el público objetivo del caso."
+    },
+    {
+      id: "mkt-fc-076", unidad: "U7", tema: "Caso de examen: puntos de contacto del customer journey", salioEnExamen: true,
+      frente: "Para una compra presencial en una tienda de retail, identifique y describa dos (2) puntos de contacto del Customer Journey Map en cada una de las etapas: precompra, compra y postcompra.",
+      reverso: "Precompra: (1) publicidad, redes o web que dan a conocer la oferta; (2) búsqueda de información, reseñas y consulta de stock.\nCompra: (1) experiencia en tienda (layout, señalética, zonas interactivas); (2) atención del vendedor y proceso de pago ágil.\nPostcompra: (1) seguimiento y soporte (garantía, cambios); (2) encuesta de satisfacción y comunicación de fidelización (email o app).\nCada punto es una interacción concreta cliente-empresa que influye en la experiencia.",
+      tip: "La pauta premia puntos de contacto REALES por etapa (no confundir la etapa con el touchpoint) y que aporten a una experiencia positiva y coherente."
+    },
+    {
+      id: "mkt-fc-077", unidad: "U7", tema: "Caso de examen: plan de fidelización (objetivo, indicador, mensaje y canales)", salioEnExamen: true,
+      frente: "Para fidelizar a clientes que no compran hace más de seis meses, se le pide: (a) fijar un objetivo concreto, (b) construir un indicador para medirlo, (c) diseñar el mensaje de fidelización y (d) indicar al menos dos canales adecuados al perfil.",
+      reverso: "a) Objetivo: aumentar la tasa de retorno de esos clientes (ej. que el 20% vuelva a comprar en 3 meses). Una acción de marketing NO es un objetivo.\nb) Indicador: tasa de retorno o recompra, NPS o % de clientes reactivados.\nc) Mensaje: con call to action personalizado, ej. \"Te extrañamos: vuelve y disfruta un beneficio exclusivo pensado para ti\".\nd) Canales dirigidos: email, SMS o llamada/WhatsApp (NO medios masivos como la TV, por costo y por no apuntar al perfil solicitado).",
+      tip: "La pauta castiga confundir objetivo con acción y usar medios masivos cuando el público es acotado y conocido (se exige canal directo)."
+    },
+    {
+      id: "mkt-fc-078", unidad: "U5", tema: "Caso de examen: precio y ciclo de vida de un producto pionero", salioEnExamen: true,
+      frente: "Una empresa introduce en un país una categoría de bebida totalmente nueva, de la que el consumidor no tiene referencias de precio. Explique en qué etapa del ciclo de vida se encuentra y qué estrategia de precios conviene y por qué.",
+      reverso: "Etapa: introducción del ciclo de vida (ventas bajas, hay que crear conciencia y educar al consumidor; casi no hay competencia directa).\nPrecio: como no existe referencia de precio, se fija por VALOR percibido y no por competencia; el foco es construir la percepción de valor y cubrir la inversión en educación y distribución (puede usarse descremado por ser pionero).\nAl madurar la categoría (entran competidores y el consumidor compara), sube la presión de precios: conviene fortalecer marca y diferenciación en vez de competir por precio.",
+      tip: "La pauta valora ligar la etapa del CVP con la lógica de precio (valor vs competencia) y anticipar el cambio de estrategia al llegar la madurez."
     }
   ]
 };

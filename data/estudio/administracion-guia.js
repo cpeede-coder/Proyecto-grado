@@ -23,6 +23,8 @@ window.ESTUDIO_GUIA.administracion = {
     {
       unidad: "U1", titulo: "La Organización",
       html: `
+        <div class="guia-def">⭐ <strong>Qué más se pregunta en Administración:</strong> los casos reales de examen piden identificar <strong>áreas funcionales</strong> clave de una empresa; analizar su <strong>estructura y departamentalización</strong> (funcional, geográfica, centralizada vs. descentralizada, ventajas y desventajas); diagnosticar el <strong>proceso de gestión</strong> (objetivos y <strong>metas SMART</strong>, organización, dirección, control); proponer <strong>indicadores/KPI</strong> de control; y elaborar programas de <strong>liderazgo y motivación</strong> con respaldo teórico (Maslow, Herzberg, McClelland, equidad, fijación de metas). Casi siempre exigen <strong>nombrar Y justificar con las pistas del caso</strong> (solo nombrar da puntaje parcial).</div>
+
         <p>El hilo de todo el ramo: la <strong>organización existe para crear valor</strong> y satisfacer a sus stakeholders; para ello se divide en áreas funcionales (Unidad II) que se coordinan, y el proceso de gestión (Unidad III) hace que todo funcione.</p>
 
         <h4>Administración, eficiencia y eficacia</h4>

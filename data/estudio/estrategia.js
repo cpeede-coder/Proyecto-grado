@@ -96,7 +96,7 @@ window.ESTUDIO.estrategia = {
       tip: "Visión = hacia dónde crecer; Misión = hasta dónde crecer; Objetivos = cómo y a qué ritmo."
     },
     {
-      id: "est-fc-013", unidad: "U2", tema: "Diversificación",
+      id: "est-fc-013", unidad: "U2", tema: "Diversificación", salioEnExamen: true,
       frente: "¿Qué es la diversificación y sus dos tipos?",
       reverso: "Expansión hacia nuevos productos, mercados o industrias. Relacionada: comparte recursos/capacidades con el negocio original. No relacionada: sin vínculo directo (mayor riesgo).",
       tip: "La relacionada es preferible cuando genera sinergias reales y economías de escala/ámbito."
@@ -108,7 +108,7 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-014", unidad: "U2", tema: "Creación de valor",
+      id: "est-fc-014", unidad: "U2", tema: "Creación de valor", salioEnExamen: true,
       frente: "¿Cuándo el crecimiento y la diversificación crean valor? Fuentes y riesgos.",
       reverso: "Solo crean valor si generan: sinergias operacionales, economías de escala y de ámbito, transferencia de conocimiento/reputación y mayor poder de negociación. Riesgos: costos de coordinación, burocracia, problemas de agencia y deseconomías de escala.",
       tip: "\"El crecimiento solo es estratégico si crea valor.\" Más grande no es mejor; más coherente sí."
@@ -120,7 +120,7 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-016", unidad: "U2", tema: "Integración vertical",
+      id: "est-fc-016", unidad: "U2", tema: "Integración vertical", salioEnExamen: true,
       frente: "¿Qué es la integración vertical y sus dos direcciones?",
       reverso: "Internalizar actividades de distintas etapas del proceso productivo. Hacia atrás: control de insumos/proveedores. Hacia adelante: control de distribución/relación con el cliente.",
       tip: "Conviene integrar cuando hay activos específicos, alta incertidumbre y riesgo de oportunismo."
@@ -132,13 +132,13 @@ window.ESTUDIO.estrategia = {
       tip: "\"La integración solo es eficiente si reduce costos de transacción.\""
     },
     {
-      id: "est-fc-018", unidad: "U2", tema: "Internacionalización",
+      id: "est-fc-018", unidad: "U2", tema: "Internacionalización", salioEnExamen: true,
       frente: "¿Cuáles son los modos de entrada a mercados internacionales (de menor a mayor compromiso)?",
       reverso: "Exportaciones → alianzas estratégicas → joint ventures → fusiones y adquisiciones → inversión directa (instalación propia). A mayor compromiso, mayor control pero también mayor riesgo.",
       tip: "\"El modo de entrada determina el nivel de riesgo y control.\""
     },
     {
-      id: "est-fc-019", unidad: "U2", tema: "RBV — Enfoque basado en recursos",
+      id: "est-fc-019", unidad: "U2", tema: "RBV — Enfoque basado en recursos", salioEnExamen: true,
       frente: "¿Qué plantea el Enfoque Basado en Recursos (RBV)?",
       reverso: "La ventaja competitiva se origina PRINCIPALMENTE al interior de la empresa (recursos y capacidades), no solo en la estructura de la industria. Las empresas son heterogéneas: no todas tienen los mismos recursos aunque compitan en la misma industria.",
       tip: "\"La ventaja competitiva nace desde dentro de la organización.\""
@@ -150,13 +150,13 @@ window.ESTUDIO.estrategia = {
       tip: "Los recursos por sí solos NO garantizan ventaja competitiva."
     },
     {
-      id: "est-fc-021", unidad: "U2", tema: "Competencias esenciales",
+      id: "est-fc-021", unidad: "U2", tema: "Competencias esenciales", salioEnExamen: true,
       frente: "¿Qué son las competencias esenciales (core competencies)?",
       reverso: "Capacidades clave que: permiten acceder a diversos mercados, contribuyen significativamente a la propuesta de valor y son difíciles de imitar. Son base del crecimiento y la diversificación corporativa.",
       tip: ""
     },
     {
-      id: "est-fc-022", unidad: "U2", tema: "Modelo VRIO",
+      id: "est-fc-022", unidad: "U2", tema: "Modelo VRIO", salioEnExamen: true,
       frente: "¿Qué evalúa el modelo VRIO y qué significa cada letra?",
       reverso: "Si un recurso/capacidad es estratégico. V: Valioso (¿aprovecha oportunidades o neutraliza amenazas?). R: Raro (¿escaso?). I: Inimitable (¿difícil o costoso de imitar?). O: Organización (¿la empresa está organizada para explotarlo?).",
       tip: "Solo los recursos que cumplen los CUATRO criterios generan ventaja competitiva sostenible."
@@ -192,7 +192,7 @@ window.ESTUDIO.estrategia = {
       tip: "No son sustitutos, sino alternativas según el contexto."
     },
     {
-      id: "est-fc-028", unidad: "U2", tema: "Alianzas y joint ventures",
+      id: "est-fc-028", unidad: "U2", tema: "Alianzas y joint ventures", salioEnExamen: true,
       frente: "¿Qué es una alianza estratégica y qué es un joint venture?",
       reverso: "Alianza: acuerdo de cooperación donde las empresas comparten recursos manteniendo su independencia legal. Joint venture: tipo de alianza donde se CREA una nueva empresa, mientras las matrices siguen existiendo por separado.",
       tip: "\"Las alianzas permiten aprender con menor compromiso de recursos.\""
@@ -230,25 +230,25 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-034", unidad: "U3", tema: "5 Fuerzas de Porter",
+      id: "est-fc-034", unidad: "U3", tema: "5 Fuerzas de Porter", salioEnExamen: true,
       frente: "Nombra las 5 Fuerzas Competitivas de Porter.",
       reverso: "1) Rivalidad entre competidores. 2) Amenaza de nuevos entrantes. 3) Poder de negociación de proveedores. 4) Poder de negociación de clientes. 5) Amenaza de productos sustitutos.",
       tip: "Sirven para evaluar el ATRACTIVO (rentabilidad potencial) de una industria."
     },
     {
-      id: "est-fc-035", unidad: "U3", tema: "Rivalidad",
+      id: "est-fc-035", unidad: "U3", tema: "Rivalidad", salioEnExamen: true,
       frente: "¿Qué factores INTENSIFICAN la rivalidad entre competidores?",
       reverso: "Muchos competidores, bajo crecimiento del mercado, productos poco diferenciados, altos costos fijos y altas barreras de salida.",
       tip: "Alta rivalidad reduce la rentabilidad de la industria."
     },
     {
-      id: "est-fc-036", unidad: "U3", tema: "Barreras de entrada",
+      id: "est-fc-036", unidad: "U3", tema: "Barreras de entrada", salioEnExamen: true,
       frente: "¿Qué barreras reducen la amenaza de nuevos entrantes?",
       reverso: "Economías de escala, diferenciación de productos, requerimientos de capital, acceso a canales de distribución y regulaciones gubernamentales.",
       tip: "\"Las barreras de entrada protegen la rentabilidad.\""
     },
     {
-      id: "est-fc-037", unidad: "U3", tema: "Poder de proveedores/clientes",
+      id: "est-fc-037", unidad: "U3", tema: "Poder de proveedores/clientes", salioEnExamen: true,
       frente: "¿Cuándo aumenta el poder de negociación de los clientes?",
       reverso: "Cuando compran grandes volúmenes, existen muchos sustitutos, los productos están poco diferenciados y los costos de cambio son bajos. Alto poder de clientes presiona los márgenes.",
       tip: "El poder de proveedores sube si son pocos, sin sustitutos, o pueden integrarse hacia adelante."
@@ -266,25 +266,25 @@ window.ESTUDIO.estrategia = {
       tip: "Corrige el apunte: el concepto es \"coopetición\", no solo \"competencia\"."
     },
     {
-      id: "est-fc-040", unidad: "U3", tema: "Posicionamiento estratégico",
+      id: "est-fc-040", unidad: "U3", tema: "Posicionamiento estratégico", salioEnExamen: true,
       frente: "¿Qué es el posicionamiento estratégico?",
       reverso: "Cómo la empresa decide competir en una industria y qué lugar ocupa en la mente del cliente frente a rivales. Se basa en elecciones conscientes, implica renuncias, debe ser difícil de imitar y consistente en el tiempo.",
       tip: "No se trata de ser mejor en TODO, sino de ser DISTINTO."
     },
     {
-      id: "est-fc-041", unidad: "U3", tema: "Ventaja competitiva",
+      id: "est-fc-041", unidad: "U3", tema: "Ventaja competitiva", salioEnExamen: true,
       frente: "¿Cuándo existe ventaja competitiva y de qué dos formas se logra?",
       reverso: "Cuando la empresa genera más valor económico que sus competidores: ofreciendo MENORES COSTOS o entregando MAYOR VALOR PERCIBIDO al cliente. Se valida en el mercado.",
       tip: ""
     },
     {
-      id: "est-fc-042", unidad: "U3", tema: "Estrategias genéricas",
+      id: "est-fc-042", unidad: "U3", tema: "Estrategias genéricas", salioEnExamen: true,
       frente: "¿Cuáles son las tres estrategias genéricas de Porter?",
       reverso: "1) Liderazgo en costos (producir más barato: eficiencia, escala, control de gastos). 2) Diferenciación (atributos únicos valorados: marca, calidad, diseño, innovación, servicio). 3) Enfoque/segmentación (atender mejor un segmento específico).",
       tip: ""
     },
     {
-      id: "est-fc-043", unidad: "U3", tema: "Atrapado en el medio",
+      id: "est-fc-043", unidad: "U3", tema: "Atrapado en el medio", salioEnExamen: true,
       frente: "¿Qué significa quedar \"atrapado en el medio\" (stuck in the middle)?",
       reverso: "Cuando la empresa no logra ser líder en costos NI diferenciarse claramente. Consecuencia: bajo desempeño y pérdida de identidad estratégica.",
       tip: ""
@@ -316,13 +316,13 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-048", unidad: "U4", tema: "Cadena de valor",
+      id: "est-fc-048", unidad: "U4", tema: "Cadena de valor", salioEnExamen: true,
       frente: "¿Qué es la Cadena de Valor de Porter y para qué sirve?",
       reverso: "Herramienta de análisis INTERNO que descompone la empresa en actividades que crean valor, para identificar fuentes de ventaja competitiva, actividades que generan más valor y costos innecesarios.",
       tip: "La empresa no crea valor como un todo, sino a través de actividades interrelacionadas."
     },
     {
-      id: "est-fc-049", unidad: "U4", tema: "Actividades primarias",
+      id: "est-fc-049", unidad: "U4", tema: "Actividades primarias", salioEnExamen: true,
       frente: "¿Cuáles son las 5 actividades PRIMARIAS de la cadena de valor?",
       reverso: "Logística interna, Operaciones, Logística externa, Marketing y ventas, y Servicio (postventa). Son las directamente relacionadas con crear, vender y entregar el producto.",
       tip: ""
@@ -340,7 +340,7 @@ window.ESTUDIO.estrategia = {
       tip: "\"Imitar no es copiar una actividad, sino todo el sistema.\""
     },
     {
-      id: "est-fc-052", unidad: "U4", tema: "Ventaja sostenible — fuentes",
+      id: "est-fc-052", unidad: "U4", tema: "Ventaja sostenible — fuentes", salioEnExamen: true,
       frente: "¿Cuáles son las principales fuentes de sustentabilidad de la ventaja competitiva?",
       reverso: "Sistema de actividades coherente, trade-offs (renuncias) claros, recursos y capacidades difíciles de imitar, barreras a la imitación (escala, costos hundidos, ambigüedad causal) e innovación/adaptación continua.",
       tip: "\"Sin trade-offs no hay estrategia (ni sustentabilidad).\""
@@ -352,7 +352,7 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-054", unidad: "U4", tema: "Ventaja temporal vs sostenible",
+      id: "est-fc-054", unidad: "U4", tema: "Ventaja temporal vs sostenible", salioEnExamen: true,
       frente: "Diferencia entre ventaja competitiva temporal y sostenible.",
       reverso: "Temporal: surge rápido pero puede ser imitada. Sostenible: se mantiene gracias a barreras estratégicas. En entornos dinámicos, la sostenibilidad depende de la capacidad de adaptación.",
       tip: "\"La ventaja sostenible no se copia, se construye.\""
@@ -366,7 +366,7 @@ window.ESTUDIO.estrategia = {
       tip: ""
     },
     {
-      id: "est-fc-056", unidad: "U5", tema: "Océanos azules",
+      id: "est-fc-056", unidad: "U5", tema: "Océanos azules", salioEnExamen: true,
       frente: "¿Qué busca la Estrategia de Océanos Azules?",
       reverso: "Crear espacios de mercado NO disputados (nueva demanda) en vez de competir en mercados saturados. Innova en valor: se diferencia y reduce costos SIMULTÁNEAMENTE.",
       tip: "\"Competir ya no basta: hay que reinventar el mercado.\""
@@ -406,6 +406,50 @@ window.ESTUDIO.estrategia = {
       frente: "¿Qué implica el enfoque en stakeholders?",
       reverso: "Considerar a clientes, trabajadores, proveedores, comunidad, Estado y medio ambiente. El éxito estratégico se mide por la legitimidad social, no solo por utilidades.",
       tip: ""
+    },
+
+    // ===================== CASOS DE EXAMEN (estilo real) =====================
+    {
+      id: "est-fc-063", unidad: "U3", tema: "Caso de examen: 5 Fuerzas y atractivo de la industria", salioEnExamen: true,
+      frente: "Una empresa dominó por décadas la categoría de bloques de construcción para armar. Cuando expiraron sus patentes, aparecieron fabricantes de bloques compatibles a precios mucho más bajos; en paralelo, los niños empezaron a preferir videojuegos y entretenimiento digital. La empresa subestimó ambos frentes y casi quebró.\n\nIdentifique las DOS (2) Fuerzas de Porter más determinantes en esta crisis y, con ellas, evalúe qué pasó con el atractivo (rentabilidad potencial) de la industria. Justifique con datos del caso.",
+      reverso: "Fuerzas clave: 1) Amenaza de NUEVOS ENTRANTES: al expirar las patentes cae una barrera de entrada, entran imitadores de bajo costo y erosionan precios y participación. 2) Amenaza de SUSTITUTOS: los videojuegos y el entretenimiento digital compiten por el tiempo y el dinero del consumidor (mismo trabajo por resolver: entretener/jugar).\nConclusión: al intensificarse ambas fuerzas, el atractivo de la industria BAJA (mayor presión sobre márgenes y rentabilidad potencial). Estructura de respuesta: nombrar la fuerza → evidencia del caso → efecto sobre la rentabilidad.",
+      tip: "La pauta premia elegir la fuerza correcta, citar la evidencia textual del caso y CONCLUIR sobre el atractivo (no solo describir las 5 fuerzas)."
+    },
+    {
+      id: "est-fc-064", unidad: "U3", tema: "Caso de examen: identificar la estrategia genérica", salioEnExamen: true,
+      frente: "Una empresa no busca ser la más barata (siempre habrá competidores con menor precio). Apuesta por calidad premium, un sistema de producto único y compatible, licencias con franquicias reconocidas y una marca con fuerte carga emocional.\n\n¿Cuál de las estrategias genéricas de Porter está implementando? Justifique con TRES (3) evidencias concretas del caso.",
+      reverso: "Estrategia: DIFERENCIACIÓN. Evidencias: 1) Calidad premium y atributos únicos (no compite por precio). 2) Producto/sistema distintivo y difícil de replicar (compatibilidad universal). 3) Marca con valor emocional y licencias estratégicas que refuerzan el valor percibido.\nCierre: la diferenciación se sostiene si el mayor valor percibido permite un precio superior y fidelidad. Contraste explícito: NO es liderazgo en costos (renuncia a ser el más barato) ni enfoque (no se limita a un nicho).",
+      tip: "La pauta premia nombrar la estrategia + varias evidencias del texto + explicar por qué NO son las otras dos genéricas."
+    },
+    {
+      id: "est-fc-065", unidad: "U3", tema: "Caso de examen: atrapado en el medio", salioEnExamen: true,
+      frente: "En su afán de crecer, una empresa intentó ser muchas cosas a la vez: no logró ser la más barata, pero tampoco quedó como la mejor claramente en ninguna categoría nueva. Sus costos se dispararon y perdió identidad, quedando en un territorio donde no destacaba en nada.\n\n¿Qué error cometió respecto a su estrategia genérica y qué la haría recuperar la coherencia?",
+      reverso: "Error: quedó ATRAPADA EN EL MEDIO (stuck in the middle): ni liderazgo en costos ni diferenciación clara → bajo desempeño y pérdida de identidad estratégica.\nRecuperación: elegir UNA estrategia genérica coherente (aquí, volver a la diferenciación y al foco), disciplinar la innovación, recortar líneas incoherentes y reconstruir un sistema de actividades alineado con trade-offs claros.",
+      tip: "La pauta premia nombrar 'atrapado en el medio', explicar la causa (querer todo a la vez / perder el foco) y proponer una elección estratégica con renuncias."
+    },
+    {
+      id: "est-fc-066", unidad: "U2", tema: "Caso de examen: integración vertical", salioEnExamen: true,
+      frente: "Hasta cierto momento, una empresa dependía casi por completo de grandes retailers para llegar al consumidor final, con márgenes menores y sin datos de sus clientes. En su recuperación decidió abrir TIENDAS PROPIAS.\n\na) ¿Qué tipo de estrategia de integración representa esta decisión?\nb) Explique DOS (2) ventajas de esa estrategia para la empresa.",
+      reverso: "a) INTEGRACIÓN VERTICAL HACIA ADELANTE: internaliza la etapa de distribución/venta al cliente final (más cerca del consumidor en la cadena).\nb) Ventajas: 1) Control de la experiencia de compra y del posicionamiento de marca (la tienda es parte del producto). 2) Acceso directo a datos y preferencias del cliente (antes en manos de intermediarios). 3) Mejores márgenes al eliminar al intermediario. (Bastan dos bien justificadas.)",
+      tip: "La pauta premia nombrar 'vertical hacia adelante' (no solo 'vertical') y ligar cada ventaja al caso: control, datos y margen."
+    },
+    {
+      id: "est-fc-067", unidad: "U2", tema: "Caso de examen: evaluar una diversificación", salioEnExamen: true,
+      frente: "Para crecer, una empresa se diversificó de forma agresiva hacia negocios sin relación con su producto central (parques, ropa, relojes, televisión). Los costos se dispararon, la complejidad se multiplicó y perdió el foco sobre qué hacía bien, hasta reportar pérdidas récord.\n\nEvalúe la decisión: ¿por qué esta diversificación destruyó valor y bajo qué condiciones habría creado valor?",
+      reverso: "Diagnóstico: DIVERSIFICACIÓN NO RELACIONADA sin sinergias reales → destruyó valor. Riesgos materializados: costos de coordinación, burocracia, deseconomías y pérdida de foco/competencias esenciales.\nCrea valor solo si hay sinergias verdaderas: economías de escala y de ámbito, transferencia de capacidades/marca y mayor poder de negociación, y coherencia con la misión. Regla: el crecimiento solo es estratégico si crea valor; más grande no es mejor, más coherente sí.",
+      tip: "La pauta premia clasificar la diversificación (relacionada/no relacionada), nombrar los riesgos y condicionar la creación de valor a sinergias reales."
+    },
+    {
+      id: "est-fc-068", unidad: "U2", tema: "Caso de examen: aplicar VRIO a un recurso", salioEnExamen: true,
+      frente: "Una empresa conserva, incluso en su peor crisis, una marca con conexión emocional auténtica construida durante generaciones, difícil de replicar por los rivales.\n\nAplique el modelo VRIO a ese recurso (la marca) y concluya si puede ser fuente de ventaja competitiva sostenible.",
+      reverso: "V — Valioso: sí, aprovecha la demanda y genera preferencia y disposición a pagar. R — Raro: sí, pocos competidores tienen un vínculo emocional comparable. I — Inimitable: sí, se construyó por décadas (dependencia de la historia, ambigüedad causal). O — Organización: la empresa debe estar organizada para explotarlo (foco, tiendas propias, licencias, control de calidad).\nConclusión: si cumple los CUATRO criterios, la marca es fuente de ventaja competitiva SOSTENIBLE; si falla 'Organización', el recurso queda desaprovechado.",
+      tip: "La pauta premia evaluar las cuatro letras una por una y condicionar la sostenibilidad al cumplimiento de TODAS (sobre todo 'Organización')."
+    },
+    {
+      id: "est-fc-069", unidad: "U4", tema: "Caso de examen: cadena de valor y áreas clave", salioEnExamen: true,
+      frente: "Una empresa creó desde cero una categoría de bebida: resolvió una cadena de suministro frágil (insumo cultivado solo en ciertos países), invirtió fuerte en educar al consumidor con degustaciones y alianzas, y construyó una marca referente.\n\nUsando la cadena de valor, identifique DOS (2) áreas/actividades funcionales clave para su ventaja competitiva y justifique con dos argumentos cada una.",
+      reverso: "Áreas clave (elegir dos y justificar): 1) LOGÍSTICA / ABASTECIMIENTO (cadena de suministro): asegurar el insumo y su calidad ante riesgo climático y cambiario fue vital para operar y diferenciarse. 2) MARKETING Y VENTAS: educar al consumidor de una categoría nueva y construir marca creó la demanda y el posicionamiento. (También válidas: Operaciones/tecnología de conservación.)\nMétodo: descomponer la empresa en actividades (primarias y de apoyo), señalar dónde se crea más valor y cómo esas actividades, encajadas, sostienen la ventaja.",
+      tip: "La pauta premia anclar cada área en la cadena de valor (primaria/apoyo) y ligarla con evidencia del caso a la ventaja competitiva, no solo listarlas."
     }
   ]
 };

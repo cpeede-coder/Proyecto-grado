@@ -98,7 +98,7 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-009", unidad: "U1", tema: "Cuatro funciones del gerente",
+      id: "adm-fc-009", unidad: "U1", tema: "Cuatro funciones del gerente", salioEnExamen: true,
       frente: "¿Cuáles son las 4 funciones del gerente?",
       reverso: "Planificar (definir objetivos y planes), Organizar (estructurar el trabajo), Dirigir (motivar y liderar a las personas) y Controlar (seguir, comparar y corregir). Son la columna del proceso de gestión (Unidad III).",
       tip: "Planificar → Organizar → Dirigir → Controlar (un ciclo que se retroalimenta)."
@@ -116,7 +116,7 @@ window.ESTUDIO.administracion = {
       tip: "Nivel alto: conceptuales + humanas. Nivel inferior: humanas + técnicas."
     },
     {
-      id: "adm-fc-012", unidad: "U1", tema: "Tipos de organizaciones",
+      id: "adm-fc-012", unidad: "U1", tema: "Tipos de organizaciones", salioEnExamen: true,
       frente: "¿Bajo qué criterios se clasifican las organizaciones?",
       reverso: "Por estructura jerárquica (horizontal/plana vs. vertical/piramidal), por fines de lucro (con o sin), por toma de decisiones (centralizada vs. descentralizada), por configuración (Mintzberg) y por sector (pública, privada, mixta).",
       tip: "Sirve para \"etiquetar\" cualquier empresa de un caso."
@@ -126,13 +126,13 @@ window.ESTUDIO.administracion = {
     // (Temario II: Comercial, Producción/Operaciones, Gestión de Personas,
     //  Finanzas y contable, Nuevas Tendencias)
     {
-      id: "adm-fc-013", unidad: "U2", tema: "Qué es un área funcional",
+      id: "adm-fc-013", unidad: "U2", tema: "Qué es un área funcional", salioEnExamen: true,
       frente: "¿Qué es un área funcional y cuáles son las cuatro más relevantes?",
       reverso: "Área de la empresa donde todos trabajan en una misma función; la empresa se divide en áreas para facilitar sus objetivos. Las cuatro clásicas: Comercial, Producción/Operaciones, Gestión de Personas y Finanzas (más las Nuevas Tendencias).",
       tip: ""
     },
     {
-      id: "adm-fc-014", unidad: "U2", tema: "Área comercial",
+      id: "adm-fc-014", unidad: "U2", tema: "Área comercial", salioEnExamen: true,
       frente: "¿Qué hace el área comercial y qué diferencia necesidad, deseo y demanda?",
       reverso: "Detecta necesidades insatisfechas, produce lo que se requiere, lo pone a un precio competitivo y lo comunica. Necesidad: carencia básica (hambre). Deseo: bien específico que la cubre (comer). Demanda: deseo con capacidad de compra (comprar en McDonald's).",
       tip: "En una frase: dar valor agregado para satisfacer al consumidor."
@@ -144,19 +144,19 @@ window.ESTUDIO.administracion = {
       tip: "Push = empujar vía intermediarios; Pull = generar demanda del cliente final."
     },
     {
-      id: "adm-fc-016", unidad: "U2", tema: "Ciclo de vida del producto",
+      id: "adm-fc-016", unidad: "U2", tema: "Ciclo de vida del producto", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del ciclo de vida del producto?",
       reverso: "Introducción → Crecimiento → Madurez → Declive. Las ventas suben, se estabilizan y caen; la estrategia de marketing cambia en cada etapa.",
       tip: ""
     },
     {
-      id: "adm-fc-017", unidad: "U2", tema: "Segmentación y posicionamiento",
+      id: "adm-fc-017", unidad: "U2", tema: "Segmentación y posicionamiento", salioEnExamen: true,
       frente: "¿Qué son segmentación, mercado objetivo y posicionamiento?",
       reverso: "Segmentación: dividir el mercado en grupos pequeños y homogéneos. Mercado objetivo (target): el segmento donde se centran los esfuerzos, con estrategia indiferenciada (un producto para muchos), multisegmento (uno por segmento) o de nicho (un segmento pequeño). Posicionamiento: el \"lugar que ocupa la marca en la mente del consumidor\".",
       tip: "Bases de segmentación: demográfica, geográfica, psicográfica y conductual."
     },
     {
-      id: "adm-fc-018", unidad: "U2", tema: "Área de operaciones",
+      id: "adm-fc-018", unidad: "U2", tema: "Área de operaciones", salioEnExamen: true,
       frente: "¿Qué cuatro decisiones definen la planificación de operaciones?",
       reverso: "Qué producir (lo define Comercial), Cómo producir (proceso: artesanal, masivo o por proceso), Cuánto producir (capacidad, según demanda y recursos) y Dónde producir (localización de la planta).",
       tip: "Marketing dice QUÉ; Operaciones resuelve cómo, cuánto y dónde."
@@ -174,19 +174,19 @@ window.ESTUDIO.administracion = {
       tip: "Ambas viven dentro del Área de Operaciones: buscan procesos estandarizados y con menos errores."
     },
     {
-      id: "adm-fc-021", unidad: "U2", tema: "Cadena de Valor (Porter)",
+      id: "adm-fc-021", unidad: "U2", tema: "Cadena de Valor (Porter)", salioEnExamen: true,
       frente: "¿Qué es la Cadena de Valor de Porter y qué actividades la componen?",
       reverso: "Herramienta que ve la empresa como una serie de actividades que agregan valor. Primarias (logística de entrada, operaciones, logística de salida, marketing y ventas, servicio) crean valor directo; de apoyo (infraestructura, RRHH, tecnología, compras) las habilitan. El fin es el margen.",
       tip: "Es la herramienta que integra todas las áreas funcionales."
     },
     {
-      id: "adm-fc-022", unidad: "U2", tema: "Gestión de personas (RRHH)",
+      id: "adm-fc-022", unidad: "U2", tema: "Gestión de personas (RRHH)", salioEnExamen: true,
       frente: "¿Cuáles son las etapas del proceso de administración de RRHH?",
       reverso: "Planeación de RH → Reclutamiento (o recorte) → Selección → Inducción → Capacitación → Manejo del desempeño → Compensación → Desarrollo de carrera. Fin: identificar, desarrollar y RETENER empleados competentes.",
       tip: "Una buena gestión de personas es ventaja competitiva: capital humano difícil de imitar."
     },
     {
-      id: "adm-fc-023", unidad: "U2", tema: "Reclutamiento y selección",
+      id: "adm-fc-023", unidad: "U2", tema: "Reclutamiento y selección", salioEnExamen: true,
       frente: "Reclutamiento interno vs. externo, y errores de selección.",
       reverso: "Interno: dentro de la empresa (barato, rápido, conozco a la persona). Externo: fuera (trae talento e ideas nuevas, pero caro y lento). Errores de selección: de rechazo (descartar a uno bueno) y de aceptación (contratar a uno malo).",
       tip: "Seleccionar = elegir al de mayor predicción de desempeño en el cargo."
@@ -210,7 +210,7 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-027", unidad: "U2", tema: "Nuevas tendencias",
+      id: "adm-fc-027", unidad: "U2", tema: "Nuevas tendencias", salioEnExamen: true,
       frente: "¿Cuáles son los tres motores de las nuevas tendencias en administración?",
       reverso: "Tecnología (internet, comercio móvil, redes, TI), Globalización (perspectiva internacional del gerente) y Espíritu emprendedor (identificar oportunidades y necesidades no satisfechas). Se suman como transversales la RSE y la Gestión del Conocimiento (aprovechar el capital intelectual).",
       tip: "Tres motores del siglo XXI: tecnología, globalización y emprendimiento."
@@ -243,13 +243,13 @@ window.ESTUDIO.administracion = {
       tip: "Empieza en las oportunidades y termina en los presupuestos."
     },
     {
-      id: "adm-fc-032", unidad: "U3", tema: "Tipos de objetivos",
+      id: "adm-fc-032", unidad: "U3", tema: "Tipos de objetivos", salioEnExamen: true,
       frente: "¿Qué son los objetivos y qué dos tipos hay?",
       reverso: "Resultados deseados, por escrito y en términos de resultados. Financieros: desempeño interno de la empresa. Estratégicos: desempeño frente a factores externos y competidores (largo plazo).",
       tip: ""
     },
     {
-      id: "adm-fc-033", unidad: "U3", tema: "Objetivos SMART",
+      id: "adm-fc-033", unidad: "U3", tema: "Objetivos SMART", salioEnExamen: true,
       frente: "¿Qué significan los objetivos SMART?",
       reverso: "eSpecíficos, Medibles, Alcanzables, Realistas y con Tiempo (plazo límite). Un buen objetivo cumple los cinco.",
       tip: ""
@@ -277,7 +277,7 @@ window.ESTUDIO.administracion = {
     // (Temario III · Organización: estructura de actividad y autoridad,
     //  tipos de departamentalización, centralización y descentralización)
     {
-      id: "adm-fc-037", unidad: "U4", tema: "Qué es organizar",
+      id: "adm-fc-037", unidad: "U4", tema: "Qué es organizar", salioEnExamen: true,
       frente: "¿Qué es organizar y qué relación tiene con la estrategia?",
       reverso: "Distribuir y estructurar el trabajo para cumplir los objetivos: definir qué hacer, cómo y quién lo hará. Regla de oro: la estrategia antecede a la estructura (Estrategia → Estructura).",
       tip: "\"La estructura sigue a la estrategia\" (Chandler)."
@@ -313,7 +313,7 @@ window.ESTUDIO.administracion = {
       tip: "Son las dos estructuras genéricas: rígida vs. flexible."
     },
     {
-      id: "adm-fc-043", unidad: "U4", tema: "Diseños tradicionales",
+      id: "adm-fc-043", unidad: "U4", tema: "Diseños tradicionales", salioEnExamen: true,
       frente: "¿Cuáles son los diseños organizacionales tradicionales?",
       reverso: "Simple (poca departamentalización, autoridad centralizada; emprendimientos), Funcional (agrupa por función: operación, finanzas, marketing, RRHH) y Divisional (unidades/divisiones semiautónomas bajo una casa matriz).",
       tip: ""
@@ -325,7 +325,7 @@ window.ESTUDIO.administracion = {
       tip: "El de red se asocia a externalizar (freelancers) y a enfoque/diferenciación."
     },
     {
-      id: "adm-fc-045", unidad: "U4", tema: "Departamentalización",
+      id: "adm-fc-045", unidad: "U4", tema: "Departamentalización", salioEnExamen: true,
       frente: "¿Cuáles son los cinco tipos de departamentalización?",
       reverso: "Funcional (por función; la más usada), Geográfica (por territorio), Por producto (por líneas), Por cliente (por tipo de cliente) y Por procesos (por flujo de producción). Todas comparten un riesgo: la duplicación de funciones y la visión limitada del objetivo global.",
       tip: "Primero identifica el tipo, LUEGO justifica con las pistas del caso."
@@ -337,7 +337,7 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-047", unidad: "U4", tema: "Centralización vs descentralización",
+      id: "adm-fc-047", unidad: "U4", tema: "Centralización vs descentralización", salioEnExamen: true,
       frente: "Diferencia entre centralización y descentralización.",
       reverso: "Centralización: las decisiones se concentran arriba (los de abajo solo ejecutan); va con estructuras piramidales/mecanicistas. Descentralización: decide quien está más cerca de la acción; va con estructuras planas/orgánicas y permite adaptarse mejor a lo local.",
       tip: "Ej.: una cadena centraliza la marca y descentraliza decisiones operativas por sucursal."
@@ -352,7 +352,7 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-049", unidad: "U5", tema: "Liderazgo",
+      id: "adm-fc-049", unidad: "U5", tema: "Liderazgo", salioEnExamen: true,
       frente: "¿Qué es el liderazgo?",
       reverso: "Conjunto de habilidades para influir en las personas de modo que los equipos trabajen con entusiasmo hacia las metas. No es lo mismo que autoridad formal: el líder influye, no solo manda.",
       tip: ""
@@ -388,19 +388,19 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-055", unidad: "U5", tema: "Motivación y Maslow",
+      id: "adm-fc-055", unidad: "U5", tema: "Motivación y Maslow", salioEnExamen: true,
       frente: "¿Qué es la motivación y qué plantea la jerarquía de Maslow?",
       reverso: "Motivación: impulso que energiza, dirige y sostiene el esfuerzo hacia una meta. Maslow: pirámide de necesidades; se satisface primero la base y se sube: fisiológicas → seguridad → sociales → estima → autorrealización.",
       tip: "Una necesidad satisfecha deja de motivar."
     },
     {
-      id: "adm-fc-056", unidad: "U5", tema: "Teoría X/Y y Herzberg",
+      id: "adm-fc-056", unidad: "U5", tema: "Teoría X/Y y Herzberg", salioEnExamen: true,
       frente: "¿Qué plantean la Teoría X e Y (McGregor) y la teoría bifactorial (Herzberg)?",
       reverso: "McGregor: X = visión negativa (persona perezosa, hay que dirigirla); Y = visión positiva (disfruta el trabajo, busca responsabilidad). Herzberg: los factores de MOTIVACIÓN (logro, reconocimiento, crecimiento) generan satisfacción; los de HIGIENE (sueldo, condiciones, seguridad) no motivan, pero si faltan generan insatisfacción.",
       tip: "En Herzberg, mejorar la higiene solo quita insatisfacción; no motiva."
     },
     {
-      id: "adm-fc-057", unidad: "U5", tema: "McClelland y contemporáneas",
+      id: "adm-fc-057", unidad: "U5", tema: "McClelland y contemporáneas", salioEnExamen: true,
       frente: "¿Cuáles son las tres necesidades de McClelland y qué aportan las teorías contemporáneas?",
       reverso: "McClelland: logro (tareas desafiantes), poder (influir/dirigir) y afiliación (buenas relaciones). Contemporáneas: establecimiento de metas (metas difíciles pero alcanzables motivan más, con compromiso) y equidad (motiva cuando el aporte–recompensa se percibe justo).",
       tip: ""
@@ -415,7 +415,7 @@ window.ESTUDIO.administracion = {
       tip: "Sirve para asegurar coherencia, detectar problemas y prevenir desviaciones."
     },
     {
-      id: "adm-fc-059", unidad: "U6", tema: "Proceso de control",
+      id: "adm-fc-059", unidad: "U6", tema: "Proceso de control", salioEnExamen: true,
       frente: "¿Cuáles son las tres etapas del proceso de control?",
       reverso: "1) Medición del resultado real (monitoreo: observación, informes, muestras), 2) comparación con un estándar (real vs. objetivo fijado en la planeación) y 3) toma de decisiones correctivas (corregir el desempeño o revisar el estándar).",
       tip: "Medir → Comparar → Corregir."
@@ -433,13 +433,13 @@ window.ESTUDIO.administracion = {
       tip: ""
     },
     {
-      id: "adm-fc-062", unidad: "U6", tema: "KPI e indicadores",
+      id: "adm-fc-062", unidad: "U6", tema: "KPI e indicadores", salioEnExamen: true,
       frente: "¿Qué es un KPI y qué tipos de indicadores existen?",
       reverso: "KPI (Key Performance Indicator): herramienta de control que mide cuánto varió el objetivo SMART y si se cumplió. Tipos: financieros (ROI, ROS, costos, ingresos), de proceso (eficiencia, tiempos de ciclo) y de satisfacción (cliente, empleado).",
       tip: "El indicador debe permitir tomar decisiones y hacer seguimiento."
     },
     {
-      id: "adm-fc-063", unidad: "U6", tema: "Cómo se arma un KPI",
+      id: "adm-fc-063", unidad: "U6", tema: "Cómo se arma un KPI", salioEnExamen: true,
       frente: "¿Cómo se construye un KPI a partir de un objetivo?",
       reverso: "Objetivo → Meta (con cifra y plazo) → Indicador (fórmula). Ej.: \"aumentar exportaciones\" → \"subir ventas al extranjero 15% en 2024 vs. 2023\" → ventas extranjero (2024/2023) ≥ 1,15.",
       tip: "Sin cifra ni plazo no es meta; sin fórmula no es indicador."
@@ -449,6 +449,46 @@ window.ESTUDIO.administracion = {
       frente: "¿Qué premian transversalmente las pautas del examen de Administración?",
       reverso: "Nombrar + explicar/justificar con el caso (solo nombrar = puntaje parcial). Anclar la respuesta al caso concreto (áreas funcionales, estructura, liderazgo, control, indicadores), identificar antes de justificar (poner la etiqueta correcta primero) y mantener coherencia interna.",
       tip: "Primero pon la etiqueta correcta (área, estructura, tipo), luego argumenta con las pistas del caso."
+    },
+
+    // ===================== CASOS DE EXAMEN (replican preguntas reales) =====================
+    // Tarjetas tipo "caso": un contexto breve de empresa + la pregunta real, con
+    // esquema de respuesta. Todas marcadas como vistas en exámenes reales.
+    {
+      id: "adm-fc-065", unidad: "U2", tema: "Caso de examen: áreas funcionales clave", salioEnExamen: true,
+      frente: "Una empresa creó desde cero una categoría nueva (una bebida desconocida en el país): tuvo que asegurar una cadena de suministro frágil con productores en el extranjero, controlar la calidad del producto sin conservantes y, a la vez, educar a un consumidor que no conocía la bebida, invirtiendo fuerte en degustaciones y alianzas.\nPregunta: Indique DOS áreas funcionales que fueron clave para el éxito y la sostenibilidad del negocio, y justifique cada una con dos argumentos del caso.",
+      reverso: "Esquema: 1) Nombrar dos áreas (ej.: Operaciones/Producción y Comercial/Marketing). 2) Operaciones: gestionó la cadena de suministro internacional (relaciones con productores, control de calidad, tecnología de conservación) y la logística de envasado/distribución; sin ella no había producto confiable. 3) Comercial: creó y educó el mercado (posicionamiento, degustaciones, alianzas con deportistas, canal premium) construyendo la categoría y la marca. Cada área con DOS pistas concretas del caso.",
+      tip: "La pauta exige NOMBRAR el área Y justificar con evidencia del caso (dos argumentos por área). Solo nombrarlas da puntaje parcial."
+    },
+    {
+      id: "adm-fc-066", unidad: "U4", tema: "Caso de examen: departamentalización geográfica", salioEnExamen: true,
+      frente: "En su expansión a más de 30 países, el CEO de la empresa decide organizarse con una estructura basada en la departamentalización geográfica (una unidad por región/país).\nPregunta: Analice esta decisión indicando DOS ventajas y DOS desventajas específicas de este tipo de estructura, justificando en el modelo de negocio de la empresa.",
+      reverso: "Esquema: identificar el tipo (departamentalización geográfica) y luego justificar. Ventajas: mejor adaptación a las necesidades y regulaciones locales (envases, campañas, marcos legales por país); decisiones más rápidas y cercanas al cliente regional. Desventajas: duplicación de funciones y recursos entre regiones (mayor costo); dificultad de coordinación y control entre equipos dispersos, con riesgo de perder la visión global.",
+      tip: "Premian anclar cada ventaja/desventaja a la estrategia del caso (expansión internacional, culturas y regulaciones distintas), no definiciones genéricas."
+    },
+    {
+      id: "adm-fc-067", unidad: "U4", tema: "Caso de examen: tipo de estructura de la empresa", salioEnExamen: true,
+      frente: "En su país de origen la empresa aplica directrices, sistemas, procesos, campañas y hasta la cadena de suministro desde la casa matriz, para garantizar eficiencia y una rápida toma de decisiones. En el extranjero opera con franquicias maestras, dando más libertad a esos socios para desarrollar el negocio en cada mercado.\nPregunta: Clasifique la forma de organización de la empresa y justifique.",
+      reverso: "Esquema: en el mercado de origen es una estructura FUNCIONAL (organizada por áreas) y CENTRALIZADA (las decisiones y directrices bajan desde la matriz, buscando eficiencia, estandarización y rapidez). En el segmento internacional es más DESCENTRALIZADA, al delegar decisiones en franquiciados maestros que adaptan el negocio a su mercado. Justificar cada etiqueta con las pistas del texto.",
+      tip: "Primero pon la etiqueta (funcional / centralizada vs. descentralizada) y LUEGO justifícala con las frases del caso; no confundas estructura con departamentalización."
+    },
+    {
+      id: "adm-fc-068", unidad: "U5", tema: "Caso de examen: programa motivacional con respaldo teórico", salioEnExamen: true,
+      frente: "Una clínica creó una oficina para mejorar la experiencia del paciente. La encargada de enfermería debe lograr que su equipo se comprometa con ese objetivo.\nPregunta: Elabore un programa motivacional para los empleados, con respaldo teórico, que incluya TRES iniciativas, y explique cómo cada una ayuda a cumplir el objetivo.",
+      reverso: "Esquema: apoyarse en una o más teorías motivacionales (Maslow, Herzberg dos factores, McClelland, equidad de Adams, fijación de metas de Locke). Ejemplos de iniciativas: 1) fijar metas específicas y desafiantes medidas con encuestas de salida (fijación de metas); 2) primero asegurar los factores de higiene (condiciones, sueldo justo) y luego reconocer a los mejor evaluados (Herzberg); 3) revisar equidad salarial del personal en contacto con el paciente (equidad). Ligar cada iniciativa al objetivo (mejor experiencia del paciente).",
+      tip: "No confundir un PROGRAMA MOTIVACIONAL con uno de compensaciones. La pauta exige respaldo teórico explícito y conectar cada iniciativa con el objetivo del caso."
+    },
+    {
+      id: "adm-fc-069", unidad: "U3", tema: "Caso de examen: metas SMART de corto plazo", salioEnExamen: true,
+      frente: "El responsable de experiencia del paciente necesita ordenar su gestión con metas concretas de corto plazo orientadas a mejorar la satisfacción de los pacientes.\nPregunta: Elabore TRES metas SMART de corto plazo que colaboren en su gestión.",
+      reverso: "Esquema: no se pide definir qué es una meta SMART, sino PLANTEAR tres, cada una específica, medible, con cifra y plazo. Ejemplos: 1) subir 15% la puntuación promedio de satisfacción en las encuestas en 6 meses; 2) reducir 20% el tiempo de espera en sala en 3 meses; 3) implementar un sistema de seguimiento post-atención para recoger comentarios dentro de 2 meses. Cada una debe indicar cómo se medirá.",
+      tip: "Premian que cada meta tenga métrica, cifra y plazo (medible + acotada) y que apunte al objetivo del caso; describir la teoría SMART sin plantear metas concretas NO suma."
+    },
+    {
+      id: "adm-fc-070", unidad: "U6", tema: "Caso de examen: indicadores para controlar el objetivo", salioEnExamen: true,
+      frente: "Una empresa convirtió la experiencia/satisfacción del cliente en un objetivo estratégico y necesita hacerle seguimiento en el tiempo para saber si mejora o retrocede.\nPregunta: Proponga indicadores (KPI) que permitan controlar el cumplimiento del objetivo y explique cómo se usarían.",
+      reverso: "Esquema: partir del objetivo → meta (cifra y plazo) → indicador (fórmula). Ejemplos de KPI: puntuación promedio de la encuesta de satisfacción (medir avance vs. estándar), tiempo de espera promedio, tasa de reingresos o de quejas, y métricas de satisfacción/engagement del cliente. Explicar que se comparan contra un estándar y gatillan acciones correctivas (proceso de control: medir → comparar → corregir).",
+      tip: "Un buen indicador debe permitir tomar decisiones y hacer seguimiento; nombrar el KPI sin explicar cómo se mide y compara da solo puntaje parcial."
     }
   ]
 };

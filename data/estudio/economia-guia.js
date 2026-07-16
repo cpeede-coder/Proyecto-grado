@@ -16,6 +16,8 @@ window.ESTUDIO_GUIA.economia = {
     {
       unidad: "U1", titulo: "Principios, Escasez y Mercados",
       html: `
+        <div class="guia-def">⭐ <strong>Qué más se pregunta en Economía:</strong> En <strong>micro</strong>, lo más repetido son las <strong>políticas del gobierno</strong> (impuestos y cotización previsional como impuesto al trabajo, salario mínimo, aranceles y comercio exterior, controles de precio y racionamiento), casi siempre con <strong>oferta y demanda + análisis de bienestar (excedentes)</strong>; le siguen la <strong>elasticidad</strong> (precio, cruzada, ingreso), las <strong>estructuras de mercado</strong> (competencia monopolística y equilibrio de largo plazo), el <strong>monopolio y la discriminación de precios</strong> (el empaquetamiento o tripack es discriminación de 2° grado) y la <strong>teoría del consumidor</strong> (curvas de indiferencia, racionamiento). En <strong>macro</strong>, casi siempre aparecen <strong>oferta y demanda agregada</strong> (shocks, estanflación), el <strong>mercado de fondos prestables</strong> (déficit fiscal, retiros de las AFP, crowding out), la <strong>cuenta corriente y los déficits gemelos</strong> (S−I)=(X−M), los modelos <strong>IS-LM</strong> y <strong>Mundell-Fleming</strong> (diferencial de tasas FED vs. Banco Central y tipo de cambio), el <strong>modelo de Solow</strong> y la <strong>política monetaria del Banco Central</strong> con el mercado cambiario. Recuerda: examen <strong>sin calculadora</strong>, todo conceptual y gráfico.</div>
+
         <p>La economía parte de un hecho: los recursos son <strong>escasos</strong> y las necesidades <strong>ilimitadas</strong>. De ahí nace todo lo demás: elegir, renunciar y asignar.</p>
 
         <h4>¿Qué estudia la economía?</h4>
