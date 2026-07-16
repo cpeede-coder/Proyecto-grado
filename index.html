@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=34">
+  <link rel="stylesheet" href="css/styles.css?v=35">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.34</span>
+      <span class="version-app">v1.0.35</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
@@ -48,6 +48,16 @@
 
     <!-- ============ PANTALLA: CONFIGURACIÓN ============ -->
     <section id="pantalla-config" class="pantalla hidden">
+      <div class="config-shell">
+        <aside class="card config-estudio">
+          <h3 class="config-estudio-titulo">📚 Estudiar</h3>
+          <p class="ayuda">Aprende y memoriza <strong>antes</strong> de rendir.</p>
+          <button id="btn-estudiar-materia" class="btn-secundario btn-estudio-lat">📖 Estudiar (Materia)</button>
+          <button id="btn-estudiar-flashcards" class="btn-secundario btn-estudio-lat">🃏 Estudiar (Flashcards)</button>
+          <p class="ayuda config-estudio-pie">1. Lee la materia · 2. Repasa con flashcards · 3. Rinde tu examen.</p>
+        </aside>
+
+        <div class="config-col">
       <div id="banner-demo" class="banner-demo hidden">
         <div id="banner-demo-texto">
           <strong>🎁 Prueba gratis</strong> — tienes <strong>1 examen de práctica gratis</strong>. Después, desbloquea las <strong>+500 preguntas</strong>, el <strong>Examen Oficial</strong> y la <strong>corrección con IA</strong>.
@@ -58,16 +68,7 @@
         </div>
       </div>
 
-      <div class="config-layout">
-        <aside class="card config-estudio">
-          <h3 class="config-estudio-titulo">📚 Estudiar</h3>
-          <p class="ayuda">Aprende y memoriza <strong>antes</strong> de rendir.</p>
-          <button id="btn-estudiar-materia" class="btn-secundario btn-estudio-lat">📖 Estudiar (Materia)</button>
-          <button id="btn-estudiar-flashcards" class="btn-secundario btn-estudio-lat">🃏 Estudiar (Flashcards)</button>
-          <p class="ayuda config-estudio-pie">1. Lee la materia · 2. Repasa con flashcards · 3. Rinde tu examen.</p>
-        </aside>
-
-        <div class="card config-main">
+      <div class="card config-main">
         <h2 id="titulo-config">Configura tu examen</h2>
 
         <div class="campo">
@@ -112,7 +113,6 @@
         <button id="btn-ver-banco" class="btn-secundario">📚 Explorar banco</button>
         <button id="btn-ver-historial" class="btn-secundario">Ver historial</button>
         <button id="btn-inicio-volver" class="btn-secundario">← Inicio</button>
-        </div>
       </div>
 
       <div class="card">
@@ -137,6 +137,8 @@
           <p class="ayuda">🔒 Tu key se guarda <strong>solo en este navegador</strong> — no se sube a ningún servidor y solo se usa para llamar a Google cuando corriges. <strong>Cada persona debe crear la suya</strong> (no compartas la tuya): es gratis y así cada uno tiene su propia cuota diaria, que alcanza de sobra para varios exámenes al día.</p>
         </details>
       </div>
+        </div><!-- /config-col -->
+      </div><!-- /config-shell -->
     </section>
 
     <!-- ============ PANTALLA: BANCO DE PREGUNTAS ============ -->
@@ -377,6 +379,6 @@
   <script src="data/estudio/estrategia-guia.js?v=2"></script>
   <script src="data/estudio/marketing.js?v=3"></script>
   <script src="data/estudio/marketing-guia.js?v=3"></script>
-  <script src="js/app.js?v=34"></script>
+  <script src="js/app.js?v=35"></script>
 </body>
 </html>

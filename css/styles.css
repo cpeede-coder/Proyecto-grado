@@ -651,12 +651,18 @@ body.vista-amplia main {
 /* =====================================================================
    Pantalla de configuración: columna de estudio a la izquierda
    ===================================================================== */
-.config-layout {
+/* En la pantalla de configuración se ensancha el área para dejar la columna
+   de "Estudiar" a la izquierda, manteniendo las tarjetas (Configura tu examen
+   y Corrección IA) al mismo ancho que tenían. */
+body.vista-config main { max-width: 1040px; }
+
+.config-shell {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 240px 1fr;
   gap: 20px;
   align-items: start;
 }
+.config-col { min-width: 0; }          /* la columna de tarjetas ocupa todo el ancho restante */
 .config-estudio { align-self: start; }
 .config-estudio-titulo {
   margin: 0 0 4px;
@@ -675,8 +681,8 @@ body.vista-amplia main {
   border-top: 1px solid var(--borde);
   font-size: 0.86rem;
 }
-@media (max-width: 820px) {
-  .config-layout { grid-template-columns: 1fr; }
+@media (max-width: 860px) {
+  .config-shell { grid-template-columns: 1fr; }   /* se apila: Estudiar arriba, cards abajo */
   .btn-estudio-lat { text-align: center; }
 }
 

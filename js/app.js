@@ -393,6 +393,8 @@ function mostrarPantalla(id) {
   $("#" + id).classList.remove("hidden");
   // La corrección usa todo el ancho para mostrar las dos "hojas" lado a lado
   document.body.classList.toggle("vista-amplia", id === "pantalla-correccion");
+  // La configuración se ensancha para dejar la columna de "Estudiar" a la izquierda
+  document.body.classList.toggle("vista-config", id === "pantalla-config");
   window.scrollTo(0, 0);
 }
 
