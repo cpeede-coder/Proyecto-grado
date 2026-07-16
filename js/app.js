@@ -1612,11 +1612,17 @@ function iniciarEstudio() {
   const btnFlash = $("#btn-estudiar-flashcards");
   if (btnMateria) btnMateria.addEventListener("click", () => entrarEstudio("guia"));
   if (btnFlash) btnFlash.addEventListener("click", () => entrarEstudio("flashcards"));
-  $("#btn-estudio-guia-volver").addEventListener("click", () => {
+  const volverAConfigEstudio = () => {
     $("#estudio-guia").classList.add("hidden");
+    $("#estudio-sesion").classList.add("hidden");
+    $("#estudio-fin").classList.add("hidden");
     $("#estudio-config").classList.remove("hidden");
     renderEstudioConfig();
-  });
+    window.scrollTo(0, 0);
+  };
+  $("#btn-estudio-guia-volver").addEventListener("click", volverAConfigEstudio);
+  $("#btn-estudio-guia-salir").addEventListener("click", volverAConfigEstudio);
+  $("#btn-estudio-salir").addEventListener("click", volverAConfigEstudio);
   $("#btn-estudio-guia-repasar").addEventListener("click", () => {
     ESTUDIO_MODO = "flashcards";
     $("#estudio-guia").classList.add("hidden");

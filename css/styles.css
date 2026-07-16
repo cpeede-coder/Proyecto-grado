@@ -700,6 +700,9 @@ body.vista-config main { max-width: 1040px; }
 .estudio-progreso-mini strong { color: var(--texto); }
 
 /* Barra de progreso de la sesión */
+/* Botón "← Volver" arriba de la guía y del repaso (siempre visible, sin bajar hasta el fondo) */
+.btn-volver-top { margin: 0 0 14px; padding: 8px 16px; font-size: 0.9rem; }
+
 .estudio-barra-card { padding: 18px 22px; }
 .estudio-barra {
   height: 12px;
