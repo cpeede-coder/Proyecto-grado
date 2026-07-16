@@ -1314,6 +1314,36 @@ function iniciarTema() {
 }
 
 // ---------------------------------------------------------------------
+// Zoom: agranda toda la interfaz (para leer mejor). Preferencia guardada.
+// Cicla 100% → 110% → 125% → 140% → 100%. Usa la propiedad CSS `zoom`.
+// ---------------------------------------------------------------------
+const CLAVE_ZOOM = "examen-grado-zoom";
+const NIVELES_ZOOM = [100, 110, 125, 140];
+
+function aplicarZoom(nivel) {
+  document.documentElement.style.zoom = nivel === 100 ? "" : (nivel / 100);
+  const btn = $("#btn-zoom");
+  if (btn) {
+    btn.textContent = nivel === 100 ? "🔍" : nivel + "%";
+    btn.title = nivel === 100
+      ? "Aumentar el tamaño (zoom)"
+      : "Zoom " + nivel + "% — toca para cambiar";
+  }
+}
+
+function iniciarZoom() {
+  let nivel = parseInt(localStorage.getItem(CLAVE_ZOOM) || "100", 10);
+  if (!NIVELES_ZOOM.includes(nivel)) nivel = 100;
+  aplicarZoom(nivel);
+  $("#btn-zoom").addEventListener("click", () => {
+    const i = NIVELES_ZOOM.indexOf(nivel);
+    nivel = NIVELES_ZOOM[(i + 1) % NIVELES_ZOOM.length];
+    localStorage.setItem(CLAVE_ZOOM, String(nivel));
+    aplicarZoom(nivel);
+  });
+}
+
+// ---------------------------------------------------------------------
 // Analítica: registra una visita por sesión (para medir interés). Nunca bloquea la app.
 function registrarVisita() {
   try {
@@ -1691,6 +1721,7 @@ function iniciarScrollTop() {
 }
 
 iniciarTema();
+iniciarZoom();
 iniciarScrollTop();
 iniciarConfig();
 iniciarBanco();
