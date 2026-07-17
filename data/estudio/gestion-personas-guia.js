@@ -141,6 +141,8 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
     {
       unidad: "U4", titulo: "Capacitación y Desarrollo de Carrera",
       html: `
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> capacitar con desarrollar: capacitar cierra la brecha del puesto de HOY (corto plazo, una habilidad concreta); desarrollar prepara a la persona para roles FUTUROS (largo plazo, mentoría, plan de carrera/sucesión).</div>
+
         <p>Busca cerrar la brecha entre lo que las personas <strong>saben hoy</strong> y lo que la estrategia <strong>necesitará mañana</strong>.</p>
 
         <h4>Proceso de inducción y socialización</h4>
@@ -185,6 +187,8 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
     {
       unidad: "U5", titulo: "Gestión del Desempeño",
       html: `
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> gestión y evaluación del desempeño: la GESTIÓN es el ciclo completo (fijar metas &rarr; seguimiento &rarr; feedback &rarr; planes de desarrollo); la EVALUACIÓN es solo una etapa (medir/poner nota). En los casos, poner nota no es "gestionar": la pauta pide el ciclo entero.</div>
+
         <p>Medir cómo lo está haciendo cada persona para <strong>decidir</strong> (desarrollo, promoción, compensación) y <strong>alinear</strong> su aporte con la estrategia. Se evalúa el <strong>qué</strong> (metas/resultados) y el <strong>cómo</strong> (conductas y competencias).</p>
 
         <h4>Modelos de evaluación de desempeño y la cultura y estrategia organizacional</h4>
@@ -196,6 +200,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
             <tr><td><strong>Por competencias</strong></td><td>Competencias y conductas clave</td><td>Foco en desarrollo y estrategia / Subjetivo si no están bien definidas</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>Grados de evaluación:</strong> 90° = solo el jefe evalúa; 180° = jefe + autoevaluación (o jefe + pares); 360° = jefe, pares, subordinados y autoevaluación (visión integral).</div>
         <p>El modelo debe reflejar los <strong>valores</strong> y estar alineado con la <strong>estrategia</strong>: si valoras la colaboración pero solo evalúas metas individuales, generas competencia interna tóxica.</p>
 
         <h4>Desempeño efectivo: focos en metas y desempeño</h4>

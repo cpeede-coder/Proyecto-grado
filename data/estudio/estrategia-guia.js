@@ -157,6 +157,7 @@ window.ESTUDIO_GUIA.estrategia = {
           </tbody>
         </table></div>
         <p><strong>6ª fuerza — complementadores:</strong> empresas cuyos productos aumentan el valor del principal (hardware+software, smartphone+apps). No compiten directo, pero influyen en la rentabilidad. Se relaciona con la <strong>coopetición</strong>: competir y cooperar a la vez para crear más valor.</p>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> No confundir complementador con sustituto: el complementador SUMA valor cuando se usa junto al producto (apps + smartphone) y lo hace más atractivo; el sustituto COMPITE y le quita demanda (videojuegos vs. juguetes). Tienen efectos opuestos sobre la rentabilidad de la industria.</div>
 
         <h4>Posicionamiento y ventaja competitiva</h4>
         <p>El <strong>posicionamiento</strong> es cómo decides competir y qué lugar ocupas en la mente del cliente: elecciones conscientes, con renuncias, difícil de imitar. No es ser mejor en todo, sino ser <strong>distinto</strong>. Hay <strong>ventaja competitiva</strong> cuando generas más valor económico que los rivales (menor costo o mayor valor percibido).</p>
@@ -169,9 +170,11 @@ window.ESTUDIO_GUIA.estrategia = {
           </tbody>
         </table></div>
         <p><strong>Atrapado en el medio</strong>: no ser líder en costos NI diferenciarse → bajo desempeño y pérdida de identidad.</p>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> No confundir ventaja competitiva con ventaja comparativa: la competitiva (Estrategia) es cuando una empresa supera a sus rivales (menor costo o mayor valor percibido); la comparativa (Economía, Ricardo) es cuando un país produce un bien a menor costo de oportunidad. En Estrategia siempre es la competitiva.</div>
 
         <h4>Grupos estratégicos</h4>
         <p>Empresas de una misma industria con estrategias similares. Compiten más <strong>dentro</strong> del grupo que entre grupos. Las <strong>barreras de movilidad</strong> (marca, escala, inversiones específicas) impiden cambiar de grupo y explican su estabilidad.</p>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> No confundir barreras de entrada con barreras de movilidad: las de entrada frenan a quien quiere entrar a la industria; las de movilidad frenan a una empresa que YA está dentro y quiere saltar a otro grupo estratégico (aunque ambas puedan ser economías de escala).</div>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "Definir mal la industria es competir a ciegas." · "No solo se compite contra rivales directos." · "La estrategia es elegir qué no hacer."</div>
       `

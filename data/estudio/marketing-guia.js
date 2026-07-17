@@ -193,6 +193,7 @@ window.ESTUDIO_GUIA.marketing = {
           </tbody>
         </table></div>
         <p>Se resume en una <strong>declaración de posicionamiento</strong>: "Para [público] que [necesidad], [marca] ofrece [beneficio] a diferencia de [competencia]" (ej. Volvo = seguridad). Los <strong>beneficios funcionales</strong> son tangibles (qué hace el producto); los <strong>emocionales</strong>, intangibles (Dove promueve la autoestima, no solo jabón).</p>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> la cobertura de mercado con el posicionamiento: la cobertura (targeting: indiferenciado / diferenciado / concentrado) decide a CUÁNTOS segmentos apuntar; el posicionamiento decide QUÉ LUGAR ocupar en la mente del cliente. Incluso un nicho concentrado debe decidir cómo se posiciona.</div>
 
         <h4>Propuesta de valor</h4>
         <p>Declaración clara de los <strong>beneficios únicos</strong> que el producto ofrece y cómo resuelve el problema del cliente mejor que las alternativas. Componentes: beneficio principal, resolución del problema y diferenciación. Es una PROMESA que la empresa cumple y el cliente percibe como valiosa. Un buen posicionamiento diferencia, conecta emocionalmente, da consistencia y crea valor perceptual que justifica precios más altos.</p>
@@ -233,6 +234,7 @@ window.ESTUDIO_GUIA.marketing = {
             <tr><td><strong>Descremado</strong></td><td>Precio alto inicial que baja por etapas</td><td>Lanzamiento de smartphone</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> penetración con descremado: penetración = precio BAJO inicial para ganar volumen y cuota rápido (sirve cuando hay competencia o clientes sensibles al precio); descremado (skimming) = precio ALTO inicial para captar margen de quienes pagan más (sirve en lanzamientos pioneros sin referencia de precio) y luego se baja por etapas.</div>
 
         <h4>Plaza (distribución)</h4>
         <p>Rutas del fabricante al consumidor. <strong>Directo</strong> (sin intermediarios) o <strong>indirecto</strong> (mayoristas, minoristas, agentes/brokers, que facilitan pero no toman posesión). El enfoque <strong>omnicanal</strong> integra físico, online y app en una experiencia coherente; el <strong>e-commerce</strong> vende por plataformas digitales. Estrategias de intensidad: <strong>intensiva</strong> (máximos puntos, ej. snacks), <strong>selectiva</strong> (limitada, ej. electrónica de gama) y <strong>exclusiva</strong> (uno o pocos, ej. lujo).</p>
@@ -263,6 +265,7 @@ window.ESTUDIO_GUIA.marketing = {
           </tbody>
         </table></div>
         <p>Para <strong>determinar la mezcla promocional</strong> se fijan primero los <strong>objetivos</strong> (más ventas, mejor imagen) y luego se eligen las herramientas más efectivas. Toda comunicación se apoya en tres <strong>principios</strong>: <strong>claridad</strong>, <strong>consistencia</strong> (mismo mensaje en todos los canales) y <strong>relevancia</strong> para el público.</p>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> "promoción" (toda la P de comunicación) no es lo mismo que "promoción de ventas" (una sola herramienta: cupones y descuentos de corto plazo). Y la publicidad es PAGADA en medios, mientras las RR.PP. buscan reputación SIN pago directo (prensa, eventos).</div>
 
         <h4>Comunicaciones Integradas de Marketing (IMC)</h4>
         <p>Las <strong>Comunicaciones Integradas de Marketing (IMC)</strong> son la coordinación de TODAS las herramientas de la mezcla promocional &mdash;publicidad, promoción de ventas, relaciones públicas, venta personal y marketing directo/digital&mdash; bajo un <strong>mensaje único y coherente</strong> en todos los puntos de contacto. Justamente los tres principios de claridad, consistencia y relevancia son los que hacen que la marca "hable con una sola voz": el cliente recibe la misma promesa vea un anuncio, entre a la web o hable con un vendedor.</p>

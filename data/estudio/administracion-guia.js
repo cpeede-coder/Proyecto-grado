@@ -182,6 +182,7 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td><strong>Frecuencia de uso</strong></td><td>Uso único vs. Permanentes</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>⚠️ No confundir por la palabra "estratégico":</strong> un OBJETIVO estratégico se opone a uno financiero (mirar afuera/competidores vs. desempeño interno); un PLAN estratégico se opone a uno operacional (toda la empresa vs. un área). Es el mismo adjetivo para dos clasificaciones distintas.</div>
         <h4>Relación entre los diferentes tipos de planes</h4>
         <p>Forman una <strong>cascada</strong>: los planes estratégicos guían a los tácticos (mediano plazo) y estos a los operativos (día a día). Todo alineado con los objetivos generales. Cada nivel <strong>deriva del superior y lo hace operable</strong>: si un plan operativo se desalinea del estratégico, se rompe la cascada y se desperdician recursos.</p>
 
@@ -214,6 +215,7 @@ window.ESTUDIO_GUIA.administracion = {
             <tr><td>Típica de</td><td>Empresas grandes</td><td>Pequeñas / innovadoras</td></tr>
           </tbody>
         </table></div>
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> mecanicista vs. orgánica NO es un tipo de diseño, es el GRADO DE RIGIDEZ (rígida vs. flexible). Los diseños concretos (simple, funcional, divisional, matricial, red) se ubican dentro de ese continuo: lo tradicional tiende a mecanicista y lo contemporáneo a orgánico.</div>
 
         <h4>Diseños organizacionales</h4>
         <p><strong>Tradicionales:</strong> Simple (centralizada, emprendimientos), Funcional (por función) y Divisional (unidades semiautónomas bajo una matriz). <strong>Contemporáneos:</strong> De equipos, Matricial/de proyectos (dos jefes) y De red (externaliza y se concentra en lo que hace mejor).</p>
@@ -230,6 +232,7 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
         <p>No confundas <strong>estructura</strong> (diseño general) con <strong>departamentalización</strong> (agrupación de puestos dentro de ella).</p>
+        <div class="guia-def"><strong>⚠️ No confundir por la palabra "funcional":</strong> existe como DISEÑO organizacional (estructura funcional, junto a simple y divisional) y como tipo de DEPARTAMENTALIZACIÓN (funcional, junto a geográfica y por producto). Son planos distintos aunque se llamen igual.</div>
 
         <h4>Centralización y descentralización</h4>
         <p><strong>Centralización</strong>: las decisiones se concentran en la cúpula (propio de la estructura mecanicista; da control y uniformidad). <strong>Descentralización</strong>: decide quien está más cerca de la acción (orgánica; permite mejor adaptación local y decisiones más rápidas, pero exige gente capacitada). La mayoría de las empresas se ubica en un punto intermedio según su tamaño, entorno y estrategia.</p>

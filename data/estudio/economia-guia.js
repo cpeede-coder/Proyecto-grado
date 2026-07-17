@@ -235,6 +235,8 @@ window.ESTUDIO_GUIA.economia = {
         <p>El monopolio es un único vendedor sin sustitutos cercanos. Como enfrenta toda la demanda, para vender más debe bajar el precio a todo: por eso su <strong>ingreso marginal es menor que el precio</strong>. Produce donde IMg = CMg pero cobra el precio (más alto) de la demanda → produce <strong>menos</strong> y cobra <strong>más</strong> que la competencia, generando <strong>pérdida de eficiencia</strong> (carga muerta). Su poder nace de <strong>barreras de entrada</strong> (recurso exclusivo, patentes, economías de escala, regulación); el <strong>monopolio natural</strong> abastece a menor costo con una sola empresa.</p>
         <p>El monopolista puede aplicar <strong>discriminación de precios</strong> para capturar excedente: 1er grado (por cada unidad), 2° grado (por cantidad/versión) y 3er grado (por segmento). Como estrategia de entrada, las empresas usan los <strong>precios como barrera</strong>: predatorios (bajo el costo, para expulsar rivales) y de penetración (bajos para ganar cuota).</p>
 
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> 2do y 3er grado de discriminación: en el 2do grado el propio cliente se autoselecciona con un menú de precios (packs, descuentos por volumen, versiones) sin que la empresa sepa quién es quién; en el 3er grado la empresa separa el mercado en grupos identificables (estudiante, jubilado). El tripack de bebidas es 2do grado.</div>
+
         <h4>Oligopolio</h4>
         <p>Pocas empresas con <strong>interdependencia</strong>: cada una decide anticipando la reacción del rival. Modelos: <strong>Cournot</strong> (cantidades), <strong>Bertrand</strong> (precios) y <strong>Stackelberg</strong> (líder-seguidor). La <strong>competencia monopolística</strong>, en cambio, tiene muchas empresas con productos diferenciados y libre entrada, que erosiona las ganancias en el largo plazo.</p>
 
@@ -325,6 +327,8 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <div class="guia-def"><strong>Crowding out (efecto expulsión):</strong> cuando el Estado incurre en <strong>déficit fiscal</strong> y se endeuda, absorbe parte del ahorro disponible → la oferta de fondos se contrae, <strong>sube la tasa de interés</strong> y esa tasa más alta <strong>expulsa (desplaza) a la inversión privada</strong>. Así, el gasto público financiado con deuda puede terminar reemplazando inversión de las empresas en lugar de sumarse a ella.</div>
 
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> déficit fiscal y deuda pública: el déficit es un flujo de un año (cuánto gastó de más el gobierno ese período); la deuda es el stock acumulado de todos los déficits pasados. Mientras haya déficit —aunque sea menor— la deuda sigue creciendo; solo un superávit la reduce.</div>
+
         <div class="guia-frase"><strong>Frases de examen:</strong> "El PIB real mide crecimiento; el nominal, no." · "Inflación = variación del IPC (en Chile lo mide el INE)." · "Quien no busca trabajo es inactivo, no desempleado." · "El déficit fiscal sube la tasa y expulsa la inversión privada (crowding out)."</div>
       `
     },
@@ -345,6 +349,8 @@ window.ESTUDIO_GUIA.economia = {
 
         <h4>La inflación</h4>
         <p>La <strong>teoría cuantitativa</strong> (M x V = P x Y) dice que, si la velocidad y la producción son estables, más dinero significa más precios: por eso "la inflación es, en el largo plazo, un fenómeno monetario". Sus <strong>costos</strong>: de menú, de suela de zapatos, distorsión de precios relativos, distorsión tributaria e incertidumbre. La <strong>ecuación de Fisher</strong> relaciona las tasas: nominal = real + inflación esperada (i = r + &pi;). El <strong>impuesto inflacionario</strong> es la pérdida de poder de compra de quien mantiene efectivo.</p>
+
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> inflación, desinflación y deflación: inflación = los precios suben; desinflación = siguen subiendo pero más lento (la inflación baja, por ej. de 8% a 4%, pero sigue positiva); deflación = los precios caen (inflación negativa). Que baje la inflación NO significa que bajen los precios.</div>
 
         <h4>Demanda agregada, oferta agregada y políticas</h4>
         <p>La <strong>demanda agregada (DA)</strong> es el gasto total (C + I + G + XN); tiene pendiente negativa. La <strong>oferta agregada</strong> es ascendente en el corto plazo (precios rígidos) y <strong>vertical</strong> en el largo plazo (PIB potencial). Sobre la DA actúan dos políticas:</p>
@@ -389,6 +395,8 @@ window.ESTUDIO_GUIA.economia = {
           </tbody>
         </table></div>
         <p>El tipo de cambio se determina en el mercado de <strong>divisas</strong>. En equilibrio se ajustan a la vez los mercados de bienes, fondos prestables y divisas. Una <strong>depreciación</strong> del peso abarata las exportaciones y sube XN.</p>
+
+        <div class="guia-def"><strong>⚠️ No confundir:</strong> depreciación y devaluación: la depreciación (y su opuesto, la apreciación) la produce el mercado con tipo de cambio flexible; la devaluación (opuesto: revaluación) es una decisión de la autoridad con tipo de cambio fijo. Las dos abaratan la moneda local y suben las exportaciones netas.</div>
 
         <h4>⭐ Cuenta corriente y déficits gemelos</h4>
         <p>La identidad de la economía abierta se puede reordenar para conectar el ahorro con el saldo externo. Partiendo de que ahorro nacional menos inversión equivale a las exportaciones netas:</p>
