@@ -183,8 +183,17 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
         <div class="guia-def"><strong>⚠️ No confundir por la palabra "estratégico":</strong> un OBJETIVO estratégico se opone a uno financiero (mirar afuera/competidores vs. desempeño interno); un PLAN estratégico se opone a uno operacional (toda la empresa vs. un área). Es el mismo adjetivo para dos clasificaciones distintas.</div>
-        <h4>Relación entre los diferentes tipos de planes</h4>
-        <p>Forman una <strong>cascada</strong>: los planes estratégicos guían a los tácticos (mediano plazo) y estos a los operativos (día a día). Todo alineado con los objetivos generales. Cada nivel <strong>deriva del superior y lo hace operable</strong>: si un plan operativo se desalinea del estratégico, se rompe la cascada y se desperdician recursos.</p>
+        <h4>Relación entre los diferentes tipos de planes (la cascada)</h4>
+        <p>Esto <strong>no es otra clasificación</strong>, sino cómo se <strong>encadenan</strong> los planes según el <strong>nivel</strong> que los hace: son los mismos <strong>tres niveles gerenciales de la Unidad 1</strong> (alto, medio y primera línea). Aquí aparece el nivel <strong>táctico</strong> (el del medio), que la tabla de arriba resumía dentro de "operacionales". Forman una <strong>cascada</strong>: cada nivel deriva del superior y lo vuelve más concreto.</p>
+        <div class="tabla-scroll"><table class="guia-tabla">
+          <thead><tr><th>Plan</th><th>Quién lo hace</th><th>Horizonte y alcance</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Estratégico</strong></td><td>Nivel alto</td><td>Largo plazo, toda la empresa (el "qué" y el "hacia dónde")</td></tr>
+            <tr><td><strong>Táctico</strong></td><td>Nivel medio</td><td>Mediano plazo, por área (traduce la estrategia a cada departamento)</td></tr>
+            <tr><td><strong>Operativo</strong></td><td>Primera línea</td><td>Corto plazo, día a día (las tareas concretas)</td></tr>
+          </tbody>
+        </table></div>
+        <p>Todo alineado con los objetivos generales: si un plan operativo se desalinea del estratégico, se <strong>rompe la cascada</strong> y se desperdician recursos.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La planeación formal aumenta la probabilidad de éxito." · "Un plan operativo mal alineado con el estratégico rompe la cascada." · "Un objetivo sin cifra ni plazo no es SMART."</div>
       `
