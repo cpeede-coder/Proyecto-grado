@@ -157,7 +157,7 @@ window.ESTUDIO_GUIA.administracion = {
           <li>Identificación de alternativas.</li>
           <li>Comparación de alternativas frente a las metas.</li>
           <li>Elección de un curso de acción.</li>
-          <li>Formulación de planes de apoyo.</li>
+          <li>Formulación de <strong>planes de apoyo</strong> (planes derivados que sostienen al principal; ej.: si el plan es lanzar un producto, los de apoyo son el de producción, marketing y contratación).</li>
           <li>Conversión de los planes en cifras (presupuestos).</li>
         </ol>
 
@@ -172,6 +172,7 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
 
         <h4>Los tipos de planes</h4>
+        <p>Esto no es un plan especial, sino <strong>4 formas de clasificar cualquier plan</strong> (no confundir con los "planes de apoyo" del paso 6). Un mismo plan se describe con los cuatro criterios a la vez.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Criterio</th><th>Opciones</th></tr></thead>
           <tbody>
