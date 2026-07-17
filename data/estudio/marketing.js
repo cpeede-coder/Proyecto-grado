@@ -235,7 +235,7 @@ window.ESTUDIO.marketing = {
       id: "mkt-fc-031", unidad: "U4", tema: "Posicionamiento de marca", salioEnExamen: true,
       frente: "¿Qué es el posicionamiento de marca?",
       reverso: "El proceso de diseñar la oferta y la imagen de la empresa para ocupar un lugar distintivo y valorado en la mente del público objetivo, frente a los competidores. Define cómo quiere ser percibida.",
-      tip: "Posicionar no es ser mejor en todo, sino ocupar un lugar CLARO y DIFERENTE."
+      tip: "Posicionar no es ser mejor en todo, sino ocupar un lugar CLARO y DIFERENTE. OJO: este posicionamiento (la PERCEPCIÓN de la marca en la mente del cliente) NO es el mismo que el de Estrategia (cómo competir en la industria, Porter)."
     },
     {
       id: "mkt-fc-032", unidad: "U4", tema: "Componentes del posicionamiento",

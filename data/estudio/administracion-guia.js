@@ -40,10 +40,11 @@ window.ESTUDIO_GUIA.administracion = {
           <thead><tr><th>Stakeholder</th><th>Qué busca</th></tr></thead>
           <tbody>
             <tr><td><strong>Accionistas / dueños</strong></td><td>Rentabilidad y valor de las acciones</td></tr>
-            <tr><td><strong>Empleados</strong></td><td>Estabilidad, remuneración justa, buen ambiente</td></tr>
+            <tr><td><strong>Trabajadores</strong></td><td>Estabilidad, remuneración justa, buen ambiente</td></tr>
             <tr><td><strong>Clientes</strong></td><td>Productos y servicios de calidad</td></tr>
             <tr><td><strong>Proveedores</strong></td><td>Relaciones comerciales justas y sostenibles</td></tr>
-            <tr><td><strong>Comunidad y Estado</strong></td><td>Aporte social y ambiental positivo</td></tr>
+            <tr><td><strong>Comunidad y Estado</strong></td><td>Aporte social positivo</td></tr>
+            <tr><td><strong>Medio ambiente</strong></td><td>Uso responsable de los recursos naturales</td></tr>
           </tbody>
         </table></div>
 
@@ -118,9 +119,9 @@ window.ESTUDIO_GUIA.administracion = {
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Primarias (crean/venden/entregan)</th><th>De apoyo (habilitan)</th></tr></thead>
           <tbody>
-            <tr><td>Logística de entrada</td><td>Infraestructura de la empresa</td></tr>
+            <tr><td>Logística interna</td><td>Infraestructura de la empresa</td></tr>
             <tr><td>Operaciones</td><td>Gestión de recursos humanos</td></tr>
-            <tr><td>Logística de salida</td><td>Desarrollo tecnológico</td></tr>
+            <tr><td>Logística externa</td><td>Desarrollo tecnológico</td></tr>
             <tr><td>Marketing y ventas</td><td>Abastecimiento (compras)</td></tr>
             <tr><td>Servicio (postventa)</td><td></td></tr>
           </tbody>
@@ -161,7 +162,7 @@ window.ESTUDIO_GUIA.administracion = {
         </ol>
 
         <h4>Objetivos y cómo fijarlos</h4>
-        <p>Los <strong>objetivos</strong> son resultados deseados, por escrito. Pueden ser <strong>financieros</strong> (desempeño interno) o <strong>estratégicos</strong> (frente a competidores). Los buenos son <strong>SMART</strong>: eSpecíficos, Medibles, Alcanzables, Realistas y con Tiempo.</p>
+        <p>Los <strong>objetivos</strong> son resultados deseados, por escrito. Pueden ser <strong>financieros</strong> (desempeño interno) o <strong>estratégicos</strong> (frente a competidores). Los buenos son <strong>SMART</strong>: eSpecíficos, Medibles, Alcanzables, Relevantes y Temporales (con plazo).</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Método</th><th>Cómo fija objetivos</th><th>Ventaja / Riesgo</th></tr></thead>
           <tbody>

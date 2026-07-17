@@ -269,7 +269,7 @@ window.ESTUDIO.estrategia = {
       id: "est-fc-040", unidad: "U3", tema: "Posicionamiento estratégico", salioEnExamen: true,
       frente: "¿Qué es el posicionamiento estratégico?",
       reverso: "Cómo la empresa decide competir en una industria y qué lugar ocupa en la mente del cliente frente a rivales. Se basa en elecciones conscientes, implica renuncias, debe ser difícil de imitar y consistente en el tiempo.",
-      tip: "No se trata de ser mejor en TODO, sino de ser DISTINTO."
+      tip: "No se trata de ser mejor en TODO, sino de ser DISTINTO. OJO: este posicionamiento (cómo COMPETIR en la industria, Porter) NO es el mismo que el de Marketing (el lugar de la marca en la mente del cliente)."
     },
     {
       id: "est-fc-041", unidad: "U3", tema: "Ventaja competitiva", salioEnExamen: true,
@@ -280,7 +280,7 @@ window.ESTUDIO.estrategia = {
     {
       id: "est-fc-042", unidad: "U3", tema: "Estrategias genéricas", salioEnExamen: true,
       frente: "¿Cuáles son las tres estrategias genéricas de Porter?",
-      reverso: "1) Liderazgo en costos (producir más barato: eficiencia, escala, control de gastos). 2) Diferenciación (atributos únicos valorados: marca, calidad, diseño, innovación, servicio). 3) Enfoque/segmentación (atender mejor un segmento específico).",
+      reverso: "1) Liderazgo en costos (producir más barato: eficiencia, escala, control de gastos). 2) Diferenciación (atributos únicos valorados: marca, calidad, diseño, innovación, servicio). 3) Enfoque (atender mejor un segmento específico).",
       tip: ""
     },
     {

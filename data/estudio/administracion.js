@@ -88,7 +88,7 @@ window.ESTUDIO.administracion = {
     {
       id: "adm-fc-007", unidad: "U1", tema: "Stakeholders",
       frente: "¿Qué son los stakeholders y qué busca cada uno?",
-      reverso: "Individuos o grupos con interés en la organización. Accionistas: rentabilidad; empleados: estabilidad y buen ambiente; clientes: calidad; proveedores: relaciones justas; comunidad y Estado: aporte social y ambiental. Satisfacerlos es clave para el éxito de largo plazo.",
+      reverso: "Individuos o grupos con interés en la organización (que afectan o son afectados por ella). Accionistas: rentabilidad; trabajadores: estabilidad y buen ambiente; clientes: calidad; proveedores: relaciones justas; comunidad y Estado: aporte social; medio ambiente: uso responsable de recursos. Satisfacerlos es clave para el éxito de largo plazo.",
       tip: "Es la base de las preguntas de RSE, sostenibilidad y cultura."
     },
     {
@@ -176,7 +176,7 @@ window.ESTUDIO.administracion = {
     {
       id: "adm-fc-021", unidad: "U2", tema: "Cadena de Valor (Porter)", salioEnExamen: true,
       frente: "¿Qué es la Cadena de Valor de Porter y qué actividades la componen?",
-      reverso: "Herramienta que ve la empresa como una serie de actividades que agregan valor. Primarias (logística de entrada, operaciones, logística de salida, marketing y ventas, servicio) crean valor directo; de apoyo (infraestructura, RRHH, tecnología, compras) las habilitan. El fin es el margen.",
+      reverso: "Herramienta que ve la empresa como una serie de actividades que agregan valor. Primarias (logística interna, operaciones, logística externa, marketing y ventas, servicio) crean valor directo; de apoyo (infraestructura, gestión de RR.HH., desarrollo tecnológico, abastecimiento) las habilitan. El fin es el margen.",
       tip: "Es la herramienta que integra todas las áreas funcionales."
     },
     {
@@ -251,7 +251,7 @@ window.ESTUDIO.administracion = {
     {
       id: "adm-fc-033", unidad: "U3", tema: "Objetivos SMART", salioEnExamen: true,
       frente: "¿Qué significan los objetivos SMART?",
-      reverso: "eSpecíficos, Medibles, Alcanzables, Realistas y con Tiempo (plazo límite). Un buen objetivo cumple los cinco.",
+      reverso: "eSpecíficos, Medibles, Alcanzables, Relevantes y Temporales (con plazo). Un buen objetivo cumple los cinco.",
       tip: ""
     },
     {
