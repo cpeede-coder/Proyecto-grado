@@ -1378,6 +1378,7 @@ let ESTUDIO_SOLO_EXAMEN = false;         // true = solo tarjetas con salioEnExam
 let estudioCola = [];                    // cola viva de la sesión (objetos tarjeta)
 let estudioActual = null;                // tarjeta en pantalla
 let estudioRepasoLibre = false;          // true cuando ya estaban todas dominadas
+let estudioRondaTotal = 0;               // tarjetas con que arrancó la ronda (para la barra de avance)
 
 function estudioDisponible() {
   return window.ESTUDIO && Object.keys(window.ESTUDIO).length > 0;
@@ -1494,13 +1495,17 @@ function renderEstudioConfig() {
 }
 
 function actualizarBarraEstudio() {
-  const { dom, total } = estudioContarDominadas();
-  const pct = total ? Math.round((dom / total) * 100) : 0;
+  // Barra = avance en la ronda actual (dinámica: sube al despachar tarjetas)
+  const restantes = estudioCola.length;
+  const hechas = Math.max(0, estudioRondaTotal - restantes);
+  const pct = estudioRondaTotal ? Math.round((hechas / estudioRondaTotal) * 100) : 0;
   const fill = $("#estudio-barra-fill");
   if (fill) fill.style.width = pct + "%";
+  // Contador de la ronda + progreso de dominio (caja 5) como dato secundario
+  const { dom, total } = estudioContarDominadas();
   $("#estudio-dominadas").textContent = `✅ Dominadas: ${dom}/${total}`;
-  $("#estudio-restantes").textContent = estudioCola.length
-    ? `Quedan en esta ronda: ${estudioCola.length}`
+  $("#estudio-restantes").textContent = restantes
+    ? `${hechas}/${estudioRondaTotal} · quedan ${restantes}`
     : "";
 }
 
@@ -1514,6 +1519,7 @@ function empezarSesionEstudio() {
   if (estudioRepasoLibre) pendientes = cards.slice();
   // Baraja y luego ordena por caja ascendente (lo menos sabido primero, orden estable)
   estudioCola = barajar(pendientes).sort((a, b) => (prog[a.id] || 1) - (prog[b.id] || 1));
+  estudioRondaTotal = estudioCola.length;
 
   $("#estudio-config").classList.add("hidden");
   $("#estudio-fin").classList.add("hidden");
@@ -1560,13 +1566,10 @@ function evaluarTarjetaEstudio(nivel) {
   guardarProgresoEstudio(ESTUDIO_MATERIA, prog);
 
   const tarjeta = estudioCola.shift();
-  const dominada = (nivel === "si" && caja >= 5);
-  if (!dominada) {
-    // La reinyecta más adelante en la cola: más cerca si la falló, más lejos si le fue bien
-    let pos;
-    if (nivel === "no") pos = Math.min(3, estudioCola.length);
-    else if (nivel === "mas") pos = Math.min(7, estudioCola.length);
-    else pos = estudioCola.length;
+  // La ronda avanza tarjeta a tarjeta: "sí" y "más o menos" la despachan;
+  // solo "no" (la que no sabías) vuelve a aparecer pronto para reforzarla.
+  if (nivel === "no") {
+    const pos = Math.min(3, estudioCola.length);
     estudioCola.splice(pos, 0, tarjeta);
   }
   mostrarTarjetaEstudio();
