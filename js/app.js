@@ -1479,7 +1479,7 @@ function renderEstudioConfig() {
   $("#estudio-titulo").textContent = modoGuia ? "📖 Estudiar la materia" : "🃏 Repasar con flashcards";
   $("#estudio-desc").textContent = modoGuia
     ? "Lee la guía ordenada de la materia: definiciones clave, tablas comparativas y frases de examen. Elige la materia y ábrela."
-    : "Repaso con recuerdo activo: mira el concepto, intenta recordarlo y recién ahí revela la respuesta. La app te repite más seguido lo que fallas.";
+    : "Repaso con recuerdo activo: mira el concepto, intenta recordarlo y recién ahí revela la respuesta. Cada tarjeta aparece una vez por ronda; lo que fallas vuelve primero en la próxima ronda.";
   $("#campo-estudio-unidades").classList.toggle("hidden", modoGuia);
   $("#campo-estudio-solo-examen").classList.toggle("hidden", modoGuia);
   $("#estudio-resumen-progreso").classList.toggle("hidden", modoGuia);
@@ -1565,13 +1565,9 @@ function evaluarTarjetaEstudio(nivel) {
   prog[estudioActual.id] = caja;
   guardarProgresoEstudio(ESTUDIO_MATERIA, prog);
 
-  const tarjeta = estudioCola.shift();
-  // La ronda avanza tarjeta a tarjeta: "sí" y "más o menos" la despachan;
-  // solo "no" (la que no sabías) vuelve a aparecer pronto para reforzarla.
-  if (nivel === "no") {
-    const pos = Math.min(3, estudioCola.length);
-    estudioCola.splice(pos, 0, tarjeta);
-  }
+  // La ronda es UNA sola pasada: cada tarjeta aparece una única vez.
+  // Lo que fallas queda en caja 1 y vuelve a salir (primero) en la próxima ronda.
+  estudioCola.shift();
   mostrarTarjetaEstudio();
 }
 
