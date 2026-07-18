@@ -1395,6 +1395,27 @@ function guardarProgresoEstudio(materia, prog) {
   try { localStorage.setItem(claveProgresoEstudio(materia), JSON.stringify(prog)); } catch (e) {}
 }
 
+// Sesión en curso: guarda la ronda para poder retomarla tras un F5 / salir
+const CLAVE_SESION_ESTUDIO = "examen-grado-estudio-sesion";
+function guardarSesionEstudio() {
+  try {
+    localStorage.setItem(CLAVE_SESION_ESTUDIO, JSON.stringify({
+      materia: ESTUDIO_MATERIA,
+      unidades: [...ESTUDIO_UNIDADES],
+      soloExamen: ESTUDIO_SOLO_EXAMEN,
+      colaIds: estudioCola.map(c => c.id),
+      rondaTotal: estudioRondaTotal
+    }));
+  } catch (e) {}
+}
+function leerSesionEstudio() {
+  try { return JSON.parse(localStorage.getItem(CLAVE_SESION_ESTUDIO)) || null; }
+  catch (e) { return null; }
+}
+function borrarSesionEstudio() {
+  try { localStorage.removeItem(CLAVE_SESION_ESTUDIO); } catch (e) {}
+}
+
 // Tarjetas de la materia actual filtradas por las unidades elegidas (vacío = todas)
 function estudioTarjetasSeleccionadas() {
   const data = window.ESTUDIO && window.ESTUDIO[ESTUDIO_MATERIA];
@@ -1492,6 +1513,18 @@ function renderEstudioConfig() {
     btnPrim.disabled = false;
     btnPrim.textContent = "🃏 Empezar repaso";
   }
+
+  // Botón "Continuar ronda" si quedó una sesión a medias (flashcards)
+  const btnCont = $("#btn-estudio-continuar");
+  const sesion = leerSesionEstudio();
+  if (!modoGuia && sesion && sesion.colaIds && sesion.colaIds.length) {
+    const nombreMat = (window.ESTUDIO[sesion.materia] && window.ESTUDIO[sesion.materia].nombre) || sesion.materia;
+    const hechas = Math.max(0, (sesion.rondaTotal || 0) - sesion.colaIds.length);
+    btnCont.textContent = `▶ Continuar ronda de ${nombreMat} (${hechas}/${sesion.rondaTotal || "?"})`;
+    btnCont.classList.remove("hidden");
+  } else {
+    btnCont.classList.add("hidden");
+  }
 }
 
 function actualizarBarraEstudio() {
@@ -1527,6 +1560,25 @@ function empezarSesionEstudio() {
   mostrarTarjetaEstudio();
 }
 
+// Retoma una ronda guardada (tras un F5 o salir a mitad de camino)
+function continuarSesionEstudio() {
+  const s = leerSesionEstudio();
+  if (!s) return;
+  ESTUDIO_MATERIA = s.materia;
+  ESTUDIO_UNIDADES = new Set(s.unidades || []);
+  ESTUDIO_SOLO_EXAMEN = !!s.soloExamen;
+  const data = window.ESTUDIO && window.ESTUDIO[ESTUDIO_MATERIA];
+  const porId = {};
+  ((data && data.tarjetas) || []).forEach(c => { porId[c.id] = c; });
+  estudioCola = (s.colaIds || []).map(id => porId[id]).filter(Boolean);
+  estudioRondaTotal = s.rondaTotal || estudioCola.length;
+  if (!estudioCola.length) { borrarSesionEstudio(); renderEstudioConfig(); return; }
+  $("#estudio-config").classList.add("hidden");
+  $("#estudio-fin").classList.add("hidden");
+  $("#estudio-sesion").classList.remove("hidden");
+  mostrarTarjetaEstudio();
+}
+
 function mostrarTarjetaEstudio() {
   if (!estudioCola.length) { finSesionEstudio(); return; }
   estudioActual = estudioCola[0];
@@ -1544,6 +1596,7 @@ function mostrarTarjetaEstudio() {
   $("#estudio-autoeval").classList.add("hidden");
   $("#estudio-tarjeta").classList.remove("revelada");
   actualizarBarraEstudio();
+  guardarSesionEstudio();
   window.scrollTo(0, 0);
 }
 
@@ -1572,6 +1625,7 @@ function evaluarTarjetaEstudio(nivel) {
 }
 
 function finSesionEstudio() {
+  borrarSesionEstudio();
   $("#estudio-sesion").classList.add("hidden");
   $("#estudio-fin").classList.remove("hidden");
   const { dom, total } = estudioContarDominadas();
@@ -1662,6 +1716,7 @@ function iniciarEstudio() {
     if (ESTUDIO_MODO === "guia") mostrarGuiaEstudio();
     else empezarSesionEstudio();
   });
+  $("#btn-estudio-continuar").addEventListener("click", continuarSesionEstudio);
   $("#btn-estudio-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
   $("#btn-estudio-terminar").addEventListener("click", () => {
     $("#estudio-sesion").classList.add("hidden");
@@ -1687,6 +1742,8 @@ function iniciarEstudio() {
   $("#btn-estudio-reiniciar").addEventListener("click", () => {
     if (!confirm("¿Reiniciar tu progreso de estudio de esta materia? Se borran las tarjetas marcadas como dominadas (no afecta tu historial de exámenes).")) return;
     localStorage.removeItem(claveProgresoEstudio(ESTUDIO_MATERIA));
+    const ses = leerSesionEstudio();
+    if (ses && ses.materia === ESTUDIO_MATERIA) borrarSesionEstudio();
     renderEstudioConfig();
   });
   const chkExamen = $("#estudio-solo-examen");
