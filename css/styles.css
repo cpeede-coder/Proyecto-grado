@@ -758,19 +758,19 @@ body.vista-config main { max-width: 1040px; }
 .estudio-stats span:first-child { font-weight: 600; color: var(--texto); }
 
 /* Tarjeta */
-.flashcard { cursor: pointer; }
+.flashcard { cursor: pointer; perspective: 1200px; }
 .flashcard-meta {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 18px;
 }
-.flashcard-cuerpo { min-height: 180px; }
+.flashcard-cuerpo { min-height: 180px; transform-style: preserve-3d; will-change: transform; }
+.flashcard-cuerpo.flip-anim { transition: transform 0.23s ease-in; }
 .flashcard-cara { padding: 4px 0; }
-.flashcard-reverso {
-  margin-top: 18px;
-  padding-top: 18px;
-  border-top: 1px dashed var(--borde);
+.flashcard-reverso { margin-top: 0; padding-top: 0; border-top: none; }
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-cuerpo.flip-anim { transition: none; }
 }
 .flashcard-label {
   text-transform: uppercase;

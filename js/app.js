@@ -1379,6 +1379,8 @@ let estudioCola = [];                    // cola viva de la sesión (objetos tar
 let estudioActual = null;                // tarjeta en pantalla
 let estudioRepasoLibre = false;          // true cuando ya estaban todas dominadas
 let estudioRondaTotal = 0;               // tarjetas con que arrancó la ronda (para la barra de avance)
+let estudioRondaSi = 0, estudioRondaMas = 0, estudioRondaNo = 0; // resultados de la ronda actual
+let estudioAnimando = false;             // true mientras la tarjeta está girando (evita doble giro)
 
 function estudioDisponible() {
   return window.ESTUDIO && Object.keys(window.ESTUDIO).length > 0;
@@ -1404,7 +1406,8 @@ function guardarSesionEstudio() {
       unidades: [...ESTUDIO_UNIDADES],
       soloExamen: ESTUDIO_SOLO_EXAMEN,
       colaIds: estudioCola.map(c => c.id),
-      rondaTotal: estudioRondaTotal
+      rondaTotal: estudioRondaTotal,
+      si: estudioRondaSi, mas: estudioRondaMas, no: estudioRondaNo
     }));
   } catch (e) {}
 }
@@ -1553,6 +1556,7 @@ function empezarSesionEstudio() {
   // Baraja y luego ordena por caja ascendente (lo menos sabido primero, orden estable)
   estudioCola = barajar(pendientes).sort((a, b) => (prog[a.id] || 1) - (prog[b.id] || 1));
   estudioRondaTotal = estudioCola.length;
+  estudioRondaSi = estudioRondaMas = estudioRondaNo = 0;
 
   $("#estudio-config").classList.add("hidden");
   $("#estudio-fin").classList.add("hidden");
@@ -1572,6 +1576,7 @@ function continuarSesionEstudio() {
   ((data && data.tarjetas) || []).forEach(c => { porId[c.id] = c; });
   estudioCola = (s.colaIds || []).map(id => porId[id]).filter(Boolean);
   estudioRondaTotal = s.rondaTotal || estudioCola.length;
+  estudioRondaSi = s.si || 0; estudioRondaMas = s.mas || 0; estudioRondaNo = s.no || 0;
   if (!estudioCola.length) { borrarSesionEstudio(); renderEstudioConfig(); return; }
   $("#estudio-config").classList.add("hidden");
   $("#estudio-fin").classList.add("hidden");
@@ -1590,21 +1595,54 @@ function mostrarTarjetaEstudio() {
   const tip = $("#estudio-fc-tip");
   if (estudioActual.tip) { tip.textContent = "💡 " + estudioActual.tip; tip.classList.remove("hidden"); }
   else { tip.textContent = ""; tip.classList.add("hidden"); }
-  // Estado inicial: reverso oculto, botón revelar visible, autoeval oculta
+  // Estado inicial: frente visible, reverso oculto, sin giro, autoeval oculta
+  const frente = document.querySelector("#estudio-tarjeta .flashcard-frente");
+  if (frente) frente.classList.remove("hidden");
   $("#estudio-fc-reverso-cont").classList.add("hidden");
   $("#btn-estudio-revelar").classList.remove("hidden");
   $("#estudio-autoeval").classList.add("hidden");
   $("#estudio-tarjeta").classList.remove("revelada");
+  const cuerpo = document.querySelector("#estudio-tarjeta .flashcard-cuerpo");
+  if (cuerpo) { cuerpo.classList.remove("flip-anim"); cuerpo.style.transform = ""; }
+  estudioAnimando = false;
   actualizarBarraEstudio();
   guardarSesionEstudio();
   window.scrollTo(0, 0);
 }
 
+// Revela la respuesta con un giro 3D de 180° sobre el eje vertical.
+// Truco anti-espejo: gira el frente a 90° (canto), intercambia el contenido y
+// entra el reverso desde 270° hasta 360° (siempre de cara, nunca reflejado).
 function revelarTarjetaEstudio() {
-  $("#estudio-fc-reverso-cont").classList.remove("hidden");
-  $("#btn-estudio-revelar").classList.add("hidden");
-  $("#estudio-autoeval").classList.remove("hidden");
-  $("#estudio-tarjeta").classList.add("revelada");
+  if (estudioAnimando) return;
+  if ($("#estudio-tarjeta").classList.contains("revelada")) return;
+  const cuerpo = document.querySelector("#estudio-tarjeta .flashcard-cuerpo");
+  const frente = document.querySelector("#estudio-tarjeta .flashcard-frente");
+  const mostrarReverso = () => {
+    if (frente) frente.classList.add("hidden");
+    $("#estudio-fc-reverso-cont").classList.remove("hidden");
+    $("#btn-estudio-revelar").classList.add("hidden");
+    $("#estudio-autoeval").classList.remove("hidden");
+    $("#estudio-tarjeta").classList.add("revelada");
+  };
+  const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce || !cuerpo) { mostrarReverso(); return; }
+  estudioAnimando = true;
+  cuerpo.classList.add("flip-anim");
+  cuerpo.style.transform = "rotateY(90deg)";
+  setTimeout(() => {
+    mostrarReverso();
+    cuerpo.classList.remove("flip-anim");     // salto instantáneo al canto opuesto
+    cuerpo.style.transform = "rotateY(270deg)";
+    void cuerpo.offsetWidth;                  // fuerza reflow
+    cuerpo.classList.add("flip-anim");
+    cuerpo.style.transform = "rotateY(360deg)";
+    setTimeout(() => {
+      cuerpo.classList.remove("flip-anim");
+      cuerpo.style.transform = "";
+      estudioAnimando = false;
+    }, 240);
+  }, 230);
 }
 
 // Autoevaluación → mueve la tarjeta de caja y la reencola según el resultado
@@ -1612,9 +1650,9 @@ function evaluarTarjetaEstudio(nivel) {
   if (!estudioActual) return;
   const prog = cargarProgresoEstudio(ESTUDIO_MATERIA);
   let caja = prog[estudioActual.id] || 1;
-  if (nivel === "no") caja = 1;                 // falló → vuelve a la caja 1
-  else if (nivel === "mas") caja = Math.max(1, caja); // dudó → se mantiene
-  else if (nivel === "si") caja = Math.min(5, caja + 1); // la sabía → sube de caja
+  if (nivel === "no") { caja = 1; estudioRondaNo++; }                    // falló → vuelve a la caja 1
+  else if (nivel === "mas") { caja = Math.max(1, caja); estudioRondaMas++; } // dudó → se mantiene
+  else if (nivel === "si") { caja = Math.min(5, caja + 1); estudioRondaSi++; } // la sabía → sube de caja
   prog[estudioActual.id] = caja;
   guardarProgresoEstudio(ESTUDIO_MATERIA, prog);
 
@@ -1628,16 +1666,27 @@ function finSesionEstudio() {
   borrarSesionEstudio();
   $("#estudio-sesion").classList.add("hidden");
   $("#estudio-fin").classList.remove("hidden");
-  const { dom, total } = estudioContarDominadas();
+  const totalRonda = estudioRondaTotal || (estudioRondaSi + estudioRondaMas + estudioRondaNo);
+  const pendientesRonda = estudioRondaMas + estudioRondaNo;
+  const { dom, total: totalSel } = estudioContarDominadas();
   const titulo = $("#estudio-fin-titulo");
   const texto = $("#estudio-fin-texto");
-  if (dom >= total && total > 0) {
-    titulo.textContent = "🏆 ¡Dominaste toda la selección!";
-    texto.textContent = `Marcaste como sabidas las ${total} tarjetas. Vuelve en unos días para repasar y que no se te olviden.`;
+  const btnOtra = $("#btn-estudio-otra");
+
+  titulo.textContent = pendientesRonda === 0 && totalRonda > 0
+    ? "🏆 ¡Ronda perfecta!"
+    : "🎉 ¡Ronda completada!";
+
+  let msg = `En esta ronda: ✅ ${estudioRondaSi} sabidas · 🤔 ${estudioRondaMas} más o menos · ❌ ${estudioRondaNo} no sabías (de ${totalRonda}).`;
+  if (pendientesRonda > 0) {
+    msg += ` Las ${pendientesRonda} que marcaste 🤔 o ❌ vuelven a salir PRIMERO si haces otra ronda.`;
+    if (btnOtra) btnOtra.textContent = `🔁 Siguiente ronda (${pendientesRonda} por reforzar)`;
   } else {
-    titulo.textContent = "🎉 ¡Buena ronda!";
-    texto.textContent = `Llevas ${dom} de ${total} tarjetas dominadas. Sigue repasando: las que fallaste volverán a aparecer más seguido.`;
+    msg += " ¡Las supiste todas!";
+    if (btnOtra) btnOtra.textContent = "🔁 Otra ronda";
   }
+  msg += ` · Memorizadas a largo plazo (necesitan 5 aciertos): ${dom}/${totalSel}.`;
+  texto.textContent = msg;
 }
 
 // Renderiza la guía de estudio (material para leer) de la materia actual
