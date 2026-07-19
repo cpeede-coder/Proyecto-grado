@@ -1381,6 +1381,7 @@ let estudioRepasoLibre = false;          // true cuando ya estaban todas dominad
 let estudioRondaTotal = 0;               // tarjetas con que arrancó la ronda (para la barra de avance)
 let estudioRondaSi = 0, estudioRondaMas = 0, estudioRondaNo = 0; // resultados de la ronda actual
 let estudioAnimando = false;             // true mientras la tarjeta está girando (evita doble giro)
+let estudioRondaNum = 0;                  // número de ronda actual (para el espaciado por cajas)
 
 function estudioDisponible() {
   return window.ESTUDIO && Object.keys(window.ESTUDIO).length > 0;
@@ -1418,6 +1419,19 @@ function leerSesionEstudio() {
 function borrarSesionEstudio() {
   try { localStorage.removeItem(CLAVE_SESION_ESTUDIO); } catch (e) {}
 }
+
+// Plan de espaciado por materia: número de ronda + cuándo "toca" cada tarjeta.
+// Una tarjeta que subes de caja aparece cada vez menos seguido (salta rondas).
+function clavePlanEstudio(materia) { return "examen-grado-estudio-plan-" + materia; }
+function cargarPlanEstudio(materia) {
+  try { return JSON.parse(localStorage.getItem(clavePlanEstudio(materia))) || { ronda: 0, due: {} }; }
+  catch (e) { return { ronda: 0, due: {} }; }
+}
+function guardarPlanEstudio(materia, plan) {
+  try { localStorage.setItem(clavePlanEstudio(materia), JSON.stringify(plan)); } catch (e) {}
+}
+// Cuántas rondas esperar antes de volver a mostrar una tarjeta, según su caja
+const INTERVALO_CAJA = { 1: 1, 2: 2, 3: 3, 4: 5 };
 
 // Tarjetas de la materia actual filtradas por las unidades elegidas (vacío = todas)
 function estudioTarjetasSeleccionadas() {
@@ -1549,10 +1563,27 @@ function empezarSesionEstudio() {
   const cards = estudioTarjetasSeleccionadas();
   if (!cards.length) return;
   const prog = cargarProgresoEstudio(ESTUDIO_MATERIA);
-  // La ronda prioriza las NO dominadas (caja < 5). Si ya están todas, repaso libre.
-  let pendientes = cards.filter(c => (prog[c.id] || 1) < 5);
-  estudioRepasoLibre = pendientes.length === 0;
-  if (estudioRepasoLibre) pendientes = cards.slice();
+  // Avanza el contador de rondas de la materia
+  const plan = cargarPlanEstudio(ESTUDIO_MATERIA);
+  estudioRondaNum = (plan.ronda || 0) + 1;
+  plan.ronda = estudioRondaNum;
+  guardarPlanEstudio(ESTUDIO_MATERIA, plan);
+
+  // Base: las NO dominadas (caja < 5). Si ya están todas dominadas, repaso libre (todas).
+  const noDominadas = cards.filter(c => (prog[c.id] || 1) < 5);
+  estudioRepasoLibre = noDominadas.length === 0;
+  let pendientes;
+  if (estudioRepasoLibre) {
+    pendientes = cards.slice();
+  } else {
+    // Solo las que "tocan" esta ronda: nuevas (sin due) o cuyo turno ya llegó
+    pendientes = noDominadas.filter(c => {
+      const due = plan.due[c.id];
+      return due == null || due <= estudioRondaNum;
+    });
+    // Si ninguna vence aún (todas agendadas a futuro), repasa igual las no dominadas
+    if (!pendientes.length) pendientes = noDominadas;
+  }
   // Baraja y luego ordena por caja ascendente (lo menos sabido primero, orden estable)
   estudioCola = barajar(pendientes).sort((a, b) => (prog[a.id] || 1) - (prog[b.id] || 1));
   estudioRondaTotal = estudioCola.length;
@@ -1577,6 +1608,7 @@ function continuarSesionEstudio() {
   estudioCola = (s.colaIds || []).map(id => porId[id]).filter(Boolean);
   estudioRondaTotal = s.rondaTotal || estudioCola.length;
   estudioRondaSi = s.si || 0; estudioRondaMas = s.mas || 0; estudioRondaNo = s.no || 0;
+  estudioRondaNum = cargarPlanEstudio(ESTUDIO_MATERIA).ronda || 1;
   if (!estudioCola.length) { borrarSesionEstudio(); renderEstudioConfig(); return; }
   $("#estudio-config").classList.add("hidden");
   $("#estudio-fin").classList.add("hidden");
@@ -1655,6 +1687,13 @@ function evaluarTarjetaEstudio(nivel) {
   else if (nivel === "si") { caja = Math.min(5, caja + 1); estudioRondaSi++; } // la sabía → sube de caja
   prog[estudioActual.id] = caja;
   guardarProgresoEstudio(ESTUDIO_MATERIA, prog);
+
+  // Agenda cuándo vuelve a aparecer: a mayor caja, más rondas de espera
+  const plan = cargarPlanEstudio(ESTUDIO_MATERIA);
+  const rondaBase = estudioRondaNum || plan.ronda || 1;
+  if (caja >= 5) delete plan.due[estudioActual.id];               // dominada: sale de la rotación
+  else plan.due[estudioActual.id] = rondaBase + (INTERVALO_CAJA[caja] || 1);
+  guardarPlanEstudio(ESTUDIO_MATERIA, plan);
 
   // La ronda es UNA sola pasada: cada tarjeta aparece una única vez.
   // Lo que fallas queda en caja 1 y vuelve a salir (primero) en la próxima ronda.
@@ -1791,6 +1830,7 @@ function iniciarEstudio() {
   $("#btn-estudio-reiniciar").addEventListener("click", () => {
     if (!confirm("¿Reiniciar tu progreso de estudio de esta materia? Se borran las tarjetas marcadas como dominadas (no afecta tu historial de exámenes).")) return;
     localStorage.removeItem(claveProgresoEstudio(ESTUDIO_MATERIA));
+    localStorage.removeItem(clavePlanEstudio(ESTUDIO_MATERIA));
     const ses = leerSesionEstudio();
     if (ses && ses.materia === ESTUDIO_MATERIA) borrarSesionEstudio();
     renderEstudioConfig();
