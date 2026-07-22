@@ -32,6 +32,32 @@ function estaDesbloqueado() {
   return localStorage.getItem(CLAVE_ACCESO) === "1";
 }
 
+// ---- Modo admin (solo el dueño) ---------------------------------------
+// Se desbloquea escribiendo un código admin secreto en el campo de código.
+// En el sitio solo vive el HASH del código (no el texto), así que nadie lo
+// descubre leyendo el JS. Al validar, guarda un flag local y desbloquea todo.
+const CLAVE_ADMIN = "examen-grado-admin";
+const ADMIN_HASH = 538248710336447; // cyrb53 de EG-ADMIN-WQPN-FMHY (el texto solo lo tiene el dueño)
+function cyrb53(str, seed = 0) {
+  let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+  for (let i = 0, ch; i < str.length; i++) {
+    ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507); h1 ^= Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507); h2 ^= Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 4294967296 * (2097151 & h2) + (h1 >>> 0);
+}
+function esAdmin() {
+  return localStorage.getItem(CLAVE_ADMIN) === "1";
+}
+// ¿El código escrito es el código admin? (se compara por hash)
+function esCodigoAdmin(codigo) {
+  const limpio = (codigo || "").trim().toUpperCase().replace(/\s+/g, "");
+  return !!limpio && cyrb53(limpio) === ADMIN_HASH;
+}
+
 // ¿Están puestas la URL y la clave anon de Supabase?
 function supabaseConfigurado() {
   const u = window.ACCESO.supabaseUrl || "";
@@ -201,6 +227,8 @@ function saludoPersonal(nombre) {
 // Actualiza la interfaz según el estado de acceso (demo vs completo)
 function reflejarAcceso() {
   const libre = estaDesbloqueado();
+  const btnAdmin = $("#btn-admin");
+  if (btnAdmin) btnAdmin.classList.toggle("hidden", !esAdmin());
   $("#banner-demo").classList.toggle("hidden", libre);
   const nombreConfig = obtenerNombre();
   const tituloBase = nombreConfig ? `${nombreConfig}, configura tu examen` : "Configura tu examen";
@@ -313,6 +341,19 @@ async function canjearYReflejar() {
     estado.textContent = "Escribe tu código de acceso.";
     estado.style.color = "var(--peligro)";
     $("#modal-codigo").focus();
+    return;
+  }
+  // Código admin (solo dueño): desbloquea el modo admin sin tocar Supabase
+  if (esCodigoAdmin(codigo)) {
+    localStorage.setItem(CLAVE_ADMIN, "1");
+    localStorage.setItem("examen-grado-admin-token", codigo.trim().toUpperCase().replace(/\s+/g, ""));
+    guardarPerfil(nombre, apellido);
+    desbloquear();
+    cargarPreguntasPremium();
+    estado.textContent = `🔧 Modo admin activado, ${nombre}. Tienes acceso completo + el panel 🔧.`;
+    estado.style.color = "var(--exito)";
+    reflejarAcceso();
+    setTimeout(cerrarModalAcceso, 1800);
     return;
   }
   boton.disabled = true;
@@ -1865,9 +1906,162 @@ function iniciarScrollTop() {
   actualizar();
 }
 
+// ---------------------------------------------------------------------
+// Panel de administración (solo dueño) + Explorador de flashcards
+// ---------------------------------------------------------------------
+function abrirAdmin() {
+  $("#admin-analitica").classList.add("hidden");
+  $("#admin-analitica").innerHTML = "";
+  mostrarPantalla("pantalla-admin");
+}
+
+let EXPFC_MAT = "todas", EXPFC_Q = "";
+const _normFC = s => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+const _escFC = s => (s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+function _resaltaFC(txt, term) {
+  if (!term) return _escFC(txt);
+  const nt = _normFC(txt), nq = _normFC(term), i = nt.indexOf(nq);
+  if (i < 0) return _escFC(txt);
+  return _escFC(txt.slice(0, i)) + "<mark>" + _escFC(txt.slice(i, i + term.length)) + "</mark>" + _escFC(txt.slice(i + term.length));
+}
+function _materiasFC() { return Object.keys(window.ESTUDIO || {}); }
+
+function abrirExploradorFC() {
+  EXPFC_MAT = "todas"; EXPFC_Q = "";
+  const inp = $("#expfc-buscar"); if (inp) inp.value = "";
+  renderExpFCChips();
+  renderExpFCVerif();
+  renderExpFC();
+  mostrarPantalla("pantalla-explorador-fc");
+}
+
+function renderExpFCVerif() {
+  let total = 0, dupIds = 0, dupFr = 0;
+  const nombres = [];
+  for (const m of _materiasFC()) {
+    const cards = window.ESTUDIO[m].tarjetas || [];
+    total += cards.length;
+    nombres.push((window.ESTUDIO[m].nombre || m) + " " + cards.length);
+    const ids = new Set(), fr = new Set();
+    for (const c of cards) {
+      if (ids.has(c.id)) dupIds++; else ids.add(c.id);
+      const k = _normFC(c.frente).replace(/\s+/g, " ").trim();
+      if (fr.has(k)) dupFr++; else fr.add(k);
+    }
+  }
+  $("#expfc-sub").textContent = total + " tarjetas en total · " + nombres.join(" · ");
+  $("#expfc-verif").innerHTML =
+    '<span class="expfc-pill ' + (dupIds ? "bad" : "ok") + '">' + (dupIds ? ("⚠ " + dupIds + " ids repetidos") : "✓ 0 ids repetidos") + "</span>" +
+    '<span class="expfc-pill ' + (dupFr ? "bad" : "ok") + '">' + (dupFr ? ("⚠ " + dupFr + " enunciados idénticos") : "✓ 0 enunciados idénticos") + "</span>" +
+    '<span class="expfc-pill ok">✓ ' + total + " tarjetas únicas</span>";
+}
+
+function renderExpFCChips() {
+  const cont = $("#expfc-materias");
+  const total = _materiasFC().reduce((a, m) => a + (window.ESTUDIO[m].tarjetas || []).length, 0);
+  const chip = (key, label, n) => '<button class="chip' + (EXPFC_MAT === key ? " seleccionado" : "") + '" data-m="' + key + '">' + label + " (" + n + ")</button>";
+  let h = chip("todas", "Todas", total);
+  for (const m of _materiasFC()) h += chip(m, window.ESTUDIO[m].nombre || m, (window.ESTUDIO[m].tarjetas || []).length);
+  cont.innerHTML = h;
+  cont.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    EXPFC_MAT = b.dataset.m; renderExpFCChips(); renderExpFC();
+  }));
+}
+
+function renderExpFC() {
+  const term = EXPFC_Q.trim();
+  const nq = _normFC(term);
+  const mats = EXPFC_MAT === "todas" ? _materiasFC() : [EXPFC_MAT];
+  let html = "", visibles = 0;
+  for (const m of mats) {
+    const info = window.ESTUDIO[m];
+    let cards = info.tarjetas || [];
+    if (term) cards = cards.filter(c => _normFC(c.id + " " + c.tema + " " + c.frente + " " + c.reverso).includes(nq));
+    if (!cards.length) continue;
+    visibles += cards.length;
+    html += '<section class="expfc-materia"><h3>' + _escFC(info.nombre || m) + '</h3><p class="ayuda">' + cards.length + (term ? " coincidencias" : " tarjetas") + "</p>";
+    const porU = {};
+    cards.forEach(c => { (porU[c.unidad] = porU[c.unidad] || []).push(c); });
+    for (const u of Object.keys(porU).sort()) {
+      const tit = ((info.unidades || []).find(x => x.id === u) || {}).titulo;
+      html += '<p class="expfc-unidad">' + _escFC(u) + (tit ? " · " + _escFC(tit) : "") + "</p>";
+      for (const c of porU[u]) {
+        html += '<div class="expfc-card"><div class="expfc-meta"><span class="expfc-id">' + _escFC(c.id) + "</span>" +
+          '<span class="expfc-u">' + _escFC(c.unidad) + "</span>" + (c.salioEnExamen ? '<span class="expfc-star">⭐ examen real</span>' : "") +
+          '<span class="expfc-tema">' + _resaltaFC(c.tema, term) + "</span></div>" +
+          '<p class="expfc-frente">' + _resaltaFC(c.frente, term) + "</p>" +
+          '<div class="expfc-reverso">' + _resaltaFC(c.reverso, term) + "</div>" +
+          '<p class="expfc-hint">Toca para ver la respuesta</p></div>';
+      }
+    }
+    html += "</section>";
+  }
+  $("#expfc-contador").textContent = term ? (visibles + " coincidencias") : (visibles + " tarjetas");
+  const lista = $("#expfc-lista");
+  lista.innerHTML = html || '<p class="ayuda">Sin coincidencias.</p>';
+  lista.querySelectorAll(".expfc-card").forEach(el => el.addEventListener("click", () => el.classList.toggle("abierta")));
+}
+
+// Analítica de visitas: consulta un RPC admin protegido por token en Supabase.
+async function abrirAnaliticaAdmin() {
+  const cont = $("#admin-analitica");
+  cont.classList.remove("hidden");
+  cont.innerHTML = '<p class="ayuda">⏳ Cargando analítica…</p>';
+  if (!supabaseConfigurado()) { cont.innerHTML = '<p class="ayuda">⚠️ Supabase no está configurado.</p>'; return; }
+  try {
+    const url = window.ACCESO.supabaseUrl.replace(/\/+$/, "") + "/rest/v1/rpc/admin_resumen";
+    const headers = {
+      "apikey": window.ACCESO.supabaseAnonKey,
+      "Authorization": "Bearer " + window.ACCESO.supabaseAnonKey,
+      "Content-Type": "application/json"
+    };
+    const schema = (window.ACCESO.supabaseSchema || "").trim();
+    if (schema) { headers["Content-Profile"] = schema; headers["Accept-Profile"] = schema; }
+    const token = localStorage.getItem("examen-grado-admin-token") || "";
+    const res = await fetch(url, { method: "POST", headers, body: JSON.stringify({ p_token: token }) });
+    if (res.status === 404) {
+      cont.innerHTML = '<p class="ayuda">📊 Falta activar la analítica: corre una vez el SQL <strong>admin_resumen</strong> en tu Supabase (te lo paso). Después, aquí verás las visitas.</p>';
+      return;
+    }
+    if (!res.ok) { cont.innerHTML = '<p class="ayuda">⚠️ No se pudo cargar (revisa tu conexión).</p>'; return; }
+    const data = await res.json();
+    if (data && data.ok === false) { cont.innerHTML = '<p class="ayuda">🔒 Token admin inválido.</p>'; return; }
+    const filas = Array.isArray(data) ? data : (data && data.filas) || [];
+    if (!filas.length) { cont.innerHTML = '<p class="ayuda">Sin visitas registradas todavía.</p>'; return; }
+    let tv = 0, tp = 0;
+    let html = '<div class="tabla-scroll"><table class="guia-tabla"><thead><tr><th>Día</th><th>Visitas</th><th>Personas aprox.</th></tr></thead><tbody>';
+    for (const f of filas) {
+      tv += (f.visitas || 0); tp += (f.personas_aprox || f.personas || 0);
+      html += "<tr><td>" + _escFC(String(f.dia || "")) + "</td><td>" + (f.visitas || 0) + "</td><td>" + (f.personas_aprox || f.personas || 0) + "</td></tr>";
+    }
+    html += "</tbody></table></div><p class=\"ayuda\">Total visitas: <strong>" + tv + "</strong>.</p>";
+    cont.innerHTML = html;
+  } catch (e) {
+    cont.innerHTML = '<p class="ayuda">⚠️ No se pudo cargar la analítica.</p>';
+  }
+}
+
+function iniciarAdmin() {
+  const btn = $("#btn-admin");
+  if (btn) btn.addEventListener("click", abrirAdmin);
+  $("#btn-admin-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
+  $("#btn-admin-flashcards").addEventListener("click", abrirExploradorFC);
+  $("#btn-admin-banco").addEventListener("click", async () => {
+    const b = $("#btn-admin-banco"); const t = b.textContent;
+    if (estaDesbloqueado() && !PREMIUM_CARGADO) { b.disabled = true; b.textContent = "Cargando…"; await cargarPreguntasPremium(); b.disabled = false; b.textContent = t; }
+    renderBanco();
+    mostrarPantalla("pantalla-banco");
+  });
+  $("#btn-admin-analitica").addEventListener("click", abrirAnaliticaAdmin);
+  $("#btn-expfc-volver").addEventListener("click", () => mostrarPantalla("pantalla-admin"));
+  const inp = $("#expfc-buscar");
+  if (inp) inp.addEventListener("input", e => { EXPFC_Q = e.target.value; renderExpFC(); });
+}
+
 iniciarTema();
 iniciarZoom();
 iniciarScrollTop();
+iniciarAdmin();
 iniciarConfig();
 iniciarBanco();
 iniciarIA();

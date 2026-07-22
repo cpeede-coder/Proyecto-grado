@@ -8,16 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=56">
+  <link rel="stylesheet" href="css/styles.css?v=57">
 </head>
 <body>
   <header class="topbar">
     <h1 class="marca">
       <img src="img/aproba2-logo.png?v=1" alt="APROBA2" class="logo-app">
-      <span class="version-app">v1.0.56</span>
+      <span class="version-app">v1.0.57</span>
     </h1>
     <div class="topbar-acciones">
       <div id="timer" class="timer hidden"></div>
+      <button id="btn-admin" class="btn-tema btn-admin hidden" title="Panel de administración">🔧</button>
       <button id="btn-zoom" class="btn-tema btn-zoom" title="Aumentar el tamaño (zoom)">🔍</button>
       <button id="btn-tema" class="btn-tema" title="Cambiar tema claro/oscuro">☀️</button>
     </div>
@@ -172,6 +173,37 @@
         <button id="btn-banco-volver" class="btn-secundario">← Volver</button>
       </div>
       <div id="banco-lista"></div>
+    </section>
+
+    <!-- ============ PANTALLA: ADMIN (solo dueño) ============ -->
+    <section id="pantalla-admin" class="pantalla hidden">
+      <div class="card">
+        <button id="btn-admin-volver" class="btn-secundario btn-volver-top">← Volver</button>
+        <h2>🔧 Panel de administración</h2>
+        <p class="ayuda">Herramientas privadas, solo visibles con tu código admin. Los alumnos no ven esta pantalla.</p>
+        <div class="admin-botones">
+          <button id="btn-admin-flashcards" class="btn-primario">📖 Explorador de flashcards</button>
+          <button id="btn-admin-banco" class="btn-secundario">🗂️ Explorador del banco (520)</button>
+          <button id="btn-admin-analitica" class="btn-secundario">📊 Analítica de visitas</button>
+        </div>
+        <div id="admin-analitica" class="hidden" style="margin-top:18px;"></div>
+      </div>
+    </section>
+
+    <!-- ============ PANTALLA: EXPLORADOR DE FLASHCARDS (admin) ============ -->
+    <section id="pantalla-explorador-fc" class="pantalla hidden">
+      <div class="card">
+        <button id="btn-expfc-volver" class="btn-secundario btn-volver-top">← Volver al panel</button>
+        <h2>📖 Explorador de flashcards</h2>
+        <p id="expfc-sub" class="ayuda"></p>
+        <div id="expfc-verif" class="expfc-verif"></div>
+        <div class="campo">
+          <input type="search" id="expfc-buscar" placeholder="Buscar en id, tema o pregunta…" autocomplete="off">
+        </div>
+        <div id="expfc-materias" class="chips"></div>
+        <p id="expfc-contador" class="ayuda"></p>
+      </div>
+      <div id="expfc-lista"></div>
     </section>
 
     <!-- ============ PANTALLA: ESTUDIO (FLASHCARDS) ============ -->
@@ -385,6 +417,6 @@
   <script src="data/estudio/estrategia-guia.js?v=8"></script>
   <script src="data/estudio/marketing.js?v=5"></script>
   <script src="data/estudio/marketing-guia.js?v=6"></script>
-  <script src="js/app.js?v=56"></script>
+  <script src="js/app.js?v=57"></script>
 </body>
 </html>
