@@ -44,7 +44,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p><strong>Pertinencia según el modelo de negocio y la estrategia:</strong> entornos dinámicos / innovación &rarr; estructuras flexibles, descentralizadas, matriciales. Entornos estables / eficiencia o costos &rarr; formales y centralizadas. Diferenciación / cercanía al cliente &rarr; divisionales por producto o mercado. Ej.: Falabella es divisional (Retail, Banco, Sodimac, Mall Plaza); una PYME familiar suele ser funcional y centralizada.</p>
 
-        <h4>Descripción de puestos y su utilidad: enfoque tradicional y por competencias</h4>
+        <h4>⭐ Descripción de puestos y su utilidad: enfoque tradicional y por competencias</h4>
         <p>Describir los puestos permite saber <strong>qué tareas</strong> hace un cargo y <strong>qué se requiere</strong> de quien lo desempeña. Su utilidad: ordena la estructura, valoriza los puestos, ayuda a planificar la dotación y da la base para reclutar, seleccionar, evaluar y compensar. Dos documentos que no hay que confundir:</p>
         <ul>
           <li><strong>Descripción del cargo</strong>: QUÉ hace el puesto (tareas, responsabilidades, cómo y por qué).</li>
@@ -63,7 +63,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>Dos procesos distintos: <strong>reclutar</strong> es atraer candidatos (genera el pool a partir del perfil del cargo y del modelo de personas); <strong>seleccionar</strong> es elegir al que mejor calza con el puesto y con la estrategia.</p>
 
-        <h4>Reclutamiento interno y externo: características y utilidad</h4>
+        <h4>⭐ Reclutamiento interno y externo: características y utilidad</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>Interno</th><th>Externo</th></tr></thead>
           <tbody>
@@ -81,7 +81,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <h4>Reclutamiento por medio de las redes sociales</h4>
         <p>El <strong>reclutamiento por redes sociales</strong> aporta alcance e interactividad, evaluación previa de perfiles (LinkedIn) y segmentación de campañas (Meta). Ejemplos chilenos: LinkedIn, GetOnBoard (tech), Laborum / Trabajando.com / Chiletrabajos (masivos).</p>
 
-        <h4>Proceso de selección: etapas y enfoques en alineamiento con la estrategia organizacional</h4>
+        <h4>⭐ Proceso de selección: etapas y enfoques en alineamiento con la estrategia organizacional</h4>
         <p>1) Definir el perfil &rarr; 2) Atraer candidatos &rarr; 3) Evaluación (pruebas, entrevistas, assessment) &rarr; 4) Selección final &rarr; 5) Integración (inducción y socialización). Además del calce técnico importa el <strong>ajuste cultural</strong>: un candidato brillante que no comparte los valores suele fracasar igual.</p>
         <p>Alineamiento de la selección con la estrategia: innovación &rarr; creatividad y adaptabilidad, pruebas abiertas; eficiencia/costos &rarr; confiabilidad y ajuste a procedimientos; cargos estratégicos &rarr; procesos largos y rigurosos; cargos operativos/temporales &rarr; procesos ágiles.</p>
 
@@ -113,7 +113,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </ul>
         <p>Características deseables: <strong>transparencia</strong> (claridad en cómo se fijan los sueldos) y <strong>flexibilidad</strong> (capacidad de ajuste al negocio y al mercado).</p>
 
-        <h4>Políticas y planes de compensaciones y reconocimiento monetarios y no monetarios: características y alineamiento con la estrategia</h4>
+        <h4>⭐ Políticas y planes de compensaciones y reconocimiento monetarios y no monetarios: características y alineamiento con la estrategia</h4>
         <div class="guia-def">La compensación total tiene tres capas (monetaria directa, monetaria indirecta y no monetaria). La respuesta del examen SIEMPRE debe incluir la monetaria directa, porque es la base del sistema.</div>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Capa</th><th>Qué incluye</th><th>Por qué retiene</th></tr></thead>
@@ -126,7 +126,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <p><strong>Alineamiento estratégico:</strong> el mix de compensación se diseña hacia atrás desde la estrategia: debe incentivar los comportamientos que el negocio necesita y retener al talento clave. Si la ventaja es innovación pesan la participación en utilidades y la autonomía; si es costo/eficiencia, sueldos competitivos y bonos por productividad.</p>
         <div class="guia-frase"><strong>Pauta &mdash; esquema de compensación:</strong> proponer al menos 2 tipos de compensación con impacto y ejemplos concretos de cada uno. Trampa: incluir SIEMPRE la monetaria directa; no respondas solo "flexibilidad y reconocimiento".</div>
 
-        <h4>La otra cara: retención y rotación no deseada</h4>
+        <h4>⭐ La otra cara: retención y rotación no deseada</h4>
         <p>Si el mantenimiento falla, la gente se va. La rotación no deseada se trata como la cara B de la retención; la pauta pide <strong>analizar</strong> sus consecuencias (el porqué), no solo nombrarlas:</p>
         <ul>
           <li>Costos de reemplazo, contratación e inducción (pueden superar el 100% del sueldo anual del cargo).</li>
@@ -156,7 +156,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         </table></div>
         <p>La socialización tiene tres fases: <strong>Anticipatoria</strong> (expectativas antes de entrar), <strong>Encuentro</strong> (choque expectativa/realidad) y <strong>Metamorfosis</strong> (ajuste pleno).</p>
 
-        <h4>Etapas de un proceso de capacitación: DNC, diseño, implementación, evaluación</h4>
+        <h4>⭐ Etapas de un proceso de capacitación: DNC, diseño, implementación, evaluación</h4>
         <p><strong>DNC &rarr; Diseño &rarr; Implementación &rarr; Evaluación.</strong> La <strong>DNC</strong> (Detección de Necesidades) es la etapa clave: identifica las brechas reales con evaluaciones de desempeño, encuestas e indicadores. Si se detecta mal, se capacita en lo que no sirve.</p>
         <ul>
           <li><strong>Diseño</strong>: objetivos de aprendizaje claros, métodos (presencial, e-learning, taller) y materiales.</li>
@@ -164,7 +164,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Evaluación</strong>: medir efectividad e impacto (post-test, observación, indicadores antes/después).</li>
         </ul>
 
-        <h4>Modelo de Kirkpatrick: 4 niveles de efectividad</h4>
+        <h4>⭐ Modelo de Kirkpatrick: 4 niveles de efectividad</h4>
         <p>⭐ Modelo estrella del examen para <strong>medir si la capacitación sirvió</strong>. Son 4 niveles en escalera: cada uno mide más profundo que el anterior.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Nivel</th><th>Qué mide</th><th>Cómo se mide</th></tr></thead>
@@ -191,7 +191,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
 
         <p>Medir cómo lo está haciendo cada persona para <strong>decidir</strong> (desarrollo, promoción, compensación) y <strong>alinear</strong> su aporte con la estrategia. Se evalúa el <strong>qué</strong> (metas/resultados) y el <strong>cómo</strong> (conductas y competencias).</p>
 
-        <h4>Modelos de evaluación de desempeño y la cultura y estrategia organizacional</h4>
+        <h4>⭐ Modelos de evaluación de desempeño y la cultura y estrategia organizacional</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Modelo</th><th>En qué se basa</th><th>Ventaja / Desventaja</th></tr></thead>
           <tbody>
@@ -203,7 +203,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <div class="guia-def"><strong>Grados de evaluación:</strong> 90° = solo el jefe evalúa; 180° = jefe + autoevaluación (o jefe + pares); 360° = jefe, pares, subordinados y autoevaluación (visión integral).</div>
         <p>El modelo debe reflejar los <strong>valores</strong> y estar alineado con la <strong>estrategia</strong>: si valoras la colaboración pero solo evalúas metas individuales, generas competencia interna tóxica.</p>
 
-        <h4>Desempeño efectivo: focos en metas y desempeño</h4>
+        <h4>⭐ Desempeño efectivo: focos en metas y desempeño</h4>
         <p>Desempeño efectivo es el que logra los resultados Y lo hace coherente con los valores. Las metas deben ser <strong>SMART</strong>: eSpecíficas, Medibles, Alcanzables, Relevantes y Temporales. Ej.: "aumentar las ventas 10% en 6 meses".</p>
 
         <h4>Errores frecuentes de evaluación</h4>
@@ -215,7 +215,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
           <li><strong>Similitud ("similar a mí")</strong>: sesgo por afinidad personal.</li>
         </ul>
 
-        <h4>Hito de la retroalimentación: rol de evaluador y evaluado</h4>
+        <h4>⭐ Hito de la retroalimentación: rol de evaluador y evaluado</h4>
         <p>El <strong>feedback</strong> es el hito donde la evaluación se vuelve desarrollo: específico, oportuno y orientado a mejorar (no un "buen trabajo" genérico). Rol del <strong>evaluador</strong>: feedback honesto y apoyo; rol del <strong>evaluado</strong>: aceptar, reflexionar, trabajar las brechas y comunicar necesidades.</p>
 
         <h4>Planes de desarrollo y gestión de resultados de la evaluación</h4>
@@ -256,14 +256,14 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <div class="guia-def"><strong>Conflicto de tarea:</strong> es sobre el trabajo, las ideas y el cómo hacer las cosas. En dosis moderadas es <em>útil</em>: obliga a debatir y mejora las decisiones. <strong>Conflicto de relación:</strong> son choques personales y emocionales (antipatías, egos). Es <em>siempre dañino</em>: destruye la confianza y quiebra los equipos.</div>
         <p>La <strong>cohesión</strong> y las <strong>normas</strong> del equipo son lo que regula el conflicto: mantienen el de tarea en niveles productivos y contienen el de relación antes de que escale.</p>
 
-        <h4>Cambio organizacional</h4>
+        <h4>⭐ Cambio organizacional</h4>
         <div class="guia-def">Cambio organizacional = proceso planificado que lleva a la organización de un estado actual (A) a uno deseado (B), ejecutado a través de las personas. Es un proceso, no un evento, y siempre hay resistencia.</div>
         <p>Puede ser <strong>incremental</strong> (mejoras continuas) o <strong>transformacional</strong> (radical, redefine el rumbo).</p>
 
-        <h4>Resistencias al cambio</h4>
+        <h4>⭐ Resistencias al cambio</h4>
         <p>Causas de <strong>resistencia</strong>: miedo a lo desconocido, pérdida de control, hábitos y amenaza a la seguridad laboral. Estrategias para superarla: comunicación clara, participación, apoyo y negociación.</p>
 
-        <h4>Modelos de gestión del cambio</h4>
+        <h4>⭐ Modelos de gestión del cambio</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Modelo</th><th>Idea central</th></tr></thead>
           <tbody>
@@ -283,7 +283,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
       html: `
         <p>La cultura es el <strong>núcleo profundo</strong> de la organización; el clima, su <strong>temperatura del momento</strong>. No hay que confundirlos.</p>
 
-        <h4>Cultura organizacional efectiva</h4>
+        <h4>⭐ Cultura organizacional efectiva</h4>
         <div class="guia-def">Cultura = conjunto de valores, creencias, normas y prácticas compartidas que influyen en el comportamiento de los miembros. Es efectiva cuando se alinea con la estrategia, es flexible y genera compromiso.</div>
         <p>El <strong>modelo de Schein</strong> distingue 3 niveles:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -314,7 +314,7 @@ window.ESTUDIO_GUIA["gestion-personas"] = {
         <p>Transformar la cultura requiere proceso estructurado, liderazgo activo y participación de toda la organización; el Desarrollo Organizacional (DO) actúa como facilitador. Estrategias: liderazgo que modele los valores, comunicación constante, entrenamiento en los nuevos comportamientos y recompensas alineadas con esos valores.</p>
         <div class="guia-frase"><strong>Pauta &mdash; cultura que falla:</strong> analizar (no nombrar) los elementos que fallan y proponer acciones concretas y medibles. Ej.: liderazgo autoritario &rarr; coaching + 360&deg; ligada a bonos; ambiente tóxico &rarr; canales de denuncia confidenciales, comités de convivencia y encuestas de clima con planes de mejora; falta de propósito &rarr; involucrar a las personas en el rediseño de misión/visión.</div>
 
-        <h4>Gestión del clima laboral</h4>
+        <h4>⭐ Gestión del clima laboral</h4>
         <p>El clima es la <strong>percepción compartida</strong> del ambiente de trabajo. Componentes: físico (condiciones, seguridad), psicológico (relaciones, apoyo, equidad) y organizacional (políticas y procedimientos). Se mide con encuestas y se corrige con planes según resultados. El <strong>modelo de Likert</strong> define 4 sistemas de clima:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Sistema</th><th>Estilo</th><th>Participación</th></tr></thead>

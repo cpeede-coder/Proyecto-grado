@@ -81,7 +81,7 @@ window.ESTUDIO_GUIA.economia = {
         <p><strong>Ley de la oferta:</strong> ceteris paribus, al subir el precio sube la cantidad ofrecida (relación <strong>directa</strong>; pendiente positiva). La <strong>desplazan</strong>: precios de los insumos, tecnología, expectativas y número de vendedores. Mejor tecnología o insumos más baratos → la oferta se corre a la derecha.</p>
         <p><strong>Representación lineal (sin cálculo):</strong> en el plano precio-cantidad, la demanda es una recta que baja y la oferta una recta que sube. Basta describir la <em>pendiente</em> y qué la mueve; el examen no pide resolver ecuaciones.</p>
 
-        <h4>Elasticidad precio, cruzada e ingreso (y elasticidad de oferta)</h4>
+        <h4>⭐ Elasticidad precio, cruzada e ingreso (y elasticidad de oferta)</h4>
         <div class="guia-grafico" data-grafico="elasticidad"></div>
         <p>La <strong>elasticidad</strong> mide la sensibilidad de una variable ante el cambio de otra.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -103,7 +103,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>Cuando oferta y demanda se cruzan aparece el <strong>equilibrio</strong>. Desde ahí se mide el bienestar mediante los excedentes.</p>
 
-        <h4>Equilibrio de mercado competitivo</h4>
+        <h4>⭐ Equilibrio de mercado competitivo</h4>
         <div class="guia-grafico" data-grafico="od-equilibrio"></div>
         <div class="guia-grafico" data-grafico="od-aumento-demanda"></div>
         <div class="guia-grafico" data-grafico="od-aumento-oferta"></div>
@@ -120,7 +120,7 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>Si se desplazan <strong>ambas curvas a la vez</strong>, se puede determinar con certeza la dirección de una variable (precio o cantidad), pero la otra queda <strong>ambigua</strong>: depende de qué desplazamiento sea mayor.</p>
 
-        <h4>Análisis de bienestar: excedente del consumidor y del productor</h4>
+        <h4>⭐ Análisis de bienestar: excedente del consumidor y del productor</h4>
         <div class="guia-grafico" data-grafico="excedentes"></div>
         <p><strong>Excedente del consumidor:</strong> diferencia entre lo que estaba dispuesto a pagar (disponibilidad a pagar) y lo que pagó (área bajo la demanda y sobre el precio); un precio más bajo lo aumenta. <strong>Excedente del productor:</strong> diferencia entre el precio recibido y el costo/disponibilidad a vender (área sobre la oferta y bajo el precio); un precio más alto lo aumenta. Un mercado competitivo es <strong>eficiente</strong>: maximiza el excedente total.</p>
 
@@ -132,7 +132,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>El gobierno interviene en los mercados con controles de precio, impuestos y comercio exterior, y también para corregir <strong>fallas de mercado</strong>.</p>
 
-        <h4>Oferta y demanda y políticas del gobierno</h4>
+        <h4>⭐ Oferta y demanda y políticas del gobierno</h4>
         <div class="guia-grafico" data-grafico="precio-techo"></div>
         <div class="guia-grafico" data-grafico="precio-piso"></div>
         <div class="guia-grafico" data-grafico="impuesto-carga-muerta"></div>
@@ -149,7 +149,7 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
         <p>La <strong>carga</strong> de un impuesto recae más sobre el lado <strong>más inelástico</strong> del mercado (el que menos puede reaccionar). El libre comercio aumenta el excedente <strong>total</strong>, aunque redistribuye entre consumidores y productores.</p>
 
-        <h4>Fallas de mercado</h4>
+        <h4>⭐ Fallas de mercado</h4>
         <p>Una <strong>falla de mercado</strong> es cuando el mercado no asigna eficientemente los recursos, lo que justifica la intervención del Estado. Cuatro fallas clásicas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Falla</th><th>En qué consiste</th><th>Corrección</th></tr></thead>
@@ -238,12 +238,12 @@ window.ESTUDIO_GUIA.economia = {
           </tbody>
         </table></div>
 
-        <h4>Maximización de beneficios y oferta competitiva</h4>
+        <h4>⭐ Maximización de beneficios y oferta competitiva</h4>
         <div class="guia-grafico" data-grafico="competencia-perfecta"></div>
         <p>Se maximiza el beneficio donde <strong>ingreso marginal = costo marginal</strong>. En competencia perfecta el ingreso marginal es igual al precio (<strong>P = CMg</strong>), y la curva de oferta de la empresa es su costo marginal (por sobre el mínimo del costo variable medio). La <strong>oferta de mercado</strong> es la suma horizontal de las ofertas individuales.</p>
         <p><strong>Punto de cierre</strong> (corto plazo): si el precio no cubre el costo variable medio, conviene dejar de producir. En el <strong>largo plazo</strong>, si el precio no cubre el costo total medio, la empresa sale de la industria.</p>
 
-        <h4>Monopolio y poder de mercado</h4>
+        <h4>⭐ Monopolio y poder de mercado</h4>
         <div class="guia-grafico" data-grafico="monopolio"></div>
         <p>El monopolio es un único vendedor sin sustitutos cercanos. Como enfrenta toda la demanda, para vender más debe bajar el precio a todo: por eso su <strong>ingreso marginal es menor que el precio</strong>. Produce donde IMg = CMg pero cobra el precio (más alto) de la demanda → produce <strong>menos</strong> y cobra <strong>más</strong> que la competencia, generando <strong>pérdida de eficiencia</strong> (carga muerta). Su poder nace de <strong>barreras de entrada</strong> (recurso exclusivo, patentes, economías de escala, regulación); el <strong>monopolio natural</strong> abastece a menor costo con una sola empresa.</p>
         <p>El monopolista puede aplicar <strong>discriminación de precios</strong> para capturar excedente: 1er grado (por cada unidad), 2° grado (por cantidad/versión) y 3er grado (por segmento). Como estrategia de entrada, las empresas usan los <strong>precios como barrera</strong>: predatorios (bajo el costo, para expulsar rivales) y de penetración (bajos para ganar cuota).</p>
@@ -351,7 +351,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>El corazón de la macro de precios y ciclos: el <strong>dinero</strong>, la <strong>inflación</strong> y cómo el Estado y el Banco Central manejan la <strong>demanda agregada</strong>.</p>
 
-        <h4>El dinero y el Banco Central</h4>
+        <h4>⭐ El dinero y el Banco Central</h4>
         <p>El <strong>dinero</strong> cumple tres funciones: <strong>medio de cambio</strong>, <strong>unidad de cuenta</strong> y <strong>depósito de valor</strong>. Los bancos comerciales <strong>crean dinero</strong> al prestar parte de los depósitos: el <strong>multiplicador del dinero</strong> es mayor mientras menor sea el coeficiente de reservas.</p>
         <p>El <strong>Banco Central de Chile</strong> (creado en 1925, autónomo desde 1989) busca la estabilidad de precios; su <strong>meta de inflación es 3% anual</strong> (rango 2%-4%). Controla el dinero con:</p>
         <ul>
@@ -367,7 +367,7 @@ window.ESTUDIO_GUIA.economia = {
 
         <div class="guia-def"><strong>⚠️ No confundir:</strong> inflación, desinflación y deflación: inflación = los precios suben; desinflación = siguen subiendo pero más lento (la inflación baja, por ej. de 8% a 4%, pero sigue positiva); deflación = los precios caen (inflación negativa). Que baje la inflación NO significa que bajen los precios.</div>
 
-        <h4>Demanda agregada, oferta agregada y políticas</h4>
+        <h4>⭐ Demanda agregada, oferta agregada y políticas</h4>
         <div class="guia-grafico" data-grafico="oa-da"></div>
         <p>La <strong>demanda agregada (DA)</strong> es el gasto total (C + I + G + XN); tiene pendiente negativa. La <strong>oferta agregada</strong> es ascendente en el corto plazo (precios rígidos) y <strong>vertical</strong> en el largo plazo (PIB potencial). Sobre la DA actúan dos políticas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -400,7 +400,7 @@ window.ESTUDIO_GUIA.economia = {
       html: `
         <p>Cierra el curso la macro abierta y los modelos que estructuran el crecimiento (Solow) y los ciclos (IS-LM, Mundell-Fleming).</p>
 
-        <h4>Economía abierta</h4>
+        <h4>⭐ Economía abierta</h4>
         <div class="guia-grafico" data-grafico="mercado-divisas"></div>
         <p>Las <strong>exportaciones netas</strong> (XN = X - M) miden el saldo comercial; el <strong>flujo de salida neta de capital (FSNC)</strong> es la compra neta de activos externos por residentes. La identidad clave es <strong>S = I + FSNC</strong> (el ahorro financia la inversión doméstica y la salida neta de capital), y en equilibrio <strong>XN = FSNC</strong>.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -420,11 +420,11 @@ window.ESTUDIO_GUIA.economia = {
         <div class="guia-def"><strong>(S − I) = (X − M)</strong> &nbsp;y, separando el ahorro nacional en sus componentes, &nbsp;<strong>(Sp + Sg − I) = (X − M)</strong>, donde <strong>Sp</strong> es el ahorro privado y <strong>Sg</strong> el ahorro público (fiscal). El lado izquierdo es el ahorro nacional neto de inversión; el derecho, el saldo de la cuenta corriente.</div>
         <p>La lectura clave: si el <strong>ahorro público cae</strong> —es decir, el gobierno pasa a <strong>déficit fiscal</strong> (Sg negativo)— y el ahorro privado y la inversión no cambian, el ahorro nacional total baja, y para que la identidad se cumpla también debe bajar (X − M): la <strong>cuenta corriente se vuelve más deficitaria</strong>. Por eso se habla de <strong>déficits gemelos</strong>: el déficit fiscal y el déficit de cuenta corriente tienden a <strong>ir juntos</strong>, porque el país que ahorra poco a nivel interno debe financiarse con ahorro externo (importa más de lo que exporta y se endeuda con el resto del mundo).</p>
 
-        <h4>Crecimiento de largo plazo: el modelo de Solow</h4>
+        <h4>⭐ Crecimiento de largo plazo: el modelo de Solow</h4>
         <div class="guia-grafico" data-grafico="solow"></div>
         <p>Explica el crecimiento por la <strong>acumulación de capital</strong> y el crecimiento de la población. Como el capital tiene <strong>rendimientos decrecientes</strong>, la economía llega a un <strong>estado estacionario</strong>: el capital donde la inversión solo repone la depreciación (inversión neta cero) y el producto por trabajador deja de crecer. El único motor del crecimiento <strong>sostenido</strong> es el <strong>progreso tecnológico</strong>. Medidas para fomentarlo: ahorro e inversión, capital humano (educación), I+D y apertura comercial.</p>
 
-        <h4>Ciclos de corto plazo: IS-LM y Mundell-Fleming</h4>
+        <h4>⭐ Ciclos de corto plazo: IS-LM y Mundell-Fleming</h4>
         <div class="guia-grafico" data-grafico="is-lm"></div>
         <div class="guia-grafico" data-grafico="mundell-fleming"></div>
         <p>El modelo <strong>IS-LM</strong> (precios rígidos) tiene dos curvas: la <strong>IS</strong> (mercado de bienes, pendiente negativa) y la <strong>LM</strong> (mercado de dinero, pendiente positiva); su cruce fija producto y tasa de interés de corto plazo. La <strong>política fiscal</strong> desplaza la IS; la <strong>monetaria</strong>, la LM. El IS-LM es la base teórica de la demanda agregada.</p>

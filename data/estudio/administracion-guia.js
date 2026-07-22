@@ -48,7 +48,7 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
-        <h4>Roles y habilidades gerenciales</h4>
+        <h4>⭐ Roles y habilidades gerenciales</h4>
         <p>Hay tres <strong>niveles gerenciales</strong>, según qué tan cerca están de la estrategia o de la operación. Toda su labor se resume en <strong>cuatro funciones</strong>: planificar, organizar, dirigir y controlar.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Nivel</th><th>Quiénes</th><th>Qué hace</th></tr></thead>
@@ -83,7 +83,7 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
         <div class="guia-def"><strong>La idea de fondo:</strong> mientras más subes en la jerarquía, menos necesitas las habilidades <strong>técnicas</strong> y más las <strong>conceptuales</strong>; las <strong>humanas</strong> importan igual en todos los niveles (siempre trabajas con personas).</div>
 
-        <h4>Tipos de organizaciones</h4>
+        <h4>⭐ Tipos de organizaciones</h4>
         <p>Sirven para "etiquetar" cualquier empresa de un caso: por <strong>estructura jerárquica</strong> (horizontal/plana vs. vertical/piramidal), por <strong>fines de lucro</strong> (con o sin), por <strong>toma de decisiones</strong> (centralizada vs. descentralizada), por <strong>configuración</strong> (Mintzberg) y por <strong>sector</strong> (pública, privada, mixta).</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La empresa existe para crear valor." · "Eficiencia es hacer bien las cosas; eficacia es hacer las cosas correctas." · "Primero nombra el tipo de organización, luego justifica con el caso."</div>
@@ -94,7 +94,7 @@ window.ESTUDIO_GUIA.administracion = {
       html: `
         <p>Un <strong>área funcional</strong> agrupa a quienes cumplen una misma función. Las cuatro clásicas —Comercial, Operaciones, Gestión de Personas y Finanzas— no operan aisladas: se coordinan para crear valor. Al final se suman las Nuevas Tendencias.</p>
 
-        <h4>Área Comercial (Marketing y Ventas)</h4>
+        <h4>⭐ Área Comercial (Marketing y Ventas)</h4>
         <p>Detecta necesidades insatisfechas, crea el producto, lo pone a precio competitivo y lo comunica. Distingue <strong>necesidad</strong> (carencia básica), <strong>deseo</strong> (bien específico que la cubre) y <strong>demanda</strong> (deseo con capacidad de compra). Su herramienta es el <strong>Marketing Mix (4 P)</strong>.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>P</th><th>Qué define</th></tr></thead>
@@ -107,14 +107,14 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
         <p>El producto recorre un <strong>ciclo de vida</strong>: introducción → crecimiento → madurez → declive. La estrategia se apoya en <strong>segmentar</strong> (grupos homogéneos), elegir un <strong>mercado objetivo</strong> (indiferenciado, multisegmento o de nicho) y <strong>posicionar</strong> (lugar en la mente del consumidor).</p>
 
-        <h4>Área de Producción y Operaciones</h4>
+        <h4>⭐ Área de Producción y Operaciones</h4>
         <p>Transforma insumos en bienes y servicios. Planifica con cuatro decisiones: <strong>qué</strong> producir (lo define Comercial), <strong>cómo</strong> (artesanal, masivo o por proceso), <strong>cuánto</strong> (capacidad) y <strong>dónde</strong> (localización). Los servicios tienen cuatro rasgos: <strong>intangibilidad, inseparabilidad, heterogeneidad y carácter perecedero</strong>.</p>
 
         <h4>Calidad: ISO y Six Sigma</h4>
         <div class="guia-def"><strong>ISO 9001:</strong> norma internacional de gestión de la calidad; certifica que la empresa tiene <strong>procesos estandarizados y documentados</strong> (un cliente confía en el "sello ISO" sin auditar la fábrica).</div>
         <div class="guia-def"><strong>Six Sigma:</strong> metodología de <strong>reducción de defectos</strong> y variabilidad mediante el ciclo <strong>DMAIC</strong>: <strong>D</strong>efinir el problema, <strong>M</strong>edir el proceso, <strong>A</strong>nalizar las causas, mejorar (<strong>I</strong>mprove) e implementar, <strong>C</strong>ontrolar para sostener la mejora.</div>
 
-        <h4>La Cadena de Valor de Porter (integra las áreas)</h4>
+        <h4>⭐ La Cadena de Valor de Porter (integra las áreas)</h4>
         <p>Ve la empresa como una serie de actividades que agregan valor, buscando el <strong>margen</strong>.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Primarias (crean/venden/entregan)</th><th>De apoyo (habilitan)</th></tr></thead>
@@ -127,13 +127,13 @@ window.ESTUDIO_GUIA.administracion = {
           </tbody>
         </table></div>
 
-        <h4>Área de Gestión de Personas (RRHH)</h4>
+        <h4>⭐ Área de Gestión de Personas (RRHH)</h4>
         <p>Gestiona al capital humano —fuente de <strong>ventaja competitiva</strong> difícil de imitar— a lo largo de un proceso: planeación de RH → reclutamiento (o recorte) → selección → inducción → capacitación → manejo del desempeño → compensación → desarrollo de carrera. El <strong>reclutamiento interno</strong> es más barato y rápido; el <strong>externo</strong> trae ideas nuevas pero es caro y lento. En la selección se evitan el error de rechazo (descartar a uno bueno) y el de aceptación (contratar a uno malo).</p>
 
         <h4>Área de Finanzas (y Contable)</h4>
         <p>Obtiene y usa eficientemente los recursos financieros. La <strong>estructura de financiamiento</strong> combina capital propio y deuda, con fuentes <strong>internas</strong> (reinversión de utilidades, emisión de acciones/bonos, nuevos socios) y <strong>externas</strong> (bancos, créditos, fondos de inversión). Estados básicos: <strong>Balance</strong> (foto: activos, pasivos, patrimonio), <strong>Estado de resultado</strong> (utilidad o pérdida del período), <strong>Flujo de caja</strong> (liquidez) y <strong>cambios en el patrimonio</strong>. Ratios: liquidez, endeudamiento y rentabilidad (ROA, ROE). Inversiones de largo plazo: <strong>VAN, TIR y Payback</strong>.</p>
 
-        <h4>Nuevas tendencias e interrelación</h4>
+        <h4>⭐ Nuevas tendencias e interrelación</h4>
         <p>Tres motores del siglo XXI: <strong>tecnología, globalización y espíritu emprendedor</strong> (más RSE y gestión del conocimiento). Y una regla para responder casos:</p>
         <div class="guia-def">Comercial dice QUÉ producir → Operaciones dice CÓMO/CUÁNTO/DÓNDE → Finanzas dice CON QUÉ recursos → RRHH pone a QUIÉN lo ejecuta. Todo cruzado por la Cadena de Valor.</div>
 
@@ -161,7 +161,7 @@ window.ESTUDIO_GUIA.administracion = {
           <li>Conversión de los planes en cifras (presupuestos).</li>
         </ol>
 
-        <h4>Objetivos y cómo fijarlos</h4>
+        <h4>⭐ Objetivos y cómo fijarlos</h4>
         <p>Los <strong>objetivos</strong> son resultados deseados, por escrito. Pueden ser <strong>financieros</strong> (desempeño interno) o <strong>estratégicos</strong> (frente a competidores). Los buenos son <strong>SMART</strong>: eSpecíficos, Medibles, Alcanzables, Relevantes y Temporales (con plazo).</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Método</th><th>Cómo fija objetivos</th><th>Ventaja / Riesgo</th></tr></thead>
@@ -226,10 +226,10 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
         <div class="guia-def"><strong>⚠️ No confundir:</strong> mecanicista vs. orgánica NO es un tipo de diseño, es el GRADO DE RIGIDEZ (rígida vs. flexible). Los diseños concretos (simple, funcional, divisional, matricial, red) se ubican dentro de ese continuo: lo tradicional tiende a mecanicista y lo contemporáneo a orgánico.</div>
 
-        <h4>Diseños organizacionales</h4>
+        <h4>⭐ Diseños organizacionales</h4>
         <p><strong>Tradicionales:</strong> Simple (centralizada, emprendimientos), Funcional (por función) y Divisional (unidades semiautónomas bajo una matriz). <strong>Contemporáneos:</strong> De equipos, Matricial/de proyectos (dos jefes) y De red (externaliza y se concentra en lo que hace mejor).</p>
 
-        <h4>Tipos de departamentalización</h4>
+        <h4>⭐ Tipos de departamentalización</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Tipo</th><th>Ventaja</th><th>Desventaja</th></tr></thead>
           <tbody>
@@ -243,7 +243,7 @@ window.ESTUDIO_GUIA.administracion = {
         <p>No confundas <strong>estructura</strong> (diseño general) con <strong>departamentalización</strong> (agrupación de puestos dentro de ella).</p>
         <div class="guia-def"><strong>⚠️ No confundir por la palabra "funcional":</strong> existe como DISEÑO organizacional (estructura funcional, junto a simple y divisional) y como tipo de DEPARTAMENTALIZACIÓN (funcional, junto a geográfica y por producto). Son planos distintos aunque se llamen igual.</div>
 
-        <h4>Centralización y descentralización</h4>
+        <h4>⭐ Centralización y descentralización</h4>
         <p><strong>Centralización</strong>: las decisiones se concentran en la cúpula (propio de la estructura mecanicista; da control y uniformidad). <strong>Descentralización</strong>: decide quien está más cerca de la acción (orgánica; permite mejor adaptación local y decisiones más rápidas, pero exige gente capacitada). La mayoría de las empresas se ubica en un punto intermedio según su tamaño, entorno y estrategia.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La estructura sigue a la estrategia." · "Identifica primero el tipo (Divisional, Funcional…), después justifica." · "Departamentalización no es lo mismo que estructura."</div>
@@ -254,7 +254,7 @@ window.ESTUDIO_GUIA.administracion = {
       html: `
         <p><strong>Dirigir</strong> es energizar, orientar y sostener el esfuerzo de las personas hacia una meta, provocando esa energía en los demás. Se apoya en tres pilares: <strong>liderazgo, motivación y comunicación</strong>.</p>
 
-        <h4>Liderazgo y sus enfoques</h4>
+        <h4>⭐ Liderazgo y sus enfoques</h4>
         <p>El <strong>liderazgo</strong> es influir en las personas para que trabajen con entusiasmo hacia las metas. Los enfoques evolucionaron del líder que "nace" al que "se hace" y al que se adapta a la situación.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Enfoque</th><th>Idea central</th></tr></thead>
@@ -270,7 +270,7 @@ window.ESTUDIO_GUIA.administracion = {
         <div class="guia-def"><strong>Liderazgo situacional (Hersey &amp; Blanchard):</strong> no existe un estilo único mejor; el líder <strong>ajusta su estilo según la madurez/preparación del seguidor</strong> (su capacidad y disposición para la tarea). Cruza dos ejes —<strong>conducta directiva</strong> (cuánto instruye) y <strong>conducta de apoyo</strong> (cuánto respalda emocionalmente)— y obtiene 4 estilos: <strong>Dirigir</strong> (madurez baja: mucha instrucción, poco apoyo), <strong>Persuadir/Entrenar</strong> (mucha instrucción y mucho apoyo), <strong>Participar/Apoyar</strong> (poca instrucción, mucho apoyo) y <strong>Delegar</strong> (madurez alta: poca instrucción y poco apoyo).</div>
         <div class="guia-def"><strong>Corrección importante:</strong> el punto ideal "9,9" es del <strong>Grid Gerencial de Blake &amp; Mouton</strong>, no de los estudios de Michigan. Michigan solo distingue líder orientado a las personas vs. orientado a la producción, sin coordenadas de rejilla.</div>
 
-        <h4>Motivación</h4>
+        <h4>⭐ Motivación</h4>
         <p>La <strong>motivación</strong> es el impulso que energiza, dirige y sostiene el esfuerzo. Teorías clave:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Teoría</th><th>Qué plantea</th></tr></thead>
@@ -292,7 +292,7 @@ window.ESTUDIO_GUIA.administracion = {
       html: `
         <p><strong>Controlar</strong> es dar seguimiento a las actividades para garantizar que se logren conforme a lo planeado y corregir desviaciones. Cierra el ciclo administrativo y <strong>alimenta de vuelta la planificación</strong>: por eso el proceso de gestión es un ciclo.</p>
 
-        <h4>Procesos y sistemas de control</h4>
+        <h4>⭐ Procesos y sistemas de control</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Etapa</th><th>En qué consiste</th></tr></thead>
           <tbody>
@@ -313,7 +313,7 @@ window.ESTUDIO_GUIA.administracion = {
         </table></div>
         <p>Herramientas transversales: el <strong>benchmarking</strong> (comparar con las mejores prácticas de la industria) y el control por áreas (producción, comercial, financiera, RRHH).</p>
 
-        <h4>Determinación de indicadores (KPI)</h4>
+        <h4>⭐ Determinación de indicadores (KPI)</h4>
         <p>Un <strong>KPI</strong> (Key Performance Indicator) mide cuánto varió el objetivo SMART y si se cumplió. Tipos: <strong>financieros</strong> (ROI, ROS, costos), <strong>de proceso</strong> (eficiencia, tiempos de ciclo) y <strong>de satisfacción</strong> (cliente, empleado).</p>
         <div class="guia-def">Cómo se arma un KPI: <strong>Objetivo → Meta (con cifra y plazo) → Indicador (fórmula)</strong>. Ej.: "aumentar exportaciones" → "+15% en 2024 vs. 2023" → ventas extranjero (2024/2023) ≥ 1,15.</div>
 

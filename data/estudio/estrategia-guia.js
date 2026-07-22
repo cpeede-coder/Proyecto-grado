@@ -70,7 +70,7 @@ window.ESTUDIO_GUIA.estrategia = {
           <li><strong>Objetivos estratégicos</strong>: metas concretas, medibles y de largo plazo. Definen <em>cómo y a qué ritmo</em>.</li>
         </ul>
 
-        <h4>Crecimiento y diversificación</h4>
+        <h4>⭐ Crecimiento y diversificación</h4>
         <p>La <strong>diversificación</strong> es expandirse a nuevos productos, mercados o industrias.</p>
         <ul>
           <li><strong>Relacionada</strong>: comparte recursos/capacidades con el negocio original (preferible: genera sinergias).</li>
@@ -79,7 +79,7 @@ window.ESTUDIO_GUIA.estrategia = {
         <p>Solo crea valor si hay <strong>sinergias reales</strong>: economías de escala (más de lo mismo, baja el costo unitario), economías de ámbito (bienes distintos compartiendo recursos), transferencia de conocimiento/reputación y mayor poder de negociación. Riesgos: costos de coordinación, burocracia, problemas de agencia, deseconomías de escala.</p>
         <div class="guia-def">El crecimiento solo es estratégico si crea valor. Más grande no es mejor; más coherente sí.</div>
 
-        <h4>Cómo crece la empresa (estrategia corporativa)</h4>
+        <h4>⭐ Cómo crece la empresa (estrategia corporativa)</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Estrategia</th><th>En qué consiste</th><th>Objetivo clave</th></tr></thead>
           <tbody>
@@ -92,7 +92,7 @@ window.ESTUDIO_GUIA.estrategia = {
         <p><strong>Integración vertical:</strong> conviene cuando hay activos específicos, alta incertidumbre y riesgo de oportunismo. La decisión depende de comparar <strong>costos de transacción del mercado vs. costos internos</strong>. No siempre conviene integrar (da rigidez).</p>
         <p><strong>Modos de entrada internacional</strong> (de menor a mayor compromiso/control/riesgo): exportaciones → alianzas → joint ventures → F&amp;A → inversión directa.</p>
 
-        <h4>Enfoque basado en recursos (RBV) y VRIO</h4>
+        <h4>⭐ Enfoque basado en recursos (RBV) y VRIO</h4>
         <p>La ventaja competitiva nace <strong>al interior</strong> de la empresa: las empresas son heterogéneas. <strong>Recursos</strong> = activos que controla (tangibles, intangibles, humanos); <strong>capacidades</strong> = habilidad para combinar recursos. Las <strong>competencias esenciales</strong> son capacidades clave, difíciles de imitar, que abren mercados y sustentan la propuesta de valor.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>VRIO</th><th>Pregunta clave</th></tr></thead>
@@ -117,7 +117,7 @@ window.ESTUDIO_GUIA.estrategia = {
         </table></div>
         <div class="guia-def">Una estrategia corporativa crea valor solo si los <strong>tres vértices se refuerzan mutuamente</strong>. Si uno falla, se destruye valor.</div>
 
-        <h4>Crecimiento externo: F&amp;A vs. Alianzas</h4>
+        <h4>⭐ Crecimiento externo: F&amp;A vs. Alianzas</h4>
         <p><strong>Fusión</strong>: dos empresas se combinan en una nueva (las originales desaparecen). <strong>Adquisición</strong>: una compra el control de otra. Las F&amp;A fallan sobre todo en la <strong>integración</strong> (sobreestimar sinergias, choques culturales). <strong>Joint venture</strong>: alianza donde se crea una empresa nueva y las matrices siguen existiendo.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>F&amp;A</th><th>Alianzas</th></tr></thead>
@@ -144,7 +144,7 @@ window.ESTUDIO_GUIA.estrategia = {
         <p><strong>Macroentorno — PESTLE</strong> (factores generales, no controlables): Político, Económico, Social, Tecnológico, Legal, Ambiental.</p>
         <p><strong>Microentorno</strong>: actores directos de la industria (competidores, proveedores, clientes, sustitutos, nuevos entrantes, complementadores).</p>
 
-        <h4>Las 5 Fuerzas de Porter</h4>
+        <h4>⭐ Las 5 Fuerzas de Porter</h4>
         <p>Miden el <strong>atractivo</strong> (rentabilidad potencial) de una industria. La rentabilidad no depende solo de los rivales directos.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Fuerza</th><th>Presiona la rentabilidad cuando…</th></tr></thead>
@@ -159,7 +159,7 @@ window.ESTUDIO_GUIA.estrategia = {
         <p><strong>6ª fuerza — complementadores:</strong> empresas cuyos productos aumentan el valor del principal (hardware+software, smartphone+apps). No compiten directo, pero influyen en la rentabilidad. Se relaciona con la <strong>coopetición</strong>: competir y cooperar a la vez para crear más valor.</p>
         <div class="guia-def"><strong>⚠️ No confundir:</strong> No confundir complementador con sustituto: el complementador SUMA valor cuando se usa junto al producto (apps + smartphone) y lo hace más atractivo; el sustituto COMPITE y le quita demanda (videojuegos vs. juguetes). Tienen efectos opuestos sobre la rentabilidad de la industria.</div>
 
-        <h4>Posicionamiento y ventaja competitiva</h4>
+        <h4>⭐ Posicionamiento y ventaja competitiva</h4>
         <p>El <strong>posicionamiento</strong> es cómo decides competir y qué lugar ocupas en la mente del cliente: elecciones conscientes, con renuncias, difícil de imitar. No es ser mejor en todo, sino ser <strong>distinto</strong>. Hay <strong>ventaja competitiva</strong> cuando generas más valor económico que los rivales (menor costo o mayor valor percibido).</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Estrategia genérica</th><th>Cómo se logra</th></tr></thead>
@@ -184,11 +184,11 @@ window.ESTUDIO_GUIA.estrategia = {
       html: `
         <p>Es cómo <strong>cada área</strong> (operaciones, marketing, finanzas, RRHH, I+D) ejecuta y sostiene la ventaja competitiva. Aquí la estrategia se vuelve acción.</p>
 
-        <h4>Crear valor económico</h4>
+        <h4>⭐ Crear valor económico</h4>
         <div class="guia-def">Valor económico = <strong>disposición a pagar del cliente − costo de la empresa</strong>. La estrategia funcional busca maximizar esa diferencia.</div>
         <p><strong>Eficiencia</strong> = hacer las cosas bien (menor costo). <strong>Eficacia</strong> = hacer las cosas correctas (alineadas a la estrategia). Se necesitan ambas.</p>
 
-        <h4>Cadena de valor (Porter)</h4>
+        <h4>⭐ Cadena de valor (Porter)</h4>
         <p>Herramienta de <strong>análisis interno</strong>: descompone la empresa en actividades que crean valor. La ventaja surge de <strong>cómo encajan</strong> las actividades, no de una sola.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Primarias (crean/venden/entregan)</th><th>De apoyo (habilitan)</th></tr></thead>
@@ -201,7 +201,7 @@ window.ESTUDIO_GUIA.estrategia = {
           </tbody>
         </table></div>
 
-        <h4>Síntesis del análisis: la matriz FODA (SWOT)</h4>
+        <h4>⭐ Síntesis del análisis: la matriz FODA (SWOT)</h4>
         <p>El <strong>FODA</strong> no es un análisis nuevo ni "el análisis interno": es la <strong>síntesis</strong> que junta lo que arrojaron el análisis externo y el interno para formular la estrategia. Cada cuadrante viene de una herramienta distinta:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Cuadrante FODA</th><th>Interno / Externo</th><th>Con qué herramienta se obtiene</th></tr></thead>
@@ -218,7 +218,7 @@ window.ESTUDIO_GUIA.estrategia = {
         <h4>Sistema de actividades y encaje estratégico</h4>
         <p>Una estrategia genérica no basta declararla: debe materializarse en un <strong>sistema coherente de actividades</strong> que se refuercen entre sí. Cuanto mayor el <strong>encaje</strong>, más sostenible la ventaja, porque imitar una actividad aislada no reproduce el sistema.</p>
 
-        <h4>Fuentes para la sustentabilidad de la ventaja competitiva</h4>
+        <h4>⭐ Fuentes para la sustentabilidad de la ventaja competitiva</h4>
         <p><em>Sustentabilidad</em> y <em>sostenibilidad</em> son sinónimos aquí (ambas = que la ventaja se mantenga en el tiempo). Una ventaja es <strong>sostenible/sustentable</strong> (no temporal) cuando resiste la imitación.</p>
 
         <h4>⭐ Ventaja temporal vs. sostenible</h4>
@@ -259,7 +259,7 @@ window.ESTUDIO_GUIA.estrategia = {
           <li><strong>Plataformas y ecosistemas</strong>: la ventaja surge de la red de valor, no de la empresa aislada.</li>
         </ul>
 
-        <h4>Océano rojo vs. Océano azul</h4>
+        <h4>⭐ Océano rojo vs. Océano azul</h4>
         <p>Son las dos caras del modelo de <strong>Océanos Azules</strong> (Kim &amp; Mauborgne): el rojo es el contraste que ayuda a entender el azul.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Aspecto</th><th>Océano rojo 🔴</th><th>Océano azul 🔵</th></tr></thead>

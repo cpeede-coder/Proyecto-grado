@@ -70,14 +70,14 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>Ninguna empresa satisface a todos por igual. La estrategia de marketing arranca con el modelo <strong>STP</strong>: <strong>S</strong>egmentar, seleccionar el mercado objetivo (<strong>T</strong>argeting) y <strong>P</strong>osicionar.</p>
 
-        <h4>El modelo STP (Segmentación &ndash; Targeting &ndash; Posicionamiento)</h4>
+        <h4>⭐ El modelo STP (Segmentación &ndash; Targeting &ndash; Posicionamiento)</h4>
         <p>El <strong>STP</strong> es el esqueleto de toda la estrategia de marketing. Marca el orden en que se decide a quién y cómo servir: <strong>S</strong>egmentar (dividir el mercado en grupos, en esta unidad) &rarr; <strong>T</strong>argeting (elegir a qué segmento apuntar, también en esta unidad) &rarr; <strong>P</strong>osicionar (ocupar un lugar distintivo y valorado en la mente del cliente, que se trabaja en U4). Las tres grandes secciones del curso NO son temas sueltos: son los tres pasos del STP, en ese orden.</p>
         <div class="guia-def">STP = primero se DIVIDE el mercado (Segmentación), luego se ELIGE a quién servir (Targeting), y por último se POSICIONA la oferta en su mente (Posicionamiento).</div>
 
         <h4>Propósito de la segmentación</h4>
         <p>La <strong>segmentación</strong> divide el mercado en grupos más pequeños y homogéneos con necesidades o comportamientos similares. Propósito: entender mejor al cliente, optimizar recursos, subir la satisfacción y ganar ventaja competitiva.</p>
 
-        <h4>Bases de segmentación</h4>
+        <h4>⭐ Bases de segmentación</h4>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Base</th><th>Variables</th><th>Ejemplo</th></tr></thead>
           <tbody>
@@ -101,7 +101,7 @@ window.ESTUDIO_GUIA.marketing = {
           <li>Diseñar la mezcla de marketing para cada segmento elegido.</li>
         </ol>
 
-        <h4>Targeting: estrategias de cobertura de mercado</h4>
+        <h4>⭐ Targeting: estrategias de cobertura de mercado</h4>
         <p>Elegidos los segmentos atractivos, hay que decidir <strong>a cuántos y cómo apuntar</strong>. Existen tres estrategias de cobertura:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Estrategia</th><th>En qué consiste</th><th>Ejemplo</th></tr></thead>
@@ -175,12 +175,12 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>La <strong>marca</strong> es el activo intangible más valioso del marketing: vive en la mente del consumidor y puede justificar precios más altos y lealtad.</p>
 
-        <h4>Marca, identidad y equidad</h4>
+        <h4>⭐ Marca, identidad y equidad</h4>
         <p>Una <strong>marca</strong> es más que un nombre o logo: es la percepción general y el conjunto de asociaciones que el consumidor tiene de la empresa. La <strong>identidad de marca</strong> es lo que la empresa PROYECTA (nombre, logo, colores, tipografía, eslogan, tono); la <strong>imagen</strong> es lo que el consumidor percibe.</p>
         <div class="guia-def">Equidad de marca (brand equity, modelo de Aaker) = valor adicional que la marca aporta al producto. Componentes: reconocimiento, asociaciones, lealtad, calidad percibida y otros activos (patentes, marcas registradas).</div>
         <p>La <strong>gestión de marca (branding)</strong> crea, mantiene, mejora y protege esa identidad y equidad mediante desarrollo, posicionamiento, comunicación y evaluación continua.</p>
 
-        <h4>Posicionamiento de marca</h4>
+        <h4>⭐ Posicionamiento de marca</h4>
         <p>Es diseñar la oferta y la imagen para ocupar un lugar <strong>distintivo y valorado</strong> en la mente del público objetivo. No es ser mejor en todo, sino ocupar un lugar claro y diferente. Sus componentes:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Componente</th><th>Pregunta que responde</th></tr></thead>
@@ -195,7 +195,7 @@ window.ESTUDIO_GUIA.marketing = {
         <p>Se resume en una <strong>declaración de posicionamiento</strong>: "Para [público] que [necesidad], [marca] ofrece [beneficio] a diferencia de [competencia]" (ej. Volvo = seguridad). Los <strong>beneficios funcionales</strong> son tangibles (qué hace el producto); los <strong>emocionales</strong>, intangibles (Dove promueve la autoestima, no solo jabón).</p>
         <div class="guia-def"><strong>⚠️ No confundir:</strong> la cobertura de mercado con el posicionamiento: la cobertura (targeting: indiferenciado / diferenciado / concentrado) decide a CUÁNTOS segmentos apuntar; el posicionamiento decide QUÉ LUGAR ocupar en la mente del cliente. Incluso un nicho concentrado debe decidir cómo se posiciona.</div>
 
-        <h4>Propuesta de valor</h4>
+        <h4>⭐ Propuesta de valor</h4>
         <p>Declaración clara de los <strong>beneficios únicos</strong> que el producto ofrece y cómo resuelve el problema del cliente mejor que las alternativas. Componentes: beneficio principal, resolución del problema y diferenciación. Es una PROMESA que la empresa cumple y el cliente percibe como valiosa. Un buen posicionamiento diferencia, conecta emocionalmente, da consistencia y crea valor perceptual que justifica precios más altos.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "La marca vive en la mente del consumidor." · "Identidad es lo que la marca emite; imagen, lo que el cliente percibe." · "Posicionar es ser distinto, no solo mejor."</div>
@@ -207,7 +207,7 @@ window.ESTUDIO_GUIA.marketing = {
         <h4>Concepto de marketing mix</h4>
         <p>El <strong>marketing mix</strong> es la caja de herramientas TÁCTICA que ejecuta la estrategia. Son las <strong>4P</strong>: Producto, Precio, Plaza y Promoción (ampliadas a <strong>7P</strong> en servicios). Esta unidad cubre las tres primeras; la Promoción y las P de servicios van en la unidad siguiente.</p>
 
-        <h4>Producto</h4>
+        <h4>⭐ Producto</h4>
         <p>Un <strong>producto</strong> es un bien tangible; un <strong>servicio</strong>, un beneficio intangible. Todo producto tiene tres niveles:</p>
         <div class="guia-def">Producto básico o central (la necesidad de fondo, ej. transporte) → Producto real (características tangibles: diseño, marca, calidad) → Producto aumentado (extras: garantía, postventa, financiamiento).</div>
         <p>La <strong>planificación y desarrollo de nuevos productos</strong> sigue: generación de ideas → filtrado → desarrollo/prueba de concepto → estrategia de marketing → análisis de negocio → desarrollo → prueba de mercado → comercialización, más la gestión posterior del ciclo de vida. Una <strong>línea</strong> es un grupo de productos relacionados; la <strong>mezcla</strong> (cartera) es el conjunto de todas las líneas. La <strong>marca</strong> influye en la percepción del producto (relación producto-marca).</p>
@@ -222,7 +222,7 @@ window.ESTUDIO_GUIA.marketing = {
           </tbody>
         </table></div>
 
-        <h4>Precio</h4>
+        <h4>⭐ Precio</h4>
         <p>Es la única P que genera <strong>ingresos</strong>. Depende de costos, demanda (elasticidad), competencia, objetivos de marketing y factores externos. La <strong>sensibilidad de precios</strong> mide cuánto reacciona la demanda ante cambios de precio: los productos de lujo suelen tener baja sensibilidad (se paga por el prestigio). Métodos y estrategias:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Enfoque</th><th>Lógica</th><th>Ejemplo</th></tr></thead>
@@ -251,7 +251,7 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>La <strong>promoción</strong> es la P de la comunicación, y en servicios se suman las P de <strong>Proceso</strong>, <strong>Personas</strong> y <strong>Evidencia física</strong>. Aquí van los temas que más suelen preguntarse y que conviene dominar completos.</p>
 
-        <h4>Promoción: rol y mezcla de comunicación</h4>
+        <h4>⭐ Promoción: rol y mezcla de comunicación</h4>
         <p>La promoción reúne las actividades que <strong>informan, persuaden y recuerdan</strong> al consumidor. La <strong>mezcla de comunicación</strong> combina varias herramientas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Herramienta</th><th>Qué es</th></tr></thead>
@@ -267,7 +267,7 @@ window.ESTUDIO_GUIA.marketing = {
         <p>Para <strong>determinar la mezcla promocional</strong> se fijan primero los <strong>objetivos</strong> (más ventas, mejor imagen) y luego se eligen las herramientas más efectivas. Toda comunicación se apoya en tres <strong>principios</strong>: <strong>claridad</strong>, <strong>consistencia</strong> (mismo mensaje en todos los canales) y <strong>relevancia</strong> para el público.</p>
         <div class="guia-def"><strong>⚠️ No confundir:</strong> "promoción" (toda la P de comunicación) no es lo mismo que "promoción de ventas" (una sola herramienta: cupones y descuentos de corto plazo). Y la publicidad es PAGADA en medios, mientras las RR.PP. buscan reputación SIN pago directo (prensa, eventos).</div>
 
-        <h4>Comunicaciones Integradas de Marketing (IMC)</h4>
+        <h4>⭐ Comunicaciones Integradas de Marketing (IMC)</h4>
         <p>Las <strong>Comunicaciones Integradas de Marketing (IMC)</strong> son la coordinación de TODAS las herramientas de la mezcla promocional &mdash;publicidad, promoción de ventas, relaciones públicas, venta personal y marketing directo/digital&mdash; bajo un <strong>mensaje único y coherente</strong> en todos los puntos de contacto. Justamente los tres principios de claridad, consistencia y relevancia son los que hacen que la marca "hable con una sola voz": el cliente recibe la misma promesa vea un anuncio, entre a la web o hable con un vendedor.</p>
         <div class="guia-def">IMC = integrar todas las herramientas de comunicación bajo un mismo mensaje, para que la marca se perciba coherente en cada contacto (no mensajes sueltos y contradictorios por canal).</div>
         <div class="guia-frase"><strong>Fórmula de examen (piden "tres estrategias de IMC"):</strong> responde cada una con <strong>herramienta + objetivo + ejemplo concreto</strong>. Ej.: (1) <em>Publicidad</em> en redes &rarr; dar a conocer el lanzamiento &rarr; video en Instagram con el eslogan; (2) <em>Promoción de ventas</em> &rarr; acelerar la primera compra &rarr; cupón de 20% por lanzamiento; (3) <em>Venta personal / marketing directo</em> &rarr; fidelizar &rarr; email personalizado post-compra al cliente. Las tres deben repetir el MISMO mensaje central.</div>
@@ -298,7 +298,7 @@ window.ESTUDIO_GUIA.marketing = {
       html: `
         <p>El marketing no termina en la venta. Esta unidad cubre cómo cuidar la <strong>experiencia</strong>, retener y fidelizar clientes, y <strong>medir</strong> los resultados.</p>
 
-        <h4>Experiencia y viaje del cliente</h4>
+        <h4>⭐ Experiencia y viaje del cliente</h4>
         <p>La <strong>gestión de la experiencia del cliente (CX)</strong> planifica cada interacción con la marca para que sea positiva y coherente en todos los puntos de contacto. El <strong>viaje del cliente</strong> (customer journey) tiene cinco etapas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Etapa</th><th>Qué ocurre</th></tr></thead>
@@ -312,7 +312,7 @@ window.ESTUDIO_GUIA.marketing = {
         </table></div>
         <p>El <strong>mapeo</strong> del viaje visualiza estas interacciones para detectar oportunidades de mejora y puntos de dolor.</p>
 
-        <h4>Puntos de contacto: precompra, compra y postcompra</h4>
+        <h4>⭐ Puntos de contacto: precompra, compra y postcompra</h4>
         <p>Un <strong>punto de contacto (touchpoint)</strong> es cada momento en que el cliente interactúa con la marca. Las cinco etapas del viaje se agrupan en <strong>tres fases</strong>, y el examen suele pedir justamente los touchpoints ordenados en ellas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Fase</th><th>Etapas del viaje</th><th>Puntos de contacto (ejemplos)</th></tr></thead>
@@ -324,7 +324,7 @@ window.ESTUDIO_GUIA.marketing = {
         </table></div>
         <p>La empresa debe cuidar la coherencia en las tres fases: un buen anuncio (precompra) no sirve si el checkout falla (compra) o si nadie responde el reclamo (postcompra).</p>
 
-        <h4>Retención, recuperación y fidelización</h4>
+        <h4>⭐ Retención, recuperación y fidelización</h4>
         <div class="guia-def">Retención = mantener al cliente actual. Recuperación = reconquistar al insatisfecho o perdido. Fidelización = convertirlo en defensor leal que compra y recomienda.</div>
         <ul>
           <li><strong>Retención</strong>: programas de fidelidad, comunicación personalizada, mejora continua del producto.</li>
@@ -333,7 +333,7 @@ window.ESTUDIO_GUIA.marketing = {
         </ul>
         <p>Retener cuesta mucho menos que captar un cliente nuevo, y una buena recuperación puede dejar al cliente incluso más leal que antes de la falla.</p>
 
-        <h4>Medición: productividad y métricas de marketing</h4>
+        <h4>⭐ Medición: productividad y métricas de marketing</h4>
         <p>"Lo que no se mide, no se puede mejorar." La <strong>medición de productividad</strong> evalúa la eficacia respecto a lo invertido (ROI) y permite optimizar recursos y decidir con datos. Indicadores clave:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Métrica</th><th>Qué mide</th></tr></thead>
