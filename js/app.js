@@ -1665,6 +1665,12 @@ function mostrarTarjetaEstudio() {
   $("#estudio-fc-examen").classList.toggle("hidden", !estudioActual.salioEnExamen);
   $("#estudio-fc-frente").textContent = estudioActual.frente || "";
   $("#estudio-fc-reverso").textContent = estudioActual.reverso || "";
+  const gcont = $("#estudio-fc-grafico");
+  if (gcont) {
+    const svg = (estudioActual.grafico && window.GRAFICOS) ? window.GRAFICOS[estudioActual.grafico] : null;
+    if (svg) { gcont.innerHTML = svg; gcont.classList.remove("hidden"); }
+    else { gcont.innerHTML = ""; gcont.classList.add("hidden"); }
+  }
   const tip = $("#estudio-fc-tip");
   if (estudioActual.tip) { tip.textContent = "💡 " + estudioActual.tip; tip.classList.remove("hidden"); }
   else { tip.textContent = ""; tip.classList.add("hidden"); }
@@ -1796,6 +1802,13 @@ function mostrarGuiaEstudio() {
     card.innerHTML = '<h3 class="guia-titulo"><span class="guia-badge">' + sec.unidad + '</span> ' + sec.titulo + '</h3>' + sec.html;
     cont.appendChild(card);
   });
+  // Rellena los gráficos referenciados en la guía por su clave (data-grafico="...").
+  if (window.GRAFICOS) {
+    cont.querySelectorAll("[data-grafico]").forEach(el => {
+      const svg = window.GRAFICOS[el.getAttribute("data-grafico")];
+      if (svg) el.innerHTML = svg;
+    });
+  }
   $("#estudio-config").classList.add("hidden");
   $("#estudio-sesion").classList.add("hidden");
   $("#estudio-fin").classList.add("hidden");
@@ -1990,7 +2003,8 @@ function renderExpFC() {
           '<span class="expfc-u">' + _escFC(c.unidad) + "</span>" + (c.salioEnExamen ? '<span class="expfc-star">⭐ examen real</span>' : "") +
           '<span class="expfc-tema">' + _resaltaFC(c.tema, term) + "</span></div>" +
           '<p class="expfc-frente">' + _resaltaFC(c.frente, term) + "</p>" +
-          '<div class="expfc-reverso">' + _resaltaFC(c.reverso, term) + "</div>" +
+          '<div class="expfc-reverso">' + _resaltaFC(c.reverso, term) +
+          ((c.grafico && window.GRAFICOS && window.GRAFICOS[c.grafico]) ? '<div class="fc-grafico">' + window.GRAFICOS[c.grafico] + "</div>" : "") + "</div>" +
           '<p class="expfc-hint">Toca para ver la respuesta</p></div>';
       }
     }

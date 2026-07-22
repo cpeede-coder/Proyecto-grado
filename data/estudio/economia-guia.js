@@ -72,6 +72,7 @@ window.ESTUDIO_GUIA.economia = {
         <p>El mercado coordina a compradores (demanda) y vendedores (oferta) a través de los <strong>precios</strong>, que transmiten información e incentivos.</p>
 
         <h4>La demanda</h4>
+        <div class="guia-grafico" data-grafico="desplaza-vs-movimiento"></div>
         <p><strong>Ley de la demanda:</strong> ceteris paribus, al subir el precio baja la cantidad demandada (relación <strong>inversa</strong>; curva de pendiente negativa). Se explica por el efecto sustitución y el efecto ingreso.</p>
         <div class="guia-def">Clave del examen: distingue <strong>movimiento a lo largo</strong> de la curva (lo causa el precio del propio bien) de un <strong>desplazamiento</strong> de la curva (lo causa cualquier otro factor).</div>
         <p>Factores que <strong>desplazan</strong> la demanda: ingreso, precios de bienes relacionados (sustitutos y complementarios), gustos, expectativas y número de compradores.</p>
@@ -81,6 +82,7 @@ window.ESTUDIO_GUIA.economia = {
         <p><strong>Representación lineal (sin cálculo):</strong> en el plano precio-cantidad, la demanda es una recta que baja y la oferta una recta que sube. Basta describir la <em>pendiente</em> y qué la mueve; el examen no pide resolver ecuaciones.</p>
 
         <h4>Elasticidad precio, cruzada e ingreso (y elasticidad de oferta)</h4>
+        <div class="guia-grafico" data-grafico="elasticidad"></div>
         <p>La <strong>elasticidad</strong> mide la sensibilidad de una variable ante el cambio de otra.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Tipo de elasticidad</th><th>Qué mide</th><th>Cómo se lee</th></tr></thead>
@@ -102,6 +104,9 @@ window.ESTUDIO_GUIA.economia = {
         <p>Cuando oferta y demanda se cruzan aparece el <strong>equilibrio</strong>. Desde ahí se mide el bienestar mediante los excedentes.</p>
 
         <h4>Equilibrio de mercado competitivo</h4>
+        <div class="guia-grafico" data-grafico="od-equilibrio"></div>
+        <div class="guia-grafico" data-grafico="od-aumento-demanda"></div>
+        <div class="guia-grafico" data-grafico="od-aumento-oferta"></div>
         <div class="guia-def">El <strong>equilibrio</strong> es el punto donde la cantidad demandada iguala a la ofrecida. El precio de equilibrio "vacía" el mercado: no hay ni escasez ni excedente.</div>
         <p>Reglas de estática comparativa (muy preguntadas):</p>
         <div class="tabla-scroll"><table class="guia-tabla">
@@ -116,6 +121,7 @@ window.ESTUDIO_GUIA.economia = {
         <p>Si se desplazan <strong>ambas curvas a la vez</strong>, se puede determinar con certeza la dirección de una variable (precio o cantidad), pero la otra queda <strong>ambigua</strong>: depende de qué desplazamiento sea mayor.</p>
 
         <h4>Análisis de bienestar: excedente del consumidor y del productor</h4>
+        <div class="guia-grafico" data-grafico="excedentes"></div>
         <p><strong>Excedente del consumidor:</strong> diferencia entre lo que estaba dispuesto a pagar (disponibilidad a pagar) y lo que pagó (área bajo la demanda y sobre el precio); un precio más bajo lo aumenta. <strong>Excedente del productor:</strong> diferencia entre el precio recibido y el costo/disponibilidad a vender (área sobre la oferta y bajo el precio); un precio más alto lo aumenta. Un mercado competitivo es <strong>eficiente</strong>: maximiza el excedente total.</p>
 
         <div class="guia-frase"><strong>Frases de examen:</strong> "El mercado competitivo maximiza el excedente total." · "La demanda mide la disponibilidad a pagar; la oferta, el costo." · "Con dos desplazamientos, una variable siempre queda ambigua."</div>
@@ -127,6 +133,10 @@ window.ESTUDIO_GUIA.economia = {
         <p>El gobierno interviene en los mercados con controles de precio, impuestos y comercio exterior, y también para corregir <strong>fallas de mercado</strong>.</p>
 
         <h4>Oferta y demanda y políticas del gobierno</h4>
+        <div class="guia-grafico" data-grafico="precio-techo"></div>
+        <div class="guia-grafico" data-grafico="precio-piso"></div>
+        <div class="guia-grafico" data-grafico="impuesto-carga-muerta"></div>
+        <div class="guia-grafico" data-grafico="arancel"></div>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Política</th><th>Efecto en el mercado</th></tr></thead>
           <tbody>
@@ -196,6 +206,7 @@ window.ESTUDIO_GUIA.economia = {
         </ul>
 
         <h4>El costo de producción</h4>
+        <div class="guia-grafico" data-grafico="costos-cp"></div>
         <p>El <strong>costo contable</strong> solo cuenta desembolsos; el <strong>costo económico</strong> añade el costo de oportunidad (implícito). Los <strong>costos hundidos</strong> (irrecuperables) no deben influir en las decisiones.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Costo</th><th>Definición</th></tr></thead>
@@ -228,10 +239,12 @@ window.ESTUDIO_GUIA.economia = {
         </table></div>
 
         <h4>Maximización de beneficios y oferta competitiva</h4>
+        <div class="guia-grafico" data-grafico="competencia-perfecta"></div>
         <p>Se maximiza el beneficio donde <strong>ingreso marginal = costo marginal</strong>. En competencia perfecta el ingreso marginal es igual al precio (<strong>P = CMg</strong>), y la curva de oferta de la empresa es su costo marginal (por sobre el mínimo del costo variable medio). La <strong>oferta de mercado</strong> es la suma horizontal de las ofertas individuales.</p>
         <p><strong>Punto de cierre</strong> (corto plazo): si el precio no cubre el costo variable medio, conviene dejar de producir. En el <strong>largo plazo</strong>, si el precio no cubre el costo total medio, la empresa sale de la industria.</p>
 
         <h4>Monopolio y poder de mercado</h4>
+        <div class="guia-grafico" data-grafico="monopolio"></div>
         <p>El monopolio es un único vendedor sin sustitutos cercanos. Como enfrenta toda la demanda, para vender más debe bajar el precio a todo: por eso su <strong>ingreso marginal es menor que el precio</strong>. Produce donde IMg = CMg pero cobra el precio (más alto) de la demanda → produce <strong>menos</strong> y cobra <strong>más</strong> que la competencia, generando <strong>pérdida de eficiencia</strong> (carga muerta). Su poder nace de <strong>barreras de entrada</strong> (recurso exclusivo, patentes, economías de escala, regulación); el <strong>monopolio natural</strong> abastece a menor costo con una sola empresa.</p>
         <p>El monopolista puede aplicar <strong>discriminación de precios</strong> para capturar excedente: 1er grado (por cada unidad), 2° grado (por cantidad/versión) y 3er grado (por segmento). Como estrategia de entrada, las empresas usan los <strong>precios como barrera</strong>: predatorios (bajo el costo, para expulsar rivales) y de penetración (bajos para ganar cuota).</p>
 
@@ -311,6 +324,7 @@ window.ESTUDIO_GUIA.economia = {
         <p>La <strong>tasa natural</strong> de desempleo = friccional + estructural (existe aun con la economía sana). El <strong>salario mínimo</strong> y los <strong>sindicatos</strong> pueden elevar el desempleo si fijan salarios por sobre el de equilibrio. En el largo plazo, el <strong>mercado de fondos prestables</strong> (ahorro = inversión) determina la tasa de interés real: más ahorro baja la tasa y estimula la inversión.</p>
 
         <h4>⭐ El mercado de fondos prestables</h4>
+        <div class="guia-grafico" data-grafico="fondos-prestables"></div>
         <p>Es el modelo gráfico que muestra cómo se determina la <strong>tasa de interés real</strong> en el largo plazo. En el plano tasa-cantidad de fondos hay dos curvas:</p>
         <ul>
           <li><strong>Oferta de fondos = ahorro</strong> (familias y gobierno que prestan): tiene pendiente <strong>positiva</strong>, porque a mayor tasa la gente ahorra más.</li>
@@ -348,11 +362,13 @@ window.ESTUDIO_GUIA.economia = {
         <p>La <strong>demanda de dinero</strong> (por transacción, precaución y especulación) tiene relación <strong>inversa</strong> con la tasa de interés; el <strong>equilibrio monetario</strong> ocurre donde la oferta de dinero iguala a la demanda.</p>
 
         <h4>La inflación</h4>
+        <div class="guia-grafico" data-grafico="phillips"></div>
         <p>La <strong>teoría cuantitativa</strong> (M x V = P x Y) dice que, si la velocidad y la producción son estables, más dinero significa más precios: por eso "la inflación es, en el largo plazo, un fenómeno monetario". Sus <strong>costos</strong>: de menú, de suela de zapatos, distorsión de precios relativos, distorsión tributaria e incertidumbre. La <strong>ecuación de Fisher</strong> relaciona las tasas: nominal = real + inflación esperada (i = r + &pi;). El <strong>impuesto inflacionario</strong> es la pérdida de poder de compra de quien mantiene efectivo.</p>
 
         <div class="guia-def"><strong>⚠️ No confundir:</strong> inflación, desinflación y deflación: inflación = los precios suben; desinflación = siguen subiendo pero más lento (la inflación baja, por ej. de 8% a 4%, pero sigue positiva); deflación = los precios caen (inflación negativa). Que baje la inflación NO significa que bajen los precios.</div>
 
         <h4>Demanda agregada, oferta agregada y políticas</h4>
+        <div class="guia-grafico" data-grafico="oa-da"></div>
         <p>La <strong>demanda agregada (DA)</strong> es el gasto total (C + I + G + XN); tiene pendiente negativa. La <strong>oferta agregada</strong> es ascendente en el corto plazo (precios rígidos) y <strong>vertical</strong> en el largo plazo (PIB potencial). Sobre la DA actúan dos políticas:</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Política</th><th>Expansiva (estimula)</th><th>Contractiva (enfría)</th></tr></thead>
@@ -385,6 +401,7 @@ window.ESTUDIO_GUIA.economia = {
         <p>Cierra el curso la macro abierta y los modelos que estructuran el crecimiento (Solow) y los ciclos (IS-LM, Mundell-Fleming).</p>
 
         <h4>Economía abierta</h4>
+        <div class="guia-grafico" data-grafico="mercado-divisas"></div>
         <p>Las <strong>exportaciones netas</strong> (XN = X - M) miden el saldo comercial; el <strong>flujo de salida neta de capital (FSNC)</strong> es la compra neta de activos externos por residentes. La identidad clave es <strong>S = I + FSNC</strong> (el ahorro financia la inversión doméstica y la salida neta de capital), y en equilibrio <strong>XN = FSNC</strong>.</p>
         <div class="tabla-scroll"><table class="guia-tabla">
           <thead><tr><th>Concepto</th><th>Qué es</th></tr></thead>
@@ -404,9 +421,12 @@ window.ESTUDIO_GUIA.economia = {
         <p>La lectura clave: si el <strong>ahorro público cae</strong> —es decir, el gobierno pasa a <strong>déficit fiscal</strong> (Sg negativo)— y el ahorro privado y la inversión no cambian, el ahorro nacional total baja, y para que la identidad se cumpla también debe bajar (X − M): la <strong>cuenta corriente se vuelve más deficitaria</strong>. Por eso se habla de <strong>déficits gemelos</strong>: el déficit fiscal y el déficit de cuenta corriente tienden a <strong>ir juntos</strong>, porque el país que ahorra poco a nivel interno debe financiarse con ahorro externo (importa más de lo que exporta y se endeuda con el resto del mundo).</p>
 
         <h4>Crecimiento de largo plazo: el modelo de Solow</h4>
+        <div class="guia-grafico" data-grafico="solow"></div>
         <p>Explica el crecimiento por la <strong>acumulación de capital</strong> y el crecimiento de la población. Como el capital tiene <strong>rendimientos decrecientes</strong>, la economía llega a un <strong>estado estacionario</strong>: el capital donde la inversión solo repone la depreciación (inversión neta cero) y el producto por trabajador deja de crecer. El único motor del crecimiento <strong>sostenido</strong> es el <strong>progreso tecnológico</strong>. Medidas para fomentarlo: ahorro e inversión, capital humano (educación), I+D y apertura comercial.</p>
 
         <h4>Ciclos de corto plazo: IS-LM y Mundell-Fleming</h4>
+        <div class="guia-grafico" data-grafico="is-lm"></div>
+        <div class="guia-grafico" data-grafico="mundell-fleming"></div>
         <p>El modelo <strong>IS-LM</strong> (precios rígidos) tiene dos curvas: la <strong>IS</strong> (mercado de bienes, pendiente negativa) y la <strong>LM</strong> (mercado de dinero, pendiente positiva); su cruce fija producto y tasa de interés de corto plazo. La <strong>política fiscal</strong> desplaza la IS; la <strong>monetaria</strong>, la LM. El IS-LM es la base teórica de la demanda agregada.</p>
         <p>El modelo <strong>Mundell-Fleming</strong> es el IS-LM de una economía <strong>pequeña y abierta</strong> con movilidad perfecta de capital. Su gran lección: la eficacia de las políticas depende del régimen cambiario.</p>
         <div class="tabla-scroll"><table class="guia-tabla">

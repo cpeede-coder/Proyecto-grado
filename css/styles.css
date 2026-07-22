@@ -964,3 +964,36 @@ mark { background: color-mix(in srgb, var(--primario) 30%, transparent); color: 
 .modelo-u { margin-left: auto; font-size: 0.68rem; font-weight: 700; color: var(--texto-suave); border: 1px solid var(--borde); padding: 1px 7px; border-radius: 999px; }
 .modelo-para { margin: 0; font-size: 0.96rem; line-height: 1.5; color: var(--texto); }
 .modelo-tip { margin: 9px 0 0; padding: 8px 12px; background: color-mix(in srgb, var(--advertencia) 12%, transparent); border-left: 3px solid var(--advertencia); border-radius: 8px; font-size: 0.86rem; color: var(--texto-suave); }
+
+/* ===== Gráficos de Economía (SVG en flashcards y guía) ===== */
+:root {
+  --g-demanda: #5b8cff;
+  --g-oferta: #ff6b57;
+  --g-tercera: #22b892;
+  --g-area-ec: rgba(91, 140, 255, 0.22);
+  --g-area-ep: rgba(255, 107, 87, 0.22);
+  --g-dwl: rgba(255, 176, 32, 0.42);
+}
+.fc-grafico { margin: 12px 0 2px; text-align: center; }
+.fc-grafico:empty, .fc-grafico.hidden { display: none; }
+.guia-grafico { margin: 14px auto; text-align: center; }
+.g-svg { width: 100%; max-width: 360px; height: auto; font-family: var(--sans); overflow: visible; }
+.g-eje { stroke: var(--texto-suave); stroke-width: 1.4; fill: none; }
+.g-efill { fill: var(--texto-suave); stroke: none; }
+.g-d { stroke: var(--g-demanda); stroke-width: 2.3; fill: none; stroke-linecap: round; }
+.g-s { stroke: var(--g-oferta); stroke-width: 2.3; fill: none; stroke-linecap: round; }
+.g-3 { stroke: var(--g-tercera); stroke-width: 2.3; fill: none; stroke-linecap: round; }
+.g-d2 { stroke: var(--g-demanda); stroke-width: 2; fill: none; stroke-dasharray: 7 4; stroke-linecap: round; }
+.g-s2 { stroke: var(--g-oferta); stroke-width: 2; fill: none; stroke-dasharray: 7 4; stroke-linecap: round; }
+.g-aux { stroke: var(--texto-suave); stroke-width: 1; fill: none; stroke-dasharray: 4 4; opacity: 0.7; }
+.g-arrow { stroke: var(--texto); stroke-width: 1.6; fill: none; }
+.g-arrowfill { stroke: var(--texto); stroke-width: 1.6; fill: none; stroke-linejoin: round; }
+.g-dot { fill: var(--texto); stroke: var(--tarjeta); stroke-width: 1.6; }
+.g-area-ec { fill: var(--g-area-ec); stroke: none; }
+.g-area-ep { fill: var(--g-area-ep); stroke: none; }
+.g-dwl { fill: var(--g-dwl); stroke: none; }
+.g-lbl { fill: var(--texto); font-size: 12px; font-weight: 700; }
+.g-lbl-d { fill: var(--g-demanda); font-size: 12px; font-weight: 800; }
+.g-lbl-s { fill: var(--g-oferta); font-size: 12px; font-weight: 800; }
+.g-lbl-3 { fill: var(--g-tercera); font-size: 12px; font-weight: 800; }
+.g-axis { fill: var(--texto-suave); font-size: 11px; font-weight: 600; }
