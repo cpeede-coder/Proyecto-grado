@@ -948,3 +948,19 @@ body.vista-config main { max-width: 1040px; }
 .expfc-card.abierta .expfc-reverso { display: block; }
 .expfc-hint { font-size: 0.72rem; color: var(--texto-suave); margin-top: 8px; }
 mark { background: color-mix(in srgb, var(--primario) 30%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
+
+/* ===== Módulo Modelos (premium) ===== */
+#modelos-buscar { width: 100%; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--borde); background: var(--fondo); color: var(--texto); font-family: var(--sans); font-size: 0.95rem; }
+#modelos-buscar:focus { outline: 2px solid var(--primario); outline-offset: 1px; }
+.modelo-materia { margin-top: 22px; }
+.modelo-materia h3 { font-family: var(--serif); border-bottom: 2px solid var(--primario); display: inline-block; padding-bottom: 5px; margin: 0 0 2px; }
+.modelo-card { background: var(--tarjeta); border: 1px solid var(--borde); border-radius: 12px; padding: 13px 15px; margin-bottom: 9px; }
+.modelo-card.es-estrella { border-color: color-mix(in srgb, var(--advertencia) 55%, var(--borde)); background: color-mix(in srgb, var(--advertencia) 7%, var(--tarjeta)); }
+.modelo-head { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+.modelo-star { font-size: 0.95rem; }
+.modelo-nombre { font-family: var(--serif); font-weight: 700; font-size: 1.08rem; color: var(--texto); }
+.modelo-autor { font-size: 0.85rem; font-weight: 600; color: var(--primario); }
+.modelo-autor::before { content: "· "; color: var(--texto-suave); }
+.modelo-u { margin-left: auto; font-size: 0.68rem; font-weight: 700; color: var(--texto-suave); border: 1px solid var(--borde); padding: 1px 7px; border-radius: 999px; }
+.modelo-para { margin: 0; font-size: 0.96rem; line-height: 1.5; color: var(--texto); }
+.modelo-tip { margin: 9px 0 0; padding: 8px 12px; background: color-mix(in srgb, var(--advertencia) 12%, transparent); border-left: 3px solid var(--advertencia); border-radius: 8px; font-size: 0.86rem; color: var(--texto-suave); }

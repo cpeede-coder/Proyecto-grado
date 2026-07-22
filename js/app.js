@@ -2058,10 +2058,83 @@ function iniciarAdmin() {
   if (inp) inp.addEventListener("input", e => { EXPFC_Q = e.target.value; renderExpFC(); });
 }
 
+// ---------------------------------------------------------------------
+// Módulo "Modelos" (premium): mapa de modelos por materia, ⭐ = alta probabilidad
+// ---------------------------------------------------------------------
+let MODELOS_MAT = "todas", MODELOS_Q = "", MODELOS_SOLO_ESTRELLA = false;
+
+function entrarModelos() {
+  if (!estaDesbloqueado()) {
+    abrirModalAcceso("📐 El módulo de Modelos (todos los modelos que entran por materia, con los de mayor probabilidad marcados con ⭐) es parte del acceso completo ($5.000, pago único).");
+    return;
+  }
+  if (!window.MODELOS) return;
+  MODELOS_MAT = "todas"; MODELOS_Q = ""; MODELOS_SOLO_ESTRELLA = false;
+  const inp = $("#modelos-buscar"); if (inp) inp.value = "";
+  const chk = $("#modelos-solo-estrella"); if (chk) chk.checked = false;
+  renderModelosChips();
+  renderModelos();
+  mostrarPantalla("pantalla-modelos");
+}
+
+function renderModelosChips() {
+  const cont = $("#modelos-materias");
+  const mats = Object.keys(window.MODELOS || {});
+  const totalAll = mats.reduce((a, m) => a + window.MODELOS[m].modelos.length, 0);
+  const chip = (key, label, n) => '<button class="chip' + (MODELOS_MAT === key ? " seleccionado" : "") + '" data-m="' + key + '">' + label + " (" + n + ")</button>";
+  let h = chip("todas", "Todas", totalAll);
+  for (const m of mats) h += chip(m, window.MODELOS[m].nombre, window.MODELOS[m].modelos.length);
+  cont.innerHTML = h;
+  cont.querySelectorAll(".chip").forEach(b => b.addEventListener("click", () => {
+    MODELOS_MAT = b.dataset.m; renderModelosChips(); renderModelos();
+  }));
+}
+
+function renderModelos() {
+  const term = MODELOS_Q.trim();
+  const nq = _normFC(term);
+  const mats = MODELOS_MAT === "todas" ? Object.keys(window.MODELOS || {}) : [MODELOS_MAT];
+  let html = "", total = 0;
+  for (const m of mats) {
+    const info = window.MODELOS[m]; if (!info) continue;
+    let lista = info.modelos;
+    if (MODELOS_SOLO_ESTRELLA) lista = lista.filter(x => x.estrella);
+    if (term) lista = lista.filter(x => _normFC(x.nombre + " " + x.autor + " " + x.para + " " + (x.tip || "")).includes(nq));
+    if (!lista.length) continue;
+    total += lista.length;
+    const est = lista.filter(x => x.estrella).length;
+    html += '<section class="modelo-materia"><h3>' + _escFC(info.nombre) + '</h3><p class="ayuda">' + lista.length + " modelos · <strong>⭐ " + est + "</strong> de alta probabilidad</p>";
+    for (const x of lista) {
+      html += '<div class="modelo-card' + (x.estrella ? " es-estrella" : "") + '">' +
+        '<div class="modelo-head">' + (x.estrella ? '<span class="modelo-star">⭐</span>' : "") +
+        '<span class="modelo-nombre">' + _resaltaFC(x.nombre, term) + "</span>" +
+        (x.autor ? '<span class="modelo-autor">' + _resaltaFC(x.autor, term) + "</span>" : "") +
+        '<span class="modelo-u">' + _escFC(x.unidad) + "</span></div>" +
+        '<p class="modelo-para">' + _resaltaFC(x.para, term) + "</p>" +
+        (x.tip ? '<p class="modelo-tip">💡 ' + _resaltaFC(x.tip, term) + "</p>" : "") +
+        "</div>";
+    }
+    html += "</section>";
+  }
+  $("#modelos-contador").textContent = total + (term ? " coincidencias" : " modelos");
+  $("#modelos-lista").innerHTML = html || '<p class="ayuda">Sin coincidencias.</p>';
+}
+
+function iniciarModelos() {
+  const btn = $("#btn-estudiar-modelos");
+  if (btn) btn.addEventListener("click", entrarModelos);
+  $("#btn-modelos-volver").addEventListener("click", () => mostrarPantalla("pantalla-config"));
+  const inp = $("#modelos-buscar");
+  if (inp) inp.addEventListener("input", e => { MODELOS_Q = e.target.value; renderModelos(); });
+  const chk = $("#modelos-solo-estrella");
+  if (chk) chk.addEventListener("change", e => { MODELOS_SOLO_ESTRELLA = e.target.checked; renderModelos(); });
+}
+
 iniciarTema();
 iniciarZoom();
 iniciarScrollTop();
 iniciarAdmin();
+iniciarModelos();
 iniciarConfig();
 iniciarBanco();
 iniciarIA();
