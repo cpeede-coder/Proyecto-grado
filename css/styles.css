@@ -669,6 +669,20 @@ body.vista-amplia main {
 .historial-nota { font-weight: 700; font-variant-numeric: tabular-nums; }
 .historial-nota.aprobado { color: var(--exito); }
 .historial-nota.reprobado { color: var(--peligro); }
+.btn-recorregir {
+  flex-basis: 100%;
+  margin-top: 4px;
+  align-self: flex-start;
+  padding: 7px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primario);
+  background: var(--primario-tinte);
+  border: 1px solid var(--primario);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.btn-recorregir:hover { background: color-mix(in srgb, var(--primario) 22%, transparent); }
 
 @media (max-width: 600px) {
   .card { padding: 22px; }

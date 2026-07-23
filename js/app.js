@@ -3,6 +3,8 @@
 // =====================================================================
 
 const CLAVE_HISTORIAL = "examen-grado-historial";
+// Índice del examen del historial que se está RE-corrigiendo (null = examen nuevo).
+let historialRevisionIdx = null;
 const CLAVE_TEMA = "examen-grado-tema";
 const CLAVE_ACCESO = "examen-grado-acceso";
 const CLAVE_DEMO_USADA = "examen-grado-demo-usada";
@@ -603,6 +605,7 @@ function obtenerPoolPreguntas() {
 }
 
 async function comenzarExamen() {
+  historialRevisionIdx = null;  // examen nuevo: no estamos re-corrigiendo uno del historial
   if (estado.modoOficial && !estaDesbloqueado()) {
     abrirModalAcceso("El modo Examen Oficial es parte del acceso completo.");
     return;
@@ -747,16 +750,22 @@ function renderCorreccion() {
     card.className = "card";
 
     const respuesta = estado.respuestas[i].trim();
-    const criteriosHtml = p.criterios.map((c, j) => `
+    const criteriosHtml = p.criterios.map((c, j) => {
+      // Refleja el nivel ya marcado (útil al RE-corregir un examen del historial;
+      // en un examen nuevo el Map está vacío → nivel 0 → "No", como antes).
+      const nivel = estado.criteriosMarcados[i] ? (estado.criteriosMarcados[i].get(j) || 0) : 0;
+      const sel = n => (nivel === n ? " seleccionado" : "");
+      return `
       <div class="criterio">
         <div class="criterio-texto">${escaparHtml(c.texto)} <em>(${c.peso} pts)</em></div>
         <div class="criterio-niveles" data-pregunta="${i}" data-criterio="${j}">
-          <button type="button" class="nivel nivel-no seleccionado" data-nivel="0">✘ No</button>
-          <button type="button" class="nivel nivel-parcial" data-nivel="0.5">◐ Parcial</button>
-          <button type="button" class="nivel nivel-si" data-nivel="1">✔ Sí</button>
+          <button type="button" class="nivel nivel-no${sel(0)}" data-nivel="0">✘ No</button>
+          <button type="button" class="nivel nivel-parcial${sel(0.5)}" data-nivel="0.5">◐ Parcial</button>
+          <button type="button" class="nivel nivel-si${sel(1)}" data-nivel="1">✔ Sí</button>
         </div>
       </div>
-    `).join("");
+    `;
+    }).join("");
 
     const erroresHtml = (p.erroresComunes ?? []).map(e =>
       `<div class="errores-comunes">⚠️ ${escaparHtml(e)}</div>`
@@ -905,6 +914,33 @@ function leerHistorial() {
   catch { return []; }
 }
 
+// Serializa las marcas de la pauta (Map por pregunta) a un formato guardable.
+function serializarCriterios() {
+  return estado.criteriosMarcados.map(m => Array.from(m.entries()));
+}
+
+// Guarda el historial cuidando el límite de localStorage: conserva el detalle
+// completo (para re-corregir) solo en los intentos más recientes; si aun así no
+// cabe, va soltando el detalle de los más antiguos hasta que quepa.
+const HISTORIAL_MAX = 100;        // entradas totales
+const HISTORIAL_MAX_DETALLE = 25; // cuántas conservan el intento completo
+function guardarHistorialSeguro(historial) {
+  historial = historial.slice(0, HISTORIAL_MAX);
+  historial.forEach((h, i) => { if (i >= HISTORIAL_MAX_DETALLE && h.intento) delete h.intento; });
+  for (;;) {
+    try { localStorage.setItem(CLAVE_HISTORIAL, JSON.stringify(historial)); return; }
+    catch (e) {
+      let idx = -1;
+      for (let i = historial.length - 1; i >= 0; i--) { if (historial[i].intento) { idx = i; break; } }
+      if (idx < 0) {  // ya no hay detalle que soltar: guarda solo los resúmenes
+        try { localStorage.setItem(CLAVE_HISTORIAL, JSON.stringify(historial.map(({ intento, ...s }) => s))); } catch (_) {}
+        return;
+      }
+      delete historial[idx].intento;
+    }
+  }
+}
+
 function guardarEnHistorial(r) {
   const historial = leerHistorial();
   const total = BANCO.materias.length;
@@ -918,27 +954,76 @@ function guardarEnHistorial(r) {
   } else {
     etiquetaMateria = `${estado.materias.length} materias`;
   }
-  historial.unshift({
+  // Intento completo: permite volver a corregir este examen desde el historial.
+  const intento = {
+    preguntas: estado.preguntas,
+    respuestas: estado.respuestas,
+    criterios: serializarCriterios(),
+    modoOficial: estado.modoOficial,
+    soloExamen: estado.soloExamen,
+    dificultad: estado.dificultad,
+    materias: estado.materias.slice()
+  };
+  const entrada = {
     fecha: new Date().toISOString(),
     materia: etiquetaMateria,
     dificultad: estado.dificultad,
     numPreguntas: estado.preguntas.length,
     porcentaje: Math.round(r.porcentaje * 100),
-    nota: r.nota
-  });
-  localStorage.setItem(CLAVE_HISTORIAL, JSON.stringify(historial.slice(0, 100)));
+    nota: r.nota,
+    intento
+  };
+  if (historialRevisionIdx != null && historial[historialRevisionIdx]) {
+    // Re-corrección: actualiza la MISMA entrada (no duplica), conservando su fecha original.
+    const orig = historial[historialRevisionIdx];
+    entrada.fecha = orig.fecha;
+    entrada.materia = orig.materia;
+    entrada.dificultad = orig.dificultad;
+    entrada.numPreguntas = orig.numPreguntas;
+    historial[historialRevisionIdx] = entrada;
+  } else {
+    historial.unshift(entrada);
+  }
+  historialRevisionIdx = null;
+  guardarHistorialSeguro(historial);
+}
+
+// Reabre un examen del historial en la pantalla de corrección, con las respuestas
+// y las marcas tal como quedaron, para corregirlo de nuevo (a mano o con IA).
+function volverACorregir(idx) {
+  const h = leerHistorial()[idx];
+  if (!h || !h.intento) { alert("Este examen no tiene el detalle guardado (es anterior a esta función)."); return; }
+  const it = h.intento;
+  clearInterval(estado.timerId);
+  estado.preguntas = it.preguntas || [];
+  estado.respuestas = (it.respuestas || []).slice();
+  estado.criteriosMarcados = (it.criterios || []).map(e => new Map(e));
+  while (estado.criteriosMarcados.length < estado.preguntas.length) estado.criteriosMarcados.push(new Map());
+  estado.modoOficial = !!it.modoOficial;
+  estado.soloExamen = !!it.soloExamen;
+  estado.dificultad = it.dificultad || "media";
+  estado.materias = (it.materias || []).slice();
+  estado.indice = 0;
+  estado.usarTimer = false;
+  historialRevisionIdx = idx;
+  irACorreccion();
 }
 
 function mostrarHistorial() {
   const historial = leerHistorial();
-  $("#lista-historial").innerHTML = historial.length === 0
+  const lista = $("#lista-historial");
+  lista.innerHTML = historial.length === 0
     ? "<p class='ayuda'>Aún no has rendido ningún examen.</p>"
-    : historial.map(h => `
+    : historial.map((h, idx) => `
         <div class="historial-item">
           <span>${new Date(h.fecha).toLocaleString("es-CL", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" })}</span>
           <span>${escaparHtml(h.materia)} · ${h.dificultad} · ${h.numPreguntas} preguntas</span>
           <span class="historial-nota ${h.nota >= 4 ? "aprobado" : "reprobado"}">${h.nota.toFixed(1)} (${h.porcentaje}%)</span>
+          ${h.intento ? `<button type="button" class="btn-recorregir" data-idx="${idx}">🔁 Volver a corregir</button>` : ""}
         </div>`).join("");
+  lista.querySelectorAll(".btn-recorregir").forEach(b => {
+    b.addEventListener("click", () => volverACorregir(Number(b.dataset.idx)));
+  });
   mostrarPantalla("pantalla-historial");
 }
 
